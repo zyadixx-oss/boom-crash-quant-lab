@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://render.com/schema/render.yaml.json
+services:
+  - type: web
+    name: boom-crash-quant-lab-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: bash start.sh backend
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DERIV_WS_URL
+        value: wss://ws.derivws.com/websockets/v3
+      - key: DERIV_APP_ID
+        value: "1089"
+      - key: LIVE_TRADING
+        value: "false"
+      - key: READY_FOR_LIVE
+        value: "false"
+      - key: LIVE_ALLOWED
+        value: "false"
+      - key: OPENED_TRADES
+        value: "false"
+      - key: FRONTEND_ORIGIN
+        sync: false

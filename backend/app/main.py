@@ -21,7 +21,8 @@ async def lifespan(app:FastAPI):
     settings.assert_safe(); init_db(); yield
 
 app=FastAPI(title='Boom Crash Quant Lab',version='0.2.0',lifespan=lifespan)
-app.add_middleware(CORSMiddleware,allow_origins=[settings.frontend_origin],allow_credentials=True,allow_methods=['*'],allow_headers=['*'])
+frontend_origins=[origin.strip() for origin in settings.frontend_origin.split(',') if origin.strip()]
+app.add_middleware(CORSMiddleware,allow_origins=frontend_origins,allow_credentials=True,allow_methods=['*'],allow_headers=['*'])
 
 @app.get('/health',response_model=HealthResponse)
 def health(): return HealthResponse()

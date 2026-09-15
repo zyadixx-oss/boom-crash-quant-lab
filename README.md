@@ -1,78 +1,257 @@
 # boom-crash-quant-lab
 
-Research-grade MVP for Deriv Boom/Crash indices. It is **analysis/backtesting/shadow-only**. It cannot place live trades and all live flags are hard-defaulted to false.
+Research-grade MVP for Deriv Boom/Crash indices. The project is **analysis/backtesting/shadow-only**. It does not place live trades.
 
-## Safety
-`LIVE_TRADING=false`, `ready_for_live=false`, `live_allowed=false`, `opened_trades=false`. No buy/sell execution endpoint exists.
+## Safety invariants
 
-## Architecture
-- `backend/`: FastAPI, SQLAlchemy/SQLite, Deriv public WebSocket client, feature/ICT/spike/signal/backtest/optimization engines.
-- `frontend/`: React + Vite + TypeScript + Tailwind dashboard.
-- `scripts/`: sample-data smoke test, CLI backtest, active-symbol verification.
-- `docs/RESULTS.md`: scientific results template and failure analysis.
+These must remain false:
 
-## Supported profiles
-Boom and Crash 300, 500, 600, 900, 1000. Every symbol has an independent profile. Seed parameters are starting hypotheses only, not performance claims.
+```env
+LIVE_TRADING=false
+READY_FOR_LIVE=false
+LIVE_ALLOWED=false
+OPENED_TRADES=false
+```
 
-## Backend
+There is no buy/sell execution endpoint.
+
+## Stack
+
+- Backend: FastAPI, SQLAlchemy/SQLite, pandas/numpy, Deriv public WebSocket API
+- Frontend: React + Vite + TypeScript + TailwindCSS
+- Live transport: WebSocket
+- Deployment: Docker, Docker Compose, Vercel-ready frontend, Render Blueprint-ready backend
+
+## Project layout
+
+```text
+backend/                 FastAPI application, research/backtest/shadow engines
+frontend/                React/Vite dashboard
+scripts/                 Data collection, backtest, optimization, shadow commands
+data/                    Local runtime data (SQLite/CSV are gitignored)
+docs/                    Architecture and results notes
+Dockerfile               Backend container
+frontend/Dockerfile      Production frontend container
+frontend/vercel.json     Vercel frontend config
+render.yaml              Render backend Blueprint
+start.sh                 Simple launcher
+Makefile                 Common local commands
+docker-compose.yml       Local full-stack containers
+```
+
+## Local run without Docker
+
+Requirements: Python 3.13+, Node 22+, npm.
+
 ```bash
-python -m venv .venv
+git clone https://github.com/zyadixx-oss/boom-crash-quant-lab.git
+cd boom-crash-quant-lab
+make setup
+```
+
+Terminal 1:
+
+```bash
+make backend
+```
+
+Terminal 2:
+
+```bash
+make frontend
+```
+
+Open `http://localhost:5173`. API docs are at `http://localhost:8000/docs`.
+
+Equivalent direct commands:
+
+```bash
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r backend/requirements.txt
 uvicorn app.main:app --app-dir backend --reload
 ```
-API: `http://localhost:8000`, docs: `/docs`.
 
-## Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
+## Local run with Docker
+
+The easiest local full-stack startup is:
+
+```bash
+./start.sh docker
+```
+
+or:
+
+```bash
+docker compose up --build
+```
+
+Then open:
+
+- Frontend: `http://localhost:5173`
+- Backend: `http://localhost:8000`
+- API docs: `http://localhost:8000/docs`
+
+Docker Compose stores the local SQLite database in the named volume `backend_data`.
+
+## Frontend runtime configuration
+
+The UI now supports separate frontend and backend hosts.
+
+```env
+VITE_API_BASE_URL=https://your-backend.example.com
+VITE_WS_BASE_URL=wss://your-backend.example.com
+```
+
+For local Vite development these variables are optional because the Vite dev proxy handles `/api` and `/ws`.
+
+## Recommended free preview deployment: Vercel + Render
+
+This is intended for a demo/research preview, not production trading infrastructure.
+
+### 1. Deploy the FastAPI backend on Render
+
+The repository contains `render.yaml`.
+
+1. Sign in to Render and connect GitHub.
+2. Create a new **Blueprint** and select this repository.
+3. Render reads `render.yaml` and creates `boom-crash-quant-lab-api` on the Free plan.
+4. When prompted for `FRONTEND_ORIGIN`, you may initially use `http://localhost:5173`; update it after Vercel gives you the production URL.
+5. Wait for `/health` to report healthy.
+6. Copy the backend URL, for example `https://boom-crash-quant-lab-api.onrender.com`.
+
+The start command is:
+
+```bash
+bash start.sh backend
+```
+
+### 2. Deploy the React/Vite frontend on Vercel
+
+1. Import the same GitHub repository into Vercel.
+2. Set **Root Directory** to `frontend`.
+3. Vercel will use `frontend/vercel.json`.
+4. Add production environment variables:
+
+```env
+VITE_API_BASE_URL=https://YOUR-RENDER-SERVICE.onrender.com
+VITE_WS_BASE_URL=wss://YOUR-RENDER-SERVICE.onrender.com
+```
+
+5. Deploy and copy the resulting Vercel URL.
+
+### 3. Finish CORS configuration on Render
+
+Set the Render environment variable to the exact Vercel site URL:
+
+```env
+FRONTEND_ORIGIN=https://YOUR-PROJECT.vercel.app
+```
+
+Multiple origins can be comma-separated, for example:
+
+```env
+FRONTEND_ORIGIN=http://localhost:5173,https://YOUR-PROJECT.vercel.app
+```
+
+Redeploy the backend after changing the variable.
+
+### 4. Verify
+
+Check these in order:
+
+```text
+https://YOUR-RENDER-SERVICE.onrender.com/health
+https://YOUR-RENDER-SERVICE.onrender.com/docs
+https://YOUR-PROJECT.vercel.app
+```
+
+The dashboard should load symbol profiles, historical candles when Deriv is reachable, and a direct WebSocket connection to the Render backend.
+
+## Free-hosting limitations
+
+- Render Free web services can sleep after inactivity, so the first request can be slow.
+- Render Free local files are ephemeral. The SQLite database can reset on restart/redeploy/spin-down. Use a persistent managed database for durable results.
+- Vercel Hobby is appropriate for a personal/non-commercial frontend preview and has usage limits.
+- This deployment does not change any trading-safety flags and does not enable real order execution.
+
+## Alternative backend deployment
+
+The root `Dockerfile` is portable to hosts that accept Docker images/repositories. Railway also auto-detects a root Dockerfile, but its pricing/free-credit model can change; Render is the documented zero-cost preview path for this repository.
+
 ## Verify current Deriv symbol IDs
-Deriv added new Crash/Boom ranges in 2026. Query `active_symbols` rather than trusting hard-coded names:
+
+Deriv symbol IDs should be queried rather than assumed:
+
 ```bash
 python scripts/check_deriv_symbols.py
 ```
-Then update `api_symbol` in `backend/app/symbol_profiles.py` if needed.
+
+The client resolves symbols through `active_symbols` before history/shadow use.
 
 ## Generate smoke-test data and backtest
+
 ```bash
 python scripts/generate_sample_data.py
 python scripts/run_backtest.py BOOM500 data/sample_candles.csv
 ```
-Synthetic sample results are only software smoke tests and must never be reported as trading performance.
 
-## Tests
-```bash
-cd backend
-pytest -q
-```
-
-## API
-`GET /health`, `/symbols`, `/symbols/{symbol}`, `/signals`, `/signals/latest`, `/signals/{symbol}`, `/stats`, `/leaderboard`, `/shadow/stats`, `/deriv/active-symbols`; `POST /backtest`, `/optimize`; WebSocket `/ws/signals`, `/ws/market`.
-
-## Data validation and bias controls
-Ticks are sorted/deduplicated before aggregation; OHLC validation is provided. Backtesting is chronological, contains a test for prefix invariance, uses no random time-series shuffle, and the optimizer operates on the dataset explicitly passed as validation data. Walk-forward threshold selection is validation-only and evaluates the next test window.
-
-## Scientific interpretation
-Signal score is a weighted rule score, **not a probability**. ICT features can be disabled. No claim of profitability is valid until real out-of-sample and shadow data support it. See `docs/RESULTS.md`.
+Synthetic results are software smoke tests only and must not be presented as trading performance.
 
 ## Real data collection
+
 ```bash
 python scripts/collect_data.py BOOM500 5000
 ```
-The script resolves the current Deriv API symbol from `active_symbols` and stores real M1 candles under `data/`.
 
 ## Validation-only optimization
+
 ```bash
 python scripts/run_optimize.py BOOM500 data/boom500_m1.csv
 ```
-The script performs a chronological split and passes only validation data to the grid optimizer; the test partition remains reserved.
+
+The script chronologically splits data and keeps the test partition reserved.
 
 ## Shadow mode
+
 ```bash
 python scripts/run_shadow.py BOOM500
 ```
-This subscribes to the public Deriv data feed, stores ticks and completed M1/M5/M15 candles, records scored signals, and evaluates them after the configured test window. It does not place orders.
+
+Shadow mode subscribes to public Deriv market data, stores observations, scores signals, and evaluates them later. It does not place orders.
+
+## Tests
+
+```bash
+make test
+```
+
+or:
+
+```bash
+PYTHONPATH=backend pytest -q backend/tests tests
+```
+
+## API highlights
+
+- `GET /health`
+- `GET /symbols`
+- `GET /signals`
+- `GET /leaderboard`
+- `GET /shadow/stats`
+- `GET /deriv/active-symbols`
+- `GET /market/history/{symbol}`
+- `POST /backtest`
+- `POST /optimize`
+- WebSocket `/ws/signals`
+- WebSocket `/ws/market`
+
+## Scientific interpretation
+
+Signal scores are weighted rule scores, **not probabilities**. No profitability claim is valid until supported by real out-of-sample and shadow observations. See `docs/RESULTS.md`.
