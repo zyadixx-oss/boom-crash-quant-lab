@@ -1,0 +1,4 @@
+import {useEffect,useRef} from 'react';
+import {createChart,CandlestickSeries} from 'lightweight-charts';
+type Bar={time:number,open:number,high:number,low:number,close:number};
+export default function MarketChart({bars}:{bars:Bar[]}){const ref=useRef<HTMLDivElement>(null);useEffect(()=>{if(!ref.current)return;const chart=createChart(ref.current,{height:340,layout:{background:{color:'#0b1220'},textColor:'#94a3b8'},grid:{vertLines:{color:'#172033'},horzLines:{color:'#172033'}}});const series=chart.addSeries(CandlestickSeries,{});series.setData(bars as any);chart.timeScale().fitContent();const ro=new ResizeObserver(()=>chart.applyOptions({width:ref.current?.clientWidth||800}));ro.observe(ref.current);return()=>{ro.disconnect();chart.remove()}},[bars]);return <div ref={ref} className="w-full"/>}

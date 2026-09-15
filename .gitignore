@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.db
+.pytest_cache/
+.mypy_cache/
+node_modules/
+dist/
+coverage/
+data/*.csv
+!data/.gitkeep
+
+*.tsbuildinfo
