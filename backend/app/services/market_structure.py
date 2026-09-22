@@ -10,8 +10,14 @@ def add_market_structure(
 ) -> pd.DataFrame:
     x = df.copy()
     win = 2 * swing + 1
-    x["swing_high"] = x["high"].where(x["high"].eq(x["high"].rolling(win, center=True).max()))
-    x["swing_low"] = x["low"].where(x["low"].eq(x["low"].rolling(win, center=True).min()))
+
+    # Causal pivot confirmation: at row i we may confirm only the pivot at i-swing.
+    # This removes the old center=True lookahead while retaining swing structure.
+    candidate_high = x["high"].shift(swing)
+    candidate_low = x["low"].shift(swing)
+    x["swing_high"] = candidate_high.where(candidate_high.eq(x["high"].rolling(win).max()))
+    x["swing_low"] = candidate_low.where(candidate_low.eq(x["low"].rolling(win).min()))
+
     prev_high = x["swing_high"].ffill().shift(1)
     prev_low = x["swing_low"].ffill().shift(1)
     x["bos_up"] = x["close"] > prev_high
