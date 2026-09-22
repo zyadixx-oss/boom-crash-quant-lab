@@ -19,6 +19,24 @@ def _finite(value) -> bool:
         return False
 
 
+def _attach_completed_tf_context(x: pd.DataFrame, seconds: int, prefix: str) -> pd.DataFrame:
+    """Attach only fully completed higher-timeframe context to each M1 row."""
+    base = x[["epoch", "close"]].copy()
+    base["bucket"] = (base["epoch"].astype(int) // seconds) * seconds
+    agg = base.groupby("bucket", as_index=False).agg(close=("close", "last"))
+    agg["context_epoch"] = agg["bucket"] + seconds
+    agg[f"{prefix}_close"] = agg["close"]
+    agg[f"{prefix}_trend"] = np.sign(agg["close"] - agg["close"].shift(3))
+    context = agg[["context_epoch", f"{prefix}_close", f"{prefix}_trend"]].sort_values("context_epoch")
+
+    left = pd.DataFrame({"row_index": x.index, "eval_epoch": x["epoch"].astype(int) + 60}).sort_values("eval_epoch")
+    merged = pd.merge_asof(left, context, left_on="eval_epoch", right_on="context_epoch", direction="backward")
+    merged = merged.sort_values("row_index")
+    x[f"{prefix}_close"] = merged[f"{prefix}_close"].to_numpy()
+    x[f"{prefix}_trend"] = merged[f"{prefix}_trend"].to_numpy()
+    return x
+
+
 def prepare_arena_frame(candles: pd.DataFrame, profile, with_spikes: bool = True) -> pd.DataFrame:
     required = {"epoch", "open", "high", "low", "close"}
     missing = required.difference(candles.columns)
@@ -35,8 +53,8 @@ def prepare_arena_frame(candles: pd.DataFrame, profile, with_spikes: bool = True
     x["lower_wick_ratio"] = x["lower_wick"] / x["body"].replace(0, np.nan)
     x["small_cluster_3"] = (x["range_atr"] < 0.9).rolling(3, min_periods=3).sum() >= 3
     x["small_cluster_4"] = (x["range_atr"] < 0.9).rolling(4, min_periods=4).sum() >= 4
-    x["m5_mean"] = x["close"].rolling(5, min_periods=5).mean().shift(1)
-    x["m15_mean"] = x["close"].rolling(15, min_periods=15).mean().shift(1)
+    x = _attach_completed_tf_context(x, 300, "m5")
+    x = _attach_completed_tf_context(x, 900, "m15")
     x["range_atr_mean"] = x["range_atr"].rolling(20, min_periods=10).mean().shift(1)
     if with_spikes:
         direction = "UP" if profile.symbol.startswith("BOOM") else "DOWN"
@@ -89,11 +107,11 @@ def _generic_scores(row, profile, direction: str) -> dict[str, float]:
     sr = 35 * near_sr + 20 * sweep + 20 * (rejections >= 2) + 15 * pd_zone + 10 * equal_pool
 
     if direction == "UP":
-        m5 = _finite(row.get("m5_mean")) and float(row["close"]) >= float(row["m5_mean"])
-        m15 = _finite(row.get("m15_mean")) and float(row["close"]) >= float(row["m15_mean"])
+        m5 = _finite(row.get("m5_trend")) and float(row["m5_trend"]) > 0
+        m15 = _finite(row.get("m15_trend")) and float(row["m15_trend"]) > 0
     else:
-        m5 = _finite(row.get("m5_mean")) and float(row["close"]) <= float(row["m5_mean"])
-        m15 = _finite(row.get("m15_mean")) and float(row["close"]) <= float(row["m15_mean"])
+        m5 = _finite(row.get("m5_trend")) and float(row["m5_trend"]) < 0
+        m15 = _finite(row.get("m15_trend")) and float(row["m15_trend"]) < 0
     m1 = (_finite(row.get("bb_ratio")) and row["bb_ratio"] < profile.bb_squeeze_threshold) or sweep
     tfw = profile.timeframe_weights
     mtf = 100.0 * (tfw.get("M1", 0.25) * bool(m1) + tfw.get("M5", 0.45) * bool(m5) + tfw.get("M15", 0.30) * bool(m15))
@@ -169,11 +187,11 @@ def score_candidate_row(row, candidate, profile, direction: str) -> tuple[float,
 
     elif agent == "Multi-Timeframe Agent":
         if direction == "UP":
-            m5 = _finite(row.get("m5_mean")) and float(row["close"]) >= float(row["m5_mean"])
-            m15 = _finite(row.get("m15_mean")) and float(row["close"]) >= float(row["m15_mean"])
+            m5 = _finite(row.get("m5_trend")) and float(row["m5_trend"]) > 0
+            m15 = _finite(row.get("m15_trend")) and float(row["m15_trend"]) > 0
         else:
-            m5 = _finite(row.get("m5_mean")) and float(row["close"]) <= float(row["m5_mean"])
-            m15 = _finite(row.get("m15_mean")) and float(row["close"]) <= float(row["m15_mean"])
+            m5 = _finite(row.get("m5_trend")) and float(row["m5_trend"]) < 0
+            m15 = _finite(row.get("m15_trend")) and float(row["m15_trend"]) < 0
         m1 = (_finite(row.get("bb_ratio")) and row["bb_ratio"] < profile.bb_squeeze_threshold) or base["ict"] >= 40
         score = 100.0 * (
             float(p.get("m1_weight", profile.timeframe_weights["M1"])) * bool(m1)
