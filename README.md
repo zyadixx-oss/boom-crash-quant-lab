@@ -41,7 +41,7 @@ docker-compose.yml       Local full-stack containers
 
 ## Local run without Docker
 
-Requirements: Python 3.13+, Node 22+, npm.
+Requirements: Python 3.12+, Node 22+, npm.
 
 ```bash
 git clone https://github.com/zyadixx-oss/boom-crash-quant-lab.git
