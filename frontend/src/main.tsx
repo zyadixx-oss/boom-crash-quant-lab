@@ -63,6 +63,23 @@ function SpikeGrid({data}:{data:Record<string,unknown>|undefined}){
   return <div className="metric-grid">{keys.map(k=><div className="metric" key={k}><span>{k.replaceAll('_',' ')}</span><b>{['spike_precision','spike_recall','false_alert_rate'].includes(k)?pct(data[k]):fmt(data[k],3)}</b></div>)}</div>;
 }
 
+function ForwardGrid({data}:{data:Record<string,unknown>|undefined}){
+  if(!data) return <p className="muted">No forward/shadow results recorded yet.</p>;
+  const keys=['total_signals','evaluated_signals','spike_hits','false_signals','spike_precision','false_alert_rate','average_lead_time','average_future_movement','forward_score'];
+  return <div className="metric-grid">{keys.map(k=><div className="metric" key={k}><span>{k.replaceAll('_',' ')}</span><b>{['spike_precision','false_alert_rate'].includes(k)?pct(data[k]):fmt(data[k],3)}</b></div>)}</div>;
+}
+
+function RobustnessGrid({data}:{data:any}){
+  const metrics=data?.metrics;
+  if(!metrics) return <p className="muted">Robustness test has not run yet.</p>;
+  return <div className="metric-grid">
+    <div className="metric"><span>passed</span><b>{String(metrics.passed??false).toUpperCase()}</b></div>
+    <div className="metric"><span>stability score</span><b>{pct(metrics.stability_score)}</b></div>
+    <div className="metric"><span>sensitivity</span><b>{pct(metrics.sensitivity_pct)}</b></div>
+    <div className="metric"><span>parameters tested</span><b>{metrics.parameters_tested?.length??0}</b></div>
+  </div>;
+}
+
 function Curve({points,keyName,label}:{points:any[]|undefined;keyName:string;label:string}){
   if(!points?.length) return <div className="curve-empty">No {label.toLowerCase()} data yet.</div>;
   const values=points.map(p=>Number(p[keyName])).filter(Number.isFinite);
@@ -205,13 +222,26 @@ function App(){
 
     <section className="result-grid">
       <article className="arena-card"><p className="eyebrow">5 · Backtest Results</p><h2>In-Sample</h2><MetricGrid data={detail?.backtest_results?.metrics}/></article>
+      <article className="arena-card"><p className="eyebrow">5 · Backtest Results</p><h2>Validation</h2><MetricGrid data={detail?.validation_results?.metrics}/></article>
       <article className="arena-card"><p className="eyebrow">6 · OOS Results</p><h2>Out-of-Sample</h2><MetricGrid data={detail?.oos_results?.metrics}/></article>
-      <article className="arena-card"><p className="eyebrow">7 · Forward Results</p><h2>{forward?.mode||'Shadow'}</h2><MetricGrid data={forward?.metrics}/></article>
+      <article className="arena-card"><p className="eyebrow">6 · Robustness</p><h2>Parameter Sensitivity</h2><RobustnessGrid data={detail?.robustness_results}/></article>
+      <article className="arena-card"><p className="eyebrow">7 · Forward Results</p><h2>{forward?.mode||'Shadow'}</h2><ForwardGrid data={forward?.metrics}/></article>
     </section>
 
     <section className="arena-card">
       <div className="section-title"><div><p className="eyebrow">8 · Spike Detection Metrics</p><h2>Does it actually predict spikes?</h2></div><Activity/></div>
       <SpikeGrid data={spikeData}/>
+    </section>
+
+    <section className="details-grid">
+      <article className="arena-card">
+        <div className="section-title"><div><p className="eyebrow">Strategy Audit</p><h2>Recent Signals</h2></div><Radio/></div>
+        <div className="activity-list">{detail?.recent_signals?.map((e:any)=><div className="audit-row" key={e.id}><span className="mono">{e.created_at||'—'}</span><span>{e.event_type}</span><span className="muted">{e.payload?.outcome||'PENDING'} · score {fmt(e.payload?.signal_score,1)}</span></div>)}{!detail?.recent_signals?.length&&<p className="muted">No shadow signals for this strategy yet.</p>}</div>
+      </article>
+      <article className="arena-card">
+        <div className="section-title"><div><p className="eyebrow">Strategy Audit</p><h2>Status History</h2></div><Layers3/></div>
+        <div className="activity-list">{detail?.status_history?.map((h:any,i:number)=><div className="audit-row" key={i}><span className="mono">{h.created_at||'—'}</span><span>{h.from||'new'} → {h.to}</span><span className="muted">{h.reason}</span></div>)}{!detail?.status_history?.length&&<p className="muted">No status transitions recorded yet.</p>}</div>
+      </article>
     </section>
 
     <section className="arena-card">
