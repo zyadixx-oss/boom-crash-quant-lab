@@ -1,54 +1,44 @@
 # Results
 
-Status: **NOT TESTED on real Deriv historical/shadow data yet.**
+Status: **IMPLEMENTATION VERIFIED; REAL STRATEGY EDGE NOT YET VERIFIED.**
 
-## Data period
-NOT TESTED
+## Implementation verification
 
-## Number of ticks/candles
-NOT TESTED
+GitHub Actions `Arena CI` verifies both application layers on the Arena branch:
 
-## Symbols tested
-No real Deriv dataset has been evaluated yet.
+- Backend: dependency install + `pytest -q tests ../tests`.
+- Frontend: dependency install + production `npm run build`.
+- Latest verified workflow for the Arena implementation completed successfully on 2026-09-22.
+- The suite covers candidate creation, ten-symbol profiles, backtest metrics, spike detection, qualification, chronological OOS split, leaderboard scoring, safety flags, no-order behavior, API endpoints, and the legacy tests.
 
-## Strategies tested
-Weighted pre-spike signal engine is implemented; real-data validation is pending.
+## Real Deriv research status
 
-## Best strategy per Symbol
-NOT TESTED
+No claim of profitability or predictive edge is made by this implementation. Real historical/OOS/forward observations have not yet been run long enough to justify an edge claim.
 
-## Win Rate / Profit Factor / Expectancy / Max Drawdown
-NOT TESTED on real Deriv data. Synthetic smoke-test metrics must not be treated as evidence of an edge.
-
-## Out-of-Sample / Walk Forward
-Framework implemented. Real-data evaluation: NOT TESTED.
-
-## Shadow results
-NOT TESTED.
-
-## Known limitations
-- API symbol identifiers for newly introduced ranges should be resolved with `active_symbols` before collection.
-- Tick-derived microstructure features require persistent tick collection; candle-only CSVs cannot reproduce tick frequency exactly.
-- ICT concepts are deterministic heuristics here, not assumed alpha.
-- Current optimizer is a conservative grid-search baseline; Bayesian optimization is not yet implemented.
+Synthetic/generated candles are allowed only as software smoke-test data and must be labeled DEMO when used. They are not evidence of strategy quality.
 
 ## UNVERIFIED ASSUMPTIONS
-- Pre-spike volatility compression may carry predictive information for each Boom/Crash range.
-- The chosen mathematical spike definition is useful for all symbols after per-symbol calibration.
-- M5/M15 confirmation improves out-of-sample performance rather than reducing signal quality.
+
+- Pre-spike compression, liquidity behavior, candle structure, S/R, or MTF context contains stable predictive information for Boom/Crash spikes.
+- The current ATR-based mathematical definition of a spike maps well to each Deriv symbol after independent calibration.
+- The M1/M5/M15 proxy/context implementation retains predictive value on real Deriv data.
+- Default qualification thresholds are appropriate; they are starting configuration, not validated truth.
+- A 24h forward window contains enough events for useful decisions; sparse symbols may require 3 or 7 days.
+- Public Deriv symbol identifiers and feed behavior remain compatible with active-symbol resolution.
 
 ## LIKELY FAILURE PATHS
-- No stable predictive edge exists before spikes.
-- Regime drift makes optimized parameters unstable.
-- Sparse extreme events create misleading small-sample metrics.
-- Tick/candle gaps or symbol mapping errors contaminate labels.
-- Feature engineering overfits historical synthetic-index behavior.
+
+- No stable pre-spike edge exists and historical profit is incidental.
+- Rare spikes produce high-variance precision/recall and misleading backtest rankings.
+- Regime drift invalidates candidates that appeared stable in an earlier period.
+- Data gaps, candle construction differences, or symbol-resolution errors contaminate labels.
+- Heuristic ICT concepts may not correspond to a reproducible statistical edge.
+- Parameter selection can still overfit despite bounded search and sensitivity tests.
+- Free hosting can sleep or lose ephemeral SQLite data, interrupting long forward runs.
+- A process restart ends in-memory shadow tasks; persisted run state remains but automatic task resumption is not implemented.
 
 ## MINIMAL TEST THAT COULD FAIL THE PLAN
-Collect a sufficiently large, clean dataset for one symbol, freeze a simple parameter region using train/validation only, then run untouched out-of-sample and walk-forward tests. If expectancy is non-positive and precision does not beat simple baselines with stable confidence across windows, classify **NO RELIABLE EDGE FOUND** and stop adding complexity.
 
-## Implementation verification in this build
-- Python unit/integration/acceptance tests: executed locally in the build environment.
-- FastAPI `/health` and `/symbols`: executed locally.
-- Real Deriv WebSocket connectivity: **NOT TESTED in this build environment** because outbound DNS/network access was unavailable.
-- Frontend dependency install/build: **NOT TESTED** because npm registry access was unavailable in the build environment.
+Choose **one MVP symbol** (Crash 500 or Boom 500), collect a clean chronological dataset, freeze one candidate using train + validation only, then run the untouched 20% OOS segment.
+
+The plan should be reconsidered if that candidate has enough trades to be statistically useful but shows non-positive expectancy, poor spike precision/recall versus simple baselines, and instability under ±5% parameter perturbation. If the same failure repeats across several chronological windows, adding more agents or optimization would be complexity without evidence of an edge.
