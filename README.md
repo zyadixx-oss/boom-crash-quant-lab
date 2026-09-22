@@ -174,6 +174,80 @@ https://YOUR-PROJECT.vercel.app
 
 The dashboard should load symbol profiles, historical candles when Deriv is reachable, and a direct WebSocket connection to the Render backend.
 
+
+## AI Strategy Arena
+
+The Arena is an additive research layer over the existing project. On backend startup it creates the new Arena tables if missing, seeds the six Strategy Agents, and seeds two candidates per agent for the MVP symbols **CRASH500** and **BOOM500**. It does not automatically run heavy backtests.
+
+Pipeline:
+
+```text
+Strategy Generation
+  -> In-Sample Backtest
+  -> Validation Qualification Gate
+  -> Out-of-Sample Test
+  -> Parameter Sensitivity / Robustness
+  -> Forward / Shadow Test
+  -> Leaderboard
+  -> Qualified or Retired
+```
+
+The architecture supports all ten configured Boom/Crash symbols, but the first heavy evaluation scope is Crash 500 and Boom 500.
+
+### Run the Arena locally
+
+Start the backend and frontend as described above. The Arena UI is the default frontend dashboard. The backend automatically initializes the Arena tables and MVP candidates.
+
+The Arena CLI is useful for local research:
+
+```bash
+python scripts/run_arena.py list
+```
+
+Use a chronological OHLC CSV with `epoch,open,high,low,close` columns.
+
+Run train + validation backtest:
+
+```bash
+python scripts/run_arena.py backtest STRATEGY_ID data/your_m1_candles.csv
+```
+
+After the strategy passes the validation gate, run the untouched OOS + robustness stage:
+
+```bash
+python scripts/run_arena.py oos STRATEGY_ID data/your_m1_candles.csv
+```
+
+Only a strategy that passes OOS + robustness reaches `forward_testing`. Then run market-data-only shadow mode:
+
+```bash
+python scripts/run_arena.py shadow STRATEGY_ID --hours 24
+python scripts/run_arena.py shadow STRATEGY_ID --hours 72
+python scripts/run_arena.py shadow STRATEGY_ID --hours 168
+```
+
+These correspond to 24 hours, 3 days, and 7 days. Shadow mode records paper observations only; it never sends an order.
+
+### Arena API
+
+- `GET /api/arena/agents`
+- `GET /api/arena/strategies`
+- `POST /api/arena/strategies/generate`
+- `GET /api/arena/strategies/{id}`
+- `GET /api/arena/leaderboard`
+- `POST /api/arena/backtest`
+- `POST /api/arena/oos-test`
+- `POST /api/arena/shadow/start`
+- `POST /api/arena/shadow/stop?strategy_id=...`
+- `GET /api/arena/shadow/status`
+- `GET /api/arena/activity`
+- `GET /api/arena/stats`
+- `GET /api/arena/profiles`
+- `GET /api/arena/safety`
+- WebSocket `/ws/arena`
+
+Qualification thresholds and composite-score weights are environment-configurable in `.env.example`. Net profit is displayed but is not a direct leaderboard weight.
+
 ## Free-hosting limitations
 
 - Render Free web services can sleep after inactivity, so the first request can be slow.
@@ -254,4 +328,4 @@ PYTHONPATH=backend pytest -q backend/tests tests
 
 ## Scientific interpretation
 
-Signal scores are weighted rule scores, **not probabilities**. No profitability claim is valid until supported by real out-of-sample and shadow observations. See `docs/RESULTS.md`.
+Signal scores are weighted rule scores, **not probabilities**. A candidate is not promoted by win rate or net profit alone: qualification also evaluates trade count, profit factor, expectancy, drawdown, spike precision/recall, false-alert rate, OOS stability, and parameter sensitivity. No profitability claim is valid until supported by real out-of-sample and forward/shadow observations. See `docs/RESULTS.md` and `docs/ARCHITECTURE.md`.
