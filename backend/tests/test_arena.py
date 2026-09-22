@@ -170,17 +170,17 @@ def test_arena_api_endpoints_and_backtest_path():
         assert "in_sample_results" in body
         assert "validation_results" in body
         assert "qualification" in body
+        assert body["qualification"]["passed"] is False
 
-        # The synthetic smoke data will normally fail qualification; the OOS route must fail closed,
-        # not bypass the lifecycle gate.
+        # With only 100 validation bars this smoke dataset cannot satisfy minimum_trades=20.
+        # OOS and shadow must therefore fail closed rather than bypassing lifecycle gates.
         oos = client.post("/api/arena/oos-test", json={"strategy_id": strategy_id, "candles": sample_candles(500)})
-        assert oos.status_code in {200, 400}
+        assert oos.status_code == 400
 
         shadow_status = client.get("/api/arena/shadow/status", params={"strategy_id": strategy_id})
         assert shadow_status.status_code == 200
         shadow_start = client.post("/api/arena/shadow/start", json={"strategy_id": strategy_id, "duration_hours": 24})
-        if body["strategy"]["status"] != "forward_testing":
-            assert shadow_start.status_code == 400
+        assert shadow_start.status_code == 400
 
         stopped = client.post("/api/arena/shadow/stop", params={"strategy_id": strategy_id})
         assert stopped.status_code == 200
