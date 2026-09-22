@@ -50,8 +50,8 @@ class ArenaShadowManager:
             candidate = db.get(StrategyCandidate, strategy_id)
             if not candidate:
                 raise KeyError("Strategy not found")
-            if candidate.status not in {"forward_testing", "qualified"}:
-                raise ValueError(f"Strategy is not eligible for shadow testing; current status={candidate.status}")
+            if candidate.status != "forward_testing":
+                raise ValueError(f"Strategy must pass OOS + robustness before shadow testing; current status={candidate.status}")
 
             existing = db.execute(
                 select(ForwardRun)
