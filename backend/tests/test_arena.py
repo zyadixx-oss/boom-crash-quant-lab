@@ -160,12 +160,35 @@ def test_arena_api_endpoints_and_backtest_path():
         assert "formula" in leaderboard.json() and "weights" in leaderboard.json()
 
         strategy_id = strategies.json()[0]["id"]
+        detail = client.get(f"/api/arena/strategies/{strategy_id}")
+        assert detail.status_code == 200
+        assert detail.json()["id"] == strategy_id
+
         result = client.post("/api/arena/backtest", json={"strategy_id": strategy_id, "candles": sample_candles(500)})
         assert result.status_code == 200, result.text
         body = result.json()
         assert "in_sample_results" in body
         assert "validation_results" in body
         assert "qualification" in body
+
+        # The synthetic smoke data will normally fail qualification; the OOS route must fail closed,
+        # not bypass the lifecycle gate.
+        oos = client.post("/api/arena/oos-test", json={"strategy_id": strategy_id, "candles": sample_candles(500)})
+        assert oos.status_code in {200, 400}
+
+        shadow_status = client.get("/api/arena/shadow/status", params={"strategy_id": strategy_id})
+        assert shadow_status.status_code == 200
+        shadow_start = client.post("/api/arena/shadow/start", json={"strategy_id": strategy_id, "duration_hours": 24})
+        if body["strategy"]["status"] != "forward_testing":
+            assert shadow_start.status_code == 400
+
+        stopped = client.post("/api/arena/shadow/stop", params={"strategy_id": strategy_id})
+        assert stopped.status_code == 200
+
+        activity = client.get("/api/arena/activity")
+        profiles = client.get("/api/arena/profiles")
+        assert activity.status_code == 200
+        assert profiles.status_code == 200 and len(profiles.json()) == 10
 
 
 def test_spike_label_marks_arrival_not_future_start():
