@@ -287,6 +287,16 @@ class ArenaPipeline:
         passed = gate["passed"] and robustness["passed"]
 
         ArenaPipeline._persist_metric(db, candidate.id, "out_of_sample", oos_result)
+        db.add(
+            StrategyMetric(
+                strategy_id=candidate.id,
+                stage="robustness",
+                metrics=robustness,
+                spike_metrics={},
+                equity_curve=None,
+                drawdown_curve=None,
+            )
+        )
         ArenaPipeline._persist_spike_events(db, candidate.id, candidate.symbol, oos_result)
         row = OOSRun(
             strategy_id=candidate.id,
@@ -371,6 +381,7 @@ class ArenaPipeline:
             "backtest_results": results.get("in_sample"),
             "validation_results": results.get("validation"),
             "oos_results": results.get("out_of_sample"),
+            "robustness_results": results.get("robustness"),
             "forward_results": [
                 {
                     "id": r.id,
