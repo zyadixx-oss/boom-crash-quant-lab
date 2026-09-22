@@ -7,11 +7,13 @@ from types import SimpleNamespace
 from app.config import Settings
 from app.main import app
 from app.services.arena.agents import AGENT_SPECS, generate_candidate_payloads
+from app.services.arena.evaluator import prepare_arena_frame
 from app.services.arena.leaderboard import calculate_composite
 from app.services.arena.qualification import qualification_gate
 from app.services.backtest import chronological_split
 from app.services.deriv_client import DerivClient
 from app.services.metrics import spike_detection_metrics, trading_metrics
+from app.services.spike import label_spikes
 from app.services.safety import reject_order_execution
 from app.symbol_profiles import get_profile, list_profiles
 
@@ -164,3 +166,31 @@ def test_arena_api_endpoints_and_backtest_path():
         assert "in_sample_results" in body
         assert "validation_results" in body
         assert "qualification" in body
+
+
+def test_spike_label_marks_arrival_not_future_start():
+    profile = SimpleNamespace(spike_window=2, spike_atr_multiple=2.0, pre_spike_window=3)
+    df = pd.DataFrame(
+        {
+            "close": [100.0, 100.0, 100.0, 100.2, 103.0, 103.1],
+            "atr": [1.0] * 6,
+        }
+    )
+    out = label_spikes(df, profile, "UP")
+    assert out.loc[2, "is_spike"] == False
+    assert out.loc[4, "is_spike"] == True
+    assert out.loc[3, "pre_spike"] == True
+
+
+def test_completed_mtf_context_does_not_use_incomplete_future_bucket():
+    profile = get_profile("BOOM500")
+    candles = pd.DataFrame(sample_candles(180, seed=123))
+    base = prepare_arena_frame(candles, profile, with_spikes=False)
+
+    changed = candles.copy()
+    changed.loc[155:159, ["open", "high", "low", "close"]] = changed.loc[155:159, ["open", "high", "low", "close"]] + 1000
+    altered = prepare_arena_frame(changed, profile, with_spikes=False)
+
+    # At index 154 (end of the previous completed M5 bucket), later bucket values must not leak backward.
+    assert base.loc[154, "m5_trend"] == altered.loc[154, "m5_trend"]
+    assert base.loc[154, "m15_trend"] == altered.loc[154, "m15_trend"]
