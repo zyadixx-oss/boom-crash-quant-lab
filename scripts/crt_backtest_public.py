@@ -28,17 +28,28 @@ def norm_name(s: str) -> str:
 
 
 async def connect():
-    endpoints = [
-        "wss://ws.derivws.com/websockets/v3?app_id=1089",
-        "wss://ws.binaryws.com/websockets/v3?app_id=1089",
+    # Try current/legacy public market-data hosts, with and without app_id.
+    # Some CDN edges treat cloud-runner handshakes differently depending on Origin.
+    attempts = [
+        ("wss://ws.derivws.com/websockets/v3", None),
+        ("wss://ws.binaryws.com/websockets/v3", None),
+        ("wss://ws.derivws.com/websockets/v3?app_id=1089", "https://app.deriv.com"),
+        ("wss://ws.binaryws.com/websockets/v3?app_id=1089", "https://app.deriv.com"),
+        ("wss://ws.derivws.com/websockets/v3?app_id=1089", "https://developers.deriv.com"),
+        ("wss://ws.binaryws.com/websockets/v3?app_id=1089", "https://developers.deriv.com"),
     ]
-    last = None
-    for ep in endpoints:
+    errors = []
+    for ep, origin in attempts:
         try:
-            return await websockets.connect(ep, ping_interval=20, ping_timeout=20, max_size=8_000_000)
+            print(f"Trying Deriv WS: {ep} origin={origin}", flush=True)
+            kwargs = dict(ping_interval=20, ping_timeout=20, max_size=8_000_000, open_timeout=12)
+            if origin:
+                kwargs["origin"] = origin
+            return await websockets.connect(ep, **kwargs)
         except Exception as e:
-            last = e
-    raise RuntimeError(f"Could not connect to Deriv WebSocket: {last}")
+            errors.append(f"{ep} origin={origin}: {type(e).__name__}: {e}")
+            print("  failed:", errors[-1], flush=True)
+    raise RuntimeError("Could not connect to Deriv WebSocket. " + " | ".join(errors))
 
 
 async def request(ws, payload):
