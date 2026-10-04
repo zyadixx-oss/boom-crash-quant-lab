@@ -1,5 +1,20 @@
 # boom-crash-quant-lab
 
+## Live Arabic CRT chart
+
+The `frontend` is now an Arabic, RTL standalone chart for all currently available Boom/Crash symbols. It uses the Deriv public WebSocket directly, without a trading account, API token or backend. Select M1/M5/M15/H1, inspect the closed H1 CRT range and closed M5 sweep/reclaim/confirmation observations, and review the frozen historical study. See `frontend/README.md` for precise rules and verification. All four trading flags remain false.
+
+```bash
+cd frontend
+npm ci
+npm test
+npm run typecheck
+npm run build
+npm run dev
+```
+
+Node.js 22.18+ is required. The existing Python backend remains available for research APIs and offline studies.
+
 ## Offline Spike Hunter study (2026-10-04)
 
 Frozen causal M5/H1 signals with real public Deriv M1 outcomes are implemented in
@@ -127,90 +142,13 @@ Then open:
 
 Docker Compose stores the local SQLite database in the named volume `backend_data`.
 
-## Frontend runtime configuration
+## Frontend deployment
 
-The UI now supports separate frontend and backend hosts.
+Build `frontend` with `npm ci && npm run build` and host `frontend/dist` on a static host. The current chart connects directly to the public Deriv endpoint and does not use `VITE_API_BASE_URL` or `VITE_WS_BASE_URL`. No backend CORS settings or account credentials are needed for the chart. A private Sites deployment is maintained separately from the offline Python research service.
 
-```env
-VITE_API_BASE_URL=https://your-backend.example.com
-VITE_WS_BASE_URL=wss://your-backend.example.com
-```
+## Optional backend deployment
 
-For local Vite development these variables are optional because the Vite dev proxy handles `/api` and `/ws`.
-
-## Recommended free preview deployment: Vercel + Render
-
-This is intended for a demo/research preview, not production trading infrastructure.
-
-### 1. Deploy the FastAPI backend on Render
-
-The repository contains `render.yaml`.
-
-1. Sign in to Render and connect GitHub.
-2. Create a new **Blueprint** and select this repository.
-3. Render reads `render.yaml` and creates `boom-crash-quant-lab-api` on the Free plan.
-4. When prompted for `FRONTEND_ORIGIN`, you may initially use `http://localhost:5173`; update it after Vercel gives you the production URL.
-5. Wait for `/health` to report healthy.
-6. Copy the backend URL, for example `https://boom-crash-quant-lab-api.onrender.com`.
-
-The start command is:
-
-```bash
-bash start.sh backend
-```
-
-### 2. Deploy the React/Vite frontend on Vercel
-
-1. Import the same GitHub repository into Vercel.
-2. Set **Root Directory** to `frontend`.
-3. Vercel will use `frontend/vercel.json`.
-4. Add production environment variables:
-
-```env
-VITE_API_BASE_URL=https://YOUR-RENDER-SERVICE.onrender.com
-VITE_WS_BASE_URL=wss://YOUR-RENDER-SERVICE.onrender.com
-```
-
-5. Deploy and copy the resulting Vercel URL.
-
-### 3. Finish CORS configuration on Render
-
-Set the Render environment variable to the exact Vercel site URL:
-
-```env
-FRONTEND_ORIGIN=https://YOUR-PROJECT.vercel.app
-```
-
-Multiple origins can be comma-separated, for example:
-
-```env
-FRONTEND_ORIGIN=http://localhost:5173,https://YOUR-PROJECT.vercel.app
-```
-
-Redeploy the backend after changing the variable.
-
-### 4. Verify
-
-Check these in order:
-
-```text
-https://YOUR-RENDER-SERVICE.onrender.com/health
-https://YOUR-RENDER-SERVICE.onrender.com/docs
-https://YOUR-PROJECT.vercel.app
-```
-
-The dashboard should load symbol profiles, historical candles when Deriv is reachable, and a direct WebSocket connection to the Render backend.
-
-## Free-hosting limitations
-
-- Render Free web services can sleep after inactivity, so the first request can be slow.
-- Render Free local files are ephemeral. The SQLite database can reset on restart/redeploy/spin-down. Use a persistent managed database for durable results.
-- Vercel Hobby is appropriate for a personal/non-commercial frontend preview and has usage limits.
-- This deployment does not change any trading-safety flags and does not enable real order execution.
-
-## Alternative backend deployment
-
-The root `Dockerfile` is portable to hosts that accept Docker images/repositories. Railway also auto-detects a root Dockerfile, but its pricing/free-credit model can change; Render is the documented zero-cost preview path for this repository.
+The root Dockerfile, `render.yaml` and `start.sh backend` retain the research API deployment path. Verify `/health` and `/docs` independently of the chart. Persistent research storage and the historical study are backend concerns; a working live chart does not prove predictive advantage or profitability.
 
 ## Verify current Deriv symbol IDs
 
