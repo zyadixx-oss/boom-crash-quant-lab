@@ -1,0 +1,195 @@
+{
+  "audit": "Read-only independent scalar replay of real M1 OHLC",
+  "symbols": [
+    {
+      "symbol": "BOOM500",
+      "status": "PASS",
+      "sha256": "121408c1614279a17ecfc52fa1441972a998769c2750876b5f49c4f56ba93a5b",
+      "real_m5_feature_samples": 1006,
+      "feature_boolean_checks": 8048,
+      "scalar_label_checks": 12072,
+      "complete_m5_ohlc_and_atr_checks": 51841,
+      "raw_crt_replay_all_signals": 734,
+      "sr_alignment_replay_all_signals": 2227,
+      "scalar_final_primary_opportunities": 15546,
+      "scalar_final_primary_positive_opportunities": 3455,
+      "all_primary_final_model_counts": [
+        {
+          "variant": "CRT",
+          "hits": 59,
+          "signals": 229
+        },
+        {
+          "variant": "CRT_MSS",
+          "hits": 22,
+          "signals": 110
+        },
+        {
+          "variant": "CRT_DISPLACEMENT",
+          "hits": 38,
+          "signals": 158
+        },
+        {
+          "variant": "CRT_MSS_DISPLACEMENT",
+          "hits": 21,
+          "signals": 97
+        },
+        {
+          "variant": "CRT_MSS_DISPLACEMENT_FVG",
+          "hits": 6,
+          "signals": 31
+        },
+        {
+          "variant": "ATR_COMPRESSION",
+          "hits": 301,
+          "signals": 1318
+        },
+        {
+          "variant": "BB_SQUEEZE",
+          "hits": 272,
+          "signals": 1141
+        },
+        {
+          "variant": "CANDLE_COMPRESSION",
+          "hits": 0,
+          "signals": 1
+        },
+        {
+          "variant": "CANDLE_STRUCTURE",
+          "hits": 98,
+          "signals": 452
+        },
+        {
+          "variant": "SR_ALIGNMENT",
+          "hits": 166,
+          "signals": 646
+        },
+        {
+          "variant": "ATR_BB_COMPRESSION",
+          "hits": 137,
+          "signals": 576
+        },
+        {
+          "variant": "CRT_ATR",
+          "hits": 12,
+          "signals": 49
+        },
+        {
+          "variant": "CRT_BB",
+          "hits": 32,
+          "signals": 125
+        },
+        {
+          "variant": "CRT_CANDLE_COMPRESSION",
+          "hits": 0,
+          "signals": 0
+        },
+        {
+          "variant": "CRT_CANDLE_STRUCTURE",
+          "hits": 11,
+          "signals": 30
+        },
+        {
+          "variant": "CRT_SR",
+          "hits": 6,
+          "signals": 14
+        }
+      ]
+    },
+    {
+      "symbol": "CRASH500",
+      "status": "PASS",
+      "sha256": "7b76f02daa66399ac3b2ba6c5f3a3a2381809f4e67ec280cf5145996329ad80e",
+      "real_m5_feature_samples": 1002,
+      "feature_boolean_checks": 8016,
+      "scalar_label_checks": 12024,
+      "complete_m5_ohlc_and_atr_checks": 51841,
+      "raw_crt_replay_all_signals": 711,
+      "sr_alignment_replay_all_signals": 2181,
+      "scalar_final_primary_opportunities": 15546,
+      "scalar_final_primary_positive_opportunities": 3360,
+      "all_primary_final_model_counts": [
+        {
+          "variant": "CRT",
+          "hits": 41,
+          "signals": 216
+        },
+        {
+          "variant": "CRT_MSS",
+          "hits": 15,
+          "signals": 88
+        },
+        {
+          "variant": "CRT_DISPLACEMENT",
+          "hits": 30,
+          "signals": 145
+        },
+        {
+          "variant": "CRT_MSS_DISPLACEMENT",
+          "hits": 15,
+          "signals": 81
+        },
+        {
+          "variant": "CRT_MSS_DISPLACEMENT_FVG",
+          "hits": 6,
+          "signals": 28
+        },
+        {
+          "variant": "ATR_COMPRESSION",
+          "hits": 302,
+          "signals": 1293
+        },
+        {
+          "variant": "BB_SQUEEZE",
+          "hits": 248,
+          "signals": 1156
+        },
+        {
+          "variant": "CANDLE_COMPRESSION",
+          "hits": 0,
+          "signals": 0
+        },
+        {
+          "variant": "CANDLE_STRUCTURE",
+          "hits": 92,
+          "signals": 492
+        },
+        {
+          "variant": "SR_ALIGNMENT",
+          "hits": 195,
+          "signals": 639
+        },
+        {
+          "variant": "ATR_BB_COMPRESSION",
+          "hits": 143,
+          "signals": 535
+        },
+        {
+          "variant": "CRT_ATR",
+          "hits": 7,
+          "signals": 43
+        },
+        {
+          "variant": "CRT_BB",
+          "hits": 22,
+          "signals": 110
+        },
+        {
+          "variant": "CRT_CANDLE_COMPRESSION",
+          "hits": 0,
+          "signals": 0
+        },
+        {
+          "variant": "CRT_CANDLE_STRUCTURE",
+          "hits": 4,
+          "signals": 22
+        },
+        {
+          "variant": "CRT_SR",
+          "hits": 2,
+          "signals": 18
+        }
+      ]
+    }
+  ]
+}

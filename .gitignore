@@ -10,5 +10,8 @@ dist/
 coverage/
 data/*.csv
 !data/.gitkeep
+data/spike_hunter/*.csv
+docs/spike_hunter_20261004/*_signals.csv
+docs/spike_hunter_20261004/results.json
 
 *.tsbuildinfo

@@ -1,5 +1,32 @@
 # boom-crash-quant-lab
 
+## Offline Spike Hunter study (2026-10-04)
+
+Frozen causal M5/H1 signals with real public Deriv M1 outcomes are implemented in
+`scripts/run_spike_hunter_study.py`. See `docs/SPIKE_HUNTER_PROTOCOL.md` and
+`docs/spike_hunter_20261004/REPORT.ar.md` for the actual 180-day BOOM500/CRASH500
+study, all 12 outcome definitions, 70/30 split, three development validation
+folds, block confidence intervals and limitations. This is excursion
+classification; profitability and forward shadow performance remain NOT TESTED.
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements-research-lock.txt
+LIVE_TRADING=false READY_FOR_LIVE=false LIVE_ALLOWED=false OPENED_TRADES=false \
+  .venv/bin/python scripts/collect_spike_history.py --days 180 \
+  --symbols BOOM500 CRASH500 --cutoff-epoch 1791112080 --output-dir data/recollect
+LIVE_TRADING=false READY_FOR_LIVE=false LIVE_ALLOWED=false OPENED_TRADES=false \
+  .venv/bin/python scripts/run_spike_hunter_study.py \
+  --dataset BOOM500=data/recollect/boom500_m1_180d_clean.csv \
+  --dataset CRASH500=data/recollect/crash500_m1_180d_clean.csv \
+  --output docs/reproduced-study --bootstrap 9999
+```
+
+The local deliverable includes the frozen source CSVs. GitHub contains code,
+manifests and metrics; source CSVs are ignored to keep the repository small.
+Historical server revisions can change recollected hashes. All four live flags
+must remain false; the collector uses only the public data channel.
+
 Research-grade MVP for Deriv Boom/Crash indices. The project is **analysis/backtesting/shadow-only**. It does not place live trades.
 
 ## Safety invariants

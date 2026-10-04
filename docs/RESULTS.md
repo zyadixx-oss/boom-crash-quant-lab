@@ -1,54 +1,35 @@
-# Results
+# Results — actual offline Spike Hunter study
 
-Status: **NOT TESTED on real Deriv historical/shadow data yet.**
+Executed 2026-10-04 using official public Deriv M1 candles. See
+[full Arabic report](spike_hunter_20261004/REPORT.ar.md),
+[frozen protocol](SPIKE_HUNTER_PROTOCOL.md), and
+[all metric rows](spike_hunter_20261004/metrics.csv).
 
-## Data period
-NOT TESTED
+- BOOM500 and CRASH500: 259,199 valid M1 candles each, 2026-04-07 11:08 UTC to
+  2026-10-04 11:08 UTC exclusive. One missing minute per symbol remains unfilled.
+- Sixteen causal variants, 12 excursion definitions: 1.5/2/3 M5 ATR in 5/10/15/30m.
+- Chronological 70/30, three expanding development validation windows, common
+  30-minute label purge, paired day-block confidence intervals and Holm correction.
+- Primary 2 ATR/15m BOOM500 raw CRT: 59/229 hits, precision25.76%, base22.22%,
+  lift1.159, day-block CI95[0.926,1.392]. No confirmed timing advantage.
+- Primary CRASH500 resistance alignment:195/639 hits, precision30.52%,
+  base21.61%, lift1.412, day-block CI95[1.268,1.551]. Strongest research candidate.
+- Post-hoc ATR matching: Crash resistance lift1.196 CI95[1.073,1.312];
+  Boom CRT lift1.076 CI95[0.857,1.293]. The diagnostics use the same historical
+  period and cannot serve as independent confirmation.
+- An independent199,999-resample check supports the raw Crash resistance result;
+  it does not test profitability or arrival of independently segmented tick spikes.
+- Python validation:46passed. Independent scalar replay matches prices, causal
+  features, signal timestamps,24,096labels, all384final comparisons and gates.
 
-## Number of ticks/candles
-NOT TESTED
+## Evidence boundary
 
-## Symbols tested
-No real Deriv dataset has been evaluated yet.
+These are future directional excursion labels, not trade returns. Opportunity
+recall is not unique-event recall. Cost-aware PnL, win rate, profit factor,
+expectancy, drawdown, fills, spread, slippage, independently defined tick-spike
+recall, and forward/shadow performance remain **NOT TESTED**. The older weighted
+backend strategy has not been evaluated by this isolated causal study. No
+parameter should be promoted to production/live based on these outputs.
 
-## Strategies tested
-Weighted pre-spike signal engine is implemented; real-data validation is pending.
-
-## Best strategy per Symbol
-NOT TESTED
-
-## Win Rate / Profit Factor / Expectancy / Max Drawdown
-NOT TESTED on real Deriv data. Synthetic smoke-test metrics must not be treated as evidence of an edge.
-
-## Out-of-Sample / Walk Forward
-Framework implemented. Real-data evaluation: NOT TESTED.
-
-## Shadow results
-NOT TESTED.
-
-## Known limitations
-- API symbol identifiers for newly introduced ranges should be resolved with `active_symbols` before collection.
-- Tick-derived microstructure features require persistent tick collection; candle-only CSVs cannot reproduce tick frequency exactly.
-- ICT concepts are deterministic heuristics here, not assumed alpha.
-- Current optimizer is a conservative grid-search baseline; Bayesian optimization is not yet implemented.
-
-## UNVERIFIED ASSUMPTIONS
-- Pre-spike volatility compression may carry predictive information for each Boom/Crash range.
-- The chosen mathematical spike definition is useful for all symbols after per-symbol calibration.
-- M5/M15 confirmation improves out-of-sample performance rather than reducing signal quality.
-
-## LIKELY FAILURE PATHS
-- No stable predictive edge exists before spikes.
-- Regime drift makes optimized parameters unstable.
-- Sparse extreme events create misleading small-sample metrics.
-- Tick/candle gaps or symbol mapping errors contaminate labels.
-- Feature engineering overfits historical synthetic-index behavior.
-
-## MINIMAL TEST THAT COULD FAIL THE PLAN
-Collect a sufficiently large, clean dataset for one symbol, freeze a simple parameter region using train/validation only, then run untouched out-of-sample and walk-forward tests. If expectancy is non-positive and precision does not beat simple baselines with stable confidence across windows, classify **NO RELIABLE EDGE FOUND** and stop adding complexity.
-
-## Implementation verification in this build
-- Python unit/integration/acceptance tests: executed locally in the build environment.
-- FastAPI `/health` and `/symbols`: executed locally.
-- Real Deriv WebSocket connectivity: **NOT TESTED in this build environment** because outbound DNS/network access was unavailable.
-- Frontend dependency install/build: **NOT TESTED** because npm registry access was unavailable in the build environment.
+`LIVE_TRADING=false`, `READY_FOR_LIVE=false`, `LIVE_ALLOWED=false`, and
+`OPENED_TRADES=false`. No accounts, credentials or order execution were used.

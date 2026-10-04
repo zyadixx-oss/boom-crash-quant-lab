@@ -1,0 +1,62 @@
+name: Offline Spike Hunter validation
+
+on:
+  push:
+    branches: [spike-hunter-validation-20261004]
+  workflow_dispatch:
+    inputs:
+      reproduce_history:
+        description: Recollect frozen public history and reproduce the full study
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+env:
+  LIVE_TRADING: "false"
+  READY_FOR_LIVE: "false"
+  LIVE_ALLOWED: "false"
+  OPENED_TRADES: "false"
+  OPENBLAS_NUM_THREADS: "1"
+  OMP_NUM_THREADS: "1"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-research-lock.txt
+      - run: python -m pytest
+      - run: python -m compileall -q backend/app/research scripts/collect_spike_history.py scripts/run_spike_hunter_study.py scripts/diagnose_spike_atr_matching.py scripts/verify_spike_inference.py
+
+  historical-study:
+    if: github.event_name == 'workflow_dispatch' && inputs.reproduce_history
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-research-lock.txt
+      - name: Collect public candles without account access
+        run: python scripts/collect_spike_history.py --days 180 --symbols BOOM500 CRASH500 --cutoff-epoch 1791112080 --output-dir data/recollect
+      - name: Run frozen offline protocol
+        run: |
+          python scripts/run_spike_hunter_study.py \
+            --dataset BOOM500=data/recollect/boom500_m1_180d_clean.csv \
+            --dataset CRASH500=data/recollect/crash500_m1_180d_clean.csv \
+            --output study-results --bootstrap 9999
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offline-spike-hunter-study
+          path: |
+            study-results/
+            data/recollect/*manifest.json
+          if-no-files-found: warn

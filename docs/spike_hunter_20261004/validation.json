@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "python_tests_passed": 46,
+  "syntax_check": "PASS",
+  "independent_scalar_check": "PASS",
+  "collector_tail_comparison_rows_per_symbol": 1440,
+  "source_hashes": {
+    "BOOM500": "121408c1614279a17ecfc52fa1441972a998769c2750876b5f49c4f56ba93a5b",
+    "CRASH500": "7b76f02daa66399ac3b2ba6c5f3a3a2381809f4e67ec280cf5145996329ad80e"
+  },
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}
