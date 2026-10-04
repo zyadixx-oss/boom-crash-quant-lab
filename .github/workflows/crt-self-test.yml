@@ -5,7 +5,7 @@ on:
     branches:
       - crt-self-test-20261004
     paths:
-      - ".github/workflows/crt-self-test.yml"
+      - ".github/workflows/crt-self-test.yml"\n      - "scripts/crt_self_test.py"
   workflow_dispatch:
 
 permissions:
