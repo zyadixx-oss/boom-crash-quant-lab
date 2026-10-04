@@ -23,7 +23,23 @@ async def request(ws, payload):
 async def fetch_m1(symbol, target=TARGET_MINUTES):
     rows = []
     end = "latest"
-    async with websockets.connect(WS_URL, ping_interval=20, ping_timeout=20, max_size=8_000_000) as ws:
+    ws = None
+    last_err = None
+    for url in WS_URLS:
+        try:
+            print(f"Trying {url}", flush=True)
+            ws = await websockets.connect(
+                url, ping_interval=20, ping_timeout=20,
+                max_size=8_000_000, open_timeout=20
+            )
+            print(f"Connected {url}", flush=True)
+            break
+        except Exception as e:
+            last_err = e
+            print(f"Connection failed {url}: {type(e).__name__}: {e}", flush=True)
+    if ws is None:
+        raise RuntimeError(f"All Deriv WebSocket endpoints failed: {last_err}")
+    try:
         while len(rows) < target:
             count = min(PAGE, target - len(rows))
             payload = {
@@ -39,22 +55,24 @@ async def fetch_m1(symbol, target=TARGET_MINUTES):
             if not candles:
                 break
             rows.extend(candles)
-            oldest = min(int(c["epoch"]) for c in candles)
+            oldest = min(int(x["epoch"]) for x in candles)
             end = oldest - 1
             if len(candles) < count:
                 break
-            await asyncio.sleep(0.25)
+            await asyncio.sleep(0.35)
+    finally:
+        await ws.close()
+
     df = pd.DataFrame(rows)
     if df.empty:
         raise RuntimeError(f"No candles returned for {symbol}")
-    for c in ["open","high","low","close"]:
-        df[c] = pd.to_numeric(df[c], errors="coerce")
+    for col in ["open","high","low","close"]:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
     df["epoch"] = pd.to_numeric(df["epoch"], errors="coerce").astype("int64")
     df = df.dropna().drop_duplicates("epoch").sort_values("epoch")
     df["time"] = pd.to_datetime(df["epoch"], unit="s", utc=True)
     df = df.set_index("time")[["open","high","low","close"]]
     return df
-
 def atr(df, n=14):
     prev = df["close"].shift(1)
     tr = pd.concat([
