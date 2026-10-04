@@ -3,6 +3,7 @@ from datetime import timezone
 import numpy as np
 import pandas as pd
 import websockets
+import urllib.request
 
 WS_URLS = [
     "wss://ws.binaryws.com/websockets/v3?app_id=1089",
@@ -25,51 +26,18 @@ async def request(ws, payload):
             return msg
 
 async def fetch_m1(symbol, target=TARGET_MINUTES):
-    rows = []
-    end = "latest"
-    ws = None
-    last_err = None
-    for url in WS_URLS:
-        try:
-            print(f"Trying {url}", flush=True)
-            ws = await websockets.connect(
-                url, ping_interval=20, ping_timeout=20,
-                max_size=8_000_000, open_timeout=20
-            )
-            print(f"Connected {url}", flush=True)
-            break
-        except Exception as e:
-            last_err = e
-            print(f"Connection failed {url}: {type(e).__name__}: {e}", flush=True)
-    if ws is None:
-        raise RuntimeError(f"All Deriv WebSocket endpoints failed: {last_err}")
-    try:
-        while len(rows) < target:
-            count = min(PAGE, target - len(rows))
-            payload = {
-                "ticks_history": symbol,
-                "style": "candles",
-                "granularity": 60,
-                "count": count,
-                "end": end,
-                "adjust_start_time": 1,
-            }
-            msg = await request(ws, payload)
-            candles = msg.get("candles", [])
-            if not candles:
-                break
-            rows.extend(candles)
-            oldest = min(int(x["epoch"]) for x in candles)
-            end = oldest - 1
-            if len(candles) < count:
-                break
-            await asyncio.sleep(0.35)
-    finally:
-        await ws.close()
-
+    # GitHub-hosted runners are rejected by Deriv's WebSocket edge (HTTP 520).
+    # Use the user's already-deployed read-only FastAPI proxy on Render.
+    url = f"https://boom-crash-quant-lab-api.onrender.com/market/history/{symbol}?count=5000&timeframe=M5"
+    print(f"HTTP fallback via deployed backend: {url}", flush=True)
+    def _get():
+        req = urllib.request.Request(url, headers={"User-Agent":"crt-research/1.0"})
+        with urllib.request.urlopen(req, timeout=150) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    rows = await asyncio.to_thread(_get)
+    if not isinstance(rows, list) or not rows:
+        raise RuntimeError(f"No candles returned for {symbol}; response={str(rows)[:300]}")
     df = pd.DataFrame(rows)
-    if df.empty:
-        raise RuntimeError(f"No candles returned for {symbol}")
     for col in ["open","high","low","close"]:
         df[col] = pd.to_numeric(df[col], errors="coerce")
     df["epoch"] = pd.to_numeric(df["epoch"], errors="coerce").astype("int64")
@@ -253,9 +221,9 @@ def summarize(rows, base):
 async def main():
     result={"experiment":{
         "name":"CRT core falsification test",
-        "data_source":"Deriv public WebSocket historical M1 candles",
-        "target_minutes_per_symbol":TARGET_MINUTES,
-        "primary_label":f"directional excursion >= {PRIMARY_ATR_MULT} x M1 ATR(14) within {HORIZON_MIN} minutes",
+        "data_source":"Deriv public M5 candles through the deployed read-only FastAPI proxy",
+        "target_bars_per_symbol":5000,
+        "primary_label":f"directional excursion >= {PRIMARY_ATR_MULT} x M5 ATR(14) within {HORIZON_MIN} minutes",
         "rules":{"range":"previous fully closed H1","sweep":"0.10-0.65 x M5 ATR14","reclaim":"0-2 M5 bars",
                  "MSS":"close breaks previous 5 M5 bars","displacement":"body >=1.30 x median body20","FVG":"3-candle gap"},
         "note":"Signal uses only data known by confirmation close; future prices are used only for outcome labeling."
