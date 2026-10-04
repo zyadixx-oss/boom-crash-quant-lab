@@ -1,0 +1,35 @@
+name: CRT Self Test
+
+on:
+  push:
+    branches:
+      - crt-self-test-20261004
+    paths:
+      - ".github/workflows/crt-self-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  crt-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install --disable-pip-version-check pandas numpy websockets
+      - name: Run CRT experiment
+        env:
+          CRT_TARGET_MINUTES: "30000"
+        run: python scripts/crt_self_test.py
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crt-results
+          path: crt_results.json
+          if-no-files-found: ignore
