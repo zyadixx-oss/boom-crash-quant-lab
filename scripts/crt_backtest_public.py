@@ -66,12 +66,27 @@ async def request(ws, payload):
 async def resolve_symbols(ws):
     data = await request(ws, {"active_symbols": "brief"})
     active = data.get("active_symbols", [])
-    by_name = {norm_name(x.get("display_name", "")): x.get("symbol") for x in active}
+    by_name = {}
+    for x in active:
+        name = x.get("underlying_symbol_name") or x.get("display_name") or ""
+        symbol = x.get("underlying_symbol") or x.get("symbol")
+        if name and symbol:
+            by_name[norm_name(name)] = symbol
     out = {}
     for display in SYMBOLS:
         key = norm_name(display)
         if key in by_name and by_name[key]:
             out[display] = by_name[key]
+    if not out:
+        sample = [
+            {
+                "name": x.get("underlying_symbol_name") or x.get("display_name"),
+                "symbol": x.get("underlying_symbol") or x.get("symbol"),
+            }
+            for x in active
+            if "boom" in str(x).lower() or "crash" in str(x).lower()
+        ][:30]
+        print("Boom/Crash active_symbols sample:", sample, flush=True)
     return out
 
 
