@@ -1,0 +1,106 @@
+{
+  "source": "Official Deriv public market-data WebSocket",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "source_data_only": true,
+  "authentication_used": false,
+  "synthetic_fills_used": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "collector_file": "scripts/collect_spike_history.py",
+  "collector_sha256": "b0b4ff7df6c86ca098e8cd8b001e8c7129e43f9ccfe66c3f45d5f27e3669f300",
+  "scope": "Older disjoint retrospective replication; not prospective validation",
+  "absolute_earliest_api_availability_determined": false,
+  "availability_confirmed_from_utc": "2025-10-09T11:08:00+00:00",
+  "symbols": {
+    "BOOM500": {
+      "old_normalized_file": "data/spike_hunter/boom500_m1_clean.csv",
+      "old_normalized_sha256": "121408c1614279a17ecfc52fa1441972a998769c2750876b5f49c4f56ba93a5b",
+      "new_normalized_file": "data/spike_payoff_external/boom500_m1_180d_clean.csv",
+      "new_normalized_sha256": "69b613c0c1bad10cfe5c6d89f48cf1cb169803bdc6c26bfbbd41da8a3032f4ec",
+      "new_raw_file": "data/spike_payoff_external/boom500_m1_180d.csv",
+      "new_raw_sha256": "69b613c0c1bad10cfe5c6d89f48cf1cb169803bdc6c26bfbbd41da8a3032f4ec",
+      "old_rows": 259199,
+      "new_rows": 259200,
+      "new_raw_rows": 259200,
+      "new_start_epoch": 1760008080,
+      "new_start_utc": "2025-10-09T11:08:00+00:00",
+      "new_cutoff_exclusive_epoch": 1775560080,
+      "new_cutoff_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "new_last_epoch": 1775560020,
+      "new_last_utc": "2026-04-07T11:07:00+00:00",
+      "old_first_epoch": 1775560080,
+      "old_first_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_rows": 0,
+      "boundary_missing_minutes": 0,
+      "old_gaps": [
+        {
+          "previous_epoch": 1785228540,
+          "next_epoch": 1785228660,
+          "previous_utc": "2026-07-28T08:49:00+00:00",
+          "next_utc": "2026-07-28T08:51:00+00:00",
+          "missing_bars": 1,
+          "missing_epochs": [
+            1785228600
+          ]
+        }
+      ],
+      "new_gaps": [],
+      "old_gap_count": 1,
+      "new_gap_count": 0,
+      "old_excluded_offgrid_count": 1,
+      "new_excluded_offgrid_count": 0,
+      "new_excluded_rows": [],
+      "equal_pagination_duplicates_removed": 0,
+      "pages": 260,
+      "request_errors": [],
+      "all_checks_passed": true
+    },
+    "CRASH500": {
+      "old_normalized_file": "data/spike_hunter/crash500_m1_clean.csv",
+      "old_normalized_sha256": "7b76f02daa66399ac3b2ba6c5f3a3a2381809f4e67ec280cf5145996329ad80e",
+      "new_normalized_file": "data/spike_payoff_external/crash500_m1_180d_clean.csv",
+      "new_normalized_sha256": "2430801c24fe2f945580f8605f964aedd847f6b0a5dc1d657be54178e7270719",
+      "new_raw_file": "data/spike_payoff_external/crash500_m1_180d.csv",
+      "new_raw_sha256": "2430801c24fe2f945580f8605f964aedd847f6b0a5dc1d657be54178e7270719",
+      "old_rows": 259199,
+      "new_rows": 259200,
+      "new_raw_rows": 259200,
+      "new_start_epoch": 1760008080,
+      "new_start_utc": "2025-10-09T11:08:00+00:00",
+      "new_cutoff_exclusive_epoch": 1775560080,
+      "new_cutoff_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "new_last_epoch": 1775560020,
+      "new_last_utc": "2026-04-07T11:07:00+00:00",
+      "old_first_epoch": 1775560080,
+      "old_first_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_rows": 0,
+      "boundary_missing_minutes": 0,
+      "old_gaps": [
+        {
+          "previous_epoch": 1785228540,
+          "next_epoch": 1785228660,
+          "previous_utc": "2026-07-28T08:49:00+00:00",
+          "next_utc": "2026-07-28T08:51:00+00:00",
+          "missing_bars": 1,
+          "missing_epochs": [
+            1785228600
+          ]
+        }
+      ],
+      "new_gaps": [],
+      "old_gap_count": 1,
+      "new_gap_count": 0,
+      "old_excluded_offgrid_count": 1,
+      "new_excluded_offgrid_count": 0,
+      "new_excluded_rows": [],
+      "equal_pagination_duplicates_removed": 0,
+      "pages": 260,
+      "request_errors": [],
+      "all_checks_passed": true
+    }
+  }
+}

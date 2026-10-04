@@ -22,12 +22,44 @@ Executed 2026-10-04 using official public Deriv M1 candles. See
 - Python validation:46passed. Independent scalar replay matches prices, causal
   features, signal timestamps,24,096labels, all384final comparisons and gates.
 
+## Executed quote-path payoff extension
+
+The locked [payoff study](spike_payoff_20261004/REPORT.ar.md) now tests normalized
+bracket returns. It does not replace the earlier excursion results.
+
+- 432 configurations per symbol; first70% development, three expanding
+  walk-forward selections, final30% explicitly labelled reused/exploratory.
+- Additional external period:2025-10-09 11:08 UTC to2026-04-07 11:08 UTC
+  exclusive;259,200 genuine M1 candles per symbol, no gaps or overlap.
+- No configuration satisfied all development eligibility rules. Diagnostic
+  fallbacks remain rejected, regardless of later results.
+- External fixed support/resistance model: BOOM500 n=2,216, mean netR=-0.317,
+  CI95[-0.371,-0.263], PF0.587; CRASH500 n=2,259, mean netR=-0.304,
+  CI95[-0.356,-0.250], PF0.603.
+- Crash diagnostic CRT+MSS fallback: n=341, mean netR=-0.105,
+  CI95[-0.172,-0.034], PF0.673. Boom compression fallback has only one external
+  trade and provides no useful population estimate.
+- All six independently selected walk-forward validation folds lost on average.
+  All four external gates failed. Tested zero-cost and more favorable execution
+  sensitivities did not reverse the locked configurations' negative averages.
+- The primary model assumes entry one minute after signal,0.10ATR hypothetical
+  total cost, stop-first ambiguity, and adverse minute-extreme stop fills.
+  See [interpretation](spike_payoff_20261004/README.md) before using any metric.
+- Full Python validation now:121passed. Original frontend code was unchanged
+  by this research extension.
+- Independent standard-library scalar reconstruction matched all4,817 external
+  ledger trades, including causal ATR, execution path and summary arithmetic:
+  91,733 checks, zero mismatches. Baseline, bootstrap and sensitivity replay are
+  outside that independent ledger audit's scope.
+
 ## Evidence boundary
 
-These are future directional excursion labels, not trade returns. Opportunity
-recall is not unique-event recall. Cost-aware PnL, win rate, profit factor,
-expectancy, drawdown, fills, spread, slippage, independently defined tick-spike
-recall, and forward/shadow performance remain **NOT TESTED**. The older weighted
+The first study uses future directional excursion labels; opportunity recall
+is not unique-event recall. The extension tests quote-path R, win rate, profit
+factor, expectancy and a closed-trade risk illustration under declared assumptions.
+Monetary net profit, actual fills, measured historical spread/slippage,
+independently defined tick-spike recall, and forward/shadow performance remain
+**NOT TESTED**. The older weighted
 backend strategy has not been evaluated by this isolated causal study. No
 parameter should be promoted to production/live based on these outputs.
 

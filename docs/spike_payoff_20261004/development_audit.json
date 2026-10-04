@@ -1,0 +1,513 @@
+{
+  "scope": "Independent descriptive audit of already completed development grid and frozen selection only. No external evaluation or tuning.",
+  "selection_sha256": "55db657f563dec816c209efc7e340064185345a30a6a8371af1d7514cb04d9ca",
+  "definitions": {
+    "adequate_sample": "completed >=300 and active_days >=30",
+    "eligible_development": "adequate_sample and zero censored and each wf1/wf2/wf3 >=30 completed, positive mean net R, zero censored",
+    "ranking": "mean net R -1.96 * UTC-day clustered standard error; ties by candidate id",
+    "counts": "Configurations, not independent strategies or events; 27 brackets per signal model."
+  },
+  "symbols": {
+    "BOOM500": {
+      "counts": {
+        "configurations": 432,
+        "finite_score": 405,
+        "positive_mean_net_R": 6,
+        "positive_selection_score": 6,
+        "adequate_sample": 189,
+        "adequate_sample_zero_censored": 189,
+        "adequate_sample_positive_mean": 0,
+        "adequate_sample_zero_censored_positive_mean": 0,
+        "three_positive_fold_means": 0,
+        "three_positive_fold_means_each_min30": 0,
+        "fully_development_eligible": 0
+      },
+      "top3_adequate_zero_censored_by_predeclared_score": [
+        {
+          "candidate": "BB_SQUEEZE__sl1.5_tp3_h5",
+          "completed": 2657,
+          "active_days": 127,
+          "censored": 0,
+          "mean_net_R": -0.068430163079045,
+          "cluster_se": 0.013226712764129,
+          "selection_score": -0.094354520096739,
+          "profit_factor": 0.782194185099054
+        },
+        {
+          "candidate": "CRT_DISPLACEMENT__sl1.5_tp3_h5",
+          "completed": 345,
+          "active_days": 117,
+          "censored": 0,
+          "mean_net_R": -0.016429431261929,
+          "cluster_se": 0.039850436623947,
+          "selection_score": -0.094536287044866,
+          "profit_factor": 0.946010806850226
+        },
+        {
+          "candidate": "SR_ALIGNMENT__sl1.5_tp3_h5",
+          "completed": 1580,
+          "active_days": 126,
+          "censored": 0,
+          "mean_net_R": -0.058034063939167,
+          "cluster_se": 0.018983798476357,
+          "selection_score": -0.095242308952828,
+          "profit_factor": 0.830131712130277
+        }
+      ],
+      "per_variant_exposure": [
+        {
+          "variant": "ATR_BB_COMPRESSION",
+          "completed_min": 1268,
+          "completed_max": 1268,
+          "active_days_min": 126,
+          "active_days_max": 126,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "ATR_COMPRESSION",
+          "completed_min": 3021,
+          "completed_max": 3021,
+          "active_days_min": 127,
+          "active_days_max": 127,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "BB_SQUEEZE",
+          "completed_min": 2657,
+          "completed_max": 2657,
+          "active_days_min": 127,
+          "active_days_max": 127,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CANDLE_COMPRESSION",
+          "completed_min": 1,
+          "completed_max": 1,
+          "active_days_min": 1,
+          "active_days_max": 1,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CANDLE_STRUCTURE",
+          "completed_min": 1089,
+          "completed_max": 1089,
+          "active_days_min": 127,
+          "active_days_max": 127,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT",
+          "completed_min": 504,
+          "completed_max": 504,
+          "active_days_min": 124,
+          "active_days_max": 124,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_ATR",
+          "completed_min": 103,
+          "completed_max": 103,
+          "active_days_min": 75,
+          "active_days_max": 75,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_BB",
+          "completed_min": 252,
+          "completed_max": 252,
+          "active_days_min": 111,
+          "active_days_max": 111,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_CANDLE_COMPRESSION",
+          "completed_min": 0,
+          "completed_max": 0,
+          "active_days_min": 0,
+          "active_days_max": 0,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_CANDLE_STRUCTURE",
+          "completed_min": 57,
+          "completed_max": 57,
+          "active_days_min": 45,
+          "active_days_max": 45,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_DISPLACEMENT",
+          "completed_min": 345,
+          "completed_max": 345,
+          "active_days_min": 117,
+          "active_days_max": 117,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_MSS",
+          "completed_min": 232,
+          "completed_max": 232,
+          "active_days_min": 104,
+          "active_days_max": 104,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_MSS_DISPLACEMENT",
+          "completed_min": 215,
+          "completed_max": 215,
+          "active_days_min": 104,
+          "active_days_max": 104,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_MSS_DISPLACEMENT_FVG",
+          "completed_min": 92,
+          "completed_max": 92,
+          "active_days_min": 68,
+          "active_days_max": 68,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_SR",
+          "completed_min": 43,
+          "completed_max": 43,
+          "active_days_min": 37,
+          "active_days_max": 37,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "SR_ALIGNMENT",
+          "completed_min": 1580,
+          "completed_max": 1580,
+          "active_days_min": 126,
+          "active_days_max": 126,
+          "censored_min": 0,
+          "censored_max": 0
+        }
+      ],
+      "frozen_diagnostic_fallback": {
+        "id": "CANDLE_COMPRESSION__sl1.5_tp2_h30",
+        "development_eligible": false,
+        "completed": 1,
+        "active_days": 1,
+        "mean_net_R": 0.7057921372951294,
+        "selection_score": 0.7057921372951294
+      },
+      "three_positive_folds_detail": []
+    },
+    "CRASH500": {
+      "counts": {
+        "configurations": 432,
+        "finite_score": 405,
+        "positive_mean_net_R": 12,
+        "positive_selection_score": 0,
+        "adequate_sample": 189,
+        "adequate_sample_zero_censored": 162,
+        "adequate_sample_positive_mean": 2,
+        "adequate_sample_zero_censored_positive_mean": 2,
+        "three_positive_fold_means": 8,
+        "three_positive_fold_means_each_min30": 0,
+        "fully_development_eligible": 0
+      },
+      "top3_adequate_zero_censored_by_predeclared_score": [
+        {
+          "candidate": "CRT_DISPLACEMENT__sl1.5_tp3_h5",
+          "completed": 346,
+          "active_days": 116,
+          "censored": 0,
+          "mean_net_R": 0.018782542339364,
+          "cluster_se": 0.041942901409677,
+          "selection_score": -0.063425544423604,
+          "profit_factor": 1.062578350358576
+        },
+        {
+          "candidate": "CRT_DISPLACEMENT__sl1_tp3_h5",
+          "completed": 346,
+          "active_days": 116,
+          "censored": 0,
+          "mean_net_R": 0.028173813509045,
+          "cluster_se": 0.062914352114516,
+          "selection_score": -0.095138316635406,
+          "profit_factor": 1.062578350358576
+        },
+        {
+          "candidate": "CRT_DISPLACEMENT__sl1.5_tp2_h5",
+          "completed": 346,
+          "active_days": 116,
+          "censored": 0,
+          "mean_net_R": -0.025520298876126,
+          "cluster_se": 0.036656638343847,
+          "selection_score": -0.097367310030066,
+          "profit_factor": 0.914973267437878
+        }
+      ],
+      "per_variant_exposure": [
+        {
+          "variant": "ATR_BB_COMPRESSION",
+          "completed_min": 1250,
+          "completed_max": 1250,
+          "active_days_min": 127,
+          "active_days_max": 127,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "ATR_COMPRESSION",
+          "completed_min": 3004,
+          "completed_max": 3004,
+          "active_days_min": 127,
+          "active_days_max": 127,
+          "censored_min": 1,
+          "censored_max": 1
+        },
+        {
+          "variant": "BB_SQUEEZE",
+          "completed_min": 2660,
+          "completed_max": 2660,
+          "active_days_min": 127,
+          "active_days_max": 127,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CANDLE_COMPRESSION",
+          "completed_min": 1,
+          "completed_max": 1,
+          "active_days_min": 1,
+          "active_days_max": 1,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CANDLE_STRUCTURE",
+          "completed_min": 1041,
+          "completed_max": 1041,
+          "active_days_min": 127,
+          "active_days_max": 127,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT",
+          "completed_min": 494,
+          "completed_max": 494,
+          "active_days_min": 125,
+          "active_days_max": 125,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_ATR",
+          "completed_min": 97,
+          "completed_max": 97,
+          "active_days_min": 68,
+          "active_days_max": 68,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_BB",
+          "completed_min": 256,
+          "completed_max": 256,
+          "active_days_min": 111,
+          "active_days_max": 111,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_CANDLE_COMPRESSION",
+          "completed_min": 0,
+          "completed_max": 0,
+          "active_days_min": 0,
+          "active_days_max": 0,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_CANDLE_STRUCTURE",
+          "completed_min": 38,
+          "completed_max": 38,
+          "active_days_min": 33,
+          "active_days_max": 33,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_DISPLACEMENT",
+          "completed_min": 346,
+          "completed_max": 346,
+          "active_days_min": 116,
+          "active_days_max": 116,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_MSS",
+          "completed_min": 218,
+          "completed_max": 218,
+          "active_days_min": 101,
+          "active_days_max": 101,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_MSS_DISPLACEMENT",
+          "completed_min": 195,
+          "completed_max": 195,
+          "active_days_min": 97,
+          "active_days_max": 97,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_MSS_DISPLACEMENT_FVG",
+          "completed_min": 84,
+          "completed_max": 84,
+          "active_days_min": 57,
+          "active_days_max": 57,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "CRT_SR",
+          "completed_min": 36,
+          "completed_max": 36,
+          "active_days_min": 31,
+          "active_days_max": 31,
+          "censored_min": 0,
+          "censored_max": 0
+        },
+        {
+          "variant": "SR_ALIGNMENT",
+          "completed_min": 1542,
+          "completed_max": 1542,
+          "active_days_min": 127,
+          "active_days_max": 127,
+          "censored_min": 0,
+          "censored_max": 0
+        }
+      ],
+      "frozen_diagnostic_fallback": {
+        "id": "CRT_MSS__sl1.5_tp3_h5",
+        "development_eligible": false,
+        "completed": 218,
+        "active_days": 101,
+        "mean_net_R": 0.03494272431904343,
+        "selection_score": -0.0630723031580317
+      },
+      "three_positive_folds_detail": [
+        {
+          "('candidate', '')": "CRT_CANDLE_STRUCTURE__sl1.5_tp2_h15",
+          "('completed', 'wf1')": 4.0,
+          "('completed', 'wf2')": 8.0,
+          "('completed', 'wf3')": 5.0,
+          "('mean_net_R', 'wf1')": 0.0619135429,
+          "('mean_net_R', 'wf2')": 0.5136432858,
+          "('mean_net_R', 'wf3')": 0.0572440123,
+          "('censored', 'wf1')": 0.0,
+          "('censored', 'wf2')": 0.0,
+          "('censored', 'wf3')": 0.0
+        },
+        {
+          "('candidate', '')": "CRT_CANDLE_STRUCTURE__sl1.5_tp3_h15",
+          "('completed', 'wf1')": 4.0,
+          "('completed', 'wf2')": 8.0,
+          "('completed', 'wf3')": 5.0,
+          "('mean_net_R', 'wf1')": 0.0713438657,
+          "('mean_net_R', 'wf2')": 0.6698254024,
+          "('mean_net_R', 'wf3')": 0.1905773456,
+          "('censored', 'wf1')": 0.0,
+          "('censored', 'wf2')": 0.0,
+          "('censored', 'wf3')": 0.0
+        },
+        {
+          "('candidate', '')": "CRT_CANDLE_STRUCTURE__sl1_tp3_h15",
+          "('completed', 'wf1')": 4.0,
+          "('completed', 'wf2')": 8.0,
+          "('completed', 'wf3')": 5.0,
+          "('mean_net_R', 'wf1')": 0.2080556704,
+          "('mean_net_R', 'wf2')": 0.5173905298,
+          "('mean_net_R', 'wf3')": 0.062724529,
+          "('censored', 'wf1')": 0.0,
+          "('censored', 'wf2')": 0.0,
+          "('censored', 'wf3')": 0.0
+        },
+        {
+          "('candidate', '')": "CRT_SR__sl1.5_tp1_h15",
+          "('completed', 'wf1')": 4.0,
+          "('completed', 'wf2')": 5.0,
+          "('completed', 'wf3')": 7.0,
+          "('mean_net_R', 'wf1')": 0.3151303639,
+          "('mean_net_R', 'wf2')": 0.2664100059,
+          "('mean_net_R', 'wf3')": 0.3531050368,
+          "('censored', 'wf1')": 0.0,
+          "('censored', 'wf2')": 0.0,
+          "('censored', 'wf3')": 0.0
+        },
+        {
+          "('candidate', '')": "CRT_SR__sl1.5_tp1_h30",
+          "('completed', 'wf1')": 4.0,
+          "('completed', 'wf2')": 5.0,
+          "('completed', 'wf3')": 7.0,
+          "('mean_net_R', 'wf1')": 0.6,
+          "('mean_net_R', 'wf2')": 0.2664100059,
+          "('mean_net_R', 'wf3')": 0.3531050368,
+          "('censored', 'wf1')": 0.0,
+          "('censored', 'wf2')": 0.0,
+          "('censored', 'wf3')": 0.0
+        },
+        {
+          "('candidate', '')": "CRT_SR__sl1.5_tp2_h15",
+          "('completed', 'wf1')": 4.0,
+          "('completed', 'wf2')": 5.0,
+          "('completed', 'wf3')": 7.0,
+          "('mean_net_R', 'wf1')": 0.276400027,
+          "('mean_net_R', 'wf2')": 0.1559031143,
+          "('mean_net_R', 'wf3')": 0.4899817272,
+          "('censored', 'wf1')": 0.0,
+          "('censored', 'wf2')": 0.0,
+          "('censored', 'wf3')": 0.0
+        },
+        {
+          "('candidate', '')": "CRT_SR__sl1.5_tp2_h30",
+          "('completed', 'wf1')": 4.0,
+          "('completed', 'wf2')": 5.0,
+          "('completed', 'wf3')": 7.0,
+          "('mean_net_R', 'wf1')": 0.8669924478,
+          "('mean_net_R', 'wf2')": 0.331606868,
+          "('mean_net_R', 'wf3')": 0.009748005,
+          "('censored', 'wf1')": 0.0,
+          "('censored', 'wf2')": 0.0,
+          "('censored', 'wf3')": 0.0
+        },
+        {
+          "('candidate', '')": "CRT_SR__sl1.5_tp3_h30",
+          "('completed', 'wf1')": 4.0,
+          "('completed', 'wf2')": 5.0,
+          "('completed', 'wf3')": 7.0,
+          "('mean_net_R', 'wf1')": 0.6826641908,
+          "('mean_net_R', 'wf2')": 0.2781150532,
+          "('mean_net_R', 'wf3')": 0.2954622907,
+          "('censored', 'wf1')": 0.0,
+          "('censored', 'wf2')": 0.0,
+          "('censored', 'wf3')": 0.0
+        }
+      ]
+    }
+  }
+}

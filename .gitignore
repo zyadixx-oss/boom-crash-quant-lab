@@ -15,3 +15,8 @@ docs/spike_hunter_20261004/*_signals.csv
 docs/spike_hunter_20261004/results.json
 
 *.tsbuildinfo
+data/spike_payoff_external/*.csv
+data/spike_payoff_external/*.log
+data/spike_payoff_external_acquisition.log
+docs/spike_payoff_20261004/*_trades.csv
+docs/spike_payoff_20261004/*_development_grid.json

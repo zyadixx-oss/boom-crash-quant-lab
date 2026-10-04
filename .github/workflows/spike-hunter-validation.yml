@@ -50,7 +50,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements-research-lock.txt
       - run: python -m pytest
-      - run: python -m compileall -q backend/app/research scripts/collect_spike_history.py scripts/run_spike_hunter_study.py scripts/diagnose_spike_atr_matching.py scripts/verify_spike_inference.py
+      - run: python -m compileall -q backend/app/research scripts/collect_spike_history.py scripts/run_spike_hunter_study.py scripts/diagnose_spike_atr_matching.py scripts/verify_spike_inference.py scripts/run_spike_payoff_study.py scripts/verify_spike_payoff.py scripts/diagnose_spike_target_order.py
 
   historical-study:
     if: github.event_name == 'workflow_dispatch' && inputs.reproduce_history

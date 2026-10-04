@@ -220,3 +220,17 @@ PYTHONPATH=backend pytest -q backend/tests tests
 ## Scientific interpretation
 
 Signal scores are weighted rule scores, **not probabilities**. No profitability claim is valid until supported by real out-of-sample and shadow observations. See `docs/RESULTS.md`.
+
+## Executed payoff study
+
+The October 2026 extension tested 432 bracket/model configurations per symbol
+on development data, froze selection, and evaluated BOOM500/CRASH500 on an
+additional preceding 180-day sample. No configuration passed the development
+eligibility requirements; all locked external research gates failed. The earlier
+Crash resistance excursion lift did not establish profitable bracket returns.
+
+See the [Arabic payoff report](docs/spike_payoff_20261004/REPORT.ar.md),
+[interpretation and reproduction](docs/spike_payoff_20261004/README.md), and
+[frozen protocol](docs/SPIKE_PAYOFF_PROTOCOL.md). These are public quote-path
+simulations after hypothetical costs. Actual fills, monetary net profit and
+forward performance remain **NOT TESTED**. All four trading flags stay false.
