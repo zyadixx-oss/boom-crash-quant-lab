@@ -1,0 +1,40 @@
+name: CRT public-data backtest
+
+on:
+  push:
+    branches:
+      - crt-backtest-20261004
+    paths:
+      - "scripts/crt_backtest_public.py"
+      - ".github/workflows/crt-public-backtest.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install research dependencies
+        run: python -m pip install --disable-pip-version-check pandas numpy websockets
+      - name: Run CRT backtest against public Deriv market data
+        run: python scripts/crt_backtest_public.py
+      - name: Print summary
+        if: always()
+        run: |
+          test -f crt_backtest_summary.md && cat crt_backtest_summary.md || true
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crt-backtest-results
+          path: |
+            crt_backtest_results.json
+            crt_backtest_summary.md
+          if-no-files-found: warn
