@@ -16,7 +16,7 @@ SYMBOLS = [
     "Crash 300 Index", "Crash 500 Index", "Crash 600 Index", "Crash 900 Index", "Crash 1000 Index",
 ]
 GRANULARITY = 300  # M5
-BATCHES = 3        # up to 15k M5 candles ~= 52 days
+BATCHES = 20       # new API returns ~1000/request; target ~20k M5 candles ~= 69 days
 BATCH_SIZE = 5000
 HORIZON = 24       # 2 hours after entry
 SPIKE_HORIZON = 12 # 1 hour for favorable excursion test
