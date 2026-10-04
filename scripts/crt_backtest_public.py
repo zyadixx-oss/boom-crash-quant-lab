@@ -31,6 +31,7 @@ async def connect():
     # Try current/legacy public market-data hosts, with and without app_id.
     # Some CDN edges treat cloud-runner handshakes differently depending on Origin.
     attempts = [
+        ("wss://api.derivws.com/trading/v1/options/ws/public", None),
         ("wss://ws.derivws.com/websockets/v3", None),
         ("wss://ws.binaryws.com/websockets/v3", None),
         ("wss://ws.derivws.com/websockets/v3?app_id=1089", "https://app.deriv.com"),
