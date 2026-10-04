@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import websockets
 
-WS_URL = "wss://ws.derivws.com/websockets/v3?app_id=1089"
+WS_URLS = [\n    "wss://ws.binaryws.com/websockets/v3?app_id=1089",\n    "wss://ws.derivws.com/websockets/v3?app_id=1089",\n    "wss://ws.deriv.com/websockets/v3?app_id=1089",\n]
 SYMBOLS = {"BOOM1000": "boom", "CRASH1000": "crash"}
 TARGET_MINUTES = int(os.getenv("CRT_TARGET_MINUTES", "30000"))
 PAGE = 5000
