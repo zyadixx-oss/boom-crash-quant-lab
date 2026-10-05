@@ -1,0 +1,140 @@
+{
+  "purpose": "Read-only retention-boundary source audit; full returned response preserved, no outcome inspection.",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "symbols": {
+    "BOOM500": {
+      "request": {
+        "ticks_history": "BOOM500",
+        "count": 5,
+        "end": 1759637845,
+        "style": "candles",
+        "granularity": 60,
+        "req_id": 1
+      },
+      "response": {
+        "candles": [
+          {
+            "close": 5603.457,
+            "epoch": 1791173700,
+            "high": 5604.011,
+            "low": 5603.457,
+            "open": 5604.011
+          },
+          {
+            "close": 5602.706,
+            "epoch": 1791173760,
+            "high": 5603.452,
+            "low": 5602.706,
+            "open": 5603.452
+          },
+          {
+            "close": 5602.125,
+            "epoch": 1791173820,
+            "high": 5602.699,
+            "low": 5602.125,
+            "open": 5602.699
+          },
+          {
+            "close": 5601.51,
+            "epoch": 1791173880,
+            "high": 5602.11,
+            "low": 5601.51,
+            "open": 5602.11
+          },
+          {
+            "close": 5601.475,
+            "epoch": 1791173940,
+            "high": 5601.502,
+            "low": 5601.475,
+            "open": 5601.502
+          }
+        ],
+        "echo_req": {
+          "count": 5,
+          "end": 1759637845,
+          "granularity": 60,
+          "req_id": 1,
+          "style": "candles",
+          "ticks_history": "BOOM500"
+        },
+        "msg_type": "candles",
+        "pip_size": 3,
+        "req_id": 1
+      },
+      "returned_min_epoch": 1791173700,
+      "returned_max_epoch": 1791173940,
+      "all_returned_after_requested_end": true,
+      "accepted_into_external_dataset": false
+    },
+    "CRASH500": {
+      "request": {
+        "ticks_history": "CRASH500",
+        "count": 5,
+        "end": 1759637845,
+        "style": "candles",
+        "granularity": 60,
+        "req_id": 2
+      },
+      "response": {
+        "candles": [
+          {
+            "close": 2983.057,
+            "epoch": 1791173700,
+            "high": 2983.057,
+            "low": 2982.745,
+            "open": 2982.745
+          },
+          {
+            "close": 2983.418,
+            "epoch": 1791173760,
+            "high": 2983.418,
+            "low": 2983.059,
+            "open": 2983.059
+          },
+          {
+            "close": 2983.743,
+            "epoch": 1791173820,
+            "high": 2983.743,
+            "low": 2983.421,
+            "open": 2983.421
+          },
+          {
+            "close": 2984.11,
+            "epoch": 1791173880,
+            "high": 2984.11,
+            "low": 2983.751,
+            "open": 2983.751
+          },
+          {
+            "close": 2984.147,
+            "epoch": 1791173940,
+            "high": 2984.147,
+            "low": 2984.118,
+            "open": 2984.118
+          }
+        ],
+        "echo_req": {
+          "count": 5,
+          "end": 1759637845,
+          "granularity": 60,
+          "req_id": 2,
+          "style": "candles",
+          "ticks_history": "CRASH500"
+        },
+        "msg_type": "candles",
+        "pip_size": 3,
+        "req_id": 2
+      },
+      "returned_min_epoch": 1791173700,
+      "returned_max_epoch": 1791173940,
+      "all_returned_after_requested_end": true,
+      "accepted_into_external_dataset": false
+    }
+  }
+}

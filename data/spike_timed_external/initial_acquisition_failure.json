@@ -1,0 +1,29 @@
+{
+  "config": {
+    "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+    "days": 180,
+    "symbols": [
+      "BOOM500",
+      "CRASH500"
+    ],
+    "requested_start_epoch": 1744456080,
+    "cutoff_exclusive_epoch": 1760008080,
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    }
+  },
+  "successful_symbols": [],
+  "errors": [
+    {
+      "symbol": "BOOM500",
+      "error": "RuntimeError: Pagination did not move backward"
+    },
+    {
+      "symbol": "CRASH500",
+      "error": "RuntimeError: Pagination did not move backward"
+    }
+  ]
+}

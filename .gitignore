@@ -20,3 +20,8 @@ data/spike_payoff_external/*.log
 data/spike_payoff_external_acquisition.log
 docs/spike_payoff_20261004/*_trades.csv
 docs/spike_payoff_20261004/*_development_grid.json
+data/spike_timed_external/*.csv
+data/spike_timed_transfer/*.csv
+data/spike_timed_*acquisition.log
+docs/spike_timed_20261005/*_trades.csv
+docs/spike_timed_20261005/*_development_grid.json

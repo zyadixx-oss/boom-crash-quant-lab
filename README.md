@@ -234,3 +234,11 @@ See the [Arabic payoff report](docs/spike_payoff_20261004/REPORT.ar.md),
 [frozen protocol](docs/SPIKE_PAYOFF_PROTOCOL.md). These are public quote-path
 simulations after hypothetical costs. Actual fills, monetary net profit and
 forward performance remain **NOT TESTED**. All four trading flags stay false.
+
+The [second round](docs/spike_timed_20261005/REPORT.ar.md) removes the profit cap
+and tests 384 stop/time/direction/model configurations per500 symbol. No final
+development candidate qualifies. Frozen500 rules transferred to1000 also fail:
+primary CRT meanR=-0.103 (Boom1000,n505) and-0.102 (Crash1000,n484). This is
+adaptive cross-symbol historical research, not forward validation. See its
+[protocol](docs/SPIKE_TIMED_PROTOCOL.md) and
+[reproduction/interpretation](docs/spike_timed_20261005/README.md).

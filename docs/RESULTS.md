@@ -54,6 +54,29 @@ bracket returns. It does not replace the earlier excursion results.
 
 ## Evidence boundary
 
+The subsequent [uncapped time-exit round](spike_timed_20261005/REPORT.ar.md)
+tested384 configurations per500 symbol without a take-profit cap, in both
+spike and opposite direction. No final development selection qualified, and
+all six expanding validation folds lost on average. The primary spike-direction
+CRT with SL2ATR/time15m transferred unchanged to Boom1000/Crash1000:
+
+| Transfer symbol | n | Mean netR | Day-block CI95 | PF |
+|---|---:|---:|---|---:|
+| BOOM1000 | 505 | -0.103 | [-0.206,0.006] | 0.807 |
+| CRASH1000 | 484 | -0.102 | [-0.212,0.009] | 0.812 |
+
+All four within-round transfer gates failed. The rejected diagnostic
+Boom BB-squeeze fallback has a tiny positive gross0.003738R at zero cost but
+negative-0.002512R already at hypothetical0.025ATR; its cost-free interval
+crosses zero. It does not establish an execution-cost-aware advantage.
+
+This round is adaptive cross-symbol replication, not fresh temporal/forward
+confirmation or a project-wide multiple-testing guarantee. The requested
+older500 history was only4.28days available and was not used as a sufficiently
+powered external test. Authentic1000 transfer history has259,200 M1 rows per
+symbol and no gaps. Independent scalar replay verifies all5,191 transfer
+trades in98,852 checks with zero mismatches. Full Python tests:184passed.
+
 The first study uses future directional excursion labels; opportunity recall
 is not unique-event recall. The extension tests quote-path R, win rate, profit
 factor, expectancy and a closed-trade risk illustration under declared assumptions.

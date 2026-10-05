@@ -1,0 +1,11 @@
+{
+  "base_source": "scripts/collect_spike_history.py",
+  "base_source_sha256": "b0b4ff7df6c86ca098e8cd8b001e8c7129e43f9ccfe66c3f45d5f27e3669f300",
+  "collector_used": "data/spike_timed_external/collector_partial.py",
+  "collector_used_sha256": "97d7d591ade69785fdb97f01e33673e77b94b6ac123edaae88bb705233c5fa92",
+  "changes": [
+    "Resolve backend path from this provenance subdirectory.",
+    "On non-backward page, record request/returned interval/response hash and stop collection while preserving previously accepted authentic rows. Do not accept out-of-range candles."
+  ],
+  "outcome_inspection": false
+}
