@@ -1,0 +1,47 @@
+{
+  "symbol": "CRASH600",
+  "date": "2026-06-29",
+  "start_epoch": 1782691200,
+  "end_exclusive_epoch": 1782777600,
+  "start_utc": "2026-06-29T00:00:00+00:00",
+  "end_exclusive_utc": "2026-06-30T00:00:00+00:00",
+  "cadence_seconds": 1,
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "config_sha256": "7d9eefbf5bbe76a9d1d612e9de08b6e2c58c5b71223ab3ef922ea1d41998134e",
+  "collector_file": "scripts/collect_spike_ticks.py",
+  "collector_sha256": "087b071e28b948cd45e8d58bf03b370c42ac70827fc6010ace544c60ec9204a7",
+  "clean_file": "data/spike_tick_execution_20261005/crash600_2026-06-29_ticks_clean.csv",
+  "clean_sha256": "ab1a17a2c723deb02cb36e4f4628e026a4dcef059aff00e73c6668e3e99e700a",
+  "raw_pages_file": "data/spike_tick_execution_20261005/crash600_2026-06-29_raw_pages.jsonl",
+  "raw_pages_sha256": "22e02023c15262ce0592104d5ea928f5b196ca202e84a0465744580c05f3a05e",
+  "page_audit_file": "data/spike_tick_execution_20261005/crash600_2026-06-29_page_audit.jsonl",
+  "page_audit_sha256": "6a1ff6091d0c372b293be14bb18152216eed1fc2e6edb56e1e197cc632cc66b4",
+  "rows": 86397,
+  "expected_grid_rows": 86400,
+  "missing_seconds": 3,
+  "gaps": [
+    {
+      "start_epoch": 1782718376,
+      "end_exclusive_epoch": 1782718379,
+      "missing_seconds": 3
+    }
+  ],
+  "first_epoch": 1782691200,
+  "last_epoch": 1782777599,
+  "gap_free": false,
+  "equal_duplicates_removed": 0,
+  "fills_or_interpolations": false,
+  "authentication_used": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "features_labels_or_tick_outcomes_computed": false,
+  "request_errors": [],
+  "recovered_retry_lineage": [],
+  "successful_page_count": 87,
+  "normalization_valid": true,
+  "completed_at_utc": "2026-10-05T14:59:15.447339+00:00"
+}

@@ -47,3 +47,9 @@ data/spike_nonlinear600_recent/**/*.csv
 data/spike_nonlinear600_recent/**/*.log
 docs/spike_nonlinear_20261005/*_trades.csv
 docs/spike_nonlinear_20261005/*_signals.csv
+data/spike_tick_execution_20261005/*_ticks_clean.csv
+data/spike_tick_execution_20261005/*_raw_pages.jsonl
+data/spike_tick_execution_20261005/*_checkpoint.json
+data/spike_tick_execution_20261005/*.log
+docs/spike_tick_execution_20261005/*_trades.csv
+docs/spike_tick_execution_20261005/*_signals.csv

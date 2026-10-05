@@ -1,0 +1,47 @@
+{
+  "symbol": "BOOM600",
+  "date": "2026-06-29",
+  "start_epoch": 1782691200,
+  "end_exclusive_epoch": 1782777600,
+  "start_utc": "2026-06-29T00:00:00+00:00",
+  "end_exclusive_utc": "2026-06-30T00:00:00+00:00",
+  "cadence_seconds": 1,
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "config_sha256": "7d9eefbf5bbe76a9d1d612e9de08b6e2c58c5b71223ab3ef922ea1d41998134e",
+  "collector_file": "scripts/collect_spike_ticks.py",
+  "collector_sha256": "087b071e28b948cd45e8d58bf03b370c42ac70827fc6010ace544c60ec9204a7",
+  "clean_file": "data/spike_tick_execution_20261005/boom600_2026-06-29_ticks_clean.csv",
+  "clean_sha256": "99b0001f939a2f40af0da829e786a736b5315ce3e39f959db102796d8c156aaf",
+  "raw_pages_file": "data/spike_tick_execution_20261005/boom600_2026-06-29_raw_pages.jsonl",
+  "raw_pages_sha256": "2b225afcbc62a925542372fb4b1b3da1cd52c91ba7298cd542e23a51c3dc0b2f",
+  "page_audit_file": "data/spike_tick_execution_20261005/boom600_2026-06-29_page_audit.jsonl",
+  "page_audit_sha256": "7cf636302eac0d1029b438bda174516f758d2b31cacae05d937df1971f2a6083",
+  "rows": 86397,
+  "expected_grid_rows": 86400,
+  "missing_seconds": 3,
+  "gaps": [
+    {
+      "start_epoch": 1782718376,
+      "end_exclusive_epoch": 1782718379,
+      "missing_seconds": 3
+    }
+  ],
+  "first_epoch": 1782691200,
+  "last_epoch": 1782777599,
+  "gap_free": false,
+  "equal_duplicates_removed": 0,
+  "fills_or_interpolations": false,
+  "authentication_used": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "features_labels_or_tick_outcomes_computed": false,
+  "request_errors": [],
+  "recovered_retry_lineage": [],
+  "successful_page_count": 87,
+  "normalization_valid": true,
+  "completed_at_utc": "2026-10-05T14:45:29.204036+00:00"
+}

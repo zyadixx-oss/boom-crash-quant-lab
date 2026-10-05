@@ -207,3 +207,40 @@ clock completeness, clock-baseline replay, sensitivities and secondary ledgers.
 Local Python validation484 passed (482 backend+2 acceptance), including144 new
 synthetic cases. No money profit, broker fills/measured costs or prospective
 paper claims. LIVE_TRADING, READY_FOR_LIVE, LIVE_ALLOWED, OPENED_TRADES=false.
+
+
+## Sampled public-tick execution diagnosis — executed, no promotion
+
+See [Arabic report](spike_tick_execution_20261005/REPORT.ar.md) and
+[frozen protocol](SPIKE_TICK_EXECUTION_PROTOCOL.md). Twelve predeclared UTC days
+per native600 symbol, 24 sources, 2,073,582 exact public quotes, 2,088 successful
+pages, 18 missing seconds retained. All34,556 complete minute OHLCs match the
+frozen M1 prices exactly; four incomplete minutes remain unknown. No request
+errors, interpolation, model refit, cutoff change or orders.
+
+Frozen next-observed-quote entry/stop/expiry, SL2ATR/H15/delay1, modeled cost0.10ATR.
+All12 round6 model issuances and four same-availability clock references replayed.
+Primary BOOST44 results: Boom SPIKE n88/PF1.043, DRIFT n115/PF0.636;
+Crash SPIKE n100/PF0.612, DRIFT n126/PF0.798. All clock-comparison mean-difference
+intervals cross zero. Best combined44 point PF1.396 has only59 paths.
+M5-reference RIDGE19_SPIKE Boom PF2.038/n35 and RIDGE19_DRIFT Crash PF1.765/n48
+have mean intervals crossing zero and remain development-rejected. They do not
+satisfy PF>=1.5 with >=1,000 paths or the combined-timeframe requirement.
+
+Independent stdlib audit:2,364,376 checks,24 sources,16 groups,3,083 paths
+(3,077 completed+6 censored),0 errors,1,956 saved false safety values checked.
+It verifies raw Decimal/grid/retry provenance, causal ATR, primary quote paths,
+point summaries and closed-trade risk. ML/features/fits/scores and complete
+clock discovery, bootstrap validity, secondary/sensitivity ledgers and matched
+inference are outside scope. Checkpoint and active_symbols hashes captured at
+audit time are explicitly distinguished from the preexisting frozen hashes.
+
+Local Python suite:795 passed,1 existing FastAPI deprecation warning. This includes
+238 new tick-study tests and73 pure tail-helper tests. The proposed
+[tick-tail pilot](SPIKE_TICK_TAIL_PROTOCOL.md) has not calibrated a detector or
+measured real events/hazard/payoff; those results remain NOT TESTED.
+
+This is adaptive execution diagnosis on known historical prices, not new
+strategy-OOS or prospective evidence. The discontinuous12-day sample is too
+small by construction for the1,000-path target. Actual fills, measured costs,
+monetary profit and prospective paper remain NOT TESTED. All four flagsfalse.

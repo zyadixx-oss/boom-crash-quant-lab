@@ -4,9 +4,12 @@ Latest executed research: [Arabic consolidated results](docs/SPIKE_HUNTER_SUMMAR
 No tested model meets net PF >= 1.5 with at least 1,000 completed held-out
 simulations per model/symbol. The H4/H1 + M15/M5/M1 version is implemented and
 tested on later historical periods; both linear300 and nonlinear600 versions
-remain rejected. The [new nonlinear600 report](docs/spike_nonlinear_20261005/REPORT.ar.md)
-compares12 frozen models, with12,621 independently checked later paths. All
-four live flags remain false.
+remain rejected. The [new tick execution report](docs/spike_tick_execution_20261005/REPORT.ar.md)
+replays unchanged issuance on 24 predeclared public-tick days: 2,073,582 quotes,
+3,083 independently checked paths and no qualified model. Two M5-reference PFs
+above 1.5 have only 35 and 48 completed paths. The larger
+[nonlinear600 study](docs/spike_nonlinear_20261005/REPORT.ar.md) remains the
+full-period payoff evidence. All four live flags remain false.
 
 ## Live Arabic CRT chart
 

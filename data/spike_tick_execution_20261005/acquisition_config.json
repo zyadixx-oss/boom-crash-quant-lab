@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "symbols": [
+    "BOOM600",
+    "CRASH600"
+  ],
+  "dates": [
+    "2026-04-11",
+    "2026-04-26",
+    "2026-05-12",
+    "2026-05-28",
+    "2026-06-13",
+    "2026-06-29",
+    "2026-07-15",
+    "2026-07-31",
+    "2026-08-16",
+    "2026-09-01",
+    "2026-09-17",
+    "2026-10-03"
+  ],
+  "page_size": 1000,
+  "requested_delay_seconds": 0.35,
+  "effective_min_request_spacing_seconds": 0.5,
+  "cadence_seconds": 1,
+  "collector_sha256": "087b071e28b948cd45e8d58bf03b370c42ac70827fc6010ace544c60ec9204a7",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}
