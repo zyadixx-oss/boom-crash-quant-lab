@@ -19,6 +19,10 @@ Use only the 24 immutable BOOM600/CRASH600 day sources in round7 after source
 validation. The 12 discontinuous scheduled days remain discontinuous. Retain
 gaps, initial unknown age and unobserved calendar intervals; never interpolate
 or count those intervals as waiting without an event.
+Read each preserved quote string with Python float conversion to IEEE64,
+requiring a finite positive result. Do not add decimal rounding or use the
+default pandas numeric CSV parser. The original Decimal/raw/CSV integrity was
+audited in round7; this fixed conversion is part of the new pilot's calculation.
 
 ## Fixed detector and chronological partitions
 
@@ -31,7 +35,8 @@ Define `d[t] = side * log(q[t] / q[t-1])`, with side +1 for Boom and -1 for Cras
 A tail event is exactly `d[t] > 10*m`; equality is not an event. The multiplier
 10 is a fixed engineering definition, not an optimized profitable setting.
 Zero/nonfinite scale or fewer than 100 calibration events makes this detector
-inadequate for the pilot. Do not replace it with a different multiplier,
+inadequate for the pilot; save that finding and leave later segment measurements
+NOT TESTED. Do not replace it with a different multiplier,
 quantile, nominal event frequency or favorable symbol. Call detected events
 tail-tick proxies, not a verified census of physical spikes.
 
@@ -71,11 +76,15 @@ exposure for a day. Report observed cluster count, undefined draws and the
 discontinuous-sample limitation. No contiguous-week or independent-tick
 inference claim is made.
 
-With at least100 events in each band, an upper95% hazard-ratio bound below1.5
+With at least100 events in each band and all9,999 ratio draws defined,
+an upper95% hazard-ratio bound below1.5
 rejects the large overdue-event effect in that segment under this detector.
 Low event counts or undefined bounds mean insufficient evidence. A ratio near1
 does not establish independence, and a large ratio does not establish PF.
 Do not select another age boundary, horizon or event definition after results.
+These intervals condition on the fixed calibration detector; uncertainty in its
+training median is not regenerated. Undefined draws never justify falsification
+by discarding them and using only the remaining finite ratios.
 
 ## Connection to the combined-timeframe profit objective
 

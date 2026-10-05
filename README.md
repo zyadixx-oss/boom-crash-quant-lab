@@ -9,7 +9,12 @@ replays unchanged issuance on 24 predeclared public-tick days: 2,073,582 quotes,
 3,083 independently checked paths and no qualified model. Two M5-reference PFs
 above 1.5 have only 35 and 48 completed paths. The larger
 [nonlinear600 study](docs/spike_nonlinear_20261005/REPORT.ar.md) remains the
-full-period payoff evidence. All four live flags remain false.
+full-period payoff evidence. The executed [tail-tick mechanism pilot](docs/spike_tick_tail_20261005/REPORT.ar.md)
+now measures causal jump age on the same immutable tick sample. Last30% older/younger
+hazard ratios are1.045 for Boom600 and1.226 for Crash600; neither is a profit factor.
+The four declared >=1.5 overdue-hazard effects are rejected conditional on the
+fixed detector and sparse observed-day resampling. No strategy is promoted.
+All four live flags remain false.
 
 ## Live Arabic CRT chart
 

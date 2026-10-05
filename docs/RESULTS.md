@@ -236,11 +236,55 @@ inference are outside scope. Checkpoint and active_symbols hashes captured at
 audit time are explicitly distinguished from the preexisting frozen hashes.
 
 Local Python suite:795 passed,1 existing FastAPI deprecation warning. This includes
-238 new tick-study tests and73 pure tail-helper tests. The proposed
-[tick-tail pilot](SPIKE_TICK_TAIL_PROTOCOL.md) has not calibrated a detector or
-measured real events/hazard/payoff; those results remain NOT TESTED.
+238 new tick-study tests and73 pure tail-helper tests. At that round7 release, the proposed tick-tail helper had only synthetic checks.
+The subsequently executed round8 pilot is described below.
 
 This is adaptive execution diagnosis on known historical prices, not new
 strategy-OOS or prospective evidence. The discontinuous12-day sample is too
 small by construction for the1,000-path target. Actual fills, measured costs,
 monetary profit and prospective paper remain NOT TESTED. All four flagsfalse.
+
+
+## Fixed tail-tick mechanism pilot — executed, no payoff claim
+
+See [Arabic report](spike_tick_tail_20261005/REPORT.ar.md),
+[precalibration declaration](spike_tick_tail_20261005/declaration.json) and
+[frozen protocol](SPIKE_TICK_TAIL_PROTOCOL.md). The five science files and all
+round7 source/provenance hashes were pinned before detector fitting. This reuses
+known historical tick prices; it is not fresh strategy validation.
+
+First40% observed quote rows calibrate the median absolute consecutive1s log
+return once. Events strictly exceed10 times that fixed scale in the symbol's
+spike direction.691 Boom and684 Crash calibration events make both detectors
+adequate under the declared minimum100 rule. Gap/initial prior age stays unknown;
+the current event cannot enter its own age covariate. Exactly two bands:<600s
+and>=600s. Development ends70%, with three40–50/50–60/60–70 validation segments.
+
+| Symbol/segment | Younger events/exposure | Older events/exposure | Hazard ratio | CI95 |
+|---|---|---|---:|---|
+| BOOM600 dev40–70 |281/188,072|195/115,656|1.128|[1.061,1.234]|
+| BOOM600 final30 |316/193,893|197/115,707|1.045|[0.987,1.137]|
+| CRASH600 dev40–70 |351/206,273|202/101,870|1.165|[1.010,1.452]|
+| CRASH600 final30 |269/189,009|203/116,330|1.226|[1.081,1.410]|
+
+The four declared large-overdue>=1.5 hazard effects reject under this detector
+and conditional observed-day inference:>=100events in both bands and all9999
+paired bootstrap ratios defined. This does not establish independence, rule
+out smaller effects or test a strategy. The intervals condition on fixed
+calibration with only5/4discontinuous observed-day clusters; training-median
+uncertainty is not regenerated. Conditional and unconditional tick drift
+arithmetic, folds, unknown-age exclusions and event sizes are saved in results.
+
+Full local test run890 passed, followed by55 final verifier tests after four
+additional guard cases; current suite894 unique tests. Existing FastAPI warning
+only. Broker execution, measured costs, PF, monetary profit and prospective
+paper for this pilot remain NOT TESTED; no prior model is promoted. All four
+execution/readiness flags remain false.
+
+Independent stdlib pilot audit passed first/only attempt:6,685checks,24sources,
+12segment summaries,0errors,200savedfalseflags,146inputhashes. It reconstructs
+prefix median/events/prior ages/gaps/point day-band-drift identities/metrics and
+saved policy arithmetic. Raw integrity is anchored to the round7 passed audit,
+not renormalized again. Bootstrap regeneration/inference validity, calibration
+uncertainty, unsaved runtime prior-mark table, model fitting, profit and broker
+execution remain outside scope. [Audit](spike_tick_tail_20261005/independent_audit.json).
