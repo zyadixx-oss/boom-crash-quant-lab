@@ -25,3 +25,15 @@ data/spike_timed_transfer/*.csv
 data/spike_timed_*acquisition.log
 docs/spike_timed_20261005/*_trades.csv
 docs/spike_timed_20261005/*_development_grid.json
+data/spike_learned_transfer/*.csv
+data/spike_learned_transfer/*.log
+data/spike_learned_*acquisition.log
+docs/spike_learned_20261005/*_trades.csv
+docs/spike_learned_20261005/*_signals.csv
+data/spike_native300_recent/*.csv
+data/spike_native300_recent/*.log
+data/spike_native300_*acquisition.log
+docs/spike_native300_20261005/*_trades.csv
+docs/spike_native300_20261005/*_signals.csv
+docs/spike_multiframe_20261005/*_trades.csv
+docs/spike_multiframe_20261005/*_signals.csv

@@ -88,3 +88,83 @@ parameter should be promoted to production/live based on these outputs.
 
 `LIVE_TRADING=false`, `READY_FOR_LIVE=false`, `LIVE_ALLOWED=false`, and
 `OPENED_TRADES=false`. No accounts, credentials or order execution were used.
+
+## Fixed learned-score extension — executed and rejected
+
+See [Arabic report](spike_learned_20261005/REPORT.ar.md) and
+[frozen protocol](SPIKE_LEARNED_PROTOCOL.md). Nineteen causal continuous inputs,
+one fixed ridge model per direction/symbol, mean-SSE penalty0.1, train-only
+standardization and a positive-floor training q75 cutoff. Fixed stop2ATR/time15m,
+entry+1minute, adverse-extreme stop stress, modeled total cost0.10ATR. No
+hyperparameter/exit search. First70% development with three expanding refits;
+both final directions remain rejected when development eligibility fails.
+
+User target: modeled net PF>=1.5 and>=1,000 completed out-of-selection trades
+per model and symbol, with no pooling. None of the four models qualified during
+development. After SHA256 freezing, complete official180-day300 inputs gave:
+
+| Transfer spike direction | n | PF | Day PF CI95 | Weekly PF CI95 | Mean netR |
+|---|---:|---:|---|---|---:|
+| BOOM300N | 8,354 | 0.820 | [0.775,0.866] | [0.780,0.862] | -0.0625 |
+| CRASH300N | 8,607 | 0.854 | [0.809,0.902] | [0.804,0.908] | -0.0502 |
+
+Both opposite-direction models issued zero signals. All four transfer gates
+failed; neither spike direction had positive chronological thirds or evidence
+of an advantage over identical-clock entry. This is an older cross-symbol
+replication, not future chronological confirmation. Earlier unverified Boom300
+classification claims and all reused500 diagnostics are disclosed.
+
+Post-result input-only diagnosis: log(ATR/price) shifts about6.94 trainingSD,
+driving near-universal spike issuance and no opposite-direction issuance.
+The diagnosis does not change the scaler, cutoff or predictions. Native-symbol
+training followed by a later held-out period was the next declared question;
+its subsequently executed results are reported in the section below.
+
+Independent scalar ledger audit:16,961 transfer paths,492,290 checks,zero
+errors; fits/features/bootstrap are outside that audit scope. Python validation:
+287 passed. Actual money profit, broker execution/costs and prospective paper
+performance remain NOT TESTED. All four safety flags remain false.
+
+## Native300 and the user's combined-timeframe test — executed and rejected
+
+The user clarified H4/H1 context plus M15/M5/M1 as one combined strategy,
+rather than independent profit claims on each chart frame. Exactly44 fixed
+causal inputs retain the prior ridge/cutoff/stop/time/cost parameters. Both
+native19 and combined44 selections froze before preparing recent300 features.
+Training used first70% of the older180-day300 period with three expanding
+refits. Fresh chronology is2026-04-07 to2026-10-04,11:08UTC exclusive.
+One missing minute per clean source remains unknown; no interpolation.
+
+NativeM5 fresh PFs were0.821(n160),0.877(n610),0.909(n321),0.655(n170).
+No development direction qualified. The combined model also had no eligible
+direction and subsequently returned:
+
+| Combined fresh model | n | Net PF | Day PF CI95 | Weekly PF CI95 |
+|---|---:|---:|---|---|
+| BOOM300N SPIKE | 460 | 0.737 | [0.581,0.929] | [0.592,0.907] |
+| BOOM300N DRIFT | 1,594 | 0.824 | [0.733,0.932] | [0.719,0.956] |
+| CRASH300N SPIKE | 1,036 | 0.813 | [0.694,0.947] | [0.680,0.957] |
+| CRASH300N DRIFT | 833 | 0.812 | [0.681,0.960] | [0.663,0.989] |
+
+Both cohorts meeting the1,000-trade sample threshold still failed the profit
+target. All four mean-R estimates were negative with negative daily/weekly95%
+intervals under the primary cost/stress model. Zero modeled cost did not reverse
+their observed negative means. No clock or common-clock M5 advantage was proven.
+JointHolm includes all8native/combined fresh hypotheses; all adjusted p=1.
+NativeHolm4 results are retained as immutable references, not joint discoveries.
+
+M5 reference predictions use the same44-input-eligible timestamps, intersecting
+only feature availability. Each fresh source has8,393combined vs8,600fullM5
+clock opportunities;207warmup/gap/context exclusions are disclosed. This tests
+closed M1 inputs at UTC00/30 decisions, not minute-frequency order execution.
+
+See the [combined Arabic report](spike_multiframe_20261005/REPORT.ar.md),
+[frozen protocol](SPIKE_MULTIFRAME_PROTOCOL.md), and
+[native reference](spike_native300_20261005/REPORT.ar.md). Full Python tests:
+340passed. Independent nativeM5 ledger reconstruction verifies1,261trades in
+37,065checks with zero errors. Independent combined/common-M5 reconstruction
+verifies all5,165 paths in150,871 checks with zero errors, including saved
+conjunction/ jointHolm8 arithmetic. ML fitting/features/scores and bootstrap
+p-values/intervals are outside the independent ledger audit's scope.
+Historical methodology is adaptive; prospective paper and cash profit remain
+NOT TESTED. All four execution/readiness flags remain false.

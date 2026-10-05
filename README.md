@@ -1,5 +1,11 @@
 # boom-crash-quant-lab
 
+Latest executed research: [Arabic consolidated results](docs/SPIKE_HUNTER_SUMMARY.ar.md).
+No tested model meets net PF >= 1.5 with at least 1,000 completed held-out
+simulations per model/symbol. The H4/H1 + M15/M5/M1 version is implemented and
+tested on a later historical period; it remains rejected. All four live flags
+remain false.
+
 ## Live Arabic CRT chart
 
 The `frontend` is now an Arabic, RTL standalone chart for all currently available Boom/Crash symbols. It uses the Deriv public WebSocket directly, without a trading account, API token or backend. Select M1/M5/M15/H1, inspect the closed H1 CRT range and closed M5 sweep/reclaim/confirmation observations, and review the frozen historical study. See `frontend/README.md` for precise rules and verification. All four trading flags remain false.
@@ -242,3 +248,23 @@ primary CRT meanR=-0.103 (Boom1000,n505) and-0.102 (Crash1000,n484). This is
 adaptive cross-symbol historical research, not forward validation. See its
 [protocol](docs/SPIKE_TIMED_PROTOCOL.md) and
 [reproduction/interpretation](docs/spike_timed_20261005/README.md).
+
+The [learned-score round](docs/spike_learned_20261005/REPORT.ar.md) fits four
+fixed causal ridge models, with no hyperparameter or exit search. No direction
+qualifies in expanding validation. Frozen transfer to300 gives PF0.820(n8,354)
+and0.854(n8,607) in spike direction; the opposite direction issues no signals.
+The user target netPF>=1.5 and>=1,000 completed simulations per model/symbol is
+not met. A source-only diagnostic shows severe input-distribution shift, without
+refitting. All trading flags remain false. See the
+[protocol](docs/SPIKE_LEARNED_PROTOCOL.md) and
+[reproduction](docs/spike_learned_20261005/README.md).
+
+The chronological [native300 M5 reference](docs/spike_native300_20261005/REPORT.ar.md)
+and [combined H4/H1/M15/M5/M1 study](docs/spike_multiframe_20261005/REPORT.ar.md)
+are now executed on the subsequent180-day300 period. Both selections froze
+before its features/payoffs were read. The combined44-input models give
+PF0.737(n460),0.824(n1,594),0.813(n1,036),0.812(n833); all rejected. JointHolm8
+and a common-clock M5 comparison prevent timeframe/warmup differences from
+being presented as an improvement. The user target remains unachieved.
+See [protocol](docs/SPIKE_MULTIFRAME_PROTOCOL.md) and
+[reproduction](docs/spike_multiframe_20261005/README.md). No trading is enabled.

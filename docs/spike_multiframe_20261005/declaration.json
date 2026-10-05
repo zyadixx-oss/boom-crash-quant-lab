@@ -1,0 +1,249 @@
+{
+  "stage": "combined_multiframe_predevelopment_declaration",
+  "adaptive_round": 5,
+  "run_utc": "2026-10-05T05:40:47.014099+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "code_hashes": {
+    "docs/SPIKE_LEARNED_PROTOCOL.md": "f9118dd0dbc5089ba8ac984be193033e0166378651a55786d3642f1827725000",
+    "backend/app/research/learned_signal.py": "e995744aae3c6431aa3d454c3488777f12c2020c8cb03014927aed214df54656",
+    "backend/app/research/learned_metrics.py": "f89405be92ef8d5ca5ec35c48d32a63781d124e561cdfea665098e8180e80c31",
+    "backend/app/research/spike_hunter.py": "1ffc873e8d04785ba0900b1ebc3751b803a013a459d7740b6d02521d67926f27",
+    "backend/app/research/payoff.py": "097bb2328540610374598ef878ff04cfbc854ecd46dbfe9866b8912d0355d681",
+    "backend/app/research/payoff_timed.py": "fdc6e91f3c9b082054d107bc0926748361bbcdbf0c5643aa5c88393cf294283e",
+    "backend/app/research/payoff_metrics.py": "16bbfa9e499dc91802fb7d5210e48734a93db26127744dc4ed2e57b44876949e",
+    "scripts/run_spike_payoff_study.py": "4ff72ae2064ae19c4b5d828bf1e9550d6b354a4b6dda38c7ee21834731fe12ff",
+    "scripts/run_spike_timed_study.py": "6f595941a57ffd6c9fba2c416fca2517f83c3e4e66ae10b7e3d4f771b3d1311b",
+    "scripts/run_spike_learned_study.py": "b9dce52f7b2e150a42fb8abe60b2980a846ba91f4c01e5de06fe34a4a2f69143",
+    "docs/SPIKE_NATIVE300_PROTOCOL.md": "fe8e31fefcef0cd239be71d9482b98b982bf0af7afbb4227333164702e9837e9",
+    "scripts/run_spike_native300_study.py": "7e9b90410fe6b394df27b59ba8853441f4c21e5f02b7e3dc3dfcf00b135ad93f",
+    "backend/tests/test_spike_native300_study.py": "1814ffbc9e9dcb65ff620ada78d9c06e90945126523e0a74883b803eba74c22c",
+    "backend/app/research/multiframe_signal.py": "1ae7568832a167ee24fba848525521be04838fc9b9c1a02205bc7016655da6ef",
+    "backend/tests/test_multiframe_signal.py": "f110f48adff098bb783fee570d3d36fd9d6d6f0fb2fe7c78618218dc5f4f16f2",
+    "docs/SPIKE_MULTIFRAME_PROTOCOL.md": "898bdcd383e30c52f78ee10c8d5e07deea488aed043721d3150aafc38f488901",
+    "scripts/run_spike_multiframe_study.py": "0675387d6aa1012d6011fb4eea7ac19fa9e1f1c661c4509e030f2b2744ca68bb",
+    "backend/tests/test_spike_multiframe_study.py": "c88dcfe6a0c51e2400e475f87b6c93cc086aff501bad299fa63c301347e4651c"
+  },
+  "sources": {
+    "BOOM300N": {
+      "old": {
+        "path": "data/spike_learned_transfer/boom300n_m1_180d_clean.csv",
+        "sha256": "2a68ef24759ec3561d5751cae44cbefdccfeb794ca94a1313b887fc651578280",
+        "rows": 259200,
+        "first_epoch": 1760008080,
+        "last_epoch": 1775560020,
+        "manifest": "data/spike_learned_transfer/BOOM300N_normalization_manifest.json",
+        "manifest_sha256": "f60b85acaecf476d9cf2d59a38aed3dab6f21df692f93a352e4a99001b09fbae",
+        "expected_grid_rows": 259200,
+        "declared_missing_minutes": 0,
+        "declared_gaps": [],
+        "excluded_raw_rows": [],
+        "from_utc": "2025-10-09 11:08:00+00:00",
+        "to_exclusive_utc": "2026-04-07 11:08:00+00:00"
+      },
+      "fresh": {
+        "path": "data/spike_native300_recent/boom300n_m1_180d_clean.csv",
+        "sha256": "b70f8fc90f285ae27944a7decad4c0db30fa8bf669d46cf7ba1372d128a15eb5",
+        "rows": 259199,
+        "first_epoch": 1775560080,
+        "last_epoch": 1791112020,
+        "manifest": "data/spike_native300_recent/BOOM300N_normalization_manifest.json",
+        "manifest_sha256": "7fdf19f7e2a024468539bb0f65adbb348262865b2a10c76209b59ae328b9d7e9",
+        "expected_grid_rows": 259200,
+        "declared_missing_minutes": 1,
+        "declared_gaps": [
+          {
+            "previous_epoch": 1785228540,
+            "next_epoch": 1785228660,
+            "previous_utc": "2026-07-28T08:49:00+00:00",
+            "next_utc": "2026-07-28T08:51:00+00:00",
+            "missing_bars": 1,
+            "missing_epochs": [
+              1785228600
+            ]
+          }
+        ],
+        "excluded_raw_rows": [
+          {
+            "epoch": 1785172079,
+            "utc": "2026-07-27T17:07:59+00:00",
+            "reason": "off_utc_minute_grid",
+            "raw": {
+              "epoch": 1785172079,
+              "open": 1004.231,
+              "high": 1004.231,
+              "low": 1004.231,
+              "close": 1004.231
+            }
+          }
+        ],
+        "from_utc": "2026-04-07 11:08:00+00:00",
+        "to_exclusive_utc": "2026-10-04 11:08:00+00:00"
+      }
+    },
+    "CRASH300N": {
+      "old": {
+        "path": "data/spike_learned_transfer/crash300n_m1_180d_clean.csv",
+        "sha256": "89e2533c71e2941810f6c439ecb23565e8e1a98b4a9c5b02345f62e4bed241e3",
+        "rows": 259200,
+        "first_epoch": 1760008080,
+        "last_epoch": 1775560020,
+        "manifest": "data/spike_learned_transfer/CRASH300N_normalization_manifest.json",
+        "manifest_sha256": "57e11ad919965981fa71a1764b4a48f53a378e252ee4db104c55bbdc819a8ae5",
+        "expected_grid_rows": 259200,
+        "declared_missing_minutes": 0,
+        "declared_gaps": [],
+        "excluded_raw_rows": [],
+        "from_utc": "2025-10-09 11:08:00+00:00",
+        "to_exclusive_utc": "2026-04-07 11:08:00+00:00"
+      },
+      "fresh": {
+        "path": "data/spike_native300_recent/crash300n_m1_180d_clean.csv",
+        "sha256": "704e3a95a3124eaeb779258b6d001985c8ce283fb2ec1aec4bfaaf587c2692a0",
+        "rows": 259199,
+        "first_epoch": 1775560080,
+        "last_epoch": 1791112020,
+        "manifest": "data/spike_native300_recent/CRASH300N_normalization_manifest.json",
+        "manifest_sha256": "68d830e65d463a25c72a88acd60ad95c686b8b9d78730183ca0407a83132bc2b",
+        "expected_grid_rows": 259200,
+        "declared_missing_minutes": 1,
+        "declared_gaps": [
+          {
+            "previous_epoch": 1785228540,
+            "next_epoch": 1785228660,
+            "previous_utc": "2026-07-28T08:49:00+00:00",
+            "next_utc": "2026-07-28T08:51:00+00:00",
+            "missing_bars": 1,
+            "missing_epochs": [
+              1785228600
+            ]
+          }
+        ],
+        "excluded_raw_rows": [
+          {
+            "epoch": 1785172079,
+            "utc": "2026-07-27T17:07:59+00:00",
+            "reason": "off_utc_minute_grid",
+            "raw": {
+              "epoch": 1785172079,
+              "open": 2091.783,
+              "high": 2091.783,
+              "low": 2091.783,
+              "close": 2091.783
+            }
+          }
+        ],
+        "from_utc": "2026-04-07 11:08:00+00:00",
+        "to_exclusive_utc": "2026-10-04 11:08:00+00:00"
+      }
+    }
+  },
+  "intervals": {
+    "BOOM300N": {
+      "old_start": "2025-10-09 11:08:00+00:00",
+      "old_end": "2026-04-07 11:08:00+00:00",
+      "fresh_start": "2026-04-07 11:08:00+00:00",
+      "fresh_end": "2026-10-04 11:08:00+00:00",
+      "overlap_minutes": 0,
+      "adjacent": true,
+      "chronological_old_to_new": true
+    },
+    "CRASH300N": {
+      "old_start": "2025-10-09 11:08:00+00:00",
+      "old_end": "2026-04-07 11:08:00+00:00",
+      "fresh_start": "2026-04-07 11:08:00+00:00",
+      "fresh_end": "2026-10-04 11:08:00+00:00",
+      "overlap_minutes": 0,
+      "adjacent": true,
+      "chronological_old_to_new": true
+    }
+  },
+  "native_reference": {
+    "study_dir": "docs/spike_native300_20261005",
+    "selection_sha256": "cf405eab86782d76321395d96325ec31f5f57139cb1003c879c8765a1c1f6a86",
+    "declaration_sha256": "5878311075992899ad7f5bee63913fcae27db5d8f8f1f98809068c42fa86b008",
+    "code_hashes": {
+      "docs/SPIKE_LEARNED_PROTOCOL.md": "f9118dd0dbc5089ba8ac984be193033e0166378651a55786d3642f1827725000",
+      "backend/app/research/learned_signal.py": "e995744aae3c6431aa3d454c3488777f12c2020c8cb03014927aed214df54656",
+      "backend/app/research/learned_metrics.py": "f89405be92ef8d5ca5ec35c48d32a63781d124e561cdfea665098e8180e80c31",
+      "backend/app/research/spike_hunter.py": "1ffc873e8d04785ba0900b1ebc3751b803a013a459d7740b6d02521d67926f27",
+      "backend/app/research/payoff.py": "097bb2328540610374598ef878ff04cfbc854ecd46dbfe9866b8912d0355d681",
+      "backend/app/research/payoff_timed.py": "fdc6e91f3c9b082054d107bc0926748361bbcdbf0c5643aa5c88393cf294283e",
+      "backend/app/research/payoff_metrics.py": "16bbfa9e499dc91802fb7d5210e48734a93db26127744dc4ed2e57b44876949e",
+      "scripts/run_spike_payoff_study.py": "4ff72ae2064ae19c4b5d828bf1e9550d6b354a4b6dda38c7ee21834731fe12ff",
+      "scripts/run_spike_timed_study.py": "6f595941a57ffd6c9fba2c416fca2517f83c3e4e66ae10b7e3d4f771b3d1311b",
+      "scripts/run_spike_learned_study.py": "b9dce52f7b2e150a42fb8abe60b2980a846ba91f4c01e5de06fe34a4a2f69143",
+      "docs/SPIKE_NATIVE300_PROTOCOL.md": "fe8e31fefcef0cd239be71d9482b98b982bf0af7afbb4227333164702e9837e9",
+      "scripts/run_spike_native300_study.py": "7e9b90410fe6b394df27b59ba8853441f4c21e5f02b7e3dc3dfcf00b135ad93f",
+      "backend/tests/test_spike_native300_study.py": "1814ffbc9e9dcb65ff620ada78d9c06e90945126523e0a74883b803eba74c22c"
+    }
+  },
+  "config": {
+    "stop_atr": 2.0,
+    "max_hold_minutes": 15,
+    "entry_delay_minutes": 1,
+    "round_trip_cost_atr": 0.1,
+    "fill_mode": "adverse_extreme"
+  },
+  "feature_formulas": {
+    "aligned_return_1_atr": "s * (close - close.shift(1)) / A",
+    "aligned_return_3_atr": "s * (close - close.shift(3)) / A",
+    "aligned_return_6_atr": "s * (close - close.shift(6)) / A",
+    "aligned_return_12_atr": "s * (close - close.shift(12)) / A",
+    "aligned_body_atr": "s * (close - open) / A",
+    "range_atr": "R / A",
+    "favorable_wick_atr": "(high-max(open,close) for Boom; min(open,close)-low for Crash) / A",
+    "adverse_wick_atr": "(min(open,close)-low for Boom; high-max(open,close) for Crash) / A",
+    "favorable_close_position": "(close-low for Boom; high-close for Crash) / R",
+    "atr_5_over_30": "TR.rolling(5).mean() / TR.rolling(30).mean()",
+    "bb_width_over_prior_median_100": "W / W.shift(1).rolling(100).median(); W=4*std(close,20,ddof=0)/mean(close,20)",
+    "range_over_prior_median_20": "R / R.shift(1).rolling(20).median()",
+    "body_over_range": "B / R",
+    "mean_range_3_over_prior_median_20": "R.rolling(3).mean() / R.shift(3).rolling(20).median()",
+    "large_completed_bar": "float(R > 3 * A.shift(1)); unknown if candle or lagged A is missing",
+    "log1p_large_bar_age": "log1p(min(M5 bars since last large_completed_bar,288)); unknown before first or after a gap",
+    "log_atr_over_price": "log(A / close)",
+    "aligned_distance_prior_favorable_12_atr": "s * (close - favorable preceding12bar extreme) / A; high for Boom, low for Crash",
+    "aligned_distance_prior_adverse_12_atr": "s * (close - adverse preceding12bar extreme) / A; low for Boom, high for Crash",
+    "h4_aligned_return_3_atr": "s*(H4.close-H4.close.shift(3))/H4.A",
+    "h4_range_atr": "H4.R/H4.A",
+    "h4_favorable_close_position": "(H4.close-H4.low for Boom; H4.high-H4.close for Crash)/H4.R",
+    "h4_aligned_distance_prior_favorable_12_atr": "s*(H4.close-H4.previous12favorableextreme)/H4.A",
+    "h1_aligned_body_atr": "s*(H1.close-H1.open)/H1.A",
+    "h1_range_atr": "H1.R/H1.A",
+    "h1_favorable_close_position": "(H1.close-H1.low for Boom; H1.high-H1.close for Crash)/H1.R",
+    "h1_aligned_distance_favorable_boundary_m5_atr": "s*(M5.close-H1.latest_favorable_boundary)/M5.A",
+    "h1_aligned_distance_adverse_boundary_m5_atr": "s*(M5.close-H1.latest_adverse_boundary)/M5.A",
+    "h1_recent_m5_sweep_reclaim": "float(min(M5.low,3)<H1.low for Boom; max(M5.high,3)>H1.high for Crash; AND H1.low<M5.close<H1.high); unknown if any input missing",
+    "m15_aligned_return_3_atr": "s*(M15.close-M15.close.shift(3))/M15.A",
+    "m15_atr_5_over_30": "M15.TR.rolling(5).mean()/M15.TR.rolling(30).mean()",
+    "m15_range_atr": "M15.R/M15.A",
+    "m15_aligned_body_atr": "s*(M15.close-M15.open)/M15.A",
+    "m15_favorable_close_position": "(M15.close-M15.low for Boom; M15.high-M15.close for Crash)/M15.R",
+    "m15_aligned_distance_prior_favorable_5_atr": "s*(M15.close-M15.previous5favorableextreme)/M15.A",
+    "m15_favorable_fvg_atr": "max(0,M15.low-M15.high.shift(2) for Boom; M15.low.shift(2)-M15.high for Crash)/M15.A",
+    "m1_aligned_body_atr": "s*(M1.close-M1.open)/M1.A",
+    "m1_range_atr": "M1.R/M1.A",
+    "m1_aligned_return_3_atr": "s*(M1.close-M1.close.shift(3))/M1.A",
+    "m1_atr_5_over_30": "M1.TR.rolling(5).mean()/M1.TR.rolling(30).mean()",
+    "m1_body_over_range": "abs(M1.close-M1.open)/M1.R",
+    "m1_aligned_distance_prior_favorable_5_atr": "s*(M1.close-M1.previous5favorableextreme)/M1.A",
+    "m1_favorable_fvg_atr": "max(0,M1.low-M1.high.shift(2) for Boom; M1.low.shift(2)-M1.high for Crash)/M1.A",
+    "m1_body_over_prior_median_20": "abs(M1.close-M1.open)/abs(M1.close-M1.open).shift(1).rolling(20).median()"
+  },
+  "fresh_features_evaluated": false,
+  "fresh_payoffs_evaluated": false,
+  "older300_payoffs_previously_seen": true,
+  "prospective_paper": false,
+  "feature_count": 44,
+  "joint_fresh_hypotheses": 8,
+  "bootstrap_repeats": 9999,
+  "user_target": {
+    "net_profit_factor": 1.5,
+    "min_completed_per_symbol_model": 1000
+  }
+}

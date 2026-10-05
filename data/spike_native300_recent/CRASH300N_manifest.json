@@ -1,0 +1,35 @@
+{
+  "symbol": "CRASH300N",
+  "api_symbol": "CRASH300N",
+  "source": "Official Deriv public WebSocket ticks_history",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "authentication_used": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "retrieved_at_utc": "2026-10-05T05:11:41.198924+00:00",
+  "granularity_seconds": 60,
+  "requested_days": 180,
+  "requested_start_epoch": 1775560080,
+  "requested_cutoff_exclusive_epoch": 1791112080,
+  "requested_start_utc": "2026-04-07T11:08:00+00:00",
+  "requested_cutoff_exclusive_utc": "2026-10-04T11:08:00+00:00",
+  "rows": 259200,
+  "first_epoch": 1775560080,
+  "last_epoch": 1791112020,
+  "first_utc": "2026-04-07T11:08:00+00:00",
+  "last_utc": "2026-10-04T11:07:00+00:00",
+  "file": "data/spike_native300_recent/crash300n_m1_180d.csv",
+  "sha256": "80d6ad9265eec813e4ba65bf24cd96abe72073736bf89ac009c6e9c6bd340346",
+  "page_count": 260,
+  "equal_pagination_duplicates_removed": 0,
+  "request_errors": [],
+  "expected_grid_rows": 259200,
+  "documentation": [
+    "https://developers.deriv.com/docs/options/ws-public/",
+    "https://developers.deriv.com/docs/data/ticks-history/"
+  ]
+}
