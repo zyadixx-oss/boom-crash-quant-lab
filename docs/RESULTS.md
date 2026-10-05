@@ -168,3 +168,42 @@ conjunction/ jointHolm8 arithmetic. ML fitting/features/scores and bootstrap
 p-values/intervals are outside the independent ledger audit's scope.
 Historical methodology is adaptive; prospective paper and cash profit remain
 NOT TESTED. All four execution/readiness flags remain false.
+
+## Fixed nonlinear native600 multiframe test — executed and rejected
+
+One declared residual histogram boosting alternative on the same44 completed
+H4/H1/M15/M5/M1 inputs, with same-clock ridge44 and ridge19 references.
+No hyperparameter/threshold/exit/cost search. Two directions, two symbols,
+three estimators:12 joint later hypotheses. Native BOOM600/CRASH600 use360 days
+each; first70% of the older180 was clipped before indicator construction.
+Three expanding refits preceded a frozen selection; no development candidate
+qualified, including Crash drift validation PF1.151 with a negative daily
+selection lower bound. The full later180 and olderlast30 were read afterwards.
+
+| Later nonlinear model | n | Net PF | Day PF CI95 | Weekly PF CI95 |
+|---|---:|---:|---|---|
+| BOOM600 SPIKE | 1,475 | 0.834 | [0.722,0.960] | [0.735,0.948] |
+| BOOM600 DRIFT | 1,490 | 0.827 | [0.732,0.937] | [0.730,0.932] |
+| CRASH600 SPIKE | 1,306 | 0.938 | [0.814,1.082] | [0.831,1.063] |
+| CRASH600 DRIFT | 2,084 | 0.851 | [0.773,0.938] | [0.772,0.941] |
+
+All four satisfy the1,000 completed-path sample threshold, all fail PF>=1.5.
+All12 later estimator PFs<1; jointHolm adjusted p=1. Every nonlinear vs linear
+mean-R difference day/week interval crosses0. CrashSPIKE zero modeled cost
+PF1.056 is a diagnostic sensitivity, not the primary result or a qualifying
+strategy. The other three nonlinear gross observed means remain negative.
+Both older600 grids are complete; each later grid has one declared missing
+minute, preserved unknown. Recovered request errors and whole-Crash retry
+lineage are retained; no fabricated candles or interpolation.
+
+See [Arabic report](spike_nonlinear_20261005/REPORT.ar.md),
+[frozen protocol](SPIKE_NONLINEAR_PROTOCOL.md) and
+[reproduction instructions](spike_nonlinear_20261005/README.md).
+Independent reconstruction:12,621 primary paths,375,964 checks,0 errors.
+The verifier-only obsolete metadata-field failure is preserved; after its
+repair all frozen prices/models/results hashes remained unchanged. Audit
+excludes regenerated ML features/fits/scores, bootstrap inference, possible
+clock completeness, clock-baseline replay, sensitivities and secondary ledgers.
+Local Python validation484 passed (482 backend+2 acceptance), including144 new
+synthetic cases. No money profit, broker fills/measured costs or prospective
+paper claims. LIVE_TRADING, READY_FOR_LIVE, LIVE_ALLOWED, OPENED_TRADES=false.

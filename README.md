@@ -3,8 +3,10 @@
 Latest executed research: [Arabic consolidated results](docs/SPIKE_HUNTER_SUMMARY.ar.md).
 No tested model meets net PF >= 1.5 with at least 1,000 completed held-out
 simulations per model/symbol. The H4/H1 + M15/M5/M1 version is implemented and
-tested on a later historical period; it remains rejected. All four live flags
-remain false.
+tested on later historical periods; both linear300 and nonlinear600 versions
+remain rejected. The [new nonlinear600 report](docs/spike_nonlinear_20261005/REPORT.ar.md)
+compares12 frozen models, with12,621 independently checked later paths. All
+four live flags remain false.
 
 ## Live Arabic CRT chart
 

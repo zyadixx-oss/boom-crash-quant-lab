@@ -1,0 +1,31 @@
+{
+  "config": {
+    "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+    "days": 180,
+    "symbols": [
+      "BOOM600",
+      "CRASH600"
+    ],
+    "requested_start_epoch": 1775560080,
+    "cutoff_exclusive_epoch": 1791112080,
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    }
+  },
+  "successful_symbols": [
+    {
+      "symbol": "BOOM600",
+      "normalized_rows": 259199,
+      "normalized_sha256": "61d8494e1a9cfd2b631649cd6b40488f9ce1b3a338cb04657f0944fd47f56d3d"
+    },
+    {
+      "symbol": "CRASH600",
+      "normalized_rows": 259199,
+      "normalized_sha256": "d2437657dfc52832004f7fa029653aef37953fefec2943a282ae40dd4ef0e14e"
+    }
+  ],
+  "errors": []
+}

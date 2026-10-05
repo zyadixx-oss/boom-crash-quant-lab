@@ -1,0 +1,160 @@
+{
+  "source": "Official Deriv public WebSocket ticks_history",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "collector_file": "scripts/collect_spike_history.py",
+  "collector_sha256": "b0b4ff7df6c86ca098e8cd8b001e8c7129e43f9ccfe66c3f45d5f27e3669f300",
+  "requested_days": 180,
+  "requested_start_epoch": 1775560080,
+  "requested_cutoff_exclusive_epoch": 1791112080,
+  "requested_start_utc": "2026-04-07T11:08:00+00:00",
+  "requested_cutoff_exclusive_utc": "2026-10-04T11:08:00+00:00",
+  "symbols": [
+    {
+      "symbol": "BOOM600",
+      "display_name": "Boom 600 Index",
+      "raw_file": "data/spike_nonlinear600_recent/boom600_m1_180d.csv",
+      "clean_file": "data/spike_nonlinear600_recent/boom600_m1_180d_clean.csv",
+      "raw_sha256": "49486105d0928171f8039a7d458d602805e19977e1486353c8be5eff9c5f9bac",
+      "clean_sha256": "61d8494e1a9cfd2b631649cd6b40488f9ce1b3a338cb04657f0944fd47f56d3d",
+      "raw_rows": 259200,
+      "clean_rows": 259199,
+      "raw_equals_clean_bytes": false,
+      "expected_rows": 259200,
+      "coverage_fraction": 0.9999961419753086,
+      "first_epoch": 1775560080,
+      "last_epoch": 1791112020,
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "last_utc": "2026-10-04T11:07:00+00:00",
+      "missing_rows": 1,
+      "missing_epochs": [
+        1785228600
+      ],
+      "raw_off_grid_epochs": [
+        1785172079
+      ],
+      "excluded_rows": 1,
+      "page_count": 260,
+      "request_errors": [
+        {
+          "end": 1785592079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785532079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785472079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785412079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785352079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        }
+      ],
+      "request_error_count": 5,
+      "canonical_utc_minute_grid": true,
+      "finite_positive_valid_ohlc": true,
+      "strictly_ascending_unique_epochs": true,
+      "raw_canonical_prices_preserved": true,
+      "requested_grid_complete": false,
+      "raw_sha256_preserved_during_metadata_portability": true
+    },
+    {
+      "symbol": "CRASH600",
+      "display_name": "Crash 600 Index",
+      "raw_file": "data/spike_nonlinear600_recent/crash600_m1_180d.csv",
+      "clean_file": "data/spike_nonlinear600_recent/crash600_m1_180d_clean.csv",
+      "raw_sha256": "32cf300a115d7df9722a18c66077bd52143dbe9e068b761589cb84c11f9bd84b",
+      "clean_sha256": "d2437657dfc52832004f7fa029653aef37953fefec2943a282ae40dd4ef0e14e",
+      "raw_rows": 259200,
+      "clean_rows": 259199,
+      "raw_equals_clean_bytes": false,
+      "expected_rows": 259200,
+      "coverage_fraction": 0.9999961419753086,
+      "first_epoch": 1775560080,
+      "last_epoch": 1791112020,
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "last_utc": "2026-10-04T11:07:00+00:00",
+      "missing_rows": 1,
+      "missing_epochs": [
+        1785228600
+      ],
+      "raw_off_grid_epochs": [
+        1785172079
+      ],
+      "excluded_rows": 1,
+      "page_count": 260,
+      "request_errors": [
+        {
+          "end": 1785172078,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785112079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785052079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1784992079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1784932079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        }
+      ],
+      "request_error_count": 5,
+      "canonical_utc_minute_grid": true,
+      "finite_positive_valid_ohlc": true,
+      "strictly_ascending_unique_epochs": true,
+      "raw_canonical_prices_preserved": true,
+      "requested_grid_complete": false,
+      "raw_sha256_preserved_during_metadata_portability": true
+    }
+  ],
+  "all_requested_grids_complete": false,
+  "authentication_used": false,
+  "allowed_request_types": [
+    "active_symbols",
+    "ticks_history"
+  ],
+  "account_or_order_requests": false,
+  "features_or_payoffs_computed": false,
+  "features_or_payoffs_computed_scope": "Acquisition and byte/grid audit only; later study evaluation is separate.",
+  "fills_or_interpolations": false,
+  "forward_test": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "global_unseen_outcomes_claimed": false,
+  "metadata_paths_portable_repository_relative": true,
+  "audit_at_utc": "2026-10-05T09:58:04.525788+00:00",
+  "lifecycle": [
+    {
+      "session_id": 90244,
+      "exit_code": 0,
+      "purpose": "Complete dual-symbol collection"
+    }
+  ]
+}
