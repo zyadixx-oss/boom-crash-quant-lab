@@ -53,3 +53,13 @@ data/spike_tick_execution_20261005/*_checkpoint.json
 data/spike_tick_execution_20261005/*.log
 docs/spike_tick_execution_20261005/*_trades.csv
 docs/spike_tick_execution_20261005/*_signals.csv
+docs/spike_tick_age_payoff_20261005/*_labels.csv
+docs/spike_tick_age_payoff_20261005/*_trades.csv
+docs/spike_tick_age_payoff_20261005/*_signals.csv
+docs/spike_tick_age_payoff_20261005/*_inputs.csv
+docs/spike_tick_age_payoff_20261005/*_matrix.csv
+docs/spike_tick_age_payoff_20261005/training_labels/
+docs/spike_tick_age_payoff_20261005/diagnostic_labels/
+docs/spike_tick_age_payoff_20261005/ledgers/
+docs/spike_tick_age_payoff_20261005/inputs/
+docs/spike_tick_age_payoff_20261005/signals/

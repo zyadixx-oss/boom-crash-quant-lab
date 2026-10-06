@@ -14,6 +14,13 @@ now measures causal jump age on the same immutable tick sample. Last30% older/yo
 hazard ratios are1.045 for Boom600 and1.226 for Crash600; neither is a profit factor.
 The four declared >=1.5 overdue-hazard effects are rejected conditional on the
 fixed detector and sparse observed-day resampling. No strategy is promoted.
+The executed [tick-age payoff pilot](docs/spike_tick_age_payoff_20261005/REPORT.ar.md)
+then compares the same44 closed-frame inputs with46 inputs adding strict-prior
+tail age/mark on a shared five-minute clock. All eight final model point PFs
+are below1, with71–136 completions and four observed days. Every46-minus44
+mean interval crosses zero; the added features establish no economic advantage.
+Overlapping training/diagnostic labels are separate from one-open strategy
+ledgers and cannot count toward the1,000-path evidence gate.
 All four live flags remain false.
 
 ## Live Arabic CRT chart

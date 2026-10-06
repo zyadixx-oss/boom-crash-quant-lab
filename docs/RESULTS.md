@@ -288,3 +288,53 @@ saved policy arithmetic. Raw integrity is anchored to the round7 passed audit,
 not renormalized again. Bootstrap regeneration/inference validity, calibration
 uncertainty, unsaved runtime prior-mark table, model fitting, profit and broker
 execution remain outside scope. [Audit](spike_tick_tail_20261005/independent_audit.json).
+
+
+## Fixed tick-age/mark economic pilot — executed, no qualified model
+
+See [Arabic report](spike_tick_age_payoff_20261005/REPORT.ar.md),
+[frozen protocol](SPIKE_TICK_AGE_PAYOFF_PROTOCOL.md),
+[selection](spike_tick_age_payoff_20261005/selection.json) and
+[results](spike_tick_age_payoff_20261005/results.json). Round9 retains44 closed
+H4/H1 + M15/M5/M1 inputs and adds exactly strict-prior tail-age log1p and last
+native tail mark in RIDGE46. Both families and clock use the same common
+available closed M5 opportunities. The prior00/30 cadence changes for every
+family/reference; comparison with round6 is not an isolated new-feature effect.
+
+Four expanding fits use the fixed first40% detector, training-only ridge0.1,
+q75 positive cutoff and individually replayed, potentially overlapping targets.
+Final70% training has2,313/2,341 completed labels per Boom/Crash direction;
+these are not non-overlapping strategy completion counts. Selection froze
+before new final30% payoff calculation. All development selections were
+ineligible, with just five observed validation days and unknown payoff cases.
+
+| Final30 model | RIDGE44 n/PF | RIDGE46 n/PF | RIDGE46 day-conditional PF CI95 |
+|---|---|---|---|
+| BOOM600 SPIKE |103 /0.908|102 /0.751|[0.439,1.028]|
+| BOOM600 DRIFT |133 /0.708|136 /0.636|[0.441,0.910]|
+| CRASH600 SPIKE |107 /0.724|110 /0.694|[0.386,1.250]|
+| CRASH600 DRIFT |73 /0.898|71 /0.898|[0.538,1.599]|
+
+All four46-minus44 point mean differences are negative and their paired
+observed-day intervals cross zero. Final ledgers have no censored/missing-entry/
+invalid outcomes, but just four discontinuous observed-day clusters. The
+final age-band overlapping-label mean intervals all cross zero; development
+unknown labels block whole-policy rejection even where known-subset means have
+negative intervals. No discovery, independent-price-OOS, full-period profit
+or readiness claim is made. No result justifies expanding this fixed policy
+solely to accumulate completions. The pilot cannot meet1,000 completed
+held-out strategy paths or60activeheldout days; labels cannot be pooled to
+manufacture those requirements.
+
+Full local Python before declaration:1,045 passed, one existing warning.
+Independent round9 audit passed the second attempt:11,803,332 checks,24sources,
+3,866 strategy paths,0errors;66,638 overlapping-label records include repeated
+family artifacts, not unique independent trades.333 input hashes/2,260 false
+safety values were checked. First attempt's six dense-grid versus observed-M1
+count mismatches are preserved; only verifier logic/tests were repaired.
+Frozen science/data/models/results are unchanged. Full current Python:1,111
+passed; compilation passed. Scope covers saved matrices/scalers/scalar scores/
+cutoffs, strict-prior features/common clocks, ATR, singleton/joint paths and
+point/gate arithmetic. Full44 regeneration/ridge refit/bootstrap regeneration/
+inferential validity/fresh OOS/broker profit remain excluded. [Passing audit](spike_tick_age_payoff_20261005/independent_audit.json). All four flags remain false. Monetary profit, actual broker fills,
+measured costs and prospective paper are NOT TESTED.
