@@ -19,6 +19,14 @@ then compares the same44 closed-frame inputs with46 inputs adding strict-prior
 tail age/mark on a shared five-minute clock. All eight final model point PFs
 are below1, with71–136 completions and four observed days. Every46-minus44
 mean interval crosses zero; the added features establish no economic advantage.
+The executed [tick-path risk pilot](docs/spike_tick_path_risk_20261006/REPORT.ar.md)
+then adds one strict-prior 600-second native-adverse semivariance input to the
+44 closed-frame features. Its four RIDGE45 final PFs are0.758/0.761/0.763/1.033
+with105/132/121/83 completed paths; all45-minus44 mean intervals cross zero.
+No development model is eligible and no expansion guard passes. Independent
+audit passed13,939,724 checks across24sources and3,918 strategy paths.
+The tick-age and tick-risk pilots reuse known historical prices and payoffs;
+their four observed final days cannot establish fresh out-of-sample profit.
 Overlapping training/diagnostic labels are separate from one-open strategy
 ledgers and cannot count toward the1,000-path evidence gate.
 All four live flags remain false.

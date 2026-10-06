@@ -338,3 +338,47 @@ cutoffs, strict-prior features/common clocks, ATR, singleton/joint paths and
 point/gate arithmetic. Full44 regeneration/ridge refit/bootstrap regeneration/
 inferential validity/fresh OOS/broker profit remain excluded. [Passing audit](spike_tick_age_payoff_20261005/independent_audit.json). All four flags remain false. Monetary profit, actual broker fills,
 measured costs and prospective paper are NOT TESTED.
+
+
+## Strict-prior tick-path risk economic pilot — executed, no qualified model
+
+See [Arabic report](spike_tick_path_risk_20261006/REPORT.ar.md),
+[frozen protocol](SPIKE_TICK_PATH_RISK_PROTOCOL.md),
+[selection](spike_tick_path_risk_20261006/selection.json) and
+[results](spike_tick_path_risk_20261006/results.json). Round10 retains the
+44 closed H4/H1 + M15/M5/M1 inputs and adds one native-adverse semivariance
+feature over exactly 600 prior second increments, using the frozen round8
+median. All 601 consecutive quotes end at t-1; gaps remain unknown. No current
+or future quote is used. Both families and CLOCK share closed M5 availability.
+
+Models use fixed training-only ridge/scaling/cutoffs and the unchanged tick
+execution policy. Expanding fits are 40/50/60%, validated on the next 10%, with
+70% final training. The 2,329 final training targets per symbol/direction are
+identical for both families and overlap; they are not strategy evidence.
+All development selections are ineligible. Prices and payoffs were already
+known: this is adaptive research, not fresh price OOS or a new label holdout.
+
+| Final30 model | CLOCK n/PF | RIDGE44 n/PF | RIDGE45 n/PF | RIDGE45 conditional PF CI95 |
+|---|---|---|---|---|
+| BOOM600 SPIKE | 260 / 0.974 | 102 / 0.880 | 105 / 0.758 | [0.460,1.049] |
+| BOOM600 DRIFT | 288 / 0.782 | 133 / 0.715 | 132 / 0.761 | [0.487,1.520] |
+| CRASH600 SPIKE | 264 / 0.731 | 107 / 0.703 | 121 / 0.763 | [0.336,1.389] |
+| CRASH600 DRIFT | 285 / 1.011 | 80 / 1.003 | 83 / 1.033 | [0.678,1.790] |
+
+All 45-minus44 paired observed-day mean intervals cross zero. No positive
+absolute-and-incremental expansion condition passes. Final paths have known
+outcomes but only four discontinuous observed-day clusters. No model qualifies
+1,000 held-out completed paths, 60 active held-out days or PF>=1.5. Neither
+pooling labels nor expanding this fixed policy solely for count cures this.
+
+Independent audit passed the first actual attempt: 13,939,724 checks, 24 sources,
+3,918 strategy paths and zero errors. It checked 507 hashes and 4,320 saved false
+values. 66,736 overlapping-label records include repeated 44/45 family artifacts
+and are not unique trades. Full local Python suite: 1,364 passed, one existing
+warning; compilation passed. Scope covers independent causal risk reconstruction,
+saved matrices/scalers/scalar predictions, closed timestamps, common clocks,
+quote paths and point/gate arithmetic. Full44 regeneration/refit/bootstrap
+regeneration/inferential validity/independence/fresh OOS/broker profit remain
+excluded. [Passing audit](spike_tick_path_risk_20261006/independent_audit.json).
+All four live flags remain false. Monetary profit, actual broker fills, measured
+costs and prospective paper results remain NOT TESTED.
