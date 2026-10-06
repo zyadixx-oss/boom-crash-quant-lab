@@ -29,6 +29,13 @@ The tick-age and tick-risk pilots reuse known historical prices and payoffs;
 their four observed final days cannot establish fresh out-of-sample profit.
 Overlapping training/diagnostic labels are separate from one-open strategy
 ledgers and cannot count toward the1,000-path evidence gate.
+The executed [one-minute reward ablation](docs/spike_short_target_20261006/REPORT.ar.md)
+trains the same44 combined-frame inputs on SHORT1 versus LONG15 rewards, then
+compares both under one-minute execution on the pinned native600 history.
+Later180-day SHORT PFs are0.000/0.265/0.285/0.809 with8/2/104/4 completions;
+all development choices and conditional economic gates are rejected. References
+also have PF<1. This is adaptive known-history evidence, not fresh OOS;
+M1 execution and assumed costs do not establish broker profit.
 All four live flags remain false.
 
 ## Live Arabic CRT chart

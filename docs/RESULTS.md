@@ -382,3 +382,54 @@ regeneration/inferential validity/independence/fresh OOS/broker profit remain
 excluded. [Passing audit](spike_tick_path_risk_20261006/independent_audit.json).
 All four live flags remain false. Monetary profit, actual broker fills, measured
 costs and prospective paper results remain NOT TESTED.
+
+
+## One-minute reward target ablation — executed, all new models rejected
+
+See [Arabic report](spike_short_target_20261006/REPORT.ar.md),
+[frozen protocol](SPIKE_SHORT_TARGET_PROTOCOL.md),
+[declaration](spike_short_target_20261006/declaration.json),
+[selection](spike_short_target_20261006/selection.json) and
+[results](spike_short_target_20261006/results.json). Round11 retains the44 closed
+H4/H1 + M15/M5/M1 inputs, mean-SSE ridge0.1 and positive train-score q75 cutoff.
+SHORT44 trains on one-minute reward, LONG44 on15-minute reward; both and CLOCK
+are evaluated under the same fixed one-minute M1 proxy. LONG is reference_only.
+
+Older180-day40/50/60% fits validate the next10% each; final older70% freeze
+precedes new older30% secondary/later180 primary calculations. Price history
+and prior15-minute payoffs were exposed before this experiment: these are
+adaptive known-history results, not fresh price OOS, label holdout or prospective
+evidence. Final shared training matrices contain5926 finite dual-target rows
+per symbol/direction; those targets cannot count as strategy completions.
+
+| Primary later180 model | SHORT n/active days/PF | Day finite PF CI95 | Week finite PF CI95 | LONG n/PF | CLOCK n/PF |
+|---|---|---|---|---|---|
+| BOOM600 SPIKE |8/8/0.000|[0,0]|[0,0]|909/0.486|8392/0.494|
+| BOOM600 DRIFT |2/2/0.265|[0,0.795]|[0,0.530]|813/0.169|8392/0.223|
+| CRASH600 SPIKE |104/84/0.285|[0.054,0.630]|[0.038,0.631]|851/0.414|8392/0.504|
+| CRASH600 DRIFT |4/4/0.809|[0,1.758]|[0,1.751]|1848/0.197|8392/0.216|
+
+Undefined day/week PF draws respectively:1/1,3734/3545,0/0,3569/3614
+out of9999. Intervals summarize finite draws only; undefined samples block
+bounded positive inference. All SHORT means are negative, all Holm-four
+conjunction p=1, all development selections and economic gates fail, and
+no candidate qualifiesPF>=1.5/n>=1000/60active days. Development Boom SHORT
+DRIFT PF107.803 had only2 completions and remained rejected; later PF0.265
+confirms why it must not be picked. No threshold or cost was rescued afterward.
+
+M1 entry+1minute, SL2ATR, hold1, adverse-extreme stop/close timeout, assumed
+round-trip cost0.10ATR, common31-minute purge and one-open occupancy stay fixed.
+All primary strategy outcomes are known. Selection's copied false premeasurement
+fields refer to the declaration snapshot, not runtime after training. Sources,
+models, declaration, selection and results remain immutable. Trading flags are
+false; measured costs/fills, cash profit and prospective paper are NOT TESTED.
+
+Round11 independent audit passed the second attempt:9,040,587 checks,0errors,
+4 M1 sources/1,036,798 rows,444 false safety values. The first258 third-boundary
+metric discrepancies and hashes are preserved; only the verifier's missing
+31-minute third-end purge and boundary tests were repaired. Frozen science and
+results did not change. [Passing audit](spike_short_target_20261006/independent_audit.json).
+Full current Python:1580 passed,one existing warning; compilation passed.
+Audit excludes complete44/universe regeneration, ridge refit, bootstrap/CI/p
+regeneration, tail exports, inference/independence and broker profit. Saved
+repeated reference/target records cannot be pooled as strategy evidence.
