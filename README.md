@@ -36,6 +36,16 @@ Later180-day SHORT PFs are0.000/0.265/0.285/0.809 with8/2/104/4 completions;
 all development choices and conditional economic gates are rejected. References
 also have PF<1. This is adaptive known-history evidence, not fresh OOS;
 M1 execution and assumed costs do not establish broker profit.
+The executed [SHORT1 tick fidelity study](docs/spike_short_tick_20261006/REPORT.ar.md)
+then replays the exact saved round11 issuance on12 scheduled post-fit tick days
+per symbol. No refit or new score is computed. SHORT has8 Crash SPIKE paths/PF.490;
+other SHORT streams are empty/null. LONG reference PFs are.689/.187/.296/.471
+with59/49/54/114 paths; CLOCK PFs are.539/.209/.316/.346, each564 paths/12days.
+All observed net means remain negative. Exact quote ordering does not produce
+a qualifying strategy on this known-history sample;1000/60 gates remain unmet.
+Its independent audit passed9,122,119checks with zero errors; the final local
+Python suite passed1766tests and compilation passed. The preserved first failed
+audit required only a verifier numeric-type repair, with frozen results unchanged.
 All four live flags remain false.
 
 ## Live Arabic CRT chart

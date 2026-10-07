@@ -27,3 +27,12 @@ presented as a profit recommendation. No new study was executed by this review.
 
 All four live flags remain false. Broker execution, measured costs, cash profit
 and prospective paper profitability remain NOT TESTED.
+
+## Subsequent round12 scope clarification (before its measurement)
+
+The four-final-day statement above refers to the fitted tick-feature partitions
+of rounds9/10. The proposed round12 keeps the older70%-trained round11 models
+(training ended2026-02-12) fixed, so all12 April11–October3 tick dates are
+post-fit and will be one diagnostic cohort without tick refitting or selection.
+Twelve observed days still cannot meet60 active days or1000 completed paths.
+This clarification changes neither previous measurements nor the profit target.

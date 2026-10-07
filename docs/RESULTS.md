@@ -433,3 +433,56 @@ Full current Python:1580 passed,one existing warning; compilation passed.
 Audit excludes complete44/universe regeneration, ridge refit, bootstrap/CI/p
 regeneration, tail exports, inference/independence and broker profit. Saved
 repeated reference/target records cannot be pooled as strategy evidence.
+
+
+## Frozen SHORT1 tick-versus-M1 execution fidelity — executed, no candidate
+
+[Round12 Arabic report](spike_short_tick_20261006/REPORT.ar.md),
+[frozen protocol](SPIKE_SHORT_TICK_PROTOCOL.md),
+[declaration](spike_short_tick_20261006/declaration.json),
+[results](spike_short_tick_20261006/results.json).
+Exact saved round11 SHORT44/LONG44/CLOCK issuance/ATR/scores only; no model fit,
+feature, cutoff, source/date selection or policy grid. All8 learned models were
+trained through2026-02-12 before the12 scheduled April11–October3 tick days.
+All12 dates form one post-fit known-history diagnostic cohort. Prior4finaldays
+belonged to rounds9/10 fitted tick-feature partitions, not this cohort.
+
+| Reference on12days | n/active days | M1 PF | tick PF | descriptive tick PF CI95 |
+|---|---|---|---|---|
+| BOOM600 LONG SPIKE |59/12|.696|.689|[.091,1.323]|
+| BOOM600 LONG DRIFT |49/12|.174|.187|[.077,5.998]|
+| CRASH600 LONG SPIKE |54/12|.299|.296|[0,.848]|
+| CRASH600 LONG DRIFT |114/12|.541|.471|[.212,2.731]|
+
+SHORT has only8 Crash SPIKE completions across7active days/PF.48968,
+CI95[0,1.672]; other3SHORT streams are empty/null with9999undefined PF draws.
+CLOCK each564/12active days has tick PF.53880/.20871/.31642/.34627.
+All observed net means are negative; all development/candidate gates stayfalse.
+Tick/M1 matched paths have no missing entries/censored/invalid outcomes in
+this particular sample; the complete tick sources retain18 missing seconds.
+The maximum common day-purged sample564/12 cannot qualify1000/60 even if PF
+were favorable. Empty groups, repeated controls and source quotes are not
+strategy evidence. No reference or former development-rejected model promoted.
+
+Both engines use hold1, delay1, SL2ATR, assumed cost.10ATR and31-minute daily
+plannedpurge. Ticks use strict-next entry/exit/stop-successor quotes; M1 uses
+unchanged adverse-minute-extreme/close. All execution quote rules differ
+jointly, so paired deltas are not stop-only slippage. Aggregate9999paired
+resamples use only12scheduled observed-day units/seed20261005, including
+observed emptydays without padding unsampled days as zero. Perday summaries
+are points only. This is known-price/known-payoff/known-tick-order research,
+not new OOS/prospective/inferential independence evidence. Full predeclaration
+science tests1645passed/oneexistingwarning; compilepassed. Final full suite:
+1766passed/oneexistingwarning and compilepassed. The [actual independent
+audit](spike_short_tick_20261006/independent_audit.json) passed attempt2:
+9,122,119checks,0errors,24tick/2M1sources,12savedstreams,2540tick/coarse/matched
+policy records each,875inputhashes and2760safetyvalues. Repeated policy/control
+paths are not independent pooled trades. Scope covers saved issuance/ATR,
+scalar execution, point metrics, matched/control means, CI schema/counts and
+refusal gates; excludes raw renormalization,44features/universe, fitting,
+predictions, bootstrap/CI validity, new holdout/independence and broker profit.
+The first failed attempt is archived: exact OHLC matches returned integer0
+inside the inherited verifier helper versus float0.0 in the result schema.
+Only the verifier/tests were repaired; frozen science and results unchanged.
+All4flagsfalse;
+broker fills/measuredcosts/cashprofit/prospectivepaper remain NOT TESTED.
