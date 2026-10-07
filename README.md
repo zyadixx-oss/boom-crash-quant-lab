@@ -67,6 +67,11 @@ observed days. Development has four unknown reference responses per symbol
 and cannot support complete-cohort rejection. This is feed morphology, not
 strategy PF, fresh OOS, measured latency or broker profit. Separate scalar
 reconstruction passes5829checks/159pins; no candidate is promoted.
+A subsequent [external-source audit](docs/research_source_audit_20261007/REPORT.ar.md)
+finds no reproducible qualifying model in the two inspected leads. It records
+a32-versus60 denominator discrepancy in aBoom500 paper and absent raw tick
+store in a fixed external research repository. External outcomes remain
+unreproduced; no new strategy experiment or OOS is claimed.
 
 ## Live Arabic CRT chart
 

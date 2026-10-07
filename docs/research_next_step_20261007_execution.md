@@ -56,3 +56,18 @@ model. A subsequent economic study needs a distinct causal hypothesis and its
 own frozen protocol; no direction/horizon/latency rescue is declared here.
 The original combined-frame PF>=1.5/large-sample goal remains active and unmet,
 with all four safety gates false and actual economic execution NOT TESTED.
+
+
+## External-source assessment after the successor measurement
+
+`research_source_audit_20261007/REPORT.ar.md` records actual PDF/figure review
+and immutable Git-file byte checks. The inspected Boom500 paper has conflicting
+32/60classification denominators and disappearing arrows; it is not a
+reproducible cost-aware PF claim. The separate code-backed author study lacks
+its raw tick store in the inspected public tree; its outcomes are not reproduced
+here. Neither source supplies a qualifying model or a distinct supported classic
+Boom/Crash alpha mechanism. IndependentM1issuance/alternative estimators remain
+untested, not proven failures, and cannot inherit prior held-out status. No
+Flip-product scope substitution, price decoding or account access. This narrows
+the source leads that warrant follow-up; it does not declare all strategies
+impossible or complete the user's objective.

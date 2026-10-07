@@ -563,3 +563,25 @@ execution. Full local suite1964passed/one existing warning and compile/diff
 checks pass;118new synthetic tests. All4flagsfalse, no candidate. Actual costs,
 fills, cash profit and prospective paper remain NOT TESTED. The complete goal
 remains active and unmet.
+
+
+## External research leads — source assessment only
+
+[Arabic source audit](research_source_audit_20261007/REPORT.ar.md) and
+[byte/provenance record](research_source_audit_20261007/assessment.json).
+The IEOM2022Boom500 paper's Fig8 reports23correct/32cases/71.9%, while its
+adjacent prose says60observations. It acknowledges disappearing arrows and
+does not publish a complete executable cost-aware trade protocol/ledger.
+Its headline efficacy does not establishPF>=1.5 or the required sample.
+A separately versioned author repository, Orphy123/deriv-research at8731c147,
+provides analysis outputs but no tracked raw tick store in its complete73-entry
+tree. Eight fetched file bytes match their immutable Git blob hashes and sizes.
+Its author-reported millions of ticks are not independently verified data here;
+the separate strategy sandbox reports inconclusive with four trades. No source
+code or prices were executed/decoded. Source reading and artifact-byte checks
+are completed; external historical reproduction is NOT TESTED. Neither lead
+promotes a candidate or changes the combined-frame goal, safety gates or prior
+negative evidence. This is not a general impossibility result or exhaustive
+literature search. Existing closedM5/00-or30 clock does not establish everyM1
+issuance; that clock and alternative reward estimators remain untested classes,
+without a newly established advance-information mechanism in these sources.
