@@ -44,8 +44,15 @@ costs, smaller costs alone cannot reach the user target. Thus new public spread
 availability is no reason to promote a failed model or replace historical costs.
 See `frozen_cost_ceiling_20261007/REPORT.ar.md`.
 
-A separately specified successor-response prerequisite is in
-`TAIL_SUCCESSOR_PREREQUISITE.md`; historical computation remains NOT TESTED.
-Its narrow event-clock measurement could resolve the missing morphology fact
-before considering an economic hypothesis. No new model/parameter search or
-candidate is declared. The original goal and all four false safety gates remain.
+The separately frozen successor-response prerequisite is now executed:
+`tail_successor_20261007/REPORT.ar.md`. Its final known-history repetition has
+516Boom/475Crash eligible events across four observed days, complete responses
+and wholly negative conditional excess intervals. This rejects THIS specified
+positive successor excess under its narrow frozen rule. Development has four
+unknown reference outcomes per symbol and cannot receive a bounded rejection.
+The scalar audit passes5829checks/159pins; no detector refit or payoff model.
+This does not justify an event-clock continuation strategy or promote a failed
+model. A subsequent economic study needs a distinct causal hypothesis and its
+own frozen protocol; no direction/horizon/latency rescue is declared here.
+The original combined-frame PF>=1.5/large-sample goal remains active and unmet,
+with all four safety gates false and actual economic execution NOT TESTED.

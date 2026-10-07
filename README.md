@@ -56,7 +56,17 @@ alone cannot attainPF1.5. This is known-result verification, not new OOS.
 A [bounded public quote capture](docs/public_quote_contract_20261007/README.md)
 records240 current bid/ask/quote observations without auth. Public-feed spreads
 are available, but their identity as executable CFD/historical costs is unproved.
-The full local suite passes1846tests; all execution flags remain false.
+The full local suite passes1964tests; all execution flags remain false.
+A [frozen successor-response measurement](docs/tail_successor_20261007/REPORT.ar.md)
+now evaluates the first increment after the strict-successor quote without
+refitting the detector. In the final known-history30%, Boom/Crash have516/475
+eligible events and event-minus-day-matched-reference log-return means
+-1.782/-1.633 ×10^-6, with conditional CI95 wholly negative. Both satisfy the
+specified conditional rejection of positive successor excess on these four
+observed days. Development has four unknown reference responses per symbol
+and cannot support complete-cohort rejection. This is feed morphology, not
+strategy PF, fresh OOS, measured latency or broker profit. Separate scalar
+reconstruction passes5829checks/159pins; no candidate is promoted.
 
 ## Live Arabic CRT chart
 

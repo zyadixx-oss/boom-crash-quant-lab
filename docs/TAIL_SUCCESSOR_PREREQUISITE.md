@@ -1,4 +1,4 @@
-# Tail-successor feed-morphology prerequisite — source-only proposal
+# Tail-successor feed-morphology prerequisite — premeasurement protocol
 
 Status: historical calculation for this response is NOT TESTED. This document
 specifies a prerequisite measurement; it does not declare a profit-seeking
@@ -101,3 +101,28 @@ Before any calculation: implement and verify the helper/runner on synthetic
 causality, event exclusion, exact-lag, missing/boundary, exposure weighting,
 overlap and undefined-resample cases; then exclusively save a declaration and
 source hashes. No historical execution is claimed by the presence of this file.
+
+## Implementation clarifications fixed before the calculation
+
+The exclusive partition endpoint is the first excluded observed-row epoch;
+for the final partition it is midnight after the last scheduled source day.
+An anchor at a partition's first row may use its immediately preceding quote
+from the same UTC source day to classify the already-observed event. No
+detector pair may cross source-day midnight. The forward window must end
+strictly before both the partition endpoint and source-day midnight.
+
+Every source day containing at least one partition row is retained as an
+observed resampling unit, including days with zero eligible events. Interior
+missing successor quotes remain unknown even when the detector pair is known.
+Report eligible counts, known/unknown response counts and known-response sums
+for both events and all-reference anchors, plus detector-pair and planned-end
+exclusions. Overlap is descriptive: consecutive eligible event anchors at most
+two seconds apart share their inclusive anchor-to-t+2 windows. This count does
+not identify physical jumps or independent completed trades.
+
+Each segment uses a new generator with the fixed same seed and9999 multinomial
+resamples of its actual observed days. Event sums/known counts, reference daily
+sums/known counts and eligible-event weights share each resample. A draw with
+no known event outcome or no reference mean for a positively weighted day is
+undefined for the corresponding mean/difference, and is counted explicitly.
+No bootstrap p value or post-result multiplicity claim is introduced.

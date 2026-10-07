@@ -518,7 +518,48 @@ are reviewed offline in CI; frozen cost historical reproduction additionally
 requires the exact locally ignored prior ledgers/signals. Cash profit, actual
 CFD fills/costs and prospective paper remain NOT TESTED; all4flagsfalse.
 
-A [tail-successor prerequisite](TAIL_SUCCESSOR_PREREQUISITE.md) is source-only:
-its specific post-latency feed response is NOT TESTED. It proposes one fixed
-response before any event-clock economic model, without refitting the detector
-or changing timeframes/latencies/horizons after inspection. No new candidate.
+## Tail-successor prerequisite — executed, no strategy payoff
+
+[Arabic report](tail_successor_20261007/REPORT.ar.md),
+[frozen declaration](tail_successor_20261007/declaration.json),
+[results](tail_successor_20261007/results.json),
+[separate scalar audit](tail_successor_20261007/independent_audit.json).
+The source protocol retains its premeasurement NOT TESTED snapshot; these
+artifacts record its subsequent actual execution on7October17:11UTC.
+
+Exactly24 existing round7 sources/2,073,582 quotes/18missing seconds are reused.
+The exact round8 first40% detector is never refitted. One response only:
+side*log(P[t+2]/P[t+1]), excluding the observed event and t-to-t+1 movement.
+All current/past eligible anchors, including events, enter the reference;
+within-day reference means are weighted by eligible event counts. Exact-second
+missing successors remain unknown with retained denominators. Existing observed
+row cutoffs and strict planned-end boundaries remain fixed.
+
+All numbers below are log returns ×10^-6. CI95 is conditional descriptive
+percentile uncertainty from9999 shared observed-day resamples, seed20261007.
+
+| Symbol / segment | Days | Eligible events | Event mean | Day-matched reference | Excess | Excess CI95 | Unknown reference |
+|---|---:|---:|---:|---:|---:|---|---:|
+| BOOM60040–70% |5|482|-1.363192|0.001003|-1.364195|[-1.770758,-0.897670]|4|
+| BOOM60070–100% |4|516|-1.686233|0.095978|-1.782211|[-1.965999,-1.612138]|0|
+| CRASH60040–70% |5|559|1.093374|0.118283|0.975091|[-1.104523,2.566608]|4|
+| CRASH60070–100% |4|475|-1.723265|-0.089938|-1.633327|[-1.783925,-1.416918]|0|
+
+Final cohorts have complete event/reference responses, >=100 eligible events,
+9999 defined excess draws and upper CI95<0. Both meet the frozen conditional
+rejection rule for THIS positive successor excess. Four sparse observed-day
+clusters, exposed prices and dependent/overlapping anchors prevent a global
+causal/physical-event/profit claim. Development unknown references prohibit a
+bounded complete-cohort rejection. wf2 retains an observed zero-event day and
+358/9999 undefined excess draws per symbol; conditional intervals do not hide
+these. No direction, horizon, latency, threshold or run-selection rescue.
+
+Both runs and the scalar audit pass first actual attempts:5829checks,24sources,
+159input pins,227false gate values, max numeric difference2.12e-22. The verifier
+independently reconstructs epoch lookup, sums and per-draw weights, sharing
+NumPy only for multinomial draws/quantiles. It does not establish inferential
+validity, independence, fresh OOS, physical jump identity, strategy PF or broker
+execution. Full local suite1964passed/one existing warning and compile/diff
+checks pass;118new synthetic tests. All4flagsfalse, no candidate. Actual costs,
+fills, cash profit and prospective paper remain NOT TESTED. The complete goal
+remains active and unmet.

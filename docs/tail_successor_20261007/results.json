@@ -1,0 +1,1417 @@
+{
+  "stage": "tail_successor_response_results",
+  "run_utc": "2026-10-07T17:11:27.777090+00:00",
+  "declaration_sha256": "cc0d3e5f996cc8335f6858957db63d91578f89b89c3a778edf4bd8a53e7925fe",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "config": {
+    "response": "side*log(P_t_plus_2/P_t_plus_1)",
+    "event": "side*log(P_t/P_t_minus_1)>10*frozen_round8_median",
+    "detector_refit": false,
+    "reference_includes_events": true,
+    "reference_day_weight": "eligible_event_anchors",
+    "endpoint_rule": "t_plus_2_strictly_before_partition_end_and_source_midnight",
+    "unknown_rule": "retain_eligible_denominators_without_substitution",
+    "bootstrap_repeats": 9999,
+    "bootstrap_seed": 20261007,
+    "minimum_eligible_event_anchors_for_conditional_rejection": 100,
+    "history_status": "previously_exposed_not_fresh_price_OOS",
+    "study_kind": "feed_morphology_prerequisite_not_strategy_validation"
+  },
+  "dates": [
+    "2026-04-11",
+    "2026-04-26",
+    "2026-05-12",
+    "2026-05-28",
+    "2026-06-13",
+    "2026-06-29",
+    "2026-07-15",
+    "2026-07-31",
+    "2026-08-16",
+    "2026-09-01",
+    "2026-09-17",
+    "2026-10-03"
+  ],
+  "symbols": {
+    "BOOM600": {
+      "side": 1,
+      "observed_rows": 1036791,
+      "row_cutoffs": {
+        "40": 414716,
+        "50": 518395,
+        "60": 622074,
+        "70": 725753,
+        "100": 1036791
+      },
+      "detector": {
+        "adequate": true,
+        "median_abs_log_return": 1.4931760609727203e-06,
+        "threshold": 1.4931760609727203e-05,
+        "threshold_multiplier": 10.0,
+        "calibration_events": 691,
+        "calibration_source": "earliest40_percent_observed_rows_only"
+      },
+      "detector_fit_attempts": 0,
+      "no_detector_refit": true,
+      "strategy_eligible": false,
+      "profit_factor": null,
+      "segments": {
+        "wf1": {
+          "row_start_inclusive": 414716,
+          "row_end_exclusive": 518395,
+          "first_observed_utc": "2026-06-13T19:11:56+00:00",
+          "last_observed_utc": "2026-06-29T23:59:57+00:00",
+          "start_epoch": 1781377916,
+          "end_exclusive_epoch": 1782777598,
+          "daily": [
+            {
+              "date": "2026-06-13",
+              "anchor_rows": 17284,
+              "detector_pair_exclusions": 0,
+              "detector_eligible_anchors": 17284,
+              "detected_event_anchors": 23,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 17282,
+              "reference_known": 17282,
+              "reference_unknown": 0,
+              "event_eligible": 23,
+              "event_known": 23,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.0007477968039960415,
+              "event_response_sum": -3.243034660633775e-05
+            },
+            {
+              "date": "2026-06-29",
+              "anchor_rows": 86395,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 86393,
+              "detected_event_anchors": 122,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86391,
+              "reference_known": 86389,
+              "reference_unknown": 2,
+              "event_eligible": 122,
+              "event_known": 122,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.008117024683671592,
+              "event_response_sum": -0.0002094985274756618
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-06-13",
+              "2026-06-29"
+            ],
+            "observed_day_clusters": 2,
+            "totals": {
+              "anchor_rows": 103679,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 103677,
+              "detected_event_anchors": 145,
+              "boundary_excluded_anchors": 4,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 103673,
+              "reference_known": 103671,
+              "reference_unknown": 2,
+              "event_eligible": 145,
+              "event_known": 145,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.008864821487667634,
+              "event_response_sum": -0.00024192887408199955
+            },
+            "event_mean_known_subset": -1.6684749936689625e-06,
+            "day_matched_reference_mean_known_subset": -8.591872483183554e-08,
+            "excess_mean_known_subset": -1.582556268837127e-06,
+            "complete_responses": false,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.7172010448824737e-06,
+                  -1.4100150698407717e-06
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -9.395900732352026e-08,
+                  -4.3270269875942684e-08
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.6232420375589533e-06,
+                  -1.366744799964829e-06
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": false,
+            "interpretation": "insufficient_for_bounded_rejection",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        },
+        "wf2": {
+          "row_start_inclusive": 518395,
+          "row_end_exclusive": 622074,
+          "first_observed_utc": "2026-06-29T23:59:58+00:00",
+          "last_observed_utc": "2026-07-31T04:47:56+00:00",
+          "start_epoch": 1782777598,
+          "end_exclusive_epoch": 1785473277,
+          "daily": [
+            {
+              "date": "2026-06-29",
+              "anchor_rows": 2,
+              "detector_pair_exclusions": 0,
+              "detector_eligible_anchors": 2,
+              "detected_event_anchors": 0,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 0,
+              "reference_known": 0,
+              "reference_unknown": 0,
+              "event_eligible": 0,
+              "event_known": 0,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.0,
+              "event_response_sum": 0.0
+            },
+            {
+              "date": "2026-07-15",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 148,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 148,
+              "event_known": 148,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.009243692052902123,
+              "event_response_sum": -8.019629731476877e-05
+            },
+            {
+              "date": "2026-07-31",
+              "anchor_rows": 17277,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 17276,
+              "detected_event_anchors": 28,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 17274,
+              "reference_known": 17274,
+              "reference_unknown": 0,
+              "event_eligible": 28,
+              "event_known": 28,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.0015142160137580068,
+              "event_response_sum": -4.5845236155336476e-05
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-06-29",
+              "2026-07-15",
+              "2026-07-31"
+            ],
+            "observed_day_clusters": 3,
+            "totals": {
+              "anchor_rows": 103679,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 103677,
+              "detected_event_anchors": 176,
+              "boundary_excluded_anchors": 6,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 103671,
+              "reference_known": 103671,
+              "reference_unknown": 0,
+              "event_eligible": 176,
+              "event_known": 176,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.01075790806666013,
+              "event_response_sum": -0.00012604153347010524
+            },
+            "event_mean_known_subset": -7.161450765346889e-07,
+            "day_matched_reference_mean_known_subset": 1.0391531217128754e-07,
+            "excess_mean_known_subset": -8.200603887059764e-07,
+            "complete_responses": true,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9641,
+                "undefined_draws": 358,
+                "conditional_ci95": [
+                  -1.6373298626905884e-06,
+                  -5.418668737484376e-07
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9641,
+                "undefined_draws": 358,
+                "conditional_ci95": [
+                  8.765867857809464e-08,
+                  1.0699089149972942e-07
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9641,
+                "undefined_draws": 358,
+                "conditional_ci95": [
+                  -1.724988541268683e-06,
+                  -6.48857765248167e-07
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": false,
+            "interpretation": "insufficient_for_bounded_rejection",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        },
+        "wf3": {
+          "row_start_inclusive": 622074,
+          "row_end_exclusive": 725753,
+          "first_observed_utc": "2026-07-31T04:47:57+00:00",
+          "last_observed_utc": "2026-08-16T09:36:01+00:00",
+          "start_epoch": 1785473277,
+          "end_exclusive_epoch": 1786872962,
+          "daily": [
+            {
+              "date": "2026-07-31",
+              "anchor_rows": 69117,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 69116,
+              "detected_event_anchors": 101,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 69114,
+              "reference_known": 69112,
+              "reference_unknown": 2,
+              "event_eligible": 101,
+              "event_known": 101,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.009305169529308665,
+              "event_response_sum": -0.00018127630686035648
+            },
+            {
+              "date": "2026-08-16",
+              "anchor_rows": 34562,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 34561,
+              "detected_event_anchors": 60,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 34559,
+              "reference_known": 34559,
+              "reference_unknown": 0,
+              "event_eligible": 60,
+              "event_known": 60,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.005038925754730426,
+              "event_response_sum": -0.00010781201010194709
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-07-31",
+              "2026-08-16"
+            ],
+            "observed_day_clusters": 2,
+            "totals": {
+              "anchor_rows": 103679,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 103677,
+              "detected_event_anchors": 161,
+              "boundary_excluded_anchors": 4,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 103673,
+              "reference_known": 103671,
+              "reference_unknown": 2,
+              "event_eligible": 161,
+              "event_known": 161,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.004266243774578239,
+              "event_response_sum": -0.0002890883169623036
+            },
+            "event_mean_known_subset": -1.7955796084615128e-06,
+            "day_matched_reference_mean_known_subset": -3.01251512731595e-08,
+            "excess_mean_known_subset": -1.7654544571883534e-06,
+            "complete_responses": false,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.7968668350324515e-06,
+                  -1.79481491940947e-06
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.3463898497089745e-07,
+                  1.458064687846994e-07
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.9426733038171508e-06,
+                  -1.6601759344385726e-06
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": false,
+            "interpretation": "insufficient_for_bounded_rejection",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        },
+        "dev_validation": {
+          "row_start_inclusive": 414716,
+          "row_end_exclusive": 725753,
+          "first_observed_utc": "2026-06-13T19:11:56+00:00",
+          "last_observed_utc": "2026-08-16T09:36:01+00:00",
+          "start_epoch": 1781377916,
+          "end_exclusive_epoch": 1786872962,
+          "daily": [
+            {
+              "date": "2026-06-13",
+              "anchor_rows": 17284,
+              "detector_pair_exclusions": 0,
+              "detector_eligible_anchors": 17284,
+              "detected_event_anchors": 23,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 17282,
+              "reference_known": 17282,
+              "reference_unknown": 0,
+              "event_eligible": 23,
+              "event_known": 23,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.0007477968039960415,
+              "event_response_sum": -3.243034660633775e-05
+            },
+            {
+              "date": "2026-06-29",
+              "anchor_rows": 86397,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 86395,
+              "detected_event_anchors": 122,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86393,
+              "reference_known": 86391,
+              "reference_unknown": 2,
+              "event_eligible": 122,
+              "event_known": 122,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.008119547208466683,
+              "event_response_sum": -0.0002094985274756618
+            },
+            {
+              "date": "2026-07-15",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 148,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 148,
+              "event_known": 148,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.009243692052902123,
+              "event_response_sum": -8.019629731476877e-05
+            },
+            {
+              "date": "2026-07-31",
+              "anchor_rows": 86394,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 86392,
+              "detected_event_anchors": 129,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86390,
+              "reference_known": 86388,
+              "reference_unknown": 2,
+              "event_eligible": 129,
+              "event_known": 129,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.007793801651685804,
+              "event_response_sum": -0.00022712154301569295
+            },
+            {
+              "date": "2026-08-16",
+              "anchor_rows": 34562,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 34561,
+              "detected_event_anchors": 60,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 34559,
+              "reference_known": 34559,
+              "reference_unknown": 0,
+              "event_eligible": 60,
+              "event_known": 60,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.005038925754730426,
+              "event_response_sum": -0.00010781201010194709
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-06-13",
+              "2026-06-29",
+              "2026-07-15",
+              "2026-07-31",
+              "2026-08-16"
+            ],
+            "observed_day_clusters": 5,
+            "totals": {
+              "anchor_rows": 311037,
+              "detector_pair_exclusions": 6,
+              "detector_eligible_anchors": 311031,
+              "detected_event_anchors": 482,
+              "boundary_excluded_anchors": 10,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 311021,
+              "reference_known": 311017,
+              "reference_unknown": 4,
+              "event_eligible": 482,
+              "event_known": 482,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": -0.0023785278565159784,
+              "event_response_sum": -0.0006570587245144084
+            },
+            "event_mean_known_subset": -1.3631923745112208e-06,
+            "day_matched_reference_mean_known_subset": 1.0027651510392618e-09,
+            "excess_mean_known_subset": -1.3641951396622602e-06,
+            "complete_responses": false,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.7587312674218838e-06,
+                  -8.192152224555278e-07
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -8.991275871492441e-08,
+                  1.0972861943265868e-07
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.7707581766110152e-06,
+                  -8.976700099230081e-07
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": false,
+            "interpretation": "insufficient_for_bounded_rejection",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        },
+        "final30": {
+          "row_start_inclusive": 725753,
+          "row_end_exclusive": 1036791,
+          "first_observed_utc": "2026-08-16T09:36:02+00:00",
+          "last_observed_utc": "2026-10-03T23:59:59+00:00",
+          "start_epoch": 1786872962,
+          "end_exclusive_epoch": 1791072000,
+          "daily": [
+            {
+              "date": "2026-08-16",
+              "anchor_rows": 51838,
+              "detector_pair_exclusions": 0,
+              "detector_eligible_anchors": 51838,
+              "detected_event_anchors": 93,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 51836,
+              "reference_known": 51836,
+              "reference_unknown": 0,
+              "event_eligible": 93,
+              "event_known": 93,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.010348466452475134,
+              "event_response_sum": -0.00017648239980059817
+            },
+            {
+              "date": "2026-09-01",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 155,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 155,
+              "event_known": 155,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.02038458553447356,
+              "event_response_sum": -0.0002559480118190721
+            },
+            {
+              "date": "2026-09-17",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 127,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 127,
+              "event_known": 127,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.01696453767625259,
+              "event_response_sum": -0.00023032676445363634
+            },
+            {
+              "date": "2026-10-03",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 141,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 141,
+              "event_known": 141,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.011841081704926962,
+              "event_response_sum": -0.0002073388391898284
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-08-16",
+              "2026-09-01",
+              "2026-09-17",
+              "2026-10-03"
+            ],
+            "observed_day_clusters": 4,
+            "totals": {
+              "anchor_rows": 311038,
+              "detector_pair_exclusions": 3,
+              "detector_eligible_anchors": 311035,
+              "detected_event_anchors": 516,
+              "boundary_excluded_anchors": 8,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 311027,
+              "reference_known": 311027,
+              "reference_unknown": 0,
+              "event_eligible": 516,
+              "event_known": 516,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.025609596015623064,
+              "event_response_sum": -0.000870096015263135
+            },
+            "event_mean_known_subset": -1.686232587719254e-06,
+            "day_matched_reference_mean_known_subset": 9.59781425947211e-08,
+            "excess_mean_known_subset": -1.782210730313975e-06,
+            "complete_responses": true,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.8491325647919751e-06,
+                  -1.5474785220350454e-06
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.062966243341857e-07,
+                  2.2232753446204706e-07
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.9659985490574915e-06,
+                  -1.6121384204319148e-06
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": true,
+            "interpretation": "specified_positive_excess_conditionally_rejected",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        }
+      }
+    },
+    "CRASH600": {
+      "side": -1,
+      "observed_rows": 1036791,
+      "row_cutoffs": {
+        "40": 414716,
+        "50": 518395,
+        "60": 622074,
+        "70": 725753,
+        "100": 1036791
+      },
+      "detector": {
+        "adequate": true,
+        "median_abs_log_return": 1.500805638562028e-06,
+        "threshold": 1.500805638562028e-05,
+        "threshold_multiplier": 10.0,
+        "calibration_events": 684,
+        "calibration_source": "earliest40_percent_observed_rows_only"
+      },
+      "detector_fit_attempts": 0,
+      "no_detector_refit": true,
+      "strategy_eligible": false,
+      "profit_factor": null,
+      "segments": {
+        "wf1": {
+          "row_start_inclusive": 414716,
+          "row_end_exclusive": 518395,
+          "first_observed_utc": "2026-06-13T19:11:56+00:00",
+          "last_observed_utc": "2026-06-29T23:59:57+00:00",
+          "start_epoch": 1781377916,
+          "end_exclusive_epoch": 1782777598,
+          "daily": [
+            {
+              "date": "2026-06-13",
+              "anchor_rows": 17284,
+              "detector_pair_exclusions": 0,
+              "detector_eligible_anchors": 17284,
+              "detected_event_anchors": 31,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 17282,
+              "reference_known": 17282,
+              "reference_unknown": 0,
+              "event_eligible": 31,
+              "event_known": 31,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.0007285755589852274,
+              "event_response_sum": -4.9427897208019704e-05
+            },
+            {
+              "date": "2026-06-29",
+              "anchor_rows": 86395,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 86393,
+              "detected_event_anchors": 139,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86391,
+              "reference_known": 86389,
+              "reference_unknown": 2,
+              "event_eligible": 139,
+              "event_known": 139,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.00721408983141621,
+              "event_response_sum": 0.0004943709528948565
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-06-13",
+              "2026-06-29"
+            ],
+            "observed_day_clusters": 2,
+            "totals": {
+              "anchor_rows": 103679,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 103677,
+              "detected_event_anchors": 170,
+              "boundary_excluded_anchors": 4,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 103673,
+              "reference_known": 103671,
+              "reference_unknown": 2,
+              "event_eligible": 170,
+              "event_known": 170,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.007942665390401438,
+              "event_response_sum": 0.0004449430556868368
+            },
+            "event_mean_known_subset": 2.6173120922755107e-06,
+            "day_matched_reference_mean_known_subset": 7.596693297102653e-08,
+            "excess_mean_known_subset": 2.5413451593044844e-06,
+            "complete_responses": false,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.5944482970328938e-06,
+                  3.5566255603946512e-06
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  4.215805803640941e-08,
+                  8.350704176939437e-08
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.6366063550693032e-06,
+                  3.4731185186252567e-06
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": false,
+            "interpretation": "insufficient_for_bounded_rejection",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        },
+        "wf2": {
+          "row_start_inclusive": 518395,
+          "row_end_exclusive": 622074,
+          "first_observed_utc": "2026-06-29T23:59:58+00:00",
+          "last_observed_utc": "2026-07-31T04:47:56+00:00",
+          "start_epoch": 1782777598,
+          "end_exclusive_epoch": 1785473277,
+          "daily": [
+            {
+              "date": "2026-06-29",
+              "anchor_rows": 2,
+              "detector_pair_exclusions": 0,
+              "detector_eligible_anchors": 2,
+              "detected_event_anchors": 0,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 0,
+              "reference_known": 0,
+              "reference_unknown": 0,
+              "event_eligible": 0,
+              "event_known": 0,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.0,
+              "event_response_sum": 0.0
+            },
+            {
+              "date": "2026-07-15",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 171,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 171,
+              "event_known": 171,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.014089697909643336,
+              "event_response_sum": 0.00032886564540612635
+            },
+            {
+              "date": "2026-07-31",
+              "anchor_rows": 17277,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 17276,
+              "detected_event_anchors": 26,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 17274,
+              "reference_known": 17274,
+              "reference_unknown": 0,
+              "event_eligible": 26,
+              "event_known": 26,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.0037237649558513673,
+              "event_response_sum": -4.662119434405681e-05
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-06-29",
+              "2026-07-15",
+              "2026-07-31"
+            ],
+            "observed_day_clusters": 3,
+            "totals": {
+              "anchor_rows": 103679,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 103677,
+              "detected_event_anchors": 197,
+              "boundary_excluded_anchors": 6,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 103671,
+              "reference_known": 103671,
+              "reference_unknown": 0,
+              "event_eligible": 197,
+              "event_known": 197,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.010365932953791969,
+              "event_response_sum": 0.00028224445106206955
+            },
+            "event_mean_known_subset": 1.4327129495536526e-06,
+            "day_matched_reference_mean_known_subset": 1.1310657629361013e-07,
+            "excess_mean_known_subset": 1.3196063732600425e-06,
+            "complete_responses": true,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9641,
+                "undefined_draws": 358,
+                "conditional_ci95": [
+                  -1.7931228593868006e-06,
+                  1.9231909088077566e-06
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9641,
+                "undefined_draws": 358,
+                "conditional_ci95": [
+                  -2.155705080381711e-07,
+                  1.6308086981774062e-07
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9641,
+                "undefined_draws": 358,
+                "conditional_ci95": [
+                  -1.5775523513486294e-06,
+                  1.760110038990016e-06
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": false,
+            "interpretation": "insufficient_for_bounded_rejection",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        },
+        "wf3": {
+          "row_start_inclusive": 622074,
+          "row_end_exclusive": 725753,
+          "first_observed_utc": "2026-07-31T04:47:57+00:00",
+          "last_observed_utc": "2026-08-16T09:36:01+00:00",
+          "start_epoch": 1785473277,
+          "end_exclusive_epoch": 1786872962,
+          "daily": [
+            {
+              "date": "2026-07-31",
+              "anchor_rows": 69117,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 69116,
+              "detected_event_anchors": 132,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 69114,
+              "reference_known": 69112,
+              "reference_unknown": 2,
+              "event_eligible": 132,
+              "event_known": 132,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.0192946770034757,
+              "event_response_sum": -2.6714426696713548e-05
+            },
+            {
+              "date": "2026-08-16",
+              "anchor_rows": 34562,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 34561,
+              "detected_event_anchors": 60,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 34559,
+              "reference_known": 34559,
+              "reference_unknown": 0,
+              "event_eligible": 60,
+              "event_known": 60,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.0018127886341609105,
+              "event_response_sum": -8.927673906955443e-05
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-07-31",
+              "2026-08-16"
+            ],
+            "observed_day_clusters": 2,
+            "totals": {
+              "anchor_rows": 103679,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 103677,
+              "detected_event_anchors": 192,
+              "boundary_excluded_anchors": 4,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 103673,
+              "reference_known": 103671,
+              "reference_unknown": 2,
+              "event_eligible": 192,
+              "event_known": 192,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.017481888369314788,
+              "event_response_sum": -0.00011599116576626798
+            },
+            "event_mean_known_subset": -6.041206550326457e-07,
+            "day_matched_reference_mean_known_subset": 1.7554398507441028e-07,
+            "excess_mean_known_subset": -7.79664640107056e-07,
+            "complete_responses": false,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.4879456511592406e-06,
+                  -2.023820204296481e-07
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -5.245489262307678e-08,
+                  2.79179838573268e-07
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.4354907585361638e-06,
+                  -4.815618590029161e-07
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": false,
+            "interpretation": "insufficient_for_bounded_rejection",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        },
+        "dev_validation": {
+          "row_start_inclusive": 414716,
+          "row_end_exclusive": 725753,
+          "first_observed_utc": "2026-06-13T19:11:56+00:00",
+          "last_observed_utc": "2026-08-16T09:36:01+00:00",
+          "start_epoch": 1781377916,
+          "end_exclusive_epoch": 1786872962,
+          "daily": [
+            {
+              "date": "2026-06-13",
+              "anchor_rows": 17284,
+              "detector_pair_exclusions": 0,
+              "detector_eligible_anchors": 17284,
+              "detected_event_anchors": 31,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 17282,
+              "reference_known": 17282,
+              "reference_unknown": 0,
+              "event_eligible": 31,
+              "event_known": 31,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.0007285755589852274,
+              "event_response_sum": -4.9427897208019704e-05
+            },
+            {
+              "date": "2026-06-29",
+              "anchor_rows": 86397,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 86395,
+              "detected_event_anchors": 139,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86393,
+              "reference_known": 86391,
+              "reference_unknown": 2,
+              "event_eligible": 139,
+              "event_known": 139,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.007209645364939232,
+              "event_response_sum": 0.0004943709528948565
+            },
+            {
+              "date": "2026-07-15",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 171,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 171,
+              "event_known": 171,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.014089697909643336,
+              "event_response_sum": 0.00032886564540612635
+            },
+            {
+              "date": "2026-07-31",
+              "anchor_rows": 86394,
+              "detector_pair_exclusions": 2,
+              "detector_eligible_anchors": 86392,
+              "detected_event_anchors": 158,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86390,
+              "reference_known": 86388,
+              "reference_unknown": 2,
+              "event_eligible": 158,
+              "event_known": 158,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 1,
+              "reference_response_sum": 0.015568272613457597,
+              "event_response_sum": -7.333562104077037e-05
+            },
+            {
+              "date": "2026-08-16",
+              "anchor_rows": 34562,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 34561,
+              "detected_event_anchors": 60,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 34559,
+              "reference_known": 34559,
+              "reference_unknown": 0,
+              "event_eligible": 60,
+              "event_known": 60,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.0018127886341609105,
+              "event_response_sum": -8.927673906955443e-05
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-06-13",
+              "2026-06-29",
+              "2026-07-15",
+              "2026-07-31",
+              "2026-08-16"
+            ],
+            "observed_day_clusters": 5,
+            "totals": {
+              "anchor_rows": 311037,
+              "detector_pair_exclusions": 6,
+              "detector_eligible_anchors": 311031,
+              "detected_event_anchors": 559,
+              "boundary_excluded_anchors": 10,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 311021,
+              "reference_known": 311017,
+              "reference_unknown": 4,
+              "event_eligible": 559,
+              "event_known": 559,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 3,
+              "reference_response_sum": 0.03578340281286448,
+              "event_response_sum": 0.0006111963409826383
+            },
+            "event_mean_known_subset": 1.0933744919188521e-06,
+            "day_matched_reference_mean_known_subset": 1.1828301708690122e-07,
+            "excess_mean_known_subset": 9.750914748319509e-07,
+            "complete_responses": false,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.0316026282232902e-06,
+                  2.6584903781190455e-06
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  2.4670627986609882e-08,
+                  1.6424428546756857e-07
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.1045229957358627e-06,
+                  2.566608105770141e-06
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": false,
+            "interpretation": "insufficient_for_bounded_rejection",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        },
+        "final30": {
+          "row_start_inclusive": 725753,
+          "row_end_exclusive": 1036791,
+          "first_observed_utc": "2026-08-16T09:36:02+00:00",
+          "last_observed_utc": "2026-10-03T23:59:59+00:00",
+          "start_epoch": 1786872962,
+          "end_exclusive_epoch": 1791072000,
+          "daily": [
+            {
+              "date": "2026-08-16",
+              "anchor_rows": 51838,
+              "detector_pair_exclusions": 0,
+              "detector_eligible_anchors": 51838,
+              "detected_event_anchors": 71,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 51836,
+              "reference_known": 51836,
+              "reference_unknown": 0,
+              "event_eligible": 71,
+              "event_known": 71,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.016651025461479528,
+              "event_response_sum": -0.00012247512134068886
+            },
+            {
+              "date": "2026-09-01",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 158,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 158,
+              "event_known": 158,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": 0.013222567245360185,
+              "event_response_sum": -0.0002666760577166661
+            },
+            {
+              "date": "2026-09-17",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 131,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 131,
+              "event_known": 131,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.001075299770756699,
+              "event_response_sum": -0.0002230568697171558
+            },
+            {
+              "date": "2026-10-03",
+              "anchor_rows": 86400,
+              "detector_pair_exclusions": 1,
+              "detector_eligible_anchors": 86399,
+              "detected_event_anchors": 115,
+              "boundary_excluded_anchors": 2,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 86397,
+              "reference_known": 86397,
+              "reference_unknown": 0,
+              "event_eligible": 115,
+              "event_known": 115,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.03190228859514831,
+              "event_response_sum": -0.00020634268852821088
+            }
+          ],
+          "summary": {
+            "observed_days": [
+              "2026-08-16",
+              "2026-09-01",
+              "2026-09-17",
+              "2026-10-03"
+            ],
+            "observed_day_clusters": 4,
+            "totals": {
+              "anchor_rows": 311038,
+              "detector_pair_exclusions": 3,
+              "detector_eligible_anchors": 311035,
+              "detected_event_anchors": 475,
+              "boundary_excluded_anchors": 8,
+              "boundary_excluded_events": 0,
+              "reference_eligible": 311027,
+              "reference_known": 311027,
+              "reference_unknown": 0,
+              "event_eligible": 475,
+              "event_known": 475,
+              "event_unknown": 0,
+              "overlapping_consecutive_event_windows": 0,
+              "reference_response_sum": -0.03640604658202436,
+              "event_response_sum": -0.0008185507373027216
+            },
+            "event_mean_known_subset": -1.7232647101109928e-06,
+            "day_matched_reference_mean_known_subset": -8.9937742855991e-08,
+            "excess_mean_known_subset": -1.6333269672550018e-06,
+            "complete_responses": true,
+            "bootstrap_repeats": 9999,
+            "bootstrap_seed": 20261007,
+            "bootstrap": {
+              "event_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.769085998533169e-06,
+                  -1.6926665953957564e-06
+                ]
+              },
+              "day_matched_reference_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -3.5091932828736473e-07,
+                  9.125873068389757e-08
+                ]
+              },
+              "excess_mean": {
+                "finite_draws": 9999,
+                "undefined_draws": 0,
+                "conditional_ci95": [
+                  -1.783925326079654e-06,
+                  -1.4169183591798382e-06
+                ]
+              }
+            },
+            "conditional_positive_excess_rejected": true,
+            "interpretation": "specified_positive_excess_conditionally_rejected",
+            "historical_strategy_candidate": false,
+            "strategy_eligible": false,
+            "profit_factor": null,
+            "actual_money_profit": "NOT TESTED",
+            "prospective_paper": "NOT TESTED"
+          }
+        }
+      }
+    }
+  },
+  "goal_achieved": false,
+  "historical_strategy_candidate": false,
+  "actual_money_profit": "NOT TESTED",
+  "prospective_paper": "NOT TESTED",
+  "actual_execution_costs": "NOT TESTED",
+  "physical_spike_census": false,
+  "profit_factor": null,
+  "completed_utc": "2026-10-07T17:11:48.693698+00:00"
+}
