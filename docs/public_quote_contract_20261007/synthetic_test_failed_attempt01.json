@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-10-07T06:20:21.964822+00:00",
+  "provenance": "Transcript observation from exec terminal output; full raw stdout was not redirected.",
+  "command": "env LIVE_TRADING=false READY_FOR_LIVE=false LIVE_ALLOWED=false OPENED_TRADES=false .venv/bin/python -m pytest backend/tests/test_public_quote_contract.py -q",
+  "exit_code": 2,
+  "error": "test_exact_allowlist_rejects_other_calls_and_bool_aliases: 'request' is a reserved name and cannot be used in @pytest.mark.parametrize",
+  "test_source_sha256_before_repair": "c8daf9066ac6e35c56c34561ba03fcacf4ff63e723e62cf9ca35f264cd2a5acc",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

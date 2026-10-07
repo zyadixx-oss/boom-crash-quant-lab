@@ -486,3 +486,39 @@ inside the inherited verifier helper versus float0.0 in the result schema.
 Only the verifier/tests were repaired; frozen science and results unchanged.
 All4flagsfalse;
 broker fills/measuredcosts/cashprofit/prospectivepaper remain NOT TESTED.
+
+
+## Public quote contract and fixed-ledger cost ceiling — executed
+
+[Public-feed evidence](public_quote_contract_20261007/README.md) captures60
+consecutive epochs each for BOOM500/CRASH500/BOOM600/CRASH600 at2026-10-07
+11:36:10–11:37:09UTC:240 raw decoded text messages, all sides present, no gaps
+or ordering failures. Median public spreads in price units are.078/.041/.069/.315.
+The socket closed; no authentication or trading calls. An independent stdlib
+review reconciled requests, hashes, raw messages and decimal summaries.
+Public-feed bid/ask cannot be equated to executable MT5 prices or substituted
+retroactively into historical quote-only ledgers.
+
+[Cost-ceiling verification](frozen_cost_ceiling_20261007/REPORT.ar.md) independently
+recomputes all12 audited round6 later180 ledgers:12,621 primary records and58
+input hashes. Exact counts, entry days, gross arithmetic, net=gross-.05R and
+same-fill/delay zero-cost sensitivities match. Records overlap across model
+families and are not pooled independent strategy evidence. All12 gross PFs
+remain below1.5; best combined44 isCrash BOOST44 SPIKE1.056027 (n1306/174days).
+For fixed paths/weights and additive costs>=0, gains cannot increase and losses
+cannot decrease; reducing costs alone cannot rescue these fixed models.
+The bound excludes changed fills/signals/weights, rebates, positive carry and
+other policies. Earlier development rejection is binding. The prior numerical
+sensitivities/schema/sample rows were explicitly already seen before coding.
+This is arithmetic verification, not a new economic experiment or fresh OOS.
+
+Final local Python1846passed/one existing warning; compilationpassed. Included
+are52 public probe and28 cost-bound synthetic tests. Current captured raw data
+are reviewed offline in CI; frozen cost historical reproduction additionally
+requires the exact locally ignored prior ledgers/signals. Cash profit, actual
+CFD fills/costs and prospective paper remain NOT TESTED; all4flagsfalse.
+
+A [tail-successor prerequisite](TAIL_SUCCESSOR_PREREQUISITE.md) is source-only:
+its specific post-latency feed response is NOT TESTED. It proposes one fixed
+response before any event-clock economic model, without refitting the detector
+or changing timeframes/latencies/horizons after inspection. No new candidate.

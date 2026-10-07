@@ -48,6 +48,16 @@ Python suite passed1766tests and compilation passed. The preserved first failed
 audit required only a verifier numeric-type repair, with frozen results unchanged.
 All four live flags remain false.
 
+A subsequent [fixed-ledger cost ceiling](docs/frozen_cost_ceiling_20261007/REPORT.ar.md)
+independently reconciles all12 round6 primary ledgers/12,621 records. Their
+zero-cost PFs are0.879–1.065; the best combined44 PF is1.056 on1306 paths.
+For these fixed signals/fills/weights, reducing nonnegative additive costs
+alone cannot attainPF1.5. This is known-result verification, not new OOS.
+A [bounded public quote capture](docs/public_quote_contract_20261007/README.md)
+records240 current bid/ask/quote observations without auth. Public-feed spreads
+are available, but their identity as executable CFD/historical costs is unproved.
+The full local suite passes1846tests; all execution flags remain false.
+
 ## Live Arabic CRT chart
 
 The `frontend` is now an Arabic, RTL standalone chart for all currently available Boom/Crash symbols. It uses the Deriv public WebSocket directly, without a trading account, API token or backend. Select M1/M5/M15/H1, inspect the closed H1 CRT range and closed M5 sweep/reclaim/confirmation observations, and review the frozen historical study. See `frontend/README.md` for precise rules and verification. All four trading flags remain false.

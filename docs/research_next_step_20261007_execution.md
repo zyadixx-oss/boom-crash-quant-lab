@@ -28,3 +28,24 @@ Research continues without promoting the failed models. Prospective paper
 profitability, actual broker fills, measured costs and cash profit remain
 NOT TESTED. LIVE_TRADING=false, READY_FOR_LIVE=false, LIVE_ALLOWED=false,
 OPENED_TRADES=false. The full goal remains active and unmet.
+
+
+## Subsequent actual evidence on7October2026
+
+The bounded public stream capture now establishes optional bid/ask for all four
+observed Boom/Crash500/600 symbols (60epochs each). This corrects a broad claim
+that the public feed is quote-only; the existing historical research datasets
+are still quote-only. Executable CFD identity/historical costs remain unverified.
+See `public_quote_contract_20261007/README.md`.
+
+The independent fixed-ledger diagnostic also verifies that all12 prior round6
+gross PFs are<1.5. For identical signals/fills/weights and nonnegative additive
+costs, smaller costs alone cannot reach the user target. Thus new public spread
+availability is no reason to promote a failed model or replace historical costs.
+See `frozen_cost_ceiling_20261007/REPORT.ar.md`.
+
+A separately specified successor-response prerequisite is in
+`TAIL_SUCCESSOR_PREREQUISITE.md`; historical computation remains NOT TESTED.
+Its narrow event-clock measurement could resolve the missing morphology fact
+before considering an economic hypothesis. No new model/parameter search or
+candidate is declared. The original goal and all four false safety gates remain.
