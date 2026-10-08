@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/scripts/verify_zone_excursions.py", line 365, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/scripts/verify_zone_excursions.py", line 358, in main
+    result = execute()
+             ^^^^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/scripts/verify_zone_excursions.py", line 298, in execute
+    check_membership(audit, frame, expected, artifact["path"])
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/scripts/verify_zone_excursions.py", line 152, in check_membership
+    elif k == "atr": audit.check(np.allclose(frame[k], expected[k], atol=1e-12, rtol=1e-12), name + "/atr")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py", line 2312, in allclose
+    res = all(isclose(a, b, rtol=rtol, atol=atol, equal_nan=equal_nan))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py", line 2444, in isclose
+    & isfinite(y)
+      ^^^^^^^^^^^
+TypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''

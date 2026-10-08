@@ -1,6 +1,15 @@
 # boom-crash-quant-lab
 
-8 October update: the [pre-issued zone study](docs/zone_study_20261008/REPORT.ar.md)
+8 October supplemental measurement: the [complete twelve-definition zone diagnostic](docs/zone_excursions_20261008/REPORT.ar.md)
+keeps every region and economic ledger unchanged. It measures1.5/2/3ATR over
+5/10/15/30minutes at a delayed issuance quote and actual filled entries, with
+two baselines, day/week intervals and two Holm144 families. No corrected
+comparison is significant; no strategy qualifies. Independent original-quote
+audit passes1,366,811checks across494,556definition labels and all2016metric
+cells/intervals. Known history remains adaptive; classification hits after a
+stop/expiry are never trade profits. All four execution flags remain false.
+
+8 October zone payoff study: the [pre-issued zone study](docs/zone_study_20261008/REPORT.ar.md)
 actually tests fixed CRT, Fibonacci and trend regions on62,380,130 audited
 Boom/Crash600 quotes. No region policy qualifies. In the later180days, trend
 Crash600 has PF1.477/n60, CI95weekly[0.733,2.758]; the other five policies have

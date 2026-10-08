@@ -1,5 +1,29 @@
 # Results — actual offline Spike Hunter study
 
+## 8 October 2026: unchanged zones, all twelve excursion definitions
+
+The [supplemental report](zone_excursions_20261008/REPORT.ar.md) and
+[complete2016cell CSV](zone_excursions_20261008/metrics.csv) now fill the
+previously unmeasured classification endpoints for saved600zones. All original
+regions, entries, exits, costs and economic results remain byte-identical.
+Both delayed issuance and actual-entry anchors test1.5/2/3issueATR in
+5/10/15/30minutes. Missing seconds remain unknown; full horizons are required.
+These are directional level excursions, not proven discrete spikes or wins.
+
+For later180days, primary2ATR/15m precision/base/lift versus the past-available
+clock is BoomCRT25.00%/22.11%/1.131, Fibonacci17.59%/22.11%/0.795,
+trend17.88%/22.11%/0.809; CrashCRT20.00%/23.00%/0.870,
+Fibonacci12.92%/23.00%/0.562, trend16.76%/23.00%/0.729.
+Every comparison remains nonsignificant after the separate144comparison
+Holm family per endpoint. All original profit/sample/development gates remain
+rejected. This is adaptive measurement on exposed history, not fresh OOS.
+
+The independent NumPy original-quote audit passes1,366,811checks,
+494,556definition labels and all2016point/CI/recall/time/Holm metric cells.
+Its scope excludes regenerating original strategy features or proving broker
+execution. The initial empty-ATR reader failure is preserved; only the verifier
+reader was repaired, with frozen code/results unchanged. Safety flags stayfalse.
+
 ## 8 October 2026: pre-issued CRT/Fibonacci/trend zones
 
 The [executed zone report](zone_study_20261008/REPORT.ar.md) directly tests
