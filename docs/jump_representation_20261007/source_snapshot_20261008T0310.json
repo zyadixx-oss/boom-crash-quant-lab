@@ -1,0 +1,4610 @@
+{
+  "stage": "jump_tick_source_metadata_snapshot",
+  "run_utc": "2026-10-08T03:10:17.595134+00:00",
+  "mode": "snapshot",
+  "passed": null,
+  "completeness_passed": false,
+  "integrity_of_available_sources": "NOT TESTED",
+  "gap_free_full_calendar": null,
+  "expected_sources": 722,
+  "available_manifests": 421,
+  "missing_manifests": 301,
+  "unexpected_manifest_files": [],
+  "expected_grid_seconds": 62380800,
+  "sources": [
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-09",
+      "manifest_sha256": "245ccca0f91574b5f1a4c40648557b9e2484a6e39fb67c179aae9565be465ad9",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-10",
+      "manifest_sha256": "6e7c1ed6eb3567bccc4298fde169f8d90f215f5bb855cc0bf43bb60626cdbe2a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-11",
+      "manifest_sha256": "2de5cfdfd25caf0b95159bb9e698fa504a6d27eda394f596134820bd648efb07",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-12",
+      "manifest_sha256": "0a1c5618ae791f728685e4d1b269f964c1bb39f06a617a4d41bffa4c46cd0313",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-13",
+      "manifest_sha256": "426c851897ccda4e95899a4a9542fe36e9d3e0c823b830a4d3a7a75dc8e6cb0e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-14",
+      "manifest_sha256": "dc33d3946d0c81ff71e05dfc3cf88e0fbaa612636cc1c402c4919397f57e42f4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-15",
+      "manifest_sha256": "1d9cb8435781f2387fefbbe29108603d7663007e92bccdb48e81034f69fda9e1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-16",
+      "manifest_sha256": "4f0e6a662d881dcc229495bb63af300a0cb843791d6ff14e4e588929b86bad7e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-17",
+      "manifest_sha256": "4e581558f1d2ee3d54c2141c96b4b76197d2496a7aafb421267d17642b60955a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-18",
+      "manifest_sha256": "c8623c5649dec88d12e36af9dd72d2b44abdce75dcda9b3eeef1484455c0cc26",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-19",
+      "manifest_sha256": "bf0ede6d287393f280129a77c78b77ca26b970dfd9eb3d405159b3b1136d94e7",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-20",
+      "manifest_sha256": "f37856801cee06905af07ee591a50d8b9743519cfe9688f47aa741f42abfc21a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-21",
+      "manifest_sha256": "8b2ef6712380b10c6f36c3586c5d57bbf73f30dafc35d23e917608d38c238a12",
+      "reported_rows_unverified": 86396,
+      "reported_missing_seconds_unverified": 4
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-22",
+      "manifest_sha256": "591d82f908d554628f405fb5e8a4c0bc51ee5c8c60cf4d67dfd38bb3f51c740c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-23",
+      "manifest_sha256": "f50a496b79295683b47af88d958cc4d4be53dc56b46f2afdbcf460c7ca93e217",
+      "reported_rows_unverified": 86398,
+      "reported_missing_seconds_unverified": 2
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-24",
+      "manifest_sha256": "6c438d9ffb8a8eae24f312380fad7e071a5f25989754b4ef3b46626f71f709eb",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-25",
+      "manifest_sha256": "1964308b68f9c7fdf78ec5f40854de4d2a0494e140146ffd4d6aecb021bf7b87",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-26",
+      "manifest_sha256": "4b577a3ca0ce01e46a706b489bebea27de1e109e27487514c2f4bd3570cbb031",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-27",
+      "manifest_sha256": "10dc890afdac85e921b07f2768c90bd7113d92ec28f23fa9846d8b7d54a02993",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-28",
+      "manifest_sha256": "9a73dfc2219323eca9025485a03479e22ffe534875113fe19d8dd333b0116de6",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-29",
+      "manifest_sha256": "e11090b6a22eb51f5619dea38e90fe3699400a842c244ea134be4fde27a7b510",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-30",
+      "manifest_sha256": "b57094a69d74d912bb34110058a491cda4f84cc31180a325c6cf792a526c47c2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-10-31",
+      "manifest_sha256": "27ae6702954ec0e2fd130f46f77742447d198822ee5c08f24eac416143a3d2b2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-01",
+      "manifest_sha256": "315f71c1434ea0e2553db0411280a3cb3495a57ec2f17dc7a92acc42e53f511e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-02",
+      "manifest_sha256": "aa9fbbf7cad1685686d74060238f86d21e5592706d5b93b52d0d306f058c0ed5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-03",
+      "manifest_sha256": "a73de5831a2fb5b9a267f77a327cd70f5d7c334e22c99f0113529aa78be84fb6",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-04",
+      "manifest_sha256": "7779c2ab3439a015c3f834547bf0df772bafe0bd07eff3c7c84d14637a4052e2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-05",
+      "manifest_sha256": "8da71a7d7c8002e9d18ac76aca07a899f54f1f32d41d9175450794ecd422d355",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-06",
+      "manifest_sha256": "285802302746b45cb922d9ae3278d3f990898a2ddc1d2ca13ba830dc07571197",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-07",
+      "manifest_sha256": "f193b72026736bd32e4e5175ad8224e393b27d4c77675c02fb4ce994d008889d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-08",
+      "manifest_sha256": "2ac7ce04a7f7f29d583873e6412359dbfce90f8ec8033ade7e4d8dba272d3f8c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-09",
+      "manifest_sha256": "60af975e742b1e612eaa00b1ccff7bbacab86e705cf3c03e1dcd29fe13f003ca",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-10",
+      "manifest_sha256": "66be3309b99cc52e3cb0674052b06ace70ebe5c08905305e877c5bccf1d5bde2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-11",
+      "manifest_sha256": "88194be224bcd71fd83d4cf2ed9aff37c2b671c32a86b876500a2b6e23a9ec1b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-12",
+      "manifest_sha256": "facb3ef0bd1a112356be1c31826ef06b6cbb17b4c0d43c9597ac6501d2fe73a2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-13",
+      "manifest_sha256": "5f617c5d43be9e550f2fe6eb104e7c7ade8d039fa073120fbf1fb4189a6a5af3",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-14",
+      "manifest_sha256": "73cec5c2db623ebad98716e3bc0b052c24f423d2b3400970e9f0143226ce0ee6",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-15",
+      "manifest_sha256": "e75072085d1e0362e90cd2bb01aac3035cd958540e43525ee3ccb788055f9910",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-16",
+      "manifest_sha256": "2ffa99db57b90b64e720ae6d182835efebdcd93133b4b3efa182c791bed1b1b1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-17",
+      "manifest_sha256": "a83250824c0a38941cfccc64b98a0a0faa6fc571c0fb68dd9f662a59855b8c4d",
+      "reported_rows_unverified": 86394,
+      "reported_missing_seconds_unverified": 6
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-18",
+      "manifest_sha256": "17b16027d7970173b2f930d74a15dbddab88c79783ddf892c7483e06a2c95755",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-19",
+      "manifest_sha256": "b9a08e9338705589f809909c9131902c427efd4abd54e7673fd0425d7b0e71af",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-20",
+      "manifest_sha256": "7fb3a3839c7cfce2b88dfab0c1786679db184e07644d9c1eb74b80f01df7f1fe",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-21",
+      "manifest_sha256": "1c092a11dce6947b272d3656618b37f38a51128721784ec9ab437821790ff566",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-22",
+      "manifest_sha256": "5f88ec3c28389c3811ff42e65fb35ca8372d8d0d9bd30c7992d35dcac60b1cb9",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-23",
+      "manifest_sha256": "c97fba29de9180d0eaefa1dfa343a05a3f0fd5fef26492a80fcbf0993f0f5762",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-24",
+      "manifest_sha256": "e19bfdc90a1f139f43d7e7a4eb28fd96f74eba9ef33bcc0b22cd03cf121f6d72",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-25",
+      "manifest_sha256": "9bf1051f490af8414f22a610339d6106132b465401c9119a8f65b0ebe2e0b594",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-26",
+      "manifest_sha256": "00642e7fac8c0f2a0425e821e83984f3db41e8ae0f1486085d18e3d8769b23ff",
+      "reported_rows_unverified": 86397,
+      "reported_missing_seconds_unverified": 3
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-27",
+      "manifest_sha256": "e2dd61c67d2e13d657593f3abaf06d5eaf91b67d7ff7154fd9a8f2de3e27d1f4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-28",
+      "manifest_sha256": "6c9ec6557ab903f4665681d68be8389219e82a88b9fffe8f3842b2449e9f225a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-29",
+      "manifest_sha256": "d05d26a5e8a2ff1c063361642e2908acc8e58545b5ee3d03c676b26849130199",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-11-30",
+      "manifest_sha256": "9906e9701dca972f191f37dcb1232dfa5a7ddbbb4f53793a5ee5963b99f684c2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-01",
+      "manifest_sha256": "af76fc128376601a4d9db9ea35b69c8a16c227f513cb502f32a9e3eee07e92b9",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-02",
+      "manifest_sha256": "295282a95d5678d74b5e951099852fabafbf54c33931b95e52b71dd05a292622",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-03",
+      "manifest_sha256": "2564066b4baed191108a1c0af3c55d704e7152b62f4e12ac321d403e9d2ccf34",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-04",
+      "manifest_sha256": "d6c62a032d05a56b50a2eab0204cee49646181d213c3690d21859b1d7416ea6c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-05",
+      "manifest_sha256": "02c8e676d06f904da66035c38c7ba0ec7b0b4c7963f3772f4b0032e52db9cd54",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-06",
+      "manifest_sha256": "a469ad2794d0083a701de328739ce4e43139c38f51aef8b15d90c83b03c12e20",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-07",
+      "manifest_sha256": "6655202cce1c166633549d0efa858c82f0334d2eb039ce20fa7c192137e2d7ff",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-08",
+      "manifest_sha256": "fe2e37be7482b5878ec9fe38a6ac4c96ee73a2e7945cdf887d2b57d593e9e7a8",
+      "reported_rows_unverified": 86396,
+      "reported_missing_seconds_unverified": 4
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-09",
+      "manifest_sha256": "7d8eaff2d9e9e564bded4a0b98cbe5c9819e4486c51ed430e1ad3322f3287291",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-10",
+      "manifest_sha256": "689cbc37c50a855bb27469d2292cbeeb7ea3ecd4accc2b635b0edea7aaa0a6bb",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-11",
+      "manifest_sha256": "af20d1c450bfcc3b3f26e5899f60f178284f9a6489ac771d97ad64ee39a6a289",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-12",
+      "manifest_sha256": "5d7130045dd40de199af2c0b209a714ea5171a5d28068e9800f741d79e01cfa4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-13",
+      "manifest_sha256": "2bf9a715dd3da772887bc0b55f4c945ba69c6395f6d551e78898e19226389721",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-14",
+      "manifest_sha256": "e1c62439ec409e6ddf676b950e2265dfa6352685563839e9de3de82c32daa05e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-15",
+      "manifest_sha256": "fa301a168fbc201255a5e08e53d1b552077320d762d08f9aa150ff6d10c3622c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-16",
+      "manifest_sha256": "ad0b484c04a8b4e8c7cc77288ce921b14c88219e8968135c6aa2dfe83159a8ed",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-17",
+      "manifest_sha256": "0e12c2e457f71539e9f2ac77439ba234c083424af3c7f5957421e4c71c0da3f5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-18",
+      "manifest_sha256": "89d3a40e98b967a9e4a91f199cef288899cc52abe34be759d1722a6a6db43ac5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-19",
+      "manifest_sha256": "c8dffef9f3133a428eff244f7c0b2a0e5b335869fe5fe46d4d65761114341751",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-20",
+      "manifest_sha256": "14345768c149ae8ccbdcd22584cf52d7042cdfe769150dcebdaab1b3cd3c803a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-21",
+      "manifest_sha256": "390adc1b2f50158f5bd9953a42ab91a1dcde6c78f647a859a347d91f2348eef1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-22",
+      "manifest_sha256": "47343948d683536f08441a7b014004b8ac3798826df76e1461287647136d65ba",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-23",
+      "manifest_sha256": "aedd0b3ccdb3f03011d32ad856962dd1defc90e17318a644ba2826c49a808f0b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-24",
+      "manifest_sha256": "3eadc4742b29d77dc2616295e62a9a46b58148d9c4e978c5ec508852513ae866",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-25",
+      "manifest_sha256": "e5b2b7600a9fe93e96db0756cbe1f3da24515346ca4f9696e5a419795cb04488",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-26",
+      "manifest_sha256": "6ae2fdc944bc5ee30df16d0cbc847310d7631f88bdd49f32212347cdb921208e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-27",
+      "manifest_sha256": "e8a17225a4250a7dea4ef52998a779d57ae760021aeb911c64b2fd718181f5fe",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-28",
+      "manifest_sha256": "050d9e808c857a6ab4fa3aa66adde8e942c25898d856d74c3a2c71c05a8a5e94",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-29",
+      "manifest_sha256": "8dadfe72753ea5f7d0366b6e0ffd17eb31b903aa30cd4e236a4cbe9daefd8f6e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-30",
+      "manifest_sha256": "b29883cbf729972d635462a5c798f11b34fc72282feac73dbf204f51e9664559",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2025-12-31",
+      "manifest_sha256": "3518e91b109377cd954d08b624af34ff24d0f2449d4301a689c1b4f40b7bbd5b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-01",
+      "manifest_sha256": "4c5a63e299a10e8d704b94f560393a2a120999281ee2f69d130ab89c8318cc0e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-02",
+      "manifest_sha256": "18c7e447e964a933c8c75b67bc31176417cd755f9caf43e565a04f4320223de1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-03",
+      "manifest_sha256": "5a884d9e9b07c8367d12dfdb029bd153c7a8ef3a12b14c6f150f9d5c00e3c31f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-04",
+      "manifest_sha256": "1c1b209d8cb0f052b34e56dde6c732e887e25fe0355415e2fe77b2592604496b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-05",
+      "manifest_sha256": "883af81481639b303f8b41df39def84b6388cc32f5c8de703b4551e87d7f83b7",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-06",
+      "manifest_sha256": "353835befdba08bd16507810671343fea65d4d215430334e4d1437b1122b34d5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-07",
+      "manifest_sha256": "2abe748e28996be73b061c8301b5ab3ec3e955782316e5e87e1082ccbcf7d7dd",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-08",
+      "manifest_sha256": "54d422f230fb3f1724c5d1374201bf8f18d22355f7bdaec9ece7085c0d3e7586",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-09",
+      "manifest_sha256": "b3c49f9232c041fdd0f44fe3f0e482fc1808c659a4dac9c7de8a177af95c7079",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-10",
+      "manifest_sha256": "ea6da0351e0238ee3dc369dc00a4d3ca2a19ce0214e93ccaf6d1278c8ca5c97c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-11",
+      "manifest_sha256": "912adc3a018df2809553392a786846f61b74de44787f756a58fb6f337c232ed2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-12",
+      "manifest_sha256": "2fb3b0ea06da4bbc965a9c93f5f42a33839e4a2aaa7b5d0c4f5f3bc99a684123",
+      "reported_rows_unverified": 86389,
+      "reported_missing_seconds_unverified": 11
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-13",
+      "manifest_sha256": "02a0ae5cedaa765419fe9fd798976539149d6cc15b472ba5db09c2533f6e33ea",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-14",
+      "manifest_sha256": "030da05c8cd22b863f8314ba4d5d7360c51498266314315951b3c535d9062cbc",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-15",
+      "manifest_sha256": "305dbd3cd3becd6a4ce7f4d987fd902ea161a9f468b17674a95270ee21c456a4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-16",
+      "manifest_sha256": "457f439f17fe8c54c8bf26dbb20e3374f631095bc9639f56aeb739004357b9f4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-17",
+      "manifest_sha256": "6c6da1bc5aca609db480397bb9207f949beebca7c1c134041cabd49315935f37",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-18",
+      "manifest_sha256": "80cdb54221201ac20d83da224c2b2c9c67439c74fd170867fa47447271270646",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-19",
+      "manifest_sha256": "609145e620e47fb9bede3166c3146a5195b0a665bff3c13d56cb7070e019ae4f",
+      "reported_rows_unverified": 86393,
+      "reported_missing_seconds_unverified": 7
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-20",
+      "manifest_sha256": "cf392f3941f0e6f01fb1fc55aef9dd1264848d259efcc25f62578659e83353d9",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-21",
+      "manifest_sha256": "42bd71e33190ab7d55bf9fc9b4d626da9005ee931653149b29bfbc97a9c9242e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-22",
+      "manifest_sha256": "6ded50b9f797bbb66add7ca6b5cfd7d77f248d786f1a65400de26eb1c4cf72fa",
+      "reported_rows_unverified": 86398,
+      "reported_missing_seconds_unverified": 2
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-23",
+      "manifest_sha256": "7480d91d3c02a5e9138b68328a495a1727b794271af2c9ba95216d4df053f594",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-24",
+      "manifest_sha256": "0f5bd53555739e5e2a52300449cbea7c3aa4df8803131ec14ebba064f4632b34",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-25",
+      "manifest_sha256": "c455dc9abb270cb056a7cd0f84f51048f17acd5eb36009d5d8e13a7732cb906c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-26",
+      "manifest_sha256": "cf2f2d78168ba798dc61cfb9530217f2729bd4f2e4361a091fd78d2b554edccb",
+      "reported_rows_unverified": 86392,
+      "reported_missing_seconds_unverified": 8
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-27",
+      "manifest_sha256": "ce83976824411c6c6125c028b15c3ee1c59e2c8755c8d9641b6a11d4c015480b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-28",
+      "manifest_sha256": "0bf3b45c72a70c00f36213a1a80a5e50489182856ba0003b08620a21ad50d519",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-29",
+      "manifest_sha256": "5c449f5c29a1fb6b1cac156a49ad7c8c12dac8f63433770814b5868a6969f992",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-30",
+      "manifest_sha256": "a19571ebd75c6112d12194e5e16dc360b8dae68470e550a1a0efc577dc012ae4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-01-31",
+      "manifest_sha256": "d606c637af0ffa5c522ae5e1afb4c856533f6ce1a2e919b99df2cef8ea45866a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-01",
+      "manifest_sha256": "d5ce6e5ee17e071f49555b59ad7eec57301ee9c76644baa958b46a74ce4f531f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-02",
+      "manifest_sha256": "4673b41b0937c0434c3895e914ca5d2b3e9173033baf1838a82ccd5bbde711d5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-03",
+      "manifest_sha256": "69fafda7867afae459661048909f9653b604084de11557d5f380b118ac153ce9",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-04",
+      "manifest_sha256": "673a05334862b4f9f1640134d066e2b95c4083b4831d87197ebec7b039c70eda",
+      "reported_rows_unverified": 86394,
+      "reported_missing_seconds_unverified": 6
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-05",
+      "manifest_sha256": "04329a584afb774614f90d788a119fff81f495ef0b87ddea54e69027428b7750",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-06",
+      "manifest_sha256": "463a3f849f39689d99398671e786ecc6dbfb8917d5a1d64a0d27910a70f73510",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-07",
+      "manifest_sha256": "4985348cb14630f54b1c1ee601a4d0628adf5af640d5b0ac0e175d7540e4b782",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-08",
+      "manifest_sha256": "bd51e939c73650a8a47cf855708b48b3096f692704900fe21f24eac853d8e9a8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-09",
+      "manifest_sha256": "9d8c8952b9d1e9741bdceff5be0349470d2a99aea9c6c7fc373445697bc1266a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-10",
+      "manifest_sha256": "9d6a0c888824b15b21336ee9c6e1584d6a249323e4fbf46e5ed4271929dcf735",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-11",
+      "manifest_sha256": "6e2d260213a5abfac9789b8e3fb2878f2f06b3860a8edf10d264931ca3c884b5",
+      "reported_rows_unverified": 86355,
+      "reported_missing_seconds_unverified": 45
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-12",
+      "manifest_sha256": "16d59bd72a3e2e0ec0f1b9c49a1500cea44186b83aa9fc9856cda8bb77a7fff6",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-13",
+      "manifest_sha256": "8b42e3db90dde18f6c55ca92530ac844875b21da54049350212e98ce226f973d",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-14",
+      "manifest_sha256": "194de5e47159a4824942399f1f25056a5062e672fe2e2d0462a6303b52409f06",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-15",
+      "manifest_sha256": "7b65f49f89434312fb0da5405d52e2ca54a994257d7c0758301920ef77633610",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-16",
+      "manifest_sha256": "6bc2bce506559eda29e2d96941679f77e0450eea6b33f6f3b1e7595839e8925e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-17",
+      "manifest_sha256": "08ac8364d9e8943b3494bd4d3b9ac6b949e05ea7bcd37dd519ddf547e733b659",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-18",
+      "manifest_sha256": "8341f33e3fe56fc1b082a13c6bf9122ec3b189d950f58a23b717efb512af6065",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-19",
+      "manifest_sha256": "7d1bbfdfc31943d83baa4e3a081ea70ae054387b4e697fa373be62f593678de6",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-20",
+      "manifest_sha256": "641e30347421014dcfa7ef080e3ddc86b876c522c24f6aeae6f846c54b64259e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-21",
+      "manifest_sha256": "5860234b919ad90fe5acdf0560dc06a9572cc11760e555effaa295f464fa357c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-22",
+      "manifest_sha256": "3fe7b603804b8aa443dd1e738a60a1478c0c08bb0c1bd92fd2136af76d9a8e3b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-23",
+      "manifest_sha256": "581011b69fc26b3ce09f333c6e4bda9727a35a5fc8b6600b76b48b1fce9a302c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-24",
+      "manifest_sha256": "d504565d816e66323ae177da5edba8e4c781c63096985a0097ec2ef31c11ccba",
+      "reported_rows_unverified": 86397,
+      "reported_missing_seconds_unverified": 3
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-25",
+      "manifest_sha256": "e79ea58be591b62c70048727db6df6e3323ec2f887d3b5a37577c5870c11f346",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-26",
+      "manifest_sha256": "959dcc86c2d66b078eb2b77aa0b65fd2982d92f13af0420e175f8fde20cb652a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-27",
+      "manifest_sha256": "96d0655f96a5903d20f275e3bba9146b328a790858ff620168814abd10a761d2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-02-28",
+      "manifest_sha256": "f10aef2f60458a3e6c3ed79e8465b9eb91e70c4919acdad384a856ad687aab2a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-01",
+      "manifest_sha256": "2458a9ca0854843f97739b6e0bc32456dfb4520cd174dfd9f6c7c6b558f52e5f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-02",
+      "manifest_sha256": "23bbd9e3be66ef11dbb09add68aa260a7e360ec572654840e758ccd080d09985",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-03",
+      "manifest_sha256": "27ac024174cb260883862c6a0fd4fbae9f413c2270fef9d88be3fcae06327be0",
+      "reported_rows_unverified": 86397,
+      "reported_missing_seconds_unverified": 3
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-04",
+      "manifest_sha256": "e057a4f0c6e7cc57ef373eb3ad48f0f7075f2aa16895213b77f1c40615f019b1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-05",
+      "manifest_sha256": "18356fc6c537e652c85a08ddd9cc0d46172295f771e0306a4f788db668884df7",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-06",
+      "manifest_sha256": "fbe65f7543f5784b4391803f7e66f2138cd61d3acd59f66852814239349f7f66",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-07",
+      "manifest_sha256": "bc046cb2f609009bc0751ef661a6ee81ed6b43577dca17fe155946d61367fc23",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-08",
+      "manifest_sha256": "9b9878487f2b27069bdbdeca286ab84d3eaaf0bd9301dc6cbea0176fb3972f61",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-09",
+      "manifest_sha256": "e88183c320762a4db2ccbe3f0276b26f914a902d78209bd8a7c943b67756bed2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-10",
+      "manifest_sha256": "bab778195129014876dc0db39a71c08eb93da5869504edeb0c21814cb9708b96",
+      "reported_rows_unverified": 86392,
+      "reported_missing_seconds_unverified": 8
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-11",
+      "manifest_sha256": "015bbdb04688aa825384058fc2186d485096c4bae098d5f863d18d50b98f808e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-12",
+      "manifest_sha256": "3c531d41f08a1da784b2e16ce9804b8d23c7664bb300fd25fffcaaa48332f315",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-13",
+      "manifest_sha256": "27f49a0196a97838b27e926e9b92a8063669ce69d35d5f2f284fc386aedd522f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-14",
+      "manifest_sha256": "c5cde2e7b0d8657207cc4c69645432a36b6c4f52528d187cc18ff96fd79f2a68",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-15",
+      "manifest_sha256": "921f687299400a46909de5bffe197af980f086a2f1596c1077faae0c85765382",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-16",
+      "manifest_sha256": "a797476ab2e56b0840895a3bc2f7235f433fe05ea57a43fdaa2f9f87351bdd96",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-17",
+      "manifest_sha256": "2e1430c989f076b6aca2ee224cbb10b668a452f9bb5ec4848b0640cbfc2095e1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-18",
+      "manifest_sha256": "37e1d3a05a2a43da9f1a8df1abc8d7bc33450debd90a5749a18d2953671cdc41",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-19",
+      "manifest_sha256": "46d10e74d18d00518edcca2df601d10510c9c675f82711eacaa9fb9ee5ca1b29",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-20",
+      "manifest_sha256": "123d544d6481b5f5f3c889ea2911d68ef6ef52a764382f3af9c62ce966d55f96",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-21",
+      "manifest_sha256": "5f7f210f4bab36062b6f5b64092044272dd5ef0533bbdf1e874102c4d65a9493",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-22",
+      "manifest_sha256": "23bb9e993b1158e27bdb1089afcba6ea7033c295e9f6d4861cfcd9c11cebcfd2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-23",
+      "manifest_sha256": "0d9cc0f3782222c4c04719be68afcf10eb43c092e9a0379c4b592593316d332d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-24",
+      "manifest_sha256": "4632c7ce6c878339c87c1211ee1d33270f88a1c8394c96fcb1fc671fefe6bb2b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-25",
+      "manifest_sha256": "26eac418c45c0cede59a5655715d36cb8db0a1e2388c512cf746b43692f23abc",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-26",
+      "manifest_sha256": "73455f8951af8d53aa6eb77a2e1a822805f822a52090f64e43f3dc73b6e7756c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-27",
+      "manifest_sha256": "8b405424908bd455789766e287c44b4dbcdf09ed4de591fce77bdf1f41105dbb",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-28",
+      "manifest_sha256": "27eadef7f290ecbfab0d15c185ed6d40707a70c2def1bcaaf10f551081f65753",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-29",
+      "manifest_sha256": "78194a3593a837f45e9e4908fd2422ea40c780d352e2384f3db20d2270f5b4b8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-30",
+      "manifest_sha256": "74a575d9b6d0d056b5beec5b267812a9d700cfaec5f0d17f78323f9fa2057d46",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-03-31",
+      "manifest_sha256": "811aac5d59e303c5bc3d1ee09729de30b68e26014851486f675c48e13d5f5748",
+      "reported_rows_unverified": 86397,
+      "reported_missing_seconds_unverified": 3
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-01",
+      "manifest_sha256": "f542c0d1801f599518c0a046e1486a62a18f521cd6119a6d25998fbb5f7e3eb7",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-02",
+      "manifest_sha256": "7d1ac5dcb19fd26f95f573e7bf65bb973a1451a5e34bcd84775b10c46d77c384",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-03",
+      "manifest_sha256": "cb42b889575c2b4389c632f77b8194fbfa7289b20020b0ff5876bfd97b8ac840",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-04",
+      "manifest_sha256": "4d20216417a4080c7d96603827dd424e49f40a78833e0806b604295cc5f5b93f",
+      "reported_rows_unverified": 86396,
+      "reported_missing_seconds_unverified": 4
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-05",
+      "manifest_sha256": "86227daea6ba742d000fcbffac48245af4a57fad2c98b5700573abf02806c996",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-06",
+      "manifest_sha256": "20700429faa6ce7a2ddc4e91c38310b096839778f2ba1791b861a981ad573322",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-07",
+      "manifest_sha256": "8c5bcf0e197a0b70d79ba7a88988ce30e67e7e9e64db50532b61de811e91115e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-08",
+      "manifest_sha256": "3e58152f52c3758d4d8ed05fbf7a04b0de3279782c55bfcefb4eb556a1c3074a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-09",
+      "manifest_sha256": "8c59d01c25d41f5e868ee752417f3865d7805a7bb5e067839c15eb0ba3d991e4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-10",
+      "manifest_sha256": "8ce96526e473d59e71ea00d6e19b9042a2ba6954c4f57ee098eb92004e078f7c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-11",
+      "manifest_sha256": "c3035eac095d2c653f23bba9cccc8abff35d06d2a01e4c3946b651c8da8f5a74",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-12",
+      "manifest_sha256": "ec3d7b67bbd5448211572cd1c0645a5d7dd3140ba70e96965a5542330dd129b5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-13",
+      "manifest_sha256": "ca243e0f75efae48af9475b9d155fbf55e172177dbe34615437b1ceeec839c7d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-14",
+      "manifest_sha256": "40fda436e2d633cd4c19920e05c1faaa11eca3fca68cf5c668127b5ee06d8e53",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-15",
+      "manifest_sha256": "357d8bf4857d8e8a7aa650931f111c4c18e653597938c6abe226ab6a2ae3657a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-16",
+      "manifest_sha256": "bdb9cb20cca19cba1b3df666322a33c96124e3d9b0f9e352dd72d57f8e79da37",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-17",
+      "manifest_sha256": "92f1ce40791ab6130773938cd7f3f09de8f5d80fc4ec01df50b4d5e7ca00efe3",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-18",
+      "manifest_sha256": "ef46ef2cdf15f39e1ac5f4819b6d054906cb95b02320ccf698d732035fff2a04",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-19",
+      "manifest_sha256": "ef84a72ffa26d700aa6204ac7c4f88fbb8849c5d166e93373d31336bdd27d107",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-20",
+      "manifest_sha256": "77aebde5fcd6d07f5c806e558f1cf20a2e919aebea9c15f63d783b98b8c19a83",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-21",
+      "manifest_sha256": "3f83b8dbc8e13fbd38a1bbe293333bc45cbcb9534f831111291c49169f2db5d5",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-22",
+      "manifest_sha256": "2cf1584dcce5114fb7f0c35d127c01f9dd06ebf0557749caa2f7d9fafdc324ac",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-23",
+      "manifest_sha256": "0926ba3e6a0d295043e3e19b37f1f1b29670aa0ef4b12790761b4fb6e280addc",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-24",
+      "manifest_sha256": "56a94b36d7f81d8b8800286662fef56b4fde8c09062c2334d8847202c6508f69",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-25",
+      "manifest_sha256": "5c76daf4d5ae2e73d44f72d41c57985aad2d462fc4f6243dc54aff8a56944191",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-26",
+      "manifest_sha256": "978fa419d47911b021bbbffd9e600a458368969e252227d9b10a31789d8b8b05",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-27",
+      "manifest_sha256": "12e4cba1e9716d54b93e5ad3e341a8694eb4354b0f3b73263dede4978d10201c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-28",
+      "manifest_sha256": "948340d0e8d751f064f198ca48ec87c233d090d3c9fe768b801cf87917e97d60",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-29",
+      "manifest_sha256": "dbd887d33b943a38210f77bd0a2b80e387f02cde59f6a4be24ae36bf5631d898",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-04-30",
+      "manifest_sha256": "e2a9c1d32a01a9ffaf69715d377da72007e46813758879bdbb289e0cb305b0dd",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-01",
+      "manifest_sha256": "0980faef4dd5d1bd0fe35da1a778accb7111a07d146763e225578f1715666502",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-02",
+      "manifest_sha256": "805608be599d0154ce20faeb0d92059c50ac7a67edb5d9da8f5b8b2827ab87fd",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-03",
+      "manifest_sha256": "1ca089a1d498e8d2d496c3821bd9b6d25a31ee07bce05140c708ba4b0f1e0c9d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-04",
+      "manifest_sha256": "5fbb40bfe3dea0667e13be4647364623166e550c7a1d91ae14f531f99fb8eafb",
+      "reported_rows_unverified": 86380,
+      "reported_missing_seconds_unverified": 20
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-05",
+      "manifest_sha256": "441967476a4b9dcf40b83da8a28aa8d915f9214e76073e80eff6a114c32e8d5d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-06",
+      "manifest_sha256": "a6b2e1750cdb2108f4d3db883ad5d5a4c88674403882dcf5875d7f353f2bcb25",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-07",
+      "manifest_sha256": "d4612eeb0b49428a13512b21fb335c06d1af54e82261f0af35cee3e39b7974c1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-08",
+      "manifest_sha256": "7e41e173ad35f159e777e6568a59581c60b290d5236704e2b61b1005482152c2",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-09",
+      "manifest_sha256": "9e5b93f0c06894fa56d44e1acb06cc8578fac3755ad4434ece39e275b1b643b9",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-10",
+      "manifest_sha256": "a594a395c2341dd5c7fe27e72b99f1976ee087dc71b04da34c980923a316273c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-11",
+      "manifest_sha256": "f533b6927e45a1e6d0c230065006a396645a91a996f1f40a80046d99f8e673c1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-12",
+      "manifest_sha256": "eb0d7b145084faca93d352308a4ca557e17a1480fa6122c038b3346e43587f02",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-13",
+      "manifest_sha256": "27c25effa31dc57e487d675333727e21a88b605fb999af4c6098a8a6e40168ed",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-14",
+      "manifest_sha256": "f162b6d954b807b6446c298a737420c9ab47550e1425d15f9e56d8dcf345dbe1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-15",
+      "manifest_sha256": "e166e49b0c77412536112905ef7c73cb2a5d7cc49ce95aaae8e733963936b6eb",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-16",
+      "manifest_sha256": "8d35b82245d23d29c9eb993ea62a42cbe29b0fc2225dcc81a37f629cd7178d3e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-17",
+      "manifest_sha256": "18851185afd546cbdb2470d8cd4cd24be4062c78e7a7e7548de99dfba5e95ff0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-18",
+      "manifest_sha256": "da8bd6121bc6e809118d18a50fd5488c4b9e92d97829b984974151a51af12fad",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-19",
+      "manifest_sha256": "e73892612a388b8f14b75683dbf6c0683075c3b1f78c7cbf6dd98b65665465b5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-20",
+      "manifest_sha256": "d8e78acbbd2e181750821319f51b85e55bbf81e6e27a3a7f6af8aee38a2d9d7c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-21",
+      "manifest_sha256": "003d5a46fbc1e6c767d8e430ff5406e83de0d7e60c4cbb6d8959ec00d50d52af",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-22",
+      "manifest_sha256": "31efc4ccdef0bd9f927d3263237d13a783e158a6b51356d244d9fb2b15bde100",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-23",
+      "manifest_sha256": "9036d4ab8ccda9b901c90db15a36383e01a43d79b72d9a0e4ee11acef00a9bcc",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-24",
+      "manifest_sha256": "89c7edbd03d2a10b2701618ba9e68fa80f43cdeeab17dc96b85ca2427473a529",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-25",
+      "manifest_sha256": "fc2a31fa018ec118701700063bbe1b16ddad50f941bdeb2a95aed176af63d5ef",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-26",
+      "manifest_sha256": "88565012ebd775991b8020b422fa7450f65f8a67d5e1c3670f06e70e8429d1b8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-27",
+      "manifest_sha256": "2cfea06d6fb8bf57949984594f1f5f79104f7c633dbabfdb131ee7abf6aa89d1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-28",
+      "manifest_sha256": "cbaafceecfee2626f1d73b7d4d7bf6f9e8d619ca1b2318269172ddb2abe606e8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-29",
+      "manifest_sha256": "7448d593ba3ece9adcd2923bf5f49b8ccafe7805b61f33fd46695f74584ad362",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-30",
+      "manifest_sha256": "36ca81e0984641d2ee26b91582dc051c876f561f56c2b132be4c4f807d38cd46",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-05-31",
+      "manifest_sha256": "20f23336dab39c2a78bd790fa4a076426e28ce764d872dfddd76b580aea924e0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-01",
+      "manifest_sha256": "5b2d08126993d8743d9e47ee949c6fcb1ada26895e718d050b0f00b6021bcae5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-02",
+      "manifest_sha256": "9fe6bd9a944b9574c3ecb125a5c0066e85b3c1368497c022f39f2d444646d27a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-03",
+      "manifest_sha256": "6c8fdb2e85cf6e9b50f17dfd2b3cc47ee35cf3b2a2b6b0ef0d4c16ea60c0331f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-04",
+      "manifest_sha256": "7353444f09aadd2d87ecfa6098168ad65c8a78b97ced87318a9fa27c217fc263",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-05",
+      "manifest_sha256": "cd6a1df1cdd2ba34fa03651e4912126abf23311fbe61e97e731ee7633d990713",
+      "reported_rows_unverified": 86389,
+      "reported_missing_seconds_unverified": 11
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-06",
+      "manifest_sha256": "adbc08389d15494b75173f92ddcebf0345baf821a9a5cd950879316d940fbf7e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-07",
+      "manifest_sha256": "b1f6ce3e8379961ed6601d2f2321a93b29c64a58474b35a2fdeea1dc5f2b21ac",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-08",
+      "manifest_sha256": "7b8db956e4bcd9cac239704b98a89eeeb960abcf5a19c111c5d0b9ab33951c15",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-09",
+      "manifest_sha256": "0fdb756cc0f526048b5f83c2f7a3ee99da0738b1789808503dfd05963ce9841a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-10",
+      "manifest_sha256": "c4b8ff7bcc4a4d9ee69e7ab22a47d6249ca5e7d9591d8fe47175353b05fb7aa7",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-11",
+      "manifest_sha256": "1e1713f2c900adce52c5b83b97b434702ee527a2904de44c2db4134213d33563",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-12",
+      "manifest_sha256": "d9330a7d2402b83b27b4b0697496f2e9899ba4842fee699c67fcce996e20f735",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-13",
+      "manifest_sha256": "a4932909206f88020bcc4bc84655557edf18f914580b6d85e43461656d0d9e77",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-14",
+      "manifest_sha256": "496969bf41c670f253592859f31c649112a950488675363277e6627ef5f4c9ee",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-15",
+      "manifest_sha256": "3cc79944cab1e9a1d3a4264dc86e6f94dc90a9e2e171d966a3056ca433e169b7",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-16",
+      "manifest_sha256": "636a47509cfc7d0536952021ba00e55e172dfd13ed8c24f323f8694027255224",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-17",
+      "manifest_sha256": "21661321052736ea9e05459b39b052c8e502ada9891ce93f2dfd2834f10c6934",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-18",
+      "manifest_sha256": "7643956dfa3b8a640e6ff802608a538b738c67a0a5d42b71342577d9009ac22f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-19",
+      "manifest_sha256": "2bd923bf23f878be81d9d0cfb50448ee64ea7f06b28d2da004043ecf24aa6805",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-20",
+      "manifest_sha256": "821757b39b73d5f66a8c2ecd6e0340e6cbbec5caa70466a1ad9a116700460869",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-21",
+      "manifest_sha256": "a47a8ba04f81da3c36bd604361e6933ce74e98efaa027e7b776c8a10a8c3dd4d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-22",
+      "manifest_sha256": "64cdfab02bccf04411919beed903e9db07e36275b0e7797c84cab555c2305f9c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-23",
+      "manifest_sha256": "218beba603bd50f4e4db000d144315d5427f8c4cb17a10f63a277f601ab24649",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-24",
+      "manifest_sha256": "2a632efc9c0ee8912f1d834931b6ae3585d714d82ef7289008cf8e736be10e54",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-25",
+      "manifest_sha256": "9d968df50eb61789e607e4dbd260b6a1eca1367c4e188ab9047ea2b670e5df7b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-26",
+      "manifest_sha256": "411c14b23fe33a603167e72b81815d9a11f3f2b315b8ed68070472698a993b7b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-27",
+      "manifest_sha256": "0fca9234b8e22509248b0776c1ea0fd0ef648c835af2c5cc9a9e00b040b25f51",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-28",
+      "manifest_sha256": "9ba1a7a780d09bd5545b213c3846a4cd68ae322603c19944b1236d7e95fab30a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-29",
+      "manifest_sha256": "2b73186255ab5c53b7ff1e400846b45ea2f6bc7dade20d317f305f2025b73975",
+      "reported_rows_unverified": 86397,
+      "reported_missing_seconds_unverified": 3
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-06-30",
+      "manifest_sha256": "70db9f07b56b94c2d7fd723d817d9ee861756283c04c7432ecbc602ed0941ff0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-01",
+      "manifest_sha256": "0d321612824f34681ba1876bdf639851b9b99e7e76dbc6cb4c3319987199b687",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-02",
+      "manifest_sha256": "9d09b7f7bfe086116e097b8ec42b25df4ea353a031c716395b6310f2494dd08f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-03",
+      "manifest_sha256": "c7a57a077a70d144126b33fda032de92a1fce784be69928d7bfbc69efadaa781",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-04",
+      "manifest_sha256": "737fb6b4368255f516c4aa6ef47c584f5af9fa6d3716ea18b99b62fd033b61c2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-05",
+      "manifest_sha256": "785f2af6726ce1fac5cc059933d9d9f57f603b15af38727ce8cbc92c4b098449",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-06",
+      "manifest_sha256": "693319bbd513ebd2b238b2e32557224135652a962a7d8788a69d66507c0e04c3",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-07",
+      "manifest_sha256": "27b9736d6ae90eed95ec1e242453117ef80331598cad7ae2abf84823086bbaea",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-08",
+      "manifest_sha256": "7df52572453043ecacd0412aa6547999ff8d35657ba6855e95ec027d36a5c4df",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-09",
+      "manifest_sha256": "261072eb321f5dbd62ada2b2353e5fad721fe461cd872d8ea461694563819bf5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-10",
+      "manifest_sha256": "a5f225692431c5e80103ed9e4f16e92060883867afba41d54e140ac6066201cd",
+      "reported_rows_unverified": 86397,
+      "reported_missing_seconds_unverified": 3
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-11",
+      "manifest_sha256": "daf0a08ef5ece2c13a2553768fb6def9cda336fbeaac4e00c8502735642363a2",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-12",
+      "manifest_sha256": "20d8188a03e74ffbf4145c0e8a296cb26bf3bd6b8b1d8b65b03c3ee495438d0e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-13",
+      "manifest_sha256": "26c969a83cf85ba5d8d778adb3086851eab87fd936c5e6f76febc2de25c22680",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-14",
+      "manifest_sha256": "d21ec15fabbf5f3637efbafa1e5399c27d5c3fd18f5f3f7c49dcb2fab2100b45",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-15",
+      "manifest_sha256": "0cf9f0b07144952f29538fbac75b9760bb6287bf13c8795174525f06f9983ad8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-16",
+      "manifest_sha256": "317456ee4121baa183aa41df2b95360086067ab26ad3cb6da8ad6a9a4452a2af",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-17",
+      "manifest_sha256": "a67e4caa49be34653a1a9a14779a036da2ea370a765148459e4e9b6172e14bee",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-18",
+      "manifest_sha256": "82ebd393539bb5ec4e03f41cbaaf208b69992f0e4e2ffc6128c1f11b319be0f6",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-19",
+      "manifest_sha256": "c003f8117f9eb58cb0a568c70d587371b9cceeacbc327c3e93b63382dc049448",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-20",
+      "manifest_sha256": "0cb56d7844e10f7cfc6c6b7f4ca6b4ce0f8836bee759d95ddd2270e7ef3e2af0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-21",
+      "manifest_sha256": "2a36d6b6375501e65933771ac1bb3add02322173575d5a7e543c83ad445b1657",
+      "reported_rows_unverified": 86397,
+      "reported_missing_seconds_unverified": 3
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-22",
+      "manifest_sha256": "1c6d2531e1d6c0698f917b0cceb5ce9a208f27bf42f8e2341d6aade0e8c03549",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-23",
+      "manifest_sha256": "c9181dc3a941b3d86e9445eba1632074f529eb49d5e88164f6b954054eced19c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-24",
+      "manifest_sha256": "258573f150c3bf06f6cf884e079e743ff1b2dd34d2485093420a4bfa667bc88a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-25",
+      "manifest_sha256": "a5f3418ecccd26fe7a61afe01ea509876d5d4ec7fd635e849e6cbfc8613cf025",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-26",
+      "manifest_sha256": "fab6caff8cbc796795d8d2e0636fcda2199e55696910165e7384913af3a98763",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-27",
+      "manifest_sha256": "dcfb93f2fa77596d7274a4939e6539b4fb64e9629483f4d5fa0f5b1532a92c1c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-28",
+      "manifest_sha256": "204b48268408f8dbf5e37be7054e1f4f7d45d8b0535aa262daff8849cf507303",
+      "reported_rows_unverified": 86307,
+      "reported_missing_seconds_unverified": 93
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-29",
+      "manifest_sha256": "a354b94afe5eac282d3c75bbe68baa62efd41d7f9e21f6d434983bd48ca175e8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-30",
+      "manifest_sha256": "831cdf04a248a2a12c1367d57c8c697e1c5b65c596300870b94ee2f2a2b994d1",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-07-31",
+      "manifest_sha256": "d49f02fb85d30e8388c7b32055c2b0cdd629d24a80eed3252600edfe1ef5d134",
+      "reported_rows_unverified": 86394,
+      "reported_missing_seconds_unverified": 6
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-01",
+      "manifest_sha256": "8a2683937b9e0813dadb1636101a1377c818104f077723e77f6d61435c3c4179",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-02",
+      "manifest_sha256": "4e99265a5b75e6a0f0e38c3cba3615d56fc3ea2be4e7964a8c646ede51b8276a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-03",
+      "manifest_sha256": "db549c7d3f3d52828a053858d05f1332cf086216b60813ae7fe633429064e253",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-04",
+      "manifest_sha256": "5bbcbedc4f2593e4a316b90a3aae449365396df3f29081c8ac39c3c5bb1c615e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-05",
+      "manifest_sha256": "991923e10efa0851509f32b9ed56167c5a59fce771c675a343b602b5453418a5",
+      "reported_rows_unverified": 86398,
+      "reported_missing_seconds_unverified": 2
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-06",
+      "manifest_sha256": "f237ce4a4d98253611b3ed29e5ea344d76f62258f6d73a254a6c87863286adb3",
+      "reported_rows_unverified": 86398,
+      "reported_missing_seconds_unverified": 2
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-07",
+      "manifest_sha256": "1a00805f81de43ccf2383f15c02f671bd2c67056dd40246dafac1ce8915a8b9a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-08",
+      "manifest_sha256": "9c1a9adce9d272867d057cf69f4e943229e282827ab1e21c29920c57e711d2eb",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-09",
+      "manifest_sha256": "7f22c3f62210b2f32b258b7db5fce72e3114cd0c40ff79649fc8f16c3107bc8e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-10",
+      "manifest_sha256": "cb20a03f4f5d89db661d803e96a8a71d8825d9541f6ce710972b030123d920df",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-11",
+      "manifest_sha256": "f824cf0865b8d2b76e6ea6336d69939086bfab0c5a278cff49119dd60a12ccb9",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-12",
+      "manifest_sha256": "8cb9bea7aea5d0e6b68b66f7f5faeeb5e3fc6c5548e2dba7fe6205bff399128e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-13",
+      "manifest_sha256": "92e1b43ead2e5efdf303c7b2fac3000a722865833835e52b60ffc9ff9adc0248",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-14",
+      "manifest_sha256": "a0dbeeb11b9c0b2ef9d68c6428d48795c80e1ade833d0f471b24dab32ff2fb3c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-15",
+      "manifest_sha256": "5c35e3bd66ecbe5502b8624c68f565cc21b4d49ad3f149e5d6f113eb8bbb532e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-16",
+      "manifest_sha256": "760c67b44f90675cf591e9d0c0294b127800966ad8421603e31ef07444f10c0e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-17",
+      "manifest_sha256": "e52cfab4e71ea7cc66d4aa39d6a795d567f7b5ca292da3f674e98c7fe2ea1b6e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-18",
+      "manifest_sha256": "7d5bc27f92ffe23a4f682ef3204d86d72f2e6efbaaa88b58ddc35dc10ad2bd50",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-19",
+      "manifest_sha256": "4e099113e1ec86bef15eb60634bb39e7ce15582e434484a3ffa62bf22efb7a55",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-20",
+      "manifest_sha256": "625bd03e058aebe557078c0a1cfe8f241202582cfe3444fd1b44710b1abc6b72",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-21",
+      "manifest_sha256": "5158e79a69eb39363995e34eb5ed67e5e79cec735366875ed6f4c7d9be270a08",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-22",
+      "manifest_sha256": "2578f6904eea947c46ed872bcb44bc60a7a816715824511aa6aff18a36e5bdb8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-23",
+      "manifest_sha256": "8455f976574860c73cb5ba69adfb5491888ee1477067a5fc0164679489f9203a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-24",
+      "manifest_sha256": "d8364d691b77a6005e8f33d469889a0090de2b698f89e23664b12f07ffb07147",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-25",
+      "manifest_sha256": "3febcf41914124b786e1c6fdf37cbbb6e68cc029611b61f90b606e34ee4c1dd7",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-26",
+      "manifest_sha256": "fcd485375d2178f9e1961fdbfe9c9c6988fe99f570d499f8f7f0a6df558430d4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-27",
+      "manifest_sha256": "dc5f377d57adacbc65b070b4f0546e888683f52c7ed9bb6fe31b60479167c4fd",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-28",
+      "manifest_sha256": "5a4b710b0d11576937cb12e06d4b8b7d7e447cf8c6359e585a0dbdc5fea8c9d4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-29",
+      "manifest_sha256": "ae43c620d8a3e1ccd214154949696c91d5d10aaf142ec1f97058fad739eaeaa6",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-30",
+      "manifest_sha256": "5bf5ad5d44a33fd171c340154d3044f6e0753d86df8079dd359088c3c6149e71",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-08-31",
+      "manifest_sha256": "4c8247f6b7c0e99c3b2c8c77eee6a3304994bf5350b7ba226cd1dc78a5391cb0",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-01",
+      "manifest_sha256": "0e21adce0c3779b0ff4dea268291558af352b8c565abc60505f492585a586136",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-02",
+      "manifest_sha256": "7e2c6aacc314053812b2488725dc5ccd01117e48e01958d7a3259ebe612c4389",
+      "reported_rows_unverified": 86394,
+      "reported_missing_seconds_unverified": 6
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-03",
+      "manifest_sha256": "338201577e263c0e4adea9e2460eedf204689336990bd7b65518d672923d4cfd",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-04",
+      "manifest_sha256": "ca7920aa0cd71744435f8c09a1e3372fbf35a9a9c3ba34ff32050ac21118b59d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-05",
+      "manifest_sha256": "adaa70c3a0dd9fe7b7d6523b6b212e661c20a725705b97479340c248b65b7bc1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-06",
+      "manifest_sha256": "7c3f7f4e016ec6afcf6db95b852c49fa93e0fe87cb06f155790a74b198ce0c99",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-07",
+      "manifest_sha256": "9944d50d05cb814649403bcead624ef47eadb34cd2b00dad98cd60dcfc345cb0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-08",
+      "manifest_sha256": "8f2003b387b99ad228e6d32fd691f7178c49ad95cc89d092ac417e3f3390aef1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-09",
+      "manifest_sha256": "d85862e3a62b10815a1d23516164ed16f5fb665d9f617867fd62d7b5696d18f0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-10",
+      "manifest_sha256": "564a18283860edb464d2f2b5187d8baf8a9b74cac27a47db362f330b118a90f4",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-11",
+      "manifest_sha256": "1044fcdc7510ca15791601c126837d80bec5cbee83f9305ee3984112e1e921d5",
+      "reported_rows_unverified": 86393,
+      "reported_missing_seconds_unverified": 7
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-12",
+      "manifest_sha256": "6a5e6cfc91979874adb6d88c76a63d7a34005cc53d6ff8ec339e4f215bd9eb1d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-13",
+      "manifest_sha256": "613034089114eca68eff47d4f69a4c9624fe2f7f424770b3fa3ae7d9c091d49f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-14",
+      "manifest_sha256": "606595fb0c208b612d721ca7008bddf8c5b6d83f57577c21c62454b84d14ce75",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-15",
+      "manifest_sha256": "4de3aa7e1fb694051932baabcb2a506ba164c2de8b50eafc383d9dbeca3b0814",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-16",
+      "manifest_sha256": "28542ccc3ea730705632dfe5c95914d294873f808b34484efd926f434be22157",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-17",
+      "manifest_sha256": "50190e77747af57f14968ec219ef309481c94a48e28450d43f5d8d36aaa1c20d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-18",
+      "manifest_sha256": "3bdb9f852eb8eee09742b4418356262ba35af5d9a88192ac0e4ca2a840de178d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-19",
+      "manifest_sha256": "5b378177af516e5502f8f4717e7b9b823a7095e629a92c2d2ae364ba2cf4eeb5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-20",
+      "manifest_sha256": "3ad01b5ad7a8aeda41f7e1b254d958585620d28aa4f18ea3b46832f3f9314fbd",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-21",
+      "manifest_sha256": "688cf5b93c8043a3205b0a465a52bdc7f01f04e7693632530dcb91960fbc5cd8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-22",
+      "manifest_sha256": "ea0246b2f459f99cd6199d547bb3f05a2b932ac39b35f7d307e5f8c41ed3b622",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-23",
+      "manifest_sha256": "b6d5488c506cadadf28fd35efb232f572b9a8bbd06b477e927e7036783280b2d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-24",
+      "manifest_sha256": "53553232298cb4eccb1039c8dffe8eb71643d73355170451b888f7626e87b426",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-25",
+      "manifest_sha256": "ea358f59fc061b107156b7b0e2f97cbc6c0faf22db8a1cb42a8201f9803da922",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-26",
+      "manifest_sha256": "c03dc9df03579140ebc76c5c54aae2987b628b8eb60f1b8978bfa53bd650c63b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-27",
+      "manifest_sha256": "544420ce8a3d3e034a9110da653cc594824ac28146438f09f2c7889a6dd002bf",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-28",
+      "manifest_sha256": "99d012e0316cc93ed117a15e4dfde15afb3cd0cc3cdf0da4baea216e60fbd3f1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-29",
+      "manifest_sha256": "6eaaeeb603e7830f327814c78beb5f9df64b42a2f4332a1a1ec7affc93f41db0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-09-30",
+      "manifest_sha256": "8019aa374be082bd45a569b1c97ef7c5923bf55eb7e95079c53058d0557dbec3",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-10-01",
+      "manifest_sha256": "ee077255f3ef15f6cff1dc76f6981d70a78c081dbbfcbae8deca139561c07418",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-10-02",
+      "manifest_sha256": "17618dafeced025d916fa317b8205ba9ef29e1c5bfa7a4cb29d5238bf48d7a39",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-10-03",
+      "manifest_sha256": "757fec8085ee7c7d76680abf2b8cdd6f4583191789ec335c38efcd0106da1567",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "BOOM600",
+      "date": "2026-10-04",
+      "manifest_sha256": "aa92712231f790f646e4587ae48b2693701ff806f79571fda98b3387857635f7",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-09",
+      "manifest_sha256": "734b870f367fe6187bbee53b73408be4d33b709ee20eb69d3ab521b147d5e768",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-10",
+      "manifest_sha256": "e30a267794b0771abf170aabdf86a26871273d331c3a1cc35793d1dace91659a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-11",
+      "manifest_sha256": "1daed0738ec7aba97e80490422723bf5dbbc811460b5b6f2e7c960c07ce168dd",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-12",
+      "manifest_sha256": "224cd5de04205dd18301834f438147d4e02af2c4ce2f69c4e493de37cddb0200",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-13",
+      "manifest_sha256": "e1e9753f36119957570a530f55aea4ad97b6ad45ce34e160d53b1abbef04f87d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-14",
+      "manifest_sha256": "c5e76f008e0c565e482eff671909b000f29c81e61c04c21addc99abbfad7d2f8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-15",
+      "manifest_sha256": "e30cddd6889d5c3623274c89218d39b40c6ecf6a9bc243c96b1294f92c79b16c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-16",
+      "manifest_sha256": "7d48e2783e23b34ef6d34eb2a33f93ae9558c92eec850f91612c90c8b84cf6c9",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-17",
+      "manifest_sha256": "7cc37aaa91e50fdffc4ebfff014a5f3335f354b01c63dacc3dfe9301089a5018",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-18",
+      "manifest_sha256": "66f64bff1319a66fcf68e9f26e8781c842e7f1ef570d66157fa542418337fbab",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-19",
+      "manifest_sha256": "b2fe075a36bf91f4970599a14610a9e404ba0c5dd29cac32489c9e58402c0262",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-20",
+      "manifest_sha256": "be52aa47ab212902b38016388f6c7549a49c5d596b44e755a8b826121fd03b84",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-21",
+      "manifest_sha256": "b4450f2ca351f9d1167b123c331bd3b4a834a85e1007974fc4c647b08dda1be1",
+      "reported_rows_unverified": 86396,
+      "reported_missing_seconds_unverified": 4
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-22",
+      "manifest_sha256": "7293debe9be2361eb8790a9109264455b91fd8d90a60e279eb2a956befe042b5",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-23",
+      "manifest_sha256": "907e124d54c697ca84942314c92097a60bc35ab73b4e406b4200fe45526409d4",
+      "reported_rows_unverified": 86398,
+      "reported_missing_seconds_unverified": 2
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-24",
+      "manifest_sha256": "f9fcb5085a3d099a6319226bed6bdc6dee3902a51df62694a6073249b0a5f38f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-25",
+      "manifest_sha256": "2c620dcad257974720b3ccd59a6fe737bd897760b9838e666df07c72c8f67eff",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-26",
+      "manifest_sha256": "4735d56794d1dd54ec812a729852552c0995ad5745100af4a717f93433e420e1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-27",
+      "manifest_sha256": "1d6f505ee1a7d5ae6eb9359ad6708720d47e469479530878ae32bc60050fe1c1",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-28",
+      "manifest_sha256": "4788436161eb51e0f4d24d7f714cc26ffdd7b76bb11771f580fb47eeedf6f236",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-29",
+      "manifest_sha256": "35d1faeff28cdfb65c46301a0f5e94717657e88f93f135560fa21d3c3210240c",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-30",
+      "manifest_sha256": "397ee2f21e3934d616cb468272e6ae44045bea0de7825b1259b65dbf7fd71800",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-10-31",
+      "manifest_sha256": "5be23d2a2ca6e08fba14d570be110e4f257ac099550e032df22ff92d016b91d8",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-01",
+      "manifest_sha256": "bede6e105ce337fb9e4dbe2d74083961ece9cc25aac6b9209b69b28d9392f26a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-02",
+      "manifest_sha256": "7979f1f876400f5bbc4e7be877f492e16c1bf71a7cc0dafdb101e75a6b769b02",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-03",
+      "manifest_sha256": "3b377766692d3d4235933b7cd9395b32562c5f2571e59e5ea7fc6517bf6467bb",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-04",
+      "manifest_sha256": "990b7eba9286c7759a08246f601648c17124ed94f376e1d415ff0ef1907a8d73",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-05",
+      "manifest_sha256": "bd109baa76c89a7ac4c1f43049fe1b0156d78778c8ac00870e0fbe564ff48752",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-06",
+      "manifest_sha256": "e5aa1baa9c9b972d3336d627df3bc25fc78179f57efb29e87b1a150bc28801ec",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-07",
+      "manifest_sha256": "d13170abae620b049b6ffcd96f695462f7ad4332f93b6acbabd7c5501ca19776",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-08",
+      "manifest_sha256": "32fdecbef7a0f493db6b21bc88af9d8d41593a279e77fedf8d79a8ac8542a310",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-09",
+      "manifest_sha256": "23899c49c760998fa4191a3381dd791aabcc225443e77b2b0efbc590891097b0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-10",
+      "manifest_sha256": "2685fbc306a35f4061b9f7de3a8e1656bc82ac2429762784aaa41dc39891027a",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-11",
+      "manifest_sha256": "36bf469ec902caffee3a253e09735ec12d36e6d6fcd1d0ec8e0c5fe65cbfe521",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-12",
+      "manifest_sha256": "53778be87fd9ff9bb5ac955374445447480ded2c26905cb64ad290eab9d3092d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-13",
+      "manifest_sha256": "575783b53126db9c64056549d34e1d4c9c9e37228f49e5239a51f1c9c6e7248d",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-14",
+      "manifest_sha256": "7b42a98ca2a096fab1ba7ee2fae991cbeacfa5ed73dd04179c092250afe7aeeb",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-15",
+      "manifest_sha256": "3e94a638d504f977c61aabeb101871231598040bb7c38e94b4ce3dcc488b55eb",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-16",
+      "manifest_sha256": "5b62ea4946ab68865724b1e91c1c06699e2e4de2048bc067143d62b8e4ad5b5b",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-17",
+      "manifest_sha256": "84e58d026c9b1cd8de17739a1446822f285f23573e3cc6cd1c292915c72fcc9b",
+      "reported_rows_unverified": 86394,
+      "reported_missing_seconds_unverified": 6
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-18",
+      "manifest_sha256": "bf5646e8466ed82f961970308aadfe52286dc65efe09b8813a6190f46e1eabf5",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-19",
+      "manifest_sha256": "76042c1aa77fa224c448c58757d1034897797f526184bf3ddca5cea8855d27ad",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-20",
+      "manifest_sha256": "d610a382b70ee2ac46e0c8a032190672905e4a934aeb7b16b5816f3f7f240a3f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-21",
+      "manifest_sha256": "c5b877f53c6de4a86166e70e0a70dbfe3b878a5facf8282d8e60fe560f440254",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-22",
+      "manifest_sha256": "f19bb17a6039d6460fb96a68d7863934aa224a4a36f1f91344618fed90039fe0",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-23",
+      "manifest_sha256": "a7f4b566c2ff6cd921ba3184ffa4e4e8ac73b7bace49cbc616c407639786f070",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-24",
+      "manifest_sha256": "05e884af7d0188f5377cfdf28b8c8975f3b280cbad178a2161faab5fce37ab49",
+      "reported_rows_unverified": 86395,
+      "reported_missing_seconds_unverified": 5
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-25",
+      "manifest_sha256": "7e30c3fc72d92b5d646f71da2f12e1179487b4e6c98655334cf03a37697266cb",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-26",
+      "manifest_sha256": "3db95a68d6181b394b89416d7fa0639f6ea30fb053062ec63e0cfb7897b108c7",
+      "reported_rows_unverified": 86397,
+      "reported_missing_seconds_unverified": 3
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-27",
+      "manifest_sha256": "d46f96ee56df1ef7b5e4a6d3e84c76f4494cc458d0fa72142ae9cfd41206f2ae",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-28",
+      "manifest_sha256": "c74fbfe3be92ef4d4a8e2370a8b5d83a453743e6c5d404e712e6d676de447427",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-29",
+      "manifest_sha256": "10ce517bf21f0f896a6054399e20d9ccc59611c67b84a25b72164995697b57dc",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-11-30",
+      "manifest_sha256": "f14d0683958771722d33bd2a23d0381367f8d183dbb77141ad99f0b3ff9e4b92",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-01",
+      "manifest_sha256": "fd5efa84354ef187abf855a15053e49e92a856897b51f9caa1452c9134459d7e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-02",
+      "manifest_sha256": "9acca1ee9bcd142f3569d9867eeb5a04ddf115c343ba90e33a46c71721c9567e",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-03",
+      "manifest_sha256": "6e5061228044a3f38c7989b62cf74eb0f1e50633dd2c5fff321e07b8cf27b03f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-04",
+      "manifest_sha256": "2afa14a01ff8dbfff27614b3009402c7ae5986a20906faac0c4c02a91789c068",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-05",
+      "manifest_sha256": "679d8740f464ce015d76a8b05b075b55df26dc883dc64e3253ce8626324f4801",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-06",
+      "manifest_sha256": "eab49ba00cadd05c119fdfaaa6120c5683bbadc636fd6d2a34d0574173e0bd5f",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-07",
+      "manifest_sha256": "37989f125af4c5c52e86b295e68298d6da88efae501705967a5cdb6f1df94b0d",
+      "reported_rows_unverified": 86400,
+      "reported_missing_seconds_unverified": 0
+    }
+  ],
+  "missing_source_identities": [
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2025-12-31"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-01-31"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-02-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-03-31"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-04-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-05-31"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-06-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-07-31"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-08-31"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-04"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-05"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-06"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-07"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-08"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-09"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-10"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-11"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-12"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-13"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-14"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-15"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-16"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-17"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-18"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-19"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-20"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-21"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-22"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-23"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-24"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-25"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-26"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-27"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-28"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-29"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-09-30"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-10-01"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-10-02"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-10-03"
+    },
+    {
+      "symbol": "CRASH600",
+      "date": "2026-10-04"
+    }
+  ],
+  "checks": 10970,
+  "errors": [],
+  "input_sha256": {
+    "docs/jump_representation_20261007/acquisition_declaration.json": "05b9e682e112d187d61a6a9321cc106fcf78b55eb0fb6710eac6ccc3b25b5db9",
+    "scripts/collect_spike_ticks.py": "087b071e28b948cd45e8d58bf03b370c42ac70827fc6010ace544c60ec9204a7",
+    "data/jump_representation_ticks_20261007/acquisition_config.json": "112f03efd3e247bb280fa16d229ba64abb47d72ff6800476a98cf31c59f8a7e6",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-09_manifest.json": "245ccca0f91574b5f1a4c40648557b9e2484a6e39fb67c179aae9565be465ad9",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-10_manifest.json": "6e7c1ed6eb3567bccc4298fde169f8d90f215f5bb855cc0bf43bb60626cdbe2a",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-11_manifest.json": "2de5cfdfd25caf0b95159bb9e698fa504a6d27eda394f596134820bd648efb07",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-12_manifest.json": "0a1c5618ae791f728685e4d1b269f964c1bb39f06a617a4d41bffa4c46cd0313",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-13_manifest.json": "426c851897ccda4e95899a4a9542fe36e9d3e0c823b830a4d3a7a75dc8e6cb0e",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-14_manifest.json": "dc33d3946d0c81ff71e05dfc3cf88e0fbaa612636cc1c402c4919397f57e42f4",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-15_manifest.json": "1d9cb8435781f2387fefbbe29108603d7663007e92bccdb48e81034f69fda9e1",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-16_manifest.json": "4f0e6a662d881dcc229495bb63af300a0cb843791d6ff14e4e588929b86bad7e",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-17_manifest.json": "4e581558f1d2ee3d54c2141c96b4b76197d2496a7aafb421267d17642b60955a",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-18_manifest.json": "c8623c5649dec88d12e36af9dd72d2b44abdce75dcda9b3eeef1484455c0cc26",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-19_manifest.json": "bf0ede6d287393f280129a77c78b77ca26b970dfd9eb3d405159b3b1136d94e7",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-20_manifest.json": "f37856801cee06905af07ee591a50d8b9743519cfe9688f47aa741f42abfc21a",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-21_manifest.json": "8b2ef6712380b10c6f36c3586c5d57bbf73f30dafc35d23e917608d38c238a12",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-22_manifest.json": "591d82f908d554628f405fb5e8a4c0bc51ee5c8c60cf4d67dfd38bb3f51c740c",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-23_manifest.json": "f50a496b79295683b47af88d958cc4d4be53dc56b46f2afdbcf460c7ca93e217",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-24_manifest.json": "6c438d9ffb8a8eae24f312380fad7e071a5f25989754b4ef3b46626f71f709eb",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-25_manifest.json": "1964308b68f9c7fdf78ec5f40854de4d2a0494e140146ffd4d6aecb021bf7b87",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-26_manifest.json": "4b577a3ca0ce01e46a706b489bebea27de1e109e27487514c2f4bd3570cbb031",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-27_manifest.json": "10dc890afdac85e921b07f2768c90bd7113d92ec28f23fa9846d8b7d54a02993",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-28_manifest.json": "9a73dfc2219323eca9025485a03479e22ffe534875113fe19d8dd333b0116de6",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-29_manifest.json": "e11090b6a22eb51f5619dea38e90fe3699400a842c244ea134be4fde27a7b510",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-30_manifest.json": "b57094a69d74d912bb34110058a491cda4f84cc31180a325c6cf792a526c47c2",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-10-31_manifest.json": "27ae6702954ec0e2fd130f46f77742447d198822ee5c08f24eac416143a3d2b2",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-01_manifest.json": "315f71c1434ea0e2553db0411280a3cb3495a57ec2f17dc7a92acc42e53f511e",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-02_manifest.json": "aa9fbbf7cad1685686d74060238f86d21e5592706d5b93b52d0d306f058c0ed5",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-03_manifest.json": "a73de5831a2fb5b9a267f77a327cd70f5d7c334e22c99f0113529aa78be84fb6",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-04_manifest.json": "7779c2ab3439a015c3f834547bf0df772bafe0bd07eff3c7c84d14637a4052e2",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-05_manifest.json": "8da71a7d7c8002e9d18ac76aca07a899f54f1f32d41d9175450794ecd422d355",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-06_manifest.json": "285802302746b45cb922d9ae3278d3f990898a2ddc1d2ca13ba830dc07571197",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-07_manifest.json": "f193b72026736bd32e4e5175ad8224e393b27d4c77675c02fb4ce994d008889d",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-08_manifest.json": "2ac7ce04a7f7f29d583873e6412359dbfce90f8ec8033ade7e4d8dba272d3f8c",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-09_manifest.json": "60af975e742b1e612eaa00b1ccff7bbacab86e705cf3c03e1dcd29fe13f003ca",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-10_manifest.json": "66be3309b99cc52e3cb0674052b06ace70ebe5c08905305e877c5bccf1d5bde2",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-11_manifest.json": "88194be224bcd71fd83d4cf2ed9aff37c2b671c32a86b876500a2b6e23a9ec1b",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-12_manifest.json": "facb3ef0bd1a112356be1c31826ef06b6cbb17b4c0d43c9597ac6501d2fe73a2",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-13_manifest.json": "5f617c5d43be9e550f2fe6eb104e7c7ade8d039fa073120fbf1fb4189a6a5af3",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-14_manifest.json": "73cec5c2db623ebad98716e3bc0b052c24f423d2b3400970e9f0143226ce0ee6",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-15_manifest.json": "e75072085d1e0362e90cd2bb01aac3035cd958540e43525ee3ccb788055f9910",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-16_manifest.json": "2ffa99db57b90b64e720ae6d182835efebdcd93133b4b3efa182c791bed1b1b1",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-17_manifest.json": "a83250824c0a38941cfccc64b98a0a0faa6fc571c0fb68dd9f662a59855b8c4d",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-18_manifest.json": "17b16027d7970173b2f930d74a15dbddab88c79783ddf892c7483e06a2c95755",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-19_manifest.json": "b9a08e9338705589f809909c9131902c427efd4abd54e7673fd0425d7b0e71af",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-20_manifest.json": "7fb3a3839c7cfce2b88dfab0c1786679db184e07644d9c1eb74b80f01df7f1fe",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-21_manifest.json": "1c092a11dce6947b272d3656618b37f38a51128721784ec9ab437821790ff566",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-22_manifest.json": "5f88ec3c28389c3811ff42e65fb35ca8372d8d0d9bd30c7992d35dcac60b1cb9",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-23_manifest.json": "c97fba29de9180d0eaefa1dfa343a05a3f0fd5fef26492a80fcbf0993f0f5762",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-24_manifest.json": "e19bfdc90a1f139f43d7e7a4eb28fd96f74eba9ef33bcc0b22cd03cf121f6d72",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-25_manifest.json": "9bf1051f490af8414f22a610339d6106132b465401c9119a8f65b0ebe2e0b594",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-26_manifest.json": "00642e7fac8c0f2a0425e821e83984f3db41e8ae0f1486085d18e3d8769b23ff",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-27_manifest.json": "e2dd61c67d2e13d657593f3abaf06d5eaf91b67d7ff7154fd9a8f2de3e27d1f4",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-28_manifest.json": "6c9ec6557ab903f4665681d68be8389219e82a88b9fffe8f3842b2449e9f225a",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-29_manifest.json": "d05d26a5e8a2ff1c063361642e2908acc8e58545b5ee3d03c676b26849130199",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-11-30_manifest.json": "9906e9701dca972f191f37dcb1232dfa5a7ddbbb4f53793a5ee5963b99f684c2",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-01_manifest.json": "af76fc128376601a4d9db9ea35b69c8a16c227f513cb502f32a9e3eee07e92b9",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-02_manifest.json": "295282a95d5678d74b5e951099852fabafbf54c33931b95e52b71dd05a292622",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-03_manifest.json": "2564066b4baed191108a1c0af3c55d704e7152b62f4e12ac321d403e9d2ccf34",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-04_manifest.json": "d6c62a032d05a56b50a2eab0204cee49646181d213c3690d21859b1d7416ea6c",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-05_manifest.json": "02c8e676d06f904da66035c38c7ba0ec7b0b4c7963f3772f4b0032e52db9cd54",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-06_manifest.json": "a469ad2794d0083a701de328739ce4e43139c38f51aef8b15d90c83b03c12e20",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-07_manifest.json": "6655202cce1c166633549d0efa858c82f0334d2eb039ce20fa7c192137e2d7ff",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-08_manifest.json": "fe2e37be7482b5878ec9fe38a6ac4c96ee73a2e7945cdf887d2b57d593e9e7a8",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-09_manifest.json": "7d8eaff2d9e9e564bded4a0b98cbe5c9819e4486c51ed430e1ad3322f3287291",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-10_manifest.json": "689cbc37c50a855bb27469d2292cbeeb7ea3ecd4accc2b635b0edea7aaa0a6bb",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-11_manifest.json": "af20d1c450bfcc3b3f26e5899f60f178284f9a6489ac771d97ad64ee39a6a289",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-12_manifest.json": "5d7130045dd40de199af2c0b209a714ea5171a5d28068e9800f741d79e01cfa4",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-13_manifest.json": "2bf9a715dd3da772887bc0b55f4c945ba69c6395f6d551e78898e19226389721",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-14_manifest.json": "e1c62439ec409e6ddf676b950e2265dfa6352685563839e9de3de82c32daa05e",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-15_manifest.json": "fa301a168fbc201255a5e08e53d1b552077320d762d08f9aa150ff6d10c3622c",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-16_manifest.json": "ad0b484c04a8b4e8c7cc77288ce921b14c88219e8968135c6aa2dfe83159a8ed",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-17_manifest.json": "0e12c2e457f71539e9f2ac77439ba234c083424af3c7f5957421e4c71c0da3f5",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-18_manifest.json": "89d3a40e98b967a9e4a91f199cef288899cc52abe34be759d1722a6a6db43ac5",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-19_manifest.json": "c8dffef9f3133a428eff244f7c0b2a0e5b335869fe5fe46d4d65761114341751",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-20_manifest.json": "14345768c149ae8ccbdcd22584cf52d7042cdfe769150dcebdaab1b3cd3c803a",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-21_manifest.json": "390adc1b2f50158f5bd9953a42ab91a1dcde6c78f647a859a347d91f2348eef1",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-22_manifest.json": "47343948d683536f08441a7b014004b8ac3798826df76e1461287647136d65ba",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-23_manifest.json": "aedd0b3ccdb3f03011d32ad856962dd1defc90e17318a644ba2826c49a808f0b",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-24_manifest.json": "3eadc4742b29d77dc2616295e62a9a46b58148d9c4e978c5ec508852513ae866",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-25_manifest.json": "e5b2b7600a9fe93e96db0756cbe1f3da24515346ca4f9696e5a419795cb04488",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-26_manifest.json": "6ae2fdc944bc5ee30df16d0cbc847310d7631f88bdd49f32212347cdb921208e",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-27_manifest.json": "e8a17225a4250a7dea4ef52998a779d57ae760021aeb911c64b2fd718181f5fe",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-28_manifest.json": "050d9e808c857a6ab4fa3aa66adde8e942c25898d856d74c3a2c71c05a8a5e94",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-29_manifest.json": "8dadfe72753ea5f7d0366b6e0ffd17eb31b903aa30cd4e236a4cbe9daefd8f6e",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-30_manifest.json": "b29883cbf729972d635462a5c798f11b34fc72282feac73dbf204f51e9664559",
+    "data/jump_representation_ticks_20261007/BOOM600_2025-12-31_manifest.json": "3518e91b109377cd954d08b624af34ff24d0f2449d4301a689c1b4f40b7bbd5b",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-01_manifest.json": "4c5a63e299a10e8d704b94f560393a2a120999281ee2f69d130ab89c8318cc0e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-02_manifest.json": "18c7e447e964a933c8c75b67bc31176417cd755f9caf43e565a04f4320223de1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-03_manifest.json": "5a884d9e9b07c8367d12dfdb029bd153c7a8ef3a12b14c6f150f9d5c00e3c31f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-04_manifest.json": "1c1b209d8cb0f052b34e56dde6c732e887e25fe0355415e2fe77b2592604496b",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-05_manifest.json": "883af81481639b303f8b41df39def84b6388cc32f5c8de703b4551e87d7f83b7",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-06_manifest.json": "353835befdba08bd16507810671343fea65d4d215430334e4d1437b1122b34d5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-07_manifest.json": "2abe748e28996be73b061c8301b5ab3ec3e955782316e5e87e1082ccbcf7d7dd",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-08_manifest.json": "54d422f230fb3f1724c5d1374201bf8f18d22355f7bdaec9ece7085c0d3e7586",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-09_manifest.json": "b3c49f9232c041fdd0f44fe3f0e482fc1808c659a4dac9c7de8a177af95c7079",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-10_manifest.json": "ea6da0351e0238ee3dc369dc00a4d3ca2a19ce0214e93ccaf6d1278c8ca5c97c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-11_manifest.json": "912adc3a018df2809553392a786846f61b74de44787f756a58fb6f337c232ed2",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-12_manifest.json": "2fb3b0ea06da4bbc965a9c93f5f42a33839e4a2aaa7b5d0c4f5f3bc99a684123",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-13_manifest.json": "02a0ae5cedaa765419fe9fd798976539149d6cc15b472ba5db09c2533f6e33ea",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-14_manifest.json": "030da05c8cd22b863f8314ba4d5d7360c51498266314315951b3c535d9062cbc",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-15_manifest.json": "305dbd3cd3becd6a4ce7f4d987fd902ea161a9f468b17674a95270ee21c456a4",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-16_manifest.json": "457f439f17fe8c54c8bf26dbb20e3374f631095bc9639f56aeb739004357b9f4",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-17_manifest.json": "6c6da1bc5aca609db480397bb9207f949beebca7c1c134041cabd49315935f37",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-18_manifest.json": "80cdb54221201ac20d83da224c2b2c9c67439c74fd170867fa47447271270646",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-19_manifest.json": "609145e620e47fb9bede3166c3146a5195b0a665bff3c13d56cb7070e019ae4f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-20_manifest.json": "cf392f3941f0e6f01fb1fc55aef9dd1264848d259efcc25f62578659e83353d9",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-21_manifest.json": "42bd71e33190ab7d55bf9fc9b4d626da9005ee931653149b29bfbc97a9c9242e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-22_manifest.json": "6ded50b9f797bbb66add7ca6b5cfd7d77f248d786f1a65400de26eb1c4cf72fa",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-23_manifest.json": "7480d91d3c02a5e9138b68328a495a1727b794271af2c9ba95216d4df053f594",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-24_manifest.json": "0f5bd53555739e5e2a52300449cbea7c3aa4df8803131ec14ebba064f4632b34",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-25_manifest.json": "c455dc9abb270cb056a7cd0f84f51048f17acd5eb36009d5d8e13a7732cb906c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-26_manifest.json": "cf2f2d78168ba798dc61cfb9530217f2729bd4f2e4361a091fd78d2b554edccb",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-27_manifest.json": "ce83976824411c6c6125c028b15c3ee1c59e2c8755c8d9641b6a11d4c015480b",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-28_manifest.json": "0bf3b45c72a70c00f36213a1a80a5e50489182856ba0003b08620a21ad50d519",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-29_manifest.json": "5c449f5c29a1fb6b1cac156a49ad7c8c12dac8f63433770814b5868a6969f992",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-30_manifest.json": "a19571ebd75c6112d12194e5e16dc360b8dae68470e550a1a0efc577dc012ae4",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-01-31_manifest.json": "d606c637af0ffa5c522ae5e1afb4c856533f6ce1a2e919b99df2cef8ea45866a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-01_manifest.json": "d5ce6e5ee17e071f49555b59ad7eec57301ee9c76644baa958b46a74ce4f531f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-02_manifest.json": "4673b41b0937c0434c3895e914ca5d2b3e9173033baf1838a82ccd5bbde711d5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-03_manifest.json": "69fafda7867afae459661048909f9653b604084de11557d5f380b118ac153ce9",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-04_manifest.json": "673a05334862b4f9f1640134d066e2b95c4083b4831d87197ebec7b039c70eda",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-05_manifest.json": "04329a584afb774614f90d788a119fff81f495ef0b87ddea54e69027428b7750",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-06_manifest.json": "463a3f849f39689d99398671e786ecc6dbfb8917d5a1d64a0d27910a70f73510",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-07_manifest.json": "4985348cb14630f54b1c1ee601a4d0628adf5af640d5b0ac0e175d7540e4b782",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-08_manifest.json": "bd51e939c73650a8a47cf855708b48b3096f692704900fe21f24eac853d8e9a8",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-09_manifest.json": "9d8c8952b9d1e9741bdceff5be0349470d2a99aea9c6c7fc373445697bc1266a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-10_manifest.json": "9d6a0c888824b15b21336ee9c6e1584d6a249323e4fbf46e5ed4271929dcf735",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-11_manifest.json": "6e2d260213a5abfac9789b8e3fb2878f2f06b3860a8edf10d264931ca3c884b5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-12_manifest.json": "16d59bd72a3e2e0ec0f1b9c49a1500cea44186b83aa9fc9856cda8bb77a7fff6",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-13_manifest.json": "8b42e3db90dde18f6c55ca92530ac844875b21da54049350212e98ce226f973d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-14_manifest.json": "194de5e47159a4824942399f1f25056a5062e672fe2e2d0462a6303b52409f06",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-15_manifest.json": "7b65f49f89434312fb0da5405d52e2ca54a994257d7c0758301920ef77633610",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-16_manifest.json": "6bc2bce506559eda29e2d96941679f77e0450eea6b33f6f3b1e7595839e8925e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-17_manifest.json": "08ac8364d9e8943b3494bd4d3b9ac6b949e05ea7bcd37dd519ddf547e733b659",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-18_manifest.json": "8341f33e3fe56fc1b082a13c6bf9122ec3b189d950f58a23b717efb512af6065",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-19_manifest.json": "7d1bbfdfc31943d83baa4e3a081ea70ae054387b4e697fa373be62f593678de6",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-20_manifest.json": "641e30347421014dcfa7ef080e3ddc86b876c522c24f6aeae6f846c54b64259e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-21_manifest.json": "5860234b919ad90fe5acdf0560dc06a9572cc11760e555effaa295f464fa357c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-22_manifest.json": "3fe7b603804b8aa443dd1e738a60a1478c0c08bb0c1bd92fd2136af76d9a8e3b",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-23_manifest.json": "581011b69fc26b3ce09f333c6e4bda9727a35a5fc8b6600b76b48b1fce9a302c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-24_manifest.json": "d504565d816e66323ae177da5edba8e4c781c63096985a0097ec2ef31c11ccba",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-25_manifest.json": "e79ea58be591b62c70048727db6df6e3323ec2f887d3b5a37577c5870c11f346",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-26_manifest.json": "959dcc86c2d66b078eb2b77aa0b65fd2982d92f13af0420e175f8fde20cb652a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-27_manifest.json": "96d0655f96a5903d20f275e3bba9146b328a790858ff620168814abd10a761d2",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-02-28_manifest.json": "f10aef2f60458a3e6c3ed79e8465b9eb91e70c4919acdad384a856ad687aab2a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-01_manifest.json": "2458a9ca0854843f97739b6e0bc32456dfb4520cd174dfd9f6c7c6b558f52e5f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-02_manifest.json": "23bbd9e3be66ef11dbb09add68aa260a7e360ec572654840e758ccd080d09985",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-03_manifest.json": "27ac024174cb260883862c6a0fd4fbae9f413c2270fef9d88be3fcae06327be0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-04_manifest.json": "e057a4f0c6e7cc57ef373eb3ad48f0f7075f2aa16895213b77f1c40615f019b1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-05_manifest.json": "18356fc6c537e652c85a08ddd9cc0d46172295f771e0306a4f788db668884df7",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-06_manifest.json": "fbe65f7543f5784b4391803f7e66f2138cd61d3acd59f66852814239349f7f66",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-07_manifest.json": "bc046cb2f609009bc0751ef661a6ee81ed6b43577dca17fe155946d61367fc23",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-08_manifest.json": "9b9878487f2b27069bdbdeca286ab84d3eaaf0bd9301dc6cbea0176fb3972f61",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-09_manifest.json": "e88183c320762a4db2ccbe3f0276b26f914a902d78209bd8a7c943b67756bed2",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-10_manifest.json": "bab778195129014876dc0db39a71c08eb93da5869504edeb0c21814cb9708b96",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-11_manifest.json": "015bbdb04688aa825384058fc2186d485096c4bae098d5f863d18d50b98f808e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-12_manifest.json": "3c531d41f08a1da784b2e16ce9804b8d23c7664bb300fd25fffcaaa48332f315",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-13_manifest.json": "27f49a0196a97838b27e926e9b92a8063669ce69d35d5f2f284fc386aedd522f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-14_manifest.json": "c5cde2e7b0d8657207cc4c69645432a36b6c4f52528d187cc18ff96fd79f2a68",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-15_manifest.json": "921f687299400a46909de5bffe197af980f086a2f1596c1077faae0c85765382",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-16_manifest.json": "a797476ab2e56b0840895a3bc2f7235f433fe05ea57a43fdaa2f9f87351bdd96",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-17_manifest.json": "2e1430c989f076b6aca2ee224cbb10b668a452f9bb5ec4848b0640cbfc2095e1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-18_manifest.json": "37e1d3a05a2a43da9f1a8df1abc8d7bc33450debd90a5749a18d2953671cdc41",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-19_manifest.json": "46d10e74d18d00518edcca2df601d10510c9c675f82711eacaa9fb9ee5ca1b29",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-20_manifest.json": "123d544d6481b5f5f3c889ea2911d68ef6ef52a764382f3af9c62ce966d55f96",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-21_manifest.json": "5f7f210f4bab36062b6f5b64092044272dd5ef0533bbdf1e874102c4d65a9493",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-22_manifest.json": "23bb9e993b1158e27bdb1089afcba6ea7033c295e9f6d4861cfcd9c11cebcfd2",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-23_manifest.json": "0d9cc0f3782222c4c04719be68afcf10eb43c092e9a0379c4b592593316d332d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-24_manifest.json": "4632c7ce6c878339c87c1211ee1d33270f88a1c8394c96fcb1fc671fefe6bb2b",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-25_manifest.json": "26eac418c45c0cede59a5655715d36cb8db0a1e2388c512cf746b43692f23abc",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-26_manifest.json": "73455f8951af8d53aa6eb77a2e1a822805f822a52090f64e43f3dc73b6e7756c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-27_manifest.json": "8b405424908bd455789766e287c44b4dbcdf09ed4de591fce77bdf1f41105dbb",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-28_manifest.json": "27eadef7f290ecbfab0d15c185ed6d40707a70c2def1bcaaf10f551081f65753",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-29_manifest.json": "78194a3593a837f45e9e4908fd2422ea40c780d352e2384f3db20d2270f5b4b8",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-30_manifest.json": "74a575d9b6d0d056b5beec5b267812a9d700cfaec5f0d17f78323f9fa2057d46",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-03-31_manifest.json": "811aac5d59e303c5bc3d1ee09729de30b68e26014851486f675c48e13d5f5748",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-01_manifest.json": "f542c0d1801f599518c0a046e1486a62a18f521cd6119a6d25998fbb5f7e3eb7",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-02_manifest.json": "7d1ac5dcb19fd26f95f573e7bf65bb973a1451a5e34bcd84775b10c46d77c384",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-03_manifest.json": "cb42b889575c2b4389c632f77b8194fbfa7289b20020b0ff5876bfd97b8ac840",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-04_manifest.json": "4d20216417a4080c7d96603827dd424e49f40a78833e0806b604295cc5f5b93f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-05_manifest.json": "86227daea6ba742d000fcbffac48245af4a57fad2c98b5700573abf02806c996",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-06_manifest.json": "20700429faa6ce7a2ddc4e91c38310b096839778f2ba1791b861a981ad573322",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-07_manifest.json": "8c5bcf0e197a0b70d79ba7a88988ce30e67e7e9e64db50532b61de811e91115e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-08_manifest.json": "3e58152f52c3758d4d8ed05fbf7a04b0de3279782c55bfcefb4eb556a1c3074a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-09_manifest.json": "8c59d01c25d41f5e868ee752417f3865d7805a7bb5e067839c15eb0ba3d991e4",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-10_manifest.json": "8ce96526e473d59e71ea00d6e19b9042a2ba6954c4f57ee098eb92004e078f7c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-11_manifest.json": "c3035eac095d2c653f23bba9cccc8abff35d06d2a01e4c3946b651c8da8f5a74",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-12_manifest.json": "ec3d7b67bbd5448211572cd1c0645a5d7dd3140ba70e96965a5542330dd129b5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-13_manifest.json": "ca243e0f75efae48af9475b9d155fbf55e172177dbe34615437b1ceeec839c7d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-14_manifest.json": "40fda436e2d633cd4c19920e05c1faaa11eca3fca68cf5c668127b5ee06d8e53",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-15_manifest.json": "357d8bf4857d8e8a7aa650931f111c4c18e653597938c6abe226ab6a2ae3657a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-16_manifest.json": "bdb9cb20cca19cba1b3df666322a33c96124e3d9b0f9e352dd72d57f8e79da37",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-17_manifest.json": "92f1ce40791ab6130773938cd7f3f09de8f5d80fc4ec01df50b4d5e7ca00efe3",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-18_manifest.json": "ef46ef2cdf15f39e1ac5f4819b6d054906cb95b02320ccf698d732035fff2a04",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-19_manifest.json": "ef84a72ffa26d700aa6204ac7c4f88fbb8849c5d166e93373d31336bdd27d107",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-20_manifest.json": "77aebde5fcd6d07f5c806e558f1cf20a2e919aebea9c15f63d783b98b8c19a83",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-21_manifest.json": "3f83b8dbc8e13fbd38a1bbe293333bc45cbcb9534f831111291c49169f2db5d5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-22_manifest.json": "2cf1584dcce5114fb7f0c35d127c01f9dd06ebf0557749caa2f7d9fafdc324ac",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-23_manifest.json": "0926ba3e6a0d295043e3e19b37f1f1b29670aa0ef4b12790761b4fb6e280addc",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-24_manifest.json": "56a94b36d7f81d8b8800286662fef56b4fde8c09062c2334d8847202c6508f69",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-25_manifest.json": "5c76daf4d5ae2e73d44f72d41c57985aad2d462fc4f6243dc54aff8a56944191",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-26_manifest.json": "978fa419d47911b021bbbffd9e600a458368969e252227d9b10a31789d8b8b05",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-27_manifest.json": "12e4cba1e9716d54b93e5ad3e341a8694eb4354b0f3b73263dede4978d10201c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-28_manifest.json": "948340d0e8d751f064f198ca48ec87c233d090d3c9fe768b801cf87917e97d60",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-29_manifest.json": "dbd887d33b943a38210f77bd0a2b80e387f02cde59f6a4be24ae36bf5631d898",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-04-30_manifest.json": "e2a9c1d32a01a9ffaf69715d377da72007e46813758879bdbb289e0cb305b0dd",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-01_manifest.json": "0980faef4dd5d1bd0fe35da1a778accb7111a07d146763e225578f1715666502",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-02_manifest.json": "805608be599d0154ce20faeb0d92059c50ac7a67edb5d9da8f5b8b2827ab87fd",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-03_manifest.json": "1ca089a1d498e8d2d496c3821bd9b6d25a31ee07bce05140c708ba4b0f1e0c9d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-04_manifest.json": "5fbb40bfe3dea0667e13be4647364623166e550c7a1d91ae14f531f99fb8eafb",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-05_manifest.json": "441967476a4b9dcf40b83da8a28aa8d915f9214e76073e80eff6a114c32e8d5d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-06_manifest.json": "a6b2e1750cdb2108f4d3db883ad5d5a4c88674403882dcf5875d7f353f2bcb25",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-07_manifest.json": "d4612eeb0b49428a13512b21fb335c06d1af54e82261f0af35cee3e39b7974c1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-08_manifest.json": "7e41e173ad35f159e777e6568a59581c60b290d5236704e2b61b1005482152c2",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-09_manifest.json": "9e5b93f0c06894fa56d44e1acb06cc8578fac3755ad4434ece39e275b1b643b9",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-10_manifest.json": "a594a395c2341dd5c7fe27e72b99f1976ee087dc71b04da34c980923a316273c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-11_manifest.json": "f533b6927e45a1e6d0c230065006a396645a91a996f1f40a80046d99f8e673c1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-12_manifest.json": "eb0d7b145084faca93d352308a4ca557e17a1480fa6122c038b3346e43587f02",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-13_manifest.json": "27c25effa31dc57e487d675333727e21a88b605fb999af4c6098a8a6e40168ed",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-14_manifest.json": "f162b6d954b807b6446c298a737420c9ab47550e1425d15f9e56d8dcf345dbe1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-15_manifest.json": "e166e49b0c77412536112905ef7c73cb2a5d7cc49ce95aaae8e733963936b6eb",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-16_manifest.json": "8d35b82245d23d29c9eb993ea62a42cbe29b0fc2225dcc81a37f629cd7178d3e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-17_manifest.json": "18851185afd546cbdb2470d8cd4cd24be4062c78e7a7e7548de99dfba5e95ff0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-18_manifest.json": "da8bd6121bc6e809118d18a50fd5488c4b9e92d97829b984974151a51af12fad",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-19_manifest.json": "e73892612a388b8f14b75683dbf6c0683075c3b1f78c7cbf6dd98b65665465b5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-20_manifest.json": "d8e78acbbd2e181750821319f51b85e55bbf81e6e27a3a7f6af8aee38a2d9d7c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-21_manifest.json": "003d5a46fbc1e6c767d8e430ff5406e83de0d7e60c4cbb6d8959ec00d50d52af",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-22_manifest.json": "31efc4ccdef0bd9f927d3263237d13a783e158a6b51356d244d9fb2b15bde100",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-23_manifest.json": "9036d4ab8ccda9b901c90db15a36383e01a43d79b72d9a0e4ee11acef00a9bcc",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-24_manifest.json": "89c7edbd03d2a10b2701618ba9e68fa80f43cdeeab17dc96b85ca2427473a529",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-25_manifest.json": "fc2a31fa018ec118701700063bbe1b16ddad50f941bdeb2a95aed176af63d5ef",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-26_manifest.json": "88565012ebd775991b8020b422fa7450f65f8a67d5e1c3670f06e70e8429d1b8",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-27_manifest.json": "2cfea06d6fb8bf57949984594f1f5f79104f7c633dbabfdb131ee7abf6aa89d1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-28_manifest.json": "cbaafceecfee2626f1d73b7d4d7bf6f9e8d619ca1b2318269172ddb2abe606e8",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-29_manifest.json": "7448d593ba3ece9adcd2923bf5f49b8ccafe7805b61f33fd46695f74584ad362",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-30_manifest.json": "36ca81e0984641d2ee26b91582dc051c876f561f56c2b132be4c4f807d38cd46",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-05-31_manifest.json": "20f23336dab39c2a78bd790fa4a076426e28ce764d872dfddd76b580aea924e0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-01_manifest.json": "5b2d08126993d8743d9e47ee949c6fcb1ada26895e718d050b0f00b6021bcae5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-02_manifest.json": "9fe6bd9a944b9574c3ecb125a5c0066e85b3c1368497c022f39f2d444646d27a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-03_manifest.json": "6c8fdb2e85cf6e9b50f17dfd2b3cc47ee35cf3b2a2b6b0ef0d4c16ea60c0331f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-04_manifest.json": "7353444f09aadd2d87ecfa6098168ad65c8a78b97ced87318a9fa27c217fc263",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-05_manifest.json": "cd6a1df1cdd2ba34fa03651e4912126abf23311fbe61e97e731ee7633d990713",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-06_manifest.json": "adbc08389d15494b75173f92ddcebf0345baf821a9a5cd950879316d940fbf7e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-07_manifest.json": "b1f6ce3e8379961ed6601d2f2321a93b29c64a58474b35a2fdeea1dc5f2b21ac",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-08_manifest.json": "7b8db956e4bcd9cac239704b98a89eeeb960abcf5a19c111c5d0b9ab33951c15",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-09_manifest.json": "0fdb756cc0f526048b5f83c2f7a3ee99da0738b1789808503dfd05963ce9841a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-10_manifest.json": "c4b8ff7bcc4a4d9ee69e7ab22a47d6249ca5e7d9591d8fe47175353b05fb7aa7",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-11_manifest.json": "1e1713f2c900adce52c5b83b97b434702ee527a2904de44c2db4134213d33563",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-12_manifest.json": "d9330a7d2402b83b27b4b0697496f2e9899ba4842fee699c67fcce996e20f735",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-13_manifest.json": "a4932909206f88020bcc4bc84655557edf18f914580b6d85e43461656d0d9e77",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-14_manifest.json": "496969bf41c670f253592859f31c649112a950488675363277e6627ef5f4c9ee",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-15_manifest.json": "3cc79944cab1e9a1d3a4264dc86e6f94dc90a9e2e171d966a3056ca433e169b7",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-16_manifest.json": "636a47509cfc7d0536952021ba00e55e172dfd13ed8c24f323f8694027255224",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-17_manifest.json": "21661321052736ea9e05459b39b052c8e502ada9891ce93f2dfd2834f10c6934",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-18_manifest.json": "7643956dfa3b8a640e6ff802608a538b738c67a0a5d42b71342577d9009ac22f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-19_manifest.json": "2bd923bf23f878be81d9d0cfb50448ee64ea7f06b28d2da004043ecf24aa6805",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-20_manifest.json": "821757b39b73d5f66a8c2ecd6e0340e6cbbec5caa70466a1ad9a116700460869",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-21_manifest.json": "a47a8ba04f81da3c36bd604361e6933ce74e98efaa027e7b776c8a10a8c3dd4d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-22_manifest.json": "64cdfab02bccf04411919beed903e9db07e36275b0e7797c84cab555c2305f9c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-23_manifest.json": "218beba603bd50f4e4db000d144315d5427f8c4cb17a10f63a277f601ab24649",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-24_manifest.json": "2a632efc9c0ee8912f1d834931b6ae3585d714d82ef7289008cf8e736be10e54",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-25_manifest.json": "9d968df50eb61789e607e4dbd260b6a1eca1367c4e188ab9047ea2b670e5df7b",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-26_manifest.json": "411c14b23fe33a603167e72b81815d9a11f3f2b315b8ed68070472698a993b7b",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-27_manifest.json": "0fca9234b8e22509248b0776c1ea0fd0ef648c835af2c5cc9a9e00b040b25f51",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-28_manifest.json": "9ba1a7a780d09bd5545b213c3846a4cd68ae322603c19944b1236d7e95fab30a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-29_manifest.json": "2b73186255ab5c53b7ff1e400846b45ea2f6bc7dade20d317f305f2025b73975",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-06-30_manifest.json": "70db9f07b56b94c2d7fd723d817d9ee861756283c04c7432ecbc602ed0941ff0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-01_manifest.json": "0d321612824f34681ba1876bdf639851b9b99e7e76dbc6cb4c3319987199b687",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-02_manifest.json": "9d09b7f7bfe086116e097b8ec42b25df4ea353a031c716395b6310f2494dd08f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-03_manifest.json": "c7a57a077a70d144126b33fda032de92a1fce784be69928d7bfbc69efadaa781",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-04_manifest.json": "737fb6b4368255f516c4aa6ef47c584f5af9fa6d3716ea18b99b62fd033b61c2",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-05_manifest.json": "785f2af6726ce1fac5cc059933d9d9f57f603b15af38727ce8cbc92c4b098449",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-06_manifest.json": "693319bbd513ebd2b238b2e32557224135652a962a7d8788a69d66507c0e04c3",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-07_manifest.json": "27b9736d6ae90eed95ec1e242453117ef80331598cad7ae2abf84823086bbaea",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-08_manifest.json": "7df52572453043ecacd0412aa6547999ff8d35657ba6855e95ec027d36a5c4df",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-09_manifest.json": "261072eb321f5dbd62ada2b2353e5fad721fe461cd872d8ea461694563819bf5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-10_manifest.json": "a5f225692431c5e80103ed9e4f16e92060883867afba41d54e140ac6066201cd",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-11_manifest.json": "daf0a08ef5ece2c13a2553768fb6def9cda336fbeaac4e00c8502735642363a2",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-12_manifest.json": "20d8188a03e74ffbf4145c0e8a296cb26bf3bd6b8b1d8b65b03c3ee495438d0e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-13_manifest.json": "26c969a83cf85ba5d8d778adb3086851eab87fd936c5e6f76febc2de25c22680",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-14_manifest.json": "d21ec15fabbf5f3637efbafa1e5399c27d5c3fd18f5f3f7c49dcb2fab2100b45",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-15_manifest.json": "0cf9f0b07144952f29538fbac75b9760bb6287bf13c8795174525f06f9983ad8",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-16_manifest.json": "317456ee4121baa183aa41df2b95360086067ab26ad3cb6da8ad6a9a4452a2af",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-17_manifest.json": "a67e4caa49be34653a1a9a14779a036da2ea370a765148459e4e9b6172e14bee",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-18_manifest.json": "82ebd393539bb5ec4e03f41cbaaf208b69992f0e4e2ffc6128c1f11b319be0f6",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-19_manifest.json": "c003f8117f9eb58cb0a568c70d587371b9cceeacbc327c3e93b63382dc049448",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-20_manifest.json": "0cb56d7844e10f7cfc6c6b7f4ca6b4ce0f8836bee759d95ddd2270e7ef3e2af0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-21_manifest.json": "2a36d6b6375501e65933771ac1bb3add02322173575d5a7e543c83ad445b1657",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-22_manifest.json": "1c6d2531e1d6c0698f917b0cceb5ce9a208f27bf42f8e2341d6aade0e8c03549",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-23_manifest.json": "c9181dc3a941b3d86e9445eba1632074f529eb49d5e88164f6b954054eced19c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-24_manifest.json": "258573f150c3bf06f6cf884e079e743ff1b2dd34d2485093420a4bfa667bc88a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-25_manifest.json": "a5f3418ecccd26fe7a61afe01ea509876d5d4ec7fd635e849e6cbfc8613cf025",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-26_manifest.json": "fab6caff8cbc796795d8d2e0636fcda2199e55696910165e7384913af3a98763",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-27_manifest.json": "dcfb93f2fa77596d7274a4939e6539b4fb64e9629483f4d5fa0f5b1532a92c1c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-28_manifest.json": "204b48268408f8dbf5e37be7054e1f4f7d45d8b0535aa262daff8849cf507303",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-29_manifest.json": "a354b94afe5eac282d3c75bbe68baa62efd41d7f9e21f6d434983bd48ca175e8",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-30_manifest.json": "831cdf04a248a2a12c1367d57c8c697e1c5b65c596300870b94ee2f2a2b994d1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-07-31_manifest.json": "d49f02fb85d30e8388c7b32055c2b0cdd629d24a80eed3252600edfe1ef5d134",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-01_manifest.json": "8a2683937b9e0813dadb1636101a1377c818104f077723e77f6d61435c3c4179",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-02_manifest.json": "4e99265a5b75e6a0f0e38c3cba3615d56fc3ea2be4e7964a8c646ede51b8276a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-03_manifest.json": "db549c7d3f3d52828a053858d05f1332cf086216b60813ae7fe633429064e253",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-04_manifest.json": "5bbcbedc4f2593e4a316b90a3aae449365396df3f29081c8ac39c3c5bb1c615e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-05_manifest.json": "991923e10efa0851509f32b9ed56167c5a59fce771c675a343b602b5453418a5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-06_manifest.json": "f237ce4a4d98253611b3ed29e5ea344d76f62258f6d73a254a6c87863286adb3",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-07_manifest.json": "1a00805f81de43ccf2383f15c02f671bd2c67056dd40246dafac1ce8915a8b9a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-08_manifest.json": "9c1a9adce9d272867d057cf69f4e943229e282827ab1e21c29920c57e711d2eb",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-09_manifest.json": "7f22c3f62210b2f32b258b7db5fce72e3114cd0c40ff79649fc8f16c3107bc8e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-10_manifest.json": "cb20a03f4f5d89db661d803e96a8a71d8825d9541f6ce710972b030123d920df",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-11_manifest.json": "f824cf0865b8d2b76e6ea6336d69939086bfab0c5a278cff49119dd60a12ccb9",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-12_manifest.json": "8cb9bea7aea5d0e6b68b66f7f5faeeb5e3fc6c5548e2dba7fe6205bff399128e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-13_manifest.json": "92e1b43ead2e5efdf303c7b2fac3000a722865833835e52b60ffc9ff9adc0248",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-14_manifest.json": "a0dbeeb11b9c0b2ef9d68c6428d48795c80e1ade833d0f471b24dab32ff2fb3c",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-15_manifest.json": "5c35e3bd66ecbe5502b8624c68f565cc21b4d49ad3f149e5d6f113eb8bbb532e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-16_manifest.json": "760c67b44f90675cf591e9d0c0294b127800966ad8421603e31ef07444f10c0e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-17_manifest.json": "e52cfab4e71ea7cc66d4aa39d6a795d567f7b5ca292da3f674e98c7fe2ea1b6e",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-18_manifest.json": "7d5bc27f92ffe23a4f682ef3204d86d72f2e6efbaaa88b58ddc35dc10ad2bd50",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-19_manifest.json": "4e099113e1ec86bef15eb60634bb39e7ce15582e434484a3ffa62bf22efb7a55",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-20_manifest.json": "625bd03e058aebe557078c0a1cfe8f241202582cfe3444fd1b44710b1abc6b72",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-21_manifest.json": "5158e79a69eb39363995e34eb5ed67e5e79cec735366875ed6f4c7d9be270a08",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-22_manifest.json": "2578f6904eea947c46ed872bcb44bc60a7a816715824511aa6aff18a36e5bdb8",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-23_manifest.json": "8455f976574860c73cb5ba69adfb5491888ee1477067a5fc0164679489f9203a",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-24_manifest.json": "d8364d691b77a6005e8f33d469889a0090de2b698f89e23664b12f07ffb07147",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-25_manifest.json": "3febcf41914124b786e1c6fdf37cbbb6e68cc029611b61f90b606e34ee4c1dd7",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-26_manifest.json": "fcd485375d2178f9e1961fdbfe9c9c6988fe99f570d499f8f7f0a6df558430d4",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-27_manifest.json": "dc5f377d57adacbc65b070b4f0546e888683f52c7ed9bb6fe31b60479167c4fd",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-28_manifest.json": "5a4b710b0d11576937cb12e06d4b8b7d7e447cf8c6359e585a0dbdc5fea8c9d4",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-29_manifest.json": "ae43c620d8a3e1ccd214154949696c91d5d10aaf142ec1f97058fad739eaeaa6",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-30_manifest.json": "5bf5ad5d44a33fd171c340154d3044f6e0753d86df8079dd359088c3c6149e71",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-08-31_manifest.json": "4c8247f6b7c0e99c3b2c8c77eee6a3304994bf5350b7ba226cd1dc78a5391cb0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-01_manifest.json": "0e21adce0c3779b0ff4dea268291558af352b8c565abc60505f492585a586136",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-02_manifest.json": "7e2c6aacc314053812b2488725dc5ccd01117e48e01958d7a3259ebe612c4389",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-03_manifest.json": "338201577e263c0e4adea9e2460eedf204689336990bd7b65518d672923d4cfd",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-04_manifest.json": "ca7920aa0cd71744435f8c09a1e3372fbf35a9a9c3ba34ff32050ac21118b59d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-05_manifest.json": "adaa70c3a0dd9fe7b7d6523b6b212e661c20a725705b97479340c248b65b7bc1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-06_manifest.json": "7c3f7f4e016ec6afcf6db95b852c49fa93e0fe87cb06f155790a74b198ce0c99",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-07_manifest.json": "9944d50d05cb814649403bcead624ef47eadb34cd2b00dad98cd60dcfc345cb0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-08_manifest.json": "8f2003b387b99ad228e6d32fd691f7178c49ad95cc89d092ac417e3f3390aef1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-09_manifest.json": "d85862e3a62b10815a1d23516164ed16f5fb665d9f617867fd62d7b5696d18f0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-10_manifest.json": "564a18283860edb464d2f2b5187d8baf8a9b74cac27a47db362f330b118a90f4",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-11_manifest.json": "1044fcdc7510ca15791601c126837d80bec5cbee83f9305ee3984112e1e921d5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-12_manifest.json": "6a5e6cfc91979874adb6d88c76a63d7a34005cc53d6ff8ec339e4f215bd9eb1d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-13_manifest.json": "613034089114eca68eff47d4f69a4c9624fe2f7f424770b3fa3ae7d9c091d49f",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-14_manifest.json": "606595fb0c208b612d721ca7008bddf8c5b6d83f57577c21c62454b84d14ce75",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-15_manifest.json": "4de3aa7e1fb694051932baabcb2a506ba164c2de8b50eafc383d9dbeca3b0814",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-16_manifest.json": "28542ccc3ea730705632dfe5c95914d294873f808b34484efd926f434be22157",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-17_manifest.json": "50190e77747af57f14968ec219ef309481c94a48e28450d43f5d8d36aaa1c20d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-18_manifest.json": "3bdb9f852eb8eee09742b4418356262ba35af5d9a88192ac0e4ca2a840de178d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-19_manifest.json": "5b378177af516e5502f8f4717e7b9b823a7095e629a92c2d2ae364ba2cf4eeb5",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-20_manifest.json": "3ad01b5ad7a8aeda41f7e1b254d958585620d28aa4f18ea3b46832f3f9314fbd",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-21_manifest.json": "688cf5b93c8043a3205b0a465a52bdc7f01f04e7693632530dcb91960fbc5cd8",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-22_manifest.json": "ea0246b2f459f99cd6199d547bb3f05a2b932ac39b35f7d307e5f8c41ed3b622",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-23_manifest.json": "b6d5488c506cadadf28fd35efb232f572b9a8bbd06b477e927e7036783280b2d",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-24_manifest.json": "53553232298cb4eccb1039c8dffe8eb71643d73355170451b888f7626e87b426",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-25_manifest.json": "ea358f59fc061b107156b7b0e2f97cbc6c0faf22db8a1cb42a8201f9803da922",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-26_manifest.json": "c03dc9df03579140ebc76c5c54aae2987b628b8eb60f1b8978bfa53bd650c63b",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-27_manifest.json": "544420ce8a3d3e034a9110da653cc594824ac28146438f09f2c7889a6dd002bf",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-28_manifest.json": "99d012e0316cc93ed117a15e4dfde15afb3cd0cc3cdf0da4baea216e60fbd3f1",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-29_manifest.json": "6eaaeeb603e7830f327814c78beb5f9df64b42a2f4332a1a1ec7affc93f41db0",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-09-30_manifest.json": "8019aa374be082bd45a569b1c97ef7c5923bf55eb7e95079c53058d0557dbec3",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-10-01_manifest.json": "ee077255f3ef15f6cff1dc76f6981d70a78c081dbbfcbae8deca139561c07418",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-10-02_manifest.json": "17618dafeced025d916fa317b8205ba9ef29e1c5bfa7a4cb29d5238bf48d7a39",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-10-03_manifest.json": "757fec8085ee7c7d76680abf2b8cdd6f4583191789ec335c38efcd0106da1567",
+    "data/jump_representation_ticks_20261007/BOOM600_2026-10-04_manifest.json": "aa92712231f790f646e4587ae48b2693701ff806f79571fda98b3387857635f7",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-09_manifest.json": "734b870f367fe6187bbee53b73408be4d33b709ee20eb69d3ab521b147d5e768",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-10_manifest.json": "e30a267794b0771abf170aabdf86a26871273d331c3a1cc35793d1dace91659a",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-11_manifest.json": "1daed0738ec7aba97e80490422723bf5dbbc811460b5b6f2e7c960c07ce168dd",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-12_manifest.json": "224cd5de04205dd18301834f438147d4e02af2c4ce2f69c4e493de37cddb0200",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-13_manifest.json": "e1e9753f36119957570a530f55aea4ad97b6ad45ce34e160d53b1abbef04f87d",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-14_manifest.json": "c5e76f008e0c565e482eff671909b000f29c81e61c04c21addc99abbfad7d2f8",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-15_manifest.json": "e30cddd6889d5c3623274c89218d39b40c6ecf6a9bc243c96b1294f92c79b16c",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-16_manifest.json": "7d48e2783e23b34ef6d34eb2a33f93ae9558c92eec850f91612c90c8b84cf6c9",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-17_manifest.json": "7cc37aaa91e50fdffc4ebfff014a5f3335f354b01c63dacc3dfe9301089a5018",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-18_manifest.json": "66f64bff1319a66fcf68e9f26e8781c842e7f1ef570d66157fa542418337fbab",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-19_manifest.json": "b2fe075a36bf91f4970599a14610a9e404ba0c5dd29cac32489c9e58402c0262",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-20_manifest.json": "be52aa47ab212902b38016388f6c7549a49c5d596b44e755a8b826121fd03b84",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-21_manifest.json": "b4450f2ca351f9d1167b123c331bd3b4a834a85e1007974fc4c647b08dda1be1",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-22_manifest.json": "7293debe9be2361eb8790a9109264455b91fd8d90a60e279eb2a956befe042b5",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-23_manifest.json": "907e124d54c697ca84942314c92097a60bc35ab73b4e406b4200fe45526409d4",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-24_manifest.json": "f9fcb5085a3d099a6319226bed6bdc6dee3902a51df62694a6073249b0a5f38f",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-25_manifest.json": "2c620dcad257974720b3ccd59a6fe737bd897760b9838e666df07c72c8f67eff",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-26_manifest.json": "4735d56794d1dd54ec812a729852552c0995ad5745100af4a717f93433e420e1",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-27_manifest.json": "1d6f505ee1a7d5ae6eb9359ad6708720d47e469479530878ae32bc60050fe1c1",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-28_manifest.json": "4788436161eb51e0f4d24d7f714cc26ffdd7b76bb11771f580fb47eeedf6f236",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-29_manifest.json": "35d1faeff28cdfb65c46301a0f5e94717657e88f93f135560fa21d3c3210240c",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-30_manifest.json": "397ee2f21e3934d616cb468272e6ae44045bea0de7825b1259b65dbf7fd71800",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-10-31_manifest.json": "5be23d2a2ca6e08fba14d570be110e4f257ac099550e032df22ff92d016b91d8",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-01_manifest.json": "bede6e105ce337fb9e4dbe2d74083961ece9cc25aac6b9209b69b28d9392f26a",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-02_manifest.json": "7979f1f876400f5bbc4e7be877f492e16c1bf71a7cc0dafdb101e75a6b769b02",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-03_manifest.json": "3b377766692d3d4235933b7cd9395b32562c5f2571e59e5ea7fc6517bf6467bb",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-04_manifest.json": "990b7eba9286c7759a08246f601648c17124ed94f376e1d415ff0ef1907a8d73",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-05_manifest.json": "bd109baa76c89a7ac4c1f43049fe1b0156d78778c8ac00870e0fbe564ff48752",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-06_manifest.json": "e5aa1baa9c9b972d3336d627df3bc25fc78179f57efb29e87b1a150bc28801ec",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-07_manifest.json": "d13170abae620b049b6ffcd96f695462f7ad4332f93b6acbabd7c5501ca19776",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-08_manifest.json": "32fdecbef7a0f493db6b21bc88af9d8d41593a279e77fedf8d79a8ac8542a310",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-09_manifest.json": "23899c49c760998fa4191a3381dd791aabcc225443e77b2b0efbc590891097b0",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-10_manifest.json": "2685fbc306a35f4061b9f7de3a8e1656bc82ac2429762784aaa41dc39891027a",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-11_manifest.json": "36bf469ec902caffee3a253e09735ec12d36e6d6fcd1d0ec8e0c5fe65cbfe521",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-12_manifest.json": "53778be87fd9ff9bb5ac955374445447480ded2c26905cb64ad290eab9d3092d",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-13_manifest.json": "575783b53126db9c64056549d34e1d4c9c9e37228f49e5239a51f1c9c6e7248d",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-14_manifest.json": "7b42a98ca2a096fab1ba7ee2fae991cbeacfa5ed73dd04179c092250afe7aeeb",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-15_manifest.json": "3e94a638d504f977c61aabeb101871231598040bb7c38e94b4ce3dcc488b55eb",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-16_manifest.json": "5b62ea4946ab68865724b1e91c1c06699e2e4de2048bc067143d62b8e4ad5b5b",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-17_manifest.json": "84e58d026c9b1cd8de17739a1446822f285f23573e3cc6cd1c292915c72fcc9b",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-18_manifest.json": "bf5646e8466ed82f961970308aadfe52286dc65efe09b8813a6190f46e1eabf5",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-19_manifest.json": "76042c1aa77fa224c448c58757d1034897797f526184bf3ddca5cea8855d27ad",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-20_manifest.json": "d610a382b70ee2ac46e0c8a032190672905e4a934aeb7b16b5816f3f7f240a3f",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-21_manifest.json": "c5b877f53c6de4a86166e70e0a70dbfe3b878a5facf8282d8e60fe560f440254",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-22_manifest.json": "f19bb17a6039d6460fb96a68d7863934aa224a4a36f1f91344618fed90039fe0",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-23_manifest.json": "a7f4b566c2ff6cd921ba3184ffa4e4e8ac73b7bace49cbc616c407639786f070",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-24_manifest.json": "05e884af7d0188f5377cfdf28b8c8975f3b280cbad178a2161faab5fce37ab49",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-25_manifest.json": "7e30c3fc72d92b5d646f71da2f12e1179487b4e6c98655334cf03a37697266cb",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-26_manifest.json": "3db95a68d6181b394b89416d7fa0639f6ea30fb053062ec63e0cfb7897b108c7",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-27_manifest.json": "d46f96ee56df1ef7b5e4a6d3e84c76f4494cc458d0fa72142ae9cfd41206f2ae",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-28_manifest.json": "c74fbfe3be92ef4d4a8e2370a8b5d83a453743e6c5d404e712e6d676de447427",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-29_manifest.json": "10ce517bf21f0f896a6054399e20d9ccc59611c67b84a25b72164995697b57dc",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-11-30_manifest.json": "f14d0683958771722d33bd2a23d0381367f8d183dbb77141ad99f0b3ff9e4b92",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-12-01_manifest.json": "fd5efa84354ef187abf855a15053e49e92a856897b51f9caa1452c9134459d7e",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-12-02_manifest.json": "9acca1ee9bcd142f3569d9867eeb5a04ddf115c343ba90e33a46c71721c9567e",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-12-03_manifest.json": "6e5061228044a3f38c7989b62cf74eb0f1e50633dd2c5fff321e07b8cf27b03f",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-12-04_manifest.json": "2afa14a01ff8dbfff27614b3009402c7ae5986a20906faac0c4c02a91789c068",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-12-05_manifest.json": "679d8740f464ce015d76a8b05b075b55df26dc883dc64e3253ce8626324f4801",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-12-06_manifest.json": "eab49ba00cadd05c119fdfaaa6120c5683bbadc636fd6d2a34d0574173e0bd5f",
+    "data/jump_representation_ticks_20261007/CRASH600_2025-12-07_manifest.json": "37989f125af4c5c52e86b295e68298d6da88efae501705967a5cdb6f1df94b0d"
+  },
+  "saved_false_values_checked": 1692,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "returns_features_labels_or_payoffs_computed": false,
+  "strategy_payoff": "NOT TESTED",
+  "cash_profit": "NOT TESTED",
+  "scope": "Source integrity and preserved missing seconds only. Every completed source may contain explicitly audited gaps. No returns, targets, physical-spike census, model, economic or execution inference. Attempt ordinals may restart at1 on verified resume; total retry attempts across sessions are not bounded at4.",
+  "verifier_file": "scripts/verify_jump_tick_sources.py",
+  "verifier_sha256": "2972e8aa60534d3f7c4d6b72c38cd564bc58505cd1fae18dc733b47687482a44"
+}

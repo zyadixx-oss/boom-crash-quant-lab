@@ -1,0 +1,67 @@
+{
+  "stage": "synthetic_jump_representation_preparation_validation",
+  "run_utc": "2026-10-08T03:15:22.392248+00:00",
+  "python": "3.12.5",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "full_python_suite": {
+    "passed": 2205,
+    "failed": 0,
+    "warnings": 1,
+    "seconds": 72.81,
+    "warning": "Existing FastAPI StarletteDeprecationWarning"
+  },
+  "final_learning_suite": {
+    "passed": 63,
+    "failed": 0,
+    "seconds": 4.27,
+    "tests_added_after_full_suite_collection": 2
+  },
+  "representation_and_multiframe_targeted_tests": 87,
+  "source_verifier_targeted_tests": 77,
+  "retention_probe_targeted_tests": 16,
+  "compileall_passed": true,
+  "git_diff_check_passed": true,
+  "prior_successor_audit_input_hashes_rechecked": 159,
+  "prior_successor_audit_unchanged": true,
+  "prior_successor_audit_sha256": "5b1673ea28f5b995acaffad91d0318a4b0d1feeadced1e06c35ec9bd52ab19a6",
+  "numerical_failure": {
+    "initial_synthetic_exit_code": 1,
+    "boom_max_absolute_gauge_error": 0.38389408,
+    "boom_above_tolerance_cells": 42381,
+    "same_tolerance": 1e-06,
+    "repaired_boom_max_absolute_error": 6.7363892242156e-12,
+    "repaired_crash_max_absolute_error": 6.3336003108816e-12,
+    "old_research_helpers_edited": false,
+    "feature_formulas_changed": false
+  },
+  "input_sha256": {
+    "backend/app/research/jump_representation.py": "b67f89bb43188b31c80bce19134ff741a2a3158521178128a56f52b093173b74",
+    "backend/app/research/jump_multiframe.py": "d6abf581db63dfa09a9e5a7e3f99e3166823f575ed8d24299b22461bba67c022",
+    "backend/app/research/jump_learning.py": "eca3c5e9b374faa053ebf3032198370141f71cb26cf72bf25b493b28bdfd27bc",
+    "backend/tests/test_jump_representation.py": "511f0e685c12325121ce42607f886499cc3d5576236152ece70258324f708d44",
+    "backend/tests/test_jump_multiframe.py": "5202322fe6b5a8292a13a948025b2f52e9f5cc1be94f8c610ff004f3a7381f32",
+    "backend/tests/test_jump_learning.py": "c49c913432da7a96f77a3a1ccef09f6d9876dc42dd3c762439e93963bc248237",
+    "backend/tests/test_jump_tick_sources.py": "077ea3ea6c3c38e127856d0a8e29877946bfb3e6ea9f8ea16f2be1747177aa4f",
+    "backend/tests/test_public_tick_retention.py": "8a16de6a174cdbd85b8307ec457b2935718dcead1da5cbf3f5381d49ed935980",
+    "scripts/probe_public_tick_retention.py": "dc6ebc554b062069ff0c4b45bcfdb2b43247b1002dfaafdc710eef087934c129",
+    "scripts/verify_jump_tick_sources.py": "2972e8aa60534d3f7c4d6b72c38cd564bc58505cd1fae18dc733b47687482a44",
+    "docs/jump_representation_20261007/full_tests.log": "ee01c79c5c0e78683bd81e2d9076a62130682034c4ebd07a60dca10da0f54e21",
+    "docs/jump_representation_20261007/learning_final_tests.log": "2134dc0aae99eb6de2998b99b74fe4e8fb7ee1a80a04296061a4f978faebf828",
+    "docs/jump_representation_20261007/numerical_failure_initial.log": "04de942a47bc0ed871f5bdac253e2a0e3a9a50a05568adfb8dd008832727e8b7",
+    "docs/jump_representation_20261007/source_snapshot_20261008T0310.json": "924d5aaae8ed3bd32ed6b706df7390d43de3976fb9e9d1161a5333de39c3fe1a",
+    "docs/jump_representation_20261007/acquisition_declaration.json": "05b9e682e112d187d61a6a9321cc106fcf78b55eb0fb6710eac6ccc3b25b5db9",
+    ".gitattributes": "cef5b42ff805acd4598622c691af6e0e8116bbd7105955d97be4644efc4ef2c0"
+  },
+  "historical_transformed_features_computed": false,
+  "historical_models_fitted": false,
+  "new_economic_payoff": "NOT TESTED",
+  "full_continuous_source_integrity": "NOT TESTED",
+  "cash_profit": "NOT TESTED",
+  "goal_achieved": false,
+  "raw_failure_log_whitespace": "Original pytest trailing spaces retained under one exact-path .gitattributes exception; raw hash unchanged"
+}

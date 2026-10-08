@@ -71,3 +71,19 @@ untested, not proven failures, and cannot inherit prior held-out status. No
 Flip-product scope substitution, price decoding or account access. This narrows
 the source leads that warrant follow-up; it does not declare all strategies
 impossible or complete the user's objective.
+
+
+## Distinct representation question and concrete acquisition
+
+A later source critique distinguishes replacing observed native-tail increments
+inside the feature price chain from the prior descriptor-only age/semivariance
+additions. The official product-team discussion supports old-spike measurement
+distortion, not predictive alpha. The bounded availability probe actually passed
+four fixed four-second windows; its independent audit passes159checks.
+Full fixed-calendar public collection is now running under
+`jump_representation_20261007/acquisition_declaration.json` with the old collector
+unchanged. See `jump_representation_20261007/DESIGN.md` for causal boundaries,
+training-only detector fits and retained negative/unknown outcomes. This is
+concrete preparation, not an executed economic experiment or qualifying model.
+No historic transformed features/returns/models have been calculated. Full
+coverage and new payoff remain NOT TESTED; all gates and the goal remain intact.

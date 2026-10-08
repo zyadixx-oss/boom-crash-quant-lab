@@ -1,0 +1,134 @@
+{
+  "stage": "independent_bounded_public_tick_retention_and_acquisition_contract_audit",
+  "run_utc": "2026-10-07T17:53:57.736380+00:00",
+  "passed": true,
+  "checks": 159,
+  "errors": [],
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "method": "Independent stdlib Python assertions executed inline by separate review agent; no probe/collector functions imported. Source review plus exact artifact reconstruction; assertion source remains in review tool transcript.",
+  "retention_probe": {
+    "passed": true,
+    "checks": 137,
+    "artifact_files": 14,
+    "requests": 4,
+    "rows": 16,
+    "wire_bytes": 1093,
+    "saved_false_values_checked": 56,
+    "symbols": [
+      "BOOM600",
+      "CRASH600"
+    ],
+    "fixed_windows_inclusive_epochs": [
+      [
+        1760008080,
+        1760008083
+      ],
+      [
+        1767225600,
+        1767225603
+      ]
+    ],
+    "complete_windows": 4,
+    "missing_epochs": 0,
+    "declared_at_utc": "2026-10-07T17:46:42.890945+00:00",
+    "finished_at_utc": "2026-10-07T17:46:45.682049+00:00",
+    "checks_scope": [
+      "Exactly four fixed public ticks_history requests and zero retry declaration",
+      "Strict duplicate-key/nonfinite JSON parsing",
+      "Current collector/probe source fingerprints match declaration",
+      "Declaration hash anchors intents and summary",
+      "All four intent, raw wire and saved result fingerprints reconstruct summary",
+      "Raw echo request and req_id match exact declared requests",
+      "Four integer consecutive epochs per response within each requested window",
+      "Every quote validated finite and positive without returns",
+      "Saved counts, bounds, missing lists and status match raw responses",
+      "Recorded declaration <= intent <= response completion <= next intent <= final summary chronology",
+      "Exact14 artifact inventory before audit creation",
+      "All56 saved safety flag occurrences false"
+    ],
+    "declaration_sha256": "76bccb57ba6d128703bcbab29b4ffeada9f42594892bc98b53ea0f593c2b3b20",
+    "results_sha256": "e6ab67464075707f1b83b19228714ab017b736684115960f7732e8c8aa2a863d"
+  },
+  "acquisition_contract": {
+    "passed": true,
+    "checks": 22,
+    "declaration_sha256": "05b9e682e112d187d61a6a9321cc106fcf78b55eb0fb6710eac6ccc3b25b5db9",
+    "acquisition_config_sha256": "112f03efd3e247bb280fa16d229ba64abb47d72ff6800476a98cf31c59f8a7e6",
+    "initial_public_request_recorded_at_utc": "2026-10-07T17:49:11.962181+00:00",
+    "days_per_symbol_planned": 361,
+    "sources_planned": 722,
+    "grid_rows_planned": 62380800,
+    "calendar_first_UTC_day": "2025-10-09",
+    "calendar_last_UTC_day": "2026-10-04",
+    "study_intervals_days": [
+      180,
+      180
+    ],
+    "collector_unchanged": true,
+    "page_size": 1000,
+    "minimum_request_spacing_seconds": 0.5,
+    "checks_scope": [
+      "Exact contiguous ascending361day schedule and symbol ordering",
+      "Expected source/grid arithmetic",
+      "Pinned unchanged collector hash",
+      "Exact initial/resume command and persisted acquisition_config",
+      "Outer full-day boundaries and fixed180+180 study intervals",
+      "Availability result hash link",
+      "False execution/authentication/order/features flags",
+      "Qualification gates remain PF>=1.5, >=1000 paths and >=60 active days with all other gates retained",
+      "Declaration timestamp precedes first public bootstrap request record"
+    ],
+    "new_acquisition_quote_values_parsed": false,
+    "full_acquisition_completeness": "NOT TESTED"
+  },
+  "input_sha256": {
+    "docs/tick_history_availability_20261007/declaration.json": "76bccb57ba6d128703bcbab29b4ffeada9f42594892bc98b53ea0f593c2b3b20",
+    "docs/tick_history_availability_20261007/request_1_intent.json": "f430a7c2b7be1033d1ad2b1e32ad8825dfef63aa25c1f615c9c113f2fe07da8b",
+    "docs/tick_history_availability_20261007/request_1_response.wire": "13e22052447de4d7beba411c5e1eec3f1d8de3f6c26345dc2e51460e775b1a2a",
+    "docs/tick_history_availability_20261007/request_1_result.json": "b6da2c7c40a2068bd1ad50daa7da171f80db208c331798e153166fe74a2b1eb2",
+    "docs/tick_history_availability_20261007/request_2_intent.json": "32927aba44e2a50edfdec46b4d7954b860bd7f54457a53762d775a83bd68951e",
+    "docs/tick_history_availability_20261007/request_2_response.wire": "0d4021bd890fd2c8063a2ab8c065e525e2314ee16c79098621b84750e3f1285f",
+    "docs/tick_history_availability_20261007/request_2_result.json": "9e3f0d54b94590e4145b443d098d077f3c467c163f3f2fdeac8de65beba2c43f",
+    "docs/tick_history_availability_20261007/request_3_intent.json": "7f69272e51136cd47306b3b245f47e2a763a5ec9b64a7bbc5037b8aacc7d4e16",
+    "docs/tick_history_availability_20261007/request_3_response.wire": "fb5f4195c33c102d79553a0a44974404a8a224eda25f6f394ade1360722efbe2",
+    "docs/tick_history_availability_20261007/request_3_result.json": "4bf65a7d979f12044b4fa5145e58258232902176ef9e84108d8d57ddb68c3023",
+    "docs/tick_history_availability_20261007/request_4_intent.json": "0665cbee5c3d813059b89b7d341c218b92968230b83f856a51917cac201e13c6",
+    "docs/tick_history_availability_20261007/request_4_response.wire": "9985074dcec14cb13338ac13768f328f607e567253c76645172b9a0b93d322f8",
+    "docs/tick_history_availability_20261007/request_4_result.json": "8556edc4d07b66280116ad0dddf4beec9f217c551a1220bc550252880c2f55f7",
+    "docs/tick_history_availability_20261007/results.json": "e6ab67464075707f1b83b19228714ab017b736684115960f7732e8c8aa2a863d",
+    "scripts/probe_public_tick_retention.py": "dc6ebc554b062069ff0c4b45bcfdb2b43247b1002dfaafdc710eef087934c129",
+    "scripts/collect_spike_ticks.py": "087b071e28b948cd45e8d58bf03b370c42ac70827fc6010ace544c60ec9204a7",
+    "backend/tests/test_public_tick_retention.py": "8a16de6a174cdbd85b8307ec457b2935718dcead1da5cbf3f5381d49ed935980",
+    "docs/jump_representation_20261007/acquisition_declaration.json": "05b9e682e112d187d61a6a9321cc106fcf78b55eb0fb6710eac6ccc3b25b5db9",
+    "data/jump_representation_ticks_20261007/acquisition_config.json": "112f03efd3e247bb280fa16d229ba64abb47d72ff6800476a98cf31c59f8a7e6"
+  },
+  "source_review": {
+    "blockers": [],
+    "findings": [
+      "Probe writes and fsyncs declaration/intent before network and wire before response validation",
+      "Malformed/error response evidence is retained and no availability retry occurs",
+      "Separate full collector remains byte-identical to declared existing implementation"
+    ],
+    "subsequent_requirements": [
+      "Audit every expected source manifest and all retry/normalization lineage before feature calculation",
+      "Retain unresolved failures and missing seconds without replacement dates/interpolation",
+      "Freeze economic representation/model/selection protocol before returns/features or model outcome calculation",
+      "Previously exposed calendar prices remain adaptive historical research, never fresh price OOS"
+    ]
+  },
+  "returns_features_labels_or_payoffs_computed_by_audit": false,
+  "full_continuous_tick_coverage": "NOT TESTED",
+  "strategy_payoff": "NOT TESTED",
+  "cash_profit": "NOT TESTED",
+  "limitations": [
+    "Four four-second windows do not establish full-calendar availability",
+    "Recorded timestamps and reviewed fsync ordering are provenance evidence, not an independent network packet capture",
+    "Active full acquisition was not awaited or audited for completeness",
+    "No inferential, strategy profitability or executable CFD pricing conclusion"
+  ]
+}

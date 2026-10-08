@@ -585,3 +585,39 @@ negative evidence. This is not a general impossibility result or exhaustive
 literature search. Existing closedM5/00-or30 clock does not establish everyM1
 issuance; that clock and alternative reward estimators remain untested classes,
 without a newly established advance-information mechanism in these sources.
+
+
+## Native-tail representation preparation and historical availability
+
+The executed [four-window public-history probe](tick_history_availability_20261007/REPORT.ar.md)
+returns the exact requested16positive quote rows across BOOM600/CRASH600 at
+9October2025 and1January2026. Independent audit passes159checks/19input hashes,
+including declaration-before-request chronology and56false saved gate values.
+This establishes four tiny windows, not full historical coverage or profit.
+
+A separately frozen acquisition schedule now collects361UTCdays per symbol,
+9October2025 through4October2026:722sources/62,380,800expected grid seconds.
+The tested old public collector is byte-identical and computes no returns or
+features. [Preparation design](jump_representation_20261007/DESIGN.md) describes
+a distinct comparison of raw44 versus feature-only native-tail-removed44,
+both from the same exact tick populations. Raw prices/rawATR remain the sole
+economic price scale. Training-only calibration avoids reusing the old detector
+that includedJune2026 observations in earlier training. Gaps reset every frame's
+history; unknown transformed large-bar age is not replaced to obtain signals.
+The economic protocol/runner still needs to be frozen before historical
+calculations. Full coverage, actual transformed feature availability, trained
+models and new PF are NOT TESTED. All existing negative evidence and all four
+false execution flags remain authoritative; the full goal remains unmet.
+
+The [executed preparation report](jump_representation_20261007/REPORT.ar.md)
+now records87representation/integration,63paired-learner and77independent-source
+verifier synthetic tests. An180-day synthetic decay test found a genuine
+rolling-BB gauge defect before historical computation; equivalent per-window
+variance arithmetic reduced maxall44 differences from.38389408 to<7e-12 at
+the unchanged1e-6 tolerance. Ancestor code/results remain frozen.
+The full local suite passes2205tests/one existing warning; final learner63tests
+include two additions after full-suite collection. The03:10UTC8October snapshot
+records421/722source manifests, reporting36,374,030quotes and370missing seconds.
+Its10,970metadata checks do not establish full raw-source integrity: passed=null,
+completeness_passed=false. Collection remains active; actual new economic
+results remain NOT TESTED. All159 prior successor-audit pins were rechecked.

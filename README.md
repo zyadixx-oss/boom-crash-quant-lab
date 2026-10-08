@@ -73,6 +73,22 @@ a32-versus60 denominator discrepancy in aBoom500 paper and absent raw tick
 store in a fixed external research repository. External outcomes remain
 unreproduced; no new strategy experiment or OOS is claimed.
 
+The [bounded old-tick availability probe](docs/tick_history_availability_20261007/REPORT.ar.md)
+now verifies four exact four-second BOOM600/CRASH600 windows; independent audit
+passes159checks. A fixed361-UTC-day/symbol continuous tick collection has
+started for a distinct [feature-representation ablation](docs/jump_representation_20261007/REPORT.ar.md).
+Feature-only native-tail removal, paired closed-frame integration and training-only
+paired ridge fitting are implemented with synthetic verification. A180-day
+synthetic test exposed numerical BB gauge sensitivity; equivalent per-window
+variance arithmetic fixes it while keeping all44 formulas and the1e-6 tolerance.
+Full source coverage, historical transformed
+features and economic payoff are NOT TESTED. The acquisition does not promote
+a model or change any safety/qualification gate.
+The8October03:10UTC metadata snapshot has421/722 manifests and reports36,374,030
+quotes/370missing seconds; independent full-wire integrity is still NOT TESTED.
+Local full tests pass2205; final learner63tests include two subsequently added
+checks. All159 prior successor-audit input hashes remain unchanged.
+
 ## Live Arabic CRT chart
 
 The `frontend` is now an Arabic, RTL standalone chart for all currently available Boom/Crash symbols. It uses the Deriv public WebSocket directly, without a trading account, API token or backend. Select M1/M5/M15/H1, inspect the closed H1 CRT range and closed M5 sweep/reclaim/confirmation observations, and review the frozen historical study. See `frontend/README.md` for precise rules and verification. All four trading flags remain false.
