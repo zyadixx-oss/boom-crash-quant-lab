@@ -1,5 +1,53 @@
 # Results — actual offline Spike Hunter study
 
+## 8 October 2026: conditional filled-region reward — executed, rejected
+
+The [Arabic report](region_reward_20261008/REPORT.ar.md) retains all 60 fixed
+cells: two symbols, five streams and six chronological partitions. RAW_REGION
+and HYBRID_REGION train on completed CLOCK-region net R; CLOCK, RAW_TIMED and
+HYBRID_TIMED remain fixed references. Both new learners use identical completed
+training timestamps and targets, training-only standardizers, ridge 0.1 and q75
+with a positive score floor. Existing H4/H1/M15/M5/M1 feature caches, original
+quote execution and region geometry are unchanged. No-fill, unknown and occupied
+opportunities remain distinct; no-fill is not a zero-return trade. The natural
+conditional training population also changes, so this does not isolate a causal
+effect of changing numeric reward values or establish a causal policy effect.
+
+Later 180-day results, separately per symbol and model:
+
+| Symbol/model | Completed | Active days | Net PF | Weekly PF CI95 | Mean net R |
+|---|---:|---:|---:|---|---:|
+| Boom600 RAW_REGION | 1,047 | 151 | 0.763 | [0.651, 0.894] | -0.1061 |
+| Boom600 HYBRID_REGION | 987 | 151 | 0.902 | [0.769, 1.057] | -0.0388 |
+| Crash600 RAW_REGION | 569 | 142 | 0.879 | [0.739, 1.047] | -0.0432 |
+| Crash600 HYBRID_REGION | 399 | 122 | 1.076 | [0.855, 1.330] | 0.0303 |
+
+All development gates fail; all eight new held-out Holm values are 1 and none
+passes the historical criteria. Every held-out weekly advantage interval versus
+the required frozen timed model crosses zero. Crash HYBRID_REGION's positive
+later mean has weekly CI [-0.0595, 0.1272], below-target PF and insufficient
+completed sample; it establishes no qualified edge. These are previously exposed
+dates, never fresh OOS. `QUALIFIED=false` even if historical criteria were met.
+
+The final 70% training prefix has Boom 3,450 completed / 829 known no-fills /
+9 unknown / 0 occupied skips, and Crash 3,447 / 831 / 9 / 1. All four training
+prefixes overlap and cannot be pooled as independent validation trades.
+
+Independent audit passes 2,300,121 checks with zero errors: 16 new models,
+27,456 overlapping-prefix training dispositions, 33,495 evaluation regions and
+scores, all 60 cells, 192 paired day/week comparisons, and 30 unchanged CLOCK/
+timed-reference cells. It reads 62,380,130 original quotes and preserves 670
+missing seconds. It does not independently recompute the 43 cached feature
+formulas, intrinsic validity, qualification gates, drawdown or chronological
+thirds. Its exact scope and source/model/result pins remain in the saved audit.
+
+Premeasurement 122 cases pass after the required-reference gate correction.
+Final local validation passes 2,627 tests with one existing Starlette warning;
+the 73 auditor cases are included in that total. Published-head CI is verified
+separately. Declaration `5a5cd147` and result `6e470b50` remain unchanged.
+CFD execution, measured historical costs, cash profit and prospective paper
+remain NOT TESTED. All four execution flags stay false; the profit goal is unmet.
+
 ## 8 October 2026: distinct hybrid observed-event clock — executed, rejected
 
 The [hybrid report](hybrid_event_regions_20261008/REPORT.ar.md) compares RAW44

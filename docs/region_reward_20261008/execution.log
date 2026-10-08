@@ -1,0 +1,21 @@
+BOOM600: decoding immutable original sources
+BOOM600/fit40: conditional region fit FITTED; completed=1948
+BOOM600/wf1: all five original-price region streams evaluated
+BOOM600/fit50: conditional region fit FITTED; completed=2640
+BOOM600/wf2: all five original-price region streams evaluated
+BOOM600/fit60: conditional region fit FITTED; completed=3012
+BOOM600/wf3: all five original-price region streams evaluated
+BOOM600/fit70: conditional region fit FITTED; completed=3450
+BOOM600/final_test: all five original-price region streams evaluated
+BOOM600/later180: all five original-price region streams evaluated
+CRASH600: decoding immutable original sources
+CRASH600/fit40: conditional region fit FITTED; completed=1940
+CRASH600/wf1: all five original-price region streams evaluated
+CRASH600/fit50: conditional region fit FITTED; completed=2660
+CRASH600/wf2: all five original-price region streams evaluated
+CRASH600/fit60: conditional region fit FITTED; completed=3014
+CRASH600/wf3: all five original-price region streams evaluated
+CRASH600/fit70: conditional region fit FITTED; completed=3447
+CRASH600/final_test: all five original-price region streams evaluated
+CRASH600/later180: all five original-price region streams evaluated
+{"path": "docs/region_reward_20261008/results.json", "sha256": "6e470b505d4f32ffb28600cd136ae886001f35e34631663553d8807b114d8115"}

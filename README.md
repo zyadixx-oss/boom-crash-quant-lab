@@ -1,5 +1,17 @@
 # boom-crash-quant-lab
 
+8 October conditional region-reward study: [all 60 audited cells](docs/region_reward_20261008/REPORT.ar.md)
+now compare training on completed region returns with the exact frozen timed-target
+models, using the same H4/H1/M15/M5/M1 inputs and pre-issued regions. No new model
+passes the historical gates. Later 180-day RAW_REGION/HYBRID_REGION net PF:
+Boom **0.763/1,047** and **0.902/987** completions; Crash **0.879/569** and
+**1.076/399**. All eight held-out Holm values are 1. The conditional fill sample
+changes with the reward definition, so this is not an isolated causal target effect.
+Independent audit passes **2,300,121 checks**, 16 models and all 60 cells;
+final local validation passes **2,627 tests**, including 73 auditor cases.
+Known history remains adaptive; CFD execution, measured costs and cash profit
+remain NOT TESTED. All four live flags remain false; the profit goal is unmet.
+
 8 October hybrid event-clock experiment: [actual combined-frame regions and timed entries](docs/hybrid_event_regions_20261008/REPORT.ar.md)
 now executes the distinct43transformed-plus-original-event-age hypothesis.
 Both learners fit on common training populations; no model qualifies. Later180day

@@ -1,0 +1,252 @@
+........................FFFFF...                                         [100%]
+=================================== FAILURES ===================================
+____________ test_declaration_is_exclusive_and_verifies_exact_bytes ____________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x103d38650>
+tmp_path = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_declaration_is_exclusive_0')
+
+    def test_declaration_is_exclusive_and_verifies_exact_bytes(monkeypatch, tmp_path):
+        isolate(monkeypatch, tmp_path)
+>       artifact = M.freeze()
+                   ^^^^^^^^^^
+
+backend/tests/test_region_reward_runner.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_region_reward_regions.py:88: in freeze
+    a = save(FOLDER / "declaration.json", d)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/run_representation_regions.py:73: in save
+    return {"path": str(path.relative_to(ROOT)), "sha256": digest(path)}
+                        ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_declaration_is_exclusive_0/docs/declaration.json')
+other = PosixPath('/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab')
+walk_up = False, _deprecated = ()
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python {remove}")
+            warnings._deprecated("pathlib.PurePath.relative_to(*args)", msg,
+                                 remove=(3, 14))
+        other = self.with_segments(other, *_deprecated)
+        for step, path in enumerate([other] + list(other.parents)):
+            if self.is_relative_to(path):
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_declaration_is_exclusive_0/docs/declaration.json' is not in the subpath of '/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab'
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py:682: ValueError
+___________________ test_changed_frozen_inputs_refused[code] ___________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10581a660>
+tmp_path = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref0')
+change = 'code'
+
+    @pytest.mark.parametrize("change", ["code", "sources", "specification", "sidecar"])
+    def test_changed_frozen_inputs_refused(monkeypatch, tmp_path, change):
+        isolate(monkeypatch, tmp_path)
+>       a = M.freeze()
+            ^^^^^^^^^^
+
+backend/tests/test_region_reward_runner.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_region_reward_regions.py:88: in freeze
+    a = save(FOLDER / "declaration.json", d)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/run_representation_regions.py:73: in save
+    return {"path": str(path.relative_to(ROOT)), "sha256": digest(path)}
+                        ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref0/docs/declaration.json')
+other = PosixPath('/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab')
+walk_up = False, _deprecated = ()
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python {remove}")
+            warnings._deprecated("pathlib.PurePath.relative_to(*args)", msg,
+                                 remove=(3, 14))
+        other = self.with_segments(other, *_deprecated)
+        for step, path in enumerate([other] + list(other.parents)):
+            if self.is_relative_to(path):
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref0/docs/declaration.json' is not in the subpath of '/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab'
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py:682: ValueError
+_________________ test_changed_frozen_inputs_refused[sources] __________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x105819460>
+tmp_path = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref1')
+change = 'sources'
+
+    @pytest.mark.parametrize("change", ["code", "sources", "specification", "sidecar"])
+    def test_changed_frozen_inputs_refused(monkeypatch, tmp_path, change):
+        isolate(monkeypatch, tmp_path)
+>       a = M.freeze()
+            ^^^^^^^^^^
+
+backend/tests/test_region_reward_runner.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_region_reward_regions.py:88: in freeze
+    a = save(FOLDER / "declaration.json", d)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/run_representation_regions.py:73: in save
+    return {"path": str(path.relative_to(ROOT)), "sha256": digest(path)}
+                        ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref1/docs/declaration.json')
+other = PosixPath('/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab')
+walk_up = False, _deprecated = ()
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python {remove}")
+            warnings._deprecated("pathlib.PurePath.relative_to(*args)", msg,
+                                 remove=(3, 14))
+        other = self.with_segments(other, *_deprecated)
+        for step, path in enumerate([other] + list(other.parents)):
+            if self.is_relative_to(path):
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref1/docs/declaration.json' is not in the subpath of '/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab'
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py:682: ValueError
+______________ test_changed_frozen_inputs_refused[specification] _______________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x105818c50>
+tmp_path = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref2')
+change = 'specification'
+
+    @pytest.mark.parametrize("change", ["code", "sources", "specification", "sidecar"])
+    def test_changed_frozen_inputs_refused(monkeypatch, tmp_path, change):
+        isolate(monkeypatch, tmp_path)
+>       a = M.freeze()
+            ^^^^^^^^^^
+
+backend/tests/test_region_reward_runner.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_region_reward_regions.py:88: in freeze
+    a = save(FOLDER / "declaration.json", d)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/run_representation_regions.py:73: in save
+    return {"path": str(path.relative_to(ROOT)), "sha256": digest(path)}
+                        ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref2/docs/declaration.json')
+other = PosixPath('/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab')
+walk_up = False, _deprecated = ()
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python {remove}")
+            warnings._deprecated("pathlib.PurePath.relative_to(*args)", msg,
+                                 remove=(3, 14))
+        other = self.with_segments(other, *_deprecated)
+        for step, path in enumerate([other] + list(other.parents)):
+            if self.is_relative_to(path):
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref2/docs/declaration.json' is not in the subpath of '/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab'
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py:682: ValueError
+_________________ test_changed_frozen_inputs_refused[sidecar] __________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x105899790>
+tmp_path = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref3')
+change = 'sidecar'
+
+    @pytest.mark.parametrize("change", ["code", "sources", "specification", "sidecar"])
+    def test_changed_frozen_inputs_refused(monkeypatch, tmp_path, change):
+        isolate(monkeypatch, tmp_path)
+>       a = M.freeze()
+            ^^^^^^^^^^
+
+backend/tests/test_region_reward_runner.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_region_reward_regions.py:88: in freeze
+    a = save(FOLDER / "declaration.json", d)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/run_representation_regions.py:73: in save
+    return {"path": str(path.relative_to(ROOT)), "sha256": digest(path)}
+                        ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref3/docs/declaration.json')
+other = PosixPath('/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab')
+walk_up = False, _deprecated = ()
+
+    def relative_to(self, other, /, *_deprecated, walk_up=False):
+        """Return the relative path to another path identified by the passed
+        arguments.  If the operation is not possible (because this is not
+        related to the other path), raise ValueError.
+    
+        The *walk_up* parameter controls whether `..` may be used to resolve
+        the path.
+        """
+        if _deprecated:
+            msg = ("support for supplying more than one positional argument "
+                   "to pathlib.PurePath.relative_to() is deprecated and "
+                   "scheduled for removal in Python {remove}")
+            warnings._deprecated("pathlib.PurePath.relative_to(*args)", msg,
+                                 remove=(3, 14))
+        other = self.with_segments(other, *_deprecated)
+        for step, path in enumerate([other] + list(other.parents)):
+            if self.is_relative_to(path):
+                break
+            elif not walk_up:
+>               raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+E               ValueError: '/private/var/folders/4w/7v0l3j0x2q91qtcyd18tkycm0000gn/T/pytest-of-zyadalasmri/pytest-198/test_changed_frozen_inputs_ref3/docs/declaration.json' is not in the subpath of '/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab'
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py:682: ValueError
+=========================== short test summary info ============================
+FAILED backend/tests/test_region_reward_runner.py::test_declaration_is_exclusive_and_verifies_exact_bytes
+FAILED backend/tests/test_region_reward_runner.py::test_changed_frozen_inputs_refused[code]
+FAILED backend/tests/test_region_reward_runner.py::test_changed_frozen_inputs_refused[sources]
+FAILED backend/tests/test_region_reward_runner.py::test_changed_frozen_inputs_refused[specification]
+FAILED backend/tests/test_region_reward_runner.py::test_changed_frozen_inputs_refused[sidecar]
+5 failed, 27 passed in 3.61s
