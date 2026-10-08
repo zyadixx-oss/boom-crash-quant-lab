@@ -1,2 +1,3 @@
 # Preserve byte-pinned pytest failure evidence, including pytest's trailing spaces.
 docs/jump_representation_20261007/numerical_failure_initial.log -whitespace
+docs/zone_study_20261008/implementation_failure_initial.log -whitespace

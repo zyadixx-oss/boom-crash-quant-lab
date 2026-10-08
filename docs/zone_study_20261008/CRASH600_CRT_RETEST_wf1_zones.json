@@ -1,0 +1,47 @@
+[
+  {
+    "signal_time": "2025-12-29T00:30:00+00:00",
+    "issue_time": "2025-12-29T00:30:00+00:00",
+    "variant": "CRT_RETEST",
+    "zone_id": "crash:CRT_RETEST:2025-12-29T00:30:00+00:00",
+    "side": -1,
+    "zone_low": 21347.908342857143,
+    "zone_high": 21349.636,
+    "invalidation": 21353.955142857143,
+    "atr": 17.276571428571124,
+    "issue_price": 21339.66,
+    "source_close": 21339.66,
+    "eligible": true,
+    "reason": "issued_fixed_region"
+  },
+  {
+    "signal_time": "2026-01-02T21:00:00+00:00",
+    "issue_time": "2026-01-02T21:00:00+00:00",
+    "variant": "CRT_RETEST",
+    "zone_id": "crash:CRT_RETEST:2026-01-02T21:00:00+00:00",
+    "side": -1,
+    "zone_low": 21746.853664285714,
+    "zone_high": 21749.039,
+    "invalidation": 21754.502339285715,
+    "atr": 21.853357142857412,
+    "issue_price": 21666.396,
+    "source_close": 21666.396,
+    "eligible": true,
+    "reason": "issued_fixed_region"
+  },
+  {
+    "signal_time": "2026-01-03T00:00:00+00:00",
+    "issue_time": "2026-01-03T00:00:00+00:00",
+    "variant": "CRT_RETEST",
+    "zone_id": "crash:CRT_RETEST:2026-01-03T00:00:00+00:00",
+    "side": -1,
+    "zone_low": 21736.46775,
+    "zone_high": 21738.339,
+    "invalidation": 21743.017125,
+    "atr": 18.712499999999377,
+    "issue_price": 21695.939,
+    "source_close": 21695.939,
+    "eligible": true,
+    "reason": "issued_fixed_region"
+  }
+]

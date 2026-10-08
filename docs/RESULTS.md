@@ -1,5 +1,29 @@
 # Results — actual offline Spike Hunter study
 
+## 8 October 2026: pre-issued CRT/Fibonacci/trend zones
+
+The [executed zone report](zone_study_20261008/REPORT.ar.md) directly tests
+native Boom-buy/Crash-sell regions fixed before touch, using closed
+H4/H1/M15/M5/M1 context and original ticks. The independently verified
+361-day/source population is62,380,130quotes/722sources, with670unknown seconds.
+Complete source audit:375,763,700checks; independent saved-path/PF/day-weekPF-CI
+audit:249,471checks/914pins. Neither scope establishes executable CFD profit.
+
+Later180days netPF/completed: BoomCRT1.202/6, Fibonacci0.557/18, trend0.871/50;
+CrashCRT0.860/8, Fibonacci0.477/17, trend1.477/60. Crashtrend's weeklyPFinterval
+is[0.733,2.758]; its net-mean and paired-control intervals crosszero. Older
+held-out trendCrashPF2.635 has only13completions. All three families per symbol
+fail development, sample and uncertainty gates; none qualifies. The full target
+remains unmet. Native500 initial priorities were tested in earlier rounds;
+this600study does not claim a new500tick replication or fresh OOS evidence.
+
+181premeasurement tests pass; fullsuite2386passes/one existing warning. Initial
+empty-ledger numerical schema failure and the independent verifier's first
+empty-text-column mismatch remain saved. No scientific thresholds or outcomes
+changed after freezing. Large candidate tables are lossless gzip archives;
+`scripts/restore_zone_candidates.py` restores the exact pinned CSV bytes.
+LIVE_TRADING=false, READY_FOR_LIVE=false, LIVE_ALLOWED=false, OPENED_TRADES=false.
+
 Executed 2026-10-04 using official public Deriv M1 candles. See
 [full Arabic report](spike_hunter_20261004/REPORT.ar.md),
 [frozen protocol](SPIKE_HUNTER_PROTOCOL.md), and

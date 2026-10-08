@@ -84,3 +84,7 @@ docs/spike_short_tick_20261006/ledgers/
 # Fixed-calendar continuous public tick acquisition; retained locally with hashes.
 data/jump_representation_ticks_20261007/
 data/jump_representation_ticks_20261007_acquisition.log
+
+# Exact candidate CSVs are published as lossless gzip archives; restore offline.
+docs/zone_study_20261008/BOOM600_candidates.csv
+docs/zone_study_20261008/CRASH600_candidates.csv

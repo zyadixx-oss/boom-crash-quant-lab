@@ -1,5 +1,15 @@
 # boom-crash-quant-lab
 
+8 October update: the [pre-issued zone study](docs/zone_study_20261008/REPORT.ar.md)
+actually tests fixed CRT, Fibonacci and trend regions on62,380,130 audited
+Boom/Crash600 quotes. No region policy qualifies. In the later180days, trend
+Crash600 has PF1.477/n60, CI95weekly[0.733,2.758]; the other five policies have
+PF0.477–1.202/n6–50. All fail development and the1000path/60day evidence gates.
+The independent saved-path/PF audit passes249,471checks; source reconstruction
+passes375,763,700checks and preserves670missing seconds. See the frozen
+[protocol](docs/zone_study_20261008/PROTOCOL.md) and all saved ledgers. These
+reused prices remain adaptive history. All four execution flags stayfalse.
+
 Latest executed research: [Arabic consolidated results](docs/SPIKE_HUNTER_SUMMARY.ar.md).
 No tested model meets net PF >= 1.5 with at least 1,000 completed held-out
 simulations per model/symbol. The H4/H1 + M15/M5/M1 version is implemented and
