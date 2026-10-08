@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "reproduced_inventory_equal_except_review_timestamp": true,
+  "previous_capture_review_equal": true,
+  "compilation": "PASS",
+  "json_parse": "PASS",
+  "profit_tested": false,
+  "source_script_sha256": "72dec4854b14409ef18ed1eb1c8e2dc56a6df08d92c2a8f796deab09de60abc6",
+  "saved_inventory_sha256": "6df1c1f32355f32e849c396c6dac32aa572630c06da6b974bbc8aac05e7125ea",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

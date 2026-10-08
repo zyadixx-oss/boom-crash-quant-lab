@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "previous_region_audit_sha256": "a6194dd9178d2a14a7dee4d317429a1aaaad28d3d3ce4c195d9378f8e588f25b",
+  "previous_region_audit_inputs_checked": 1068,
+  "errors": [],
+  "elapsed_seconds": 1.876,
+  "new_historical_computation": false,
+  "profit_tested_by_this_recheck": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

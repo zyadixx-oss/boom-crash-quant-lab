@@ -1,5 +1,13 @@
 # boom-crash-quant-lab
 
+9 October [official-source and saved public-field review](docs/provider_evidence_20261009/REPORT.ar.md):
+the offline 240-message review passes again. A descriptive field/rounding inventory
+establishes no new advance spike predictor and performs no new profit test.
+Provider statements about generation and execution are attributed, not universal
+no-profit proofs. Public bid/ask availability does not verify CFD costs or fills.
+No existing frozen model/result changes; the combined-frame profit goal is unmet
+and all four live flags remain false.
+
 8 October conditional region-reward study: [all 60 audited cells](docs/region_reward_20261008/REPORT.ar.md)
 now compare training on completed region returns with the exact frozen timed-target
 models, using the same H4/H1/M15/M5/M1 inputs and pre-issued regions. No new model

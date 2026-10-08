@@ -1,5 +1,24 @@
 # Results — actual offline Spike Hunter study
 
+## 9 October 2026: official-source and observed public-field review
+
+The [Arabic review](provider_evidence_20261009/REPORT.ar.md) attributes provider
+generation/independence/execution statements and preserves their limits. The
+existing offline public-capture review passes: 240 messages, 60 consecutive ticks
+per BOOM500/CRASH500/BOOM600/CRASH600, with the same seven tick fields. No explicit
+volume, depth, order-flow, generator-state or next-spike field appears in this
+specific capture; this is not an exhaustive endpoint inventory or a price
+information impossibility result.
+
+A separately executed descriptive posthoc rule compares bid/ask to quote times
+1±0.00000675, rounded with the symbol's pip size and ROUND_HALF_EVEN. Exact matches
+are 0/60 BOOM500, 4/60 CRASH500, 0/60 BOOM600 and 0/60 CRASH600. Failure of that
+identity establishes neither independent spread information nor alpha. No future
+spike labels, predictive metrics, payoff or model fit were computed. Existing
+frozen source/model/result artifacts are unchanged. Public bid/ask exists, but
+CFD mapping, fills and measured historical costs remain unverified. No strategy
+is promoted; all live flags remain false and the profit goal is unmet.
+
 ## 8 October 2026: conditional filled-region reward — executed, rejected
 
 The [Arabic report](region_reward_20261008/REPORT.ar.md) retains all 60 fixed
