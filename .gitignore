@@ -88,3 +88,6 @@ data/jump_representation_ticks_20261007_acquisition.log
 # Exact candidate CSVs are published as lossless gzip archives; restore offline.
 docs/zone_study_20261008/BOOM600_candidates.csv
 docs/zone_study_20261008/CRASH600_candidates.csv
+
+# Paired representation feature tables retained locally with SHA256 pins.
+data/representation_regions_20261008/
