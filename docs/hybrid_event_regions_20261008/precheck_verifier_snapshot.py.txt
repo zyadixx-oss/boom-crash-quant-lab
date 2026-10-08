@@ -1,0 +1,346 @@
+#!/usr/bin/env python3
+"""Independent saved-feature/ridge/native-path/statistics hybrid audit.
+
+No production research engine is imported. Previously independently checked
+raw/transformed feature files are lineage anchors, not an independent derivation
+of all43 formulas or intrinsic validity. This limitation is explicit. Original
+quote paths and ridge arithmetic are independently reconstructed here.
+"""
+from __future__ import annotations
+
+import argparse
+from collections import Counter
+from datetime import datetime, timezone
+import hashlib
+import json
+import math
+import os
+from pathlib import Path
+import sys
+
+import numpy as np
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from scripts.verify_zone_study import (Audit, FLAGS, TIME_FIELDS, decode_symbol,
+    epoch, independent_path, metric_checks, read_events, sha)
+
+FOLDER = ROOT / "docs/hybrid_event_regions_20261008"
+PARENT = ROOT / "docs/representation_regions_20261008"
+AGE = "log1p_large_bar_age"
+FAMILIES = ("CLOCK", "RAW44", "HYBRID44")
+PARTS = ("wf1", "wf2", "wf3", "final_test", "later180", "walk_forward_combined")
+MODEL_ATOL, MODEL_RTOL = 1e-10, 1e-8
+
+
+def array(audit, actual, expected, label, *, close=False):
+    a, b = np.asarray(actual), np.asarray(expected)
+    audit.check(a.shape == b.shape, label + " shape")
+    if a.shape != b.shape: return
+    valid = np.isclose(a, b, rtol=MODEL_RTOL, atol=MODEL_ATOL, equal_nan=True) if close else (
+        (a == b) | (pd.isna(a) & pd.isna(b)))
+    audit.check(bool(np.all(valid)), label)
+
+
+def frame(audit, artifact, *, features=False):
+    p = audit.pin(artifact["path"], artifact["sha256"])
+    result = pd.read_csv(p, float_precision="round_trip", keep_default_na=features)
+    if "rows" in artifact: audit.equal(len(result), artifact["rows"], "artifact row count")
+    return result
+
+
+def independent_ridge(x, y):
+    """Augmented least-squares oracle instead of production normal equations."""
+    x, y = np.asarray(x, float), np.asarray(y, float)
+    means, scales = x.mean(axis=0), x.std(axis=0, ddof=0)
+    scales[scales == 0] = 1
+    z, intercept = (x - means) / scales, float(y.mean())
+    augmented = np.vstack((z, math.sqrt(len(y) * .1) * np.eye(x.shape[1])))
+    target = np.r_[y - intercept, np.zeros(x.shape[1])]
+    coefs = np.linalg.lstsq(augmented, target, rcond=None)[0]
+    scores = intercept + z @ coefs
+    return {"means": means, "std": scales, "coefs": coefs, "intercept": intercept,
+            "threshold": max(0., float(np.quantile(scores, .75)))}
+
+
+def clock_rows(raw, hybrid, start, end):
+    issues = (pd.DatetimeIndex(pd.to_datetime(raw.m5_open, utc=True)) + pd.Timedelta(minutes=5)).as_unit("ns")
+    start, end = pd.Timestamp(start), pd.Timestamp(end)
+    common = raw.feature_valid.to_numpy(bool) & hybrid.feature_valid.to_numpy(bool)
+    selected = ((issues >= start) & (issues < end) & (issues.minute % 30 == 0)
+                & (issues + pd.Timedelta(minutes=31) <= end) & common)
+    return np.flatnonzero(selected), issues[selected]
+
+
+def independent_timed(times, prices, signal, cfg, start, end, busy):
+    """Strict-second vector oracle with missing-path/stop/expiry precedence."""
+    issue, atr, side = epoch(signal["signal_time"]), float(signal["atr"]), int(signal["side"])
+    nominal = issue + 60 * cfg["entry_delay_minutes"]
+    expiry = nominal + 60 * cfg["max_hold_minutes"]
+    if not start <= issue < end: return None, busy, "outside_partition"
+    if issue + 31 * 60 > end or expiry + 1 > end: return None, busy, "purged"
+    if nominal < busy: return None, busy, "overlap_skipped"
+    pos = int(np.searchsorted(times, nominal + 1))
+    if pos == len(times) or times[pos] != nominal + 1:
+        return None, expiry, "missing_entry"
+    entry, entry_time = float(prices[pos]), nominal + 1
+    result = {"signal_time": issue, "nominal_entry_time": nominal, "entry_time": entry_time,
+              "planned_end": expiry, "exit_time": expiry, "entry": entry, "exit": None,
+              "atr": atr, "gross_R": None, "net_R": None, "reason": "censored_missing_path",
+              "censored": False, "ambiguous": False, "missing_time": None,
+              "trigger_time": None, "trigger_quote": None, "side": side,
+              "variant": signal["variant"]}
+    risk, stop = cfg["stop_atr"] * atr, entry - side * cfg["stop_atr"] * atr
+    left, right = np.searchsorted(times, [entry_time + 1, expiry + 1])
+    t, p = times[left:right], prices[left:right]
+    expected = np.arange(entry_time + 1, expiry + 1, dtype=np.int64)
+    missing = expected[~np.isin(expected, t, assume_unique=True)]
+    gap = int(missing[0]) if len(missing) else None
+    hits = np.flatnonzero(side * (p - stop) <= 0)
+    trigger = int(t[hits[0]]) if len(hits) else None
+    if gap is not None and (trigger is None or gap < trigger):
+        result.update(censored=True, missing_time=gap)
+    else:
+        if trigger is not None:
+            result.update(trigger_time=trigger, trigger_quote=float(p[hits[0]]))
+        exit_time = (trigger if trigger is not None else expiry) + 1
+        at = int(np.searchsorted(times, exit_time))
+        if at == len(times) or times[at] != exit_time:
+            result.update(censored=True, missing_time=exit_time)
+        else:
+            price = float(prices[at])
+            gross = side * (price - entry) / risk
+            result.update(exit_time=exit_time, exit=price, gross_R=gross,
+                          net_R=gross - cfg["round_trip_cost_atr"] / cfg["stop_atr"],
+                          reason="sl" if trigger is not None else "time")
+    result["holding_minutes"] = (result["exit_time"] - entry_time) / 60
+    return result, expiry if result["censored"] else result["exit_time"], "censored" if result["censored"] else "completed"
+
+
+def compare_record(audit, actual, expected, prefix):
+    for field, target in expected.items():
+        value = actual[field]
+        if field in (*TIME_FIELDS, "nominal_entry_time", "planned_end"): value = epoch(value)
+        elif field in ("entry", "exit", "atr", "gross_R", "net_R", "holding_minutes", "trigger_quote"):
+            value = None if value == "" or pd.isna(value) else float(value)
+        audit.equal(value, target, prefix + ":" + field)
+
+
+def read_ledger(audit, artifact):
+    out = frame(audit, artifact)
+    for n in ("entry", "exit", "atr", "gross_R", "net_R", "holding_minutes"):
+        out[n] = pd.to_numeric(out[n].replace("", np.nan), errors="raise").astype(float)
+    for n in ("censored", "ambiguous"):
+        if len(out) and not out[n].map(lambda v: isinstance(v, (bool, np.bool_))).all():
+            raise ValueError("Saved flags must be actual booleans")
+        out[n] = out[n].astype(bool)
+    return out
+
+
+def inference_oracle(ledger, baseline, start, end, repeats, seed, week=False):
+    first = epoch(pd.Timestamp(start).floor("D"))
+    n = (epoch(end) - 1 - first) // 86400 + 1
+    def daily(frame):
+        completed = frame.loc[~frame.censored & np.isfinite(frame.net_R.to_numpy(float))]
+        ids = np.array([(epoch(t) - first) // 86400 for t in completed.entry_time], dtype=int)
+        return (np.bincount(ids, minlength=n).astype(float),
+                np.bincount(ids, weights=completed.net_R, minlength=n).astype(float))
+    mn, ms = daily(ledger); bn, bs = daily(baseline)
+    rng = np.random.default_rng(seed)
+    if week:
+        starts = rng.integers(0, n, size=(repeats, math.ceil(n / 7)))
+        selected = ((starts[:, :, None] + np.arange(7)) % n).reshape(repeats, -1)[:, :n]
+        mc, bc, mr, br = mn[selected].sum(1), bn[selected].sum(1), ms[selected].sum(1), bs[selected].sum(1)
+    else:
+        weights = rng.multinomial(n, np.full(n, 1 / n), size=repeats)
+        mc, bc, mr, br = weights @ mn, weights @ bn, weights @ ms, weights @ bs
+    model = np.divide(mr, mc, out=np.full(repeats, np.nan), where=mc > 0)
+    base = np.divide(br, bc, out=np.full(repeats, np.nan), where=bc > 0)
+    difference = model - base
+    mean = float(ms.sum() / mn.sum()) if mn.sum() else None
+    delta = mean - float(bs.sum() / bn.sum()) if mean is not None and bn.sum() else None
+    def ci(x):
+        finite = x[np.isfinite(x)]
+        return np.quantile(finite, [.025, .975]).tolist() if len(finite) else [None, None]
+    def p(x, estimate):
+        if estimate is None or estimate <= 0: return 1.
+        return (np.count_nonzero(~np.isfinite(x) | (x - estimate >= estimate)) + 1) / (repeats + 1)
+    return ci(model), ci(difference), max(p(model, mean), p(difference, delta))
+
+
+def verify(audit):
+    decl_path, result_path = audit.pin(FOLDER / "declaration.json"), audit.pin(FOLDER / "results.json")
+    d, result = json.loads(decl_path.read_text()), json.loads(result_path.read_text())
+    audit.equal((FOLDER / "declaration.sha256").read_text().strip(), sha(decl_path), "declaration sidecar")
+    audit.equal((FOLDER / "results.sha256").read_text().strip(), sha(result_path), "result sidecar")
+    audit.equal(result["declaration_sha256"], sha(decl_path), "result declaration")
+    for name, expected in d["code_sha256"].items(): audit.pin(name, expected)
+    audit.pin(__file__)
+    audit.pin("backend/tests/test_hybrid_event_audit.py")
+    parent = json.loads(audit.pin(PARENT / "results.json").read_text())
+    parent_audit = json.loads(audit.pin(PARENT / "independent_availability_audit.json").read_text())
+    audit.check(parent_audit["passed"] is True and not parent_audit["errors"], "prior independent chain/age evidence")
+    for flag in FLAGS:
+        if os.environ.get(flag, "false").lower() not in ("false", "0", "no", "off", ""):
+            raise ValueError("Live flag is not false")
+        for obj in (d, result): audit.check(obj["safety"][flag] is False, "false " + flag)
+    spec = d["specification"]
+    names, cfg = spec["feature_names"], spec["region_config"]
+    audit.check(len(names) == 44 and AGE in names, "exact44 ordered schema")
+    expected = {(s, e, v, p) for s in spec["symbols"] for e in spec["endpoints"] for v in FAMILIES for p in PARTS}
+    actual = {(r["symbol"], r["endpoint"], r["variant"], r["partition"]) for r in result["rows"]}
+    audit.check(len(result["rows"]) == len(expected) and actual == expected, "exact72 cells")
+    ledgers, models_checked, scores_checked, paths_checked = {}, 0, 0, 0
+    for symbol in spec["symbols"]:
+        times, prices = decode_symbol(audit, d["sources"]["symbols"][symbol])
+        for fold, contract in spec["folds"].items():
+            info = result["symbols"][symbol]["folds"][fold]
+            old = parent["symbols"][symbol]["folds"][fold]
+            raw, hybrid = [frame(audit, info["features"][v], features=True) for v in ("RAW44", "HYBRID44")]
+            prior_raw, prior_trans = [frame(audit, old["features"][v], features=True) for v in ("RAW44", "TRANSFORMED44")]
+            array(audit, raw.m5_open, prior_raw.m5_open, "same raw feature population")
+            array(audit, raw.m5_open, hybrid.m5_open, "same paired feature population")
+            array(audit, raw[[*names, "atr", "close"]], prior_raw[[*names, "atr", "close"]], "raw values unchanged")
+            array(audit, raw.feature_valid, prior_raw.feature_valid, "raw validity unchanged")
+            remaining = [n for n in names if n != AGE]
+            array(audit, hybrid[[*remaining, "atr", "close"]], prior_trans[[*remaining, "atr", "close"]], "43transformed values unchanged")
+            array(audit, hybrid[AGE], raw[AGE], "same observed raw age including unknowns")
+            valid = hybrid.feature_valid.to_numpy(bool)
+            audit.check(np.isfinite(hybrid.loc[valid, names].to_numpy(float)).all(), "enabled hybrid44 finite")
+            train_start, train_end = contract["train"]
+            positions, issues = clock_rows(raw, hybrid, train_start, train_end)
+            fit = json.loads(audit.pin(info["fit"]["path"], info["fit"]["sha256"]).read_text())
+            labels = frame(audit, info["labels"], features=True)
+            array(audit, pd.DatetimeIndex(pd.to_datetime(labels.signal_time, utc=True)).as_unit("ns").asi8, issues.asi8, "exact shared training clock")
+            completed = labels.completed.to_numpy(bool)
+            target = labels.net_R.to_numpy(float)
+            audit.check(np.isfinite(target[completed]).all() and np.isnan(target[~completed]).all(), "unknown training labels retained")
+            busy, reconstructed = epoch(train_start), []
+            for pos, issue in zip(positions, issues, strict=True):
+                sig = {"signal_time": issue, "atr": raw.atr.iloc[pos], "side": 1 if symbol == "BOOM600" else -1, "variant": "CLOCK_SPIKE"}
+                path, busy, status = independent_timed(times, prices, sig, spec["timed_config"], epoch(train_start), epoch(train_end), busy)
+                reconstructed.append(np.nan if path is None or path["censored"] else path["net_R"])
+                paths_checked += 1
+            array(audit, target, reconstructed, "original-quote training targets", close=True)
+            audit.equal(fit["training_completed"], int(completed.sum()), "training completed count")
+            audit.equal(fit["training_unknown"], int((~completed).sum()), "training unknown count")
+            oracle_models = {}
+            if completed.sum() >= 1000:
+                audit.equal(fit["status"], "FITTED", "minimum training fit")
+                for arm, features in (("RAW44", raw), ("HYBRID44", hybrid)):
+                    oracle = independent_ridge(features.loc[positions[completed], names], target[completed])
+                    frozen = fit["models"]["TRANSFORMED44" if arm == "HYBRID44" else arm]
+                    for k in ("means", "std", "coefs", "intercept", "threshold"):
+                        array(audit, frozen[k], oracle[k], "independent ridge " + symbol + fold + arm + k, close=True)
+                    oracle_models[arm] = oracle
+                    models_checked += 1
+            else: audit.equal(fit["status"], "NOT_FIT_INSUFFICIENT_COMMON_LABELS", "insufficient training fit")
+            for part, bounds in contract["evaluate"].items():
+                positions, issues = clock_rows(raw, hybrid, *bounds)
+                for arm, features in (("CLOCK", raw), ("RAW44", raw), ("HYBRID44", hybrid)):
+                    r = next(r for r in result["rows"] if (r["symbol"], r["partition"], r["endpoint"], r["variant"]) == (symbol, part, "REGION", arm))
+                    signals = frame(audit, r["artifacts"]["signals"])
+                    scores = np.full(len(issues), np.nan)
+                    selected = np.ones(len(issues), bool) if arm == "CLOCK" else np.zeros(len(issues), bool)
+                    if arm in oracle_models:
+                        m = oracle_models[arm]
+                        scores = m["intercept"] + ((features.loc[positions, names].to_numpy(float) - m["means"]) / m["std"]) @ m["coefs"]
+                        selected = (scores >= m["threshold"]) & (scores > 0)
+                    array(audit, pd.DatetimeIndex(pd.to_datetime(signals.signal_time, utc=True)).as_unit("ns").asi8, issues[selected].asi8, "exact held-out selected issues")
+                    array(audit, signals.atr, raw.atr.iloc[positions[selected]], "raw execution ATR")
+                    array(audit, signals.signal_close, raw.close.iloc[positions[selected]], "original issue price")
+                    if arm != "CLOCK": array(audit, pd.to_numeric(signals.score), scores[selected], "frozen held-out scores", close=True)
+                    scores_checked += len(signals)
+                    for endpoint in spec["endpoints"]:
+                        row = next(r for r in result["rows"] if (r["symbol"], r["partition"], r["endpoint"], r["variant"]) == (symbol, part, endpoint, arm))
+                        ledger = read_ledger(audit, row["artifacts"]["ledger"])
+                        busy, expected_records, statuses = epoch(bounds[0]), [], []
+                        if endpoint == "REGION":
+                            events = read_events(audit.pin(row["artifacts"]["events"]["path"], row["artifacts"]["events"]["sha256"]))
+                            audit.equal(len(events), len(signals), "region event count")
+                            for sig, event in zip(signals.to_dict("records"), events.to_dict("records"), strict=True):
+                                side, p, a = int(sig["side"]), float(sig["signal_close"]), float(sig["atr"])
+                                edges = sorted((p - side * .45 * a, p - side * .55 * a))
+                                z = {"signal_time": sig["signal_time"], "side": side, "atr": a,
+                                     "zone_low": edges[0], "zone_high": edges[1],
+                                     "invalidation": edges[0] - .25 * a if side == 1 else edges[1] + .25 * a}
+                                for k in ("atr", "side", "zone_low", "zone_high", "invalidation"): audit.equal(event[k], z[k], "fixed region " + k)
+                                path, busy = independent_path(times, prices, z, cfg, epoch(bounds[0]), epoch(bounds[1]), busy)
+                                compare_record(audit, event, path, "region path")
+                                path["atr"] = a
+                                statuses.append(path["status"])
+                                if path["entry_time"] is not None: expected_records.append(path)
+                                paths_checked += 1
+                            audit.equal(dict(Counter(statuses)), row["replay_audit"]["statuses"], "region dispositions")
+                        else:
+                            for sig in signals.to_dict("records"):
+                                path, busy, status = independent_timed(times, prices, sig, spec["timed_config"], epoch(bounds[0]), epoch(bounds[1]), busy)
+                                statuses.append(status)
+                                if path is not None: expected_records.append(path)
+                                paths_checked += 1
+                            audit.equal(statuses.count("missing_entry"), row["replay_audit"]["missing_entry"], "timed no-entry count")
+                        audit.equal(len(ledger), len(expected_records), "filled ledger count")
+                        for record, path in zip(ledger.to_dict("records"), expected_records, strict=True):
+                            fields = ("signal_time", "entry_time", "exit_time", "entry", "exit", "atr", "gross_R", "net_R", "holding_minutes", "censored", "ambiguous", "reason")
+                            compare_record(audit, record, {k: path[k] for k in fields}, "filled native path")
+                        metric_checks(audit, row, ledger, cfg, spec["bootstrap_repeats"], spec["bootstrap_seed"])
+                        ledgers[(symbol, endpoint, arm, part)] = ledger
+            del raw, hybrid, prior_raw, prior_trans
+        del times, prices
+    for row in result["rows"]:
+        s, e, v, p = row["symbol"], row["endpoint"], row["variant"], row["partition"]
+        if p == "walk_forward_combined":
+            ledger = pd.concat([ledgers[(s, e, v, f)] for f in ("wf1", "wf2", "wf3")], ignore_index=True)
+            ledgers[(s, e, v, p)] = ledger
+            metric_checks(audit, row, ledger, cfg, spec["bootstrap_repeats"], spec["bootstrap_seed"])
+    pvalues, heldout = [], []
+    for row in result["rows"]:
+        s, e, v, p = row["symbol"], row["endpoint"], row["variant"], row["partition"]
+        ledger, baseline = ledgers[(s, e, v, p)], ledgers[(s, e, "CLOCK", p)]
+        joint = []
+        for reference, prefix in ((baseline, "clock"), (ledgers[(s, e, "RAW44", p)], "raw")):
+            if prefix == "raw" and v != "HYBRID44": continue
+            for week in (False, True):
+                cis, difference, prob = inference_oracle(ledger, reference, row["start"], row["end_exclusive"], spec["bootstrap_repeats"], spec["bootstrap_seed"], week)
+                saved = (row["representation_comparison"]["week" if week else "day"] if prefix == "raw" else row["weekly_inference" if week else "day_inference"])
+                mean_field, diff_field, p_field = ("weekly_mean_net_R_ci95", "weekly_difference_ci95", "weekly_p") if week else ("mean_net_R_ci95", "baseline_difference_ci95", "p")
+                for key, value in ((mean_field, cis), (diff_field, difference)):
+                    for a, b in zip(saved[key], value, strict=True): audit.equal(a, b, "paired " + key)
+                audit.equal(saved[p_field], float(prob), "paired p")
+                joint.append(float(prob))
+        if v != "CLOCK" and p in ("final_test", "later180"):
+            pvalues.append(max(joint)); heldout.append(row)
+    order = np.argsort(pvalues, kind="stable")
+    adjusted, maximum = np.empty(len(order)), 0.
+    for rank, i in enumerate(order):
+        maximum = max(maximum, min(1., (len(order) - rank) * pvalues[i])); adjusted[i] = maximum
+    for row, expected_p in zip(heldout, adjusted, strict=True): audit.equal(row["holm_p"], float(expected_p), "joint16 Holm")
+    for name, expected_sha in tuple(audit.pins.items()): audit.equal(sha(ROOT / name), expected_sha, "final stable pin")
+    return audit, {"models_checked": models_checked, "issued_scores_checked": scores_checked,
+        "native_paths_checked_including_overlapping_training_prefixes": paths_checked,
+        "cells_checked": len(result["rows"]), "declaration_sha256": sha(decl_path),
+        "scope": "saved_feature_lineage_common_membership_training_targets_independent_ridge_scores_regions_native_paths_R_PF_day_week_CIs_Holm",
+        "not_independently_recomputed": ["43_original_feature_formulas", "intrinsic_feature_validity", "qualification_gate_logic", "drawdown_and_thirds"],
+        "broker_execution": "NOT TESTED", "fresh_out_of_sample": False}
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__); p.add_argument("--output", default=str(FOLDER / "independent_audit.json"))
+    args = p.parse_args(); output = Path(args.output).resolve(); output.relative_to(ROOT)
+    if output.exists() or output.with_suffix(".sha256").exists(): raise ValueError("Exclusive audit output")
+    audit, detail = Audit(), {}
+    try: audit, detail = verify(audit)
+    except Exception as error: audit.errors.append(f"{type(error).__name__}: {error}")
+    report = {"stage": "independent_hybrid_event_study_audit", "run_utc": datetime.now(timezone.utc).isoformat(),
+        "passed": not audit.errors, "checks": audit.checks, "errors": audit.errors, "input_sha256": audit.pins,
+        "verifier_sha256": sha(__file__), "model_atol": MODEL_ATOL, "model_rtol": MODEL_RTOL,
+        "safety": dict.fromkeys(FLAGS, False), "QUALIFIED": False, **detail}
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("x") as f: f.write(json.dumps(report, indent=2, allow_nan=False) + "\n")
+    with output.with_suffix(".sha256").open("x") as f: f.write(sha(output) + "\n")
+    print(json.dumps({k: report[k] for k in ("passed", "checks", "errors")}), flush=True)
+    return 0 if report["passed"] else 1
+
+
+if __name__ == "__main__": sys.exit(main())

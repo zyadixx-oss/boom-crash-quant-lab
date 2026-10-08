@@ -1,5 +1,45 @@
 # Results — actual offline Spike Hunter study
 
+## 8 October 2026: distinct hybrid observed-event clock — executed, rejected
+
+The [hybrid report](hybrid_event_regions_20261008/REPORT.ar.md) compares RAW44
+with43unchanged transformed inputs plus the same observed rawM5large-bar age.
+This adaptive successor has its own frozen declaration6ade87b7; it does not
+alter or rescue the unavailable44experiment. Both arms retain closed
+H4/H1/M15/M5/M1, common UTC00/30 opportunities, training-only refits and scalers,
+fixed ridge.1/q75positive floor, original-quote targets and execution,
+SL2rawATR/.10ATR modeled cost and unchanged region/timed conventions.
+
+Later180day net PF/completed:
+
+| Arm/application | Boom600 | Crash600 |
+|---|---:|---:|
+| RAW44 region |0.841/1088|0.869/760|
+| HYBRID44 region |0.865/984|0.982/687|
+| RAW44 timed |0.852/1316|0.906/965|
+| HYBRID44 timed |0.891/1221|0.920/858|
+
+Every later model mean is negative; every development gate fails and all16
+held-out Holm values equal1. Weekly HYBRID44 PF intervals are
+Boomregion[.724,1.031], Boomtimed[.777,1.024],
+Crashregion[.799,1.178], Crashtimed[.779,1.069]. No policy meets PF>=1.5
+with1000completed/60active days and the uncertainty/development criteria.
+
+An independent original-quote/training-target/augmented-least-squares ridge/
+score/region/path/PF/day-week-CI/Holm audit passes1,240,052checks and16models.
+Its82690path/opportunity checks include overlapping training prefixes, not an
+independent trade sample. It verifies saved feature lineage and common masks,
+not all43feature formulas/intrinsic validity, gate logic or drawdown/thirds.
+The initial audit failure exposed four omitted descriptive union raw-reference
+comparisons. Their independent supplement is retained in the successful audit;
+no result, signal, source or frozen scientific code changed. Both failed-audit
+and earlier precheck source snapshots are preserved with exact SHA pins.
+
+All72original report cells, coefficients, labels, signals, regions and ledgers
+are saved. Local2489backend tests and19auditor cases pass; premeasurement192
+passed. Reused history remains adaptive, execution/costs/cash profit NOT TESTED,
+and all four live flags stayfalse. The profit objective remains unmet.
+
 ## 8 October 2026: executed representation, unavailable44 models
 
 The [paired native-tail removal experiment](representation_regions_20261008/REPORT.ar.md)

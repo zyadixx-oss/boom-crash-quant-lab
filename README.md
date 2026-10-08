@@ -1,5 +1,17 @@
 # boom-crash-quant-lab
 
+8 October hybrid event-clock experiment: [actual combined-frame regions and timed entries](docs/hybrid_event_regions_20261008/REPORT.ar.md)
+now executes the distinct43transformed-plus-original-event-age hypothesis.
+Both learners fit on common training populations; no model qualifies. Later180day
+HYBRID44 region/timed PF: Boom0.865/n984 and0.891/n1221;
+Crash0.982/n687 and0.920/n858. All development gates fail and all16held-out
+Holm values are1. Independent training/ridge/selection/original-path/PF/day-week
+inference audit passes1,240,052checks/16models; four missing descriptive union
+comparisons are supplied separately, leaving the frozen result unchanged.
+The original all-transformed44rejection remains intact. Known history remains
+adaptive, actual CFD execution/costs/cash profit NOT TESTED, all live flags false.
+Local2489backend tests plus19independent-auditor cases pass.
+
 8 October representation experiment: [native-tail removal under the unchanged44 inputs](docs/representation_regions_20261008/REPORT.ar.md)
 is now actually executed across eight fold/symbol preparations. All transformed
 large-bar ages remain unknown, so common valid opportunities=0 and no paired

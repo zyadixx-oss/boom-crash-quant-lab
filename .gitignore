@@ -91,3 +91,6 @@ docs/zone_study_20261008/CRASH600_candidates.csv
 
 # Paired representation feature tables retained locally with SHA256 pins.
 data/representation_regions_20261008/
+
+# Distinct raw-event-clock hybrid feature tables retained locally with hashes.
+data/hybrid_event_regions_20261008/
