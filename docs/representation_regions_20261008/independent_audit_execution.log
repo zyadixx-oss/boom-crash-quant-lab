@@ -1,0 +1,9 @@
+BOOM600/fit40: independent chain, M5 age and availability checked
+BOOM600/fit50: independent chain, M5 age and availability checked
+BOOM600/fit60: independent chain, M5 age and availability checked
+BOOM600/fit70: independent chain, M5 age and availability checked
+CRASH600/fit40: independent chain, M5 age and availability checked
+CRASH600/fit50: independent chain, M5 age and availability checked
+CRASH600/fit60: independent chain, M5 age and availability checked
+CRASH600/fit70: independent chain, M5 age and availability checked
+{"passed": true, "checks": 1847233, "errors": [], "fitted_models_requiring_separate_economic_audit": 0}

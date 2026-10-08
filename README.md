@@ -1,5 +1,14 @@
 # boom-crash-quant-lab
 
+8 October representation experiment: [native-tail removal under the unchanged44 inputs](docs/representation_regions_20261008/REPORT.ar.md)
+is now actually executed across eight fold/symbol preparations. All transformed
+large-bar ages remain unknown, so common valid opportunities=0 and no paired
+model fits or issues a region/trade. PF is undefined/NOT TESTED, not zero.
+Independent source-to-chain/M5-age/availability reconstruction passes1,847,233checks.
+This representation is unusable under the fixed44schema; no feature/threshold
+was changed to rescue it. The profit objective remains unmet and all live flags
+remainfalse. Full local backend2462passes plus8independent-auditor tests pass.
+
 8 October supplemental measurement: the [complete twelve-definition zone diagnostic](docs/zone_excursions_20261008/REPORT.ar.md)
 keeps every region and economic ledger unchanged. It measures1.5/2/3ATR over
 5/10/15/30minutes at a delayed issuance quote and actual filled entries, with
@@ -94,19 +103,18 @@ unreproduced; no new strategy experiment or OOS is claimed.
 
 The [bounded old-tick availability probe](docs/tick_history_availability_20261007/REPORT.ar.md)
 now verifies four exact four-second BOOM600/CRASH600 windows; independent audit
-passes159checks. A fixed361-UTC-day/symbol continuous tick collection has
-started for a distinct [feature-representation ablation](docs/jump_representation_20261007/REPORT.ar.md).
+passes159checks. A fixed361-UTC-day/symbol continuous tick collection was
+started for a distinct [feature-representation ablation preparation](docs/jump_representation_20261007/REPORT.ar.md).
 Feature-only native-tail removal, paired closed-frame integration and training-only
 paired ridge fitting are implemented with synthetic verification. A180-day
 synthetic test exposed numerical BB gauge sensitivity; equivalent per-window
 variance arithmetic fixes it while keeping all44 formulas and the1e-6 tolerance.
-Full source coverage, historical transformed
-features and economic payoff are NOT TESTED. The acquisition does not promote
-a model or change any safety/qualification gate.
-The8October03:10UTC metadata snapshot has421/722 manifests and reports36,374,030
-quotes/370missing seconds; independent full-wire integrity is still NOT TESTED.
-Local full tests pass2205; final learner63tests include two subsequently added
-checks. All159 prior successor-audit input hashes remain unchanged.
+Those historical preparation notes preceded the completed722source audit and
+the now-executed [representation availability experiment](docs/representation_regions_20261008/REPORT.ar.md).
+Source coverage and transformed features are now measured; no model could fit,
+so new economic payoff remains NOT TESTED. The8October03:10UTC421/722manifest
+snapshot and2205test count are retained as historical artifacts, superseded by
+the current reports. No model or safety/qualification gate is promoted.
 
 ## Live Arabic CRT chart
 

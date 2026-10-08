@@ -1,5 +1,23 @@
 # Results — actual offline Spike Hunter study
 
+## 8 October 2026: executed representation, unavailable44 models
+
+The [paired native-tail removal experiment](representation_regions_20261008/REPORT.ar.md)
+is now executed on both symbols with four fold-specific training detectors.
+The unchanged44schema, closedH4/H1/M15/M5/M1, shared clock, fixed learners and
+advance geometric regions were frozen before computation. Every transformed
+large-bar age stays unknown:0common opportunities,0fitted models,0issued regions
+and0trades. All72report cells retain undefined PF/means/CI; this is NOT TESTED
+economic payoff, not a zero-profit-factor result or a new profitable strategy.
+
+The independent source/detector/vector-chain/M5-large-bar-age and availability
+audit passes1,847,233checks with0errors. It verifies actual empty membership,
+insufficient-fit decisions and the empty72cell grid, without importing research
+engines. It does not regenerate the other43features or audit a fitted model's
+coefficients/economic paths. Local backend2462tests and8auditor tests pass.
+No unknown-age substitution, feature deletion, threshold/cost/exit rescue,
+raw-only fallback or live promotion was made. Full profit goal remains unmet.
+
 ## 8 October 2026: unchanged zones, all twelve excursion definitions
 
 The [supplemental report](zone_excursions_20261008/REPORT.ar.md) and
@@ -635,7 +653,13 @@ issuance; that clock and alternative reward estimators remain untested classes,
 without a newly established advance-information mechanism in these sources.
 
 
-## Native-tail representation preparation and historical availability
+## Historical native-tail representation preparation and availability record
+
+The preparation notes below describe the03:10UTC snapshot, before complete
+acquisition/source auditing and the subsequently executed
+[representation availability study](representation_regions_20261008/REPORT.ar.md).
+Coverage and transformed features are now measured; models could not fit and
+new payoff remains NOT TESTED. The original snapshots/design remain preserved.
 
 The executed [four-window public-history probe](tick_history_availability_20261007/REPORT.ar.md)
 returns the exact requested16positive quote rows across BOOM600/CRASH600 at
