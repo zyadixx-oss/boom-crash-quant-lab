@@ -1,5 +1,16 @@
 # boom-crash-quant-lab
 
+9 October objective revision: the user now accepts **stable positive net profit,
+even PF below 1.1**. The executed [saved-statistic assessment](docs/stable_profit_assessment_20261009/REPORT.ar.md)
+checks 132 stored summaries in 12 immutable result files, including 96 model/rule
+and 36 clock/control rows. None combines strict PF>1, positive mean net R,
+1,000 completions and 60 active days. Four positive low-cost diagnostic cases
+retain negative selection bounds and rejected development; none is promoted.
+Old PF1.5 protocols/results stay unchanged. This is a retrospective necessary
+screen, with 18 boundary tests and 885 source-pointer checks, not a new backtest
+or full gate reimplementation. Stable positive profit remains unestablished;
+all four live flags remain false.
+
 9 October [official-source and saved public-field review](docs/provider_evidence_20261009/REPORT.ar.md):
 the offline 240-message review passes again. A descriptive field/rounding inventory
 establishes no new advance spike predictor and performs no new profit test.

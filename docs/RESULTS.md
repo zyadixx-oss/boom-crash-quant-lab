@@ -1,5 +1,32 @@
 # Results — actual offline Spike Hunter study
 
+## 9 October 2026: revised objective — stable positive net profit
+
+The user now accepts stable positive net profit even below PF1.1. The separate
+[acceptance change](stable_profit_assessment_20261009/ACCEPTANCE_CHANGE.md)
+uses strict PF>1 and mean net R>0 while retaining the sample/uncertainty and other
+evidence requirements. Existing frozen PF1.5 results are unchanged.
+
+The executed [retrospective screen](stable_profit_assessment_20261009/REPORT.ar.md)
+reads 12 SHA-pinned result files and 132 exact stored source identities: 96
+model/rule rows and 36 clock/control rows. References repeat and unavailable
+cells remain explicit; these are not independent policies or pooled trades.
+Of 96 model/rule rows, 18 have positive point PF/mean and 8 have at least1,000
+completed paths over60active days; their intersection is zero. None of36
+control rows meets the same necessary conjunction. PF remains undefined in27
+cells. This does not reimplement full qualification or recompute original paths.
+
+Four nonzero-cost Crash BOOST44 diagnostic sensitivities have PF1.014–1.045
+with1,306 completions, but conservative selection bounds −0.0541 to−0.0416,
+rejected development and no saved positive weekly evidence. Their favorable
+cost/fill assumptions are not measured CFD costs/execution and do not qualify
+stable profit. The final scanner passes18 boundary checks and a separate
+root-written checker passes885 source-pointer/statistic assertions. Initial
+PF-boundary and untested-null adapter failures/sources are preserved, repaired
+before assessment output. Final independent-agent review did not complete.
+All live flags stayfalse, QUALIFIED=false and known history remains adaptive;
+stable positive cash profit/executable CFD performance remain NOT TESTED.
+
 ## 9 October 2026: official-source and observed public-field review
 
 The [Arabic review](provider_evidence_20261009/REPORT.ar.md) attributes provider

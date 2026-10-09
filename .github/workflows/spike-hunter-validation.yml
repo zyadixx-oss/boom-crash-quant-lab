@@ -68,6 +68,23 @@ jobs:
           print("Descriptive inventory reproduction PASS; no predictive or profit test")
           PY
       - run: python docs/provider_evidence_20261009/independent_inventory_review.py
+      - name: Reproduce stable-positive objective assessment from saved statistics
+        run: |
+          python docs/stable_profit_assessment_20261009/screen_saved_results.py --self-test
+          python docs/stable_profit_assessment_20261009/screen_saved_results.py --output docs/stable_profit_assessment_20261009/ci_assessment.json
+          python docs/stable_profit_assessment_20261009/verify_saved_pointers.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          folder = Path("docs/stable_profit_assessment_20261009")
+          saved = json.loads((folder / "assessment.json").read_text())
+          reproduced = json.loads((folder / "ci_assessment.json").read_text())
+          for record in (saved, reproduced):
+              record.pop("screened_utc")
+          if saved != reproduced:
+              raise ValueError("Saved stable-profit necessary assessment differs")
+          print("Saved-statistic stable-profit necessary screen PASS; no qualified policy")
+          PY
 
   historical-study:
     if: github.event_name == 'workflow_dispatch' && inputs.reproduce_history
