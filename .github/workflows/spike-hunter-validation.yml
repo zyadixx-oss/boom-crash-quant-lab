@@ -100,6 +100,12 @@ jobs:
               raise ValueError("Saved public capability content comparison differs")
           print("Public capability evidence reviewed; first capture remains incomplete; no predictive or profit test")
           PY
+      - name: Verify saved nonlinear conditional-region evidence without recollection
+        run: |
+          python -m pytest -o addopts= -q docs/nonlinear_region_20261010/test_learning.py docs/nonlinear_region_20261010/test_runner.py docs/nonlinear_region_20261010/test_review_study.py
+          python docs/nonlinear_region_20261010/verify_saved.py --self-test
+          python docs/nonlinear_region_20261010/verify_saved.py --output docs/nonlinear_region_20261010/ci_saved_validation.json
+          python docs/nonlinear_region_20261010/summarize.py --audit docs/nonlinear_region_20261010/independent_audit_final.json --audit-sha256 dcb6ef38f3ee3635f56cd467bf3179fe5f68604a77246d1d7615e0cbf223df4c --check
 
   historical-study:
     if: github.event_name == 'workflow_dispatch' && inputs.reproduce_history

@@ -1,0 +1,15 @@
+BOOM600: independently decoding pinned original quotes
+BOOM600/wf1: independent scores and actual quote paths checked
+BOOM600/wf2: independent scores and actual quote paths checked
+BOOM600/wf3: independent scores and actual quote paths checked
+BOOM600/final_test: independent scores and actual quote paths checked
+BOOM600/later180: independent scores and actual quote paths checked
+CRASH600: independently decoding pinned original quotes
+CRASH600/wf1: independent scores and actual quote paths checked
+CRASH600/wf2: independent scores and actual quote paths checked
+CRASH600/wf3: independent scores and actual quote paths checked
+CRASH600/final_test: independent scores and actual quote paths checked
+CRASH600/later180: independent scores and actual quote paths checked
+{"passed": true, "checks": 509240, "errors": []}
+
+EXIT_CODE=0
