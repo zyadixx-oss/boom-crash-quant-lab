@@ -1,0 +1,74 @@
+{
+  "status": "NOT_FIT_INSUFFICIENT_COMMON_LABELS",
+  "error": "At least 1000 completed paired training labels are required; observed 0",
+  "training_clock": {
+    "start": "2025-10-09T11:08:00+00:00",
+    "end": "2025-12-20T11:08:00+00:00",
+    "m5_rows_in_bounds": 20736,
+    "clock_rows_in_bounds": 3456,
+    "clock_planned_purged": 1,
+    "raw_valid_clock_rows": 2418,
+    "transformed_valid_clock_rows": 0,
+    "common_clock_opportunities": 0,
+    "purge_minutes": 31,
+    "closed_m5_issue_offset_minutes": 5,
+    "clock": "UTC00_or30_only",
+    "past_only_common_availability": true,
+    "execution_atr_source": "original_raw_quote_prices",
+    "symbol": "BOOM600",
+    "native_side": 1,
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    }
+  },
+  "training_path_audit": {
+    "issued": 0,
+    "filled": 0,
+    "completed": 0,
+    "censored": 0,
+    "missing_entry": 0,
+    "missing_path": 0,
+    "outside_partition": 0,
+    "purged": 0,
+    "overlap_skipped": 0,
+    "ambiguous": 0,
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    },
+    "config": {
+      "stop_atr": 2.0,
+      "max_hold_minutes": 15,
+      "entry_delay_minutes": 1,
+      "round_trip_cost_atr": 0.1,
+      "max_gap_seconds": 1,
+      "stop_latency_ticks": 1
+    },
+    "purge_minutes": 31,
+    "take_profit": null,
+    "fill_interpretation": "quoteproxy_notbrokerfills",
+    "entry_rule": "first_observed_quote_strictly_after_nominal_order_time",
+    "stop_rule": "next_observed_quote_strictly_after_trigger",
+    "expiry_rule": "first_observed_quote_strictly_after_nominal_expiry",
+    "expiry_anchor": "nominal_entry_time_not_actual_entry_time",
+    "deadline_priority": "stop_trigger_at_expiry_precedes_timeout",
+    "partition_exit_allowance_seconds": 1
+  },
+  "training_labels": 0,
+  "training_completed": 0,
+  "training_unknown": 0,
+  "models": null,
+  "model_metadata": null,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "QUALIFIED": false
+}

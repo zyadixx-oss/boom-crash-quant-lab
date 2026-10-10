@@ -1,0 +1,255 @@
+{
+  "config": {
+    "version": 1,
+    "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+    "symbols": [
+      "BOOM600",
+      "CRASH600"
+    ],
+    "dates": [
+      "2026-04-11",
+      "2026-04-26",
+      "2026-05-12",
+      "2026-05-28",
+      "2026-06-13",
+      "2026-06-29",
+      "2026-07-15",
+      "2026-07-31",
+      "2026-08-16",
+      "2026-09-01",
+      "2026-09-17",
+      "2026-10-03"
+    ],
+    "page_size": 1000,
+    "requested_delay_seconds": 0.35,
+    "effective_min_request_spacing_seconds": 0.5,
+    "cadence_seconds": 1,
+    "collector_sha256": "087b071e28b948cd45e8d58bf03b370c42ac70827fc6010ace544c60ec9204a7",
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    }
+  },
+  "config_sha256": "7d9eefbf5bbe76a9d1d612e9de08b6e2c58c5b71223ab3ef922ea1d41998134e",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "completed_sources": {
+    "BOOM600": {
+      "2026-04-11": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-04-11_manifest.json",
+        "manifest_sha256": "54e8c3018c2e8f80ba615c1104190d3f1af4fae1e74c72fd356a8e393f81958d",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-04-11_ticks_clean.csv",
+        "clean_sha256": "cd139980cd1f25d97d76d680a212f7187ec74bab60f272c20848fddff55aa546",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-04-26": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-04-26_manifest.json",
+        "manifest_sha256": "2cd1eae0a2152e4da30dbf6095ff9254a9d00f05f6a6baa9ab61c1b614fa662e",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-04-26_ticks_clean.csv",
+        "clean_sha256": "851490de4e3c2877c2c7ebb0f46dd075051e3671107d3c15a62f7bbb4098c695",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-05-12": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-05-12_manifest.json",
+        "manifest_sha256": "2abb2177ba0fe821fcd38848d7048b092bf725518e676c5ac8ef5132a7b9e879",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-05-12_ticks_clean.csv",
+        "clean_sha256": "1187b4fdd992dbc481bf4ea3e1e594e6471f6504ebf0871c349ddc4a3e2ee738",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-05-28": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-05-28_manifest.json",
+        "manifest_sha256": "7f0e6d2f1ad6812770a1047acfb06753be71dd448f0b8042bbfbdc606646b7d7",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-05-28_ticks_clean.csv",
+        "clean_sha256": "020be3a883e0c3ca6ff8be9d73250f30ef50449bfd9ec9c1f853c5db4066b589",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-06-13": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-06-13_manifest.json",
+        "manifest_sha256": "0ea97344edf2f0c36b04d381dfcadbadfbf17a0f3734012f319da24f7d79f449",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-06-13_ticks_clean.csv",
+        "clean_sha256": "d5fc0e5bae58cd9ce1be366dadc9b9ed061a4b8f2cc22735f0eca327601518dd",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-06-29": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-06-29_manifest.json",
+        "manifest_sha256": "cb2fefacd306c47d102fcdf41e2b0bc4ae8d6bda28e7aaf9f9a2375510a153cf",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-06-29_ticks_clean.csv",
+        "clean_sha256": "99b0001f939a2f40af0da829e786a736b5315ce3e39f959db102796d8c156aaf",
+        "rows": 86397,
+        "missing_seconds": 3
+      },
+      "2026-07-15": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-07-15_manifest.json",
+        "manifest_sha256": "bc7ad9677c7582cb2e60f1fc5450a68e88d185d6c6213107888f73577e12fc69",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-07-15_ticks_clean.csv",
+        "clean_sha256": "92395ec2d2cd0f98a83be6558a2d9efe75674bea9794f4a3fd992dc8a57b26a6",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-07-31": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-07-31_manifest.json",
+        "manifest_sha256": "11339b3a2e78d32d8522a455ea5ba807ca250c5d8a4a2d5a8f428e975fe0e458",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-07-31_ticks_clean.csv",
+        "clean_sha256": "77c06e7cea88476a266d1d7256ad99c93f188479ab888892456a4d6b386bad43",
+        "rows": 86394,
+        "missing_seconds": 6
+      },
+      "2026-08-16": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-08-16_manifest.json",
+        "manifest_sha256": "8a5ef90dc20a0b74d8654bf4f8c9a5fad547d6941311b02a9c80c805194147b9",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-08-16_ticks_clean.csv",
+        "clean_sha256": "68e22a2c184e5f85c834b56180aeb07a8b73b863dcb5636e32876f43b734e9a3",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-09-01": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-09-01_manifest.json",
+        "manifest_sha256": "d8dc6541b0843e501089e7eab17843038c39d759b7cbeacc74d767402825b13e",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-09-01_ticks_clean.csv",
+        "clean_sha256": "be7396179649191b0dca0148490580806c57da79040996728693b631cc7b9396",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-09-17": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-09-17_manifest.json",
+        "manifest_sha256": "5033fd411f42448db61e56f8afa6f3a32ce1fb3a9b321e4c2be9bdb9ee19af61",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-09-17_ticks_clean.csv",
+        "clean_sha256": "69a8eda894deb4081892174476d7736c03913ebbcf8f06f1b8ec163ee374e456",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-10-03": {
+        "manifest_file": "data/spike_tick_execution_20261005/BOOM600_2026-10-03_manifest.json",
+        "manifest_sha256": "2f21801d11c9b1dd8fe016228a7bb8e37ac4015ce1ea826f86dd80fff52ded82",
+        "clean_file": "data/spike_tick_execution_20261005/boom600_2026-10-03_ticks_clean.csv",
+        "clean_sha256": "fcb9ec331b156bdfd61e2cff3d06d902ee8d42dfdbf179ed9483fa9fbb6ff376",
+        "rows": 86400,
+        "missing_seconds": 0
+      }
+    },
+    "CRASH600": {
+      "2026-04-11": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-04-11_manifest.json",
+        "manifest_sha256": "f34d978e39032c5dfc83368fb7242844f6d97f03bdc6568afc721282a8acdfb4",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-04-11_ticks_clean.csv",
+        "clean_sha256": "24782de3aa4e14b5503d333b9d08ad83781de300c72f4bb2889377d4bed21fe0",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-04-26": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-04-26_manifest.json",
+        "manifest_sha256": "8aafc97bc3c02cf219d5264a3ff80c0743a9aaaf3e2bddc4cf704019775ac9dc",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-04-26_ticks_clean.csv",
+        "clean_sha256": "2f1ac765f964fb4e800f7ba540657d29ee93f80bb609f0ebdd0499f075e3ec73",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-05-12": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-05-12_manifest.json",
+        "manifest_sha256": "2056e0f060b4773b7e8271c924f997d9151754e36ca5b774a35a5f21d16e3f63",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-05-12_ticks_clean.csv",
+        "clean_sha256": "a76fafb73820c7552f9ec10509e251d6639b347000b8bc15fc82638458ea4acc",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-05-28": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-05-28_manifest.json",
+        "manifest_sha256": "347626ee0e2dfc132ff02cb12c4b9f3d694da0eace4c2e389b8c048a6f0f9fad",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-05-28_ticks_clean.csv",
+        "clean_sha256": "0bfad3c63757e212aef42f53d57a3f8a8c1c1a0077801a25eade17e5804acb05",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-06-13": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-06-13_manifest.json",
+        "manifest_sha256": "99d5ea805cdd7d68159d1de5ea17218533d5d8241c866b662df5eeae00c5e5cd",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-06-13_ticks_clean.csv",
+        "clean_sha256": "14080d5428bb3193ae73113fa5c0eb913e89abdcb9aa6c79d704a49edcde5a64",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-06-29": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-06-29_manifest.json",
+        "manifest_sha256": "236d9e870c4620d8bb0b4ef7e69e56a6586fb7089af94c05c357b84dbf859cfb",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-06-29_ticks_clean.csv",
+        "clean_sha256": "ab1a17a2c723deb02cb36e4f4628e026a4dcef059aff00e73c6668e3e99e700a",
+        "rows": 86397,
+        "missing_seconds": 3
+      },
+      "2026-07-15": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-07-15_manifest.json",
+        "manifest_sha256": "682f6e44760f16031dba867dfcf502db51c7b3a505c1a212a5304dd139b70e57",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-07-15_ticks_clean.csv",
+        "clean_sha256": "5b94c74673118086bb48d61651d762401a14390edc500a8129d90ae232ea5f53",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-07-31": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-07-31_manifest.json",
+        "manifest_sha256": "1aec891110d4bfeff7403db16f18d28e6c8870c8df6c920027a53c631cf16eec",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-07-31_ticks_clean.csv",
+        "clean_sha256": "514385e40851d569f7abd4b9f2dc4d9bc6daa1b05ff12e11d89fb1e9f4d4dd48",
+        "rows": 86394,
+        "missing_seconds": 6
+      },
+      "2026-08-16": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-08-16_manifest.json",
+        "manifest_sha256": "82f93fd991f3437ce8cc6b04c386ec083ca2d078666a84606bc463d606c35916",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-08-16_ticks_clean.csv",
+        "clean_sha256": "3d8d9c5986f414ad9eec988163953ac2aad26fcdd7ad15e70d94231b5bf6d94a",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-09-01": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-09-01_manifest.json",
+        "manifest_sha256": "e627d4140dbd9e48f63ed6341e8cd5e39cb4e0df3c060f4c7056258d5113b0b5",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-09-01_ticks_clean.csv",
+        "clean_sha256": "8b85cc2fe463640bf930a9b5afd63eb4525acdcca6750010e6d24a823e074fde",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-09-17": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-09-17_manifest.json",
+        "manifest_sha256": "c4772a4eb570c00e536bf1667f716fa251e74aed1ef16736436f59e44eec1efd",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-09-17_ticks_clean.csv",
+        "clean_sha256": "79ded35ab5dbca51ab78f31053bd0b24fd9e4c6c9e9814367aacde2773955d0d",
+        "rows": 86400,
+        "missing_seconds": 0
+      },
+      "2026-10-03": {
+        "manifest_file": "data/spike_tick_execution_20261005/CRASH600_2026-10-03_manifest.json",
+        "manifest_sha256": "dd7f14cf27e34703e76f9bb7039064cb1a5708da29d0421cdb1c8aafab474fc7",
+        "clean_file": "data/spike_tick_execution_20261005/crash600_2026-10-03_ticks_clean.csv",
+        "clean_sha256": "a1440c46104dfc8dcbc090beb362f6f0ff8787ba587469969a480fbac6a1d1e6",
+        "rows": 86400,
+        "missing_seconds": 0
+      }
+    }
+  },
+  "errors": [],
+  "features_labels_or_tick_outcomes_computed": false,
+  "authentication_used": false,
+  "account_or_order_requests": false,
+  "status": "COMPLETE",
+  "public_symbol_probe": {
+    "request": {
+      "active_symbols": "brief",
+      "req_id": 1
+    },
+    "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+    "request_errors": [],
+    "successful_wire_sha256": "82518d48aa62796794a11f92f32bc194448fb568eb9ab59f3ea0ca1706f2623e",
+    "exact_same_request_recovered": true
+  }
+}

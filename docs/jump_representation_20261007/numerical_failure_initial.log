@@ -1,0 +1,60 @@
+F.                                                                       [100%]
+=================================== FAILURES ===================================
+_______ test_180_day_transformed_drift_gauge_conditioning_on_all44[boom] _______
+
+direction = 'boom'
+
+    @pytest.mark.parametrize("direction", ["boom", "crash"])
+    def test_180_day_transformed_drift_gauge_conditioning_on_all44(direction):
+        # Pure synthetic M1 populations avoid creating15million unnecessary second
+        # rows. The ordinary drift spans Q=exp(-26) or exp(+26), with observed small
+        # oscillations and periodic volatility bursts keeping original age semantics.
+        n = 180 * 1440
+        phase = np.arange(n + 1, dtype=float)
+        sign = -1 if direction == "boom" else 1
+        log_price = sign * 26 * phase / n + 0.001 * np.sin(phase / 20)
+        opening, closing = np.exp(log_price[:-1]), np.exp(log_price[1:])
+        wick = np.full(n, 3e-5)
+        burst = np.arange(n) % 1440
+        wick[(burst >= 150) & (burst < 153)] = 0.004
+        index = pd.date_range("2025-01-01", periods=n, freq="min", tz="UTC").as_unit("ns")
+        transformed = pd.DataFrame({"open": opening,
+                                    "high": np.maximum(opening, closing) * np.exp(wick),
+                                    "low": np.minimum(opening, closing) * np.exp(-wick),
+                                    "close": closing}, index=index)
+        coverage = pd.DataFrame({"observed_seconds": np.full(n, 60, dtype=np.int64),
+                                 "minute_valid": np.ones(n, dtype=bool),
+                                 "run_id": pd.array(np.zeros(n, dtype=np.int64), dtype="Int64")},
+                                index=index)
+        bars = PairedMinuteBars(transformed * 1000, transformed, coverage)
+        original = causal_jump_multiframe_inputs(bars, direction)
+        scaled = causal_jump_multiframe_inputs(replace(bars, transformed=transformed * 1e9), direction)
+        pd.testing.assert_series_equal(original.transformed.feature_valid,
+                                       scaled.transformed.feature_valid)
+        valid = original.transformed.feature_valid
+        assert valid.any()
+>       np.testing.assert_allclose(original.transformed.loc[valid, FEATURE_NAMES],
+                                   scaled.transformed.loc[valid, FEATURE_NAMES], rtol=0, atol=1e-6)
+E       AssertionError: 
+E       Not equal to tolerance rtol=0, atol=1e-06
+E       
+E       Mismatched elements: 42381 / 2249324 (1.88%)
+E       First 5 mismatches are at indices:
+E        [7683, 10]: 0.7404827269129275 (ACTUAL), 0.7404837449404078 (DESIRED)
+E        [7684, 10]: 0.7344271794533962 (ACTUAL), 0.7344282255183562 (DESIRED)
+E        [7708, 10]: 0.7462439466864771 (ACTUAL), 0.7462449687366624 (DESIRED)
+E        [7709, 10]: 0.7378351850000837 (ACTUAL), 0.7378362463771923 (DESIRED)
+E        [7710, 10]: 0.747008275438904 (ACTUAL), 0.7470092979576834 (DESIRED)
+E       Max absolute difference among violations: 0.38389408
+E       Max relative difference among violations: 0.47308999
+E        ACTUAL: array([[-1.022096, -3.226209, -6.604818, ..., -4.192752,  0.      ,
+E                0.892943],
+E              [-0.915177, -2.950747, -6.235855, ..., -4.061623,  0.      ,...
+E        DESIRED: array([[-1.022096, -3.226209, -6.604818, ..., -4.192752,  0.      ,
+E                0.892943],
+E              [-0.915177, -2.950747, -6.235855, ..., -4.061623,  0.      ,...
+
+backend/tests/test_jump_multiframe.py:185: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/test_jump_multiframe.py::test_180_day_transformed_drift_gauge_conditioning_on_all44[boom]
+1 failed, 1 passed, 27 deselected in 4.97s

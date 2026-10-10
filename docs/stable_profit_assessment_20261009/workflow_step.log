@@ -1,0 +1,47 @@
+{"self_tests_passed": 18, "historical_price_rows_read": 0, "files_written": 0}
+{"output": "docs/stable_profit_assessment_20261009/ci_assessment.json", "assessment_sha256": "d176117b3532b6d4297082e96b1e38b386ff5a8e61a940bd8c05fce268863999", "screen_source_sha256": "c890ff5437882960cc5a4e6f7eaa30c7d8ad0fed75824de0ff5e26a0a8be0923", "summary": {"primary_stored_rows": 132, "model_or_rule_rows": 96, "clock_control_rows": 36, "undefined_PF_rows": 27, "strict_positive_point_rows": 20, "rows_with_ge1000_completed": 24, "rows_with_ge1000_completed_and_ge60_days": 16, "necessary_conjunction_passed": 0}, "QUALIFIED": false, "fresh_out_of_sample": false, "prior_gate_results_unchanged": true}
+{
+  "status": "PASS",
+  "checks": 885,
+  "sources": 12,
+  "stored_rows": 132,
+  "roles": {
+    "model_or_rule": 96,
+    "clock_control": 36
+  },
+  "role_summaries": {
+    "model_or_rule": {
+      "rows": 96,
+      "undefined_PF": 19,
+      "positive_point": 18,
+      "completed_ge1000": 8,
+      "completed_ge1000_days_ge60": 8,
+      "necessary_passes": 0
+    },
+    "clock_control": {
+      "rows": 36,
+      "undefined_PF": 8,
+      "positive_point": 2,
+      "completed_ge1000": 16,
+      "completed_ge1000_days_ge60": 8,
+      "necessary_passes": 0
+    }
+  },
+  "nonzero_cost_diagnostics": 4,
+  "necessary_passes": 0,
+  "assessment_sha256": "b684b1b7d5af33bd16bc9584225f8991b25ce0432414da03d1962c5b673ab17c",
+  "screen_source_sha256": "c890ff5437882960cc5a4e6f7eaa30c7d8ad0fed75824de0ff5e26a0a8be0923",
+  "review_source_sha256": "215f195d9c0fe1adfbe132741b4dad5e43c15838c10c597c8dbd1256ee48dfbc",
+  "scope": "pinned source pointers, copied statistics, strict Decimal point/sample predicates and diagnostic identity only",
+  "original_quote_paths_or_full_gates_reaudited": false,
+  "independent_agent_final_review_completed": false,
+  "universal_profit_impossibility_proven": false,
+  "QUALIFIED": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}
+Saved-statistic stable-profit necessary screen PASS; no qualified policy

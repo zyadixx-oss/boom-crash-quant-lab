@@ -1,0 +1,33 @@
+{
+  "request": {
+    "ticks_history": "CRASH600",
+    "start": 1760008080,
+    "end": 1760008083,
+    "count": 4,
+    "style": "ticks",
+    "req_id": 3
+  },
+  "intent_sha256": "7f69272e51136cd47306b3b245f47e2a763a5ec9b64a7bbc5037b8aacc7d4e16",
+  "attempted_at_utc": "2026-10-07T17:46:44.557612+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "wire_sha256": "fb5f4195c33c102d79553a0a44974404a8a224eda25f6f394ade1360722efbe2",
+  "wire_bytes": 276,
+  "status": "COMPLETE_WINDOW",
+  "observed_rows": 4,
+  "expected_rows": 4,
+  "epochs": [
+    1760008080,
+    1760008081,
+    1760008082,
+    1760008083
+  ],
+  "missing_epochs": [],
+  "first_epoch": 1760008080,
+  "last_epoch": 1760008083,
+  "finished_at_utc": "2026-10-07T17:46:44.886230+00:00"
+}

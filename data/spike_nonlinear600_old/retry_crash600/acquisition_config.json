@@ -1,0 +1,15 @@
+{
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "days": 180,
+  "symbols": [
+    "CRASH600"
+  ],
+  "requested_start_epoch": 1760008080,
+  "cutoff_exclusive_epoch": 1775560080,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

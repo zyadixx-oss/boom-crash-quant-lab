@@ -1,0 +1,49 @@
+{
+  "stage": "hybrid_event_publication_validation",
+  "frozen_studies_unchanged": [
+    {
+      "folder": "zone_study_20261008",
+      "declaration_sha256": "97b80f2ab852427232190f645343a96b24a295849a54ab4df8343b2f7edd4d18",
+      "code_pins_unchanged": true
+    },
+    {
+      "folder": "zone_excursions_20261008",
+      "declaration_sha256": "3e423cc9d4ff413d0cb1e1aad03292dced2915d3b7bd478589876534dd4c903d",
+      "code_pins_unchanged": true
+    },
+    {
+      "folder": "representation_regions_20261008",
+      "declaration_sha256": "939cf7aa31208b89bef012d143b0ff21bd2603c1f0c91e7e8d45339dfa04c388",
+      "code_pins_unchanged": true
+    },
+    {
+      "folder": "hybrid_event_regions_20261008",
+      "declaration_sha256": "6ade87b7207754cc21468d68ab315c3f66f5b84bedc2e274907b453759e03af5",
+      "code_pins_unchanged": true
+    }
+  ],
+  "result_sha256": "fb345c068a899157e15ec6393a72a7eeb5d78f932b7f7b7f0fac0640823b4abd",
+  "independent_audit_sha256": "2250e9814fadf2281972f36b7eccffcf44b8d16099d55bf1bc8bf368619a62dd",
+  "independent_audit_input_pins_unchanged": true,
+  "retained_historical_auditor_snapshot_pins_match": true,
+  "prior_successor_pins_unchanged": 159,
+  "models_fitted": 16,
+  "report_cells": 72,
+  "historical_criteria_passed": 0,
+  "omitted_descriptive_union_comparisons_supplemented": 4,
+  "original_measurements_changed": false,
+  "tests": {
+    "premeasurement_passed": 192,
+    "full_backend_passed": 2489,
+    "independent_auditor_passed": 19,
+    "existing_starlette_warning": 1
+  },
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "QUALIFIED": false,
+  "actual_execution": "NOT TESTED"
+}

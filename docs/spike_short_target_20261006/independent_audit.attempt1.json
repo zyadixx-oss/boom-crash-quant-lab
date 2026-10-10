@@ -1,0 +1,1763 @@
+{
+  "status": "FAIL",
+  "pass": false,
+  "run_utc": "2026-10-06T13:20:04.463095+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "script_sha256": "d2f156483f38fc08641819ebf223200aa6b97e241773f67cc385f9ebea6809a0",
+  "helper_sha256": {
+    "scripts/verify_spike_nonlinear.py": "1a6d25a60093d36d7c8a66e66ef966d144d81d16eb84695f3ceb400aad307aee",
+    "scripts/verify_spike_native300.py": "c7835e5b91f6fb376d01bcd25ed7ca3f8d8315c193377724242674d943bf6663",
+    "scripts/verify_spike_payoff.py": "ac0b34c978b549711e383e9cec86410e205535d5cf04b9d2ba234ef9b5161cdf",
+    "scripts/verify_spike_learned.py": "3846861910f67d4b8e9a50d73962cbd45b70069033a4c93eea0ae159b7ac3f51",
+    "scripts/verify_spike_timed.py": "fbecf3b85dfd0b1e4731b2c8d6984c954a100c36d0f447e79059aee187f58658",
+    "scripts/verify_spike_multiframe.py": "ccc3703a89a5af2a0094b28e2b0e5eb4e7b5fc0d451198ace7ce3963d89f5b90",
+    "scripts/verify_spike_tick_tail_signal.py": "114d6a6e62752aa3ee9378f4775b4b40e1d7c9a2746e6e6becbd3549e86bfc3e",
+    "scripts/verify_spike_tick_tail.py": "a3b94835b857e3bcb839bb8100f1c5ca037e56456bf954b777c743b069c54a5a",
+    "scripts/verify_spike_tick_execution.py": "f2360d5556fbc43ef3bb140df4e6dfd5d80767f859fb37f38934bd11872b476b"
+  },
+  "declaration_sha256": "6d6f0065156c8323c7dcb858a18e5205e74d155a12c2848c081712af9fb7afc5",
+  "selection_sha256": "8e3d6f0b3a169e9152ab985b765358c1f8fd0be3fedd7b6750b1e2652d41d402",
+  "results_sha256": "abf9b54c03dcaf1db3db9107ac89cf0aeb124305d0e6ad2d715c79114d8b4d6f",
+  "checks": 9040587,
+  "saved_false_safety_values": 444,
+  "implementation": "Independent standard-library M1 paths/scalers/scalar predictions and arithmetic; no research engines imported",
+  "selection_premeasurement_flags_interpretation": "Copied declaration snapshot; NOT a current-state claim that development decoded no prices or computed no features/labels/models/ledgers",
+  "scope": [
+    "pinned source normalization/page lineage, frozen science/declaration/selection/results",
+    "saved closed44 inputs: exact time/ATR/context availability and matrix bytes",
+    "SHORT1/LONG15 label paths, shared complete-target membership and native timestamp/target/matrix hashes",
+    "saved train-only scalers/intercepts, scalar prediction/q75 and all saved issuance",
+    "all saved model/CLOCK short-policy ledgers and development/secondary/primary point metrics",
+    "chronology/purge/unknowns/development selection/onlySHORT gates and Holm-four saved-p arithmetic"
+  ],
+  "not_verified": [
+    "all44 feature values or complete feature-valid opportunity universe independently regenerated",
+    "ridge coefficients independently refitted",
+    "bootstrap draws, CIs or p-values independently regenerated",
+    "trade/day tail diagnostics and their export copies",
+    "inferential validity, conditional-return process or statistical independence",
+    "tick execution, executable bid/ask, measured costs, actual cash profit or prospective performance"
+  ],
+  "sources": [
+    {
+      "symbol": "BOOM600",
+      "kind": "old",
+      "clean_sha256": "ad678600539df1b7fa1bd491d962783ce2e2dfb2c35a0071c940b6edcad51a6d",
+      "raw_sha256": "ad678600539df1b7fa1bd491d962783ce2e2dfb2c35a0071c940b6edcad51a6d",
+      "rows": 259200,
+      "missing_minutes": 0,
+      "recovered_rate_limit_errors": 4
+    },
+    {
+      "symbol": "BOOM600",
+      "kind": "fresh",
+      "clean_sha256": "61d8494e1a9cfd2b631649cd6b40488f9ce1b3a338cb04657f0944fd47f56d3d",
+      "raw_sha256": "49486105d0928171f8039a7d458d602805e19977e1486353c8be5eff9c5f9bac",
+      "rows": 259199,
+      "missing_minutes": 1,
+      "recovered_rate_limit_errors": 5
+    },
+    {
+      "symbol": "CRASH600",
+      "kind": "old",
+      "clean_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+      "raw_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+      "rows": 259200,
+      "missing_minutes": 0,
+      "recovered_rate_limit_errors": 0
+    },
+    {
+      "symbol": "CRASH600",
+      "kind": "fresh",
+      "clean_sha256": "d2437657dfc52832004f7fa029653aef37953fefec2943a282ae40dd4ef0e14e",
+      "raw_sha256": "32cf300a115d7df9722a18c66077bd52143dbe9e068b761589cb84c11f9bd84b",
+      "rows": 259199,
+      "missing_minutes": 1,
+      "recovered_rate_limit_errors": 5
+    }
+  ],
+  "ledgers": [
+    {
+      "symbol": "BOOM600",
+      "cohort": "old_final30_secondary",
+      "family": "SHORT44",
+      "mode": "SPIKE",
+      "path_records": 1,
+      "completed": 1,
+      "profit_factor": 0.0,
+      "mean_net_R": -0.11017645026705974
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "old_final30_secondary",
+      "family": "LONG44",
+      "mode": "SPIKE",
+      "path_records": 267,
+      "completed": 267,
+      "profit_factor": 0.3099079399243907,
+      "mean_net_R": -0.07464511646194978
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "old_final30_secondary",
+      "family": "CLOCK",
+      "mode": "SPIKE",
+      "path_records": 2591,
+      "completed": 2591,
+      "profit_factor": 0.4740110750020008,
+      "mean_net_R": -0.054700970762170946
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "old_final30_secondary",
+      "family": "SHORT44",
+      "mode": "DRIFT",
+      "path_records": 0,
+      "completed": 0,
+      "profit_factor": null,
+      "mean_net_R": null
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "old_final30_secondary",
+      "family": "LONG44",
+      "mode": "DRIFT",
+      "path_records": 264,
+      "completed": 264,
+      "profit_factor": 0.18382720787001,
+      "mean_net_R": -0.0454208654112383
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "old_final30_secondary",
+      "family": "CLOCK",
+      "mode": "DRIFT",
+      "path_records": 2591,
+      "completed": 2591,
+      "profit_factor": 0.22760747441250145,
+      "mean_net_R": -0.04592761174236122
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "later180_known_history_primary",
+      "family": "SHORT44",
+      "mode": "SPIKE",
+      "path_records": 8,
+      "completed": 8,
+      "profit_factor": 0.0,
+      "mean_net_R": -0.10832602960842787
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "later180_known_history_primary",
+      "family": "LONG44",
+      "mode": "SPIKE",
+      "path_records": 909,
+      "completed": 909,
+      "profit_factor": 0.48553455882289637,
+      "mean_net_R": -0.05464259238750962
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "later180_known_history_primary",
+      "family": "CLOCK",
+      "mode": "SPIKE",
+      "path_records": 8392,
+      "completed": 8392,
+      "profit_factor": 0.49413804572192827,
+      "mean_net_R": -0.0527509658454443
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "later180_known_history_primary",
+      "family": "SHORT44",
+      "mode": "DRIFT",
+      "path_records": 2,
+      "completed": 2,
+      "profit_factor": 0.26515575194340907,
+      "mean_net_R": -0.0028336997794335475
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "later180_known_history_primary",
+      "family": "LONG44",
+      "mode": "DRIFT",
+      "path_records": 813,
+      "completed": 813,
+      "profit_factor": 0.1689718902545728,
+      "mean_net_R": -0.04619469408875793
+    },
+    {
+      "symbol": "BOOM600",
+      "cohort": "later180_known_history_primary",
+      "family": "CLOCK",
+      "mode": "DRIFT",
+      "path_records": 8392,
+      "completed": 8392,
+      "profit_factor": 0.2226503853340789,
+      "mean_net_R": -0.0479207751726743
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "old_final30_secondary",
+      "family": "SHORT44",
+      "mode": "SPIKE",
+      "path_records": 37,
+      "completed": 37,
+      "profit_factor": 0.43910488375616175,
+      "mean_net_R": -0.06188690890342183
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "old_final30_secondary",
+      "family": "LONG44",
+      "mode": "SPIKE",
+      "path_records": 268,
+      "completed": 268,
+      "profit_factor": 0.3647010314907857,
+      "mean_net_R": -0.06529835395225736
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "old_final30_secondary",
+      "family": "CLOCK",
+      "mode": "SPIKE",
+      "path_records": 2591,
+      "completed": 2591,
+      "profit_factor": 0.48894299121374774,
+      "mean_net_R": -0.053358004808374805
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "old_final30_secondary",
+      "family": "SHORT44",
+      "mode": "DRIFT",
+      "path_records": 1,
+      "completed": 1,
+      "profit_factor": null,
+      "mean_net_R": 0.0014284182082048708
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "old_final30_secondary",
+      "family": "LONG44",
+      "mode": "DRIFT",
+      "path_records": 550,
+      "completed": 550,
+      "profit_factor": 0.1912289234572789,
+      "mean_net_R": -0.0505645477014684
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "old_final30_secondary",
+      "family": "CLOCK",
+      "mode": "DRIFT",
+      "path_records": 2591,
+      "completed": 2591,
+      "profit_factor": 0.2269221332194092,
+      "mean_net_R": -0.047180690625825826
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "later180_known_history_primary",
+      "family": "SHORT44",
+      "mode": "SPIKE",
+      "path_records": 104,
+      "completed": 104,
+      "profit_factor": 0.2845008653112331,
+      "mean_net_R": -0.08311639938735388
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "later180_known_history_primary",
+      "family": "LONG44",
+      "mode": "SPIKE",
+      "path_records": 851,
+      "completed": 851,
+      "profit_factor": 0.4139353445496607,
+      "mean_net_R": -0.06105959136692734
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "later180_known_history_primary",
+      "family": "CLOCK",
+      "mode": "SPIKE",
+      "path_records": 8392,
+      "completed": 8392,
+      "profit_factor": 0.5036412161170801,
+      "mean_net_R": -0.05159574066775165
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "later180_known_history_primary",
+      "family": "SHORT44",
+      "mode": "DRIFT",
+      "path_records": 4,
+      "completed": 4,
+      "profit_factor": 0.8091718378070574,
+      "mean_net_R": -0.0009061372966756038
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "later180_known_history_primary",
+      "family": "LONG44",
+      "mode": "DRIFT",
+      "path_records": 1848,
+      "completed": 1848,
+      "profit_factor": 0.197427513973907,
+      "mean_net_R": -0.047810981343143315
+    },
+    {
+      "symbol": "CRASH600",
+      "cohort": "later180_known_history_primary",
+      "family": "CLOCK",
+      "mode": "DRIFT",
+      "path_records": 8392,
+      "completed": 8392,
+      "profit_factor": 0.21619702561315307,
+      "mean_net_R": -0.04912203400205831
+    }
+  ],
+  "strategy_path_records": 51561,
+  "development_repeated_clock_reference_path_records": 20712,
+  "saved_strategy_and_repeated_reference_path_records": 72273,
+  "record_counts_are_not_pooled_strategy_sample_evidence": true,
+  "training_target_label_records": 148160,
+  "common_training_matrix_records": 74080,
+  "error_count": 258,
+  "errors": [
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/trades",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/completed",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/wins",
+      "actual": 66,
+      "expected": 67
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/win_rate",
+      "actual": 0.07647740440324449,
+      "expected": 0.0775462962962963
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/mean_net_R",
+      "actual": -0.05147726081047141,
+      "expected": -0.05136774879856281
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/median_net_R",
+      "actual": -0.11119540469607297,
+      "expected": -0.11119115920515894
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/sum_net_R",
+      "actual": -44.42487607943683,
+      "expected": -44.381734961958266
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/mean_gross_R",
+      "actual": -0.0014772608104714048,
+      "expected": -0.001367748798562804
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/profit_factor",
+      "actual": 0.5085070252674447,
+      "expected": 0.5089843154263392
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/average_win_R",
+      "actual": 0.696405082879819,
+      "expected": 0.6866548744409942
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/break_even_cost_atr",
+      "actual": -0.0029545216209428096,
+      "expected": -0.002735497597125608
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/cluster_se",
+      "actual": 0.007944536309532815,
+      "expected": 0.007930274291315008
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/selection_score",
+      "actual": -0.06704855197715573,
+      "expected": -0.06691108640954023
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/0/closed_trade_return",
+      "actual": -0.10528167383992304,
+      "expected": -0.10518517596887533
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/trades",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/completed",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/losses",
+      "actual": 790,
+      "expected": 791
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/win_rate",
+      "actual": 0.08458864426419467,
+      "expected": 0.08449074074074074
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/mean_net_R",
+      "actual": -0.061417678646642486,
+      "expected": -0.061453268948631685
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/median_net_R",
+      "actual": -0.11116554925217711,
+      "expected": -0.11116467634120628
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/sum_net_R",
+      "actual": -53.003456672052465,
+      "expected": -53.095624371617774
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/mean_gross_R",
+      "actual": -0.011417678646642481,
+      "expected": -0.01145326894863168
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/profit_factor",
+      "actual": 0.4088977067528412,
+      "expected": 0.4084778455886558
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/average_loss_R",
+      "actual": -0.1135048601496909,
+      "expected": -0.11347788523112658
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/break_even_cost_atr",
+      "actual": -0.022835357293284963,
+      "expected": -0.02290653789726336
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/cluster_se",
+      "actual": 0.006892715872611826,
+      "expected": 0.0068906065636816765
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/selection_score",
+      "actual": -0.07492740175696166,
+      "expected": -0.07495885781344777
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/closed_trade_return",
+      "actual": -0.12421044723226315,
+      "expected": -0.12441224600321799
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/SPIKE/thirds/1/closed_trade_max_drawdown",
+      "actual": 0.12421044723226315,
+      "expected": 0.12441224600321799
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/trades",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/completed",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/losses",
+      "actual": 206,
+      "expected": 207
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/win_rate",
+      "actual": 0.761297798377752,
+      "expected": 0.7604166666666666
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/mean_net_R",
+      "actual": -0.04937053227280542,
+      "expected": -0.049479063042719484
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/median_net_R",
+      "actual": 0.011195404696072976,
+      "expected": 0.011191159205158945
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/sum_net_R",
+      "actual": -42.606769351431076,
+      "expected": -42.74991046890963
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/mean_gross_R",
+      "actual": 0.000629467727194582,
+      "expected": 0.0005209369572805179
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/profit_factor",
+      "actual": 0.2150864166475459,
+      "expected": 0.21452072872502168
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/average_loss_R",
+      "actual": -0.2635054123420079,
+      "expected": -0.262923942318513
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/break_even_cost_atr",
+      "actual": 0.001258935454389164,
+      "expected": 0.0010418739145610359
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/cluster_se",
+      "actual": 0.0080956771006968,
+      "expected": 0.008081087852245854
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/selection_score",
+      "actual": -0.06523805939017115,
+      "expected": -0.06531799523312136
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/0/closed_trade_return",
+      "actual": -0.10121163565787694,
+      "expected": -0.10153326958499853
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/trades",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/completed",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/losses",
+      "actual": 214,
+      "expected": 215
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/win_rate",
+      "actual": 0.7520278099652375,
+      "expected": 0.7511574074074074
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/mean_net_R",
+      "actual": -0.0390526611674609,
+      "expected": -0.039016526490686855
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/median_net_R",
+      "actual": 0.01116554925217711,
+      "expected": 0.01116467634120627
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/sum_net_R",
+      "actual": -33.70244658751876,
+      "expected": -33.71027888795344
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/mean_gross_R",
+      "actual": 0.010947338832539106,
+      "expected": 0.010983473509313146
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/profit_factor",
+      "actual": 0.2571749641461886,
+      "expected": 0.25713057588181953
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/average_loss_R",
+      "actual": -0.21201233206276757,
+      "expected": -0.21106265749705558
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/break_even_cost_atr",
+      "actual": 0.021894677665078213,
+      "expected": 0.021966947018626292
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/cluster_se",
+      "actual": 0.007018948473309497,
+      "expected": 0.007016746155343369
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/selection_score",
+      "actual": -0.05280980017514752,
+      "expected": -0.05276934895515986
+    },
+    {
+      "check": "BOOM600/old_final30_secondary/CLOCK/DRIFT/thirds/1/closed_trade_return",
+      "actual": -0.08091282911399045,
+      "expected": -0.08093082553111064
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/trades",
+      "actual": 2758,
+      "expected": 2759
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/completed",
+      "actual": 2758,
+      "expected": 2759
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/losses",
+      "actual": 2547,
+      "expected": 2548
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/win_rate",
+      "actual": 0.07650471356055112,
+      "expected": 0.07647698441464298
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/mean_net_R",
+      "actual": -0.05697398920401285,
+      "expected": -0.056993321062521675
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/median_net_R",
+      "actual": -0.11167797167364067,
+      "expected": -0.11165981216618298
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/sum_net_R",
+      "actual": -157.13426222466745,
+      "expected": -157.2445728114973
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/mean_gross_R",
+      "actual": -0.0069739892040128525,
+      "expected": -0.006993321062521673
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/profit_factor",
+      "actual": 0.4595132908125237,
+      "expected": 0.45933900395179694
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/average_loss_R",
+      "actual": -0.11414500905798973,
+      "expected": -0.11414350418270394
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/break_even_cost_atr",
+      "actual": -0.013947978408025705,
+      "expected": -0.013986642125043346
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/cluster_se",
+      "actual": 0.004537644205541313,
+      "expected": 0.004537077052447676
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/selection_score",
+      "actual": -0.06586777184687383,
+      "expected": -0.06588599208531912
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/closed_trade_return",
+      "actual": -0.32520567589983784,
+      "expected": -0.3253917682945402
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/closed_trade_max_drawdown",
+      "actual": 0.32535621441381335,
+      "expected": 0.32554226529353614
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/trades",
+      "actual": 2753,
+      "expected": 2754
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/completed",
+      "actual": 2753,
+      "expected": 2754
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/losses",
+      "actual": 2509,
+      "expected": 2510
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/win_rate",
+      "actual": 0.08863058481656375,
+      "expected": 0.08859840232389252
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/mean_net_R",
+      "actual": -0.04932642958096603,
+      "expected": -0.04935143888645131
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/median_net_R",
+      "actual": -0.11065253764645991,
+      "expected": -0.11066015189685763
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/sum_net_R",
+      "actual": -135.79566063639948,
+      "expected": -135.91386269328692
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/mean_gross_R",
+      "actual": 0.0006735704190339727,
+      "expected": 0.0006485611135486917
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/profit_factor",
+      "actual": 0.5211213081006538,
+      "expected": 0.5209041767696085
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/average_loss_R",
+      "actual": -0.1130211489011957,
+      "expected": -0.11302321300796314
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/break_even_cost_atr",
+      "actual": 0.0013471408380679455,
+      "expected": 0.0012971222270973834
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/cluster_se",
+      "actual": 0.0047990099739370785,
+      "expected": 0.004792776441229988
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/selection_score",
+      "actual": -0.0587324891298827,
+      "expected": -0.05874528071126209
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/closed_trade_return",
+      "actual": -0.2882599951363487,
+      "expected": -0.2884703179677086
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/trades",
+      "actual": 2758,
+      "expected": 2759
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/completed",
+      "actual": 2758,
+      "expected": 2759
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/wins",
+      "actual": 2145,
+      "expected": 2146
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/win_rate",
+      "actual": 0.7777374909354605,
+      "expected": 0.7778180500181225
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/mean_net_R",
+      "actual": -0.04364749237553409,
+      "expected": -0.0436279352609254
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/median_net_R",
+      "actual": 0.011677971673640663,
+      "expected": 0.011659812166182969
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/sum_net_R",
+      "actual": -120.37978397172303,
+      "expected": -120.36947338489317
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/mean_gross_R",
+      "actual": 0.006352507624465912,
+      "expected": 0.0063720647390746055
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/profit_factor",
+      "actual": 0.2444985179732476,
+      "expected": 0.244563227041278
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/average_win_R",
+      "actual": 0.018162146458846784,
+      "expected": 0.018158487763772692
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/break_even_cost_atr",
+      "actual": 0.012705015248931825,
+      "expected": 0.012744129478149211
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/cluster_se",
+      "actual": 0.004595896476650488,
+      "expected": 0.004595329074597617
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/selection_score",
+      "actual": -0.05265544946976905,
+      "expected": -0.05263478024713673
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/closed_trade_return",
+      "actual": -0.2602670936638618,
+      "expected": -0.2602480259629576
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/trades",
+      "actual": 2753,
+      "expected": 2754
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/completed",
+      "actual": 2753,
+      "expected": 2754
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/wins",
+      "actual": 2048,
+      "expected": 2049
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/win_rate",
+      "actual": 0.743915728296404,
+      "expected": 0.7440087145969498
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/mean_net_R",
+      "actual": -0.05149416403876721,
+      "expected": -0.05146885676900461
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/median_net_R",
+      "actual": 0.010652537646459903,
+      "expected": 0.010660151896857626
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/sum_net_R",
+      "actual": -141.76343359872612,
+      "expected": -141.7452315418387
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/mean_gross_R",
+      "actual": -0.0014941640387672068,
+      "expected": -0.0014688567690046078
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/profit_factor",
+      "actual": 0.20550095109437258,
+      "expected": 0.20560296270990755
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/average_win_R",
+      "actual": 0.017904191972561774,
+      "expected": 0.01790433734343287
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/break_even_cost_atr",
+      "actual": -0.0029883280775344135,
+      "expected": -0.0029377135380092155
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/cluster_se",
+      "actual": 0.004862360295460901,
+      "expected": 0.0048559848773686905
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/selection_score",
+      "actual": -0.061024390217870574,
+      "expected": -0.06098658712864724
+    },
+    {
+      "check": "BOOM600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/closed_trade_return",
+      "actual": -0.298816634349242,
+      "expected": -0.29878472690046676
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/trades",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/completed",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/losses",
+      "actual": 793,
+      "expected": 794
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/win_rate",
+      "actual": 0.08111239860950174,
+      "expected": 0.08101851851851852
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/mean_net_R",
+      "actual": -0.05326433518269864,
+      "expected": -0.0533235652527257
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/median_net_R",
+      "actual": -0.11019180915413829,
+      "expected": -0.110182167297526
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/sum_net_R",
+      "actual": -45.967121262668925,
+      "expected": -46.071560378355
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/mean_gross_R",
+      "actual": -0.0032643351826986385,
+      "expected": -0.00332356525272569
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/profit_factor",
+      "actual": 0.4864084648215582,
+      "expected": 0.48584153620658677
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/average_loss_R",
+      "actual": -0.11286421412089814,
+      "expected": -0.11285360316569056
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/break_even_cost_atr",
+      "actual": -0.006528670365397277,
+      "expected": -0.00664713050545138
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/cluster_se",
+      "actual": 0.007227207126432138,
+      "expected": 0.007213948502093345
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/selection_score",
+      "actual": -0.06742966115050562,
+      "expected": -0.06746290431682865
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/0/closed_trade_return",
+      "actual": -0.10870737426821209,
+      "expected": -0.10894008880233441
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/trades",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/completed",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/losses",
+      "actual": 789,
+      "expected": 790
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/win_rate",
+      "actual": 0.08574739281575898,
+      "expected": 0.08564814814814815
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/mean_net_R",
+      "actual": -0.04696103163241294,
+      "expected": -0.04703529803210196
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/median_net_R",
+      "actual": -0.11081738761225368,
+      "expected": -0.11087744380615111
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/sum_net_R",
+      "actual": -40.52737029877237,
+      "expected": -40.6384974997361
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/mean_gross_R",
+      "actual": 0.0030389683675870684,
+      "expected": 0.002964701967898039
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/profit_factor",
+      "actual": 0.5460521709777582,
+      "expected": 0.5453733241608005
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/average_loss_R",
+      "actual": -0.11315284500589122,
+      "expected": -0.11315028089950872
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/break_even_cost_atr",
+      "actual": 0.006077936735174137,
+      "expected": 0.005929403935796078
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/cluster_se",
+      "actual": 0.006715354530222403,
+      "expected": 0.006697743073355116
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/selection_score",
+      "actual": -0.06012312651164885,
+      "expected": -0.06016287445587799
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/SPIKE/thirds/1/closed_trade_return",
+      "actual": -0.09652779420296453,
+      "expected": -0.0967787950464114
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/trades",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/completed",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/wins",
+      "actual": 653,
+      "expected": 654
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/win_rate",
+      "actual": 0.7566628041714948,
+      "expected": 0.7569444444444444
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/mean_net_R",
+      "actual": -0.04718250889213351,
+      "expected": -0.047122761641464284
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/median_net_R",
+      "actual": 0.010191809154138282,
+      "expected": 0.010182167297525992
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/sum_net_R",
+      "actual": -40.71850517391122,
+      "expected": -40.71406605822514
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/mean_gross_R",
+      "actual": 0.002817491107866497,
+      "expected": 0.0028772383585357144
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/profit_factor",
+      "actual": 0.216259563259946,
+      "expected": 0.21634500633924572
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/average_win_R",
+      "actual": 0.01720607104812451,
+      "expected": 0.017186549709650428
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/break_even_cost_atr",
+      "actual": 0.005634982215732994,
+      "expected": 0.005754476717071429
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/cluster_se",
+      "actual": 0.007343859933364055,
+      "expected": 0.007330607922172478
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/selection_score",
+      "actual": -0.06157647436152706,
+      "expected": -0.061490753168922344
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/0/closed_trade_return",
+      "actual": -0.09693732122067444,
+      "expected": -0.0969272992214173
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/trades",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/completed",
+      "actual": 863,
+      "expected": 864
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/wins",
+      "actual": 643,
+      "expected": 644
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/win_rate",
+      "actual": 0.7450753186558516,
+      "expected": 0.7453703703703703
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/mean_net_R",
+      "actual": -0.05374997444691357,
+      "expected": -0.053674885123521615
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/median_net_R",
+      "actual": 0.010817387612253683,
+      "expected": 0.010877443806151105
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/sum_net_R",
+      "actual": -46.38622794768641,
+      "expected": -46.37510074672267
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/mean_gross_R",
+      "actual": -0.003749974446913561,
+      "expected": -0.003674885123521609
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/profit_factor",
+      "actual": 0.1986425502262354,
+      "expected": 0.19883478110557043
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/average_win_R",
+      "actual": 0.017882329313624247,
+      "expected": 0.017871839983888395
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/break_even_cost_atr",
+      "actual": -0.007499948893827122,
+      "expected": -0.007349770247043218
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/cluster_se",
+      "actual": 0.006817896766130118,
+      "expected": 0.006800368103305439
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/selection_score",
+      "actual": -0.0671130521085286,
+      "expected": -0.06700360660600027
+    },
+    {
+      "check": "CRASH600/old_final30_secondary/CLOCK/DRIFT/thirds/1/closed_trade_return",
+      "actual": -0.10967217498752257,
+      "expected": -0.10964740784594129
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/trades",
+      "actual": 274,
+      "expected": 275
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/completed",
+      "actual": 274,
+      "expected": 275
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/losses",
+      "actual": 253,
+      "expected": 254
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/win_rate",
+      "actual": 0.07664233576642336,
+      "expected": 0.07636363636363637
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/mean_net_R",
+      "actual": -0.055302188844501596,
+      "expected": -0.055458534790866515
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/median_net_R",
+      "actual": -0.10740151330314798,
+      "expected": -0.10728567419668565
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/sum_net_R",
+      "actual": -15.152799743393437,
+      "expected": -15.251097067488292
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/mean_gross_R",
+      "actual": -0.005302188844501595,
+      "expected": -0.005458534790866509
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/profit_factor",
+      "actual": 0.46189339393190776,
+      "expected": 0.4602866542549246
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/average_loss_R",
+      "actual": -0.11130227436149161,
+      "expected": -0.11125107376989067
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/break_even_cost_atr",
+      "actual": -0.01060437768900319,
+      "expected": -0.010917069581733017
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/cluster_se",
+      "actual": 0.015197942981376987,
+      "expected": 0.01514363519021735
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/selection_score",
+      "actual": -0.0850901570880005,
+      "expected": -0.08514005976369252
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/closed_trade_return",
+      "actual": -0.037218791188926015,
+      "expected": -0.03745538823021333
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/0/closed_trade_max_drawdown",
+      "actual": 0.03745819205679146,
+      "expected": 0.03769473026691694
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/trades",
+      "actual": 306,
+      "expected": 307
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/completed",
+      "actual": 306,
+      "expected": 307
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/losses",
+      "actual": 288,
+      "expected": 289
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/win_rate",
+      "actual": 0.058823529411764705,
+      "expected": 0.05863192182410423
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/mean_net_R",
+      "actual": -0.08354475278100432,
+      "expected": -0.08358959231264385
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/median_net_R",
+      "actual": -0.11231465950672082,
+      "expected": -0.11229435035511354
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/sum_net_R",
+      "actual": -25.56469435098732,
+      "expected": -25.662004839981662
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/mean_gross_R",
+      "actual": -0.033544752781004314,
+      "expected": -0.03358959231264385
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/profit_factor",
+      "actual": 0.22586905989408138,
+      "expected": 0.22520545073207737
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/average_loss_R",
+      "actual": -0.11466574352094991,
+      "expected": -0.1146056907371208
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/active_days",
+      "actual": 56,
+      "expected": 57
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/break_even_cost_atr",
+      "actual": -0.06708950556200863,
+      "expected": -0.0671791846252877
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/cluster_se",
+      "actual": 0.008791442318021613,
+      "expected": 0.008762688908914022
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/selection_score",
+      "actual": -0.10077597972432667,
+      "expected": -0.10076446257411532
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/closed_trade_return",
+      "actual": -0.06193692704356435,
+      "expected": -0.06216513548440672
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/LONG44/SPIKE/thirds/1/closed_trade_max_drawdown",
+      "actual": 0.06193692704356435,
+      "expected": 0.06216513548440672
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/trades",
+      "actual": 2758,
+      "expected": 2759
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/completed",
+      "actual": 2758,
+      "expected": 2759
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/losses",
+      "actual": 2524,
+      "expected": 2525
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/win_rate",
+      "actual": 0.08484408992023205,
+      "expected": 0.08481333816600217
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/mean_net_R",
+      "actual": -0.050788747722471876,
+      "expected": -0.05080596721372682
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/median_net_R",
+      "actual": -0.11041687242094579,
+      "expected": -0.11040721383039478
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/sum_net_R",
+      "actual": -140.07536621857744,
+      "expected": -140.1736635426723
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/mean_gross_R",
+      "actual": -0.0007887477224718743,
+      "expected": -0.0008059672137268154
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/profit_factor",
+      "actual": 0.5104345872902585,
+      "expected": 0.5102592874280215
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/average_loss_R",
+      "actual": -0.11336048315127417,
+      "expected": -0.11335451754372708
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/break_even_cost_atr",
+      "actual": -0.0015774954449437487,
+      "expected": -0.0016119344274536308
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/cluster_se",
+      "actual": 0.005352748760079664,
+      "expected": 0.005352380689391928
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/selection_score",
+      "actual": -0.06128013529222802,
+      "expected": -0.061296633364935
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/closed_trade_return",
+      "actual": -0.29582120723553784,
+      "expected": -0.2959942544630705
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/0/closed_trade_max_drawdown",
+      "actual": 0.29645585754760284,
+      "expected": 0.296628748814067
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/trades",
+      "actual": 2753,
+      "expected": 2754
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/completed",
+      "actual": 2753,
+      "expected": 2754
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/losses",
+      "actual": 2527,
+      "expected": 2528
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/win_rate",
+      "actual": 0.08209226298583364,
+      "expected": 0.08206245461147423
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/mean_net_R",
+      "actual": -0.05335912514013414,
+      "expected": -0.053375084241025286
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/median_net_R",
+      "actual": -0.11142365705215479,
+      "expected": -0.11141987657663124
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/sum_net_R",
+      "actual": -146.89767151078928,
+      "expected": -146.99498199978365
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/mean_gross_R",
+      "actual": -0.003359125140134138,
+      "expected": -0.0033750842410252813
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/profit_factor",
+      "actual": 0.48918240941644187,
+      "expected": 0.4890169336179269
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/average_loss_R",
+      "actual": -0.11380040970419088,
+      "expected": -0.11379388679251767
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/break_even_cost_atr",
+      "actual": -0.006718250280268276,
+      "expected": -0.006750168482050563
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/cluster_se",
+      "actual": 0.005062018424392729,
+      "expected": 0.005059672751828705
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/selection_score",
+      "actual": -0.06328068125194389,
+      "expected": -0.06329204283460954
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/SPIKE/thirds/1/closed_trade_return",
+      "actual": -0.3077340213161175,
+      "expected": -0.3079024331683672
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/trades",
+      "actual": 2758,
+      "expected": 2759
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/completed",
+      "actual": 2758,
+      "expected": 2759
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/losses",
+      "actual": 677,
+      "expected": 678
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/win_rate",
+      "actual": 0.7545322697606962,
+      "expected": 0.7542587894164552
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/mean_net_R",
+      "actual": -0.049869658823339935,
+      "expected": -0.04985220069252507
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/median_net_R",
+      "actual": 0.010416872420945786,
+      "expected": 0.010407213830394772
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/sum_net_R",
+      "actual": -137.54051903477153,
+      "expected": -137.54222171067667
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/mean_gross_R",
+      "actual": 0.00013034117666007182,
+      "expected": 0.00014779930747492884
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/profit_factor",
+      "actual": 0.21306984248167435,
+      "expected": 0.21306776682617456
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/average_loss_R",
+      "actual": -0.25817001567305486,
+      "expected": -0.25779174526041787
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/break_even_cost_atr",
+      "actual": 0.00026068235332014363,
+      "expected": 0.0002955986149498577
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/cluster_se",
+      "actual": 0.005431479541805808,
+      "expected": 0.005431099325316028
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/selection_score",
+      "actual": -0.06051535872527932,
+      "expected": -0.06049715537014448
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/0/closed_trade_return",
+      "actual": -0.2913567410973946,
+      "expected": -0.29135975757190036
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/trades",
+      "actual": 2753,
+      "expected": 2754
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/completed",
+      "actual": 2753,
+      "expected": 2754
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/losses",
+      "actual": 681,
+      "expected": 682
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/win_rate",
+      "actual": 0.7526334907373774,
+      "expected": 0.7523602033405955
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/mean_net_R",
+      "actual": -0.04737727179620682,
+      "expected": -0.047361045303545034
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/median_net_R",
+      "actual": 0.011423657052154791,
+      "expected": 0.011419876576631238
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/sum_net_R",
+      "actual": -130.42962925495738,
+      "expected": -130.43231876596303
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/mean_gross_R",
+      "actual": 0.002622728203793184,
+      "expected": 0.0026389546964549664
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/profit_factor",
+      "actual": 0.22654142169387248,
+      "expected": 0.22653780863680145
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/average_loss_R",
+      "actual": -0.24762363091143683,
+      "expected": -0.24726448997315859
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/break_even_cost_atr",
+      "actual": 0.005245456407586368,
+      "expected": 0.005277909392909933
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/cluster_se",
+      "actual": 0.00513264683603269,
+      "expected": 0.0051302367998873905
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/selection_score",
+      "actual": -0.0574372595948309,
+      "expected": -0.05741630943132432
+    },
+    {
+      "check": "CRASH600/later180_known_history_primary/CLOCK/DRIFT/thirds/1/closed_trade_return",
+      "actual": -0.2786490346492557,
+      "expected": -0.2786538848526563
+    }
+  ],
+  "max_numeric_differences": {
+    "profit_factor": 0.00160673967698316,
+    "stop_atr": 0,
+    "round_trip_cost_atr": 0,
+    "ridge_penalty": 0,
+    "training_quantile": 0,
+    "open": 0,
+    "high": 0,
+    "low": 0,
+    "close": 0,
+    "causal_atr": 0,
+    "closed_price": 0,
+    "entry": 0,
+    "exit": 0,
+    "atr": 0,
+    "gross_R": 0,
+    "net_R": 0,
+    "holding_minutes": 0,
+    "aligned_return_1_atr": 2.220446049250313e-16,
+    "aligned_return_3_atr": 2.7755575615628914e-17,
+    "aligned_return_6_atr": 4.440892098500626e-16,
+    "aligned_return_12_atr": 4.440892098500626e-16,
+    "aligned_body_atr": 1.3877787807814457e-17,
+    "range_atr": 2.220446049250313e-16,
+    "favorable_wick_atr": 2.7755575615628914e-17,
+    "adverse_wick_atr": 1.3877787807814457e-17,
+    "favorable_close_position": 5.551115123125783e-17,
+    "atr_5_over_30": 0,
+    "bb_width_over_prior_median_100": 5.551115123125783e-17,
+    "range_over_prior_median_20": 2.220446049250313e-16,
+    "body_over_range": 2.220446049250313e-16,
+    "mean_range_3_over_prior_median_20": 2.220446049250313e-16,
+    "large_completed_bar": 2.7755575615628914e-17,
+    "log1p_large_bar_age": 4.440892098500626e-16,
+    "log_atr_over_price": 1.7763568394002505e-15,
+    "aligned_distance_prior_favorable_12_atr": 4.440892098500626e-16,
+    "aligned_distance_prior_adverse_12_atr": 4.440892098500626e-16,
+    "h4_aligned_return_3_atr": 2.7755575615628914e-17,
+    "h4_range_atr": 2.220446049250313e-16,
+    "h4_favorable_close_position": 1.1102230246251565e-16,
+    "h4_aligned_distance_prior_favorable_12_atr": 4.440892098500626e-16,
+    "h1_aligned_body_atr": 1.1102230246251565e-16,
+    "h1_range_atr": 2.220446049250313e-16,
+    "h1_favorable_close_position": 5.551115123125783e-17,
+    "h1_aligned_distance_favorable_boundary_m5_atr": 8.881784197001252e-16,
+    "h1_aligned_distance_adverse_boundary_m5_atr": 4.440892098500626e-16,
+    "h1_recent_m5_sweep_reclaim": 2.7755575615628914e-17,
+    "m15_aligned_return_3_atr": 1.3877787807814457e-17,
+    "m15_atr_5_over_30": 2.220446049250313e-16,
+    "m15_range_atr": 2.220446049250313e-16,
+    "m15_aligned_body_atr": 1.1102230246251565e-16,
+    "m15_favorable_close_position": 5.551115123125783e-17,
+    "m15_aligned_distance_prior_favorable_5_atr": 4.440892098500626e-16,
+    "m15_favorable_fvg_atr": 5.551115123125783e-17,
+    "m1_aligned_body_atr": 2.7755575615628914e-17,
+    "m1_range_atr": 2.220446049250313e-16,
+    "m1_aligned_return_3_atr": 2.220446049250313e-16,
+    "m1_atr_5_over_30": 2.220446049250313e-16,
+    "m1_body_over_range": 2.220446049250313e-16,
+    "m1_aligned_distance_prior_favorable_5_atr": 4.440892098500626e-16,
+    "m1_favorable_fvg_atr": 2.220446049250313e-16,
+    "m1_body_over_prior_median_20": 4.440892098500626e-16,
+    "short_target": 0,
+    "long_target": 0,
+    "penalty": 0,
+    "quantile": 0,
+    "intercept": 1.3877787807814457e-17,
+    "train_q75_positive_floor": 1.9081958235744878e-17,
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0,
+    "20": 0,
+    "21": 0,
+    "22": 0,
+    "23": 0,
+    "24": 0,
+    "25": 0,
+    "26": 0,
+    "27": 0,
+    "28": 0,
+    "29": 0,
+    "30": 0,
+    "31": 0,
+    "32": 0,
+    "33": 0,
+    "34": 0,
+    "35": 0,
+    "36": 0,
+    "37": 0,
+    "38": 0,
+    "39": 0,
+    "40": 0,
+    "41": 0,
+    "42": 0,
+    "43": 0,
+    "threshold": 0,
+    "signal_close": 0,
+    "score": 1.6653345369377348e-16,
+    "win_rate": 0.0010688918930518015,
+    "mean_net_R": 0.00015634594636491916,
+    "median_net_R": 0.00011583910646233153,
+    "sum_net_R": 0.14314111747855662,
+    "mean_gross_R": 0.00015634594636491396,
+    "average_loss_R": 0.0009496745657119887,
+    "median_holding_minutes": 0,
+    "break_even_cost_atr": 0.0003126918927298279,
+    "cluster_se": 5.430779115963777e-05,
+    "selection_score": 0.00013746556761549955,
+    "closed_trade_return": 0.00032163392712158956,
+    "closed_trade_max_drawdown": 0.00023653821012548093,
+    "illustrative_risk_fraction": 0,
+    "average_win_R": 0.009750208438824792,
+    "baseline_mean_net_R": 0,
+    "baseline_difference": 0,
+    "day_absolute_increment_conjunction": 0,
+    "p": 0,
+    "old_final30_secondarySPIKE": 0,
+    "old_final30_secondaryDRIFT": 0,
+    "later180_known_history_primarySPIKE": 0,
+    "later180_known_history_primaryDRIFT": 0
+  }
+}

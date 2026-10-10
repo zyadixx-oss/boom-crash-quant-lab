@@ -1,0 +1,63 @@
+{
+  "symbol": "BOOM300N",
+  "source": "Official Deriv public WebSocket",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "raw_file": "data/spike_native300_recent/boom300n_m1_180d.csv",
+  "raw_sha256": "f113f979201f4107206bc02c9bf43c313f2adb8747b311dbc8b431ac199050f8",
+  "raw_rows": 259200,
+  "normalized_file": "data/spike_native300_recent/boom300n_m1_180d_clean.csv",
+  "normalized_sha256": "b70f8fc90f285ae27944a7decad4c0db30fa8bf669d46cf7ba1372d128a15eb5",
+  "normalized_rows": 259199,
+  "equal_duplicates_removed": 0,
+  "excluded_rows": [
+    {
+      "epoch": 1785172079,
+      "utc": "2026-07-27T17:07:59+00:00",
+      "reason": "off_utc_minute_grid",
+      "raw": {
+        "epoch": 1785172079,
+        "open": 1004.231,
+        "high": 1004.231,
+        "low": 1004.231,
+        "close": 1004.231
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "previous_epoch": 1785228540,
+      "next_epoch": 1785228660,
+      "previous_utc": "2026-07-28T08:49:00+00:00",
+      "next_utc": "2026-07-28T08:51:00+00:00",
+      "missing_bars": 1,
+      "missing_epochs": [
+        1785228600
+      ]
+    }
+  ],
+  "first_epoch": 1775560080,
+  "last_epoch": 1791112020,
+  "first_utc": "2026-04-07T11:08:00+00:00",
+  "last_utc": "2026-10-04T11:07:00+00:00",
+  "requested_start_epoch": 1775560080,
+  "requested_cutoff_exclusive_epoch": 1791112080,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "fills_or_interpolations": false,
+  "normalization_valid": true,
+  "gap_free": false,
+  "finite_positive_ohlc": true,
+  "canonical_utc_minute_grid": true,
+  "retrieved_at_utc": "2026-10-05T05:11:36.844279+00:00",
+  "request_errors": [],
+  "page_count": 260,
+  "documentation": [
+    "https://developers.deriv.com/docs/options/ws-public/",
+    "https://developers.deriv.com/docs/data/ticks-history/"
+  ]
+}

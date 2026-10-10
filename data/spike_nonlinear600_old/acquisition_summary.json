@@ -1,0 +1,31 @@
+{
+  "config": {
+    "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+    "days": 180,
+    "symbols": [
+      "BOOM600",
+      "CRASH600"
+    ],
+    "requested_start_epoch": 1760008080,
+    "cutoff_exclusive_epoch": 1775560080,
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    }
+  },
+  "successful_symbols": [
+    {
+      "symbol": "BOOM600",
+      "normalized_rows": 259200,
+      "normalized_sha256": "ad678600539df1b7fa1bd491d962783ce2e2dfb2c35a0071c940b6edcad51a6d"
+    }
+  ],
+  "errors": [
+    {
+      "symbol": "CRASH600",
+      "error": "TimeoutError: timed out during opening handshake"
+    }
+  ]
+}

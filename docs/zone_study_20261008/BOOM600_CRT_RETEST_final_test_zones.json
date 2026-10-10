@@ -1,0 +1,32 @@
+[
+  {
+    "signal_time": "2026-02-26T00:00:00+00:00",
+    "issue_time": "2026-02-26T00:00:00+00:00",
+    "variant": "CRT_RETEST",
+    "zone_id": "boom:CRT_RETEST:2026-02-26T00:00:00+00:00",
+    "side": 1,
+    "zone_low": 5617.327,
+    "zone_high": 5617.790778571429,
+    "invalidation": 5616.1675535714285,
+    "atr": 4.637785714285785,
+    "issue_price": 5625.539,
+    "source_close": 5625.539,
+    "eligible": true,
+    "reason": "issued_fixed_region"
+  },
+  {
+    "signal_time": "2026-03-31T01:00:00+00:00",
+    "issue_time": "2026-03-31T01:00:00+00:00",
+    "variant": "CRT_RETEST",
+    "zone_id": "boom:CRT_RETEST:2026-03-31T01:00:00+00:00",
+    "side": 1,
+    "zone_low": 6030.819,
+    "zone_high": 6031.2780571428575,
+    "invalidation": 6029.671357142857,
+    "atr": 4.5905714285714305,
+    "issue_price": 6031.434,
+    "source_close": 6031.434,
+    "eligible": true,
+    "reason": "issued_fixed_region"
+  }
+]

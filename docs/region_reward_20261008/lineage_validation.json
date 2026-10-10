@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": 287,
+  "new_declaration_sha256": "5a5cd147eefc7d12ac83c8ef839c931292c5fb338e07a1f083001c893c5196e5",
+  "new_result_sha256": "6e470b505d4f32ffb28600cd136ae886001f35e34631663553d8807b114d8115",
+  "four_previous_code_pin_sets_unchanged": true,
+  "prior_successor_pins_unchanged": true,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

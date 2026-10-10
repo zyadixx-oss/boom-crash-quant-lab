@@ -1,0 +1,43 @@
+{
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "request": {
+    "active_symbols": "brief",
+    "req_id": 901
+  },
+  "matches_600": [
+    {
+      "exchange_is_open": 1,
+      "is_trading_suspended": 0,
+      "market": "synthetic_index",
+      "pip_size": 0.001,
+      "subgroup": "synthetics",
+      "submarket": "crash_index",
+      "trade_count": 2890,
+      "underlying_symbol": "BOOM600",
+      "underlying_symbol_name": "Boom 600 Index",
+      "underlying_symbol_type": ""
+    },
+    {
+      "exchange_is_open": 1,
+      "is_trading_suspended": 0,
+      "market": "synthetic_index",
+      "pip_size": 0.001,
+      "subgroup": "synthetics",
+      "submarket": "crash_index",
+      "trade_count": 3278,
+      "underlying_symbol": "CRASH600",
+      "underlying_symbol_name": "Crash 600 Index",
+      "underlying_symbol_type": ""
+    }
+  ],
+  "response_sha256": "7ef320b9525568525f90dd722ea24ca9006ebd61ba0b0d5ca20b6d81ee4a2180",
+  "probed_at_utc": "2026-10-05T09:49:47.028870+00:00",
+  "authentication_used": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "features_or_payoffs_computed": false
+}

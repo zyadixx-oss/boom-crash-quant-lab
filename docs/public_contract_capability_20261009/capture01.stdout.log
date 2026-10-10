@@ -1,0 +1,16 @@
+{
+  "transport_status": "INCOMPLETE",
+  "request_attempts": 6,
+  "response_observations": 5,
+  "error": {
+    "type": "ValueError",
+    "message": "Response echoed request mismatch"
+  },
+  "close_error": null,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

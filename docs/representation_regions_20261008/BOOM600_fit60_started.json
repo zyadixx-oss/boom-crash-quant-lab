@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-10-08T12:46:23.455799+00:00",
+  "train_start": "2025-10-09T11:08:00+00:00",
+  "train_end": "2026-01-25T11:08:00+00:00",
+  "feature_end_exclusive": "2026-02-12T11:08:00+00:00",
+  "declaration_sha256": "939cf7aa31208b89bef012d143b0ff21bd2603c1f0c91e7e8d45339dfa04c388",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

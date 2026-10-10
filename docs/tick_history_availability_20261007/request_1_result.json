@@ -1,0 +1,33 @@
+{
+  "request": {
+    "ticks_history": "BOOM600",
+    "start": 1760008080,
+    "end": 1760008083,
+    "count": 4,
+    "style": "ticks",
+    "req_id": 1
+  },
+  "intent_sha256": "f430a7c2b7be1033d1ad2b1e32ad8825dfef63aa25c1f615c9c113f2fe07da8b",
+  "attempted_at_utc": "2026-10-07T17:46:42.891791+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "wire_sha256": "13e22052447de4d7beba411c5e1eec3f1d8de3f6c26345dc2e51460e775b1a2a",
+  "wire_bytes": 270,
+  "status": "COMPLETE_WINDOW",
+  "observed_rows": 4,
+  "expected_rows": 4,
+  "epochs": [
+    1760008080,
+    1760008081,
+    1760008082,
+    1760008083
+  ],
+  "missing_epochs": [],
+  "first_epoch": 1760008080,
+  "last_epoch": 1760008083,
+  "finished_at_utc": "2026-10-07T17:46:44.021585+00:00"
+}

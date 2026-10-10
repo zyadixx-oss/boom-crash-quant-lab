@@ -1,0 +1,119 @@
+{
+  "stage": "external_source_reproducibility_assessment_not_backtest",
+  "run_utc": "2026-10-07T17:26:22.400282+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "local_research_head": "13cf4f11a053be217104c4d36d4829a02191e516",
+  "external_repository": "Orphy123/deriv-research",
+  "external_commit": "8731c147fda1ed059693eb139b255c97543c732f",
+  "external_tree": "9d4fc76dccba14f41da70b983e53e09322381304",
+  "tree_truncated": false,
+  "tree_entries": 73,
+  "source_acquisition_transport": "GitHub connector, exact decoded UTF8 bytes checked against Git blob SHA1 and sizes",
+  "direct_python_http_attempt": "TLS certificate validation failed before response; no verification disabled; already successful connector reads used",
+  "sources": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/Orphy123/deriv-research/8731c147fda1ed059693eb139b255c97543c732f/README.md",
+      "bytes": 3312,
+      "git_blob_sha1": "b5cb2e63e239d1ec3612b1e2c79ae8ae4cf65454",
+      "sha256": "984e9e973640d4150c31d3fb6cd1635e7d62c9b3b3a86c971503d86ab7fe4eb7",
+      "content_read_only": true
+    },
+    ".gitignore": {
+      "url": "https://raw.githubusercontent.com/Orphy123/deriv-research/8731c147fda1ed059693eb139b255c97543c732f/.gitignore",
+      "bytes": 896,
+      "git_blob_sha1": "aa846087dd441b6c62e76a5ad3059595ecde5e94",
+      "sha256": "157f7630abf994addc58e0f6cc2af348f7725599c582b830f7c74b619d71538b",
+      "content_read_only": true
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/Orphy123/deriv-research/8731c147fda1ed059693eb139b255c97543c732f/LICENSE",
+      "bytes": 1070,
+      "git_blob_sha1": "30cc6737ac3bc56b79d0b485bba91b1f86945eae",
+      "sha256": "fbcad9b80851d214124e7161c24677d4ed986522acb2a382693b7e5ab2f0c19f",
+      "content_read_only": true
+    },
+    "data/analysis/Boom_1000_Index/summary.json": {
+      "url": "https://raw.githubusercontent.com/Orphy123/deriv-research/8731c147fda1ed059693eb139b255c97543c732f/data/analysis/Boom_1000_Index/summary.json",
+      "bytes": 2653,
+      "git_blob_sha1": "8a2c4e37db56f1ae9861de8bdbd6773c23968aeb",
+      "sha256": "ab9ccca014ebc559eb46f72686d9309a479f4242cbcc230eba9865ed202ce2d5",
+      "content_read_only": true
+    },
+    "data/analysis/Crash_1000_Index/summary.json": {
+      "url": "https://raw.githubusercontent.com/Orphy123/deriv-research/8731c147fda1ed059693eb139b255c97543c732f/data/analysis/Crash_1000_Index/summary.json",
+      "bytes": 2667,
+      "git_blob_sha1": "a66c7dfa27d7e6cd39235c895e619d8b1ae573df",
+      "sha256": "a38cce2444a8d67873d48ffecab3960de290c4104d6a325cd15aa44e2b19a9fe",
+      "content_read_only": true
+    },
+    "synthetic_spike_backtest/README.md": {
+      "url": "https://raw.githubusercontent.com/Orphy123/deriv-research/8731c147fda1ed059693eb139b255c97543c732f/synthetic_spike_backtest/README.md",
+      "bytes": 1223,
+      "git_blob_sha1": "c79358afb15b7a0192881e0e93a9111380d0553f",
+      "sha256": "b3fc2e306873b193c965f531b2fd52f832c58c4629d402ec2627e33f35f01e74",
+      "content_read_only": true
+    },
+    "synthetic_spike_backtest/out/summary_20260420_022122.json": {
+      "url": "https://raw.githubusercontent.com/Orphy123/deriv-research/8731c147fda1ed059693eb139b255c97543c732f/synthetic_spike_backtest/out/summary_20260420_022122.json",
+      "bytes": 6193,
+      "git_blob_sha1": "12c5eaf6b2be37042cd5c64d8b5d833192838954",
+      "sha256": "9939fa13f9923482ecd1b485357c051d89b8ebd064b50c6c6700c498ba3d1508",
+      "content_read_only": true
+    },
+    "synthetic_spike_backtest/out/feasibility_20260420_022122.json": {
+      "url": "https://raw.githubusercontent.com/Orphy123/deriv-research/8731c147fda1ed059693eb139b255c97543c732f/synthetic_spike_backtest/out/feasibility_20260420_022122.json",
+      "bytes": 677,
+      "git_blob_sha1": "fd9db2a248aef8267bd2651f221e900c55e8a161",
+      "sha256": "07b4af26d0d35dc43bf0b83c1494c940f117331c21c10eb106fe8b1b14880c61",
+      "content_read_only": true
+    }
+  },
+  "externally_reported_data": {
+    "Boom 1000 Index": {
+      "n_ticks": 7677891,
+      "n_spikes": 7363,
+      "time_from": "2026-01-18 19:58:46.117000+00:00",
+      "time_to": "2026-04-18 19:58:45.119000+00:00"
+    },
+    "Crash 1000 Index": {
+      "n_ticks": 7509682,
+      "n_spikes": 6767,
+      "time_from": "2026-01-18 19:58:51.117000+00:00",
+      "time_to": "2026-04-18 19:58:50.111000+00:00"
+    }
+  },
+  "historical_prices_decoded": false,
+  "external_code_executed": false,
+  "external_results_reproduced": false,
+  "goal_achieved": false,
+  "historical_strategy_candidate": false,
+  "externally_reported_backtest": {
+    "decision": "inconclusive",
+    "observed": {
+      "trades": 4,
+      "baseline_mean_points": -1169.43359375,
+      "stress_mean_points": -1428.680419921875,
+      "positive_month_ratio": 0.0,
+      "max_month_pnl_share": 0.8674321503131524
+    }
+  },
+  "tracked_raw_tick_store_paths": [],
+  "tracked_raw_market_data_files": [],
+  "conference_pdf": {
+    "url": "https://ieomsociety.org/proceedings/2022paraguay/215.pdf",
+    "bytes": 1583095,
+    "sha256": "90e3ad268d2058b0735dfaba053fa1d3300c422ccd3f6543d745811f6ea420cc",
+    "pages": 6,
+    "figure8_cases": 32,
+    "figure8_correct": 23,
+    "figure8_accuracy_percent": 71.9,
+    "prose_observations": 60,
+    "historical_performance_reproduced": false,
+    "raw_trade_ledger_present_in_paper": false
+  }
+}

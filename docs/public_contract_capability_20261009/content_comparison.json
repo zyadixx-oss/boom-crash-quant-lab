@@ -1,0 +1,240 @@
+{
+  "scope": "saved descriptive contents; no predictive or economic recomputation",
+  "source_sha256": {
+    "public_contract_capability_20261009/capture01/received_text_messages.jsonl": "2988a9f6452b4584277841a0e769e483577eb88662c1f9fc3042a77c51911812",
+    "public_contract_capability_20261009/capture01/result.json": "680de493cbb16fa28955e4978a212099703dd73f8d1f27cb769c193774418044",
+    "public_contract_capability_20261009/capture01/declaration.json": "ef2dcac98e475c591eebf57592b3a8bb7cb3d196c14554888ad78046bac77261",
+    "public_contract_capability_20261009/capture02/received_text_messages.jsonl": "dc1f90104a6b774a5e2c8a2c4f697edcb482f4ab444470aad3182c5394df58cb",
+    "public_contract_capability_20261009/capture02/result.json": "8fa33117ccf219428869bd68edccee2cb615abb0583d88ddedbb7f557364b42e",
+    "public_contract_capability_20261009/capture02/declaration.json": "f59dd5028e53c9ca1abaa82c34fc4a02e9da8f77f365185169e58dc48a336f55",
+    "stable_profit_assessment_20261009/assessment.json": "b684b1b7d5af33bd16bc9584225f8991b25ce0432414da03d1962c5b673ab17c"
+  },
+  "offset_comparison": [
+    {
+      "symbol": "BOOM500",
+      "capture01": [
+        "0.0000055478",
+        "0.0000052167",
+        "0.000004911648",
+        "0.000004686538",
+        "0.000004506906"
+      ],
+      "capture02": [
+        "0.0000055478",
+        "0.0000052167",
+        "0.000004911648",
+        "0.000004686538",
+        "0.000004506906"
+      ],
+      "equal_at_these_two_observations_only": true
+    },
+    {
+      "symbol": "CRASH500",
+      "capture01": [
+        "0.0000055395",
+        "0.000005139154",
+        "0.000004814698",
+        "0.000004598554",
+        "0.000004412867"
+      ],
+      "capture02": [
+        "0.0000055395",
+        "0.000005139154",
+        "0.000004814698",
+        "0.000004598554",
+        "0.000004412867"
+      ],
+      "equal_at_these_two_observations_only": true
+    },
+    {
+      "symbol": "BOOM600",
+      "capture01": [
+        "0.0000046081",
+        "0.000004320674",
+        "0.000004066497",
+        "0.000003879776",
+        "0.000003730035"
+      ],
+      "capture02": [
+        "0.0000046081",
+        "0.000004320674",
+        "0.000004066497",
+        "0.000003879776",
+        "0.000003730035"
+      ],
+      "equal_at_these_two_observations_only": true
+    },
+    {
+      "symbol": "CRASH600",
+      "capture01": [
+        "0.0000046014",
+        "0.0000043306",
+        "0.0000040943",
+        "0.0000039223",
+        "0.0000037599"
+      ],
+      "capture02": [
+        "0.0000046014",
+        "0.0000043306",
+        "0.0000040943",
+        "0.0000039223",
+        "0.0000037599"
+      ],
+      "equal_at_these_two_observations_only": true
+    },
+    {
+      "symbol": "R_100",
+      "capture01": [
+        "0.000612552024",
+        "0.000572524639",
+        "0.000536927765",
+        "0.000510672886",
+        "0.000486253948"
+      ],
+      "capture02": [
+        "0.000612552024",
+        "0.000572524639",
+        "0.000536927765",
+        "0.000510672886",
+        "0.000486253948"
+      ],
+      "equal_at_these_two_observations_only": true
+    }
+  ],
+  "capture02_proposals": [
+    {
+      "symbol": "BOOM500",
+      "contract_type": "MULTUP",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.09",
+        "multiplier": "100",
+        "spot": "5751.51",
+        "spot_time": "1791590403",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "BOOM500",
+      "contract_type": "MULTDOWN",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.09",
+        "multiplier": "100",
+        "spot": "5751.51",
+        "spot_time": "1791590403",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "CRASH500",
+      "contract_type": "MULTUP",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.09",
+        "multiplier": "100",
+        "spot": "2948.188",
+        "spot_time": "1791590404",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "CRASH500",
+      "contract_type": "MULTDOWN",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.09",
+        "multiplier": "100",
+        "spot": "2948.188",
+        "spot_time": "1791590404",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "BOOM600",
+      "contract_type": "MULTUP",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.08",
+        "multiplier": "100",
+        "spot": "5121.585",
+        "spot_time": "1791590404",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "BOOM600",
+      "contract_type": "MULTDOWN",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.08",
+        "multiplier": "100",
+        "spot": "5121.584",
+        "spot_time": "1791590405",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "CRASH600",
+      "contract_type": "MULTUP",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.08",
+        "multiplier": "100",
+        "spot": "23240.331",
+        "spot_time": "1791590405",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "CRASH600",
+      "contract_type": "MULTDOWN",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.08",
+        "multiplier": "100",
+        "spot": "23240.331",
+        "spot_time": "1791590405",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "R_100",
+      "contract_type": "MULTUP",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.15",
+        "multiplier": "40",
+        "spot": "621.37",
+        "spot_time": "1791590404",
+        "payout": "0"
+      }
+    },
+    {
+      "symbol": "R_100",
+      "contract_type": "MULTDOWN",
+      "observed_values": {
+        "ask_price": "10",
+        "commission": "0.15",
+        "multiplier": "40",
+        "spot": "621.23",
+        "spot_time": "1791590406",
+        "payout": "0"
+      }
+    }
+  ],
+  "prior_assessment_model_or_rule_rows": 96,
+  "prior_assessment_strict_positive_model_or_rule_rows": 18,
+  "prior_assessment_necessary_conjunction_passed": 0,
+  "predictive_tested": false,
+  "profit_tested": false,
+  "actual_fills_verified": false,
+  "historical_cfd_costs_verified": false,
+  "permanently_constant_offsets_proven": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

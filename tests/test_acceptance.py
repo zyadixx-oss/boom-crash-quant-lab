@@ -6,6 +6,6 @@ def test_required_project_surfaces_exist():
 
 def test_no_live_trade_endpoint_or_true_safety_default():
     text=(ROOT/'backend/app/main.py').read_text()+ (ROOT/'.env.example').read_text()
-    assert 'LIVE_TRADING=false' in text
-    assert 'live_allowed=false' in text
+    for flag in ('LIVE_TRADING', 'READY_FOR_LIVE', 'LIVE_ALLOWED', 'OPENED_TRADES'):
+        assert f'{flag}=false' in text
     assert "@app.post('/buy')" not in text and "@app.post('/trade')" not in text

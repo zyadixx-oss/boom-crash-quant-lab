@@ -1,0 +1,13 @@
+BOOM600/development: fixed12definitions/2endpoints measured
+BOOM600/wf1: fixed12definitions/2endpoints measured
+BOOM600/wf2: fixed12definitions/2endpoints measured
+BOOM600/wf3: fixed12definitions/2endpoints measured
+BOOM600/final_test: fixed12definitions/2endpoints measured
+BOOM600/later180: fixed12definitions/2endpoints measured
+CRASH600/development: fixed12definitions/2endpoints measured
+CRASH600/wf1: fixed12definitions/2endpoints measured
+CRASH600/wf2: fixed12definitions/2endpoints measured
+CRASH600/wf3: fixed12definitions/2endpoints measured
+CRASH600/final_test: fixed12definitions/2endpoints measured
+CRASH600/later180: fixed12definitions/2endpoints measured
+{"path": "docs/zone_excursions_20261008/results.json.gz", "sha256": "720f00f916473a131b1a9e88f652754c6fff8d6d6e9f6f5f3cf50dc038a02971", "uncompressed_sha256": "7da058525887a78cded57f599fa32a54667211eb450bed2fe388d7a413a33100", "uncompressed_bytes": 5803611}

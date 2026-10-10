@@ -1,0 +1,1 @@
+{"echo_req":{"count":4,"end":1760008083,"req_id":3,"start":1760008080,"style":"ticks","ticks_history":"CRASH600"},"history":{"prices":[18748.778,18748.786,18748.801,18748.811],"times":[1760008080,1760008081,1760008082,1760008083]},"msg_type":"history","pip_size":3,"req_id":3}

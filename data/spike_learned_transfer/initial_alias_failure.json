@@ -1,0 +1,50 @@
+{
+  "session_id": 53208,
+  "exit_code": 1,
+  "config": {
+    "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+    "days": 180,
+    "symbols": [
+      "BOOM300",
+      "CRASH300"
+    ],
+    "requested_start_epoch": 1760008080,
+    "cutoff_exclusive_epoch": 1775560080,
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    }
+  },
+  "summary": {
+    "config": {
+      "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+      "days": 180,
+      "symbols": [
+        "BOOM300",
+        "CRASH300"
+      ],
+      "requested_start_epoch": 1760008080,
+      "cutoff_exclusive_epoch": 1775560080,
+      "safety": {
+        "LIVE_TRADING": false,
+        "READY_FOR_LIVE": false,
+        "LIVE_ALLOWED": false,
+        "OPENED_TRADES": false
+      }
+    },
+    "successful_symbols": [],
+    "errors": [
+      {
+        "symbol": "BOOM300",
+        "error": "RuntimeError: Symbol unavailable: BOOM300"
+      },
+      {
+        "symbol": "CRASH300",
+        "error": "RuntimeError: Symbol unavailable: CRASH300"
+      }
+    ]
+  },
+  "resolution": "Official active_symbols identifies Boom 300 Index as BOOM300N and Crash 300 Index as CRASH300N; unchanged collector rerun with canonical public identifiers."
+}

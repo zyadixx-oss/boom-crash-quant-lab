@@ -1,0 +1,65 @@
+COMMAND ["/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/.venv/bin/python", "-m", "pytest", "-o", "addopts=", "-q", "docs/nonlinear_region_20261010/test_learning.py", "docs/nonlinear_region_20261010/test_runner.py", "docs/nonlinear_region_20261010/test_review_study.py"]
+.............................................................................................. [ 95%]
+....                                                                     [100%]
+98 passed, 50 subtests passed in 5.04s
+EXIT 0
+COMMAND ["/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/.venv/bin/python", "docs/nonlinear_region_20261010/verify_saved.py", "--self-test"]
+test_all_false_and_missing_safety (__main__.BoundaryTests.test_all_false_and_missing_safety) ... ok
+test_ci_boundary_unknown_and_reversed (__main__.BoundaryTests.test_ci_boundary_unknown_and_reversed) ... ok
+test_csv_rows_handle_embedded_newline_and_tamper (__main__.BoundaryTests.test_csv_rows_handle_embedded_newline_and_tamper) ... ok
+test_exact_cells_duplicate_or_unexpected_rejected (__main__.BoundaryTests.test_exact_cells_duplicate_or_unexpected_rejected) ... ok
+test_full_saved_gate_accepts_below_one_point_one_but_not_one_or_zero_mean (__main__.BoundaryTests.test_full_saved_gate_accepts_below_one_point_one_but_not_one_or_zero_mean) ... ok
+test_hash_mutation_missing_file_and_path_escape (__main__.BoundaryTests.test_hash_mutation_missing_file_and_path_escape) ... ok
+test_holm_exact_boundaries (__main__.BoundaryTests.test_holm_exact_boundaries) ... ok
+test_required_reference_unknown_cannot_be_dropped (__main__.BoundaryTests.test_required_reference_unknown_cannot_be_dropped) ... ok
+test_strict_point_boundary_and_no_one_point_one_floor (__main__.BoundaryTests.test_strict_point_boundary_and_no_one_point_one_floor) ... ok
+test_unknown_and_no_fill_never_zero_and_purge (__main__.BoundaryTests.test_unknown_and_no_fill_never_zero_and_purge) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.004s
+
+OK
+EXIT 0
+COMMAND ["/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/.venv/bin/python", "docs/nonlinear_region_20261010/verify_saved.py", "--output", "docs/nonlinear_region_20261010/local_saved_validation.json"]
+{
+  "status": "PASS",
+  "checks": 4011,
+  "errors": [],
+  "declaration_sha256": "35756c799689ef6a03f76e3aeda86a4568994a328f79af13685a929f91bee09c",
+  "result_sha256": "4664f8d2ad7282acf1336e449efa6376f467452d86df8a3b2e70a83ab04cf4d7",
+  "independent_audit_path": "docs/nonlinear_region_20261010/independent_audit_final.json",
+  "independent_audit_sha256": "dcb6ef38f3ee3635f56cd467bf3179fe5f68604a77246d1d7615e0cbf223df4c",
+  "saved_files_hashed": 257,
+  "saved_csv_tables_checked": 178,
+  "result_cells": 60,
+  "parent_reference_clones": 36,
+  "new_fit_state_artifacts": 8,
+  "paired_boosters": 16,
+  "heldout_saved_number_gates": 8,
+  "training_labels_including_overlapping_prefixes": 27456,
+  "raw_tick_and_feature_files_not_read": 738,
+  "scope": "pinned_saved_bytes_CSV_counts_training_label_categories_and_target_identity_model_digests_parent_reference_clones_dates_references_saved_number_gates_Holm_and_completed_independent_audit_lineage_only",
+  "original_quote_paths_or_feature_formulas_recomputed": false,
+  "training_arithmetic_or_bootstrap_CIs_recomputed": false,
+  "saved_statistics_gates_and_Holm_recomputed": true,
+  "independent_audit_scope": "exact_parent_cache_labels_references_training_matrix_target_model_identity_training_bins_routed_tree_residual_arithmetic_cutoff_independent_prediction_issuance_native_tick_paths_netR_point_metrics_day_week_CIs_drawdown_thirds_Holm_development_and_stable_positive_gates",
+  "independent_audit_omissions": [
+    "full_optimal_split_search_and_tie_optimality",
+    "original44_feature_formulas_and_intrinsic_validity",
+    "parent_training_quote_paths_this_run",
+    "reference_quote_paths_this_run"
+  ],
+  "fresh_out_of_sample": false,
+  "QUALIFIED": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "validator_sha256": "851f11d720df7769539dfc5d5ee589184cc1f192ae5281f54d2fe9a22ea7a632"
+}
+EXIT 0
+COMMAND ["/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/.venv/bin/python", "docs/nonlinear_region_20261010/summarize.py", "--audit", "docs/nonlinear_region_20261010/independent_audit_final.json", "--audit-sha256", "dcb6ef38f3ee3635f56cd467bf3179fe5f68604a77246d1d7615e0cbf223df4c", "--check"]
+PASS: REPORT.ar.md and all 60 summary.csv cells reproduce exactly
+EXIT 0

@@ -1,0 +1,11 @@
+{
+  "stage": "STARTED",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "selection_sha256": "8e3d6f0b3a169e9152ab985b765358c1f8fd0be3fedd7b6750b1e2652d41d402",
+  "started_utc": "2026-10-06 13:10:53.270642+00:00"
+}

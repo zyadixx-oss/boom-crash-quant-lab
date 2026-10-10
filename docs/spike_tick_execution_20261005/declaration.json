@@ -1,0 +1,179 @@
+{
+  "stage": "tick_execution_preacquisition",
+  "run_utc": "2026-10-05T14:37:01.546002+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "dates": [
+    "2026-04-11",
+    "2026-04-26",
+    "2026-05-12",
+    "2026-05-28",
+    "2026-06-13",
+    "2026-06-29",
+    "2026-07-15",
+    "2026-07-31",
+    "2026-08-16",
+    "2026-09-01",
+    "2026-09-17",
+    "2026-10-03"
+  ],
+  "symbols": [
+    "BOOM600",
+    "CRASH600"
+  ],
+  "config": {
+    "stop_atr": 2.0,
+    "max_hold_minutes": 15,
+    "entry_delay_minutes": 1,
+    "round_trip_cost_atr": 0.1,
+    "max_gap_seconds": 1,
+    "stop_latency_ticks": 1
+  },
+  "bootstrap_repeats": 9999,
+  "code_hashes": {
+    "docs/SPIKE_TICK_EXECUTION_PROTOCOL.md": "67e237f7c7ac313eec8fafcc1a8f79f366930a69d7b2feee0a90cb49c84f80dd",
+    "scripts/run_spike_tick_execution.py": "1612d645e09e9104dd251e7751e2c3adb28123a4533dbf3e911a5d6c3cdd039c",
+    "backend/app/research/payoff_ticks.py": "2f1f90b2dd2de07a5b7891d8a5e27669163034e87a74bdf9a7d6cbf6aeb7b7af",
+    "backend/tests/test_payoff_ticks.py": "ef504ed6f4e3d01f5eeef02d0f6de65d09497e927d1fc341d981d168d868a281",
+    "scripts/collect_spike_ticks.py": "087b071e28b948cd45e8d58bf03b370c42ac70827fc6010ace544c60ec9204a7",
+    "backend/tests/test_tick_collector.py": "e878530a82bc9f1da1a906be9fc36d9ead78594a20df0c24c39ffd199e5ba60a",
+    "backend/tests/test_spike_tick_execution.py": "bce14fa21128d9e1bb022a531f14d56182e9f789d3466b30c1c2cfb5ccc837f2"
+  },
+  "round6_selection_sha256": "87771bfd480033b1ecde0783ad6b9318b6338e2c41c855dcb1b8a344021b37e0",
+  "round6_source_files": {
+    "docs/spike_nonlinear_20261005/results.json": "4d00095faaa6b839452bcf61ad3cdd984a9bf1f632c7ece768f83ae52355e180",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_BOOST44_SPIKE_signals.csv": "fe4dabf7555669e143b5d719ed53f2d9a98afe2066f1d82f60ce72b629b4e599",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_BOOST44_SPIKE_trades.csv": "179dd0862844c76f3ce982fb2a547780218b3a58652e630d0550e3e9f385b41c",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE44_SPIKE_signals.csv": "a1f7b96dace4456c34b9ce2b87f1376d57012ac1656b206e327cd060d9675326",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE44_SPIKE_trades.csv": "b048f2633d0a8fcceecd11f92f9520ba647b86aedde16b38e09589532cf6a6aa",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE19_SPIKE_signals.csv": "cb0991bf1face0a1973294ada4743e8e6745857bfe9e8579b554f42d5cfb0b9e",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE19_SPIKE_trades.csv": "e2b2b585ced50c18ff9a3de9126abe02775f786b0fc7e8c4c91d42bbf022fffc",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_BOOST44_DRIFT_signals.csv": "89096a6ecd5a4f20c5b3ceba10460112a943a350a10b37ed41523f21f19ddd9f",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_BOOST44_DRIFT_trades.csv": "718b7e58f822b5ddd2de81debe79a94a62c5a6d5eb8ac48f4ba4093147421db9",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE44_DRIFT_signals.csv": "f7457d72b1c9dfc4d1e8fc21ebafa2e0f70af8cac1c90180a7c0cfd8551b48f8",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE44_DRIFT_trades.csv": "ceb8ec49aa3dd6ab06435ef23f92a91849dc590a189abee24007ed3c0abd72f7",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE19_DRIFT_signals.csv": "0867ed6432fc7d100146de4180bb6e15a3c2f36266ea192555e92da67c1202be",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE19_DRIFT_trades.csv": "19933deed307266a21c5b1b68711fcac295156fb704f3a2c7555e003219bacad",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_BOOST44_SPIKE_signals.csv": "4aa7c38a477a5823995a1fb2b9f7d0c8a08e2e023453e71edc491a72d103cd0e",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_BOOST44_SPIKE_trades.csv": "9dc47302c0684d9325352b72a1c4dd898262878787f0ffdfb84cf416732c057c",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE44_SPIKE_signals.csv": "b8e5a1511f0c9d96b46064778e8e314f2aa5507aa7ea8de6283b4794b95bcf09",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE44_SPIKE_trades.csv": "7f52114397a24310eaaeacb73c0638138c91b5ef4f4e72d7e1cac4d120f9f470",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE19_SPIKE_signals.csv": "ff56f04bd434366e129be613ca0526373d10648aebbd373e167f2799775a5afa",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE19_SPIKE_trades.csv": "72a38136c880ef27a2e4e09c247306e2731213c832d1cc2d6ee55bc19f504199",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_BOOST44_DRIFT_signals.csv": "80df8573ebc6aa4c622497d76a3f1a4c1e9afa9832ba105b09f8f254371b9f7e",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_BOOST44_DRIFT_trades.csv": "1013fde840d52f9ae1ccc96afd4545a61569b7ac9cd81d285639f836543bfad1",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE44_DRIFT_signals.csv": "b170a5c249b871b6a5bbc572578b5942b36f98add95de4fa12d0b3efb610db4c",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE44_DRIFT_trades.csv": "53a2de3da11eb6ac2fe47d96c5642f5a303b83670935818af995c0db87e0454f",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE19_DRIFT_signals.csv": "409a677c1a0a9a951a3d420c17cbf7aaf3094c833bfa6e66e3792d749b78e6c7",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE19_DRIFT_trades.csv": "ee971845818f9134f94862c9528135ba66a47a3590e005d4961975ea22e5577d"
+  },
+  "sampled_signals": {
+    "BOOM600": {
+      "CLOCK_SPIKE": {
+        "path": "docs/spike_tick_execution_20261005/BOOM600_CLOCK_SPIKE_signals.csv",
+        "sha256": "c3b5edcbe42998106190380ddac0affeedb71edf44cf301230d8d811144bf712",
+        "rows": 576
+      },
+      "BOOST44_SPIKE": {
+        "path": "docs/spike_tick_execution_20261005/BOOM600_BOOST44_SPIKE_signals.csv",
+        "sha256": "e53bda51aecc5ba724afbd7f85a5fb7fe2d6fbee1409e60cf068a070cd959ca2",
+        "rows": 90,
+        "development_eligible": false
+      },
+      "RIDGE44_SPIKE": {
+        "path": "docs/spike_tick_execution_20261005/BOOM600_RIDGE44_SPIKE_signals.csv",
+        "sha256": "089fc2834f69896b46bf9b945d990f58bff8f2a36fc1aceda2333bac3bff4dd9",
+        "rows": 61,
+        "development_eligible": false
+      },
+      "RIDGE19_SPIKE": {
+        "path": "docs/spike_tick_execution_20261005/BOOM600_RIDGE19_SPIKE_signals.csv",
+        "sha256": "e2ce3f225a80c2554e447b104ee9984218ae26695ad0b7467849829250c05c0a",
+        "rows": 36,
+        "development_eligible": false
+      },
+      "CLOCK_DRIFT": {
+        "path": "docs/spike_tick_execution_20261005/BOOM600_CLOCK_DRIFT_signals.csv",
+        "sha256": "b290de27c7c502ea7d6df95d5b150ccf44a5809c23452e8a867c975e3d47c46c",
+        "rows": 576
+      },
+      "BOOST44_DRIFT": {
+        "path": "docs/spike_tick_execution_20261005/BOOM600_BOOST44_DRIFT_signals.csv",
+        "sha256": "13d3e5921eaa69621efc6feef4fdfb6cf9a7b179cea02f3161a9c4629506a91a",
+        "rows": 118,
+        "development_eligible": false
+      },
+      "RIDGE44_DRIFT": {
+        "path": "docs/spike_tick_execution_20261005/BOOM600_RIDGE44_DRIFT_signals.csv",
+        "sha256": "c0b3b7f4a34d6051d938d6faa42a4ecfc352b0c656d7ab00d7daa70f004c0396",
+        "rows": 51,
+        "development_eligible": false
+      },
+      "RIDGE19_DRIFT": {
+        "path": "docs/spike_tick_execution_20261005/BOOM600_RIDGE19_DRIFT_signals.csv",
+        "sha256": "442029a3971286280022d934de25ebd0eddad306b7e826130d8438c3a33a6a5b",
+        "rows": 18,
+        "development_eligible": false
+      }
+    },
+    "CRASH600": {
+      "CLOCK_SPIKE": {
+        "path": "docs/spike_tick_execution_20261005/CRASH600_CLOCK_SPIKE_signals.csv",
+        "sha256": "2edad5ac709366c21cfc6ce96c5fa9a51bd6f26529c9f90754941467cbd6e669",
+        "rows": 576
+      },
+      "BOOST44_SPIKE": {
+        "path": "docs/spike_tick_execution_20261005/CRASH600_BOOST44_SPIKE_signals.csv",
+        "sha256": "db6353d6e5e6cd8fc8a303eee3271d139705284f68a1e2dc69299d8f27ad1754",
+        "rows": 100,
+        "development_eligible": false
+      },
+      "RIDGE44_SPIKE": {
+        "path": "docs/spike_tick_execution_20261005/CRASH600_RIDGE44_SPIKE_signals.csv",
+        "sha256": "efb44628549a83a411251767dd14283e31a6a0783495efe035fb474cf5f23d66",
+        "rows": 56,
+        "development_eligible": false
+      },
+      "RIDGE19_SPIKE": {
+        "path": "docs/spike_tick_execution_20261005/CRASH600_RIDGE19_SPIKE_signals.csv",
+        "sha256": "0805dde7adc26ce4b2b03c0c8f12d0b6f318e9e0bcf9e260e3e03bb5634831c8",
+        "rows": 21,
+        "development_eligible": false
+      },
+      "CLOCK_DRIFT": {
+        "path": "docs/spike_tick_execution_20261005/CRASH600_CLOCK_DRIFT_signals.csv",
+        "sha256": "0dc01953044eb8da5adc3011ca1496321771f52b9c3216b6ac857a4229ca613c",
+        "rows": 576
+      },
+      "BOOST44_DRIFT": {
+        "path": "docs/spike_tick_execution_20261005/CRASH600_BOOST44_DRIFT_signals.csv",
+        "sha256": "50a5264008d23adc459ea52526e862d18aaaca8adde6f38c448437f3ab16bca3",
+        "rows": 129,
+        "development_eligible": false
+      },
+      "RIDGE44_DRIFT": {
+        "path": "docs/spike_tick_execution_20261005/CRASH600_RIDGE44_DRIFT_signals.csv",
+        "sha256": "fc85d45c2368334387ad4afac199b50871855459c265c5dede7c806d46fee8d6",
+        "rows": 117,
+        "development_eligible": false
+      },
+      "RIDGE19_DRIFT": {
+        "path": "docs/spike_tick_execution_20261005/CRASH600_RIDGE19_DRIFT_signals.csv",
+        "sha256": "27bdd0b526580df26bc57e6207880448c8f6d787825696ebd6f193b6b204deab",
+        "rows": 48,
+        "development_eligible": false
+      }
+    }
+  },
+  "tick_outcomes_evaluated": false,
+  "raw_ticks_collected": false,
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "page_size": 1000,
+  "modeled_cost_not_measured": true,
+  "max_opportunities_per_model": 576,
+  "study_kind": "adaptive_historical_sampled_execution_diagnosis_not_profit_validation"
+}

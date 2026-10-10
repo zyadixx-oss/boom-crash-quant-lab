@@ -1,0 +1,153 @@
+{
+  "schema": 1,
+  "finished_at_utc": "2026-10-07T17:46:45.682049+00:00",
+  "declaration_sha256": "76bccb57ba6d128703bcbab29b4ffeada9f42594892bc98b53ea0f593c2b3b20",
+  "records": [
+    {
+      "request": {
+        "ticks_history": "BOOM600",
+        "start": 1760008080,
+        "end": 1760008083,
+        "count": 4,
+        "style": "ticks",
+        "req_id": 1
+      },
+      "intent_sha256": "f430a7c2b7be1033d1ad2b1e32ad8825dfef63aa25c1f615c9c113f2fe07da8b",
+      "attempted_at_utc": "2026-10-07T17:46:42.891791+00:00",
+      "safety": {
+        "LIVE_TRADING": false,
+        "READY_FOR_LIVE": false,
+        "LIVE_ALLOWED": false,
+        "OPENED_TRADES": false
+      },
+      "wire_sha256": "13e22052447de4d7beba411c5e1eec3f1d8de3f6c26345dc2e51460e775b1a2a",
+      "wire_bytes": 270,
+      "status": "COMPLETE_WINDOW",
+      "observed_rows": 4,
+      "expected_rows": 4,
+      "epochs": [
+        1760008080,
+        1760008081,
+        1760008082,
+        1760008083
+      ],
+      "missing_epochs": [],
+      "first_epoch": 1760008080,
+      "last_epoch": 1760008083,
+      "finished_at_utc": "2026-10-07T17:46:44.021585+00:00",
+      "record_sha256": "b6da2c7c40a2068bd1ad50daa7da171f80db208c331798e153166fe74a2b1eb2"
+    },
+    {
+      "request": {
+        "ticks_history": "BOOM600",
+        "start": 1767225600,
+        "end": 1767225603,
+        "count": 4,
+        "style": "ticks",
+        "req_id": 2
+      },
+      "intent_sha256": "32927aba44e2a50edfdec46b4d7954b860bd7f54457a53762d775a83bd68951e",
+      "attempted_at_utc": "2026-10-07T17:46:44.022181+00:00",
+      "safety": {
+        "LIVE_TRADING": false,
+        "READY_FOR_LIVE": false,
+        "LIVE_ALLOWED": false,
+        "OPENED_TRADES": false
+      },
+      "wire_sha256": "0d4021bd890fd2c8063a2ab8c065e525e2314ee16c79098621b84750e3f1285f",
+      "wire_bytes": 271,
+      "status": "COMPLETE_WINDOW",
+      "observed_rows": 4,
+      "expected_rows": 4,
+      "epochs": [
+        1767225600,
+        1767225601,
+        1767225602,
+        1767225603
+      ],
+      "missing_epochs": [],
+      "first_epoch": 1767225600,
+      "last_epoch": 1767225603,
+      "finished_at_utc": "2026-10-07T17:46:44.556756+00:00",
+      "record_sha256": "9e3f0d54b94590e4145b443d098d077f3c467c163f3f2fdeac8de65beba2c43f"
+    },
+    {
+      "request": {
+        "ticks_history": "CRASH600",
+        "start": 1760008080,
+        "end": 1760008083,
+        "count": 4,
+        "style": "ticks",
+        "req_id": 3
+      },
+      "intent_sha256": "7f69272e51136cd47306b3b245f47e2a763a5ec9b64a7bbc5037b8aacc7d4e16",
+      "attempted_at_utc": "2026-10-07T17:46:44.557612+00:00",
+      "safety": {
+        "LIVE_TRADING": false,
+        "READY_FOR_LIVE": false,
+        "LIVE_ALLOWED": false,
+        "OPENED_TRADES": false
+      },
+      "wire_sha256": "fb5f4195c33c102d79553a0a44974404a8a224eda25f6f394ade1360722efbe2",
+      "wire_bytes": 276,
+      "status": "COMPLETE_WINDOW",
+      "observed_rows": 4,
+      "expected_rows": 4,
+      "epochs": [
+        1760008080,
+        1760008081,
+        1760008082,
+        1760008083
+      ],
+      "missing_epochs": [],
+      "first_epoch": 1760008080,
+      "last_epoch": 1760008083,
+      "finished_at_utc": "2026-10-07T17:46:44.886230+00:00",
+      "record_sha256": "4bf65a7d979f12044b4fa5145e58258232902176ef9e84108d8d57ddb68c3023"
+    },
+    {
+      "request": {
+        "ticks_history": "CRASH600",
+        "start": 1767225600,
+        "end": 1767225603,
+        "count": 4,
+        "style": "ticks",
+        "req_id": 4
+      },
+      "intent_sha256": "0665cbee5c3d813059b89b7d341c218b92968230b83f856a51917cac201e13c6",
+      "attempted_at_utc": "2026-10-07T17:46:44.887515+00:00",
+      "safety": {
+        "LIVE_TRADING": false,
+        "READY_FOR_LIVE": false,
+        "LIVE_ALLOWED": false,
+        "OPENED_TRADES": false
+      },
+      "wire_sha256": "9985074dcec14cb13338ac13768f328f607e567253c76645172b9a0b93d322f8",
+      "wire_bytes": 276,
+      "status": "COMPLETE_WINDOW",
+      "observed_rows": 4,
+      "expected_rows": 4,
+      "epochs": [
+        1767225600,
+        1767225601,
+        1767225602,
+        1767225603
+      ],
+      "missing_epochs": [],
+      "first_epoch": 1767225600,
+      "last_epoch": 1767225603,
+      "finished_at_utc": "2026-10-07T17:46:45.470707+00:00",
+      "record_sha256": "8556edc4d07b66280116ad0dddf4beec9f217c551a1220bc550252880c2f55f7"
+    }
+  ],
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "complete_windows": 4,
+  "full_continuous_tick_coverage": "NOT TESTED",
+  "strategy_payoff": "NOT TESTED",
+  "cash_profit": "NOT TESTED"
+}

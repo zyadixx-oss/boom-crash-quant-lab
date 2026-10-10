@@ -1,0 +1,37 @@
+{
+  "scope": "public mutable-master schema byte snapshots; no account or API market requests",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/deriv-com/deriv-api-schemas/master/schemas/contracts_for_request.schema.json",
+      "retrieved_utc": "2026-10-09T10:05:59.447693+00:00",
+      "http_status": 200,
+      "bytes": 851,
+      "sha256": "544e1f971d87ab606b2432724bec1ea5bb1a97d5c5a2446722a6ff9c72e978f9",
+      "filename": "contracts_for_request.schema.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/deriv-com/deriv-api-schemas/master/schemas/contracts_for_response.schema.json",
+      "retrieved_utc": "2026-10-09T10:05:59.973757+00:00",
+      "http_status": 200,
+      "bytes": 6178,
+      "sha256": "cebbf1b1de0deae297e597c820a8bf32c4c9a30fbc8daca892edabdb5fc5e199",
+      "filename": "contracts_for_response.schema.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/deriv-com/deriv-api-schemas/master/schemas/proposal_request.schema.json",
+      "retrieved_utc": "2026-10-09T10:06:00.461665+00:00",
+      "http_status": 200,
+      "bytes": 5835,
+      "sha256": "21163dbe0ac64a04d14187c7c332aae5ce9702649f68874315b63f505b4d7c62",
+      "filename": "proposal_request.schema.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/deriv-com/deriv-api-schemas/master/schemas/proposal_response.schema.json",
+      "retrieved_utc": "2026-10-09T10:06:01.009628+00:00",
+      "http_status": 200,
+      "bytes": 14807,
+      "sha256": "295c704a8885c31042f5be513ba989981e365f7d0d93f3432f8282e1d03b8640",
+      "filename": "proposal_response.schema.json"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+signal_time,activation_time,wait_end,maximum_end,touch_time,entry_time,exit_time,trigger_time,missing_time,variant,zone_id,side,zone_low,zone_high,invalidation,issue_price,atr,entry,exit,status,reason,censored,ambiguous,gross_R,net_R,holding_minutes
+2026-01-10 10:00:00+00:00,2026-01-10 10:01:00+00:00,2026-01-10 10:15:00+00:00,2026-01-10 10:30:01+00:00,,,2026-01-10 10:15:00+00:00,,,CRT_RETEST,crash:CRT_RETEST:2026-01-10T10:00:00+00:00,-1,21814.8615,21816.674,21821.20525,21768.072,18.12500000000026,,,expired,no_observed_touch,False,False,,,

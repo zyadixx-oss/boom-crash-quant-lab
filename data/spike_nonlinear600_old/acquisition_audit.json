@@ -1,0 +1,128 @@
+{
+  "source": "Official Deriv public WebSocket ticks_history",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "collector_file": "scripts/collect_spike_history.py",
+  "collector_sha256": "b0b4ff7df6c86ca098e8cd8b001e8c7129e43f9ccfe66c3f45d5f27e3669f300",
+  "requested_days": 180,
+  "requested_start_epoch": 1760008080,
+  "requested_cutoff_exclusive_epoch": 1775560080,
+  "requested_start_utc": "2025-10-09T11:08:00+00:00",
+  "requested_cutoff_exclusive_utc": "2026-04-07T11:08:00+00:00",
+  "symbols": [
+    {
+      "symbol": "BOOM600",
+      "display_name": "Boom 600 Index",
+      "raw_file": "data/spike_nonlinear600_old/boom600_m1_180d.csv",
+      "clean_file": "data/spike_nonlinear600_old/boom600_m1_180d_clean.csv",
+      "raw_sha256": "ad678600539df1b7fa1bd491d962783ce2e2dfb2c35a0071c940b6edcad51a6d",
+      "clean_sha256": "ad678600539df1b7fa1bd491d962783ce2e2dfb2c35a0071c940b6edcad51a6d",
+      "raw_rows": 259200,
+      "clean_rows": 259200,
+      "raw_equals_clean_bytes": true,
+      "expected_rows": 259200,
+      "coverage_fraction": 1.0,
+      "first_epoch": 1760008080,
+      "last_epoch": 1775560020,
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "last_utc": "2026-04-07T11:07:00+00:00",
+      "missing_rows": 0,
+      "missing_epochs": [],
+      "raw_off_grid_epochs": [],
+      "excluded_rows": 0,
+      "page_count": 260,
+      "request_errors": [
+        {
+          "end": 1769500079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1769440079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1769380079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1769320079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        }
+      ],
+      "request_error_count": 4,
+      "canonical_utc_minute_grid": true,
+      "finite_positive_valid_ohlc": true,
+      "strictly_ascending_unique_epochs": true,
+      "raw_canonical_prices_preserved": true,
+      "requested_grid_complete": true,
+      "raw_sha256_preserved_during_metadata_portability": true
+    },
+    {
+      "symbol": "CRASH600",
+      "display_name": "Crash 600 Index",
+      "raw_file": "data/spike_nonlinear600_old/crash600_m1_180d.csv",
+      "clean_file": "data/spike_nonlinear600_old/crash600_m1_180d_clean.csv",
+      "raw_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+      "clean_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+      "raw_rows": 259200,
+      "clean_rows": 259200,
+      "raw_equals_clean_bytes": true,
+      "expected_rows": 259200,
+      "coverage_fraction": 1.0,
+      "first_epoch": 1760008080,
+      "last_epoch": 1775560020,
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "last_utc": "2026-04-07T11:07:00+00:00",
+      "missing_rows": 0,
+      "missing_epochs": [],
+      "raw_off_grid_epochs": [],
+      "excluded_rows": 0,
+      "page_count": 260,
+      "request_errors": [],
+      "request_error_count": 0,
+      "canonical_utc_minute_grid": true,
+      "finite_positive_valid_ohlc": true,
+      "strictly_ascending_unique_epochs": true,
+      "raw_canonical_prices_preserved": true,
+      "requested_grid_complete": true,
+      "raw_sha256_preserved_during_metadata_portability": true
+    }
+  ],
+  "all_requested_grids_complete": true,
+  "authentication_used": false,
+  "allowed_request_types": [
+    "active_symbols",
+    "ticks_history"
+  ],
+  "account_or_order_requests": false,
+  "features_or_payoffs_computed": false,
+  "features_or_payoffs_computed_scope": "Acquisition and byte/grid audit only; later study evaluation is separate.",
+  "fills_or_interpolations": false,
+  "forward_test": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "global_unseen_outcomes_claimed": false,
+  "metadata_paths_portable_repository_relative": true,
+  "audit_at_utc": "2026-10-05T09:58:58.653023+00:00",
+  "lifecycle": [
+    {
+      "session_id": 85122,
+      "exit_code": 1,
+      "purpose": "Initial dual-symbol collection; BOOM600 completed, CRASH600 reconnect handshake timeout"
+    },
+    {
+      "session_id": 7602,
+      "exit_code": 0,
+      "purpose": "Unchanged collector complete CRASH600-only retry; no data splicing"
+    }
+  ],
+  "initial_failure_preserved": "data/spike_nonlinear600_old/acquisition_summary.json",
+  "retry_acquisition_summary": "data/spike_nonlinear600_old/retry_crash600/acquisition_summary.json"
+}
