@@ -1,0 +1,38 @@
+test_bare_or_other_unit_duration_unknown (test_probe.Boundaries.test_bare_or_other_unit_duration_unknown) ... ok
+test_barrier_or_non_tick_record_rejected (test_probe.Boundaries.test_barrier_or_non_tick_record_rejected) ... ok
+test_boolean_catalogue_id_rejected (test_probe.Boundaries.test_boolean_catalogue_id_rejected) ... ok
+test_conflicting_multiplier_records_unknown (test_probe.Boundaries.test_conflicting_multiplier_records_unknown) ... ok
+test_copy_smallest_advertised_multiplier (test_probe.Boundaries.test_copy_smallest_advertised_multiplier) ... ok
+test_duplicate_keys_nonfinite_binary_rejected (test_probe.Boundaries.test_duplicate_keys_nonfinite_binary_rejected) ... ok
+test_duration_not_inside_interval (test_probe.Boundaries.test_duration_not_inside_interval) ... ok
+test_equivalent_multiplier_records_valid (test_probe.Boundaries.test_equivalent_multiplier_records_valid) ... ok
+test_exact_catalogue_matrix (test_probe.Boundaries.test_exact_catalogue_matrix) ... ok
+test_extra_proposal_fields_rejected (test_probe.Boundaries.test_extra_proposal_fields_rejected) ... ok
+test_fake_transport_all_catalogue_errors_no_proposals (test_probe.Boundaries.test_fake_transport_all_catalogue_errors_no_proposals) ... ok
+test_http_redirect_is_not_followed (test_probe.Boundaries.test_http_redirect_is_not_followed) ... ERROR
+test_invalid_multiplier_choices_unknown (test_probe.Boundaries.test_invalid_multiplier_choices_unknown) ... ok
+test_malformed_second_multiplier_record_unknown (test_probe.Boundaries.test_malformed_second_multiplier_record_unknown) ... ok
+test_minimal_proposal_and_string_prices_preserved (test_probe.Boundaries.test_minimal_proposal_and_string_prices_preserved) ... ok
+test_missing_or_malformed_proposal_id_unusable (test_probe.Boundaries.test_missing_or_malformed_proposal_id_unusable) ... ok
+test_no_account_order_or_legacy_fields (test_probe.Boundaries.test_no_account_order_or_legacy_fields) ... ok
+test_response_errors_remain_observations (test_probe.Boundaries.test_response_errors_remain_observations) ... ok
+test_response_mismatch_rejected (test_probe.Boundaries.test_response_mismatch_rejected) ... ok
+test_safety_guard_all_flags (test_probe.Boundaries.test_safety_guard_all_flags) ... ok
+test_tick_interval_is_explicit (test_probe.Boundaries.test_tick_interval_is_explicit) ... ok
+test_wrong_symbol_or_product_rejected (test_probe.Boundaries.test_wrong_symbol_or_product_rejected) ... ok
+
+======================================================================
+ERROR: test_http_redirect_is_not_followed (test_probe.Boundaries.test_http_redirect_is_not_followed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/public_contract_capability_20261009/test_probe.py", line 31, in test_http_redirect_is_not_followed
+    self.assertIs(probe.PublicConnect.process_redirect(None, original), original)
+                  ^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'probe' has no attribute 'PublicConnect'
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.047s
+
+FAILED (errors=1)
+
+EXIT_CODE=1

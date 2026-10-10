@@ -85,6 +85,21 @@ jobs:
               raise ValueError("Saved stable-profit necessary assessment differs")
           print("Saved-statistic stable-profit necessary screen PASS; no qualified policy")
           PY
+      - name: Review saved public contract capabilities without network calls
+        run: |
+          python -m unittest discover -s docs/public_contract_capability_20261009 -p 'test_probe*.py' -v
+          python docs/public_contract_capability_20261009/review_capture.py --self-test
+          python docs/public_contract_capability_20261009/review_capture.py --capture docs/public_contract_capability_20261009/capture01 --expect-status INCOMPLETE
+          python docs/public_contract_capability_20261009/review_capture.py --capture docs/public_contract_capability_20261009/capture02 --expect-status PASS
+          python docs/public_contract_capability_20261009/compare_content.py --output docs/public_contract_capability_20261009/ci_content_comparison.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          folder = Path("docs/public_contract_capability_20261009")
+          if json.loads((folder / "content_comparison.json").read_text()) != json.loads((folder / "ci_content_comparison.json").read_text()):
+              raise ValueError("Saved public capability content comparison differs")
+          print("Public capability evidence reviewed; first capture remains incomplete; no predictive or profit test")
+          PY
 
   historical-study:
     if: github.event_name == 'workflow_dispatch' && inputs.reproduce_history

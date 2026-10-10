@@ -1,0 +1,920 @@
+{
+  "finished_utc": "2026-10-10T00:00:06.638025+00:00",
+  "scope": "public capability only",
+  "transport_status": "COMPLETED",
+  "request_attempts": 15,
+  "response_observations": 15,
+  "observations": [
+    {
+      "req_id": 1,
+      "operation": "contracts_for",
+      "symbol": "BOOM500",
+      "top_level_keys": [
+        "contracts_for",
+        "echo_req",
+        "msg_type",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "available",
+        "hit_count"
+      ],
+      "available_records": 3,
+      "advertised_types": [
+        "ACCU",
+        "MULTDOWN",
+        "MULTUP"
+      ],
+      "contract_record_keys": [
+        "barriers",
+        "cancellation_range",
+        "contract_category",
+        "contract_type",
+        "default_stake",
+        "expiry_type",
+        "growth_rate_barrier_offsets",
+        "growth_rate_range",
+        "high_barrier",
+        "low_barrier",
+        "market",
+        "max_contract_duration",
+        "min_contract_duration",
+        "multiplier_range",
+        "sentiment",
+        "submarket",
+        "underlying_symbol"
+      ]
+    },
+    {
+      "req_id": 2,
+      "operation": "contracts_for",
+      "symbol": "CRASH500",
+      "top_level_keys": [
+        "contracts_for",
+        "echo_req",
+        "msg_type",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "available",
+        "hit_count"
+      ],
+      "available_records": 3,
+      "advertised_types": [
+        "ACCU",
+        "MULTDOWN",
+        "MULTUP"
+      ],
+      "contract_record_keys": [
+        "barriers",
+        "cancellation_range",
+        "contract_category",
+        "contract_type",
+        "default_stake",
+        "expiry_type",
+        "growth_rate_barrier_offsets",
+        "growth_rate_range",
+        "high_barrier",
+        "low_barrier",
+        "market",
+        "max_contract_duration",
+        "min_contract_duration",
+        "multiplier_range",
+        "sentiment",
+        "submarket",
+        "underlying_symbol"
+      ]
+    },
+    {
+      "req_id": 3,
+      "operation": "contracts_for",
+      "symbol": "BOOM600",
+      "top_level_keys": [
+        "contracts_for",
+        "echo_req",
+        "msg_type",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "available",
+        "hit_count"
+      ],
+      "available_records": 3,
+      "advertised_types": [
+        "ACCU",
+        "MULTDOWN",
+        "MULTUP"
+      ],
+      "contract_record_keys": [
+        "barriers",
+        "cancellation_range",
+        "contract_category",
+        "contract_type",
+        "default_stake",
+        "expiry_type",
+        "growth_rate_barrier_offsets",
+        "growth_rate_range",
+        "high_barrier",
+        "low_barrier",
+        "market",
+        "max_contract_duration",
+        "min_contract_duration",
+        "multiplier_range",
+        "sentiment",
+        "submarket",
+        "underlying_symbol"
+      ]
+    },
+    {
+      "req_id": 4,
+      "operation": "contracts_for",
+      "symbol": "CRASH600",
+      "top_level_keys": [
+        "contracts_for",
+        "echo_req",
+        "msg_type",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "available",
+        "hit_count"
+      ],
+      "available_records": 3,
+      "advertised_types": [
+        "ACCU",
+        "MULTDOWN",
+        "MULTUP"
+      ],
+      "contract_record_keys": [
+        "barriers",
+        "cancellation_range",
+        "contract_category",
+        "contract_type",
+        "default_stake",
+        "expiry_type",
+        "growth_rate_barrier_offsets",
+        "growth_rate_range",
+        "high_barrier",
+        "low_barrier",
+        "market",
+        "max_contract_duration",
+        "min_contract_duration",
+        "multiplier_range",
+        "sentiment",
+        "submarket",
+        "underlying_symbol"
+      ]
+    },
+    {
+      "req_id": 5,
+      "operation": "contracts_for",
+      "symbol": "R_100",
+      "top_level_keys": [
+        "contracts_for",
+        "echo_req",
+        "msg_type",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "available",
+        "hit_count"
+      ],
+      "available_records": 65,
+      "advertised_types": [
+        "ACCU",
+        "ASIAND",
+        "ASIANU",
+        "CALL",
+        "CALLE",
+        "DIGITDIFF",
+        "DIGITEVEN",
+        "DIGITMATCH",
+        "DIGITODD",
+        "DIGITOVER",
+        "DIGITUNDER",
+        "EXPIRYMISS",
+        "EXPIRYMISSE",
+        "EXPIRYRANGE",
+        "EXPIRYRANGEE",
+        "HIGHER",
+        "LOWER",
+        "MULTDOWN",
+        "MULTUP",
+        "NOTOUCH",
+        "ONETOUCH",
+        "PUT",
+        "PUTE",
+        "RANGE",
+        "RESETCALL",
+        "RESETPUT",
+        "RUNHIGH",
+        "RUNLOW",
+        "TICKHIGH",
+        "TICKLOW",
+        "TURBOSLONG",
+        "TURBOSSHORT",
+        "UPORDOWN",
+        "VANILLALONGCALL",
+        "VANILLALONGPUT"
+      ],
+      "contract_record_keys": [
+        "barrier",
+        "barrier_choices",
+        "barriers",
+        "cancellation_range",
+        "contract_category",
+        "contract_type",
+        "default_stake",
+        "display_number_of_contracts",
+        "expiry_type",
+        "growth_rate_barrier_offsets",
+        "growth_rate_range",
+        "high_barrier",
+        "last_digit_range",
+        "low_barrier",
+        "market",
+        "max_contract_duration",
+        "max_stake",
+        "min_contract_duration",
+        "min_stake",
+        "multiplier_range",
+        "payout_choices",
+        "sentiment",
+        "submarket",
+        "underlying_symbol"
+      ]
+    },
+    {
+      "req_id": 102,
+      "operation": "proposal",
+      "symbol": "BOOM500",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTUP",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 103,
+      "operation": "proposal",
+      "symbol": "BOOM500",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTDOWN",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 106,
+      "operation": "proposal",
+      "symbol": "CRASH500",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTUP",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 107,
+      "operation": "proposal",
+      "symbol": "CRASH500",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTDOWN",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 110,
+      "operation": "proposal",
+      "symbol": "BOOM600",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTUP",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 111,
+      "operation": "proposal",
+      "symbol": "BOOM600",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTDOWN",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 114,
+      "operation": "proposal",
+      "symbol": "CRASH600",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTUP",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 115,
+      "operation": "proposal",
+      "symbol": "CRASH600",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTDOWN",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 118,
+      "operation": "proposal",
+      "symbol": "R_100",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTUP",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    },
+    {
+      "req_id": 119,
+      "operation": "proposal",
+      "symbol": "R_100",
+      "top_level_keys": [
+        "echo_req",
+        "msg_type",
+        "proposal",
+        "req_id"
+      ],
+      "status": "SUCCESS",
+      "object_keys": [
+        "ask_price",
+        "commission",
+        "contract_details",
+        "date_expiry",
+        "date_start",
+        "id",
+        "limit_order",
+        "longcode",
+        "multiplier",
+        "payout",
+        "spot",
+        "spot_time",
+        "validation_params"
+      ],
+      "contract_type": "MULTDOWN",
+      "field_types": {
+        "ask_price": "int",
+        "commission": "float",
+        "contract_details": "dict",
+        "date_expiry": "int",
+        "date_start": "int",
+        "id": "str",
+        "limit_order": "dict",
+        "longcode": "str",
+        "multiplier": "int",
+        "payout": "int",
+        "spot": "float",
+        "spot_time": "int",
+        "validation_params": "dict"
+      }
+    }
+  ],
+  "selections": [
+    {
+      "symbol": "BOOM500",
+      "contract_type": "CALL",
+      "request": null,
+      "reason": "not_advertised_or_no_matching_symbol"
+    },
+    {
+      "symbol": "BOOM500",
+      "contract_type": "PUT",
+      "request": null,
+      "reason": "not_advertised_or_no_matching_symbol"
+    },
+    {
+      "symbol": "BOOM500",
+      "contract_type": "MULTUP",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "BOOM500",
+        "contract_type": "MULTUP",
+        "req_id": 102,
+        "multiplier": 100
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "BOOM500",
+      "contract_type": "MULTDOWN",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "BOOM500",
+        "contract_type": "MULTDOWN",
+        "req_id": 103,
+        "multiplier": 100
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "CRASH500",
+      "contract_type": "CALL",
+      "request": null,
+      "reason": "not_advertised_or_no_matching_symbol"
+    },
+    {
+      "symbol": "CRASH500",
+      "contract_type": "PUT",
+      "request": null,
+      "reason": "not_advertised_or_no_matching_symbol"
+    },
+    {
+      "symbol": "CRASH500",
+      "contract_type": "MULTUP",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "CRASH500",
+        "contract_type": "MULTUP",
+        "req_id": 106,
+        "multiplier": 100
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "CRASH500",
+      "contract_type": "MULTDOWN",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "CRASH500",
+        "contract_type": "MULTDOWN",
+        "req_id": 107,
+        "multiplier": 100
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "BOOM600",
+      "contract_type": "CALL",
+      "request": null,
+      "reason": "not_advertised_or_no_matching_symbol"
+    },
+    {
+      "symbol": "BOOM600",
+      "contract_type": "PUT",
+      "request": null,
+      "reason": "not_advertised_or_no_matching_symbol"
+    },
+    {
+      "symbol": "BOOM600",
+      "contract_type": "MULTUP",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "BOOM600",
+        "contract_type": "MULTUP",
+        "req_id": 110,
+        "multiplier": 100
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "BOOM600",
+      "contract_type": "MULTDOWN",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "BOOM600",
+        "contract_type": "MULTDOWN",
+        "req_id": 111,
+        "multiplier": 100
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "CRASH600",
+      "contract_type": "CALL",
+      "request": null,
+      "reason": "not_advertised_or_no_matching_symbol"
+    },
+    {
+      "symbol": "CRASH600",
+      "contract_type": "PUT",
+      "request": null,
+      "reason": "not_advertised_or_no_matching_symbol"
+    },
+    {
+      "symbol": "CRASH600",
+      "contract_type": "MULTUP",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "CRASH600",
+        "contract_type": "MULTUP",
+        "req_id": 114,
+        "multiplier": 100
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "CRASH600",
+      "contract_type": "MULTDOWN",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "CRASH600",
+        "contract_type": "MULTDOWN",
+        "req_id": 115,
+        "multiplier": 100
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "R_100",
+      "contract_type": "CALL",
+      "request": null,
+      "reason": "no_explicit_zero_barrier_tick_interval_containing_5t"
+    },
+    {
+      "symbol": "R_100",
+      "contract_type": "PUT",
+      "request": null,
+      "reason": "no_explicit_zero_barrier_tick_interval_containing_5t"
+    },
+    {
+      "symbol": "R_100",
+      "contract_type": "MULTUP",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "R_100",
+        "contract_type": "MULTUP",
+        "req_id": 118,
+        "multiplier": 40
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    },
+    {
+      "symbol": "R_100",
+      "contract_type": "MULTDOWN",
+      "request": {
+        "proposal": 1,
+        "amount": 10,
+        "basis": "stake",
+        "currency": "USD",
+        "underlying_symbol": "R_100",
+        "contract_type": "MULTDOWN",
+        "req_id": 119,
+        "multiplier": 40
+      },
+      "reason": "eligible_under_frozen_catalogue_rule"
+    }
+  ],
+  "error": null,
+  "close_error": null,
+  "connection_closed": true,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "orders_sent": 0,
+  "profit_tested": false,
+  "prediction_tested": false,
+  "cfd_mapping_verified": false,
+  "actual_fills_verified": false,
+  "measured_broker_costs_verified": false,
+  "artifact_sha256": {
+    "PROTOCOL_v2.md": "0a6d255c680fdeb2f51f76c2112f75c180caa998ab185e4ad68bedb29d90ae50",
+    "declaration.json": "f59dd5028e53c9ca1abaa82c34fc4a02e9da8f77f365185169e58dc48a336f55",
+    "observations.jsonl": "c7704a15a29c568316c451f33b12bd3ddaba819efbf690ce49e53d442d9c7402",
+    "probe_v2.py": "7bb49f36833822374675658de36c0e04e0988e4c2d76ccc35c5739f294abbe14",
+    "received_text_messages.jsonl": "dc1f90104a6b774a5e2c8a2c4f697edcb482f4ab444470aad3182c5394df58cb",
+    "requests.jsonl": "1eb963f632dcc0a1345d98fc67b0de4fac9bac314dc4fbeb01b1616498ad460b",
+    "test_probe_v2.py": "0e1ae028ba1779db87a019edaebe5e026cdea7dda3816641dc3ba4dbdd527bc0"
+  }
+}
