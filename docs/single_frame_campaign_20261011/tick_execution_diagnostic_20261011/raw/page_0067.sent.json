@@ -1,0 +1,17 @@
+{
+  "request": {
+    "count": 240,
+    "end": 1779132959,
+    "req_id": 67,
+    "start": 1779132720,
+    "style": "ticks",
+    "ticks_history": "CRASH500"
+  },
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  },
+  "sent_at": "2026-10-11T17:31:46.188533+00:00"
+}

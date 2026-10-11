@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Activity, ArrowDownRight, ArrowUpRight, BookOpen, ChartCandlestick, ChevronDown, CircleHelp, ExternalLink, Eye, FlaskConical, Layers3, Maximize2, RefreshCw, ShieldCheck, X } from 'lucide-react';
 import MarketChart from './MarketChart';
+import ResearchDashboard from './ResearchDashboard';
 import { useDerivMarket, type Bar, type Timeframe } from './lib/deriv';
 import { getCRT, type CRTAnalysis } from './lib/crt';
 
@@ -37,7 +38,7 @@ function Dialog({ kind, close }: { kind: 'guide' | 'research', close: () => void
     <div className="context-note"><ShieldCheck size={17} /><span>الموقع للتحليل والمراقبة. جميع أعلام التداول الأربعة معطلة، ولا يفتح صفقات.</span></div></section></div>;
 }
 
-export default function App() {
+function CRTChartApp() {
   const [selected, setSelected] = useState(() => localStorage.getItem('crt.symbol') || 'BOOM500');
   const [timeframe, setTimeframe] = useState<Timeframe>('M5');
   const [showCRT, setShowCRT] = useState(true), [showMarkers, setShowMarkers] = useState(true);
@@ -56,7 +57,7 @@ export default function App() {
   useEffect(() => { if (market.symbols.length && !market.symbols.some(s => s.id === selected)) setSelected(market.symbols.some(s => s.id === 'BOOM500') ? 'BOOM500' : market.symbols[0].id); }, [market.symbols, selected]);
   useEffect(() => { const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') { setDialog(null); setExpanded(false); } }; document.addEventListener('keydown', onKey); return () => document.removeEventListener('keydown', onKey); }, []);
 
-  return <div className="app-shell"><header className="site-header"><a className="brand" href="#" aria-label="نطاق — الصفحة الرئيسية"><span className="brand-mark"><i /><i /></span><div><strong>نطاق<span className="brand-dot">.</span></strong><small>BOOM / CRASH · CRT</small></div></a><nav className="header-nav" aria-label="التنقل"><button className="nav-active"><ChartCandlestick size={16} />الشارت</button><button onClick={() => setDialog('research')}><FlaskConical size={16} />نتائج الدراسة</button><button onClick={() => setDialog('guide')}><BookOpen size={16} />دليل CRT</button></nav><div className="header-status"><span className={'connection-pill ' + (connected ? 'online' : 'pending')}><i />{statusText}</span><span className="analysis-pill"><ShieldCheck size={14} />تحليل فقط</span></div></header>
+  return <div className="app-shell"><header className="site-header"><a className="brand" href="#" aria-label="نطاق — الصفحة الرئيسية"><span className="brand-mark"><i /><i /></span><div><strong>نطاق<span className="brand-dot">.</span></strong><small>BOOM / CRASH · CRT</small></div></a><nav className="header-nav" aria-label="التنقل"><button className="nav-active"><ChartCandlestick size={16} />الشارت</button><button onClick={() => { location.hash = 'research'; }}><FlaskConical size={16} />مختبر البحث</button><button onClick={() => setDialog('guide')}><BookOpen size={16} />دليل CRT</button></nav><div className="header-status"><span className={'connection-pill ' + (connected ? 'online' : 'pending')}><i />{statusText}</span><span className="analysis-pill"><ShieldCheck size={14} />تحليل فقط</span></div></header>
     <main className="workspace"><div className="page-heading"><div><span className="eyebrow">مرصد نطاق الشمعة</span><h1>اقرأ النطاق. راقب الحركة.</h1><p>شموع مباشرة ونموذج CRT لكل رمز من Boom وCrash.</p></div><div className="heading-aside"><Activity size={17} /><span>مصدر الأسعار <strong>Deriv</strong><small>واجهة البيانات العامة</small></span></div></div>
     <section className="market-toolbar panel" aria-label="إعدادات الشارت"><div className="symbol-field"><label htmlFor="symbol">الرمز</label><div className="select-wrap"><select id="symbol" value={selected} onChange={e => setSelected(e.target.value)}>{market.symbols.length ? ['boom', 'crash'].map(f => <optgroup label={f === 'boom' ? 'رموز Boom' : 'رموز Crash'} key={f}>{market.symbols.filter(s => s.family === f).map(s => <option value={s.id} key={s.id}>{s.label}</option>)}</optgroup>) : <option value={selected}>{selected} · جارٍ تحميل الرموز</option>}</select><ChevronDown size={15} /></div></div><div className="family-toggle" aria-label="عائلة الرمز"><button className={family === 'boom' ? 'active boom' : ''} onClick={() => setSelected('BOOM500')}><ArrowUpRight size={16} />Boom</button><button className={family === 'crash' ? 'active crash' : ''} onClick={() => setSelected('CRASH500')}><ArrowDownRight size={16} />Crash</button></div><div className="toolbar-separator" /><div className="timeframes"><span>فريم العرض</span><div>{(['M1', 'M5', 'M15', 'H1'] as Timeframe[]).map(tf => <button className={tf === timeframe ? 'active' : ''} key={tf} onClick={() => setTimeframe(tf)}>{tf}</button>)}</div></div><div className="reference-tag"><Layers3 size={14} /><span>مرجع <b>H1</b><small>تأكيد M5</small></span></div><button className="icon-button refresh" onClick={market.retry} aria-label="إعادة الاتصال وتحديث البيانات" title="تحديث البيانات"><RefreshCw size={17} /></button></section>
     <section className="metric-strip" aria-label="ملخص الرمز"><div className="metric"><span>السعر الحالي <i className={connected ? 'live-dot' : ''} /></span><strong className="price" dir="ltr">{number(market.price)}</strong><small>{profile?.label || selected}</small></div><div className="metric"><span><i className="range-key high" />أعلى النطاق · CRH</span><strong dir="ltr">{number(crt?.high)}</strong><small>آخر ساعة مغلقة</small></div><div className="metric"><span><i className="range-key low" />أدنى النطاق · CRL</span><strong dir="ltr">{number(crt?.low)}</strong><small>مرجع {clock(crt?.refStart)}–{clock(crt?.refEnd)}</small></div><div className="metric"><span><i className="range-key mid" />منتصف النطاق · 50%</span><strong dir="ltr">{number(crt?.midpoint)}</strong><small>وقت الرياض · {clock(market.lastTickEpoch, true)}</small></div></section>
@@ -68,4 +69,10 @@ export default function App() {
     <section className="bottom-context"><div><span className="live-dot" /><strong>سوق يعمل طوال الأسبوع</strong><span>{market.symbols.length || '—'} رمزًا · القائمة تُحدّث من Deriv</span></div><div><span>آخر شمعة مغلقة</span><b>{clock(lastClosed ? lastClosed.time + periods[timeframe] : null)}</b><span>·</span><span>سحب → استعادة → تأكيد</span></div></section>
     <footer className="site-footer"><span>نطاق · مراقبة CRT على بيانات عامة. التداول معطل.</span><div><a href="https://www.tradingview.com/" target="_blank" rel="noreferrer">الرسوم بواسطة TradingView</a><button onClick={() => setDialog('research')}>حدود النتائج</button></div><details><summary>إعدادات الأمان</summary><div dir="ltr">{Object.entries(SAFETY).map(([key, value]) => <code key={key}>{key}={String(value)}</code>)}</div></details></footer></main>
     {dialog && <Dialog kind={dialog} close={() => setDialog(null)} />}</div>;
+}
+
+export default function App() {
+  const [chart, setChart] = useState(() => location.hash === '#chart');
+  useEffect(() => { const onHash = () => setChart(location.hash === '#chart'); window.addEventListener('hashchange', onHash); return () => window.removeEventListener('hashchange', onHash); }, []);
+  return chart ? <CRTChartApp /> : <ResearchDashboard onChart={() => { location.hash = 'chart'; }} />;
 }

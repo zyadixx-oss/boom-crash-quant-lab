@@ -1,0 +1,17 @@
+{
+  "request": {
+    "count": 240,
+    "end": 1779124079,
+    "req_id": 18,
+    "start": 1779123840,
+    "style": "ticks",
+    "ticks_history": "BOOM500"
+  },
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  },
+  "sent_at": "2026-10-11T17:30:08.018384+00:00"
+}

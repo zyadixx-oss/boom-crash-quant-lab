@@ -1,0 +1,21 @@
+{
+  "authentication_used": false,
+  "canonical_symbol": "CRASH500",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "received_at": "2026-10-11T17:31:08.798211+00:00",
+  "request": {
+    "count": 420,
+    "end": 1779117659,
+    "req_id": 48,
+    "start": 1779117240,
+    "style": "ticks",
+    "ticks_history": "CRASH500"
+  },
+  "response_sha256": "7b420b29d1b4c5cdf3210574518d5eb5b9cae2174801cc9f890e76a02b93dc12",
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  }
+}

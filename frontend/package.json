@@ -12,19 +12,20 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "typescript": "latest",
+    "lightweight-charts": "latest",
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "lightweight-charts": "latest",
-    "lucide-react": "latest"
+    "typescript": "latest",
+    "vite": "latest"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
     "tailwindcss": "latest",
-    "@tailwindcss/vite": "latest"
+    "typescript-eslint": "^8.71.1"
   },
   "engines": {
     "node": ">=22.18.0"

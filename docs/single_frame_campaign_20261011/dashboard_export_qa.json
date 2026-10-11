@@ -1,0 +1,32 @@
+{
+  "all_dispositions_present": true,
+  "all_settings_present": true,
+  "at": "2026-10-11T22:42:50.088524+00:00",
+  "cycles": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "download_file": "/Users/zyadalasmri/Downloads/search.csv",
+  "final_evidence_in_export": false,
+  "free_bytes_now": 46587748352,
+  "rows": 26000,
+  "sha256": "ea81b769a749e20f7c77bb451ddb22bc5e4e7353560700ccdcdea080d8e2d2a7"
+}

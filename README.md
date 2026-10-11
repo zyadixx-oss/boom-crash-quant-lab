@@ -1,5 +1,21 @@
 # boom-crash-quant-lab
 
+11 October scope: the new [single-frame automated campaign](research_campaign/README.md)
+implements the attached ten-symbol/ten-frame request with independent strategies,
+60/20/20 chronology and 32 actual cycles at fifteen-minute intervals. Its
+acceptance contract is PF >=1.10, at least100 completed final trades and DD <=20%,
+plus unchanged source, cost, execution, benchmark and statistical requirements.
+This supersedes the earlier relaxed PF request for new work. Actual progress is
+recorded by the runner; a build or schedule does not mean32cycles completed.
+The Arabic dashboard is at `/#research`; the existing CRT chart remains `/#chart`.
+
+10 October [nonlinear conditional-region experiment](docs/nonlinear_region_20261010/REPORT.ar.md):
+Crash600 RAW_BOOST has later-period PF1.0346 across1106 completed paths, but
+weekly CI95[0.8887,1.1884], older final PF0.8069 and doubled-cost negative mean.
+It satisfies the earlier positive point/sample criterion but fails stable-profit
+qualification. No policy passes the eight full gates. This adaptive multiframe
+experiment remains separate from the new single-frame campaign.
+
 9 October objective revision: the user now accepts **stable positive net profit,
 even PF below 1.1**. The executed [saved-statistic assessment](docs/stable_profit_assessment_20261009/REPORT.ar.md)
 checks 132 stored summaries in 12 immutable result files, including 96 model/rule

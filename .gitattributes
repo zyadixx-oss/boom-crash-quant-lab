@@ -1,3 +1,2 @@
-# Preserve byte-pinned pytest failure evidence, including pytest's trailing spaces.
-docs/jump_representation_20261007/numerical_failure_initial.log -whitespace
-docs/zone_study_20261008/implementation_failure_initial.log -whitespace
+# Preserve the attached Markdown verbatim, including its deliberate hard breaks.
+docs/single_frame_campaign_20261011/REQUEST.ar.md whitespace=-blank-at-eol

@@ -94,3 +94,7 @@ data/representation_regions_20261008/
 
 # Distinct raw-event-clock hybrid feature tables retained locally with hashes.
 data/hybrid_event_regions_20261008/
+
+# Resumable single-frame campaign: raw wire data and full virtual ledgers stay local.
+data/single_frame_campaign_20261011/
+frontend/public/campaign/

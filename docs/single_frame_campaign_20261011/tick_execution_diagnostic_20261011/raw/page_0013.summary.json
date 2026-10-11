@@ -1,0 +1,6 @@
+{
+  "historical_bid_ask_present": false,
+  "missing_seconds": 0,
+  "returned_ticks": 600,
+  "status": "EXACT_1S_WINDOW"
+}
