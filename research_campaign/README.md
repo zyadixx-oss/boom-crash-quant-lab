@@ -124,5 +124,23 @@ inspect committed measurements while the research worker waits for its next
 cycle. Numerical replay uses the same production formulas; the separate source
 audit independently reconstructs the original wire history.
 
+After the authoritative state is `COMPLETED`, the final-family helper can
+recompute every selected original final measurement and the three saved
+development folds, then recalculate joint Holm and final acceptance gates:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/replay_campaign_final.py --include-walk-forward
+```
+
+The same command resumes from verified receipts in
+`work/final_replay_20261011/`, reporting earlier verified replays separately
+from computations performed now. It rejects an unfinished or sealed campaign
+before reading final artifacts. `--max-new N` explicitly bounds new work and
+reports partial coverage. The helper does not replay the entire development
+search, independently implement the formulas, or verify CFD fills/costs.
+It reads the compressed final family once, releases its large ledgers before
+reconstruction, and retains only small acceptance summaries; bounded peak
+memory is not claimed.
+
 `LIVE_TRADING=false`, `READY_FOR_LIVE=false`, `LIVE_ALLOWED=false`,
 `OPENED_TRADES=false` always. Lowercase display equivalents also remain false.

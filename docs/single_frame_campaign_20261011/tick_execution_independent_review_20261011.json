@@ -1,0 +1,158 @@
+{
+  "actual_check_groups": {
+    "all_financial_qualification_gates_false": 1,
+    "collection_page_summaries_tick_totals_send_counts_spacing": 4,
+    "nine_original_wire_request_receipt_identity_safety_timing_checks_each_of_74_pages": 666,
+    "no_page_errors": 1,
+    "protocol_selection_collection_sha_pins": 3,
+    "ten_policy_signal_selection_artifact_numerical_and_pair_checks_each_of_four_policies": 40
+  },
+  "actual_checks_passed": 715,
+  "audit_recorded_at_utc": "2026-10-11T22:55:27.254570+00:00",
+  "audit_time_basis": "Receipt created after successful review; original inline audit did not record its exact start/end timestamps. Numerical checks were not rerun to create this receipt.",
+  "collection": {
+    "actual_original_ticks": {
+      "BOOM500": 10440,
+      "CRASH500": 11400
+    },
+    "actual_requests_sent": 74,
+    "actual_responses_saved": 74,
+    "collection_completed_at_utc": "2026-10-11T17:32:00.985565+00:00",
+    "historical_bid_ask_present": false,
+    "minimum_actual_send_spacing_seconds": 2.003038,
+    "missing_seconds": 0,
+    "original_tick_pages_exact": 74,
+    "selected_before_requests_at_utc": "2026-10-11T17:29:20.280512+00:00"
+  },
+  "commands_executed": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -q -p no:cacheprovider docs/single_frame_campaign_20261011/test_tick_execution_review.py",
+      "exit_code": 0,
+      "result": "23 tests passed"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -u -",
+      "exit_code": 0,
+      "result": "715 checks passed; complete saved candle and tick result dictionaries matched fresh in-memory production-engine recomputation for all four policies.",
+      "stdin_script_scope": "Inline, read-only audit; method below. No standalone audit script was saved."
+    }
+  ],
+  "critical_limits": [
+    "Each post_spike sample has 49 completed paired trades on ONE UTC day; it cannot establish stable or representative profitability.",
+    "Both fixed pre_spike policies had zero eligible signals; no performance estimate is available.",
+    "Boom500 positive tick mean is a bounded validation execution diagnostic, not a qualified strategy or fresh final OOS result.",
+    "Public index ticks do not establish historical CFD bid/ask, account-specific contract mapping, realized fills, commissions or slippage. Cost 0.10 ATR remains assumed.",
+    "Recomputation used the frozen production formulas; it is an independent rerun, not a second independently derived backtest engine.",
+    "All four policy artifacts contain exact candle/tick dictionary matches: eight mode-specific result ledgers, grouped into four policy artifacts.",
+    "Only requested operational receipts were written; no scientific code, market dataset, state or worker changed."
+  ],
+  "material_numerical_errors": [],
+  "method": [
+    "Verified protocol, selection, collection and each replay artifact SHA256 and frozen source/runtime pins using _verify.",
+    "Read all 74 original wire captures plus request intent, sent and response receipts; checked exact symbol mapping, echoed identity, unauthenticated endpoint, false safety, seal-before-send and intent-send-receive chronology.",
+    "Parsed every requested second without sorting, repair or imputation; matched per-page summaries and actual quote totals, exact sends/responses and minimum observed send spacing.",
+    "Loaded only the authorized M1 prefix ending at validation_end, regenerated original signals and checked full-vector hashes and first 50 chronological eligible indices, with full holding horizon inside validation.",
+    "Ran run_backtest in memory for candle and tick modes for each of the four frozen policies, applied the existing diagnostic rejection gate and compared complete canonical JSON dictionaries, including trade, equity and disposition ledgers.",
+    "Independently joined completed trades by signal_epoch, reconstructed paired exit prices/reasons/R deltas and compared exact paired ledgers and means; matched displayed summary metrics.",
+    "Confirmed no strategy qualified, historical costs and CFD fills unverified, final_holdout_accessed=false and all four live flags false."
+  ],
+  "policies": [
+    {
+      "artifact_file": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/single_frame_campaign_20261011/tick_execution_diagnostic_20261011/BOOM500_pre_spike_replay.json.gz",
+      "artifact_sha256": "f3a22c7e5f99c0a13772bae1427d81b180e97d19d72b00b9b5dfb868ecd24400",
+      "candle_and_tick_dispositions": {},
+      "candle_completed": 0,
+      "candle_mean_net_R": null,
+      "exact_candle_ledger_recomputed": true,
+      "exact_tick_ledger_recomputed": true,
+      "family": "pre_spike",
+      "paired_completed": 0,
+      "paired_mean_delta_net_R": null,
+      "raw_eligible_signals": 0,
+      "symbol": "BOOM500",
+      "tick_active_utc_days": 0,
+      "tick_completed": 0,
+      "tick_mean_net_R": null,
+      "tick_unknown_paths": 0
+    },
+    {
+      "artifact_file": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/single_frame_campaign_20261011/tick_execution_diagnostic_20261011/BOOM500_post_spike_replay.json.gz",
+      "artifact_sha256": "581a302da5ae8cf09448f4cd1bef9a73f249e20b3034eb462097d734f8be8180",
+      "candle_and_tick_dispositions": {
+        "COMPLETED": 49,
+        "OCCUPIED": 1
+      },
+      "candle_completed": 49,
+      "candle_mean_net_R": -0.3691045718539551,
+      "exact_candle_ledger_recomputed": true,
+      "exact_tick_ledger_recomputed": true,
+      "family": "post_spike",
+      "paired_completed": 49,
+      "paired_mean_delta_net_R": 0.611803108580262,
+      "raw_eligible_signals": 50,
+      "symbol": "BOOM500",
+      "tick_active_utc_days": 1,
+      "tick_completed": 49,
+      "tick_mean_net_R": 0.24269853672630684,
+      "tick_unknown_paths": 0
+    },
+    {
+      "artifact_file": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/single_frame_campaign_20261011/tick_execution_diagnostic_20261011/CRASH500_pre_spike_replay.json.gz",
+      "artifact_sha256": "8170757d7be5ab7f067a5809b8d684b06ec5cff1833d9d46c800b711e5336ef4",
+      "candle_and_tick_dispositions": {},
+      "candle_completed": 0,
+      "candle_mean_net_R": null,
+      "exact_candle_ledger_recomputed": true,
+      "exact_tick_ledger_recomputed": true,
+      "family": "pre_spike",
+      "paired_completed": 0,
+      "paired_mean_delta_net_R": null,
+      "raw_eligible_signals": 0,
+      "symbol": "CRASH500",
+      "tick_active_utc_days": 0,
+      "tick_completed": 0,
+      "tick_mean_net_R": null,
+      "tick_unknown_paths": 0
+    },
+    {
+      "artifact_file": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/single_frame_campaign_20261011/tick_execution_diagnostic_20261011/CRASH500_post_spike_replay.json.gz",
+      "artifact_sha256": "66aecd738264f4ae31a043ea8e53b092f56c975b0ecc64f6736b94c85889b8aa",
+      "candle_and_tick_dispositions": {
+        "COMPLETED": 49,
+        "OCCUPIED": 1
+      },
+      "candle_completed": 49,
+      "candle_mean_net_R": -0.6325038097931478,
+      "exact_candle_ledger_recomputed": true,
+      "exact_tick_ledger_recomputed": true,
+      "family": "post_spike",
+      "paired_completed": 49,
+      "paired_mean_delta_net_R": 0.15832428285673245,
+      "raw_eligible_signals": 50,
+      "symbol": "CRASH500",
+      "tick_active_utc_days": 1,
+      "tick_completed": 49,
+      "tick_mean_net_R": -0.47417952693641546,
+      "tick_unknown_paths": 0
+    }
+  ],
+  "review_scope": "Independent read-only review of existing bounded validation tick diagnostic; no campaign worker or final-holdout outcome access.",
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  },
+  "schema_version": 1,
+  "source_result": {
+    "collection_result_sha256": "af57b4024b0b47a6f9ee33aca0c811349db4947f17f47d38e23e8405f38c88d5",
+    "measured_at_utc": "2026-10-11T22:20:42.836351+00:00",
+    "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/single_frame_campaign_20261011/tick_execution_diagnostic_20261011/result.json",
+    "protocol_sha256": "be35b9172b36718e34861ee55d952e6c884a6cfe4a0ea13be469f6f9faf07a45",
+    "selection_sha256": "ddec503b9c82b7f6b37cc8a43ecc4fb62cc09c9c192603eeaedcfb6a26e5aa1c",
+    "sha256": "30d7433168ad2737c1cf8fcbea0d91789bef567b4aaeca00d237193034ed98d4"
+  },
+  "status": "PASS",
+  "synthetic_test_scope": "Request restrictions, invalid wire handling, unknown preservation, pagination, chronological selection and engine integration; these fixtures are not historical results.",
+  "synthetic_tests_passed": 23
+}

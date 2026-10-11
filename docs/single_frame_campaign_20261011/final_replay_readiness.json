@@ -1,0 +1,40 @@
+{
+  "status": "PASS_SEALED_RUN_DENIED",
+  "started_at": "2026-10-11T23:10:25.899544+00:00",
+  "completed_at": "2026-10-11T23:10:26.348334+00:00",
+  "command": [
+    ".venv/bin/python",
+    "scripts/replay_campaign_final.py",
+    "--include-walk-forward",
+    "--max-new",
+    "0"
+  ],
+  "exit_code": 1,
+  "response": {
+    "status": "REJECTED_PRECONDITIONS",
+    "error": "Final-only replay denied: require COMPLETED, 32 actual cycles, eight hours and final_accessed=true",
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    }
+  },
+  "before": {
+    "completed_cycles": 22,
+    "current_cycle": 23,
+    "final_accessed": false,
+    "status": "RUNNING"
+  },
+  "after": {
+    "completed_cycles": 22,
+    "current_cycle": 23,
+    "final_accessed": false,
+    "status": "RUNNING"
+  },
+  "helper_sha256": "c4016c066e2bdc09aff10564218d3e4bbebddc4c1d556b2fe84cc6fcfc75a007",
+  "output_directory_created": false,
+  "final_measurements_performed": 0,
+  "guard_scope": "hard precondition branch verified by source review; system-call file tracing not performed",
+  "all_eight_frozen_code_pins_match": true
+}
