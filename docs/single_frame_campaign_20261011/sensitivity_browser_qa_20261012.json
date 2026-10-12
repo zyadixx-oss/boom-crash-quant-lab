@@ -1,0 +1,60 @@
+{
+  "scope": "Actual browser QA plus read-only source guard after new sensitivity UI",
+  "desktop": {
+    "width": 1280,
+    "scrollWidth": 1280,
+    "selected_group": "BOOM500/H2/false_break",
+    "attempts": 32,
+    "scientific_points": 32,
+    "aliases": 0
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "selected_group": "CRASH500/M30/trend",
+    "attempts": 32,
+    "scientific_points": 16,
+    "aliases": 16,
+    "inactive_threshold_comparisons": 0
+  },
+  "language": "ar",
+  "direction": "rtl",
+  "viewport_override_reset": true,
+  "downloaded_group_json_matches_static_projection": true,
+  "group_projection_independent_review": {
+    "checks": 14316,
+    "errors": 0,
+    "groups": 1300,
+    "reviewer": "export_guard_review",
+    "source_report_sha256": "b5ec1fd924f01063b4b17bb643e272ec9eaf8c13d9825c42f58528a632273d12",
+    "static_sha256": "d63f1c31ca07b215f5c5ba39b4df7e160eeedf73362cc75480abda8ab928a53f"
+  },
+  "frontend_validation": {
+    "tests_passed": 50,
+    "typecheck": "PASS",
+    "build": "PASS",
+    "lint_errors": 0,
+    "lint_existing_warnings": 4
+  },
+  "helper_tests": {
+    "accounting": 44,
+    "validation_sensitivity": 19
+  },
+  "frozen_eight_modules_byte_identical": true,
+  "original_replay_complete": true,
+  "original_replay_process_alive": false,
+  "original_replay_lock_held": false,
+  "new_backtests": 0,
+  "qualification_changed": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}

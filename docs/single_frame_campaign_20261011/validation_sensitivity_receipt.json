@@ -1,0 +1,75 @@
+{
+  "counts": {
+    "cache_alias_attempts": 3200,
+    "declared_neighbor_edges": 104000,
+    "declared_points": 41600,
+    "groups": 1300,
+    "insufficient_scientific_points": 0,
+    "missing_attempts": 0,
+    "missing_scientific_points": 0,
+    "neighbor_edge_status_counts": {
+      "DUPLICATE_EFFECTIVE_EDGE": 6400,
+      "EFFECTIVE_NEIGHBOR": 94400,
+      "INACTIVE_AXIS_ALIAS": 3200
+    },
+    "new_scientific_measurements": 38400,
+    "observed_attempts": 41600,
+    "scientific_grid_points": 38400,
+    "symbol_frame_cells": 100
+  },
+  "created_at": "2026-10-12T13:57:07.474638+00:00",
+  "final_artifacts_read": 0,
+  "input": {
+    "bytes": 30835324,
+    "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/search_phase_labelled_20261012.csv",
+    "sha256": "9d0ba585e55cc6e9694b956b974e65f6e8da7a7210c402dd1a0de76d40d15242"
+  },
+  "new_backtests": 0,
+  "outputs": {
+    "REPORT.ar.md": {
+      "bytes": 3463,
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/REPORT.ar.md",
+      "sha256": "10e82bfcfdec5d505e36fe018ac97f9fd4e5760f6d2e78fccfac0adb6f4f7768"
+    },
+    "adjacent_comparisons.csv": {
+      "bytes": 32668986,
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/adjacent_comparisons.csv",
+      "sha256": "50bc3c7c8f0c335fb95aaa644f355ff7815abdcf0641bb96f0ea1d1ca1d05bf4"
+    },
+    "declared_grid_points.csv": {
+      "bytes": 15917702,
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/declared_grid_points.csv",
+      "sha256": "544e310538adbf6a398c639e1ea1ff6f20f725e2970ac856d61a37c0f7e18108"
+    },
+    "group_metric_summary.csv": {
+      "bytes": 414577,
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/group_metric_summary.csv",
+      "sha256": "59fe6b43111dd42853257e6adb55a2b4c864c86e13eeca020a50285e5c3047ed"
+    },
+    "scientific_points.csv": {
+      "bytes": 8925627,
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/scientific_points.csv",
+      "sha256": "1364ee37e106572c695a2aa483cd692bd1dafbaeabd807aeb94be7730ed9d4d6"
+    },
+    "validation_sensitivity.json": {
+      "bytes": 21740104,
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/validation_sensitivity.json",
+      "sha256": "b5ec1fd924f01063b4b17bb643e272ec9eaf8c13d9825c42f58528a632273d12"
+    }
+  },
+  "re_ranking_performed": false,
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "schema_version": 1,
+  "script_sha256": "56a8a13a81d4f559e448ee08ae8fc4889368606886317770b32ab43dce15938f",
+  "source_unchanged_after_read": true,
+  "status": "COMPLETED_DESCRIPTIVE_VALIDATION_ONLY",
+  "strategy_source_unchanged_after_read": true
+}

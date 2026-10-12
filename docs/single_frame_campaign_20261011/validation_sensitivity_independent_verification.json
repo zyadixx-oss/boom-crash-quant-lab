@@ -1,0 +1,205 @@
+{
+  "check_count": 1762579,
+  "checks": {
+    "adjacent_scientific_identity": 104000,
+    "adjacent_status_independent": 104000,
+    "all_declared_points_exactly_once": 1,
+    "all_edges_exact_population": 1,
+    "all_group_summaries": 1,
+    "all_scientific_points_exactly_once": 1,
+    "axis_counts_and_flips": 6500,
+    "axis_signed_absolute_distribution": 26000,
+    "declared_matrix_coverage": 41600,
+    "declared_matrix_identity": 41600,
+    "declared_matrix_unique_point": 41600,
+    "declared_matrix_validation_metric": 166400,
+    "descriptive_receipt_scope": 1,
+    "each_actual_declared_grid_coordinate": 208000,
+    "family_parameter_distribution": 52,
+    "file_hash": 8,
+    "global_parameter_point_distribution": 4,
+    "group_distribution_from_originals": 5200,
+    "neighbor_delta_from_source": 416000,
+    "new_scientific_measurement_once": 38400,
+    "no_research_or_final_use": 1,
+    "one_axis_adjacent_identity": 104000,
+    "output_bytes": 6,
+    "scientific_matrix_alias_count": 38400,
+    "scientific_matrix_exact_unique": 38400,
+    "scientific_matrix_metric": 153600,
+    "source_alias_consistency": 41600,
+    "source_expected_population": 1,
+    "source_independent_scientific_id": 41600,
+    "source_point_unique_validation": 41600,
+    "source_unchanged_after_verification": 1,
+    "strict_false_safety": 1,
+    "strict_sign_reversal": 104000
+  },
+  "counts": {
+    "attempts": 41600,
+    "edge_status_counts": {
+      "DUPLICATE_EFFECTIVE_EDGE": 6400,
+      "EFFECTIVE_NEIGHBOR": 94400,
+      "INACTIVE_AXIS_ALIAS": 3200
+    },
+    "edges": 104000,
+    "groups": 1300,
+    "scientific_points": 38400
+  },
+  "created_at": "2026-10-12T14:00:09.859653+00:00",
+  "descriptive_axis_distributions": {
+    "lookback": {
+      "absolute_net_delta": {
+        "finite": 19200,
+        "max": 9998.744360441164,
+        "median": 56.7549355094673,
+        "min": 0.0,
+        "negative": 0,
+        "null": 0,
+        "points": 19200,
+        "positive": 15779,
+        "zero": 3421
+      },
+      "net_delta": {
+        "finite": 19200,
+        "max": 9998.744360441164,
+        "median": 0.0,
+        "min": -9978.324308197258,
+        "negative": 6503,
+        "null": 0,
+        "points": 19200,
+        "positive": 9276,
+        "zero": 3421
+      },
+      "strict_net_sign_reversals": 1337
+    },
+    "max_hold_bars": {
+      "absolute_net_delta": {
+        "finite": 19200,
+        "max": 1979.929708226996,
+        "median": 103.5235550484838,
+        "min": 0.0,
+        "negative": 0,
+        "null": 0,
+        "points": 19200,
+        "positive": 17204,
+        "zero": 1996
+      },
+      "net_delta": {
+        "finite": 19200,
+        "max": 1391.3988468059183,
+        "median": -27.961317031964533,
+        "min": -1979.929708226996,
+        "negative": 11986,
+        "null": 0,
+        "points": 19200,
+        "positive": 5218,
+        "zero": 1996
+      },
+      "strict_net_sign_reversals": 1234
+    },
+    "stop_atr": {
+      "absolute_net_delta": {
+        "finite": 19200,
+        "max": 3207.286062703479,
+        "median": 189.13143404659655,
+        "min": 0.0,
+        "negative": 0,
+        "null": 0,
+        "points": 19200,
+        "positive": 17451,
+        "zero": 1749
+      },
+      "net_delta": {
+        "finite": 19200,
+        "max": 3207.286062703479,
+        "median": 169.60407563035568,
+        "min": -563.26388399962,
+        "negative": 2764,
+        "null": 0,
+        "points": 19200,
+        "positive": 14687,
+        "zero": 1749
+      },
+      "strict_net_sign_reversals": 846
+    },
+    "target_atr": {
+      "absolute_net_delta": {
+        "finite": 19200,
+        "max": 2610.0218591349158,
+        "median": 94.82766513776187,
+        "min": 0.0,
+        "negative": 0,
+        "null": 0,
+        "points": 19200,
+        "positive": 16765,
+        "zero": 2435
+      },
+      "net_delta": {
+        "finite": 19200,
+        "max": 2610.0218591349158,
+        "median": 76.23153817977887,
+        "min": -528.7321257351963,
+        "negative": 2606,
+        "null": 0,
+        "points": 19200,
+        "positive": 14159,
+        "zero": 2435
+      },
+      "strict_net_sign_reversals": 764
+    },
+    "threshold": {
+      "absolute_net_delta": {
+        "finite": 17600,
+        "max": 10000.000000000007,
+        "median": 69.90001169728603,
+        "min": 0.0,
+        "negative": 0,
+        "null": 0,
+        "points": 17600,
+        "positive": 14078,
+        "zero": 3522
+      },
+      "net_delta": {
+        "finite": 17600,
+        "max": 10000.000000000007,
+        "median": 3.7694635466323234e-06,
+        "min": -1769.1806104151674,
+        "negative": 5148,
+        "null": 0,
+        "points": 17600,
+        "positive": 8930,
+        "zero": 3522
+      },
+      "strict_net_sign_reversals": 1149
+    }
+  },
+  "errors": [],
+  "file_pins": {
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/search_phase_labelled_20261012.csv": "9d0ba585e55cc6e9694b956b974e65f6e8da7a7210c402dd1a0de76d40d15242",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/REPORT.ar.md": "10e82bfcfdec5d505e36fe018ac97f9fd4e5760f6d2e78fccfac0adb6f4f7768",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/adjacent_comparisons.csv": "50bc3c7c8f0c335fb95aaa644f355ff7815abdcf0641bb96f0ea1d1ca1d05bf4",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/analyse.py": "56a8a13a81d4f559e448ee08ae8fc4889368606886317770b32ab43dce15938f",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/declared_grid_points.csv": "544e310538adbf6a398c639e1ea1ff6f20f725e2970ac856d61a37c0f7e18108",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/group_metric_summary.csv": "59fe6b43111dd42853257e6adb55a2b4c864c86e13eeca020a50285e5c3047ed",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/receipt.json": "e474d4b632133e8b41b74b3033df3101f367cb5a696c3f82d26cfa619aa741d2",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/scientific_points.csv": "1364ee37e106572c695a2aa483cd692bd1dafbaeabd807aeb94be7730ed9d4d6",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/validation_sensitivity_20261012/validation_sensitivity.json": "b5ec1fd924f01063b4b17bb643e272ec9eaf8c13d9825c42f58528a632273d12"
+  },
+  "final_artifacts_read": 0,
+  "new_backtests": 0,
+  "producer_receipt_sha256": "e474d4b632133e8b41b74b3033df3101f367cb5a696c3f82d26cfa619aa741d2",
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "schema_version": 1,
+  "scope": "Independent validation-source-to-matrix verification; no producer imports, final reads, ranking, trades pooling or backtests",
+  "script_sha256": "b08ad85f29ddefaa54e291bb71dfeac1b968dac493acb929c0b498fa80fcab57",
+  "status": "PASS"
+}

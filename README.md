@@ -12,6 +12,16 @@ adaptive. The 13 fixed families and 32 parameter rounds do not establish a new
 family invented each cycle. See the [evidence index](docs/single_frame_campaign_20261011/RESEARCH_STATUS_20261012.ar.md).
 All live-trading gates remain false; no new campaign starts from this result.
 
+12 October [post-closeout independent accounting and validation sensitivity](docs/single_frame_campaign_20261011/POST_CLOSEOUT_AUDIT_20261012.ar.md):
+saved-ledger arithmetic passes54,578,022 checks across1,300 policies,1,292,148
+trades and11,748,275 equity points without engine imports or new backtests.
+Validation-only five-axis sensitivity covers38,400 distinct scientific grid
+points; a separate source-to-matrix verifier passes1,762,579 checks. The Arabic
+dashboard now displays each group's distributions and inactive axes. No final
+selection, ranking or acceptance gate changes. These overlapping ledgers and
+parameter points are not independent market-event sample sizes. Actual CFD costs,
+fills and stable executable profit remain unverified; the campaign stays closed.
+
 11 October scope: the new [single-frame automated campaign](research_campaign/README.md)
 implements the attached ten-symbol/ten-frame request with independent strategies,
 60/20/20 chronology and 32 actual cycles at fifteen-minute intervals. Its

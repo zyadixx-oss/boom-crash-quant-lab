@@ -7,3 +7,10 @@
 
 /* Keep offscreen accessibility labels inside their horizontal scrollers. */
 .rs-scroll,.rs-heatmap-scroll{position:relative}
+
+.rs-parameter-sensitivity { grid-column: 1 / -1; min-width: 0; border-top: 1px solid #26313f; padding-top: 20px; margin-top: 12px; }
+.rs-parameter-sensitivity > p { color: #9baabd; line-height: 1.8; font-size: 13px; }
+.rs-parameter-sensitivity .rs-scroll { max-width: 100%; margin-block: 16px; }
+.rs-parameter-sensitivity td small { display: block; color: #aeb7c5; }
+.rs-parameter-sensitivity details { margin-top: 16px; font-size: 12px; color: #9baabd; }
+.rs-parameter-sensitivity code { display: block; overflow-wrap: anywhere; }

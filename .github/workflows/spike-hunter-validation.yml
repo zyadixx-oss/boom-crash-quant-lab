@@ -51,6 +51,11 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements-research-lock.txt
       - run: python -m pytest
+      - name: Test post-closeout independent arithmetic and validation sensitivity helpers
+        run: |
+          python -m pytest -o addopts= -q scripts/independent_campaign_accounting/test_audit_ledger.py
+          (cd scripts/campaign_validation_sensitivity && python -m unittest -v test_analyse test_verify)
+          python -m compileall -q scripts/independent_campaign_accounting scripts/campaign_validation_sensitivity scripts/build_campaign_sensitivity_ui.py
       - name: Test independent single-frame campaign chronology, source audit, accounting and resume
         run: |
           python -m pytest -o addopts= -q research_campaign/tests docs/single_frame_campaign_20261011/test_contract_probe.py docs/single_frame_campaign_20261011/test_tick_execution_review.py docs/single_frame_campaign_20261011/test_final_replay.py docs/single_frame_campaign_20261011/test_search_export_annotation.py
