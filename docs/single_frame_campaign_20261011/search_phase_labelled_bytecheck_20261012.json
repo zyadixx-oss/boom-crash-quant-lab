@@ -1,0 +1,18 @@
+{
+  "status": "ACTUAL_ALL_RECORD_BYTES_AND_COLUMNS_PRESERVED",
+  "verified_at": "2026-10-12T03:56:55.609762+00:00",
+  "original_data_rows": 41600,
+  "records_including_header": 41601,
+  "partition_counts": {
+    "final_selection": 1500,
+    "development_selection": 40100
+  },
+  "zero_mismatches": true,
+  "before_after_file_hashes": {
+    "/Users/zyadalasmri/Downloads/search (1).csv": "8bc8e59ae370b017065706638ea6f728eb9965e564696f33d0d7eab2efd1cf75",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/search_phase_labelled_20261012.csv": "9d0ba585e55cc6e9694b956b974e65f6e8da7a7210c402dd1a0de76d40d15242",
+    "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/search_phase_labelled_20261012.receipt.json": "4ffcd3d6314cee373d20e52eb5b8dce502e829f0cf6e50faa487f8bae12f988d"
+  },
+  "evidence_pin_count": 1365,
+  "checks": "Every annotated row retains every original cell and raw CSV record byte, including quoting/line endings, before the two appended ASCII fields. Both CSV and receipt exist; hashes match receipt and remain unchanged during this check. No numerical backtests."
+}

@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-10-12T08:23:56.155169+00:00",
+  "status": "PASS",
+  "scope": "Root read-only receipt identity/hash checks and deterministic exact-byte evidence packaging; not additional backtests",
+  "members": 5202,
+  "phases": {
+    "walk_forward": 3900,
+    "final": 1300
+  },
+  "latest_sha256": "c7ac7cbc3d6009131edd516c512f388fa9b34c8f30b65f9b09ae563d9b0fb0d0",
+  "index_sha256": "65881bc5d660f1af2140302bc536bd634855aed10d47772d2e5e0d6a7bef6350",
+  "archive_sha256": "87523e36679b0cb51b67a7b30c6a30058a502479ac71fa45460d492db2a6546f",
+  "archive_bytes": 2723503,
+  "fresh_backtests_in_original_replay": 5200,
+  "reused_in_original_replay": 0,
+  "packaging_backtests": 0,
+  "source_files_unchanged": true,
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  }
+}

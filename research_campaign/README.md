@@ -98,6 +98,22 @@ selected-ledger details, and `search.csv`. Full compressed result artifacts,
 all settings and cycle journals remain in the state directory. The dashboard
 labels development and final results separately; no final metrics appear early.
 
+The original full-search `search.csv` keeps **validation metrics** in every
+row. For selected policies its disposition and rejection reasons come from
+the final evaluation; those reasons do not turn the metric columns into OOS
+metrics. After completion, create a separate, verified copy with explicit
+`metrics_partition=validation` and `disposition_partition` labels:
+
+```bash
+.venv/bin/python scripts/annotate_campaign_search_export.py --source /absolute/path/search.csv
+```
+
+The helper matches all 41,600 rows to the 32 journals and frozen selection,
+checks the committed final dispositions and source/code hashes, and writes
+`work/search_phase_labelled_20261012.csv` plus its receipt exclusively. It
+retains the original CSV bytes and all original columns. The dashboard's
+1,300-row results export with `scope=oos` is a separate export.
+
 ## Verification
 
 ```bash

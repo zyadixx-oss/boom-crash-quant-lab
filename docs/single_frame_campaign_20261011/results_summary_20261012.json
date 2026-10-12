@@ -1,0 +1,3091 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-12T03:27:18.132587+00:00",
+  "campaign_id": "single-frame-8af790ef59a5",
+  "status": "READ_ONLY_SUMMARY_MATCHED_COMMITTED_FINAL_FAMILY",
+  "sources": {
+    "state": {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/state.json",
+      "sha256": "8f2272a487bfa447556f2f6acdb13a235333f8b67eb89d25112356c1e68a5fba"
+    },
+    "selection": {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/selection_frozen.json",
+      "sha256": "bf811e19afaa0ccc105db44ee060c6bf2be7dd94e9e2ad686596f60bb0bb2eed"
+    },
+    "declaration": {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/declaration.json",
+      "sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    "snapshot": {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/frontend/public/campaign/latest.json",
+      "sha256": "a42ca7e47ab46c334bffe7626135c51e47ac588b5cc9a5774080ed5a0c5f5bf4"
+    },
+    "request": {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/single_frame_campaign_20261011/REQUEST.ar.md",
+      "sha256": "a4790d98fd3f1734c27b864c4fa83ab4b7f4984d904053e75611f8929f169e6b"
+    },
+    "accounting_source": {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/research_campaign/engine.py",
+      "sha256": "25deed73a415f908c816d32537895c4b89164a764876bebfc17ced2a8a12eb21"
+    },
+    "controller_source": {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/research_campaign/campaign.py",
+      "sha256": "2f29d814966520692ca645ff05279144ee5ee453ea3b75e60013b375d7968fd5"
+    },
+    "final_family": {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/artifacts/final-family-bf811e19afaa0ccc105db44ee060c6bf2be7dd94e9e2ad686596f60bb0bb2eed.json.gz",
+      "sha256": "2dfd36532eb225693870c1f61547bc4f0d8543602e1b165f0f56497a0195dec8"
+    }
+  },
+  "campaign_completed_at": "2026-10-12T01:55:46.988393+00:00",
+  "selection_frozen_at": "2026-10-12T01:42:07.672772+00:00",
+  "final_family_finalized_at": "2026-10-12T01:46:50.843880+00:00",
+  "counts": {
+    "family_policies": 1300,
+    "snapshot_rows_exactly_matched": 1300,
+    "qualified": 0,
+    "positive_assumption_net": 169,
+    "six_financial_gates_passed": 4,
+    "uncertainty_tested": 749,
+    "development_stability_passed": 13,
+    "symbol_frame_cells": 100,
+    "development_attempts": 41600,
+    "development_cache_hits": 3200,
+    "development_new_measurements": 38400
+  },
+  "gate_failure_counts_nonexclusive": {
+    "minimum_100_completed": 551,
+    "profit_factor_1_10": 1180,
+    "positive_net_profit": 1131,
+    "outperforms_buy_and_hold": 987,
+    "outperforms_native_reference": 1024,
+    "data_quality": 1300,
+    "actual_contract_costs_verified": 1300,
+    "original_tick_execution_verified": 1300,
+    "statistical_uncertainty": 1300,
+    "multiplicity_adjusted": 1300,
+    "development_walk_forward_stability": 1287,
+    "maximum_drawdown_20pct": 599
+  },
+  "minimum_unadjusted_p": 0.07134,
+  "minimum_holm_p": 1.0,
+  "families": {
+    "atr_compression_expansion": {
+      "policies": 100,
+      "positive_assumption_net": 11,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 43,
+      "profit_factor_1_10_passed": 9
+    },
+    "bollinger_squeeze": {
+      "policies": 100,
+      "positive_assumption_net": 14,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 58,
+      "profit_factor_1_10_passed": 10
+    },
+    "crt": {
+      "policies": 100,
+      "positive_assumption_net": 10,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 80,
+      "profit_factor_1_10_passed": 8
+    },
+    "empirical_conditional_return": {
+      "policies": 100,
+      "positive_assumption_net": 7,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 28,
+      "profit_factor_1_10_passed": 4
+    },
+    "false_break": {
+      "policies": 100,
+      "positive_assumption_net": 16,
+      "six_financial_gates_passed": 1,
+      "qualified": 0,
+      "minimum_100_completed_passed": 69,
+      "profit_factor_1_10_passed": 14
+    },
+    "ict_liquidity_mss": {
+      "policies": 100,
+      "positive_assumption_net": 13,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 44,
+      "profit_factor_1_10_passed": 7
+    },
+    "mean_reversion": {
+      "policies": 100,
+      "positive_assumption_net": 15,
+      "six_financial_gates_passed": 1,
+      "qualified": 0,
+      "minimum_100_completed_passed": 71,
+      "profit_factor_1_10_passed": 12
+    },
+    "post_spike": {
+      "policies": 100,
+      "positive_assumption_net": 10,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 70,
+      "profit_factor_1_10_passed": 7
+    },
+    "pre_spike": {
+      "policies": 100,
+      "positive_assumption_net": 22,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 0,
+      "profit_factor_1_10_passed": 12
+    },
+    "rsi_momentum": {
+      "policies": 100,
+      "positive_assumption_net": 10,
+      "six_financial_gates_passed": 1,
+      "qualified": 0,
+      "minimum_100_completed_passed": 70,
+      "profit_factor_1_10_passed": 6
+    },
+    "statistical_volatility": {
+      "policies": 100,
+      "positive_assumption_net": 14,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 75,
+      "profit_factor_1_10_passed": 11
+    },
+    "support_resistance": {
+      "policies": 100,
+      "positive_assumption_net": 15,
+      "six_financial_gates_passed": 0,
+      "qualified": 0,
+      "minimum_100_completed_passed": 75,
+      "profit_factor_1_10_passed": 11
+    },
+    "trend": {
+      "policies": 100,
+      "positive_assumption_net": 12,
+      "six_financial_gates_passed": 1,
+      "qualified": 0,
+      "minimum_100_completed_passed": 66,
+      "profit_factor_1_10_passed": 9
+    }
+  },
+  "cycles": [
+    {
+      "number": 1,
+      "sha256": "07d6dc49c6fca77adb0a2608e1d2a05ee8b699f593568e2ce5049705635935a4",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T17:27:25.449187+00:00",
+      "completed_at": "2026-10-11T17:43:07.213595+00:00"
+    },
+    {
+      "number": 2,
+      "sha256": "41fd14ce79b62c3205d22d87b5d63028db8b2d45298d40785b6b870f179b00ac",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T17:43:07.574387+00:00",
+      "completed_at": "2026-10-11T17:56:58.797158+00:00"
+    },
+    {
+      "number": 3,
+      "sha256": "e20c4e27ef994e11fe39c98baf33605eb608bf2c4dd3a9053a3e2d72d97d6a64",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T17:58:07.601918+00:00",
+      "completed_at": "2026-10-11T18:10:54.908649+00:00"
+    },
+    {
+      "number": 4,
+      "sha256": "57d733dade1e0536107ed0cc4afb80ffba09de68bd281291dd3e68d685f7b316",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T18:13:07.632270+00:00",
+      "completed_at": "2026-10-11T18:25:25.484560+00:00"
+    },
+    {
+      "number": 5,
+      "sha256": "a17bf225369e74f6706134be5ad843a0f82332a0f8ac1da1f7d48367ba323048",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T18:28:07.650731+00:00",
+      "completed_at": "2026-10-11T18:42:53.105124+00:00"
+    },
+    {
+      "number": 6,
+      "sha256": "f6a69ba053cd9f6633639d46a466e374e13734df19e903d9c6ffe486cc7be61e",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T18:43:07.665858+00:00",
+      "completed_at": "2026-10-11T18:57:06.484559+00:00"
+    },
+    {
+      "number": 7,
+      "sha256": "03aa1285f61b0128ae314d2047e0f088e41abb6801a5e292dbccecb5ec3454eb",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T18:58:07.696316+00:00",
+      "completed_at": "2026-10-11T19:11:01.526382+00:00"
+    },
+    {
+      "number": 8,
+      "sha256": "95e24085e09f4bf66f0b2e2d2ab993390c0c5e8644fa8cf61bf977998c910707",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T19:13:07.726232+00:00",
+      "completed_at": "2026-10-11T19:25:27.119964+00:00"
+    },
+    {
+      "number": 9,
+      "sha256": "ef9b1f1a511a99ed66eeb0cdc67a220f6c08a5a076df498baf680dfacc5a0ab5",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T19:28:07.753607+00:00",
+      "completed_at": "2026-10-11T19:42:48.528106+00:00"
+    },
+    {
+      "number": 10,
+      "sha256": "af3b2e66fd6d401ff5b7434de5a96b2e350d3285a03b6b713b812a46ad526db5",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T19:43:07.772115+00:00",
+      "completed_at": "2026-10-11T19:57:02.222191+00:00"
+    },
+    {
+      "number": 11,
+      "sha256": "b1300a55f219b66027170ea9d2e839ab5a1a75ccfedc07bbd2911df6188fbbb0",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T19:58:07.782528+00:00",
+      "completed_at": "2026-10-11T20:10:59.238911+00:00"
+    },
+    {
+      "number": 12,
+      "sha256": "40c97e9e73fac85d028f6869bff54600b84ec381bd678d9990a700a7e2bce88f",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T20:13:07.801586+00:00",
+      "completed_at": "2026-10-11T20:25:25.894854+00:00"
+    },
+    {
+      "number": 13,
+      "sha256": "57d9b52d699ff00386348c47f3035a049410dca6c4c6620b1afcb250056210ab",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T20:28:07.820215+00:00",
+      "completed_at": "2026-10-11T20:42:56.042606+00:00"
+    },
+    {
+      "number": 14,
+      "sha256": "4c9c3401b288544f0c40d6000b197b8b343dd68188555750f060a58291f950ec",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T20:43:07.831130+00:00",
+      "completed_at": "2026-10-11T20:57:05.623125+00:00"
+    },
+    {
+      "number": 15,
+      "sha256": "52967ea0008401589df0e7ac3233261768f52d8dd7e08f81943baac594bc8559",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T20:58:07.853045+00:00",
+      "completed_at": "2026-10-11T21:11:02.557844+00:00"
+    },
+    {
+      "number": 16,
+      "sha256": "8e23f6ec9ba13f7381a622a8a4b66a64ab0a7c95544d0181db4a7eb56e4fffaf",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T21:13:07.887579+00:00",
+      "completed_at": "2026-10-11T21:25:27.954903+00:00"
+    },
+    {
+      "number": 17,
+      "sha256": "1ca45c9e052da8e03f63a6cc36434dc6637c2b7c9d849bb4804db50a941b8ee7",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T21:28:07.905797+00:00",
+      "completed_at": "2026-10-11T21:43:16.319611+00:00"
+    },
+    {
+      "number": 18,
+      "sha256": "2ce113d3af46782658e5ea994117ce1e0f742b0009d6c18663fa153255be7137",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T21:43:17.234761+00:00",
+      "completed_at": "2026-10-11T21:57:37.406472+00:00"
+    },
+    {
+      "number": 19,
+      "sha256": "229920f1e5f5471ff27b00c026cd4e532381856c79d51bd31174f3ae2a1d11dc",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T21:58:17.264393+00:00",
+      "completed_at": "2026-10-11T22:11:36.109487+00:00"
+    },
+    {
+      "number": 20,
+      "sha256": "19bdf23478621db15258785f54737071d347f76cb82bd260509f44ad2801d06f",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T22:13:17.289439+00:00",
+      "completed_at": "2026-10-11T22:27:44.656964+00:00"
+    },
+    {
+      "number": 21,
+      "sha256": "cfef6571254a963866cf33f1afcc9b747401947f05ff745feef29c95978579a6",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T22:28:17.324063+00:00",
+      "completed_at": "2026-10-11T22:45:16.993071+00:00"
+    },
+    {
+      "number": 22,
+      "sha256": "b8d3ad4bd2cf1ed326d633a28443afe045b786182ea75e36cfa5f69d00ad01cf",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T22:45:18.408380+00:00",
+      "completed_at": "2026-10-11T23:00:57.307217+00:00"
+    },
+    {
+      "number": 23,
+      "sha256": "e1e86d6d8075db8f3f6cc33d247e1db8d30960564b89c77c251b1f25d58cb328",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T23:00:58.431728+00:00",
+      "completed_at": "2026-10-11T23:15:22.225501+00:00"
+    },
+    {
+      "number": 24,
+      "sha256": "fa8e57fc9109b2c13da4497b6359f0decfe8daf5fd508d309fafaeef258c8b78",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-11T23:15:58.455716+00:00",
+      "completed_at": "2026-10-11T23:29:25.373357+00:00"
+    },
+    {
+      "number": 25,
+      "sha256": "af9cabc7b04be8b725710909679d6027b96cce03c156b390c1c79b80b1c7098e",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T23:30:58.486445+00:00",
+      "completed_at": "2026-10-11T23:46:34.198549+00:00"
+    },
+    {
+      "number": 26,
+      "sha256": "3025164599cd8c5690815d1bc4109765442355894d03cf14458d434c3666fbdf",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-11T23:46:35.397389+00:00",
+      "completed_at": "2026-10-12T00:01:36.491274+00:00"
+    },
+    {
+      "number": 27,
+      "sha256": "50cbb9d0ce7337f971ba810c514b41c2e94fcdebb95d0c4bd80f7ee9971b6f38",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-12T00:01:38.618099+00:00",
+      "completed_at": "2026-10-12T00:17:18.575862+00:00"
+    },
+    {
+      "number": 28,
+      "sha256": "9591242c5b7b43d9dd4a5ab808458253a2dabe73b9041e8c9fb7a7b41028a52a",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-12T00:17:20.089626+00:00",
+      "completed_at": "2026-10-12T00:30:50.666079+00:00"
+    },
+    {
+      "number": 29,
+      "sha256": "2d91b063ac0aaa55009fc9fad1515300bf4b1c0ee6cae5ca4d09c168c10cc2c7",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-12T00:32:20.125920+00:00",
+      "completed_at": "2026-10-12T00:48:50.237277+00:00"
+    },
+    {
+      "number": 30,
+      "sha256": "f07c585e5b808392c6fad601b9349ef61debecf5ad54e98c48fdcf3d9b692e6a",
+      "attempts": 1300,
+      "cache_hits": 0,
+      "new_measurements": 1300,
+      "started_at": "2026-10-12T00:48:51.648242+00:00",
+      "completed_at": "2026-10-12T01:04:23.465977+00:00"
+    },
+    {
+      "number": 31,
+      "sha256": "ea6c3a47be5aee494706268b7095c7d19eec88551833294a20ad3e544025d20c",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-12T01:04:24.847590+00:00",
+      "completed_at": "2026-10-12T01:18:56.065053+00:00"
+    },
+    {
+      "number": 32,
+      "sha256": "cd3ca14c62a786c5a673062030eb3752424b9e349e3f864a6723e8890546d355",
+      "attempts": 1300,
+      "cache_hits": 200,
+      "new_measurements": 1100,
+      "started_at": "2026-10-12T01:19:24.867173+00:00",
+      "completed_at": "2026-10-12T01:33:05.708848+00:00"
+    }
+  ],
+  "representative_rule": "Highest saved validation_score among frozen per-symbol/frame/family selections; ascending group name for exact ties; final outcomes do not enter this rule. Diagnostic display only; no qualified strategy is selected.",
+  "per_symbol_prefinal_validation_representatives": {
+    "BOOM1000": {
+      "selection_group": "BOOM1000/H2/bollinger_squeeze",
+      "strategy_id": "bollinger_squeeze.r28.e667aaef544e",
+      "symbol": "BOOM1000",
+      "timeframe": "H2",
+      "family": "bollinger_squeeze",
+      "name_ar": "ضغط بولينجر",
+      "validation_score": 2.82399763131184,
+      "settings": {
+        "atr_period": 14,
+        "family": "bollinger_squeeze",
+        "id": "bollinger_squeeze.r28.e667aaef544e",
+        "label": "Bollinger squeeze breakout",
+        "lookback": 12,
+        "max_hold_bars": 8,
+        "round_index": 28,
+        "scientific_id": "fac380b3af7ee4459aae9a1f0818f63e685185750abb6cb7f428e82cf0387802",
+        "stop_atr": 2.5,
+        "target_atr": 3.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 20,
+        "completed_trades": 20,
+        "final_equity": 9739.35923689357,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.03557973520706716,
+        "mean_net_R": -0.262909327118398,
+        "median_holding_seconds": 57600.0,
+        "net_profit": -260.64076310642605,
+        "net_return": -0.026064076310643003,
+        "period_days": 72.99555555555555,
+        "profit_factor": 0.36095212055908305,
+        "sample_size": 20,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.3
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 9
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": false,
+        "outperforms_native_reference": false,
+        "positive_net_profit": false,
+        "profit_factor_1_10": false,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "profit_factor_1_10",
+        "positive_net_profit",
+        "outperforms_buy_and_hold",
+        "outperforms_native_reference",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785420000,
+          "entry_price": 14894.802,
+          "exit_epoch": 1791720000,
+          "exit_price": 15732.866,
+          "net_profit": 558.142714101585,
+          "net_return": 0.05581427141015851,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 6.721478571428569
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785420000,
+          "entry_price": 14894.802,
+          "exit_epoch": 1791720000,
+          "exit_price": 15732.866,
+          "net_profit": 558.142714101585,
+          "net_return": 0.05581427141015851,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 6.721478571428569
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 11,
+            "completed_trades": 11,
+            "final_equity": 9997.841843338594,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.011923681404831783,
+            "mean_net_R": -0.0021555669692791646,
+            "median_holding_seconds": 57600.0,
+            "net_profit": -2.158156661404936,
+            "net_return": -0.00021581566614059522,
+            "period_days": 58.39644675925926,
+            "profit_factor": 0.9894325630643899,
+            "sample_size": 11,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.45454545454545453
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 14,
+            "completed_trades": 15,
+            "final_equity": 10119.10077462909,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.01005239903755711,
+            "mean_net_R": 0.15911762733688065,
+            "median_holding_seconds": 57600.0,
+            "net_profit": 119.10077462909021,
+            "net_return": 0.011910077462909063,
+            "period_days": 58.39644675925926,
+            "profit_factor": 1.6792633123641296,
+            "sample_size": 15,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5333333333333333
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 16,
+            "completed_trades": 16,
+            "final_equity": 10369.200636400508,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.006292042691780334,
+            "mean_net_R": 0.45471125309209226,
+            "median_holding_seconds": 57600.0,
+            "net_profit": 369.2006364005066,
+            "net_return": 0.03692006364005085,
+            "period_days": 58.39644675925926,
+            "profit_factor": 5.233808388744387,
+            "sample_size": 16,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.75
+          }
+        }
+      ]
+    },
+    "BOOM300": {
+      "selection_group": "BOOM300/H2/crt",
+      "strategy_id": "crt.r22.2eaab802ddfe",
+      "symbol": "BOOM300",
+      "timeframe": "H2",
+      "family": "crt",
+      "name_ar": "استعادة نطاق الشمعة CRT",
+      "validation_score": 1.4990191751726054,
+      "settings": {
+        "atr_period": 14,
+        "family": "crt",
+        "id": "crt.r22.2eaab802ddfe",
+        "label": "Candle range reclaim",
+        "lookback": 12,
+        "max_hold_bars": 8,
+        "round_index": 22,
+        "scientific_id": "c1073ebc061cb27aa9ff9ab75fdd5f0ba3e07dc9c4e3262c5599d0ad35e767cb",
+        "stop_atr": 2.5,
+        "target_atr": 2.0,
+        "threshold": 1.2,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 40,
+        "completed_trades": 43,
+        "final_equity": 9827.332040392195,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.032374020376036976,
+        "mean_net_R": -0.08007841682953082,
+        "median_holding_seconds": 57600.0,
+        "net_profit": -172.66795960781042,
+        "net_return": -0.017266795960780512,
+        "period_days": 72.99666666666667,
+        "profit_factor": 0.7292540566052227,
+        "sample_size": 43,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.4418604651162791
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 11
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": true,
+        "positive_net_profit": false,
+        "profit_factor_1_10": false,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "profit_factor_1_10",
+        "positive_net_profit",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785420000,
+          "entry_price": 1069.478,
+          "exit_epoch": 1791720000,
+          "exit_price": 446.999,
+          "net_profit": -5841.024980678158,
+          "net_return": -0.5841024980678158,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 2.2057714285714325
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785420000,
+          "entry_price": 1069.478,
+          "exit_epoch": 1791720000,
+          "exit_price": 446.999,
+          "net_profit": -5841.024980678158,
+          "net_return": -0.5841024980678158,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 2.2057714285714325
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 38,
+            "completed_trades": 41,
+            "final_equity": 9607.276799524965,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.0447306031466686,
+            "mean_net_R": -0.19410207734363724,
+            "median_holding_seconds": 57600.0,
+            "net_profit": -392.7232004750381,
+            "net_return": -0.03927232004750347,
+            "period_days": 58.39732638888889,
+            "profit_factor": 0.5490809238815412,
+            "sample_size": 41,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.4146341463414634
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 32,
+            "completed_trades": 35,
+            "final_equity": 10128.995407423807,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.020592482939608015,
+            "mean_net_R": 0.07440955111558868,
+            "median_holding_seconds": 57600.0,
+            "net_profit": 128.99540742380447,
+            "net_return": 0.012899540742380644,
+            "period_days": 58.397337962962965,
+            "profit_factor": 1.269373924447857,
+            "sample_size": 35,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5142857142857142
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 38,
+            "completed_trades": 42,
+            "final_equity": 10253.339376054351,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.013724874709821772,
+            "mean_net_R": 0.12023524921039358,
+            "median_holding_seconds": 57600.0,
+            "net_profit": 253.33937605434576,
+            "net_return": 0.02533393760543512,
+            "period_days": 58.397337962962965,
+            "profit_factor": 1.5093843287455415,
+            "sample_size": 42,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5714285714285714
+          }
+        }
+      ]
+    },
+    "BOOM500": {
+      "selection_group": "BOOM500/H2/false_break",
+      "strategy_id": "false_break.r09.88df876682f4",
+      "symbol": "BOOM500",
+      "timeframe": "H2",
+      "family": "false_break",
+      "name_ar": "الاختراق الكاذب",
+      "validation_score": 1.7350960206876498,
+      "settings": {
+        "atr_period": 14,
+        "family": "false_break",
+        "id": "false_break.r09.88df876682f4",
+        "label": "False range break",
+        "lookback": 24,
+        "max_hold_bars": 4,
+        "round_index": 9,
+        "scientific_id": "3dde596d4348acb6d75ed186f6dd5d09f28fcb84019ba49459759fb30f4f5398",
+        "stop_atr": 1.5,
+        "target_atr": 3.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 13,
+        "completed_trades": 14,
+        "final_equity": 10363.15899696809,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.009642704564440626,
+        "mean_net_R": 0.5121502885398649,
+        "median_holding_seconds": 28800.0,
+        "net_profit": 363.1589969680909,
+        "net_return": 0.03631589969680893,
+        "period_days": 72.99666666666667,
+        "profit_factor": 4.2164914566049,
+        "sample_size": 14,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.7142857142857143
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 7
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": false,
+        "outperforms_native_reference": false,
+        "positive_net_profit": true,
+        "profit_factor_1_10": true,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "outperforms_buy_and_hold",
+        "outperforms_native_reference",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785420000,
+          "entry_price": 4868.93,
+          "exit_epoch": 1791720000,
+          "exit_price": 5734.668,
+          "net_profit": 1771.395489944841,
+          "net_return": 0.17713954899448411,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 3.25793571428572
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785420000,
+          "entry_price": 4868.93,
+          "exit_epoch": 1791720000,
+          "exit_price": 5734.668,
+          "net_profit": 1771.395489944841,
+          "net_return": 0.17713954899448411,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 3.25793571428572
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 11,
+            "completed_trades": 11,
+            "final_equity": 9973.902391385547,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.015136502903444048,
+            "mean_net_R": -0.046376455945834484,
+            "median_holding_seconds": 28800.0,
+            "net_profit": -26.09760861445138,
+            "net_return": -0.002609760861445265,
+            "period_days": 58.39732638888889,
+            "profit_factor": 0.8517393700174606,
+            "sample_size": 11,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.6363636363636364
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 16,
+            "completed_trades": 19,
+            "final_equity": 9703.058429372002,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.033302804853345455,
+            "mean_net_R": -0.3150154926636698,
+            "median_holding_seconds": 28800.0,
+            "net_profit": -296.9415706279994,
+            "net_return": -0.029694157062799764,
+            "period_days": 58.397337962962965,
+            "profit_factor": 0.44367853240215327,
+            "sample_size": 19,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.3157894736842105
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 16,
+            "completed_trades": 16,
+            "final_equity": 10446.495436758803,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.007442037820222366,
+            "mean_net_R": 0.5482765560392442,
+            "median_holding_seconds": 28800.0,
+            "net_profit": 446.4954367588032,
+            "net_return": 0.044649543675880254,
+            "period_days": 58.397337962962965,
+            "profit_factor": 4.749567329178991,
+            "sample_size": 16,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.75
+          }
+        }
+      ]
+    },
+    "BOOM600": {
+      "selection_group": "BOOM600/M15/empirical_conditional_return",
+      "strategy_id": "empirical_conditional_return.r00.e7b05733746c",
+      "symbol": "BOOM600",
+      "timeframe": "M15",
+      "family": "empirical_conditional_return",
+      "name_ar": "حالات العائد الشرطي المتعلمة",
+      "validation_score": 1.5627956387635735,
+      "settings": {
+        "atr_period": 14,
+        "family": "empirical_conditional_return",
+        "id": "empirical_conditional_return.r00.e7b05733746c",
+        "label": "Frozen training-only conditional return states",
+        "lookback": 12,
+        "max_hold_bars": 4,
+        "round_index": 0,
+        "scientific_id": "94a46f13f10df923cd019df652da0cc35fdc82921f97106615baddf77909923a",
+        "stop_atr": 1.5,
+        "target_atr": 2.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 28,
+        "completed_trades": 49,
+        "final_equity": 9920.541961905774,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.02972600936167006,
+        "mean_net_R": -0.03087956401168386,
+        "median_holding_seconds": 3600.0,
+        "net_profit": -79.45803809422357,
+        "net_return": -0.007945803809422669,
+        "period_days": 72.99666666666667,
+        "profit_factor": 0.9136464015973906,
+        "sample_size": 49,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.46938775510204084
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 10
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": true,
+        "positive_net_profit": false,
+        "profit_factor_1_10": false,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "profit_factor_1_10",
+        "positive_net_profit",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 5588.494,
+          "exit_epoch": 1791720900,
+          "exit_price": 5166.382,
+          "net_profit": -757.188673217303,
+          "net_return": -0.07571886732173029,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.0424357142857
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 5588.494,
+          "exit_epoch": 1791720900,
+          "exit_price": 5166.382,
+          "net_profit": -757.188673217303,
+          "net_return": -0.07571886732173029,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.0424357142857
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 0,
+            "completed_trades": 0,
+            "final_equity": 10000.0,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.0,
+            "mean_net_R": null,
+            "median_holding_seconds": null,
+            "net_profit": 0.0,
+            "net_return": 0.0,
+            "period_days": 58.39732638888889,
+            "profit_factor": null,
+            "sample_size": 0,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": null
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 25,
+            "completed_trades": 45,
+            "final_equity": 10254.66694329354,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.02889368879284149,
+            "mean_net_R": 0.11332540015915817,
+            "median_holding_seconds": 3600.0,
+            "net_profit": 254.6669432935378,
+            "net_return": 0.025466694329354,
+            "period_days": 58.397337962962965,
+            "profit_factor": 1.413831892080248,
+            "sample_size": 45,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5333333333333333
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 28,
+            "completed_trades": 53,
+            "final_equity": 10298.293962682197,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.019741410418725684,
+            "mean_net_R": 0.11233463317303442,
+            "median_holding_seconds": 3600.0,
+            "net_profit": 298.29396268219796,
+            "net_return": 0.029829396268219677,
+            "period_days": 58.397337962962965,
+            "profit_factor": 1.4282115313242971,
+            "sample_size": 53,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5660377358490566
+          }
+        }
+      ]
+    },
+    "BOOM900": {
+      "selection_group": "BOOM900/M30/rsi_momentum",
+      "strategy_id": "rsi_momentum.r12.ae462b81b261",
+      "symbol": "BOOM900",
+      "timeframe": "M30",
+      "family": "rsi_momentum",
+      "name_ar": "زخم RSI",
+      "validation_score": 2.0111947553825678,
+      "settings": {
+        "atr_period": 14,
+        "family": "rsi_momentum",
+        "id": "rsi_momentum.r12.ae462b81b261",
+        "label": "RSI momentum cross",
+        "lookback": 12,
+        "max_hold_bars": 4,
+        "round_index": 12,
+        "scientific_id": "594438d770cefeac34f9a8f1c0fd7745a81d6cdabecda5dde219c5afb2e02d76",
+        "stop_atr": 2.5,
+        "target_atr": 3.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 61,
+        "completed_trades": 152,
+        "final_equity": 10336.106388629441,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.033467512493290746,
+        "mean_net_R": 0.044508236367750496,
+        "median_holding_seconds": 7200.0,
+        "net_profit": 336.10638862944387,
+        "net_return": 0.03361063886294424,
+        "period_days": 72.99888888888889,
+        "profit_factor": 1.1764561349128029,
+        "sample_size": 152,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.48026315789473684
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": [
+          -0.05040657674224598,
+          0.13601520849751744
+        ],
+        "method": "fixed UTC week block percentile bootstrap; centered null",
+        "multiplicity_adjusted": true,
+        "p_value": 0.16698,
+        "p_value_resolution": 1e-05,
+        "profit_factor_ci95": [
+          0.8270385057528524,
+          1.6692581326903304
+        ],
+        "repetitions": 99999,
+        "resolution_can_reject_first_holm": true,
+        "seed": 826975804,
+        "status": "TESTED",
+        "weeks": 11
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": true,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": true,
+        "positive_net_profit": true,
+        "profit_factor_1_10": true,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 9175.977,
+          "exit_epoch": 1791720000,
+          "exit_price": 8653.817,
+          "net_profit": -571.2040254678076,
+          "net_return": -0.05712040254678075,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.9755000000000242
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 9175.977,
+          "exit_epoch": 1791720000,
+          "exit_price": 8653.817,
+          "net_profit": -571.2040254678076,
+          "net_return": -0.05712040254678075,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.9755000000000242
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 51,
+            "completed_trades": 117,
+            "final_equity": 9886.467357978625,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.03999623798129669,
+            "mean_net_R": -0.0186345092200612,
+            "median_holding_seconds": 7200.0,
+            "net_profit": -113.5326420213703,
+            "net_return": -0.011353264202137558,
+            "period_days": 58.3991087962963,
+            "profit_factor": 0.9222120824466443,
+            "sample_size": 117,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5042735042735043
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 54,
+            "completed_trades": 145,
+            "final_equity": 9309.225743437333,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.08198849889627141,
+            "mean_net_R": -0.09776628887679222,
+            "median_holding_seconds": 7200.0,
+            "net_profit": -690.7742565626642,
+            "net_return": -0.06907742565626673,
+            "period_days": 58.3991087962963,
+            "profit_factor": 0.6744343102367113,
+            "sample_size": 145,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.42758620689655175
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 51,
+            "completed_trades": 125,
+            "final_equity": 10527.67403534847,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.015910062839730905,
+            "mean_net_R": 0.08325716539192288,
+            "median_holding_seconds": 7200.0,
+            "net_profit": 527.6740353484738,
+            "net_return": 0.05276740353484688,
+            "period_days": 58.39912037037037,
+            "profit_factor": 1.3830534908058307,
+            "sample_size": 125,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.488
+          }
+        }
+      ]
+    },
+    "CRASH1000": {
+      "selection_group": "CRASH1000/H4/bollinger_squeeze",
+      "strategy_id": "bollinger_squeeze.r28.e667aaef544e",
+      "symbol": "CRASH1000",
+      "timeframe": "H4",
+      "family": "bollinger_squeeze",
+      "name_ar": "ضغط بولينجر",
+      "validation_score": 0.9741664364156529,
+      "settings": {
+        "atr_period": 14,
+        "family": "bollinger_squeeze",
+        "id": "bollinger_squeeze.r28.e667aaef544e",
+        "label": "Bollinger squeeze breakout",
+        "lookback": 12,
+        "max_hold_bars": 8,
+        "round_index": 28,
+        "scientific_id": "fac380b3af7ee4459aae9a1f0818f63e685185750abb6cb7f428e82cf0387802",
+        "stop_atr": 2.5,
+        "target_atr": 3.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 11,
+        "completed_trades": 11,
+        "final_equity": 10034.425258205722,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.009542466346671063,
+        "mean_net_R": 0.0631228726276387,
+        "median_holding_seconds": 115200.0,
+        "net_profit": 34.42525820571972,
+        "net_return": 0.00344252582057214,
+        "period_days": 72.99805555555555,
+        "profit_factor": 1.3793892437258808,
+        "sample_size": 11,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.5454545454545454
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 7
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": true,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": false,
+        "outperforms_native_reference": false,
+        "positive_net_profit": true,
+        "profit_factor_1_10": true,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "outperforms_buy_and_hold",
+        "outperforms_native_reference",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": null,
+        "native_direction_hold": null
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 6,
+            "completed_trades": 6,
+            "final_equity": 10013.8378075034,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.011667454144551092,
+            "mean_net_R": 0.047160814784198146,
+            "median_holding_seconds": 115200.0,
+            "net_profit": 13.837807503399688,
+            "net_return": 0.001383780750340069,
+            "period_days": 58.3984375,
+            "profit_factor": 1.1878249918868262,
+            "sample_size": 6,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 9,
+            "completed_trades": 9,
+            "final_equity": 10024.260936923542,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.01808520918251454,
+            "mean_net_R": 0.05581348760425356,
+            "median_holding_seconds": 115200.0,
+            "net_profit": 24.26093692354182,
+            "net_return": 0.0024260936923541365,
+            "period_days": 58.39844907407407,
+            "profit_factor": 1.1502045603799709,
+            "sample_size": 9,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5555555555555556
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 9,
+            "completed_trades": 9,
+            "final_equity": 10100.514988150033,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.006844380970868739,
+            "mean_net_R": 0.22315659068842109,
+            "median_holding_seconds": 115200.0,
+            "net_profit": 100.51498815003413,
+            "net_return": 0.010051498815003335,
+            "period_days": 58.39844907407407,
+            "profit_factor": 3.301226317955979,
+            "sample_size": 9,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.4444444444444444
+          }
+        }
+      ]
+    },
+    "CRASH300": {
+      "selection_group": "CRASH300/M30/empirical_conditional_return",
+      "strategy_id": "empirical_conditional_return.r03.696beffa15eb",
+      "symbol": "CRASH300",
+      "timeframe": "M30",
+      "family": "empirical_conditional_return",
+      "name_ar": "حالات العائد الشرطي المتعلمة",
+      "validation_score": 1.2123431579057495,
+      "settings": {
+        "atr_period": 14,
+        "family": "empirical_conditional_return",
+        "id": "empirical_conditional_return.r03.696beffa15eb",
+        "label": "Frozen training-only conditional return states",
+        "lookback": 24,
+        "max_hold_bars": 4,
+        "round_index": 3,
+        "scientific_id": "81d2702d139eae8bd2d96be9113404de81e5b47659457e19bf651beccc2079fc",
+        "stop_atr": 1.5,
+        "target_atr": 2.0,
+        "threshold": 1.2,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 14,
+        "completed_trades": 28,
+        "final_equity": 10152.818312631343,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.015114024103126506,
+        "mean_net_R": 0.1096559068399818,
+        "median_holding_seconds": 7200.0,
+        "net_profit": 152.81831263134507,
+        "net_return": 0.015281831263134427,
+        "period_days": 72.99888888888889,
+        "profit_factor": 1.4180919493884114,
+        "sample_size": 28,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.5714285714285714
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 9
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": false,
+        "outperforms_native_reference": true,
+        "positive_net_profit": true,
+        "profit_factor_1_10": true,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "outperforms_buy_and_hold",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 2070.337,
+          "exit_epoch": 1791720000,
+          "exit_price": 2450.473,
+          "net_profit": 1825.7206780483423,
+          "net_return": 0.18257206780483423,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 2.1502928571428614
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": -1,
+          "entry_epoch": 1785414600,
+          "entry_price": 2070.337,
+          "exit_epoch": 1791720000,
+          "exit_price": 2450.473,
+          "net_profit": -1846.4930726598752,
+          "net_return": -0.18464930726598752,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 2.1502928571428614
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 59,
+            "completed_trades": 598,
+            "final_equity": 7826.765541064991,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.2372146140958602,
+            "mean_net_R": -0.08013282741890684,
+            "median_holding_seconds": 7200.0,
+            "net_profit": -2173.2344589350096,
+            "net_return": -0.21732344589350083,
+            "period_days": 58.3991087962963,
+            "profit_factor": 0.7944305113276375,
+            "sample_size": 598,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.4414715719063545
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 60,
+            "completed_trades": 589,
+            "final_equity": 7135.121709434518,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.305464691357544,
+            "mean_net_R": -0.11274373744442087,
+            "median_holding_seconds": 7200.0,
+            "net_profit": -2864.878290565468,
+            "net_return": -0.2864878290565481,
+            "period_days": 58.3991087962963,
+            "profit_factor": 0.7488508853343238,
+            "sample_size": 589,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.432937181663837
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 11,
+            "completed_trades": 24,
+            "final_equity": 10490.725869170956,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.014608017438236313,
+            "mean_net_R": 0.4005802393048272,
+            "median_holding_seconds": 7200.0,
+            "net_profit": 490.72586917095225,
+            "net_return": 0.049072586917095595,
+            "period_days": 58.39912037037037,
+            "profit_factor": 4.057627157334156,
+            "sample_size": 24,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.7083333333333334
+          }
+        }
+      ]
+    },
+    "CRASH500": {
+      "selection_group": "CRASH500/M30/trend",
+      "strategy_id": "trend.r28.96cebd10df01",
+      "symbol": "CRASH500",
+      "timeframe": "M30",
+      "family": "trend",
+      "name_ar": "اتباع الاتجاه",
+      "validation_score": 2.4861443832816907,
+      "settings": {
+        "atr_period": 14,
+        "family": "trend",
+        "id": "trend.r28.96cebd10df01",
+        "label": "EMA trend resumption",
+        "lookback": 12,
+        "max_hold_bars": 8,
+        "round_index": 28,
+        "scientific_id": "22222bc1a9ec997b45545b6fd53a2a454d16cefbafbdbdc2cf3b55faf9607d8f",
+        "stop_atr": 2.5,
+        "target_atr": 3.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 49,
+        "completed_trades": 90,
+        "final_equity": 9888.3706490125,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.05203372196472142,
+        "mean_net_R": -0.0236559110745485,
+        "median_holding_seconds": 14400.0,
+        "net_profit": -111.62935098749819,
+        "net_return": -0.011162935098749993,
+        "period_days": 72.99555555555555,
+        "profit_factor": 0.9219930924248392,
+        "sample_size": 90,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.4888888888888889
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 11
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": false,
+        "positive_net_profit": false,
+        "profit_factor_1_10": false,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "profit_factor_1_10",
+        "positive_net_profit",
+        "outperforms_native_reference",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 3071.945,
+          "exit_epoch": 1791720000,
+          "exit_price": 2915.933,
+          "net_profit": -510.9053989294364,
+          "net_return": -0.05109053989294364,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 0.9353285714285806
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": -1,
+          "entry_epoch": 1785414600,
+          "entry_price": 3071.945,
+          "exit_epoch": 1791720000,
+          "exit_price": 2915.933,
+          "net_profit": 504.8159111851663,
+          "net_return": 0.05048159111851663,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 0.9353285714285806
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 38,
+            "completed_trades": 77,
+            "final_equity": 10021.419449235642,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.024337135929015884,
+            "mean_net_R": 0.006638927759974461,
+            "median_holding_seconds": 14400.0,
+            "net_profit": 21.41944923564369,
+            "net_return": 0.002141944923564232,
+            "period_days": 58.39644675925926,
+            "profit_factor": 1.0206728751905718,
+            "sample_size": 77,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.4935064935064935
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 38,
+            "completed_trades": 73,
+            "final_equity": 10389.955210116697,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.020044961957538063,
+            "mean_net_R": 0.10653884852397061,
+            "median_holding_seconds": 14400.0,
+            "net_profit": 389.9552101166969,
+            "net_return": 0.0389955210116697,
+            "period_days": 58.39644675925926,
+            "profit_factor": 1.3301455457641433,
+            "sample_size": 73,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5342465753424658
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 36,
+            "completed_trades": 67,
+            "final_equity": 10429.981301985075,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.019194191708616068,
+            "mean_net_R": 0.12715499656637252,
+            "median_holding_seconds": 14400.0,
+            "net_profit": 429.9813019850794,
+            "net_return": 0.04299813019850762,
+            "period_days": 58.39644675925926,
+            "profit_factor": 1.4604071189994565,
+            "sample_size": 67,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5671641791044776
+          }
+        }
+      ]
+    },
+    "CRASH600": {
+      "selection_group": "CRASH600/M15/ict_liquidity_mss",
+      "strategy_id": "ict_liquidity_mss.r01.47942552524f",
+      "symbol": "CRASH600",
+      "timeframe": "M15",
+      "family": "ict_liquidity_mss",
+      "name_ar": "سحب السيولة وتحول الهيكل",
+      "validation_score": 2.5104803619658114,
+      "settings": {
+        "atr_period": 14,
+        "family": "ict_liquidity_mss",
+        "id": "ict_liquidity_mss.r01.47942552524f",
+        "label": "ICT liquidity sweep and structure shift",
+        "lookback": 24,
+        "max_hold_bars": 4,
+        "round_index": 1,
+        "scientific_id": "68e09a398f875770561eb785555976a63e9649bfc30f700f398b7eff3c779b97",
+        "stop_atr": 1.5,
+        "target_atr": 2.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 28,
+        "completed_trades": 32,
+        "final_equity": 9661.09062220156,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.04583282654829971,
+        "mean_net_R": -0.21321005711632546,
+        "median_holding_seconds": 3600.0,
+        "net_profit": -338.90937779844023,
+        "net_return": -0.03389093777984398,
+        "period_days": 72.99888888888889,
+        "profit_factor": 0.6101445945912868,
+        "sample_size": 32,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.375
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 11
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": true,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": false,
+        "positive_net_profit": false,
+        "profit_factor_1_10": false,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "profit_factor_1_10",
+        "positive_net_profit",
+        "outperforms_native_reference",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 24877.769,
+          "exit_epoch": 1791720900,
+          "exit_price": 22822.47,
+          "net_profit": -828.1610409449723,
+          "net_return": -0.08281610409449723,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 4.980907142857125
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": -1,
+          "entry_epoch": 1785414600,
+          "entry_price": 24877.769,
+          "exit_epoch": 1791720900,
+          "exit_price": 22822.47,
+          "net_profit": 824.1567372287851,
+          "net_return": 0.08241567372287852,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 4.980907142857125
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 19,
+            "completed_trades": 22,
+            "final_equity": 10199.931310001215,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.01678828833307874,
+            "mean_net_R": 0.18186879257634703,
+            "median_holding_seconds": 3600.0,
+            "net_profit": 199.93131000121576,
+            "net_return": 0.019993131000121567,
+            "period_days": 58.3991087962963,
+            "profit_factor": 1.6157347183556052,
+            "sample_size": 22,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5909090909090909
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 20,
+            "completed_trades": 22,
+            "final_equity": 10155.103061177453,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.014897005178540975,
+            "mean_net_R": 0.14185963703053836,
+            "median_holding_seconds": 3600.0,
+            "net_profit": 155.10306117745293,
+            "net_return": 0.015510306117745287,
+            "period_days": 58.3991087962963,
+            "profit_factor": 1.4310725038681924,
+            "sample_size": 22,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 17,
+            "completed_trades": 20,
+            "final_equity": 10506.375162427468,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.009937889672422894,
+            "mean_net_R": 0.49620085797060154,
+            "median_holding_seconds": 3600.0,
+            "net_profit": 506.37516242746887,
+            "net_return": 0.050637516242746816,
+            "period_days": 58.39912037037037,
+            "profit_factor": 3.8227560980230417,
+            "sample_size": 20,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.75
+          }
+        }
+      ]
+    },
+    "CRASH900": {
+      "selection_group": "CRASH900/H4/mean_reversion",
+      "strategy_id": "mean_reversion.r16.642db3ef55fd",
+      "symbol": "CRASH900",
+      "timeframe": "H4",
+      "family": "mean_reversion",
+      "name_ar": "العودة إلى المتوسط",
+      "validation_score": 1.8866310742199672,
+      "settings": {
+        "atr_period": 14,
+        "family": "mean_reversion",
+        "id": "mean_reversion.r16.642db3ef55fd",
+        "label": "Bollinger/RSI mean reversion",
+        "lookback": 12,
+        "max_hold_bars": 8,
+        "round_index": 16,
+        "scientific_id": "4118601acdc405eadd1482b6cbcef0d73eed0e7cb9a17bbfa65d7f5e44133f9c",
+        "stop_atr": 1.5,
+        "target_atr": 2.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 12,
+        "completed_trades": 16,
+        "final_equity": 9789.574004946177,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.044591869445914895,
+        "mean_net_R": -0.26284653538448616,
+        "median_holding_seconds": 43200.0,
+        "net_profit": -210.42599505382148,
+        "net_return": -0.021042599505382342,
+        "period_days": 72.99805555555555,
+        "profit_factor": 0.5975770809406805,
+        "sample_size": 16,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.375
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": null,
+        "multiplicity_adjusted": true,
+        "p_value": 1.0,
+        "profit_factor_ci95": null,
+        "resolution_can_reject_first_holm": false,
+        "status": "INSUFFICIENT_SAMPLE",
+        "weeks": 5
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": false,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": false,
+        "outperforms_native_reference": false,
+        "positive_net_profit": false,
+        "profit_factor_1_10": false,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "minimum_100_completed",
+        "profit_factor_1_10",
+        "positive_net_profit",
+        "outperforms_buy_and_hold",
+        "outperforms_native_reference",
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": null,
+        "native_direction_hold": null
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 12,
+            "completed_trades": 13,
+            "final_equity": 9764.146510661194,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.02935474221610886,
+            "mean_net_R": -0.36471271082165335,
+            "median_holding_seconds": 86400.0,
+            "net_profit": -235.8534893388082,
+            "net_return": -0.023585348933880645,
+            "period_days": 58.3984375,
+            "profit_factor": 0.4399868507213567,
+            "sample_size": 13,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.38461538461538464
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 4,
+            "completed_trades": 4,
+            "final_equity": 9980.333901669173,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.01746686817798526,
+            "mean_net_R": -0.09585572614413168,
+            "median_holding_seconds": 115200.0,
+            "net_profit": -19.66609833082569,
+            "net_return": -0.001966609833082611,
+            "period_days": 58.39844907407407,
+            "profit_factor": 0.8155829530492833,
+            "sample_size": 4,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 12,
+            "completed_trades": 14,
+            "final_equity": 10428.922750233365,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.008140907276507136,
+            "mean_net_R": 0.6030149004899565,
+            "median_holding_seconds": 57600.0,
+            "net_profit": 428.9227502333638,
+            "net_return": 0.04289227502333648,
+            "period_days": 58.39844907407407,
+            "profit_factor": 3.6277429773429866,
+            "sample_size": 14,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.7857142857142857
+          }
+        }
+      ]
+    }
+  },
+  "source_quality": {
+    "BOOM1000": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 32,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "BOOM300": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 24,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "BOOM500": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 24,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "BOOM600": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 24,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "BOOM900": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 8,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "CRASH1000": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 14,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "CRASH300": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 8,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "CRASH500": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 32,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "CRASH600": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 8,
+      "trailing_boundary_loss_minutes": 0
+    },
+    "CRASH900": {
+      "internal_missing_minutes": 1,
+      "internal_invalid_rows": 1,
+      "off_grid_inside_effective_interval": 1,
+      "leading_boundary_loss_minutes": 14,
+      "trailing_boundary_loss_minutes": 0
+    }
+  },
+  "costs": {
+    "contract_type": "UNVERIFIED_CFD_MAPPING",
+    "evidence": [],
+    "execution_verified": false,
+    "historical_costs_verified": false,
+    "mapping_verified": false,
+    "round_trip_atr": 0.1,
+    "round_trip_price": 0.0,
+    "status": "ASSUMED_NOT_VERIFIED"
+  },
+  "splits": {
+    "BOOM1000": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760187240,
+      "train_end": 1779107688,
+      "validation_end": 1785414504
+    },
+    "BOOM300": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760186760,
+      "train_end": 1779107496,
+      "validation_end": 1785414408
+    },
+    "BOOM500": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760186760,
+      "train_end": 1779107496,
+      "validation_end": 1785414408
+    },
+    "BOOM600": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760186760,
+      "train_end": 1779107496,
+      "validation_end": 1785414408
+    },
+    "BOOM900": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760185800,
+      "train_end": 1779107112,
+      "validation_end": 1785414216
+    },
+    "CRASH1000": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760186160,
+      "train_end": 1779107256,
+      "validation_end": 1785414288
+    },
+    "CRASH300": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760185800,
+      "train_end": 1779107112,
+      "validation_end": 1785414216
+    },
+    "CRASH500": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760187240,
+      "train_end": 1779107688,
+      "validation_end": 1785414504
+    },
+    "CRASH600": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760185800,
+      "train_end": 1779107112,
+      "validation_end": 1785414216
+    },
+    "CRASH900": {
+      "calendar_shared_between_frames": true,
+      "end": 1791721320,
+      "fractions": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "start": 1760186160,
+      "train_end": 1779107256,
+      "validation_end": 1785414288
+    }
+  },
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  },
+  "formulas": {
+    "PF": "sum(net_pnl>0) / -sum(net_pnl<0); null if no losses",
+    "net_return": "final_equity / 10000 - 1",
+    "DD": "max((running_peak_equity-equity)/running_peak_equity); conservative OHLC envelope, chronology unverified",
+    "validation_score": "net_return/max(max_drawdown,0.005)*sqrt(n/(n+100)); -1e12 if n<10 or net_return<=0 or unknown paths",
+    "CI95": "99999 fixed UTC-week block percentile bootstrap draws, 2.5/97.5 percentiles; insufficient if fewer than 100 trades or eight weeks",
+    "p": "(1+count(centered week bootstrap null >= observed mean net_R))/100000",
+    "Holm": "sort all 1300 final p-values; adjusted p=max(previous,min(1,(1300-rank_zero_based)*p))",
+    "statistical_gate": "mean_net_R CI95 lower>0 AND PF CI95 lower>1",
+    "financial_gates": "n>=100, PF>=1.10, DD<=0.20, net_profit>0, net_return>costed B&H and native reference",
+    "WF_gate": "three TESTED expanding development folds, each net_profit>0 and PF>=1.10; selection-dependent development stability only"
+  },
+  "scope_limits": [
+    "Summaries and lineage matched; numerical recomputation is separately performed by root's final replay, not this review.",
+    "Financial counts describe fixed hypotheses; no final-outcome re-selection or promotion.",
+    "All 1300 primary policies are candle-executed assumption scenarios. Historical CFD costs/fills not verified.",
+    "Source retains an internal missing minute and an invalid off-grid original row per symbol; no interpolation.",
+    "Previously exposed historical prices do not constitute fresh prospective OOS evidence.",
+    "Only thirteen declared strategy families and 32 parameter rounds; no newly invented family each cycle."
+  ],
+  "descriptive_financial_gate_survivors_not_selected_or_promoted": [
+    {
+      "selection_group": "BOOM300/M30/false_break",
+      "strategy_id": "false_break.r17.e5c738c47c01",
+      "symbol": "BOOM300",
+      "timeframe": "M30",
+      "family": "false_break",
+      "name_ar": "الاختراق الكاذب",
+      "validation_score": 0.3179549780426662,
+      "settings": {
+        "atr_period": 14,
+        "family": "false_break",
+        "id": "false_break.r17.e5c738c47c01",
+        "label": "False range break",
+        "lookback": 24,
+        "max_hold_bars": 8,
+        "round_index": 17,
+        "scientific_id": "c89d4ac4d25b87381fff1c84aeb671c271d592a9e0666c5e5aa65c2d6fb36a9d",
+        "stop_atr": 1.5,
+        "target_atr": 2.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 54,
+        "completed_trades": 112,
+        "final_equity": 10721.28232759394,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.029756257309244492,
+        "mean_net_R": 0.12710732472405922,
+        "median_holding_seconds": 10800.0,
+        "net_profit": 721.282327593941,
+        "net_return": 0.07212823275939417,
+        "period_days": 72.99666666666667,
+        "profit_factor": 1.2901171275760663,
+        "sample_size": 112,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.5357142857142857
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": [
+          -0.012822460279212173,
+          0.30067605744821085
+        ],
+        "method": "fixed UTC week block percentile bootstrap; centered null",
+        "multiplicity_adjusted": true,
+        "p_value": 0.07134,
+        "p_value_resolution": 1e-05,
+        "profit_factor_ci95": [
+          0.9678563333352144,
+          1.8533416467441926
+        ],
+        "repetitions": 99999,
+        "resolution_can_reject_first_holm": true,
+        "seed": 3944084965,
+        "status": "TESTED",
+        "weeks": 11
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": true,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": true,
+        "positive_net_profit": true,
+        "profit_factor_1_10": true,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 1063.043,
+          "exit_epoch": 1791720000,
+          "exit_price": 446.999,
+          "net_profit": -5805.344589608725,
+          "net_return": -0.5805344589608725,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.089092857142856
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 1063.043,
+          "exit_epoch": 1791720000,
+          "exit_price": 446.999,
+          "net_profit": -5805.344589608725,
+          "net_return": -0.5805344589608725,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.089092857142856
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 38,
+            "completed_trades": 66,
+            "final_equity": 10251.004798560938,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.02548403945215541,
+            "mean_net_R": 0.07777844826444638,
+            "median_holding_seconds": 9000.0,
+            "net_profit": 251.0047985609329,
+            "net_return": 0.02510047985609387,
+            "period_days": 58.39732638888889,
+            "profit_factor": 1.1663308645749226,
+            "sample_size": 66,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.48484848484848486
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 43,
+            "completed_trades": 79,
+            "final_equity": 9527.971066572858,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.06746505251579019,
+            "mean_net_R": -0.1199189961708258,
+            "median_holding_seconds": 9000.0,
+            "net_profit": -472.02893342714015,
+            "net_return": -0.047202893342714214,
+            "period_days": 58.397337962962965,
+            "profit_factor": 0.7618932676581096,
+            "sample_size": 79,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.35443037974683544
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 44,
+            "completed_trades": 82,
+            "final_equity": 10218.184154526756,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.03874845249729112,
+            "mean_net_R": 0.05552020975091368,
+            "median_holding_seconds": 7200.0,
+            "net_profit": 218.18415452675998,
+            "net_return": 0.02181841545267571,
+            "period_days": 58.397337962962965,
+            "profit_factor": 1.1099799636363312,
+            "sample_size": 82,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.4878048780487805
+          }
+        }
+      ]
+    },
+    {
+      "selection_group": "BOOM300/M30/mean_reversion",
+      "strategy_id": "mean_reversion.r28.52043aa0260c",
+      "symbol": "BOOM300",
+      "timeframe": "M30",
+      "family": "mean_reversion",
+      "name_ar": "العودة إلى المتوسط",
+      "validation_score": 0.07770568465458105,
+      "settings": {
+        "atr_period": 14,
+        "family": "mean_reversion",
+        "id": "mean_reversion.r28.52043aa0260c",
+        "label": "Bollinger/RSI mean reversion",
+        "lookback": 12,
+        "max_hold_bars": 8,
+        "round_index": 28,
+        "scientific_id": "0a9f277783f4ab04d82e16f81d731a4639406d0edf53e9c2b8dcfa4f25324b93",
+        "stop_atr": 2.5,
+        "target_atr": 3.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 53,
+        "completed_trades": 115,
+        "final_equity": 10402.576845483809,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.03140309160866985,
+        "mean_net_R": 0.07000378977153768,
+        "median_holding_seconds": 14400.0,
+        "net_profit": 402.57684548381087,
+        "net_return": 0.040257684548380857,
+        "period_days": 72.99666666666667,
+        "profit_factor": 1.2497420644900257,
+        "sample_size": 115,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.5478260869565217
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": [
+          -0.026999102458925395,
+          0.1995988444018358
+        ],
+        "method": "fixed UTC week block percentile bootstrap; centered null",
+        "multiplicity_adjusted": true,
+        "p_value": 0.14084,
+        "p_value_resolution": 1e-05,
+        "profit_factor_ci95": [
+          0.9147243865969924,
+          1.9900384051801154
+        ],
+        "repetitions": 99999,
+        "resolution_can_reject_first_holm": true,
+        "seed": 2640790425,
+        "status": "TESTED",
+        "weeks": 11
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": true,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": true,
+        "positive_net_profit": true,
+        "profit_factor_1_10": true,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 1063.043,
+          "exit_epoch": 1791720000,
+          "exit_price": 446.999,
+          "net_profit": -5805.344589608725,
+          "net_return": -0.5805344589608725,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.089092857142856
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 1063.043,
+          "exit_epoch": 1791720000,
+          "exit_price": 446.999,
+          "net_profit": -5805.344589608725,
+          "net_return": -0.5805344589608725,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.089092857142856
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 35,
+            "completed_trades": 84,
+            "final_equity": 9786.965717383191,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.03525116245265827,
+            "mean_net_R": -0.049668743780887495,
+            "median_holding_seconds": 14400.0,
+            "net_profit": -213.0342826167993,
+            "net_return": -0.021303428261680857,
+            "period_days": 58.39732638888889,
+            "profit_factor": 0.8647482140371368,
+            "sample_size": 84,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.47619047619047616
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 41,
+            "completed_trades": 83,
+            "final_equity": 9494.806289997092,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.07468194996010297,
+            "mean_net_R": -0.1234693911446252,
+            "median_holding_seconds": 14400.0,
+            "net_profit": -505.1937100029108,
+            "net_return": -0.0505193710002908,
+            "period_days": 58.397337962962965,
+            "profit_factor": 0.6808658582461822,
+            "sample_size": 83,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.40963855421686746
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 36,
+            "completed_trades": 73,
+            "final_equity": 9996.46171601953,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.03650421489513692,
+            "mean_net_R": 0.0005586891151428234,
+            "median_holding_seconds": 14400.0,
+            "net_profit": -3.538283980473466,
+            "net_return": -0.00035382839804698474,
+            "period_days": 58.397337962962965,
+            "profit_factor": 0.9971853437648267,
+            "sample_size": 73,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.4657534246575342
+          }
+        }
+      ]
+    },
+    {
+      "selection_group": "BOOM900/M15/trend",
+      "strategy_id": "trend.r28.96cebd10df01",
+      "symbol": "BOOM900",
+      "timeframe": "M15",
+      "family": "trend",
+      "name_ar": "اتباع الاتجاه",
+      "validation_score": 1.3424251706289059,
+      "settings": {
+        "atr_period": 14,
+        "family": "trend",
+        "id": "trend.r28.96cebd10df01",
+        "label": "EMA trend resumption",
+        "lookback": 12,
+        "max_hold_bars": 8,
+        "round_index": 28,
+        "scientific_id": "22222bc1a9ec997b45545b6fd53a2a454d16cefbafbdbdc2cf3b55faf9607d8f",
+        "stop_atr": 2.5,
+        "target_atr": 3.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 60,
+        "completed_trades": 181,
+        "final_equity": 10656.027667910714,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.06589455464343383,
+        "mean_net_R": 0.07206225135640118,
+        "median_holding_seconds": 7200.0,
+        "net_profit": 656.0276679107072,
+        "net_return": 0.06560276679107147,
+        "period_days": 72.99888888888889,
+        "profit_factor": 1.2029584779121143,
+        "sample_size": 181,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.5193370165745856
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": [
+          -0.12199188327626193,
+          0.21595615214166244
+        ],
+        "method": "fixed UTC week block percentile bootstrap; centered null",
+        "multiplicity_adjusted": true,
+        "p_value": 0.18333,
+        "p_value_resolution": 1e-05,
+        "profit_factor_ci95": [
+          0.7238499846315123,
+          1.772064992839063
+        ],
+        "repetitions": 99999,
+        "resolution_can_reject_first_holm": true,
+        "seed": 86398594,
+        "status": "TESTED",
+        "weeks": 11
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": true,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": true,
+        "positive_net_profit": true,
+        "profit_factor_1_10": true,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 9175.977,
+          "exit_epoch": 1791720900,
+          "exit_price": 8660.378,
+          "net_profit": -563.3975854248857,
+          "net_return": -0.05633975854248858,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.3733285714285948
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 9175.977,
+          "exit_epoch": 1791720900,
+          "exit_price": 8660.378,
+          "net_profit": -563.3975854248857,
+          "net_return": -0.05633975854248858,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.3733285714285948
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 52,
+            "completed_trades": 139,
+            "final_equity": 9716.131841021614,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.05008969682592265,
+            "mean_net_R": -0.03971173512234088,
+            "median_holding_seconds": 7200.0,
+            "net_profit": -283.8681589783842,
+            "net_return": -0.028386815897838646,
+            "period_days": 58.3991087962963,
+            "profit_factor": 0.8908031138734216,
+            "sample_size": 139,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.4460431654676259
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 49,
+            "completed_trades": 152,
+            "final_equity": 9124.41341073126,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.13404380133835125,
+            "mean_net_R": -0.11872036603680106,
+            "median_holding_seconds": 7200.0,
+            "net_profit": -875.5865892687506,
+            "net_return": -0.08755865892687398,
+            "period_days": 58.3991087962963,
+            "profit_factor": 0.727871265305326,
+            "sample_size": 152,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.40789473684210525
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 46,
+            "completed_trades": 150,
+            "final_equity": 10314.584846125515,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.025408319531870584,
+            "mean_net_R": 0.04303553142286451,
+            "median_holding_seconds": 7200.0,
+            "net_profit": 314.58484612551894,
+            "net_return": 0.03145848461255163,
+            "period_days": 58.39912037037037,
+            "profit_factor": 1.1173655294190836,
+            "sample_size": 150,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "selection_group": "BOOM900/M30/rsi_momentum",
+      "strategy_id": "rsi_momentum.r12.ae462b81b261",
+      "symbol": "BOOM900",
+      "timeframe": "M30",
+      "family": "rsi_momentum",
+      "name_ar": "زخم RSI",
+      "validation_score": 2.0111947553825678,
+      "settings": {
+        "atr_period": 14,
+        "family": "rsi_momentum",
+        "id": "rsi_momentum.r12.ae462b81b261",
+        "label": "RSI momentum cross",
+        "lookback": 12,
+        "max_hold_bars": 4,
+        "round_index": 12,
+        "scientific_id": "594438d770cefeac34f9a8f1c0fd7745a81d6cdabecda5dde219c5afb2e02d76",
+        "stop_atr": 2.5,
+        "target_atr": 3.0,
+        "threshold": 0.8,
+        "trailing_stop": false
+      },
+      "metrics": {
+        "active_days": 61,
+        "completed_trades": 152,
+        "final_equity": 10336.106388629441,
+        "initial_equity": 10000.0,
+        "max_drawdown": 0.033467512493290746,
+        "mean_net_R": 0.044508236367750496,
+        "median_holding_seconds": 7200.0,
+        "net_profit": 336.10638862944387,
+        "net_return": 0.03361063886294424,
+        "period_days": 72.99888888888889,
+        "profit_factor": 1.1764561349128029,
+        "sample_size": 152,
+        "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+        "win_rate": 0.48026315789473684
+      },
+      "uncertainty": {
+        "family_size": 1300,
+        "holm_p_value": 1.0,
+        "mean_net_R_ci95": [
+          -0.05040657674224598,
+          0.13601520849751744
+        ],
+        "method": "fixed UTC week block percentile bootstrap; centered null",
+        "multiplicity_adjusted": true,
+        "p_value": 0.16698,
+        "p_value_resolution": 1e-05,
+        "profit_factor_ci95": [
+          0.8270385057528524,
+          1.6692581326903304
+        ],
+        "repetitions": 99999,
+        "resolution_can_reject_first_holm": true,
+        "seed": 826975804,
+        "status": "TESTED",
+        "weeks": 11
+      },
+      "gates": {
+        "actual_contract_costs_verified": false,
+        "all_live_gates_false": true,
+        "data_quality": false,
+        "development_walk_forward_stability": false,
+        "final_partition": true,
+        "future_leak_checked": true,
+        "maximum_drawdown_20pct": true,
+        "minimum_100_completed": true,
+        "multiplicity_adjusted": false,
+        "original_tick_execution_verified": false,
+        "outperforms_buy_and_hold": true,
+        "outperforms_native_reference": true,
+        "positive_net_profit": true,
+        "profit_factor_1_10": true,
+        "reproducible_real_source": true,
+        "statistical_uncertainty": false
+      },
+      "rejection_reasons": [
+        "data_quality",
+        "actual_contract_costs_verified",
+        "original_tick_execution_verified",
+        "statistical_uncertainty",
+        "multiplicity_adjusted",
+        "development_walk_forward_stability"
+      ],
+      "qualified": false,
+      "reference": {
+        "appropriate_for_cfd": false,
+        "buy_and_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 9175.977,
+          "exit_epoch": 1791720000,
+          "exit_price": 8653.817,
+          "net_profit": -571.2040254678076,
+          "net_return": -0.05712040254678075,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.9755000000000242
+        },
+        "limitation": "Original buy-and-hold hurdle retained; cash/leveraged CFD comparability NOT VERIFIED",
+        "native_direction_hold": {
+          "direction": 1,
+          "entry_epoch": 1785414600,
+          "entry_price": 9175.977,
+          "exit_epoch": 1791720000,
+          "exit_price": 8653.817,
+          "net_profit": -571.2040254678076,
+          "net_return": -0.05712040254678075,
+          "position_model": "fully funded one-unit-price exposure; no verified CFD margin/swap mapping",
+          "round_trip_cost_price": 1.9755000000000242
+        }
+      },
+      "walk_forward_metrics": [
+        {
+          "label": "wf1",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 51,
+            "completed_trades": 117,
+            "final_equity": 9886.467357978625,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.03999623798129669,
+            "mean_net_R": -0.0186345092200612,
+            "median_holding_seconds": 7200.0,
+            "net_profit": -113.5326420213703,
+            "net_return": -0.011353264202137558,
+            "period_days": 58.3991087962963,
+            "profit_factor": 0.9222120824466443,
+            "sample_size": 117,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.5042735042735043
+          }
+        },
+        {
+          "label": "wf2",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 54,
+            "completed_trades": 145,
+            "final_equity": 9309.225743437333,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.08198849889627141,
+            "mean_net_R": -0.09776628887679222,
+            "median_holding_seconds": 7200.0,
+            "net_profit": -690.7742565626642,
+            "net_return": -0.06907742565626673,
+            "period_days": 58.3991087962963,
+            "profit_factor": 0.6744343102367113,
+            "sample_size": 145,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.42758620689655175
+          }
+        },
+        {
+          "label": "wf3",
+          "status": "TESTED",
+          "metrics": {
+            "active_days": 51,
+            "completed_trades": 125,
+            "final_equity": 10527.67403534847,
+            "initial_equity": 10000.0,
+            "max_drawdown": 0.015910062839730905,
+            "mean_net_R": 0.08325716539192288,
+            "median_holding_seconds": 7200.0,
+            "net_profit": 527.6740353484738,
+            "net_return": 0.05276740353484688,
+            "period_days": 58.39912037037037,
+            "profit_factor": 1.3830534908058307,
+            "sample_size": 125,
+            "units": "assumed_account_units; CFD cash mapping NOT VERIFIED",
+            "win_rate": 0.488
+          }
+        }
+      ]
+    }
+  ],
+  "descriptive_supplement_receipt": {
+    "derived_at": "2026-10-12T03:29:15.871520+00:00",
+    "input_verified_review_sha256": "6400e0472a09cb9ea08f16a7bf7e996083e6de0d3bf1905fe1237e63c4e1ad54",
+    "transform_script_sha256": "cce6a0689609342ed204048dc3694cfde5100c6fad211d1e8d276e12f52f6068",
+    "stream_review_script_sha256": "02f79b3b66ca3f283a52d2bb06d29b39032f2060e490fd8ceaa2426fb728843a",
+    "operation": "Descriptive table from the six saved financial booleans only; no final-based ranking, tuning, selection or promotion; no new backtests."
+  },
+  "historical_exposure_limitation": {
+    "fresh_out_of_sample": false,
+    "frozen_declaration_history_exposure": "Adaptive history; previously exposed intervals remain disclosed",
+    "scope": "Final data was sealed from tuning within this campaign, but historical intervals had been exposed in earlier research; adaptive, retrospective evidence, not fresh prospective independent OOS."
+  },
+  "report_revision_receipt": {
+    "revised_at": "2026-10-12T03:31:29.766591+00:00",
+    "operation": "Make previously exposed adaptive history limitation explicit; reporting text only, no new tuning or backtests.",
+    "preserved_prior_artifacts": {
+      "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_review_20261012.json": {
+        "sha256": "703c2d50d40efffe97bddc1921bf9fbddbbc22cc166aaf7b0e8f173557d3f7b1",
+        "archive_path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_report_archive_20261012/703c2d50d40efffe97bddc1921bf9fbddbbc22cc166aaf7b0e8f173557d3f7b1.json"
+      },
+      "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_review_20261012.ar.md": {
+        "sha256": "6f14616f0972d36cac9219927ee19dbfc22f6f231996223d0e8a2f0ec2e68531",
+        "archive_path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_report_archive_20261012/6f14616f0972d36cac9219927ee19dbfc22f6f231996223d0e8a2f0ec2e68531.md"
+      },
+      "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_summary_20261012.json": {
+        "sha256": "27177a91044b909a69716f454a9b73c7cb2e8747e749b797e8938c1519288cb2",
+        "archive_path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_report_archive_20261012/27177a91044b909a69716f454a9b73c7cb2e8747e749b797e8938c1519288cb2.json"
+      },
+      "pre_supplement_verified_review": {
+        "sha256": "6400e0472a09cb9ea08f16a7bf7e996083e6de0d3bf1905fe1237e63c4e1ad54",
+        "archive_path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_report_archive_20261012/6400e0472a09cb9ea08f16a7bf7e996083e6de0d3bf1905fe1237e63c4e1ad54.json"
+      }
+    }
+  },
+  "full_policy_summary_inventory": {
+    "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_review_20261012.json",
+    "sha256": "9aa18790880b632b2d9b513d307fb9582760057e5ffdcc4e06bc0ae6c831b180",
+    "policies": 1300,
+    "omission": "Full 1300 slim-policy records omitted from compact publication copy; full local JSON remains at this absolute path. This points to retained local evidence, not a public GitHub file."
+  }
+}

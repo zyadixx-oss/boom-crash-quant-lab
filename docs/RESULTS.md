@@ -1,5 +1,35 @@
 # Results — actual offline Spike Hunter study
 
+## 12 October 2026: completed single-frame campaign — zero qualified
+
+The separate campaign for ten symbols and ten independent frames completed 32 actual cycles
+with 900.010–1021.084-second start gaps. It used 13 predeclared fixed families,
+32 parameter rounds and frozen 60/20/20 UTC partitions: 41,600 attempts,
+38,400 different development measurements and 3,200 cache reuses.
+
+Of 1,300 selected final policies, 169 show positive assumed net return and 4 pass
+only the six financial conditions. All 1,300 fail the statistical uncertainty
+gate: minimum raw p 0.07134; every Holm-adjusted p equals 1. No CRT, pre-spike or
+post-spike policy qualifies. Source-quality, measured-cost and original-tick
+execution gates also remain closed. These results do not establish executable
+profit, nor a universal impossibility of profit.
+
+Actual fresh replay completed at 2026-10-12T04:47:25.989862+00:00: 1,300 final
+measurements plus 3,900 selected development folds, 0 reused receipts, 0 errors,
+joint Holm and acceptance summaries PASS. This verifies the original frozen
+formulas; it is not an independent mathematical implementation and does not
+numerically rerun every development-search measurement. Development folds are
+selection-dependent stability checks, and previously exposed history is not
+fresh prospective evidence. The assumed round-trip 0.10 ATR is not verified
+historical CFD cost or fill data. All live flags remain false.
+
+[Final Arabic report](single_frame_campaign_20261011/FINAL_CAMPAIGN_REPORT_20261012.ar.md)
+and [complete evidence index](single_frame_campaign_20261011/RESEARCH_STATUS_20261012.ar.md)
+include the rejected cases passing financial conditions only, per-symbol results, receipts,
+source/cost limitations and the full requirement audit. Raw market archives
+remain local and are required to reproduce calculations; GitHub does not carry
+the entire archive.
+
 ## 9 October 2026: revised objective — stable positive net profit
 
 The user now accepts stable positive net profit even below PF1.1. The separate

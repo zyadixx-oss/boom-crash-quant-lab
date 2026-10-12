@@ -1,5 +1,17 @@
 # boom-crash-quant-lab
 
+12 October [completed campaign report in Arabic](docs/single_frame_campaign_20261011/FINAL_CAMPAIGN_REPORT_20261012.ar.md):
+**32 actual cycles completed; zero qualified strategies across all ten symbols.**
+41,600 attempts comprise 38,400 distinct development measurements and 3,200 cache
+reuses. Fresh numerical replay passes for all 1,300 selected final measurements
+and 3,900 selected development folds, including joint Holm and acceptance gates;
+none of those 5,200 replay receipts was reused. This does not replay the entire
+38,400-measurement development search. Historical CFD costs/fills remain
+unverified,0.10 ATR is assumed, source defects are retained and known history is
+adaptive. The 13 fixed families and 32 parameter rounds do not establish a new
+family invented each cycle. See the [evidence index](docs/single_frame_campaign_20261011/RESEARCH_STATUS_20261012.ar.md).
+All live-trading gates remain false; no new campaign starts from this result.
+
 11 October scope: the new [single-frame automated campaign](research_campaign/README.md)
 implements the attached ten-symbol/ten-frame request with independent strategies,
 60/20/20 chronology and 32 actual cycles at fifteen-minute intervals. Its
