@@ -68,6 +68,24 @@ jobs:
                   raise ValueError('Retained quote verification differs from the saved exact-capture result')
           print('Four retained MT5 quote checks reproduced; costs and fills remain unverified')
           PY
+      - name: Verify independent research tools and sampled quote availability offline
+        run: |
+          python -m compileall -q independent_profit_research scripts/run_independent_profit_study.py scripts/collect_independent_profit_quotes.py scripts/verify_mt5_history_availability.py scripts/verify_mt5_history_charges.py
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          from scripts.verify_mt5_quote_export import verify_export
+          folder = Path('docs/mt5_quote_availability_20261013')
+          index = json.loads((folder / 'index.json').read_text())
+          assert len(index['records']) == 20
+          for record in index['records']:
+              for field in ('receipt', 'raw', 'verification'):
+                  path = folder / record[field + '_path']
+                  assert hashlib.sha256(path.read_bytes()).hexdigest() == record[field + '_sha256']
+              observed = verify_export(folder / record['receipt_path'])
+              assert observed == json.loads((folder / record['verification_path']).read_text())
+          print('Twenty fixed availability windows reproduced; full history, costs and fills remain unverified')
+          PY
       - name: Test post-closeout independent arithmetic and validation sensitivity helpers
         run: |
           python -m pytest -o addopts= -q scripts/independent_campaign_accounting/test_audit_ledger.py

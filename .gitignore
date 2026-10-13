@@ -101,3 +101,7 @@ frontend/public/campaign/
 
 # Runtime kernel lock; public quote evidence beside it remains reproducible.
 data/prospective_public_quotes_20261013/.archive.lock
+
+# Existing-account history availability receipts are private local evidence.
+work/private_history_availability_20261013/
+/data/independent_profit_ticks_20261013/

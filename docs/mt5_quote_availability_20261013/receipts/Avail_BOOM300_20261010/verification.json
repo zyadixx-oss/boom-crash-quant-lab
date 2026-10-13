@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+  "scope": "INDEPENDENT_RETAINED_MQL5_QUOTE_CHECK_ONLY",
+  "receipt_sha256": "926e9da35accbf21f225c958a1fdc88400db29f88989fb3da48804710d42c0e9",
+  "verifier_sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+  "raw_sha256": "9071825146dca1837741124495c0af730ace7de8dcca97d98b9124c4b3b25a4c",
+  "symbol": "Boom 300 Index",
+  "server": "DerivSVG-Server",
+  "company": "Deriv (SVG) LLC",
+  "reported_deriv_context_validated": true,
+  "broker_origin_independently_authenticated": false,
+  "account_mode": "LIVE",
+  "requested_start_msc": 1791662400000,
+  "requested_end_exclusive_msc": 1791662460000,
+  "rows": 58,
+  "first_time_msc": 1791662400159,
+  "last_time_msc": 1791662459135,
+  "same_millisecond_adjacent_pairs": 0,
+  "inter_tick_gap_above_5000ms": 0,
+  "max_inter_tick_ms": 2000,
+  "leading_unobserved_ms": 159,
+  "trailing_unobserved_ms": 864,
+  "spread_price_min": "0.02299999999996",
+  "spread_price_median": "0.02400000000000",
+  "spread_price_max": "0.02400000000001",
+  "flag_counts": {
+    "134": 56,
+    "130": 2
+  },
+  "errors": [],
+  "cost_verified": false,
+  "execution_verified": false,
+  "profit_tested": false,
+  "full_tick_coverage_verified": false,
+  "spec_scope": "CURRENT_ONLY_NOT_HISTORICAL",
+  "spec_historical": false,
+  "current_spec_unavailable_fields": [],
+  "retention_scope": "SELECTED_ATTEMPT_ONLY",
+  "selected_attempt": 1,
+  "attempts": [
+    {
+      "returned_count": 58,
+      "array_rows": 58,
+      "last_error": 0,
+      "elapsed_ms": 387
+    }
+  ],
+  "all_attempt_raw_arrays_retained": false,
+  "same_account_identity_verified": false,
+  "limitations": [
+    "A retained terminal quote array does not prove full server history or executable fills.",
+    "Only the selected attempt is retained; other returned arrays cannot be reconstructed.",
+    "The specification snapshot is current at capture, not historical.",
+    "Declared server and company are checked locally, not authenticated to the broker."
+  ]
+}

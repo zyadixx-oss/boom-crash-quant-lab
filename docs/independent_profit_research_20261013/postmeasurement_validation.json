@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "observed_utc": "2026-10-13T23:31:55.336752+00:00",
+  "full_suite": {
+    "passed": 3350,
+    "seconds": 101.61,
+    "existing_warnings": 1,
+    "scope": "Full suite; independent-auditor CLI path guard subsequently hardened with targeted regression test"
+  },
+  "post_guard_targeted_auditor_tests_passed": 30,
+  "WF1_actual_arithmetic_audit": {
+    "status": "PASS",
+    "cases": 24,
+    "complete_trades": 12579,
+    "unknown_trades": 13,
+    "selected_barrier_paths": 1034,
+    "mismatches": 0,
+    "all_entry_exit_raw_groups": true,
+    "whole_barrier_paths_reproduced": false,
+    "signal_issuance_reproduced": false,
+    "full_marked_drawdown_reproduced": false,
+    "training_U_fit_reproduced": false,
+    "auditor_used_sha256": "8978ec2ea3c2a41a68f734eaf43b39768bc84cbee112c9c18c6ffb7343de7488",
+    "report_sha256": "1cd53371e5c91513527ef57ddd52cc54129a889dd3ace2b6edf747cd57984444"
+  },
+  "frozen_core_changed": false,
+  "final_policy_prices_measured": false,
+  "qualified_profit_strategies": 0,
+  "cash_net": null,
+  "cost_verified": false,
+  "execution_verified": false
+}

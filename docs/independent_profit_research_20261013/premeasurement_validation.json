@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "observed_utc": "2026-10-13T17:29:09.582857+00:00",
+  "market_strategy_computations": 0,
+  "full_suite": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -o addopts= -q",
+    "passed": 3290,
+    "existing_warning_count": 1,
+    "seconds": 107.13,
+    "scope": "full suite before endpoint benchmark addition; final changed research files covered by subsequent targeted suite"
+  },
+  "targeted_suite": {
+    "passed": 342,
+    "scope": "execution/policies/tape/data/statistics/runner/study/benchmarks and two private-history verifiers; synthetic only",
+    "seconds": 4.23
+  },
+  "offline_retained_market_windows_reproduced": 20,
+  "logs": {
+    "docs/independent_profit_research_20261013/premeasurement_full_pytest.log": "038372ad85667a5a7442f1f060b0930ba00bf72bac162a45044eca24ee4b3dce",
+    "docs/independent_profit_research_20261013/premeasurement_targeted_pytest.log": "0fd2252a54aa9d43e43748e701427377d7f9a026e857676d8a2541c081866774"
+  },
+  "cash_profit_proven": false,
+  "all_live_flags_false": true,
+  "original_campaign_restarted": false
+}

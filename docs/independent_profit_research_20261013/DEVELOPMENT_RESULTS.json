@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPMENT_COMPLETE_ALL_SIX_REJECTED_FINAL_NOT_MEASURED",
+  "reviewed_utc": "2026-10-13T23:23:56.792948+00:00",
+  "source_requests": 300,
+  "source_rows": 25357896,
+  "development_case_count": 96,
+  "final_case_count": 0,
+  "final_policy_measurements_performed": 0,
+  "final_bootstrap_repetitions_performed": 0,
+  "final_source_transport_only_verified": true,
+  "final_strategy_prices_opened": false,
+  "rules_retuned": false,
+  "rows": [
+    {
+      "symbol": "BOOM500",
+      "policy": "POST_JUMP_CARRY_30S",
+      "stages": [
+        {
+          "stage": "WF1",
+          "completed": 1772,
+          "unknown": 1,
+          "sum_R": null,
+          "observed_sum_R": -1155.0941176470587,
+          "pf": null,
+          "observed_pf": 0.44995672281030025,
+          "remaining_censored": true,
+          "marked_drawdown_pct": null
+        },
+        {
+          "stage": "WF2",
+          "completed": 2682,
+          "unknown": 0,
+          "sum_R": -897.8005952380953,
+          "observed_sum_R": -897.8005952380953,
+          "pf": 0.6172485021658642,
+          "observed_pf": 0.6172485021658642,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 204.43840919023538
+        },
+        {
+          "stage": "WF3",
+          "completed": 2658,
+          "unknown": 0,
+          "sum_R": -726.3262195121952,
+          "observed_sum_R": -726.3262195121952,
+          "pf": 0.6378361532965445,
+          "observed_pf": 0.6378361532965445,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 183.5019851060115
+        },
+        {
+          "stage": "VALIDATION",
+          "completed": 4091,
+          "unknown": 0,
+          "sum_R": -401.34104938271605,
+          "observed_sum_R": -401.34104938271605,
+          "pf": 0.8260122896394393,
+          "observed_pf": 0.8260122896394393,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 116.97121317758648
+        }
+      ],
+      "development_gate": {
+        "cash_net": null,
+        "conditional_eligible": false,
+        "costs_verified": false,
+        "gates": {
+          "all_walk_forward_sums_known": false,
+          "future_development_completed_at_least_100": true,
+          "no_unknown_development_trades": false,
+          "two_of_three_walk_forward_positive": false,
+          "validation_positive": false
+        },
+        "profit_eligible": false,
+        "validation_sum_R": -401.34104938271605,
+        "walk_forward_sum_R": [
+          null,
+          -897.8005952380953,
+          -726.3262195121952
+        ]
+      }
+    },
+    {
+      "symbol": "BOOM500",
+      "policy": "QUOTE_CLOCK_ACCELERATION",
+      "stages": [
+        {
+          "stage": "WF1",
+          "completed": 2,
+          "unknown": 0,
+          "sum_R": -2.4,
+          "observed_sum_R": -2.4,
+          "pf": 0.0,
+          "observed_pf": 0.0,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.6
+        },
+        {
+          "stage": "WF2",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "WF3",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "VALIDATION",
+          "completed": 1,
+          "unknown": 0,
+          "sum_R": -1.2191358024691359,
+          "observed_sum_R": -1.2191358024691359,
+          "pf": 0.0,
+          "observed_pf": 0.0,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.304783950617275
+        }
+      ],
+      "development_gate": {
+        "cash_net": null,
+        "conditional_eligible": false,
+        "costs_verified": false,
+        "gates": {
+          "all_walk_forward_sums_known": true,
+          "future_development_completed_at_least_100": false,
+          "no_unknown_development_trades": true,
+          "two_of_three_walk_forward_positive": false,
+          "validation_positive": false
+        },
+        "profit_eligible": false,
+        "validation_sum_R": -1.2191358024691359,
+        "walk_forward_sum_R": [
+          -2.4,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "symbol": "BOOM500",
+      "policy": "SIDE_LEAD",
+      "stages": [
+        {
+          "stage": "WF1",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "WF2",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "WF3",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "VALIDATION",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        }
+      ],
+      "development_gate": {
+        "cash_net": null,
+        "conditional_eligible": false,
+        "costs_verified": false,
+        "gates": {
+          "all_walk_forward_sums_known": true,
+          "future_development_completed_at_least_100": false,
+          "no_unknown_development_trades": true,
+          "two_of_three_walk_forward_positive": false,
+          "validation_positive": false
+        },
+        "profit_eligible": false,
+        "validation_sum_R": 0.0,
+        "walk_forward_sum_R": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "symbol": "CRASH500",
+      "policy": "POST_JUMP_CARRY_30S",
+      "stages": [
+        {
+          "stage": "WF1",
+          "completed": 2710,
+          "unknown": 0,
+          "sum_R": -1078.5983606557377,
+          "observed_sum_R": -1078.5983606557377,
+          "pf": 0.5691024564195512,
+          "observed_pf": 0.5691024564195512,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 273.0840106199902
+        },
+        {
+          "stage": "WF2",
+          "completed": 2716,
+          "unknown": 0,
+          "sum_R": -905.2125,
+          "observed_sum_R": -905.2125,
+          "pf": 0.6175939420822508,
+          "observed_pf": 0.6175939420822508,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 226.64467086525732
+        },
+        {
+          "stage": "WF3",
+          "completed": 2789,
+          "unknown": 0,
+          "sum_R": -1318.1810344827586,
+          "observed_sum_R": -1318.1810344827586,
+          "pf": 0.5347268392650394,
+          "observed_pf": 0.5347268392650394,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 331.9660417703162
+        },
+        {
+          "stage": "VALIDATION",
+          "completed": 3922,
+          "unknown": 0,
+          "sum_R": -1841.2887931034484,
+          "observed_sum_R": -1841.2887931034484,
+          "pf": 0.47914845364595715,
+          "observed_pf": 0.47914845364595715,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 464.30383540821464
+        }
+      ],
+      "development_gate": {
+        "cash_net": null,
+        "conditional_eligible": false,
+        "costs_verified": false,
+        "gates": {
+          "all_walk_forward_sums_known": true,
+          "future_development_completed_at_least_100": true,
+          "no_unknown_development_trades": true,
+          "two_of_three_walk_forward_positive": false,
+          "validation_positive": false
+        },
+        "profit_eligible": false,
+        "validation_sum_R": -1841.2887931034484,
+        "walk_forward_sum_R": [
+          -1078.5983606557377,
+          -905.2125,
+          -1318.1810344827586
+        ]
+      }
+    },
+    {
+      "symbol": "CRASH500",
+      "policy": "QUOTE_CLOCK_ACCELERATION",
+      "stages": [
+        {
+          "stage": "WF1",
+          "completed": 3,
+          "unknown": 0,
+          "sum_R": -3.7581967213114753,
+          "observed_sum_R": -3.7581967213114753,
+          "pf": 0.0,
+          "observed_pf": 0.0,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.9395491803278674
+        },
+        {
+          "stage": "WF2",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "WF3",
+          "completed": 1,
+          "unknown": 0,
+          "sum_R": -1.293103448275862,
+          "observed_sum_R": -1.293103448275862,
+          "pf": 0.0,
+          "observed_pf": 0.0,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.32327586206896736
+        },
+        {
+          "stage": "VALIDATION",
+          "completed": 1,
+          "unknown": 0,
+          "sum_R": -1.1810344827586208,
+          "observed_sum_R": -1.1810344827586208,
+          "pf": 0.0,
+          "observed_pf": 0.0,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.2952586206896558
+        }
+      ],
+      "development_gate": {
+        "cash_net": null,
+        "conditional_eligible": false,
+        "costs_verified": false,
+        "gates": {
+          "all_walk_forward_sums_known": true,
+          "future_development_completed_at_least_100": false,
+          "no_unknown_development_trades": true,
+          "two_of_three_walk_forward_positive": false,
+          "validation_positive": false
+        },
+        "profit_eligible": false,
+        "validation_sum_R": -1.1810344827586208,
+        "walk_forward_sum_R": [
+          -3.7581967213114753,
+          0.0,
+          -1.293103448275862
+        ]
+      }
+    },
+    {
+      "symbol": "CRASH500",
+      "policy": "SIDE_LEAD",
+      "stages": [
+        {
+          "stage": "WF1",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "WF2",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "WF3",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        },
+        {
+          "stage": "VALIDATION",
+          "completed": 0,
+          "unknown": 0,
+          "sum_R": 0.0,
+          "observed_sum_R": 0.0,
+          "pf": null,
+          "observed_pf": null,
+          "remaining_censored": false,
+          "marked_drawdown_pct": 0.0
+        }
+      ],
+      "development_gate": {
+        "cash_net": null,
+        "conditional_eligible": false,
+        "costs_verified": false,
+        "gates": {
+          "all_walk_forward_sums_known": true,
+          "future_development_completed_at_least_100": false,
+          "no_unknown_development_trades": true,
+          "two_of_three_walk_forward_positive": false,
+          "validation_positive": false
+        },
+        "profit_eligible": false,
+        "validation_sum_R": 0.0,
+        "walk_forward_sum_R": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "receipt_pins": {
+    "work/independent_profit_study_20261013/cases/BOOM500_WF1_POST_JUMP_CARRY_30S_BASE.json": "92f0052811e76d74cbd0eaeedfe04bc9a2da9c0c2421f850f67e1875ca6a30fe",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF2_POST_JUMP_CARRY_30S_BASE.json": "863c8721abeca669b598bd9dbad7abc811d9825831838856f4c370a4396178d7",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF3_POST_JUMP_CARRY_30S_BASE.json": "cb70be5967b345546dad3d73c07427ebefb117324e56acdd25d49bea63558b54",
+    "work/independent_profit_study_20261013/cases/BOOM500_VALIDATION_POST_JUMP_CARRY_30S_BASE.json": "05e51f3ff9bee5b50e9672a611e32d5423f6711af2d0c76372943dd6b0d4c0dd",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF1_QUOTE_CLOCK_ACCELERATION_BASE.json": "9bb1c35dbcb08bbb74b66e8ce6b31f6bf9fdb078532f022da9c9b52b141f4512",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF2_QUOTE_CLOCK_ACCELERATION_BASE.json": "15450340b08f289090d99b4ccd78888fb0ab23c5920acbe746e0b31d2db4ea25",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF3_QUOTE_CLOCK_ACCELERATION_BASE.json": "c3b26c5bd96a7a89cf0c63af79b7c6812aa3a7dbc1ab338e0c84fa0afeb9e75c",
+    "work/independent_profit_study_20261013/cases/BOOM500_VALIDATION_QUOTE_CLOCK_ACCELERATION_BASE.json": "ddfaedbede991d4c587a36f05525149a076b7f8b96d68dbc7eb645cc414f8867",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF1_SIDE_LEAD_BASE.json": "7cfea96884b49430fb5dc44fa159b1d6269ce591d6963a64cc1cbcdd1aaf0f0d",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF2_SIDE_LEAD_BASE.json": "56c710e5f081b060e1c8ec37c1c193ac2e66ee1eb936d2dca27417b050e0b926",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF3_SIDE_LEAD_BASE.json": "18a0a85be3e3d63a0ef8106e74a39bd265336463de4dd80e97b5a38ce7b54f15",
+    "work/independent_profit_study_20261013/cases/BOOM500_VALIDATION_SIDE_LEAD_BASE.json": "6caffd3def7ef0ffad09db99c68c100e1de3696d4689c2482f66fd56b4338b01",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF1_POST_JUMP_CARRY_30S_BASE.json": "c69f7b8d4ec8631ff6ab4bc0566f8595702f4d5788d4a12d67550374be262742",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF2_POST_JUMP_CARRY_30S_BASE.json": "219ac57035f3c442e63221879105792b4deaaf21e18dc50174e075c883bd8867",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF3_POST_JUMP_CARRY_30S_BASE.json": "009e9a45d59d0426828b2da4ec811b9b08f65d9391a6dcae8c52f2b1279b7a95",
+    "work/independent_profit_study_20261013/cases/CRASH500_VALIDATION_POST_JUMP_CARRY_30S_BASE.json": "fa2dc86f946e7c9f215e79e5a2d11f8f19f4d30fa982b499f9970bb49a3f024b",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF1_QUOTE_CLOCK_ACCELERATION_BASE.json": "7fcaf9af2cbe548202a1f383d714e52532a22ead62bdcec86a108d99e39c580d",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF2_QUOTE_CLOCK_ACCELERATION_BASE.json": "ed4f870e2f67dec2395060189b454467da8412541794224cc120cb145fe6207a",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF3_QUOTE_CLOCK_ACCELERATION_BASE.json": "63e03042a76c0c3e31b674086cbd5a6ad20597ea53654c770463406181dff47f",
+    "work/independent_profit_study_20261013/cases/CRASH500_VALIDATION_QUOTE_CLOCK_ACCELERATION_BASE.json": "973b6f3ee0249de95e08ecef9084455553bd02a2cf26d510bb3f2f13e559c2f8",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF1_SIDE_LEAD_BASE.json": "163b079e53cd9a31b6b5b51f6960c4f6bb005beb9be5a255e16eb394257f4649",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF2_SIDE_LEAD_BASE.json": "37eeeebb994af88eb6a67bfe928270e56cd51713819a819232815d668ab5ea10",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF3_SIDE_LEAD_BASE.json": "c152fbbbd96e7371e711dbf63768f30c4d21476f816571a761713e4bbbb7d2db",
+    "work/independent_profit_study_20261013/cases/CRASH500_VALIDATION_SIDE_LEAD_BASE.json": "e2106dcfeace2809b9d29af4169fdff79a2228ddf86f5e2c76205d17458ace15"
+  },
+  "selection_sha256": "0a48c742375172911b219c26a513b3495163a978a90f054495f49812d239cee5",
+  "final_summary_sha256": "310663d445ea9cf0906092ebe9f8f911f7973eaeee2bbd117053f12c5ef473d6",
+  "cash_net": null,
+  "cost_verified": false,
+  "execution_verified": false,
+  "profit_qualified": false,
+  "goal_complete": false,
+  "all_live_flags_false": true
+}

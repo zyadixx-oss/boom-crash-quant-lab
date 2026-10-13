@@ -1,0 +1,85 @@
+{
+  "LIVE_ALLOWED": false,
+  "LIVE_TRADING": false,
+  "OPENED_TRADES": false,
+  "READY_FOR_LIVE": false,
+  "acquisition_declaration_sha256": "998abd73bc65426282b798a38a5a49d17615a591edf43b88e2dea58834dc9893",
+  "cash_net": null,
+  "costs_verified": false,
+  "execution_verified": false,
+  "frozen_utc": "2026-10-13T17:29:20.590335+00:00",
+  "id": "independent-profit-20261013",
+  "live_allowed": false,
+  "live_trading": false,
+  "numpy": "2.5.3",
+  "opened_trades": false,
+  "policies": [
+    "POST_JUMP_CARRY_30S",
+    "QUOTE_CLOCK_ACCELERATION",
+    "SIDE_LEAD"
+  ],
+  "premeasurement_validation_path": "docs/independent_profit_research_20261013/premeasurement_validation.json",
+  "premeasurement_validation_sha256": "304a3f017f478888c2242cc6453540099bd6796d164e75b2c065aa931ad32a2a",
+  "price_scale": 100000000,
+  "primary_claims": [
+    "BOOM500/SIDE_LEAD/POSITIVE_DAILY_R",
+    "BOOM500/SIDE_LEAD/EXCESS_DAILY_R_VS_CLOCK",
+    "BOOM500/QUOTE_CLOCK_ACCELERATION/POSITIVE_DAILY_R",
+    "BOOM500/QUOTE_CLOCK_ACCELERATION/EXCESS_DAILY_R_VS_CLOCK",
+    "BOOM500/POST_JUMP_CARRY_30S/POSITIVE_DAILY_R",
+    "BOOM500/POST_JUMP_CARRY_30S/EXCESS_DAILY_R_VS_CLOCK",
+    "CRASH500/SIDE_LEAD/POSITIVE_DAILY_R",
+    "CRASH500/SIDE_LEAD/EXCESS_DAILY_R_VS_CLOCK",
+    "CRASH500/QUOTE_CLOCK_ACCELERATION/POSITIVE_DAILY_R",
+    "CRASH500/QUOTE_CLOCK_ACCELERATION/EXCESS_DAILY_R_VS_CLOCK",
+    "CRASH500/POST_JUMP_CARRY_30S/POSITIVE_DAILY_R",
+    "CRASH500/POST_JUMP_CARRY_30S/EXCESS_DAILY_R_VS_CLOCK"
+  ],
+  "protocol_path": "docs/independent_profit_research_20261013/PROTOCOL_FROZEN.ar.md",
+  "protocol_sha256": "6b23c34e02100032b4bef2975ccc14c090bd6539b49462666d2137a06ad4e53e",
+  "python": "3.12.5",
+  "ready_for_live": false,
+  "schema_version": 1,
+  "source_pins": {
+    "independent_profit_research/benchmarks.py": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7",
+    "independent_profit_research/data.py": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+    "independent_profit_research/execution.py": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+    "independent_profit_research/policies.py": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4",
+    "independent_profit_research/runner.py": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450",
+    "independent_profit_research/statistics.py": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9",
+    "independent_profit_research/tape.py": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+    "scripts/run_independent_profit_study.py": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e",
+    "scripts/verify_mt5_quote_export.py": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab"
+  },
+  "stages": {
+    "FINAL": [
+      120,
+      150,
+      90
+    ],
+    "VALIDATION": [
+      90,
+      120,
+      90
+    ],
+    "WF1": [
+      30,
+      50,
+      30
+    ],
+    "WF2": [
+      50,
+      70,
+      50
+    ],
+    "WF3": [
+      70,
+      90,
+      70
+    ]
+  },
+  "symbols": {
+    "BOOM500": 1,
+    "CRASH500": -1
+  }
+}

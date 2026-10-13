@@ -1,0 +1,1158 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETED_AVAILABILITY_ONLY",
+  "scope": "TWENTY_RETAINED_MT5_60_SECOND_QUOTE_WINDOWS_NO_STRATEGY_RECALCULATION",
+  "packaged_at_utc": "2026-10-13T17:04:51.376816+00:00",
+  "source_state": {
+    "path": "work/mt5_quote_availability_20261013/state.json",
+    "sha256": "2ff8f3441c2d343e2cda603aedda0144ac05075b92cd6a82ba5271fef24077ed",
+    "status": "COMPLETED",
+    "started_utc": "2026-10-13T12:05:58.026526+00:00",
+    "finished_utc": "2026-10-13T12:11:57.303916+00:00"
+  },
+  "original_campaign": {
+    "id": "single-frame-8af790ef59a5",
+    "declaration_path": "data/single_frame_campaign_20261011/declaration.json",
+    "declaration_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292",
+    "per_symbol_split_bounds_utc": {
+      "BOOM1000": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:54:00Z",
+          "end_exclusive_utc": "2026-05-18T12:34:48Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:34:48Z",
+          "end_exclusive_utc": "2026-07-30T12:28:24Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:28:24Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "BOOM300": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:46:00Z",
+          "end_exclusive_utc": "2026-05-18T12:31:36Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:31:36Z",
+          "end_exclusive_utc": "2026-07-30T12:26:48Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:26:48Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "BOOM500": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:46:00Z",
+          "end_exclusive_utc": "2026-05-18T12:31:36Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:31:36Z",
+          "end_exclusive_utc": "2026-07-30T12:26:48Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:26:48Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "BOOM600": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:46:00Z",
+          "end_exclusive_utc": "2026-05-18T12:31:36Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:31:36Z",
+          "end_exclusive_utc": "2026-07-30T12:26:48Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:26:48Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "BOOM900": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:30:00Z",
+          "end_exclusive_utc": "2026-05-18T12:25:12Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:25:12Z",
+          "end_exclusive_utc": "2026-07-30T12:23:36Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:23:36Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "CRASH1000": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:36:00Z",
+          "end_exclusive_utc": "2026-05-18T12:27:36Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:27:36Z",
+          "end_exclusive_utc": "2026-07-30T12:24:48Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:24:48Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "CRASH300": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:30:00Z",
+          "end_exclusive_utc": "2026-05-18T12:25:12Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:25:12Z",
+          "end_exclusive_utc": "2026-07-30T12:23:36Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:23:36Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "CRASH500": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:54:00Z",
+          "end_exclusive_utc": "2026-05-18T12:34:48Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:34:48Z",
+          "end_exclusive_utc": "2026-07-30T12:28:24Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:28:24Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "CRASH600": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:30:00Z",
+          "end_exclusive_utc": "2026-05-18T12:25:12Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:25:12Z",
+          "end_exclusive_utc": "2026-07-30T12:23:36Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:23:36Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      },
+      "CRASH900": {
+        "TRAIN": {
+          "start_inclusive_utc": "2025-10-11T12:36:00Z",
+          "end_exclusive_utc": "2026-05-18T12:27:36Z"
+        },
+        "VALIDATION": {
+          "start_inclusive_utc": "2026-05-18T12:27:36Z",
+          "end_exclusive_utc": "2026-07-30T12:24:48Z"
+        },
+        "FINAL": {
+          "start_inclusive_utc": "2026-07-30T12:24:48Z",
+          "end_exclusive_utc": "2026-10-11T12:22:00Z"
+        }
+      }
+    },
+    "old_parameters_and_results_modified": false
+  },
+  "totals": {
+    "symbols": 10,
+    "windows": 20,
+    "requested_seconds_per_window": 60,
+    "rows": 1180,
+    "new_captures_in_completed_source_run": 18,
+    "reused_retained_captures": 2,
+    "new_terminal_requests_during_packaging": 0,
+    "fresh_source_verifications": 20,
+    "fresh_copied_file_verifications": 20,
+    "training_windows": 10,
+    "final_windows": 10,
+    "validation_windows": 0
+  },
+  "validation": {
+    "status": "UNSAMPLED",
+    "meaning": "No quote availability window from the original campaign VALIDATION split was acquired or packaged."
+  },
+  "source_verifier": {
+    "path": "scripts/verify_mt5_quote_export.py",
+    "sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab"
+  },
+  "raw_retention_scope": "SELECTED_ATTEMPT_ONLY",
+  "raw_bytes_preserved": true,
+  "row_order_preserved": true,
+  "deduplication_applied": false,
+  "cost_verified": false,
+  "historical_costs_verified": false,
+  "cash_contract_mapping_verified": false,
+  "cfd_fills_verified": false,
+  "execution_verified": false,
+  "profit_tested": false,
+  "engine_profit_recalculated": false,
+  "full_tick_coverage_verified": false,
+  "same_account_identity_verified": false,
+  "broker_origin_independently_authenticated": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  },
+  "limitations": [
+    "Each capture supports availability for its own 60-second requested window only; no full day, split, year, or largest-retained-history coverage is established.",
+    "Receipt status SAVED_NOT_PROVEN and independent status QUOTES_VALIDATED_COVERAGE_NOT_PROVEN retain uncertainty about historical completeness and synchronization.",
+    "Zero detected gaps above5000ms does not prove absence of missing ticks. Leading/trailing unobserved intervals remain explicit.",
+    "Current symbol specifications at capture are not historical contract, commission, financing, or cash-mapping evidence.",
+    "No fills, orders, private financial history, strategy payoffs, or original engine profit calculations are included or recomputed.",
+    "Server/company names are locally checked declarations; broker origin and same-account identity are not independently authenticated.",
+    "The two previously retained captures are reused market acquisitions; their fresh offline checks are not new acquisitions."
+  ],
+  "records": [
+    {
+      "symbol": "BOOM300",
+      "source_symbol": "Boom 300 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:46:00Z",
+        "end_exclusive_utc": "2026-05-18T12:31:36Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM300_20251101/Avail_BOOM300_20251101_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM300_20251101/Avail_BOOM300_20251101_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM300_20251101/Avail_BOOM300_20251101_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM300_20251101/verification.json",
+      "receipt_sha256": "81d9402d8baf2be0a3bdc7f6ac37dcac70ce9c64b94938323f7ba4770098b7c3",
+      "raw_sha256": "21ea41ab7149790c3faa3d3a8a3811120c1f11ea9bd12740bffe879aeb3c8645",
+      "verification_sha256": "8b8e01f11047872d60e3e29b4c1b30407976b4b0ca08cf2520d606bc80d67c56",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 60,
+      "first_time_msc": 1761955201601,
+      "last_time_msc": 1761955259133,
+      "first_observed_utc": "2025-11-01T00:00:01.601000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.133000Z",
+      "leading_unobserved_ms": 1601,
+      "trailing_unobserved_ms": 866,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 2609,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM300",
+      "source_symbol": "Boom 300 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:26:48Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM300_20261010/Avail_BOOM300_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM300_20261010/Avail_BOOM300_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM300_20261010/Avail_BOOM300_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM300_20261010/verification.json",
+      "receipt_sha256": "926e9da35accbf21f225c958a1fdc88400db29f88989fb3da48804710d42c0e9",
+      "raw_sha256": "9071825146dca1837741124495c0af730ace7de8dcca97d98b9124c4b3b25a4c",
+      "verification_sha256": "adddee7870d4a3d17c78918b8a3d29b8d43565913857608e5d1dbb7ae4d66b04",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 58,
+      "first_time_msc": 1791662400159,
+      "last_time_msc": 1791662459135,
+      "first_observed_utc": "2026-10-10T20:00:00.159000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.135000Z",
+      "leading_unobserved_ms": 159,
+      "trailing_unobserved_ms": 864,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 2000,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM500",
+      "source_symbol": "Boom 500 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:46:00Z",
+        "end_exclusive_utc": "2026-05-18T12:31:36Z"
+      },
+      "reused_retained_capture": true,
+      "acquisition_kind": "REUSED_RETAINED_CAPTURE",
+      "source_receipt_path": "docs/quote_evidence_followup_20261013/ResearchQuotes_Boom500_20251101_probe02/ResearchQuotes_Boom500_20251101_probe02_receipt.tsv",
+      "receipt_path": "receipts/ResearchQuotes_Boom500_20251101_probe02/ResearchQuotes_Boom500_20251101_probe02_receipt.tsv",
+      "raw_path": "receipts/ResearchQuotes_Boom500_20251101_probe02/ResearchQuotes_Boom500_20251101_probe02_ticks.tsv",
+      "verification_path": "receipts/ResearchQuotes_Boom500_20251101_probe02/verification.json",
+      "receipt_sha256": "b572c7901024bb660b8b85c42cba10b14c228fce7231826e2a219ad9144ac840",
+      "raw_sha256": "66e9260aab4cc79dbc7b22a45dac3aa92adca725190aa7e9db2fe74970263489",
+      "verification_sha256": "a3ab86003a6d93e4cf4b91e947b0b31284d3fae625df2f882420860098b424ae",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 60,
+      "first_time_msc": 1761955203425,
+      "last_time_msc": 1761955259150,
+      "first_observed_utc": "2025-11-01T00:00:03.425000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.150000Z",
+      "leading_unobserved_ms": 3425,
+      "trailing_unobserved_ms": 849,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1136,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM500",
+      "source_symbol": "Boom 500 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:26:48Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM500_20261010/Avail_BOOM500_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM500_20261010/Avail_BOOM500_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM500_20261010/Avail_BOOM500_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM500_20261010/verification.json",
+      "receipt_sha256": "7511477fefc506fd820cb1939734692b0d55a1beb5a8c3843360419ec2bf8ee3",
+      "raw_sha256": "e2156468a33473bacd6ba31fb2001fa4b6c370301b7dfac2df04e46cfcffe477",
+      "verification_sha256": "7f71eaa7378ad9cfd3f60ca5de77fce11a7e1bedf5fa3c64937bd34b07f4f536",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 59,
+      "first_time_msc": 1791662400171,
+      "last_time_msc": 1791662459138,
+      "first_observed_utc": "2026-10-10T20:00:00.171000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.138000Z",
+      "leading_unobserved_ms": 171,
+      "trailing_unobserved_ms": 861,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 2002,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM600",
+      "source_symbol": "Boom 600 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:46:00Z",
+        "end_exclusive_utc": "2026-05-18T12:31:36Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM600_20251101/Avail_BOOM600_20251101_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM600_20251101/Avail_BOOM600_20251101_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM600_20251101/Avail_BOOM600_20251101_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM600_20251101/verification.json",
+      "receipt_sha256": "e5965ac0a17c3d19fa5d583ccb2f84fd2522a9399adda6ae9de1d7278842ba49",
+      "raw_sha256": "96fc940023f704de413c50299faf60ff981d7fb87bc502889b592a05ac13aaac",
+      "verification_sha256": "919de0345bd5c40d5d80c9e9746d201fa7a2a75b3aed6ffceb58265b4707cd0c",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 59,
+      "first_time_msc": 1761955203819,
+      "last_time_msc": 1761955259152,
+      "first_observed_utc": "2025-11-01T00:00:03.819000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.152000Z",
+      "leading_unobserved_ms": 3819,
+      "trailing_unobserved_ms": 847,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1996,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM600",
+      "source_symbol": "Boom 600 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:26:48Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM600_20261010/Avail_BOOM600_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM600_20261010/Avail_BOOM600_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM600_20261010/Avail_BOOM600_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM600_20261010/verification.json",
+      "receipt_sha256": "8ccdf1598cbd7d224ace44e1bea48065e68f6fea878e3e4b6ee3bac36c33bff3",
+      "raw_sha256": "3a6ccf312b04a559b6c0552f2d1c7d271b23a382570bf033ec94ce1fd63bf730",
+      "verification_sha256": "b635bde119bd51f99e551c307a83a5666c2b3116ea9a9330f1166d8b53548e2e",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 60,
+      "first_time_msc": 1791662400179,
+      "last_time_msc": 1791662459145,
+      "first_observed_utc": "2026-10-10T20:00:00.179000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.145000Z",
+      "leading_unobserved_ms": 179,
+      "trailing_unobserved_ms": 854,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1035,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM900",
+      "source_symbol": "Boom 900 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:30:00Z",
+        "end_exclusive_utc": "2026-05-18T12:25:12Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM900_20251101/Avail_BOOM900_20251101_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM900_20251101/Avail_BOOM900_20251101_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM900_20251101/Avail_BOOM900_20251101_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM900_20251101/verification.json",
+      "receipt_sha256": "2b406578442b1a307cf3a1fc0da7f043195341f976d59c1e8351b94829002070",
+      "raw_sha256": "01100a6f42edb70427170f3630ed66a9f034965d8e9640138c5e80427e4fcb0e",
+      "verification_sha256": "a8c20458347450bd225d0798b08656ba110e6725fe024f6f25ddaeb6ce716f9b",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 60,
+      "first_time_msc": 1761955203805,
+      "last_time_msc": 1761955259156,
+      "first_observed_utc": "2025-11-01T00:00:03.805000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.156000Z",
+      "leading_unobserved_ms": 3805,
+      "trailing_unobserved_ms": 843,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1131,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM900",
+      "source_symbol": "Boom 900 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:23:36Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM900_20261010/Avail_BOOM900_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM900_20261010/Avail_BOOM900_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM900_20261010/Avail_BOOM900_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM900_20261010/verification.json",
+      "receipt_sha256": "3a57704c65f8fc8dc294aef0c28b241317c703f5d643dcd0ea2db9c0b8a618b0",
+      "raw_sha256": "f05aee398752e4ed123691c3ebacd64d97bad0a253391833e3994abfbc8a8561",
+      "verification_sha256": "0122a5328752ffd78d2c7f34a80c07ba8dec16141beaeac2ad0f31942f2daf28",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 59,
+      "first_time_msc": 1791662400180,
+      "last_time_msc": 1791662458141,
+      "first_observed_utc": "2026-10-10T20:00:00.180000Z",
+      "last_observed_utc": "2026-10-10T20:00:58.141000Z",
+      "leading_unobserved_ms": 180,
+      "trailing_unobserved_ms": 1858,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1047,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM1000",
+      "source_symbol": "Boom 1000 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:54:00Z",
+        "end_exclusive_utc": "2026-05-18T12:34:48Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM1000_20251101/Avail_BOOM1000_20251101_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM1000_20251101/Avail_BOOM1000_20251101_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM1000_20251101/Avail_BOOM1000_20251101_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM1000_20251101/verification.json",
+      "receipt_sha256": "92a5362b2de8044cc1e42ac8bc68c241750d9972c60660f920cd76fe27da5e89",
+      "raw_sha256": "2970aacf369100e3094eb2719cac515eae0bf58f19460e8bce47663d8745bea6",
+      "verification_sha256": "7b791987caa4f4c5869b3d55033ea89cfa63f6e4708fa4263db85efa9ced1352",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 60,
+      "first_time_msc": 1761955203385,
+      "last_time_msc": 1761955259126,
+      "first_observed_utc": "2025-11-01T00:00:03.385000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.126000Z",
+      "leading_unobserved_ms": 3385,
+      "trailing_unobserved_ms": 873,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1124,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "BOOM1000",
+      "source_symbol": "Boom 1000 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:28:24Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_BOOM1000_20261010/Avail_BOOM1000_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_BOOM1000_20261010/Avail_BOOM1000_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_BOOM1000_20261010/Avail_BOOM1000_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_BOOM1000_20261010/verification.json",
+      "receipt_sha256": "b071d4b927f301b6a8da82db326c8eed14e2818ecf811581bdbbeb6fb37df0be",
+      "raw_sha256": "71bef67b907caff81309f255c0ae8c1c29c0a3fec454b4c0655288da0ba02a1a",
+      "verification_sha256": "245c95c24e1c4f06d44f983b6085f55fbe810db48f226657b75e5aa062faa6c6",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 59,
+      "first_time_msc": 1791662400176,
+      "last_time_msc": 1791662459142,
+      "first_observed_utc": "2026-10-10T20:00:00.176000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.142000Z",
+      "leading_unobserved_ms": 176,
+      "trailing_unobserved_ms": 857,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1996,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH300",
+      "source_symbol": "Crash 300 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:30:00Z",
+        "end_exclusive_utc": "2026-05-18T12:25:12Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH300_20251101/Avail_CRASH300_20251101_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH300_20251101/Avail_CRASH300_20251101_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH300_20251101/Avail_CRASH300_20251101_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH300_20251101/verification.json",
+      "receipt_sha256": "7abdadd546f3f6c0198b3fc2cf4fbb11cdc28926f80443cf7900d6c1d6dec665",
+      "raw_sha256": "ca14bb7c4241092d1b54e57f58994eb50762937e80e220e131dbea1e9fe2f2f9",
+      "verification_sha256": "b4ccceba9a118f6e390d5bb450fdcd3c31b8a9253757f43cb339594186c8b56d",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 59,
+      "first_time_msc": 1761955204024,
+      "last_time_msc": 1761955259158,
+      "first_observed_utc": "2025-11-01T00:00:04.024000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.158000Z",
+      "leading_unobserved_ms": 4024,
+      "trailing_unobserved_ms": 841,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1424,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH300",
+      "source_symbol": "Crash 300 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:23:36Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH300_20261010/Avail_CRASH300_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH300_20261010/Avail_CRASH300_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH300_20261010/Avail_CRASH300_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH300_20261010/verification.json",
+      "receipt_sha256": "bd05366e7e6e5477b54b58305a73a86bff921d82e79ec31a321d67e159356ba8",
+      "raw_sha256": "ad5fd7f5254d30e53f84762f17d5236dea8bcd6b1ad6d8e83462cadf4e2c8383",
+      "verification_sha256": "dc41d9a1b5d0751520f55b78b0faee0e7d21f6623decb150b86d71be998b4af7",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 59,
+      "first_time_msc": 1791662400182,
+      "last_time_msc": 1791662459149,
+      "first_observed_utc": "2026-10-10T20:00:00.182000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.149000Z",
+      "leading_unobserved_ms": 182,
+      "trailing_unobserved_ms": 850,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 2002,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH500",
+      "source_symbol": "Crash 500 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:54:00Z",
+        "end_exclusive_utc": "2026-05-18T12:34:48Z"
+      },
+      "reused_retained_capture": true,
+      "acquisition_kind": "REUSED_RETAINED_CAPTURE",
+      "source_receipt_path": "docs/quote_evidence_followup_20261013/ResearchQuotes_Crash500_20251101_probe01/ResearchQuotes_Crash500_20251101_probe01_receipt.tsv",
+      "receipt_path": "receipts/ResearchQuotes_Crash500_20251101_probe01/ResearchQuotes_Crash500_20251101_probe01_receipt.tsv",
+      "raw_path": "receipts/ResearchQuotes_Crash500_20251101_probe01/ResearchQuotes_Crash500_20251101_probe01_ticks.tsv",
+      "verification_path": "receipts/ResearchQuotes_Crash500_20251101_probe01/verification.json",
+      "receipt_sha256": "85f5e80840b21d43bb485fddde626563d22dc1ca153848185ee9df8f48139bde",
+      "raw_sha256": "9a6b0187869d97b17a8485f379caf08f0235bd9468ba23b3a252b3422d31c4eb",
+      "verification_sha256": "352b79b1a421a3d1d94a4605821da09f3ddc91499ecb9a4ae9b26866bf732fe2",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 56,
+      "first_time_msc": 1761955203695,
+      "last_time_msc": 1761955259169,
+      "first_observed_utc": "2025-11-01T00:00:03.695000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.169000Z",
+      "leading_unobserved_ms": 3695,
+      "trailing_unobserved_ms": 830,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 2051,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH500",
+      "source_symbol": "Crash 500 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:28:24Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH500_20261010/Avail_CRASH500_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH500_20261010/Avail_CRASH500_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH500_20261010/Avail_CRASH500_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH500_20261010/verification.json",
+      "receipt_sha256": "a2f5544fbab438b9ea12ba47931fa6081f6de96da7db31d51362d0f2b6342b77",
+      "raw_sha256": "ee6f5ed3be5a773a8eead08e47e56d9c72da70855d97a5585b129b05fdb80274",
+      "verification_sha256": "8a6e1247c2ce9a4583c4752cf9a3854d9d1785584c6a5e510e17b48decb4e908",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 58,
+      "first_time_msc": 1791662400181,
+      "last_time_msc": 1791662459147,
+      "first_observed_utc": "2026-10-10T20:00:00.181000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.147000Z",
+      "leading_unobserved_ms": 181,
+      "trailing_unobserved_ms": 852,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1995,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH600",
+      "source_symbol": "Crash 600 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:30:00Z",
+        "end_exclusive_utc": "2026-05-18T12:25:12Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH600_20251101/Avail_CRASH600_20251101_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH600_20251101/Avail_CRASH600_20251101_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH600_20251101/Avail_CRASH600_20251101_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH600_20251101/verification.json",
+      "receipt_sha256": "3c98282fb255ae8a13f6d81c9278672f61c3e72e8e5e8433ea578b1b04be44eb",
+      "raw_sha256": "6eb1a05760e1b6e8b1fb71b0d4b5272735c2d13e51a9d1737f408c172d68d216",
+      "verification_sha256": "c491346a6b8c374face45cb13af81b905bde52e7ff6c907088b4470277161a87",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 60,
+      "first_time_msc": 1761955204075,
+      "last_time_msc": 1761955259185,
+      "first_observed_utc": "2025-11-01T00:00:04.075000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.185000Z",
+      "leading_unobserved_ms": 4075,
+      "trailing_unobserved_ms": 814,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1121,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH600",
+      "source_symbol": "Crash 600 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:23:36Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH600_20261010/Avail_CRASH600_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH600_20261010/Avail_CRASH600_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH600_20261010/Avail_CRASH600_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH600_20261010/verification.json",
+      "receipt_sha256": "a899079dfb951709ddf73e0aed59b486158b5daee615eb06f8b0c453e39731cf",
+      "raw_sha256": "705aaf4f3d4e63b6f7266ea9046032c5822a59990dcca44a6fc672cc9397ad09",
+      "verification_sha256": "57c12f2993288c4e89f6dec3feca965250f154b0e1ac2190931463393e779eca",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 60,
+      "first_time_msc": 1791662400172,
+      "last_time_msc": 1791662459138,
+      "first_observed_utc": "2026-10-10T20:00:00.172000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.138000Z",
+      "leading_unobserved_ms": 172,
+      "trailing_unobserved_ms": 861,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1053,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH900",
+      "source_symbol": "Crash 900 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:36:00Z",
+        "end_exclusive_utc": "2026-05-18T12:27:36Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH900_20251101/Avail_CRASH900_20251101_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH900_20251101/Avail_CRASH900_20251101_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH900_20251101/Avail_CRASH900_20251101_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH900_20251101/verification.json",
+      "receipt_sha256": "2ea107ccd38b469f346695b8a30c13597a6121f231c4dab1c519b621c23ea903",
+      "raw_sha256": "eb7c589457d60f769992b7282a6a3366bebaf780bc65a567f7d79f225440589e",
+      "verification_sha256": "83c5f3fad3c36be7f7f2f38ca1c098a80bbb34f57f5076aec0adaa80f2eaaf43",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 58,
+      "first_time_msc": 1761955203439,
+      "last_time_msc": 1761955259147,
+      "first_observed_utc": "2025-11-01T00:00:03.439000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.147000Z",
+      "leading_unobserved_ms": 3439,
+      "trailing_unobserved_ms": 852,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1977,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH900",
+      "source_symbol": "Crash 900 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:24:48Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH900_20261010/Avail_CRASH900_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH900_20261010/Avail_CRASH900_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH900_20261010/Avail_CRASH900_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH900_20261010/verification.json",
+      "receipt_sha256": "46d5dd9398fdb590a388f3e59a52fe1bec8759c3e4a5d743577bdf18d93bdfd3",
+      "raw_sha256": "0a5c4c0ab051db069a23edac3e6cd46da11612b387b0b366abe5cfd95baa8c3b",
+      "verification_sha256": "852131ebe4c9f8edaa8d2c4bb3abec48a838a3726a9994ca52745e735c3d10ff",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 59,
+      "first_time_msc": 1791662400181,
+      "last_time_msc": 1791662459150,
+      "first_observed_utc": "2026-10-10T20:00:00.181000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.150000Z",
+      "leading_unobserved_ms": 181,
+      "trailing_unobserved_ms": 849,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 2005,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH1000",
+      "source_symbol": "Crash 1000 Index",
+      "window": {
+        "start_utc": "2025-11-01T00:00:00Z",
+        "end_exclusive_utc": "2025-11-01T00:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "TRAIN",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2025-10-11T12:36:00Z",
+        "end_exclusive_utc": "2026-05-18T12:27:36Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH1000_20251101/Avail_CRASH1000_20251101_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH1000_20251101/Avail_CRASH1000_20251101_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH1000_20251101/Avail_CRASH1000_20251101_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH1000_20251101/verification.json",
+      "receipt_sha256": "4a7dd8c81a405f2a440acbec6638371326f5b16e898ff85a40f876de854bcb79",
+      "raw_sha256": "560fbcbfe004dc2e6c44c58f858265ac9ae42bfa32ed973325b89c61b8992a3e",
+      "verification_sha256": "d589a2a496eddf6091a99e5c419e6d57c3669f6a8a155ba7ab1d752ccfefb887",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 59,
+      "first_time_msc": 1761955202507,
+      "last_time_msc": 1761955259137,
+      "first_observed_utc": "2025-11-01T00:00:02.507000Z",
+      "last_observed_utc": "2025-11-01T00:00:59.137000Z",
+      "leading_unobserved_ms": 2507,
+      "trailing_unobserved_ms": 862,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 1984,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    },
+    {
+      "symbol": "CRASH1000",
+      "source_symbol": "Crash 1000 Index",
+      "window": {
+        "start_utc": "2026-10-10T20:00:00Z",
+        "end_exclusive_utc": "2026-10-10T20:01:00Z"
+      },
+      "window_seconds": 60,
+      "original_campaign_split": "FINAL",
+      "split_bounds_utc": {
+        "start_inclusive_utc": "2026-07-30T12:24:48Z",
+        "end_exclusive_utc": "2026-10-11T12:22:00Z"
+      },
+      "reused_retained_capture": false,
+      "acquisition_kind": "NEW_CAPTURE_IN_COMPLETED_AVAILABILITY_RUN",
+      "source_receipt_path": "work/quote_evidence_followup_20261012/Avail_CRASH1000_20261010/Avail_CRASH1000_20261010_receipt.tsv",
+      "receipt_path": "receipts/Avail_CRASH1000_20261010/Avail_CRASH1000_20261010_receipt.tsv",
+      "raw_path": "receipts/Avail_CRASH1000_20261010/Avail_CRASH1000_20261010_ticks.tsv",
+      "verification_path": "receipts/Avail_CRASH1000_20261010/verification.json",
+      "receipt_sha256": "0ae2fd9639312c9a25eff6e05b4c9667c26d00520ffee4332a4c474702e9d451",
+      "raw_sha256": "99c9a22d7a219956cd1d3fd89c1b52cfd8e66d9af32aaec67e419923a05e7fee",
+      "verification_sha256": "b936ed5697db5df9822b08cb07bfbd485e62de58bb460cce99713f1b19e076ee",
+      "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+      "rows": 58,
+      "first_time_msc": 1791662400164,
+      "last_time_msc": 1791662459137,
+      "first_observed_utc": "2026-10-10T20:00:00.164000Z",
+      "last_observed_utc": "2026-10-10T20:00:59.137000Z",
+      "leading_unobserved_ms": 164,
+      "trailing_unobserved_ms": 862,
+      "same_millisecond_adjacent_pairs": 0,
+      "inter_tick_gap_above_5000ms": 0,
+      "max_inter_tick_ms": 2012,
+      "verification_runs": {
+        "fresh_source_check": true,
+        "fresh_copied_file_check": true,
+        "copied_check_identical_to_source_check": true
+      },
+      "cached_report_comparison": {
+        "same_receipt_and_raw_pins": true,
+        "changed_keys": []
+      },
+      "cost_verified": false,
+      "execution_verified": false,
+      "profit_tested": false,
+      "full_tick_coverage_verified": false
+    }
+  ]
+}

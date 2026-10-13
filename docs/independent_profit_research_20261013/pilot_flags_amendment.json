@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-13T16:52:30.660221+00:00",
+  "before_strategy_metrics": true,
+  "reason": "source-only repeated historical flags differ while all timestamps and numerical raw fields are identical",
+  "old_and_new_flag_pairs": [
+    [
+      "6",
+      "134"
+    ]
+  ],
+  "all_timestamp_and_numerical_fields_identical": true,
+  "policy_inputs": "time_msc,bid,ask only; derive changes from values; never flags as flow",
+  "unknown_flag_bits_interpretation": "UNRESOLVED; no broker trade-flow claim",
+  "raw_all_fields_retained": true,
+  "quality_repeat_rule": "exact source timestamp and all numeric fields required; flag-only differences recorded, never silently repaired",
+  "initial_all_fields_repeat_failed_retained": true,
+  "candidate_fixed": "2025-01-02 to2025-06-01 UTC",
+  "live_trading": false,
+  "ready_for_live": false,
+  "live_allowed": false,
+  "opened_trades": false
+}
