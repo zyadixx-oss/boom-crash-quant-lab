@@ -1,0 +1,76 @@
+{
+  "created_at_utc": "2026-10-12T21:29:08.100040+00:00",
+  "scope": "ADDITIONAL_READ_ONLY_QUOTE_EVIDENCE; original campaign and final selection remain sealed",
+  "user_authorization": "نفذ كل شي تحتاجه",
+  "requirements": [
+    {
+      "id": "Q1",
+      "requirement": "Find an official historical broker tick source; distinguish observed availability from documentation."
+    },
+    {
+      "id": "Q2",
+      "requirement": "Read-only market quotes from existing MT5 connection; no login, new account, orders, fills, or personal account export."
+    },
+    {
+      "id": "Q3",
+      "requirement": "All eight application safety flags false; automatic trading disabled at terminal and program levels."
+    },
+    {
+      "id": "Q4",
+      "requirement": "Preserve exact requested and received times, source/server/account class, all ticks including same-millisecond rows and bid/ask."
+    },
+    {
+      "id": "Q5",
+      "requirement": "Verify ordering, valid sides, ranges, gaps and partial/synchronization errors; never infer full broker retention from count."
+    },
+    {
+      "id": "Q6",
+      "requirement": "Raw source, source-code hash, artifact hashes and independent recomputation of quote statistics."
+    },
+    {
+      "id": "Q7",
+      "requirement": "Bounded prospective public quote capture separate from broker-specific quotes, with exclusive lock and safe resume."
+    },
+    {
+      "id": "Q8",
+      "requirement": "Run meaningful tests and actual available data capture; mark unavailable platform paths NOT TESTED."
+    },
+    {
+      "id": "Q9",
+      "requirement": "Keep historical cost schedule, execution and profitability gates unverified unless evidence actually supplies them."
+    },
+    {
+      "id": "Q10",
+      "requirement": "Do not restart closed campaign/replay, tune sealed final or revive paused heartbeat."
+    }
+  ],
+  "assumptions_not_verified": [
+    "MT5 server retains requested older periods",
+    "Tick times are confirmed UTC equivalent for this broker",
+    "Historical fees and swaps available",
+    "Bid/ask imply actual fills"
+  ],
+  "smallest_falsification": "A 60-second Boom500 and Crash500 history request in an older and recent UTC-labelled window; empty/error/partial/out-of-range response must remain explicit.",
+  "frozen_before_sha256": {
+    "research_campaign/campaign.py": "2f29d814966520692ca645ff05279144ee5ee453ea3b75e60013b375d7968fd5",
+    "research_campaign/data.py": "a793bf5028a51e5179f7e7c11f95f51dbddf46de2406cab552ed99e85fa80e89",
+    "research_campaign/engine.py": "25deed73a415f908c816d32537895c4b89164a764876bebfc17ced2a8a12eb21",
+    "research_campaign/strategies.py": "973d71f1f3ed520c52a8d69c48c0c4e0a92a181135aecc50dcc0778ab5d240b5",
+    "research_campaign/state.py": "e56994995793a36c60dfec673436defc71f3faa9aaa4e90406e2baa8a5fc4533",
+    "research_campaign/reporting.py": "37fb42a63ac7b3ed4b787168ec2da4ad6b6f6400a375c14cfdc57756cdd0e8c5",
+    "research_campaign/source_audit.py": "e23e827656f0c4ed8e0a27df59811e223150a0b76c76dbcc5d8d4bce60b78923",
+    "research_campaign/replay.py": "1d645482c60c3c81f864112ff3b736dcf2120610e39d65b8d3568d75b83a3c6c",
+    "data/single_frame_campaign_20261011/declaration.json": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292",
+    "work/final_replay_20261011/latest.json": "c7ac7cbc3d6009131edd516c512f388fa9b34c8f30b65f9b09ae563d9b0fb0d0"
+  },
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}

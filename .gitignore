@@ -98,3 +98,6 @@ data/hybrid_event_regions_20261008/
 # Resumable single-frame campaign: raw wire data and full virtual ledgers stay local.
 data/single_frame_campaign_20261011/
 frontend/public/campaign/
+
+# Runtime kernel lock; public quote evidence beside it remains reproducible.
+data/prospective_public_quotes_20261013/.archive.lock

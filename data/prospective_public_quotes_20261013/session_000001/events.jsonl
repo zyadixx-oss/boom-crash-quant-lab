@@ -1,0 +1,5 @@
+{"connection_id":1,"event":"connection_attempt","utc":"2026-10-12T21:35:53.266878+00:00"}
+{"connection_id":1,"event":"connection_opened","utc":"2026-10-12T21:35:53.945333+00:00"}
+{"connection_id":1,"event":"bounded_deadline_reached","utc":"2026-10-12T21:36:53.221685+00:00"}
+{"connection_id":1,"event":"connection_closed","utc":"2026-10-12T21:36:53.422534+00:00"}
+{"connection_id":1,"event":"session_finished","status":"COMPLETED","utc":"2026-10-12T21:36:53.430061+00:00"}

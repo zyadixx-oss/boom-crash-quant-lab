@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "Q1": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Find an official historical broker tick source; distinguish observed availability from documentation."
+    },
+    "Q2": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Read-only market quotes from existing MT5 connection; no login, new account, orders, fills, or personal account export."
+    },
+    "Q3": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "All eight application safety flags false; automatic trading disabled at terminal and program levels."
+    },
+    "Q4": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Preserve exact requested and received times, source/server/account class, all ticks including same-millisecond rows and bid/ask.",
+      "scope": "All returned rows retained in the four successful one-attempt probes; future retries retain selected attempt only."
+    },
+    "Q5": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Verify ordering, valid sides, ranges, gaps and partial/synchronization errors; never infer full broker retention from count."
+    },
+    "Q6": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Raw source, source-code hash, artifact hashes and independent recomputation of quote statistics."
+    },
+    "Q7": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Bounded prospective public quote capture separate from broker-specific quotes, with exclusive lock and safe resume."
+    },
+    "Q8": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Run meaningful tests and actual available data capture; mark unavailable platform paths NOT TESTED.",
+      "scope": "Actual local Wine/MQL5 and public capture; Windows Python path tested with fake backend only."
+    },
+    "Q9": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Keep historical cost schedule, execution and profitability gates unverified unless evidence actually supplies them."
+    },
+    "Q10": {
+      "status": "VERIFIED_WITH_STATED_SCOPE",
+      "requirement": "Do not restart closed campaign/replay, tune sealed final or revive paused heartbeat."
+    }
+  },
+  "full_original_research_cost_execution_requirements_complete": false,
+  "qualified_strategies": 0,
+  "no_new_campaign": true,
+  "orders_sent": 0
+}

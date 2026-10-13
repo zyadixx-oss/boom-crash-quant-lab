@@ -51,6 +51,23 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements-research-lock.txt
       - run: python -m pytest
+      - name: Verify retained read-only quote captures without broker or network access
+        run: |
+          python -m compileall -q scripts/export_mt5_quotes.py scripts/prospective_quote_archive.py scripts/verify_mt5_quote_export.py backend/app/services/shadow.py
+          python scripts/prospective_quote_archive.py --output data/prospective_public_quotes_20261013 --verify
+          for prefix in ResearchQuotes_Boom500_20251101_probe02 ResearchQuotes_Crash500_20251101_probe01 ResearchQuotes_Boom500_20261012_probe01 ResearchQuotes_Crash500_20261012_probe01; do
+            python scripts/verify_mt5_quote_export.py --receipt "docs/quote_evidence_followup_20261013/$prefix/${prefix}_receipt.tsv" --output "/tmp/${prefix}_verification.json"
+          done
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          folder = Path('docs/quote_evidence_followup_20261013')
+          for saved_path in folder.glob('ResearchQuotes*/verification.json'):
+              reproduced = json.loads((Path('/tmp') / (saved_path.parent.name + '_verification.json')).read_text())
+              if json.loads(saved_path.read_text()) != reproduced:
+                  raise ValueError('Retained quote verification differs from the saved exact-capture result')
+          print('Four retained MT5 quote checks reproduced; costs and fills remain unverified')
+          PY
       - name: Test post-closeout independent arithmetic and validation sensitivity helpers
         run: |
           python -m pytest -o addopts= -q scripts/independent_campaign_accounting/test_audit_ledger.py

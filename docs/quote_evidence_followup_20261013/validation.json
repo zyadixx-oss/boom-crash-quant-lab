@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-10-12T21:58:45.977550+00:00",
+  "full_pytest": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest",
+    "exit_code": 0,
+    "passed": 2979,
+    "warnings": 1,
+    "seconds": 98.86,
+    "log_sha256": "926b8fde2955e7434c8d8a682063c2f3baad1616c3e9b645bb9252bf462c51ce",
+    "warning": "Existing Starlette/httpx test-client deprecation"
+  },
+  "targeted_tests": {
+    "windows_fake_backend": 83,
+    "public_collector_offline": 83,
+    "mt5_tsv_independent_verifier": 169,
+    "shadow_closed_bars_and_gaps": 17
+  },
+  "new_test_total": 352,
+  "compileall": "PASS",
+  "git_diff_check": "PASS",
+  "windows_real_mt5_python_api": "NOT_TESTED",
+  "mql5_compile": "0 errors, 0 warnings; source-specific compiler log and EX5 verified",
+  "mql5_actual_probe_valid_windows": 4,
+  "mql5_actual_validated_quote_rows": 234,
+  "public_actual_ticks": 120,
+  "new_profit_backtests": 0,
+  "tool_sha256": {
+    "scripts/export_mt5_quotes.py": "c299dad6a15a4e3ac81b7f94345d0830b7a127b47a13cd05cd1b2a7ec507a66a",
+    "scripts/prospective_quote_archive.py": "961319fbe2c9773f57e226d42bed1debc18afb1ca3b68a42cfb4f63378ebf5d1",
+    "scripts/verify_mt5_quote_export.py": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+    "scripts/mt5/ExportResearchQuotes.mq5": "98a3d5dd209853cadd9072f0eee822b20d8724801f312d8eea15e8535d435bc5",
+    "backend/app/services/shadow.py": "3176bb2c7f9c7aad6a71c0562ca5321fbb394ca5bb2a6a8bdc678de3364a7b82",
+    "backend/tests/test_export_mt5_quotes.py": "483ae81985c16994897f10aac3b0d4ffe55b1b94f6b73e2a89a693ce85a87cf5",
+    "backend/tests/test_prospective_quote_archive.py": "f5cae4fcd014e44693faf424d42ccc3cc00181caccca77fce5ca3ca055d46d46",
+    "backend/tests/test_verify_mt5_quote_export.py": "6508651f60919ec11525de924f789db47d34b0e865d341f8d313e788f024859a",
+    "backend/tests/test_shadow_closed_bars.py": "cb890c9882cd58e122a559405443296c0f4f36051126e6325096c8b77c28e531"
+  }
+}
