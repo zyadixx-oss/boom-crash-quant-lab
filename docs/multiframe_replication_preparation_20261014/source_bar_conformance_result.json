@@ -1,0 +1,38 @@
+{
+  "status": "PASS_CANDLE_ONLY_REAL_SOURCE_CONFORMANCE",
+  "started_utc": "2026-10-14T20:42:58.625973+00:00",
+  "completed_utc": "2026-10-14T20:43:05.405424+00:00",
+  "declaration_sha256": "03f13f194e875a9554d1e801e95216ad688d5c4115f68fb0793d6f512ded584a",
+  "source_rows": 168870,
+  "valid_bars_by_minutes": {
+    "1": 2879,
+    "5": 575,
+    "15": 191,
+    "60": 47,
+    "240": 11
+  },
+  "all_reference_Bar_fields_exactly_equal": true,
+  "source_rows_retained_order_duplicates_and_price_scale": true,
+  "first_confirmation_quote_lookups_exact": 2879,
+  "canonical_frames_sha256": "0cf2de754137e9b8007d2ed77461cabeba75e30898b9848f6f2a7c7dc204fe4f",
+  "source_and_code_pins_unchanged": true,
+  "runtime_seconds": 6.779619958018884,
+  "peak_process_RSS_bytes_macOS": 179798016,
+  "policy_or_signal_generation_calls": 0,
+  "execution_or_strategy_return_calls": 0,
+  "final_or_private_source_reads": 0,
+  "scope": "Two already excluded adjacent pilot days; bars/access only, not alpha or full streaming evaluator",
+  "cost_verified": false,
+  "execution_verified": false,
+  "cash_net": null,
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  }
+}

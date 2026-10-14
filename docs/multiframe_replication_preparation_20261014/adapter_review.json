@@ -1,0 +1,232 @@
+{
+  "MT5_or_collector_or_process_calls": 0,
+  "actual_quote_raw_reads": 0,
+  "cash_net": null,
+  "costs_verified": false,
+  "created_utc": "2026-10-14T20:41:50.202222+00:00",
+  "execution_verified": false,
+  "frozen_pins_current_recheck": [
+    {
+      "declaration_path": "work/independent_profit_study_20261013/declaration.json",
+      "declaration_sha256": "39532ae745f00e613e716970d1864ad20f20474f5e8b06baf639eea8e63b9e79",
+      "protocol": {
+        "current_sha256": "6b23c34e02100032b4bef2975ccc14c090bd6539b49462666d2137a06ad4e53e",
+        "expected_sha256": "6b23c34e02100032b4bef2975ccc14c090bd6539b49462666d2137a06ad4e53e",
+        "path": "docs/independent_profit_research_20261013/PROTOCOL_FROZEN.ar.md",
+        "unchanged": true
+      },
+      "source_pins": [
+        {
+          "current_sha256": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7",
+          "expected_sha256": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7",
+          "path": "independent_profit_research/benchmarks.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+          "expected_sha256": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+          "path": "independent_profit_research/data.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+          "expected_sha256": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+          "path": "independent_profit_research/execution.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4",
+          "expected_sha256": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4",
+          "path": "independent_profit_research/policies.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450",
+          "expected_sha256": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450",
+          "path": "independent_profit_research/runner.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9",
+          "expected_sha256": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9",
+          "path": "independent_profit_research/statistics.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+          "expected_sha256": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+          "path": "independent_profit_research/tape.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e",
+          "expected_sha256": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e",
+          "path": "scripts/run_independent_profit_study.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+          "expected_sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+          "path": "scripts/verify_mt5_quote_export.py",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "declaration_path": "work/independent_multiframe_study_20261014/declaration.json",
+      "declaration_sha256": "a3f9b73838b63abfcb0e85cc0fce076c5e5ae7c31fd8545ad05038f208dbe0e6",
+      "protocol": {
+        "current_sha256": "9917c7c68a4fa5ed4add5ecb1c5f0d0f2ccfde80d966164b8646455c82ba4939",
+        "expected_sha256": "9917c7c68a4fa5ed4add5ecb1c5f0d0f2ccfde80d966164b8646455c82ba4939",
+        "path": "docs/independent_multiframe_research_20261014/PROTOCOL_FROZEN.ar.md",
+        "unchanged": true
+      },
+      "source_pins": [
+        {
+          "current_sha256": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+          "expected_sha256": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+          "path": "independent_multiframe_research/__init__.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+          "expected_sha256": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+          "path": "independent_multiframe_research/bars.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+          "expected_sha256": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+          "path": "independent_multiframe_research/policies.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+          "expected_sha256": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+          "path": "independent_multiframe_research/runner.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+          "expected_sha256": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+          "path": "independent_profit_research/__init__.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960",
+          "expected_sha256": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960",
+          "path": "scripts/run_multiframe_quote_study.py",
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "network_calls": 0,
+  "new_strategy_measurements": 0,
+  "ownership_disclosure": "Reviewer originally implemented sharded adapter. Pre-fix streaming adapter was implemented by parent; this review reproduced and repaired its sparse boundary. This is not an independently reimplemented execution kernel.",
+  "pre_fix_reproduction": {
+    "actual_market_or_strategy_measurements": 0,
+    "decision_ms": 1920000,
+    "full_reference_reason": "HORIZON",
+    "full_reference_status": "COMPLETE",
+    "horizon_end_ms": 2820000,
+    "old_runner_crop_erased_QuoteTape_subclass_guard": true,
+    "sparse_reason": "GAP_BEFORE_ENTRY",
+    "sparse_rows": 68,
+    "sparse_status": "UNKNOWN",
+    "stage_end_exclusive_ms": 4100000,
+    "stage_start_ms": 60001,
+    "streaming_sha256": "7900bc816a85b7d52ef0c31bc2652ca4fa24f4fe8af094b8962202c75775a8d6",
+    "synthetic_rows": 4100
+  },
+  "private_financial_reads": 0,
+  "profit_qualified": false,
+  "remaining_requirements": [
+    "Parent must rerun complete suite after this change;3638beforefix is not evidence for the new head.",
+    "A future separately declared streaming evaluator still needs reservation, stage/embargo, daily/null-censoring, trade marking and summary equivalence before any actual study use.",
+    "Large collection/alpha study not authorized or begun by this review; source quality, sample/power protocol, historical cashfees and fills remain separate requirements."
+  ],
+  "repair": {
+    "StreamedFrames_field": "issuance_index",
+    "direct_QuoteTape_index_constructor_and_simulate_trade_index_call_reject": true,
+    "frozen_evaluate_signals_and_evaluate_tape_reject_before_cropping": true,
+    "intentional_quote_tuple_extraction_is_not_security_prohibited": "An explicit caller can extract visible metadata into a new input; this is outside the index contract. Future evaluator must not cast or reinterpret issuance-only rows as a full execution path.",
+    "is_QuoteTape_subclass": false,
+    "monkeypatching": false,
+    "new_issuance_wrappers": "independent_multiframe_research/streaming_policies.py",
+    "new_type": "IssuanceQuoteIndex",
+    "old_frozen_files_modified": false,
+    "quote_iterable": false,
+    "wrappers_reuse_frozen_private_helpers_unchanged": true
+  },
+  "reviewed_sources": [
+    {
+      "bytes": 8625,
+      "path": "independent_multiframe_research/sharded.py",
+      "sha256": "7f26f2689517cdcfc4194fea278d3760af51029e70e00fe0dfdaae6e3d1bb142"
+    },
+    {
+      "bytes": 7575,
+      "path": "independent_multiframe_research/streaming.py",
+      "sha256": "8106961aa56a96b374be3f01410ef106ba3011a11731a11bc2a251a1c348a79c"
+    },
+    {
+      "bytes": 5322,
+      "path": "independent_multiframe_research/streaming_policies.py",
+      "sha256": "fad4dde43db793f6d8cfbdf83770aed1d71159a0b41354edb3188e3d6b84d144"
+    },
+    {
+      "bytes": 14926,
+      "path": "tests/test_multiframe_sharded_quote_access.py",
+      "sha256": "a667c93195250da113f117e1e62816be89cd9a9dcbc0f01d254a36763a03ed0a"
+    },
+    {
+      "bytes": 10578,
+      "path": "tests/test_multiframe_streaming_access.py",
+      "sha256": "e6a075dc7d736419a5c782ecad109517c8f3150fc6d2563daa45a8ddd40af260"
+    }
+  ],
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "scheduling_AST_equivalence_after_access_name_and_helper_prefix_normalization": {
+    "clock_signals": true,
+    "generate_signals": true
+  },
+  "schema_version": 1,
+  "scope": "Code review and synthetic reference equivalence only. No source collector/process/native app, network, actual quote dataset, sealed final, private finance, alpha or real order work.",
+  "sealed_final_reads": 0,
+  "sharded_access_findings": [
+    "Exact local selected-window QuoteTape is returned, not a substitute full-history tape.",
+    "All rows of first bundle at/afterH+exitlatency are retained, including arbitrarily late evidence across permitted empty days.",
+    "Day loader output is snapshotted and validated for type, order, prices and half-open requested-day stamps; original rows are not sorted/deduplicated/interpolated.",
+    "LRU retains at most2days; loader may separately retain its own source objects. No whole-process8GiB memory-use claim was tested.",
+    "Dinsidecalendar, HafterD and no later than calendarend, hold<=1hour, each latency<=1hour, cache_days1or2; no outside-calendar loader calls.",
+    "SyntheticCOMPLETE outcomes also match frozen_mark_trade input marks and rowcounts using the real local tape."
+  ],
+  "status": "REVIEW_COMPLETE_SYNTHETIC_EQUIVALENCE_PASSED_SPARSE_BOUNDARY_FIXED",
+  "targeted_tests": {
+    "CLOCK_output_and_audit_comparison": true,
+    "LRU_empty_day_late_bundle_copy_isolation_invalid_input_checks": true,
+    "all_candle_fields_compared_to_frozen_build_frames": true,
+    "command": ".venv/bin/python -m pytest tests/test_multiframe_streaming_access.py tests/test_multiframe_sharded_quote_access.py",
+    "completion_chunk_id": "00445a",
+    "cropped_and_uncropped_frozen_execution_runner_rejection": true,
+    "exec_session": 4129,
+    "exit_code": 0,
+    "fullsuite_after_fix_run_by_this_reviewer": false,
+    "nonempty_all_three_policy_both_direction_fixture_comparisons": 6,
+    "observed_summary": "125 passed in 2.76s",
+    "previous_fullsuite_3638_passes_predates_this_fix": true,
+    "seeded_all_field_execution_reference_combinations": 1920,
+    "sharded_tests": 86,
+    "streaming_tests": 39
+  }
+}

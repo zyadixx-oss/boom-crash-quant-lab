@@ -1,0 +1,65 @@
+{
+  "audited_utc": "2026-10-14T20:40:00.244092+00:00",
+  "status": "PASS_FIRST_30_SOURCE_ONLY_NO_ALPHA",
+  "declaration_sha256": "917b08901b48073ad66e79aa1c3743078e21e2bbb5f9fefe35b4a142f470f84d",
+  "state_sha256": "fc4633400dbc333e68ca0a5bbfb9aa0f7e486e4c9aac67c02732fa344ed9bb38",
+  "completed_requests": 30,
+  "first_day": "2023-01-03",
+  "last_day": "2023-02-01",
+  "raw_rows": 2543082,
+  "raw_bytes_one_retained_copy": 182628442,
+  "raw_rows_min": 83994,
+  "raw_rows_max": 85027,
+  "gaps_above_5000ms": 7,
+  "days_with_gaps": [
+    {
+      "date": "2023-01-04",
+      "count": 1
+    },
+    {
+      "date": "2023-01-08",
+      "count": 2
+    },
+    {
+      "date": "2023-01-10",
+      "count": 1
+    },
+    {
+      "date": "2023-01-11",
+      "count": 1
+    },
+    {
+      "date": "2023-01-14",
+      "count": 1
+    },
+    {
+      "date": "2023-01-17",
+      "count": 1
+    }
+  ],
+  "retained_file_pins_verified": 240,
+  "frozen_source_pins_verified": 10,
+  "source_worker_exited": true,
+  "source_lock_released": true,
+  "native_terminal_absent_at_batch_completion_per_retained_state": true,
+  "current_other_source_probe_processes_not_classified_as_original_batch": true,
+  "all_native_quote_windows_complete": "NOT_VERIFIED",
+  "actual_strategy_UNKNOWN_count": null,
+  "strategy_measurements": 0,
+  "final_strategy_metrics_opened": false,
+  "rows_not_sorted_deduplicated_or_filled": true,
+  "source_verifier_rows_were_not_reparsed_in_this_metadata_hash_audit": true,
+  "cost_verified": false,
+  "execution_verified": false,
+  "cash_net": null,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}
