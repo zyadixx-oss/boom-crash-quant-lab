@@ -1,0 +1,28 @@
+{
+  "final_prices_read": false,
+  "market_prices_read": false,
+  "profit_evidence": false,
+  "protocol_draft_sha256": "2fb9f57a6045a3fc2efc19e8a2852c62bd198d3172b8d022a368546a6925bc76",
+  "review_utc": "2026-10-14T13:52:19.610913+00:00",
+  "reviewer": "multiframe_prefreeze_audit",
+  "scope": [
+    "causal_bars",
+    "closed_same_run_context",
+    "frozen_ATR_EMA",
+    "actual_decision_deadline",
+    "first_quote_only",
+    "selected_only_final",
+    "fit_and_case_lineage",
+    "Holm24"
+  ],
+  "source_pins": {
+    "independent_multiframe_research/__init__.py": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+    "independent_multiframe_research/bars.py": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+    "independent_multiframe_research/policies.py": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+    "independent_multiframe_research/runner.py": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+    "independent_profit_research/__init__.py": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+    "scripts/run_multiframe_quote_study.py": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960"
+  },
+  "status": "PASS",
+  "synthetic_tests": 164
+}

@@ -1,0 +1,43 @@
+{
+  "cash_net": null,
+  "full_pytest": {
+    "duration_seconds": 103.85,
+    "log_path": "docs/independent_multiframe_research_20261014/premeasurement_full.log",
+    "log_sha256": "e4dbe7201f588b51289869e5c3fa7612e6abf2b58d031a12d50e58b83492b72d",
+    "passed": 3515,
+    "warnings": 1
+  },
+  "market_strategy_computations": 0,
+  "review_sha256": "bc3431bfb1c2fada139457b5647e57c3aa80aadfa97a3f9748f12fab939cf647",
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "source_compilation": "PASS",
+  "source_pins": {
+    "independent_multiframe_research/__init__.py": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+    "independent_multiframe_research/bars.py": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+    "independent_multiframe_research/policies.py": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+    "independent_multiframe_research/runner.py": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+    "independent_profit_research/__init__.py": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+    "scripts/run_multiframe_quote_study.py": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960",
+    "tests/test_multiframe_quote_bars.py": "7bcf96a7371f240209ff9b495e4884cb1bd1d5a6a01089b17814b43a5df69594",
+    "tests/test_multiframe_quote_policies.py": "c1d65adf7d323500b1740a30a6a469f44fc0a0a283802508be35a31d85c4c05d",
+    "tests/test_multiframe_quote_runner.py": "b28f56d8735f9b4f7dccf510282c1ab65d900d125d673698ad56af5e05c2df50",
+    "tests/test_multiframe_quote_study.py": "cd5ab13b181712ebe35c9185359ee5ee70a482ed3be5bed5d67937ef03062e23"
+  },
+  "status": "PASS",
+  "targeted_pytest": {
+    "duration_seconds": 1.63,
+    "log_path": "docs/independent_multiframe_research_20261014/premeasurement_targeted.log",
+    "log_sha256": "530701f16a7902d47036b0feb44d79afa7d74d98f07a12bba8bcdf4e1e27eab1",
+    "passed": 164
+  },
+  "verified_utc": "2026-10-14T13:52:19.611891+00:00"
+}
