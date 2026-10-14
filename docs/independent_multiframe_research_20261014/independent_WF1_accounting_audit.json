@@ -1,0 +1,803 @@
+{
+  "LIVE_ALLOWED": false,
+  "LIVE_TRADING": false,
+  "OPENED_TRADES": false,
+  "READY_FOR_LIVE": false,
+  "arithmetic_tolerances": {
+    "R_and_twice_stop_target": {
+      "absolute": 8e-15,
+      "relative": 8e-15
+    },
+    "R_tolerance_reason": "Public stop distance normalized by 1e8 can roundtrip by a float ULP",
+    "entry_exit_prices_and_signed_quote_movement": "EXACT_DECIMAL_FROM_SAVED_JSON_PRICE_STRINGS",
+    "summary_daily_fsum_counts_PF": "EXACT_FLOAT64_VALUES_RECOMPUTED_WITH_STDLIB_MATH_FSUM"
+  },
+  "audited_case_count": 16,
+  "auditor_sha256": "38fbe8f29d12f8beb6c23a3fc914d4ea3683d6ba3be22dad4c59508dcd372a0d",
+  "cases": [
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "BOOM500_WF1_CLOCK_BASE",
+      "complete_rows": 43,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 3.552713678800501e-15
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 18,
+      "negative_observed_days": 1,
+      "observed_pf_exact": 0.8200938021255666,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 4.440892098500626e-16,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 23.420491249801533,
+        "observed_loss_R": 28.558307829054367,
+        "observed_sum_R": -5.137816579252835,
+        "observed_sum_quote": -23.172500000000003
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": true,
+      "unknown_rows": 1
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "BOOM500_WF1_CLOCK_STRESS",
+      "complete_rows": 43,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 8.881784197001252e-16,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 18,
+      "negative_observed_days": 1,
+      "observed_pf_exact": 0.8093951502063508,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 4.440892098500626e-16,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 23.311724786811883,
+        "observed_loss_R": 28.80141397050463,
+        "observed_sum_R": -5.4896891836927475,
+        "observed_sum_quote": -25.026
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": true,
+      "unknown_rows": 1
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "BOOM500_WF1_CRT_SWEEP_RECLAIM_BASE",
+      "complete_rows": 2,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 18,
+      "negative_observed_days": 1,
+      "observed_pf_exact": 2.1915004326072385,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 0.0,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 2.2214344903784182,
+        "observed_loss_R": 1.01365916124213,
+        "observed_sum_R": 1.2077753291362883,
+        "observed_sum_quote": 7.313999999999999
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "BOOM500_WF1_CRT_SWEEP_RECLAIM_STRESS",
+      "complete_rows": 2,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 18,
+      "negative_observed_days": 1,
+      "observed_pf_exact": 2.1631617637775493,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 0.0,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 2.2086364054875243,
+        "observed_loss_R": 1.0210223028492156,
+        "observed_sum_R": 1.1876141026383087,
+        "observed_sum_quote": 7.21
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "BOOM500_WF1_PULLBACK_CONTINUATION_BASE",
+      "complete_rows": 6,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 15,
+      "negative_observed_days": 4,
+      "observed_pf_exact": 0.6746311085070792,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 2.220446049250313e-16,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 2.4873971422122203,
+        "observed_loss_R": 3.6870477967087685,
+        "observed_sum_R": -1.199650654496548,
+        "observed_sum_quote": -8.210999999999999
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "BOOM500_WF1_PULLBACK_CONTINUATION_STRESS",
+      "complete_rows": 6,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 15,
+      "negative_observed_days": 4,
+      "observed_pf_exact": 0.6660175463515826,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 2.220446049250313e-16,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 2.47810830591599,
+        "observed_loss_R": 3.7207853148779155,
+        "observed_sum_R": -1.2426770089619255,
+        "observed_sum_quote": -8.456999999999999
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "BOOM500_WF1_SQUEEZE_BREAKOUT_BASE",
+      "complete_rows": 0,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 20,
+      "negative_observed_days": 0,
+      "observed_pf_exact": null,
+      "positive_observed_days": 0,
+      "row_R_max_absolute_error_decimal_normalized_prices": 0.0,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "BOOM500_WF1_SQUEEZE_BREAKOUT_STRESS",
+      "complete_rows": 0,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 20,
+      "negative_observed_days": 0,
+      "observed_pf_exact": null,
+      "positive_observed_days": 0,
+      "row_R_max_absolute_error_decimal_normalized_prices": 0.0,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "CRASH500_WF1_CLOCK_BASE",
+      "complete_rows": 231,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 8.881784197001252e-16,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 14,
+      "negative_observed_days": 3,
+      "observed_pf_exact": 1.042114819613779,
+      "positive_observed_days": 3,
+      "row_R_max_absolute_error_decimal_normalized_prices": 4.440892098500626e-16,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 146.94166496032503,
+        "observed_loss_R": 141.00333494420843,
+        "observed_sum_R": 5.9383300161165975,
+        "observed_sum_quote": 60.276500000000006
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": true,
+      "unknown_rows": 1
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "CRASH500_WF1_CLOCK_STRESS",
+      "complete_rows": 231,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": -1.7763568394002505e-15,
+        "observed_sum_quote": 7.105427357601002e-15
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 14,
+      "negative_observed_days": 3,
+      "observed_pf_exact": 1.0134972181111557,
+      "positive_observed_days": 3,
+      "row_R_max_absolute_error_decimal_normalized_prices": 4.440892098500626e-16,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 143.10083712945553,
+        "observed_loss_R": 141.19509612088632,
+        "observed_sum_R": 1.9057410085692161,
+        "observed_sum_quote": 41.187
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": true,
+      "unknown_rows": 1
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "CRASH500_WF1_CRT_SWEEP_RECLAIM_BASE",
+      "complete_rows": 5,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 15,
+      "negative_observed_days": 4,
+      "observed_pf_exact": 0.7630371410224884,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 2.220446049250313e-16,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 3.0875858361480493,
+        "observed_loss_R": 4.046442394678992,
+        "observed_sum_R": -0.9588565585309421,
+        "observed_sum_quote": -3.5375000000000005
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "CRASH500_WF1_CRT_SWEEP_RECLAIM_STRESS",
+      "complete_rows": 5,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 15,
+      "negative_observed_days": 4,
+      "observed_pf_exact": 0.7555140824348593,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 0.0,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 3.078071590136831,
+        "observed_loss_R": 4.0741419143596485,
+        "observed_sum_R": -0.9960703242228175,
+        "observed_sum_quote": -3.670000000000001
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "CRASH500_WF1_PULLBACK_CONTINUATION_BASE",
+      "complete_rows": 4,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 17,
+      "negative_observed_days": 3,
+      "observed_pf_exact": 0.0,
+      "positive_observed_days": 0,
+      "row_R_max_absolute_error_decimal_normalized_prices": 2.7755575615628914e-17,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 2.9470771292362823,
+        "observed_sum_R": -2.9470771292362823,
+        "observed_sum_quote": -11.514
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "CRASH500_WF1_PULLBACK_CONTINUATION_STRESS",
+      "complete_rows": 4,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 17,
+      "negative_observed_days": 3,
+      "observed_pf_exact": 0.0,
+      "positive_observed_days": 0,
+      "row_R_max_absolute_error_decimal_normalized_prices": 2.7755575615628914e-17,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 2.966220812548767,
+        "observed_sum_R": -2.966220812548767,
+        "observed_sum_quote": -11.59
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "CRASH500_WF1_SQUEEZE_BREAKOUT_BASE",
+      "complete_rows": 2,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 18,
+      "negative_observed_days": 1,
+      "observed_pf_exact": 0.642845226605405,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 0.0,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 0.650507909233335,
+        "observed_loss_R": 1.011919949485187,
+        "observed_sum_R": -0.3614120402518519,
+        "observed_sum_quote": -0.5059999999999998
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    },
+    {
+      "blocked_signals_not_saved_in_ledger_not_reproduced": 0,
+      "case": "CRASH500_WF1_SQUEEZE_BREAKOUT_STRESS",
+      "complete_rows": 2,
+      "daily_to_stage_fsum_residual": {
+        "observed_gain_R": 0.0,
+        "observed_loss_R": 0.0,
+        "observed_sum_R": 0.0,
+        "observed_sum_quote": 0.0
+      },
+      "daily_totals_exact_from_exit_UTC_day": true,
+      "flat_observed_days": 18,
+      "negative_observed_days": 1,
+      "observed_pf_exact": 0.6300850824119946,
+      "positive_observed_days": 1,
+      "row_R_max_absolute_error_decimal_normalized_prices": 1.1102230246251565e-16,
+      "saved_exposure_reservations_nonoverlapping_inclusively": true,
+      "skip_rows": 0,
+      "stage_totals_exact_from_ledger_fsum": {
+        "observed_gain_R": 0.6461211906807499,
+        "observed_loss_R": 1.0254507029548587,
+        "observed_sum_R": -0.3793295122741088,
+        "observed_sum_quote": -0.5590000000000002
+      },
+      "status": "PASS",
+      "unknown_censors_whole_stage_and_all_primary_days": false,
+      "unknown_rows": 0
+    }
+  ],
+  "cash_net": null,
+  "complete_rows_checked": 586,
+  "costs_verified": false,
+  "coverage": [
+    "All sixteen fixed WF1 case and gzip-ledger SHA256 pins",
+    "Every COMPLETE saved entry/exit bundle adverse side and configured per-leg slippage",
+    "Every COMPLETE signed quote movement and R; exact ledger fsum, gain, loss, PF and medians",
+    "All 320 daily rows independently grouped by actual exit UTC day",
+    "Embargoed decision bounds, stage chronology and saved-trade inclusive busy exclusion",
+    "UNKNOWN null results, terminal position in ledger, primary whole-stage/day censorship",
+    "Both generations' declared code hashes, reused fit hashes and small WF1 metadata hashes"
+  ],
+  "created_utc": "2026-10-14T14:04:55.264964+00:00",
+  "daily_records_checked": 320,
+  "declaration_sha256": "a3f9b73838b63abfcb0e85cc0fce076c5e5ae7c31fd8545ad05038f208dbe0e6",
+  "dependency_pin_checks": [
+    {
+      "group": "generation2_code",
+      "path": "independent_multiframe_research/__init__.py",
+      "sha256": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823"
+    },
+    {
+      "group": "generation2_code",
+      "path": "independent_multiframe_research/bars.py",
+      "sha256": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e"
+    },
+    {
+      "group": "generation2_code",
+      "path": "independent_multiframe_research/policies.py",
+      "sha256": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b"
+    },
+    {
+      "group": "generation2_code",
+      "path": "independent_multiframe_research/runner.py",
+      "sha256": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0"
+    },
+    {
+      "group": "generation2_code",
+      "path": "independent_profit_research/__init__.py",
+      "sha256": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9"
+    },
+    {
+      "group": "generation2_code",
+      "path": "scripts/run_multiframe_quote_study.py",
+      "sha256": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960"
+    },
+    {
+      "group": "generation1_code",
+      "path": "independent_profit_research/benchmarks.py",
+      "sha256": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7"
+    },
+    {
+      "group": "generation1_code",
+      "path": "independent_profit_research/data.py",
+      "sha256": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6"
+    },
+    {
+      "group": "generation1_code",
+      "path": "independent_profit_research/execution.py",
+      "sha256": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448"
+    },
+    {
+      "group": "generation1_code",
+      "path": "independent_profit_research/policies.py",
+      "sha256": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4"
+    },
+    {
+      "group": "generation1_code",
+      "path": "independent_profit_research/runner.py",
+      "sha256": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450"
+    },
+    {
+      "group": "generation1_code",
+      "path": "independent_profit_research/statistics.py",
+      "sha256": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9"
+    },
+    {
+      "group": "generation1_code",
+      "path": "independent_profit_research/tape.py",
+      "sha256": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d"
+    },
+    {
+      "group": "generation1_code",
+      "path": "scripts/run_independent_profit_study.py",
+      "sha256": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e"
+    },
+    {
+      "group": "generation1_code",
+      "path": "scripts/verify_mt5_quote_export.py",
+      "sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab"
+    },
+    {
+      "group": "reused_training_fits",
+      "path": "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_30.json",
+      "sha256": "8e1f2d0186b4be539683f0ee3585b6631bd804d5db32bcea36ba8e2e0cfc84d4"
+    },
+    {
+      "group": "reused_training_fits",
+      "path": "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_50.json",
+      "sha256": "b11b93d05f0fb4f73e3caa76365925fb3ea383536b2c59d364b81360448697d5"
+    },
+    {
+      "group": "reused_training_fits",
+      "path": "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_70.json",
+      "sha256": "8f3335f93bdc87754176a2fcd4535b4564843f2fb8cc0b067d70c63c0010d027"
+    },
+    {
+      "group": "reused_training_fits",
+      "path": "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_90.json",
+      "sha256": "32b7ca3f41834d964ab2ce7686c40796ce84dc9f43cc3c29bfc053bd6d6278b1"
+    },
+    {
+      "group": "reused_training_fits",
+      "path": "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_30.json",
+      "sha256": "90baca8be966a3f54a02e23d692f1a0fbdadd0c2866abac5d80296097965125c"
+    },
+    {
+      "group": "reused_training_fits",
+      "path": "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_50.json",
+      "sha256": "a7d6a2a95e1b764ab6ddec871234cf4bb137fec2dbcdd380dbc971e83cd13a36"
+    },
+    {
+      "group": "reused_training_fits",
+      "path": "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_70.json",
+      "sha256": "0e215fc8a751586e17cd48ba19ee2bcbd63a2205ec18e75f5267da1596697373"
+    },
+    {
+      "group": "reused_training_fits",
+      "path": "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_90.json",
+      "sha256": "03aa2d9fb7056b077363680feeb785a843d3c43ad1d4dbf5951574435ed5c1f4"
+    }
+  ],
+  "execution_verified": false,
+  "final_prices_read": false,
+  "in_memory_mutation_checks": [
+    {
+      "detected": true,
+      "mutation": "R arithmetic"
+    },
+    {
+      "detected": true,
+      "mutation": "adverse entry cost"
+    },
+    {
+      "detected": true,
+      "mutation": "daily accounting"
+    },
+    {
+      "detected": true,
+      "mutation": "summary PF"
+    },
+    {
+      "detected": true,
+      "mutation": "embargo"
+    },
+    {
+      "detected": true,
+      "mutation": "inclusive busy"
+    },
+    {
+      "detected": true,
+      "mutation": "UNKNOWN cannot become zero"
+    },
+    {
+      "detected": true,
+      "mutation": "censored daily cannot become zero"
+    },
+    {
+      "detected": true,
+      "mutation": "safety flag"
+    }
+  ],
+  "input_sha256": {
+    "docs/independent_multiframe_research_20261014/PROTOCOL_FROZEN.ar.md": "9917c7c68a4fa5ed4add5ecb1c5f0d0f2ccfde80d966164b8646455c82ba4939",
+    "docs/independent_multiframe_research_20261014/premeasurement_validation.json": "1bf18fc17cfd10919db946377e35d26c9c27c1fd08560caa7b50b6ccd54fddeb",
+    "independent_multiframe_research/__init__.py": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+    "independent_multiframe_research/bars.py": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+    "independent_multiframe_research/policies.py": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+    "independent_multiframe_research/runner.py": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+    "independent_profit_research/__init__.py": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+    "independent_profit_research/benchmarks.py": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7",
+    "independent_profit_research/data.py": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+    "independent_profit_research/execution.py": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+    "independent_profit_research/policies.py": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4",
+    "independent_profit_research/runner.py": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450",
+    "independent_profit_research/statistics.py": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9",
+    "independent_profit_research/tape.py": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+    "scripts/run_independent_profit_study.py": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e",
+    "scripts/run_multiframe_quote_study.py": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960",
+    "scripts/verify_mt5_quote_export.py": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_CLOCK_BASE.json": "a6301aabd9f03c4c532f777bb0c2d15f14ee3a3298c2cdbf1b8ce5721c224749",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_CLOCK_STRESS.json": "4b76f391be28c4613583181baa97741368b6ee42f114ba22f52dacbf2e96f0f9",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_CRT_SWEEP_RECLAIM_BASE.json": "597580b8d68bc4c9a17105fd391a32093c8ebe0ea03d2e4fcae3bd38d84ca659",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_CRT_SWEEP_RECLAIM_STRESS.json": "82a5ff43f8139833d46b652a5dc3fe6825c7c360feed6fe130a01cc877e4058c",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_PULLBACK_CONTINUATION_BASE.json": "c32bd1b70fe532d07382b4ad01931f081add57d712c5806d1135d58364d9f5e9",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_PULLBACK_CONTINUATION_STRESS.json": "5b4eb8ad15e6bb4704eb6d64b2b423e8596b7a6bda358de9845bba8138ac8c4d",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_SQUEEZE_BREAKOUT_BASE.json": "289018fd8099ae09b1391f49a0d7920052d774b3c7cfcc4b1c41902406875fcf",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_SQUEEZE_BREAKOUT_STRESS.json": "3dd824fed6bc3cd9deae92ffbbdea51a3164c327416bfc5467cdceed1f2f6722",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_CLOCK_BASE.json": "7de3ee56300189b103b6e63c712f4167893e940478ec5f3992b57899aa93c7e2",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_CLOCK_STRESS.json": "06f7fa256b620cbd0da98dff7902d8f748c0e38c7655a8d6c8a2ade1d86224d2",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_CRT_SWEEP_RECLAIM_BASE.json": "1e1e73e12b7611488367bedee25c822bf63f22e5bccb64028e509200c7a65e37",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_CRT_SWEEP_RECLAIM_STRESS.json": "ee958cde967ec1f374d8a096e486894da1d9115290cd7295f8ee0618d660d16f",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_PULLBACK_CONTINUATION_BASE.json": "b89837bac1701f20064861d2667ff6534d95356cde58d4c70fd537fb496238d8",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_PULLBACK_CONTINUATION_STRESS.json": "74aa73da508111506a063308dea1be5eaaff9b99a4a3957c6f415518f68d9bc3",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_SQUEEZE_BREAKOUT_BASE.json": "da8c720fd8cffe60c762c50096c07774ab587c0f5b47492ed41e4032d52bae86",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_SQUEEZE_BREAKOUT_STRESS.json": "bd32d117228283aa78825211ccde61802d6c4dd496dce38acb71140f13c828c7",
+    "work/independent_multiframe_study_20261014/declaration.json": "a3f9b73838b63abfcb0e85cc0fce076c5e5ae7c31fd8545ad05038f208dbe0e6",
+    "work/independent_multiframe_study_20261014/ledgers/BOOM500_WF1_CLOCK_BASE.json.gz": "617e0b0dada01a2f96226cec68a6e0b9962b5400cdd29c43329ccbbac58da588",
+    "work/independent_multiframe_study_20261014/ledgers/BOOM500_WF1_CLOCK_STRESS.json.gz": "00e6d056d6c39880184b42585bf09ffc5c507a6ea177728400ddb4325a9eafbb",
+    "work/independent_multiframe_study_20261014/ledgers/BOOM500_WF1_CRT_SWEEP_RECLAIM_BASE.json.gz": "264b98d926451e9543b5203dec2391f3eb69ed438e0e2b811c3b515c71e03f52",
+    "work/independent_multiframe_study_20261014/ledgers/BOOM500_WF1_CRT_SWEEP_RECLAIM_STRESS.json.gz": "b2a0ea15c54abdcac85a287ccb21682dfd287e583209299c713c71ebdc91d4c0",
+    "work/independent_multiframe_study_20261014/ledgers/BOOM500_WF1_PULLBACK_CONTINUATION_BASE.json.gz": "1ca8df9846e480623e5ed7bd4ca6660bfbce86b8e8dbf406cbfb9bfa715ee591",
+    "work/independent_multiframe_study_20261014/ledgers/BOOM500_WF1_PULLBACK_CONTINUATION_STRESS.json.gz": "75b098e84f195986533d28999913f4a05db899d13a62c15667f355f72c1e3c72",
+    "work/independent_multiframe_study_20261014/ledgers/BOOM500_WF1_SQUEEZE_BREAKOUT_BASE.json.gz": "6731668a37f6a3ed10d77860e21c7ba693c377a061571ffa58564d1d699c1798",
+    "work/independent_multiframe_study_20261014/ledgers/BOOM500_WF1_SQUEEZE_BREAKOUT_STRESS.json.gz": "6731668a37f6a3ed10d77860e21c7ba693c377a061571ffa58564d1d699c1798",
+    "work/independent_multiframe_study_20261014/ledgers/CRASH500_WF1_CLOCK_BASE.json.gz": "39b0db5b4891e7525fea52d760a37ac8caeb50f940ac72973560b4ee9b603951",
+    "work/independent_multiframe_study_20261014/ledgers/CRASH500_WF1_CLOCK_STRESS.json.gz": "41fc1c29da3e6fc6ba5796f68c774aed489cc92ecbb072524b3f99d3a5bca240",
+    "work/independent_multiframe_study_20261014/ledgers/CRASH500_WF1_CRT_SWEEP_RECLAIM_BASE.json.gz": "e2e9b2041f44544334d1bab6807aaf6389fb13823fadc7343c0fb51411d355ef",
+    "work/independent_multiframe_study_20261014/ledgers/CRASH500_WF1_CRT_SWEEP_RECLAIM_STRESS.json.gz": "a2a788bccf9dead5f34c6981fd6c4ae41dd017a455d6dfdf9a05421c22efd7ee",
+    "work/independent_multiframe_study_20261014/ledgers/CRASH500_WF1_PULLBACK_CONTINUATION_BASE.json.gz": "13739aa2d3385854b821890aab0d3cef1557168ed1b9ffbb94668544071bda3c",
+    "work/independent_multiframe_study_20261014/ledgers/CRASH500_WF1_PULLBACK_CONTINUATION_STRESS.json.gz": "ab24c55be7149b8cdc6a5aaee1eacd70c3a9345fc11316869ce02a06f5f7b365",
+    "work/independent_multiframe_study_20261014/ledgers/CRASH500_WF1_SQUEEZE_BREAKOUT_BASE.json.gz": "6d86767024c6232f1987777728af1d41531a5da0f909dddd8217d6d0f8a03505",
+    "work/independent_multiframe_study_20261014/ledgers/CRASH500_WF1_SQUEEZE_BREAKOUT_STRESS.json.gz": "b32d98d91004c6207133c5c90354c35ec225fbc94b3378c5aaf12bfe7e4eba73",
+    "work/independent_profit_study_20261013/declaration.json": "39532ae745f00e613e716970d1864ad20f20474f5e8b06baf639eea8e63b9e79",
+    "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_30.json": "8e1f2d0186b4be539683f0ee3585b6631bd804d5db32bcea36ba8e2e0cfc84d4",
+    "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_50.json": "b11b93d05f0fb4f73e3caa76365925fb3ea383536b2c59d364b81360448697d5",
+    "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_70.json": "8f3335f93bdc87754176a2fcd4535b4564843f2fb8cc0b067d70c63c0010d027",
+    "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_90.json": "32b7ca3f41834d964ab2ce7686c40796ce84dc9f43cc3c29bfc053bd6d6278b1",
+    "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_30.json": "90baca8be966a3f54a02e23d692f1a0fbdadd0c2866abac5d80296097965125c",
+    "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_50.json": "a7d6a2a95e1b764ab6ddec871234cf4bb137fec2dbcdd380dbc971e83cd13a36",
+    "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_70.json": "0e215fc8a751586e17cd48ba19ee2bcbd63a2205ec18e75f5267da1596697373",
+    "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_90.json": "03aa2d9fb7056b077363680feeb785a843d3c43ad1d4dbf5951574435ed5c1f4"
+  },
+  "live_allowed": false,
+  "live_trading": false,
+  "market_or_account_API_calls": 0,
+  "mismatches": 0,
+  "not_verified": [
+    "Raw-tape saved quote authentication or full provider tick completeness",
+    "First eligible quote, within-exposure gaps, trigger barrier path or stop/target reproduction",
+    "Causal bar construction, setup/issuance features or skipped/blocked signal eligibility",
+    "TRAIN unit refitting, marked-to-market drawdown path or marked-quote row counts",
+    "Other walk-forward folds, validation, sealed FINAL or any private financial data",
+    "Historical broker fees, actual fills, cash profitability or tradeable strategy qualification"
+  ],
+  "opened_trades": false,
+  "profit_qualified": false,
+  "raw_WF1_tick_files_declared_but_not_read_count": 40,
+  "ready_for_live": false,
+  "schema_version": 1,
+  "scope": "INDEPENDENT_SAVED_WF1_LEDGER_ARITHMETIC_AND_ACCOUNTING_ONLY",
+  "skip_rows_checked": 0,
+  "small_WF1_metadata_sha256_checked": {
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250201/IP2025_BOOM500_20250201_receipt.tsv": "c36c9e55c450ed94c63681149ae69a7b0832e037b914a56b93af97912e0c669d",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250201/independent_verification.json": "3ac5672c82ef7f189ad895b0012850d4408c060fd8253197e32794dcdcf76bb7",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250202/IP2025_BOOM500_20250202_receipt.tsv": "fd0b7598fcb897b79d32cec4bce73ef8c68e1a2099952acd4fb899dd2fbc970a",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250202/independent_verification.json": "ef9032a83ee218432d9e7d9ed9fa735d45c6e0fa1a5c92ca82627eb688372ed7",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250203/IP2025_BOOM500_20250203_receipt.tsv": "60691ab83f9ea1e7c7a931f682b2ff107d8472af7f4ff7f17919ba59b9ab085a",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250203/independent_verification.json": "20dbe380d92595be2870322743677818cfb1f6a07c292421a2285bb409d4e8ad",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250204/IP2025_BOOM500_20250204_receipt.tsv": "ad96f0aaba4114e5e63f21e3eb2805277abe7da738d32a7de807bc6bab858d50",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250204/independent_verification.json": "58e8484ae331917f784145db7a4707b935704ed5fdce81da7da5b49addf57413",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250205/IP2025_BOOM500_20250205_receipt.tsv": "5e8b4153a5b606765cf8ad17b94752277e165746546da19fd1d64271454448ba",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250205/independent_verification.json": "cbd2dae029fe388e276489bcd64a18e91f91f7081e1cec277101daa2ca19d9de",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250206/IP2025_BOOM500_20250206_receipt.tsv": "cd22db100caabd4d7cd46ed16724b4eff27d36874bbe3aa27674f5f9337d8756",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250206/independent_verification.json": "f24187fe4d918bef0cafd1b4d9a1d159e27042b1d5dfbf9c3de533c73267b703",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250207/IP2025_BOOM500_20250207_receipt.tsv": "426628a7e0a04b4ec5efecdf9225a224ee9295fa512e7ce46114da71052d7e9c",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250207/independent_verification.json": "d9c7db7e09ca30398646f935e0619de95c9a246b180d8a69556108a5082c4cb6",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250208/IP2025_BOOM500_20250208_receipt.tsv": "7a0c61d3c3622304874328723207ae4c2f347428614fefc6730029569c74d254",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250208/independent_verification.json": "e7bbbaf61cc7e1418af7774e7fbeab8a8cf558e3964cad1d7017ff36e53fa497",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250209/IP2025_BOOM500_20250209_receipt.tsv": "29578d3472bbc76ffbecc793d02248c38df6d94cae2e50bd60745605e2d67a82",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250209/independent_verification.json": "6253c2bab4b35b10c5f7ad8fee8f196162712340aea40338b36288ad6b674c52",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250210/IP2025_BOOM500_20250210_receipt.tsv": "4c77d73661737888435b3537e1657c637032e355868244e1ae93ef2cd39186ff",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250210/independent_verification.json": "e49ef8c277d5f4e411e0f9457a1a05548be892cc291ad21c332ca3fd383ff80a",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250211/IP2025_BOOM500_20250211_receipt.tsv": "af917367614221b5ba10930e04729b564b0e2b24a4196cbcb493a749845f53ff",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250211/independent_verification.json": "5061e5908a19f6dcc278e884bf91bad5aa34b2e2bd8a2004f26fa1fb42f79aeb",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250212/IP2025_BOOM500_20250212_receipt.tsv": "e2218f54ab22452b2ede59695e6516822ba08ed125e78cd611dcaa31ad99f0a9",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250212/independent_verification.json": "4fd6df60a058a168abe5e49c50f8b9009dabf6959f4bd88f2e4ee2a19ec84818",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250213/IP2025_BOOM500_20250213_receipt.tsv": "aa39fb9809d31cf3c927762bed4ceaa7a02148bb9e5f85be81dcdc2b63793ec7",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250213/independent_verification.json": "f7dbcf2b39943684cca78d33c6bcb40611e311243f461d3ccdc6ae9680bf93dc",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250214/IP2025_BOOM500_20250214_receipt.tsv": "69da88ab58908f0fe7f6c69be867b22e9c1e3f75221bda030392be192ccbca53",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250214/independent_verification.json": "2ce237dc1109fcae43f87380540e33633d0541c1c1aeda9cc00222c36dff801d",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250215/IP2025_BOOM500_20250215_receipt.tsv": "9d61c6dc55f2d210b367b6cd3720a9eada09026e1873f2a43f87ea34e9cc4853",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250215/independent_verification.json": "432c4267caf5c870951ff363eb381374d7b2fcdc2ba1416f9c2c7ccdfccd99dd",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250216/IP2025_BOOM500_20250216_receipt.tsv": "d5a99322b6ba45fcc7ee5847c9f9446c61c267fbfaf27a852cdf79da08144f28",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250216/independent_verification.json": "9eb877d8e0088be73a37b5b91ad954ef3ac7d4b6cb09e16bc6e6621b149604ee",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250217/IP2025_BOOM500_20250217_receipt.tsv": "f216ccba12af010a522c394261dae2589680cf23f802e28de8204c7b3f8261d9",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250217/independent_verification.json": "11b78c139360c1576ac3a3cdd2c518a54b76f9de35fdc4592f7d533aec8094cd",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250218/IP2025_BOOM500_20250218_receipt.tsv": "c26a2e57b1d9775b97e53b554ff78a1e5aa6df57613f138d4078cb5c7cb88c55",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250218/independent_verification.json": "4fbee2603897dfd9d39ab52fdb6b6883512e881c71d3df35327bad272ee36ae9",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250219/IP2025_BOOM500_20250219_receipt.tsv": "89dd329443793f7a8b8023f2e0db5052b4b7f0b5103babdd1057a5135919d6d9",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250219/independent_verification.json": "ac6f7428715bbb22502de7625f3344236c557d2011fe7e694cf31209c30beeed",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250220/IP2025_BOOM500_20250220_receipt.tsv": "7745d081e6445c07161fdac51131fe5da4d5c22636f1e344bda1f7ba153f0432",
+    "data/independent_profit_ticks_20261013/development/IP2025_BOOM500_20250220/independent_verification.json": "ac1ba4db8899669f5f8781421794801701909d2d04ede676896a146149acfe53",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250201/IP2025_CRASH500_20250201_receipt.tsv": "4f3b3ed327c6efff791d2927548604a949c5eed9fb8b0429f4745c8ef8c5189a",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250201/independent_verification.json": "5b55b182b24a28aee11535eeb519184c865c85ca6f7d05bc3e1609d0c876e57f",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250202/IP2025_CRASH500_20250202_receipt.tsv": "4e68755bddbc23868386ea96a9324131434dce228654d4e9adc8f99e3e75c7d9",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250202/independent_verification.json": "0d0bd4e5c832e233aafc726f728a4557d573b3d73a448b89fb7dd4fe10e80f57",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250203/IP2025_CRASH500_20250203_receipt.tsv": "bb8eaaffd0642b73a2970d1fe35ee56c16376853da82c09c1050dfc730c8456a",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250203/independent_verification.json": "f2bab28ca1bd5d61cdc4b2939af76e287387d5b234610b054aa108bf5273e3f4",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250204/IP2025_CRASH500_20250204_receipt.tsv": "35a3a1af0475821de85316ea67cea7e5bb64adfb5a59b2c2f08209553ccc9821",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250204/independent_verification.json": "22586d078beb8f8c6b1825a372e875a8297fb9bc68c2c1f731f2021f730afd6b",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250205/IP2025_CRASH500_20250205_receipt.tsv": "cbab1498a4e6d810ebc1ebb3a642932b568c5f28013bdb14ab04c89f97c0f4da",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250205/independent_verification.json": "a02c3fe7341446cbf2f7484bfa54966c78c545f253333a3a0018497e38fedec0",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250206/IP2025_CRASH500_20250206_receipt.tsv": "2f14f590aebde7d0acd031d93f0f9b45aeff3babb07c90ccefa6e62d170d282a",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250206/independent_verification.json": "d9d8fe1ec5afe7dbd284a758e7ad7f59c476c8a4dbbb45ba484a3381d1cd3113",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250207/IP2025_CRASH500_20250207_receipt.tsv": "8a4359a6d7d902466e4392f14db89a2ec43a3f1a01cdc7bd84d4a8b0782795f1",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250207/independent_verification.json": "82f4798c219faec2d5721c4552148d4c2292a859cb0d13f089541d634df108db",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250208/IP2025_CRASH500_20250208_receipt.tsv": "ea2e9a2e671e0be18e92a748aec518ac2de68bffed01e13318a84d953fd2ee91",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250208/independent_verification.json": "4b68ba16fa1dcbb8ba4c33e86eb287c39e93cf11726a1748d1b13dc0feb4bdf3",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250209/IP2025_CRASH500_20250209_receipt.tsv": "df4edb9ec2c6d6613dc9b7223f1746845bf3d8702201d822bb58c393f3ccf3be",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250209/independent_verification.json": "fa98ef4fc5a2a51b14dc09f9e59c79a62ce6fc6b971796f30df5ebb22b883008",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250210/IP2025_CRASH500_20250210_receipt.tsv": "8ecf984eaa0692b8e772c7c949278041d4e3d9f67e709a1e07b898d6821c9dd6",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250210/independent_verification.json": "fe22a5617b9e79840526999e1fbf66b3a70fad2d965fceecdd2c218889063643",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250211/IP2025_CRASH500_20250211_receipt.tsv": "13630c853620de76c20ec247d65ad976c815f299839c97e668c3dcd63bf65dd8",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250211/independent_verification.json": "cc77129744865c500928fd9b88fdec0b1176097d0da64542e70682f84b7bb9a8",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250212/IP2025_CRASH500_20250212_receipt.tsv": "6497b935597876379ab6e534ec7a21a4a2239c7803d2b01f75ec213ee3190085",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250212/independent_verification.json": "5871db7abc0875951c8a62cb8d2922e5a8ca0c20591049fff773ce8247b44f73",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250213/IP2025_CRASH500_20250213_receipt.tsv": "c4db6b928653464f08350d792e6fa8329db5660f0796602635a62286378fe6ee",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250213/independent_verification.json": "2134dc036ee9d82c4a227a7dcc41efafe2ade0617816973be57f1feef4a6c5d0",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250214_r1/IP2025_CRASH500_20250214_r1_receipt.tsv": "5654932214a9564722f9e23668fb2c2a6e788dd8fe2b6539116e5810607f945c",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250214_r1/independent_verification.json": "c91185f00487259d8b255b71dda63f3706e50830bfedb8391562e0e19aa569c0",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250215/IP2025_CRASH500_20250215_receipt.tsv": "1fab3feb3df0ca6b87cc39ae2fa82ecae35789d138b534570e95f54195a4263d",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250215/independent_verification.json": "cd1cdc3338a21a4084a076e7a5099ea41fbd9bacef071a917f6c4b716a96b02c",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250216/IP2025_CRASH500_20250216_receipt.tsv": "640e2177572aea742b20e00e48eea15983cadb460a23a53039a12a2ae2eb81ec",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250216/independent_verification.json": "10cf9f1b0cd759ba6b093bf2f77ad302727de078c9bccb0575b9872bcdd0b5ee",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250217/IP2025_CRASH500_20250217_receipt.tsv": "127287fcefb3a8133ebc89ac3f2a3493e0b1afde996f63e85acad9da42998936",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250217/independent_verification.json": "0f3e18b50573dcf0da030810422f3d5ff6fca7a57451588b30192a05a3601b8c",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250218/IP2025_CRASH500_20250218_receipt.tsv": "8d60e7ed88239426cadf32f7ec1b6467e4aaa925887ca4bacbe6f1be2b21963d",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250218/independent_verification.json": "ce26d697c49ae01cf7eb967978ec8b12abe8ca757899bf1ff4847f9c51424f04",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250219/IP2025_CRASH500_20250219_receipt.tsv": "25c2312687fa68901216fad22cc542179fee19f95d36a52eab1fc5d471249c9d",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250219/independent_verification.json": "9a54e0f463ff5330d8d7582f80f19de9c94686a099ca38fd02731a3a64ab7e80",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250220/IP2025_CRASH500_20250220_receipt.tsv": "c56f93c5bd540727dc912f95940e02b844f4cbed2fc954113f603ca82f02d059",
+    "data/independent_profit_ticks_20261013/development/IP2025_CRASH500_20250220/independent_verification.json": "05d386e3f490cf89177bd6b0da6f0c58d444cd5a1e9b24e30a684a286f7adf2f"
+  },
+  "status": "PASS",
+  "unknown_rows_checked": 4
+}

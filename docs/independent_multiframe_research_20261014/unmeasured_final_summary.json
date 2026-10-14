@@ -1,0 +1,175 @@
+{
+  "LIVE_ALLOWED": false,
+  "LIVE_TRADING": false,
+  "OPENED_TRADES": false,
+  "READY_FOR_LIVE": false,
+  "cash_net": null,
+  "costs_verified": false,
+  "declaration_sha256": "a3f9b73838b63abfcb0e85cc0fce076c5e5ae7c31fd8545ad05038f208dbe0e6",
+  "execution_verified": false,
+  "holm": {
+    "claims": {
+      "V1/BOOM500/POST_JUMP_CARRY_30S/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/BOOM500/POST_JUMP_CARRY_30S/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/BOOM500/QUOTE_CLOCK_ACCELERATION/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/BOOM500/QUOTE_CLOCK_ACCELERATION/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/BOOM500/SIDE_LEAD/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/BOOM500/SIDE_LEAD/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/CRASH500/POST_JUMP_CARRY_30S/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/CRASH500/POST_JUMP_CARRY_30S/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/CRASH500/QUOTE_CLOCK_ACCELERATION/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/CRASH500/QUOTE_CLOCK_ACCELERATION/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/CRASH500/SIDE_LEAD/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V1/CRASH500/SIDE_LEAD/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/BOOM500/CRT_SWEEP_RECLAIM/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/BOOM500/CRT_SWEEP_RECLAIM/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/BOOM500/PULLBACK_CONTINUATION/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/BOOM500/PULLBACK_CONTINUATION/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/BOOM500/SQUEEZE_BREAKOUT/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/BOOM500/SQUEEZE_BREAKOUT/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/CRASH500/CRT_SWEEP_RECLAIM/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/CRASH500/CRT_SWEEP_RECLAIM/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/CRASH500/PULLBACK_CONTINUATION/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/CRASH500/PULLBACK_CONTINUATION/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/CRASH500/SQUEEZE_BREAKOUT/EXCESS_DAILY_R_VS_CLOCK": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      },
+      "V2/CRASH500/SQUEEZE_BREAKOUT/POSITIVE_DAILY_R": {
+        "effective_p_value": 1.0,
+        "holm_p_value": 1.0,
+        "raw_p_value": null,
+        "testable": false
+      }
+    },
+    "family_size": 24,
+    "scope": "TWO_DECLARED_GENERATIONS_NOT_ALL_ADAPTIVE_RESEARCH"
+  },
+  "live_allowed": false,
+  "live_trading": false,
+  "opened_trades": false,
+  "qualified_profit_strategies": 0,
+  "ready_for_live": false,
+  "results": {},
+  "selection_sha256": "e75e033ae458492a6676cd72db7fd318cf93a4cef7088c5b833cd7a359023f69",
+  "unmeasured_final_claims": [
+    "BOOM500/CRT_SWEEP_RECLAIM",
+    "BOOM500/PULLBACK_CONTINUATION",
+    "BOOM500/SQUEEZE_BREAKOUT",
+    "CRASH500/CRT_SWEEP_RECLAIM",
+    "CRASH500/PULLBACK_CONTINUATION",
+    "CRASH500/SQUEEZE_BREAKOUT"
+  ]
+}
