@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-10-12T21:48:04.951718+00:00",
+  "pid": 95642,
+  "source_sha256": "98a3d5dd209853cadd9072f0eee822b20d8724801f312d8eea15e8535d435bc5",
+  "ex5_sha256": "178485a368f30d1ccfa97cba2c8ae2588de688453ff4fa0c7656d3499272e113",
+  "config_sha256": "3556ca577fa3104eeecfd4ac09db1248328de8348765ce1dbc0de7d6749a8e48",
+  "params_sha256": "212b6ed7df9b29775bfda619b96bd964ae27ed400877f351d3b57055608b9fb0",
+  "symbol": "Crash 500 Index",
+  "start_epoch": 1761955200,
+  "end_exclusive_epoch": 1761955260,
+  "duration_seconds": 60,
+  "all_live_flags_false": true,
+  "existing_account_only": true,
+  "credentials_captured": false,
+  "completed": true,
+  "launcher_exit_code": 52,
+  "finished_utc": "2026-10-12T21:48:35.419290+00:00",
+  "retained_outputs": [
+    {
+      "name": "ResearchQuotes_Crash500_20251101_probe01_receipt.tsv",
+      "bytes": 3099,
+      "sha256": "85f5e80840b21d43bb485fddde626563d22dc1ca153848185ee9df8f48139bde"
+    },
+    {
+      "name": "ResearchQuotes_Crash500_20251101_probe01_ticks.tsv",
+      "bytes": 3903,
+      "sha256": "9a6b0187869d97b17a8485f379caf08f0235bd9468ba23b3a252b3422d31c4eb"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "path": "docs/zone_excursions_20261008/results.json.gz",
+  "sha256": "720f00f916473a131b1a9e88f652754c6fff8d6d6e9f6f5f3cf50dc038a02971",
+  "uncompressed_sha256": "7da058525887a78cded57f599fa32a54667211eb450bed2fe388d7a413a33100",
+  "uncompressed_bytes": 5803611,
+  "rows": 2016,
+  "declaration_sha256": "3e423cc9d4ff413d0cb1e1aad03292dced2915d3b7bd478589876534dd4c903d",
+  "QUALIFIED": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

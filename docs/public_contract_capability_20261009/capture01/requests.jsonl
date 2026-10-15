@@ -1,0 +1,12 @@
+{"utc": "2026-10-09T10:09:45.743543+00:00", "event": "send_attempt", "request": {"contracts_for": "BOOM500", "req_id": 1}, "text": "{\"contracts_for\":\"BOOM500\",\"req_id\":1}", "text_sha256": "700e55647887657a414400b27e6fd21adf6ebf1d65d92ac4321b2bddcfebcbb6"}
+{"utc": "2026-10-09T10:09:45.745058+00:00", "event": "send_completed", "req_id": 1}
+{"utc": "2026-10-09T10:09:45.994194+00:00", "event": "send_attempt", "request": {"contracts_for": "CRASH500", "req_id": 2}, "text": "{\"contracts_for\":\"CRASH500\",\"req_id\":2}", "text_sha256": "d9aa303077ffc8a92a94a52d161e1d11a8d3a8e70436458b7c010672e0bb8f87"}
+{"utc": "2026-10-09T10:09:45.994669+00:00", "event": "send_completed", "req_id": 2}
+{"utc": "2026-10-09T10:09:46.246960+00:00", "event": "send_attempt", "request": {"contracts_for": "BOOM600", "req_id": 3}, "text": "{\"contracts_for\":\"BOOM600\",\"req_id\":3}", "text_sha256": "45fd0c1b2fafcb0dbbb860cb9cdde734b3ea00fb0fced73cbc9e41e273ea26af"}
+{"utc": "2026-10-09T10:09:46.247881+00:00", "event": "send_completed", "req_id": 3}
+{"utc": "2026-10-09T10:09:46.561761+00:00", "event": "send_attempt", "request": {"contracts_for": "CRASH600", "req_id": 4}, "text": "{\"contracts_for\":\"CRASH600\",\"req_id\":4}", "text_sha256": "acdfe4d81df1cbb9c830c50f29eafbf7d41e1443c219fc858c7bbb69ef823bd5"}
+{"utc": "2026-10-09T10:09:46.562553+00:00", "event": "send_completed", "req_id": 4}
+{"utc": "2026-10-09T10:09:46.822720+00:00", "event": "send_attempt", "request": {"contracts_for": "R_100", "req_id": 5}, "text": "{\"contracts_for\":\"R_100\",\"req_id\":5}", "text_sha256": "3069d40728e5b569575e4597afa5a4f76d786bb9c8e35379b6bc88888496f9a2"}
+{"utc": "2026-10-09T10:09:46.822988+00:00", "event": "send_completed", "req_id": 5}
+{"utc": "2026-10-09T10:09:47.492474+00:00", "event": "send_attempt", "request": {"proposal": 1, "amount": 10, "basis": "stake", "currency": "USD", "underlying_symbol": "BOOM500", "contract_type": "MULTUP", "req_id": 102, "multiplier": 100}, "text": "{\"proposal\":1,\"amount\":10,\"basis\":\"stake\",\"currency\":\"USD\",\"underlying_symbol\":\"BOOM500\",\"contract_type\":\"MULTUP\",\"req_id\":102,\"multiplier\":100}", "text_sha256": "89644f44a93c9e9af4f7a7092e4f9a7a9ca011659d1946d7d32909da011807dc"}
+{"utc": "2026-10-09T10:09:47.492790+00:00", "event": "send_completed", "req_id": 102}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-13T17:35:45.091088+00:00",
+  "measurement_declaration_sha256": "39532ae745f00e613e716970d1864ad20f20474f5e8b06baf639eea8e63b9e79",
+  "measurement_code_pins_match": true,
+  "measurement_source_pin_count": 9,
+  "all_live_flags_false": true,
+  "source_acquisition_declaration_sha256": "998abd73bc65426282b798a38a5a49d17615a591edf43b88e2dea58834dc9893",
+  "orchestration_runtime_pins": {
+    "scripts/collect_independent_profit_quotes.py": "d67404c847f3f5bbd0a6d096106d737140f18761acf865b27d3de8deab0ab542",
+    "work/independent_profit_pilot_20261013/run_development_queue.py": "f4f62c778cd1c278c55798e0adf5b5dfa46864c678a31335e51470fe3bf18879"
+  },
+  "orchestration_is_measurement_kernel": false,
+  "cost_verified": false,
+  "execution_verified": false,
+  "cash_net": null,
+  "goal_complete": false
+}

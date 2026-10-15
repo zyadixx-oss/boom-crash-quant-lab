@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "declared_at_utc": "2026-10-07T17:46:42.890945+00:00",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "purpose": "Bounded old-tick availability only; no returns, features, labels or payoff",
+  "requests": [
+    {
+      "ticks_history": "BOOM600",
+      "start": 1760008080,
+      "end": 1760008083,
+      "count": 4,
+      "style": "ticks",
+      "req_id": 1
+    },
+    {
+      "ticks_history": "BOOM600",
+      "start": 1767225600,
+      "end": 1767225603,
+      "count": 4,
+      "style": "ticks",
+      "req_id": 2
+    },
+    {
+      "ticks_history": "CRASH600",
+      "start": 1760008080,
+      "end": 1760008083,
+      "count": 4,
+      "style": "ticks",
+      "req_id": 3
+    },
+    {
+      "ticks_history": "CRASH600",
+      "start": 1767225600,
+      "end": 1767225603,
+      "count": 4,
+      "style": "ticks",
+      "req_id": 4
+    }
+  ],
+  "maximum_requests": 4,
+  "retries": 0,
+  "coverage_claim": "Only the four requested four-second windows",
+  "full_continuous_tick_coverage": "NOT TESTED",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "source_sha256": {
+    "probe_public_tick_retention.py": "dc6ebc554b062069ff0c4b45bcfdb2b43247b1002dfaafdc710eef087934c129",
+    "collect_spike_ticks.py": "087b071e28b948cd45e8d58bf03b370c42ac70827fc6010ace544c60ec9204a7"
+  }
+}

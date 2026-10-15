@@ -1,0 +1,66 @@
+field	value
+schema_version	1
+export_status	FAILED_INPUT
+failure_reason	invalid_symbol_dates_window_over_24h_or_connection_wait
+symbol	Boom 500 Index
+server	
+company	
+account_mode	UNKNOWN
+symbol_custom_observed	NOT_CHECKED
+capture_time_gmt	2026.10.12 21:45:18 UTC
+request_from_gmt	1970.01.01 00:33:45 UTC
+request_end_exclusive_gmt	1970.01.01 00:33:45 UTC
+request_from_msc	0
+request_end_exclusive_msc	0
+copy_to_inclusive_msc	NOT_REQUESTED
+window_end_exclusive	true
+max_window_seconds	86400
+copy_mode	COPY_TICKS_ALL
+raw_file	
+raw_partial_file	
+row_count	0
+raw_rows_written	0
+first_time_msc	NONE
+last_time_msc	NONE
+last_error	0
+guard_error	0
+write_error	0
+attempts	0
+retries	0
+selected_attempt	0
+raw_retention_scope	SELECTED_ATTEMPT_ONLY
+all_attempt_raw_arrays_retained	false
+copy_returned_count	-1
+api_returned_without_error	false
+connection_wait_limit_seconds	30
+connection_wait_elapsed_ms	0
+terminal_trade_allowed_observed	false
+mql_trade_allowed_observed	false
+out_of_window_rows	0
+backward_time_rows	0
+crossed_quote_rows	0
+invalid_quote_rows	0
+same_millisecond_rows_preserved	true
+row_order_preserved	true
+deduplication_applied	false
+synchronization_status	NOT_PROVEN
+historical_tick_completeness	NOT_PROVEN
+live_trading	false
+ready_for_live	false
+live_allowed	false
+opened_trades	false
+safety_upper_live_trading	false
+safety_upper_ready_for_live	false
+safety_upper_live_allowed	false
+safety_upper_opened_trades	false
+costs_verified	false
+execution_verified	false
+historical_costs_verified	false
+cfd_fills_verified	false
+cash_contract_mapping_verified	false
+quote_export_is_fill_evidence	false
+account_identity_captured	false
+limitation	Raw terminal quotes and current symbol specifications do not establish historical costs, executable fills, profit, or full historical synchronization.
+spec_snapshot_status	NOT_CAPTURED
+spec_snapshot_historical	false
+spec_snapshot_capture_time_gmt	NOT_CAPTURED

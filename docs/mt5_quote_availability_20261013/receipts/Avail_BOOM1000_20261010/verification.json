@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN",
+  "scope": "INDEPENDENT_RETAINED_MQL5_QUOTE_CHECK_ONLY",
+  "receipt_sha256": "b071d4b927f301b6a8da82db326c8eed14e2818ecf811581bdbbeb6fb37df0be",
+  "verifier_sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+  "raw_sha256": "71bef67b907caff81309f255c0ae8c1c29c0a3fec454b4c0655288da0ba02a1a",
+  "symbol": "Boom 1000 Index",
+  "server": "DerivSVG-Server",
+  "company": "Deriv (SVG) LLC",
+  "reported_deriv_context_validated": true,
+  "broker_origin_independently_authenticated": false,
+  "account_mode": "LIVE",
+  "requested_start_msc": 1791662400000,
+  "requested_end_exclusive_msc": 1791662460000,
+  "rows": 59,
+  "first_time_msc": 1791662400176,
+  "last_time_msc": 1791662459142,
+  "same_millisecond_adjacent_pairs": 0,
+  "inter_tick_gap_above_5000ms": 0,
+  "max_inter_tick_ms": 1996,
+  "leading_unobserved_ms": 176,
+  "trailing_unobserved_ms": 857,
+  "spread_price_min": "0.157999999999",
+  "spread_price_median": "0.159",
+  "spread_price_max": "0.159000000002",
+  "flag_counts": {
+    "134": 59
+  },
+  "errors": [],
+  "cost_verified": false,
+  "execution_verified": false,
+  "profit_tested": false,
+  "full_tick_coverage_verified": false,
+  "spec_scope": "CURRENT_ONLY_NOT_HISTORICAL",
+  "spec_historical": false,
+  "current_spec_unavailable_fields": [],
+  "retention_scope": "SELECTED_ATTEMPT_ONLY",
+  "selected_attempt": 1,
+  "attempts": [
+    {
+      "returned_count": 59,
+      "array_rows": 59,
+      "last_error": 0,
+      "elapsed_ms": 430
+    }
+  ],
+  "all_attempt_raw_arrays_retained": false,
+  "same_account_identity_verified": false,
+  "limitations": [
+    "A retained terminal quote array does not prove full server history or executable fills.",
+    "Only the selected attempt is retained; other returned arrays cannot be reconstructed.",
+    "The specification snapshot is current at capture, not historical.",
+    "Declared server and company are checked locally, not authenticated to the broker."
+  ]
+}

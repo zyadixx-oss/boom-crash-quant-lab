@@ -1,0 +1,116 @@
+[
+  {
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 1000,
+      "end": 1760008079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 2
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1759948080,
+    "newest_epoch": 1760008020,
+    "response_sha256": "e950db2e4f0dcb2e50db7c6169dee5016441710bf6654f03c7a9dac08fa569dc"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 1000,
+      "end": 1759948079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 3
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1759888080,
+    "newest_epoch": 1759948020,
+    "response_sha256": "5ed7f4ba3f5209e2a2a4c62615f8baa0441cda4139a900b027a88ea2394a9f17"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 1000,
+      "end": 1759888079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 4
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1759828080,
+    "newest_epoch": 1759888020,
+    "response_sha256": "3adf5555c84e5c55868ce8d679270e7e995b7b53b6102dd6377ada5d4a69c2fd"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 1000,
+      "end": 1759828079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 5
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1759768080,
+    "newest_epoch": 1759828020,
+    "response_sha256": "8948faf6e6c5057948ff69d05bc0c480cb6c76bd3f7119bcd609b8010441e13d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 1000,
+      "end": 1759768079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 6
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1759708080,
+    "newest_epoch": 1759768020,
+    "response_sha256": "f9439bcea29682953688fbb4ba1a39218c493358cac3a7b1a4b6d64e243409b5"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 1000,
+      "end": 1759708079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 7
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1759648080,
+    "newest_epoch": 1759708020,
+    "response_sha256": "4da229e683c20138e73c8dee581a6dd587a9618acfbf0f5d7701a247b47cb249"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 1000,
+      "end": 1759648079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 8
+    },
+    "returned_rows": 171,
+    "oldest_epoch": 1759637846,
+    "newest_epoch": 1759648020,
+    "response_sha256": "5a8e70c10af42481c74a4fa8a11bca5df11e94c8788f76d71bdb36e87d75b1a8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 1000,
+      "end": 1759637845,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 9
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1791113880,
+    "newest_epoch": 1791173820,
+    "accepted_rows": 0,
+    "availability_boundary": true,
+    "response_sha256": "645b84bd9563f321e0ffa646f2efa94ce656486e703e5005262feda00a4a5d22"
+  }
+]

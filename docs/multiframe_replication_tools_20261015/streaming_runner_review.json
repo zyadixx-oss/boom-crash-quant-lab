@@ -1,0 +1,240 @@
+{
+  "API": "evaluate_streamed_signals(store,signals,stage_start_ms,stage_end_ms,unit,execution_config,*,policy_id,baseline=False)",
+  "actual_quote_raw_reads": 0,
+  "actual_strategy_measurements": 0,
+  "already_committed_adapter_files_unchanged": [
+    {
+      "current_sha256": "7f26f2689517cdcfc4194fea278d3760af51029e70e00fe0dfdaae6e3d1bb142",
+      "e360ace_committed_sha256": "7f26f2689517cdcfc4194fea278d3760af51029e70e00fe0dfdaae6e3d1bb142",
+      "path": "independent_multiframe_research/sharded.py",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "8106961aa56a96b374be3f01410ef106ba3011a11731a11bc2a251a1c348a79c",
+      "e360ace_committed_sha256": "8106961aa56a96b374be3f01410ef106ba3011a11731a11bc2a251a1c348a79c",
+      "path": "independent_multiframe_research/streaming.py",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "fad4dde43db793f6d8cfbdf83770aed1d71159a0b41354edb3188e3d6b84d144",
+      "e360ace_committed_sha256": "fad4dde43db793f6d8cfbdf83770aed1d71159a0b41354edb3188e3d6b84d144",
+      "path": "independent_multiframe_research/streaming_policies.py",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "a667c93195250da113f117e1e62816be89cd9a9dcbc0f01d254a36763a03ed0a",
+      "e360ace_committed_sha256": "a667c93195250da113f117e1e62816be89cd9a9dcbc0f01d254a36763a03ed0a",
+      "path": "tests/test_multiframe_sharded_quote_access.py",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "e6a075dc7d736419a5c782ecad109517c8f3150fc6d2563daa45a8ddd40af260",
+      "e360ace_committed_sha256": "e6a075dc7d736419a5c782ecad109517c8f3150fc6d2563daa45a8ddd40af260",
+      "path": "tests/test_multiframe_streaming_access.py",
+      "unchanged": true
+    }
+  ],
+  "cash_net": null,
+  "costs_verified": false,
+  "created_utc": "2026-10-14T20:56:00.609616+00:00",
+  "execution_verified": false,
+  "frozen_source_and_protocol_pin_recheck": [
+    {
+      "declaration": "work/independent_profit_study_20261013/declaration.json",
+      "protocol_pin_check": {
+        "current_sha256": "6b23c34e02100032b4bef2975ccc14c090bd6539b49462666d2137a06ad4e53e",
+        "expected_sha256": "6b23c34e02100032b4bef2975ccc14c090bd6539b49462666d2137a06ad4e53e",
+        "matches": true,
+        "path": "docs/independent_profit_research_20261013/PROTOCOL_FROZEN.ar.md"
+      },
+      "sha256": "39532ae745f00e613e716970d1864ad20f20474f5e8b06baf639eea8e63b9e79",
+      "source_pin_checks": [
+        {
+          "current_sha256": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7",
+          "expected_sha256": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7",
+          "matches": true,
+          "path": "independent_profit_research/benchmarks.py"
+        },
+        {
+          "current_sha256": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+          "expected_sha256": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+          "matches": true,
+          "path": "independent_profit_research/data.py"
+        },
+        {
+          "current_sha256": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+          "expected_sha256": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+          "matches": true,
+          "path": "independent_profit_research/execution.py"
+        },
+        {
+          "current_sha256": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4",
+          "expected_sha256": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4",
+          "matches": true,
+          "path": "independent_profit_research/policies.py"
+        },
+        {
+          "current_sha256": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450",
+          "expected_sha256": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450",
+          "matches": true,
+          "path": "independent_profit_research/runner.py"
+        },
+        {
+          "current_sha256": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9",
+          "expected_sha256": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9",
+          "matches": true,
+          "path": "independent_profit_research/statistics.py"
+        },
+        {
+          "current_sha256": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+          "expected_sha256": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+          "matches": true,
+          "path": "independent_profit_research/tape.py"
+        },
+        {
+          "current_sha256": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e",
+          "expected_sha256": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e",
+          "matches": true,
+          "path": "scripts/run_independent_profit_study.py"
+        },
+        {
+          "current_sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+          "expected_sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+          "matches": true,
+          "path": "scripts/verify_mt5_quote_export.py"
+        }
+      ]
+    },
+    {
+      "declaration": "work/independent_multiframe_study_20261014/declaration.json",
+      "protocol_pin_check": {
+        "current_sha256": "9917c7c68a4fa5ed4add5ecb1c5f0d0f2ccfde80d966164b8646455c82ba4939",
+        "expected_sha256": "9917c7c68a4fa5ed4add5ecb1c5f0d0f2ccfde80d966164b8646455c82ba4939",
+        "matches": true,
+        "path": "docs/independent_multiframe_research_20261014/PROTOCOL_FROZEN.ar.md"
+      },
+      "sha256": "a3f9b73838b63abfcb0e85cc0fce076c5e5ae7c31fd8545ad05038f208dbe0e6",
+      "source_pin_checks": [
+        {
+          "current_sha256": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+          "expected_sha256": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+          "matches": true,
+          "path": "independent_multiframe_research/__init__.py"
+        },
+        {
+          "current_sha256": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+          "expected_sha256": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+          "matches": true,
+          "path": "independent_multiframe_research/bars.py"
+        },
+        {
+          "current_sha256": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+          "expected_sha256": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+          "matches": true,
+          "path": "independent_multiframe_research/policies.py"
+        },
+        {
+          "current_sha256": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+          "expected_sha256": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+          "matches": true,
+          "path": "independent_multiframe_research/runner.py"
+        },
+        {
+          "current_sha256": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+          "expected_sha256": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+          "matches": true,
+          "path": "independent_profit_research/__init__.py"
+        },
+        {
+          "current_sha256": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960",
+          "expected_sha256": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960",
+          "matches": true,
+          "path": "scripts/run_multiframe_quote_study.py"
+        }
+      ]
+    }
+  ],
+  "input_contract": {
+    "calendar": "store permitted half-open calendar must exactly equal alignedUTC stage boundaries",
+    "executed_window_limits": "Inherited from store: hold<=1hour, each latency<=1hour; unsupported unblocked executions raise without horizon truncation. Frozen15minute v2signals are inside this domain.",
+    "execution_input": "real copied full local trade_tape; never IssuanceQuoteIndex or a fake full-history tape",
+    "signals": "caller-issued supplied prefix; frozen_snapshot validation before embargo/overlap filtering",
+    "store_type": "exact ShardedQuoteStore"
+  },
+  "memory_limit_scope": "Quote source access is bounded by store cache and local windows. Daily output and completed-signal ledgers still grow with study size; no whole-process8GiB memory claim is made.",
+  "network_calls": 0,
+  "new_files": [
+    {
+      "bytes": 11308,
+      "path": "independent_multiframe_research/streaming_runner.py",
+      "sha256": "d518d5da45a32ab12a5aa6e526f7b244dcb858efb26425c20de0e6fa8763b80d"
+    },
+    {
+      "bytes": 12750,
+      "path": "tests/test_multiframe_streaming_runner.py",
+      "sha256": "798efb0f28c5fe035331afe5bf6361e8e559e2327472a11cc99d7d984fc8563e"
+    }
+  ],
+  "old_source_edits": 0,
+  "platform_or_process_calls": 0,
+  "private_financial_reads": 0,
+  "profit_qualified": false,
+  "reference_HEAD_observed_at_start": "e360ace4f95d7b63a1fe312043f66318207ae32a",
+  "reference_reuse": [
+    "frozenrunner_snapshot",
+    "frozenrunner_stamp",
+    "frozenrunner_positive",
+    "frozenrunner_fsum",
+    "frozen_Sum",
+    "frozen_Drawdown",
+    "frozen_mark_trade",
+    "frozen_public_outcome",
+    "frozen_pf",
+    "unchangedQuoteTape.simulate"
+  ],
+  "remaining_before_actual_strategy_use": [
+    "Root must review new code and run complete suite after adding these two files; earlier suite does not include them.",
+    "Caller must freeze a separate complete source/feature/selection/evaluation protocol; this module creates none.",
+    "Actualsource acquisition validity/completeness, feature/reference conformance, historical cashfees and fills are separate evidence requirements."
+  ],
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "schedule_accounting_and_return_AST_equivalent_after_only_removing_local_tape_fetch_and_renaming_local_variable": true,
+  "schema_version": 1,
+  "scope": "New execution access evaluator for supplied synthetic signals only. No strategy generation, fitting, selection gates, actual source dataset, prospective quote, MT5/process, network, sealedfinal or private financial work. Future alpha protocol not frozen.",
+  "sealed_final_reads": 0,
+  "status": "IMPLEMENTED_SYNTHETIC_COMPLETE_OUTPUT_EQUIVALENCE_PASSED_NOT_USED_ON_SOURCE",
+  "targeted_tests": {
+    "command": ".venv/bin/python -m pytest tests/test_multiframe_streaming_runner.py",
+    "comparison_scope": "Every nested output dictionary field of frozenevaluate_signals, including ledgers, daily null/zero values, floating-point reconciliation, marked drawdown and observed-prefix/censor metadata.",
+    "completion_chunk_id": "fc1124",
+    "exit_code": 0,
+    "explicit_cases": [
+      "Nonempty COMPLETE trades for both directions",
+      "Cross-midnight exit-day accounting and same-ms conservative marks",
+      "Both barriers within a bundle with STOP priority",
+      "Inclusive reservation through pendingentry, holding, pendingexit and exit timestamp",
+      "SKIP reserves no exposure, equal next decision allowed",
+      "Empty shards and first late bundle preserve SKIP vs missing-entry distinction",
+      "UNKNOWN closes iterator, stops suffix, nulls all primarystage/day fields and preserves descriptiveprefix",
+      "LargeR daily fsum rounding residual identical to reference",
+      "Embargo boundaries and invalid unconsumed suffix",
+      "Invalid consumed signal validation before overlap or embargo filtering",
+      "Exact aligned calendar/store match, no out-of-calendar loader calls",
+      "One/two-day cache bound, nonzero stage, idle dayzeroes",
+      "Sparse index and fake fullTape rejected as store",
+      "Unsupported unblocked long execution window fails instead of truncating"
+    ],
+    "observed_summary": "129 passed in 0.66s",
+    "seeded_dimensions": "12seeds ×2calendar lengths ×2directions ×2baseline labels ×3configurations",
+    "seeded_stage_configuration_complete_dict_comparisons": 288
+  }
+}

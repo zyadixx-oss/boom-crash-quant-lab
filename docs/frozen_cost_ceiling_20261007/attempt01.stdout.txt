@@ -1,0 +1,1 @@
+{"goal_achieved": false, "safety": {"LIVE_ALLOWED": false, "LIVE_TRADING": false, "OPENED_TRADES": false, "READY_FOR_LIVE": false}, "status": "PASS"}

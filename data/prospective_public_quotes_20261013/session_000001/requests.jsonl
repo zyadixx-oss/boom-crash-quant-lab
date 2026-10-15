@@ -1,0 +1,4 @@
+{"connection_id":1,"event":"send_attempt","request":{"req_id":1,"subscribe":1,"ticks":"BOOM500"},"text":"{\"req_id\":1,\"subscribe\":1,\"ticks\":\"BOOM500\"}","text_sha256":"caf0060bf46b61e6b59cfff56bc39f38bae832c1c488af6abfde655db4605093","utc":"2026-10-12T21:35:53.945705+00:00"}
+{"connection_id":1,"event":"send_completed","req_id":1,"utc":"2026-10-12T21:35:53.946060+00:00"}
+{"connection_id":1,"event":"send_attempt","request":{"req_id":2,"subscribe":1,"ticks":"CRASH500"},"text":"{\"req_id\":2,\"subscribe\":1,\"ticks\":\"CRASH500\"}","text_sha256":"840250da565cc28997f7941fe722c5bc9e8308c5948c7d8b8f5d2076616980a8","utc":"2026-10-12T21:35:53.946224+00:00"}
+{"connection_id":1,"event":"send_completed","req_id":2,"utc":"2026-10-12T21:35:53.946407+00:00"}

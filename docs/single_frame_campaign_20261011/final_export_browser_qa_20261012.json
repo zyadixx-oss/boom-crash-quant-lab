@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-10-12T03:38:25.162777+00:00",
+  "method": "Actual CUA UI downloads; full selected-final CSV parsed and compared to saved public snapshot without recalculation",
+  "search_export": {
+    "path": "/Users/zyadalasmri/Downloads/search (1).csv",
+    "sha256": "8bc8e59ae370b017065706638ea6f728eb9965e564696f33d0d7eab2efd1cf75",
+    "bytes": 29471484,
+    "rows": 41600,
+    "per_cycle_rows": 1300,
+    "cycles": 32,
+    "cache_false_rows": 38400,
+    "cache_true_rows": 3200,
+    "metrics_partition": "validation",
+    "reasons_partition": "final for selected policy, development selection for other rows",
+    "limitation": "Raw frozen search.csv omits metrics_partition; REJECTED_FINAL reasons do not turn its validation metric columns into final outcomes."
+  },
+  "selected_final_export": {
+    "path": "/Users/zyadalasmri/Downloads/boom-crash-results.csv",
+    "sha256": "a0b8459811d74861983a522513ed8985feb7a8219cc82e874a06f3c3719adc62",
+    "bytes": 1206595,
+    "rows": 1300,
+    "scopes": {
+      "oos": 1300
+    },
+    "fields": [
+      "scope",
+      "symbol",
+      "timeframe",
+      "strategy",
+      "status",
+      "risk_score",
+      "win_rate",
+      "profit_factor",
+      "completed_trades",
+      "net_profit",
+      "net_profit_unit",
+      "max_drawdown",
+      "measurement_status",
+      "reasons",
+      "settings",
+      "tested_at"
+    ],
+    "snapshot_sha256": "a42ca7e47ab46c334bffe7626135c51e47ac588b5cc9a5774080ed5a0c5f5bf4",
+    "all_selected_policies_covered": true,
+    "errors": [],
+    "metrics_partition": "oos explicitly labelled by scope column"
+  },
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  },
+  "ui_clarification": {
+    "verified_at": "2026-10-12T03:41:19.923931+00:00",
+    "source_file": "frontend/src/ResearchDashboard.tsx",
+    "source_sha256": "2606bf0a087b38c1c7131c128e0bdfff0c410715e932ec77da8e18b0429c2daa",
+    "text": "أرقام سجل البحث تخص التحقق التطويري؛ أسباب رفض السياسات المختارة تخص الاختبار النهائي. لتصدير الأرقام النهائية، اختر «اختبار نهائي» ثم استخدم «تصدير CSV» في جدول الاستراتيجيات.",
+    "actual_dom_and_visual_verified": true,
+    "screenshot": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/dashboard_export_clarification_visible_20261012.jpg",
+    "screenshot_sha256": "1ef66f894f56daa0a799f571664767851491f7ace2b1a2c5cca0f71bdec23dce",
+    "checks": {
+      "frontend_tests_passed": 50,
+      "typecheck": "PASS",
+      "lint": "0 errors,4 pre-existing warnings",
+      "build": "PASS"
+    }
+  }
+}

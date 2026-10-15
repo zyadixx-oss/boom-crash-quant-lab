@@ -1,0 +1,41 @@
+{
+  "campaign": {
+    "id": "single-frame-8af790ef59a5",
+    "status": "COMPLETED",
+    "completed_cycles": 32,
+    "target_cycles": 32,
+    "started_at": "2026-10-11T17:27:25.434946+00:00",
+    "deadline_at": "2026-10-12T01:27:25.434946+00:00",
+    "updated_at": "2026-10-12T01:55:47.622741+00:00",
+    "final_accessed": true,
+    "failure": null,
+    "next_cycle_at": null,
+    "owner": {
+      "live": false,
+      "pid": null,
+      "lock_held": false
+    },
+    "safety": {
+      "LIVE_TRADING": false,
+      "READY_FOR_LIVE": false,
+      "LIVE_ALLOWED": false,
+      "OPENED_TRADES": false
+    }
+  },
+  "configuration_safety_flags": {
+    ".env.example": {
+      "LIVE_TRADING": "false",
+      "READY_FOR_LIVE": "false",
+      "LIVE_ALLOWED": "false",
+      "OPENED_TRADES": "false"
+    }
+  },
+  "all_captured_safety_flags_false": true,
+  "terminal_process_alive": false,
+  "new_research_campaign_started": false,
+  "closed_replay_restarted": false,
+  "heartbeat": {
+    "id": "boom-crash",
+    "status": "PAUSED"
+  }
+}

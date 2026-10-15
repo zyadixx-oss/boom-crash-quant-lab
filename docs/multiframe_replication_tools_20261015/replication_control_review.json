@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-15T01:42:29.229303+00:00",
+  "status": "PASS_REVIEWED_SYNTHETIC_SCOPE_NO_ACTIONABLE_CODE_FINDINGS",
+  "scope": "ONLY_SPARSE_FIXED_TWO_DAY_CLOCK_DESIGN_AND_ISSUANCE_WRAPPER; NO_SOURCE_DATA_NO_MARKET_ALPHA",
+  "reviewed_file_sha256": {
+    "independent_multiframe_research/replication_control.py": "5a4d9cb3e9ec545a2af0eff35426516b08f9221a88859eccae1810b1e8366be4",
+    "tests/test_multiframe_replication_control.py": "fce6e69e517fd36bdbc22abf9f3538cd477df2fe1100ce91ce1c63c310735113",
+    "independent_multiframe_research/streaming_policies.py": "fad4dde43db793f6d8cfbdf83770aed1d71159a0b41354edb3188e3d6b84d144",
+    "independent_multiframe_research/policies.py": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+    "independent_multiframe_research/streaming.py": "8106961aa56a96b374be3f01410ef106ba3011a11731a11bc2a251a1c348a79c",
+    "work/multiframe_replication_source_20261014/protocol_design_sparse_control_review.ar.md": "7f95daab072502a1567b22e26c0c69e877536adbfa43c33d079f856dae96981b",
+    "work/multiframe_replication_source_20261014/replication_control_independent_checks.py": "f8f0db9bf45edf7dda7b63fe843ca597e9a1cc0f23a9ab4d45fe9d01ce5c6ccc"
+  },
+  "code_and_existing_tests_unchanged_through_review": true,
+  "root_owned_module_edited": false,
+  "actionable_findings": [],
+  "findings": [
+    {
+      "topic": "schedule and singleton",
+      "conclusion": "One fixed UTC00/30 slot per stage-anchored two-day block; final singleton samples exactly 48 slots. 219 days gives 110 pre-cancellation opportunities, not 110 issued/completed trades.",
+      "lines": "replication_control.py:58-76"
+    },
+    {
+      "topic": "hash and modulo bias",
+      "conclusion": "SHA256 input is fixed salt + full 32-byte declaration seed + 8-byte big-endian block start + 4-byte counter. Acceptance strictly below the largest multiple of 48/96 below 2**256 avoids modulo bias under the SHA pseudorandom assumption; no process RNG or prices enter the schedule.",
+      "lines": "replication_control.py:43-55"
+    },
+    {
+      "topic": "causal issuance and cancelled slots",
+      "conclusion": "Joins by original scheduled_ms from causal dense-clock audit, not delayed decision_ms. Exact M1 confirmation/freshness/spread and same-run exact M5 ATR come from unchanged dense wrapper. Missing, stale, wide-spread, missing-ATR or run-break selected slots remain cancelled; later dense slots do not substitute.",
+      "lines": "replication_control.py:88-109; streaming_policies.py:74-100"
+    },
+    {
+      "topic": "exposure and lineage",
+      "conclusion": "Direction, decision, horizon, stop and target are copied unchanged. Audit carries original scheduled close, seed, block bounds and accepted digest. No selection by payoff, coverage, reservation or scenario occurs in this function.",
+      "lines": "replication_control.py:99-108"
+    },
+    {
+      "topic": "closing and errors",
+      "conclusion": "Finally closes underlying dense iterator. Independently exercised normal exhaustion, upstream exception, downstream close and downstream throw; no suffix consumption on early close.",
+      "lines": "replication_control.py:93-113"
+    }
+  ],
+  "verification": {
+    "existing_targeted_pytest": {
+      "exit_code": 0,
+      "passed": 19,
+      "output_log": "work/multiframe_replication_source_20261014/replication_control_tests.log",
+      "output_sha256": "0ab3d0bc86e49e6f2d8562528c6ee05c060d8f03d998eedc60f16364e607b054"
+    },
+    "independent_synthetic_checks": {
+      "exit_code": 0,
+      "status": "PASS_SYNTHETIC_ONLY",
+      "checks_passed": 12,
+      "checks": [
+        "272 calendars match separately constructed SHA wire reference; singleton and exact bounds",
+        "rejection threshold exactly rejects ceiling and 2**256-1 for 48 and 96 slots",
+        "malformed digest type and length rejected",
+        "schedule leaves global RNG state unchanged and complete blocks stable under same seed",
+        "selected slot with missing exact M5 ATR history cancels; later eligible dense clocks never substitute",
+        "selected slot crossing run boundary cancels; schedule remains unchanged",
+        "future synthetic price and bar changes leave earlier sparse issuance fields unchanged",
+        "audit joins original scheduled close rather than delayed decision time; all lineage and Signal fields preserved",
+        "dense iterator closes exactly once on empty",
+        "dense iterator closes exactly once on error",
+        "dense iterator closes exactly once on close",
+        "dense iterator closes exactly once on throw"
+      ],
+      "raw_market_reads": 0,
+      "MT5_launches": 0,
+      "returns_or_execution_evaluations": 0,
+      "output_path": "work/multiframe_replication_source_20261014/replication_control_independent_checks.json",
+      "output_sha256": "f7c0e8b037d58d2fabd44339191fccecb9232fdb028dab8be4b76b813e22b607"
+    }
+  },
+  "external_contracts_not_proven_by_this_module_or_review": [
+    "Caller must freeze one complete declaration and its canonical SHA before any strategy/final measurements, then retain the generated schedule receipt; the function validates hash syntax, not provenance or absence of seed grinding.",
+    "Same stage calendar/hash must be passed unchanged across policies and BASE/STRESS. Changing declared end/seed after results is outside the supported frozen contract.",
+    "Embargo/reservation, stage masks and UNKNOWN stop behavior are explicitly delegated to the evaluator and were not audited in this limited module review.",
+    "No timing choice can establish economic edge; reduced clock density changes the comparator claim and does not imply superiority over dense CLOCK.",
+    "Private helper _uniform_slot is exercised for public-path 48 and 96 slots only."
+  ],
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  },
+  "activity": {
+    "market_source_data_reads": 0,
+    "raw_market_reads": 0,
+    "MT5_launches": 0,
+    "network_calls": 0,
+    "strategy_return_or_execution_evaluations": 0,
+    "old_final_or_private_history_reads": 0,
+    "root_module_mutations": 0,
+    "guard_applies": 0,
+    "own_work_helper_and_audit_writes_only": true
+  }
+}

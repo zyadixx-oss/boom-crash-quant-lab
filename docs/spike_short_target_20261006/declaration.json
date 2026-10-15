@@ -1,0 +1,452 @@
+{
+  "stage": "short_target_premeasurement_declaration",
+  "adaptive_round": 11,
+  "run_utc": "2026-10-06 13:06:26.233408+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "config": {
+    "execution": {
+      "stop_atr": 2.0,
+      "max_hold_minutes": 1,
+      "entry_delay_minutes": 1,
+      "round_trip_cost_atr": 0.1,
+      "fill_mode": "adverse_extreme"
+    },
+    "target_configs": {
+      "SHORT44": {
+        "stop_atr": 2.0,
+        "max_hold_minutes": 1,
+        "entry_delay_minutes": 1,
+        "round_trip_cost_atr": 0.1,
+        "fill_mode": "adverse_extreme"
+      },
+      "LONG44": {
+        "stop_atr": 2.0,
+        "max_hold_minutes": 15,
+        "entry_delay_minutes": 1,
+        "round_trip_cost_atr": 0.1,
+        "fill_mode": "adverse_extreme"
+      }
+    },
+    "target_names": {
+      "SHORT44": "SHORT1",
+      "LONG44": "LONG15"
+    },
+    "purge_minutes": 31,
+    "clock_minutes": [
+      0,
+      30
+    ],
+    "ridge_penalty": 0.1,
+    "training_quantile": 0.75,
+    "minimum_common_training_labels": 1000,
+    "bootstrap_repeats": 9999,
+    "bootstrap_seed": 20261005,
+    "primary_holm_family": 4,
+    "only_short_is_candidate": true,
+    "shared_training_rows": "intersection_of_completed_finite_one_and_fifteen_minute_targets",
+    "shared_scaler": "same_unclipped44_training_matrix_means_and_population_std",
+    "unknown_outcomes_are_zero": false,
+    "undefined_draws_block_bounded_inference": true
+  },
+  "history": {
+    "known_prices": true,
+    "known_fifteen_minute_payoffs": true,
+    "price_oos": false,
+    "new_label_holdout": false,
+    "prospective": false,
+    "adaptive_history": "round6_and_later_results_seen_before_short_target_declaration"
+  },
+  "science_code_hashes": {
+    "docs/SPIKE_LEARNED_PROTOCOL.md": "f9118dd0dbc5089ba8ac984be193033e0166378651a55786d3642f1827725000",
+    "backend/app/research/learned_signal.py": "e995744aae3c6431aa3d454c3488777f12c2020c8cb03014927aed214df54656",
+    "backend/app/research/learned_metrics.py": "f89405be92ef8d5ca5ec35c48d32a63781d124e561cdfea665098e8180e80c31",
+    "backend/app/research/spike_hunter.py": "1ffc873e8d04785ba0900b1ebc3751b803a013a459d7740b6d02521d67926f27",
+    "backend/app/research/payoff.py": "097bb2328540610374598ef878ff04cfbc854ecd46dbfe9866b8912d0355d681",
+    "backend/app/research/payoff_timed.py": "fdc6e91f3c9b082054d107bc0926748361bbcdbf0c5643aa5c88393cf294283e",
+    "backend/app/research/payoff_metrics.py": "16bbfa9e499dc91802fb7d5210e48734a93db26127744dc4ed2e57b44876949e",
+    "scripts/run_spike_payoff_study.py": "4ff72ae2064ae19c4b5d828bf1e9550d6b354a4b6dda38c7ee21834731fe12ff",
+    "scripts/run_spike_timed_study.py": "6f595941a57ffd6c9fba2c416fca2517f83c3e4e66ae10b7e3d4f771b3d1311b",
+    "scripts/run_spike_learned_study.py": "b9dce52f7b2e150a42fb8abe60b2980a846ba91f4c01e5de06fe34a4a2f69143",
+    "docs/SPIKE_NATIVE300_PROTOCOL.md": "fe8e31fefcef0cd239be71d9482b98b982bf0af7afbb4227333164702e9837e9",
+    "scripts/run_spike_native300_study.py": "7e9b90410fe6b394df27b59ba8853441f4c21e5f02b7e3dc3dfcf00b135ad93f",
+    "backend/tests/test_spike_native300_study.py": "1814ffbc9e9dcb65ff620ada78d9c06e90945126523e0a74883b803eba74c22c",
+    "backend/app/research/multiframe_signal.py": "1ae7568832a167ee24fba848525521be04838fc9b9c1a02205bc7016655da6ef",
+    "backend/tests/test_multiframe_signal.py": "f110f48adff098bb783fee570d3d36fd9d6d6f0fb2fe7c78618218dc5f4f16f2",
+    "docs/SPIKE_MULTIFRAME_PROTOCOL.md": "898bdcd383e30c52f78ee10c8d5e07deea488aed043721d3150aafc38f488901",
+    "scripts/run_spike_multiframe_study.py": "0675387d6aa1012d6011fb4eea7ac19fa9e1f1c661c4509e030f2b2744ca68bb",
+    "backend/tests/test_spike_multiframe_study.py": "c88dcfe6a0c51e2400e475f87b6c93cc086aff501bad299fa63c301347e4651c",
+    "backend/app/research/nonlinear_signal.py": "225b6d0171127b94bc1d2cc3d4730a3952c627d74d9668f05978879f5359cb34",
+    "backend/tests/test_nonlinear_signal.py": "8845fded4cf917f3ec41bcffc776447d7a2f4b6cc7299c2d471be3de724573ec",
+    "docs/SPIKE_NONLINEAR_PROTOCOL.md": "a511b92c72e9bf50978726d96760c1aa8a33e1b9fbff800c370ffd0783ad7c46",
+    "scripts/run_spike_nonlinear_study.py": "dd0cf48780ff48a55ec540e4a4dc2497e065b2654bd9a77efb7814e21955ba45",
+    "backend/tests/test_spike_nonlinear_study.py": "e4f9978548186f709fdea08354314e77d494a344628d6af68643d60145e48e06",
+    "scripts/collect_spike_history.py": "b0b4ff7df6c86ca098e8cd8b001e8c7129e43f9ccfe66c3f45d5f27e3669f300",
+    "docs/SPIKE_SHORT_TARGET_PROTOCOL.md": "c3fafa795fd054fccba2961e1cb3a194a595b8c292819840ed5a7dbcaabcd044",
+    "scripts/run_spike_short_target.py": "092120217fa8924f63d2b6813ba90d7edb77d2a2fdf7eccb7a0481b28845e0c2",
+    "backend/tests/test_spike_short_target.py": "76bffb50794c34aafd53c200df1e9bfc44a8fb51840d3d37c7b4892f50a5223c"
+  },
+  "lineage": {
+    "round6_selection_sha256": "87771bfd480033b1ecde0783ad6b9318b6338e2c41c855dcb1b8a344021b37e0",
+    "files": {
+      "docs/spike_nonlinear_20261005/declaration.json": "d707abf76613caf6aa6a2f0d9a583f7fe051084771568d23dad49dcb1696c8d7",
+      "docs/spike_nonlinear_20261005/declaration.sha256": "f03997abca23097d04b9a79c6687a374217ab1f380b1a53907c31ad5b29428a9",
+      "docs/spike_nonlinear_20261005/selection.json": "87771bfd480033b1ecde0783ad6b9318b6338e2c41c855dcb1b8a344021b37e0",
+      "docs/spike_nonlinear_20261005/selection.sha256": "0b328d8474a3d591c176df7825ce5bd1ede003d56ac735790ff13534c05bab1a",
+      "docs/spike_nonlinear_20261005/results.json": "4d00095faaa6b839452bcf61ad3cdd984a9bf1f632c7ece768f83ae52355e180",
+      "docs/spike_nonlinear_20261005/independent_audit.json": "9da900082a7393c486b0e2e30190e836781d7859f04e9104e3e0d6e74adda19a",
+      "scripts/verify_spike_nonlinear.py": "1a6d25a60093d36d7c8a66e66ef966d144d81d16eb84695f3ceb400aad307aee",
+      "scripts/verify_spike_payoff.py": "ac0b34c978b549711e383e9cec86410e205535d5cf04b9d2ba234ef9b5161cdf",
+      "scripts/verify_spike_timed.py": "fbecf3b85dfd0b1e4731b2c8d6984c954a100c36d0f447e79059aee187f58658",
+      "scripts/verify_spike_learned.py": "3846861910f67d4b8e9a50d73962cbd45b70069033a4c93eea0ae159b7ac3f51",
+      "scripts/verify_spike_native300.py": "c7835e5b91f6fb376d01bcd25ed7ca3f8d8315c193377724242674d943bf6663",
+      "scripts/verify_spike_multiframe.py": "ccc3703a89a5af2a0094b28e2b0e5eb4e7b5fc0d451198ace7ce3963d89f5b90"
+    },
+    "sources": {
+      "BOOM600": {
+        "old": {
+          "path": "data/spike_nonlinear600_old/boom600_m1_180d_clean.csv",
+          "sha256": "ad678600539df1b7fa1bd491d962783ce2e2dfb2c35a0071c940b6edcad51a6d",
+          "rows": 259200,
+          "first_epoch": 1760008080,
+          "last_epoch": 1775560020,
+          "manifest": "data/spike_nonlinear600_old/BOOM600_normalization_manifest.json",
+          "manifest_sha256": "200b8919738cacd6e4b2f83ab41e4156e5c0d7286083d42978ad653e1bddb2de",
+          "expected_grid_rows": 259200,
+          "declared_missing_minutes": 0,
+          "declared_gaps": [],
+          "excluded_raw_rows": [],
+          "raw_file": "data/spike_nonlinear600_old/boom600_m1_180d.csv",
+          "raw_sha256": "ad678600539df1b7fa1bd491d962783ce2e2dfb2c35a0071c940b6edcad51a6d",
+          "recovered_request_errors": [
+            {
+              "end": 1769500079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1769440079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1769380079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1769320079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            }
+          ],
+          "page_audit": "data/spike_nonlinear600_old/BOOM600_page_audit.json",
+          "page_audit_sha256": "f8f2f9dfa9da76f1190449c40ac7a70d165924bb9499e7c56504fc3ec22ee92e",
+          "from_utc": "2025-10-09 11:08:00+00:00",
+          "to_exclusive_utc": "2026-04-07 11:08:00+00:00"
+        },
+        "fresh": {
+          "path": "data/spike_nonlinear600_recent/boom600_m1_180d_clean.csv",
+          "sha256": "61d8494e1a9cfd2b631649cd6b40488f9ce1b3a338cb04657f0944fd47f56d3d",
+          "rows": 259199,
+          "first_epoch": 1775560080,
+          "last_epoch": 1791112020,
+          "manifest": "data/spike_nonlinear600_recent/BOOM600_normalization_manifest.json",
+          "manifest_sha256": "4d49f3a673b4a98521771b9f12f98c518f42767d7cc018deb31b3b024b255598",
+          "expected_grid_rows": 259200,
+          "declared_missing_minutes": 1,
+          "declared_gaps": [
+            {
+              "previous_epoch": 1785228540,
+              "next_epoch": 1785228660,
+              "previous_utc": "2026-07-28T08:49:00+00:00",
+              "next_utc": "2026-07-28T08:51:00+00:00",
+              "missing_bars": 1,
+              "missing_epochs": [
+                1785228600
+              ]
+            }
+          ],
+          "excluded_raw_rows": [
+            {
+              "epoch": 1785172079,
+              "utc": "2026-07-27T17:07:59+00:00",
+              "reason": "off_utc_minute_grid",
+              "raw": {
+                "epoch": 1785172079,
+                "open": 5532.471,
+                "high": 5532.471,
+                "low": 5532.471,
+                "close": 5532.471
+              }
+            }
+          ],
+          "raw_file": "data/spike_nonlinear600_recent/boom600_m1_180d.csv",
+          "raw_sha256": "49486105d0928171f8039a7d458d602805e19977e1486353c8be5eff9c5f9bac",
+          "recovered_request_errors": [
+            {
+              "end": 1785592079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1785532079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1785472079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1785412079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1785352079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            }
+          ],
+          "page_audit": "data/spike_nonlinear600_recent/BOOM600_page_audit.json",
+          "page_audit_sha256": "e4eebbd2ae1f2b3930ff02bdbd9ce6688740bdeac843a86342af5db1476539cb",
+          "from_utc": "2026-04-07 11:08:00+00:00",
+          "to_exclusive_utc": "2026-10-04 11:08:00+00:00"
+        }
+      },
+      "CRASH600": {
+        "old": {
+          "path": "data/spike_nonlinear600_old/crash600_m1_180d_clean.csv",
+          "sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+          "rows": 259200,
+          "first_epoch": 1760008080,
+          "last_epoch": 1775560020,
+          "manifest": "data/spike_nonlinear600_old/CRASH600_normalization_manifest.json",
+          "manifest_sha256": "06bdaefcf0e18e70e19861c5d7bcbf4d0841950b66acdb147fa5d4223050ae96",
+          "expected_grid_rows": 259200,
+          "declared_missing_minutes": 0,
+          "declared_gaps": [],
+          "excluded_raw_rows": [],
+          "raw_file": "data/spike_nonlinear600_old/crash600_m1_180d.csv",
+          "raw_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+          "recovered_request_errors": [],
+          "page_audit": "data/spike_nonlinear600_old/CRASH600_page_audit.json",
+          "page_audit_sha256": "9bbbeb04ff10fde62a2222bf55dbccd6f379d881a7b7d5a59e956ba0278101dd",
+          "from_utc": "2025-10-09 11:08:00+00:00",
+          "to_exclusive_utc": "2026-04-07 11:08:00+00:00"
+        },
+        "fresh": {
+          "path": "data/spike_nonlinear600_recent/crash600_m1_180d_clean.csv",
+          "sha256": "d2437657dfc52832004f7fa029653aef37953fefec2943a282ae40dd4ef0e14e",
+          "rows": 259199,
+          "first_epoch": 1775560080,
+          "last_epoch": 1791112020,
+          "manifest": "data/spike_nonlinear600_recent/CRASH600_normalization_manifest.json",
+          "manifest_sha256": "fc1a3e4318691b76a5bd683abeaff0d0b609554a89abebd9ba636d6792863f38",
+          "expected_grid_rows": 259200,
+          "declared_missing_minutes": 1,
+          "declared_gaps": [
+            {
+              "previous_epoch": 1785228540,
+              "next_epoch": 1785228660,
+              "previous_utc": "2026-07-28T08:49:00+00:00",
+              "next_utc": "2026-07-28T08:51:00+00:00",
+              "missing_bars": 1,
+              "missing_epochs": [
+                1785228600
+              ]
+            }
+          ],
+          "excluded_raw_rows": [
+            {
+              "epoch": 1785172079,
+              "utc": "2026-07-27T17:07:59+00:00",
+              "reason": "off_utc_minute_grid",
+              "raw": {
+                "epoch": 1785172079,
+                "open": 24438.942,
+                "high": 24438.942,
+                "low": 24438.942,
+                "close": 24438.942
+              }
+            }
+          ],
+          "raw_file": "data/spike_nonlinear600_recent/crash600_m1_180d.csv",
+          "raw_sha256": "32cf300a115d7df9722a18c66077bd52143dbe9e068b761589cb84c11f9bd84b",
+          "recovered_request_errors": [
+            {
+              "end": 1785172078,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1785112079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1785052079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1784992079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            },
+            {
+              "end": 1784932079,
+              "attempt": 1,
+              "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+            }
+          ],
+          "page_audit": "data/spike_nonlinear600_recent/CRASH600_page_audit.json",
+          "page_audit_sha256": "4f43b3d613d04affe88417d0fe677baaa158488fe28fd5e6ab87ccb31622be88",
+          "from_utc": "2026-04-07 11:08:00+00:00",
+          "to_exclusive_utc": "2026-10-04 11:08:00+00:00"
+        }
+      }
+    },
+    "intervals": {
+      "BOOM600": {
+        "old_start": "2025-10-09 11:08:00+00:00",
+        "old_end": "2026-04-07 11:08:00+00:00",
+        "fresh_start": "2026-04-07 11:08:00+00:00",
+        "fresh_end": "2026-10-04 11:08:00+00:00",
+        "overlap_minutes": 0,
+        "adjacent": true,
+        "chronological_old_to_new": true
+      },
+      "CRASH600": {
+        "old_start": "2025-10-09 11:08:00+00:00",
+        "old_end": "2026-04-07 11:08:00+00:00",
+        "fresh_start": "2026-04-07 11:08:00+00:00",
+        "fresh_end": "2026-10-04 11:08:00+00:00",
+        "overlap_minutes": 0,
+        "adjacent": true,
+        "chronological_old_to_new": true
+      }
+    }
+  },
+  "symbols": [
+    "BOOM600",
+    "CRASH600"
+  ],
+  "modes": [
+    "SPIKE",
+    "DRIFT"
+  ],
+  "families": [
+    "SHORT44",
+    "LONG44"
+  ],
+  "feature_names": [
+    "aligned_return_1_atr",
+    "aligned_return_3_atr",
+    "aligned_return_6_atr",
+    "aligned_return_12_atr",
+    "aligned_body_atr",
+    "range_atr",
+    "favorable_wick_atr",
+    "adverse_wick_atr",
+    "favorable_close_position",
+    "atr_5_over_30",
+    "bb_width_over_prior_median_100",
+    "range_over_prior_median_20",
+    "body_over_range",
+    "mean_range_3_over_prior_median_20",
+    "large_completed_bar",
+    "log1p_large_bar_age",
+    "log_atr_over_price",
+    "aligned_distance_prior_favorable_12_atr",
+    "aligned_distance_prior_adverse_12_atr",
+    "h4_aligned_return_3_atr",
+    "h4_range_atr",
+    "h4_favorable_close_position",
+    "h4_aligned_distance_prior_favorable_12_atr",
+    "h1_aligned_body_atr",
+    "h1_range_atr",
+    "h1_favorable_close_position",
+    "h1_aligned_distance_favorable_boundary_m5_atr",
+    "h1_aligned_distance_adverse_boundary_m5_atr",
+    "h1_recent_m5_sweep_reclaim",
+    "m15_aligned_return_3_atr",
+    "m15_atr_5_over_30",
+    "m15_range_atr",
+    "m15_aligned_body_atr",
+    "m15_favorable_close_position",
+    "m15_aligned_distance_prior_favorable_5_atr",
+    "m15_favorable_fvg_atr",
+    "m1_aligned_body_atr",
+    "m1_range_atr",
+    "m1_aligned_return_3_atr",
+    "m1_atr_5_over_30",
+    "m1_body_over_range",
+    "m1_aligned_distance_prior_favorable_5_atr",
+    "m1_favorable_fvg_atr",
+    "m1_body_over_prior_median_20"
+  ],
+  "feature_formulas": {
+    "aligned_return_1_atr": "s * (close - close.shift(1)) / A",
+    "aligned_return_3_atr": "s * (close - close.shift(3)) / A",
+    "aligned_return_6_atr": "s * (close - close.shift(6)) / A",
+    "aligned_return_12_atr": "s * (close - close.shift(12)) / A",
+    "aligned_body_atr": "s * (close - open) / A",
+    "range_atr": "R / A",
+    "favorable_wick_atr": "(high-max(open,close) for Boom; min(open,close)-low for Crash) / A",
+    "adverse_wick_atr": "(min(open,close)-low for Boom; high-max(open,close) for Crash) / A",
+    "favorable_close_position": "(close-low for Boom; high-close for Crash) / R",
+    "atr_5_over_30": "TR.rolling(5).mean() / TR.rolling(30).mean()",
+    "bb_width_over_prior_median_100": "W / W.shift(1).rolling(100).median(); W=4*std(close,20,ddof=0)/mean(close,20)",
+    "range_over_prior_median_20": "R / R.shift(1).rolling(20).median()",
+    "body_over_range": "B / R",
+    "mean_range_3_over_prior_median_20": "R.rolling(3).mean() / R.shift(3).rolling(20).median()",
+    "large_completed_bar": "float(R > 3 * A.shift(1)); unknown if candle or lagged A is missing",
+    "log1p_large_bar_age": "log1p(min(M5 bars since last large_completed_bar,288)); unknown before first or after a gap",
+    "log_atr_over_price": "log(A / close)",
+    "aligned_distance_prior_favorable_12_atr": "s * (close - favorable preceding12bar extreme) / A; high for Boom, low for Crash",
+    "aligned_distance_prior_adverse_12_atr": "s * (close - adverse preceding12bar extreme) / A; low for Boom, high for Crash",
+    "h4_aligned_return_3_atr": "s*(H4.close-H4.close.shift(3))/H4.A",
+    "h4_range_atr": "H4.R/H4.A",
+    "h4_favorable_close_position": "(H4.close-H4.low for Boom; H4.high-H4.close for Crash)/H4.R",
+    "h4_aligned_distance_prior_favorable_12_atr": "s*(H4.close-H4.previous12favorableextreme)/H4.A",
+    "h1_aligned_body_atr": "s*(H1.close-H1.open)/H1.A",
+    "h1_range_atr": "H1.R/H1.A",
+    "h1_favorable_close_position": "(H1.close-H1.low for Boom; H1.high-H1.close for Crash)/H1.R",
+    "h1_aligned_distance_favorable_boundary_m5_atr": "s*(M5.close-H1.latest_favorable_boundary)/M5.A",
+    "h1_aligned_distance_adverse_boundary_m5_atr": "s*(M5.close-H1.latest_adverse_boundary)/M5.A",
+    "h1_recent_m5_sweep_reclaim": "float(min(M5.low,3)<H1.low for Boom; max(M5.high,3)>H1.high for Crash; AND H1.low<M5.close<H1.high); unknown if any input missing",
+    "m15_aligned_return_3_atr": "s*(M15.close-M15.close.shift(3))/M15.A",
+    "m15_atr_5_over_30": "M15.TR.rolling(5).mean()/M15.TR.rolling(30).mean()",
+    "m15_range_atr": "M15.R/M15.A",
+    "m15_aligned_body_atr": "s*(M15.close-M15.open)/M15.A",
+    "m15_favorable_close_position": "(M15.close-M15.low for Boom; M15.high-M15.close for Crash)/M15.R",
+    "m15_aligned_distance_prior_favorable_5_atr": "s*(M15.close-M15.previous5favorableextreme)/M15.A",
+    "m15_favorable_fvg_atr": "max(0,M15.low-M15.high.shift(2) for Boom; M15.low.shift(2)-M15.high for Crash)/M15.A",
+    "m1_aligned_body_atr": "s*(M1.close-M1.open)/M1.A",
+    "m1_range_atr": "M1.R/M1.A",
+    "m1_aligned_return_3_atr": "s*(M1.close-M1.close.shift(3))/M1.A",
+    "m1_atr_5_over_30": "M1.TR.rolling(5).mean()/M1.TR.rolling(30).mean()",
+    "m1_body_over_range": "abs(M1.close-M1.open)/M1.R",
+    "m1_aligned_distance_prior_favorable_5_atr": "s*(M1.close-M1.previous5favorableextreme)/M1.A",
+    "m1_favorable_fvg_atr": "max(0,M1.low-M1.high.shift(2) for Boom; M1.low.shift(2)-M1.high for Crash)/M1.A",
+    "m1_body_over_prior_median_20": "abs(M1.close-M1.open)/abs(M1.close-M1.open).shift(1).rolling(20).median()"
+  },
+  "prices_decoded": false,
+  "new_features_labels_models_or_ledgers_computed": false,
+  "goal_achieved": false,
+  "live_candidate": false,
+  "user_target": {
+    "profit_factor": 1.5,
+    "completed_per_symbol_model": 1000,
+    "active_heldout_days": 60
+  },
+  "quote_decode_policy": "whole_saved_M1_decode_then_immediate_prefix_clip_before_features_or_targets",
+  "model_scores": "continuous_uncalibrated_scores_not_probabilities"
+}

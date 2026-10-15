@@ -1,0 +1,3642 @@
+[
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775560079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 2
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775500080,
+    "newest_epoch": 1775560020,
+    "response_sha256": "ead7dc0758092c708e530082812fe999911edd3e8089ac7a5453c0d6b7fe34e8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775500079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 3
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775440080,
+    "newest_epoch": 1775500020,
+    "response_sha256": "eba1e998fa5d196cb9b3a0f44ee255b49a9f49e103c7f81d3031809bb19abd33"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775440079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 4
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775380080,
+    "newest_epoch": 1775440020,
+    "response_sha256": "0af6f9ecc5dfda65f1afdd24ce60ce0ec28f28ec404f238393942b6df1aa452d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775380079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 5
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775320080,
+    "newest_epoch": 1775380020,
+    "response_sha256": "49a724b77e1bf273966d0f1cb57a9c3dde98d1c929189eeae6c53e119b719883"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775320079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 6
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775260080,
+    "newest_epoch": 1775320020,
+    "response_sha256": "eea1522fb1d88aaf4c15883039d8e3df14aedbe93a29c8453981d65cfd682a9c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775260079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 7
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775200080,
+    "newest_epoch": 1775260020,
+    "response_sha256": "5903c324293d316d70f49c67d89b7eb37a2f315a7cc752c3cc0c2f7ba597cddf"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775200079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 8
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775140080,
+    "newest_epoch": 1775200020,
+    "response_sha256": "72ec882bf88b2873eb24c6daaee12055d1c41d1db90eaa7b48c10fa11e42cc45"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775140079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 9
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775080080,
+    "newest_epoch": 1775140020,
+    "response_sha256": "3e3896393b48f5c2627c712ccf4e3407ac91cc14aa406f2b9718da9894b530e9"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775080079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 10
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1775020080,
+    "newest_epoch": 1775080020,
+    "response_sha256": "523ed87839e303a520c66c12782a5c47a4ea47289f922bf1d7ff1a00bca2ff13"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1775020079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 11
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774960080,
+    "newest_epoch": 1775020020,
+    "response_sha256": "764597c25ab85ae0ca4e4640c6ab4ce7309f0caca08632da1a4a97332c00a01d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774960079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 12
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774900080,
+    "newest_epoch": 1774960020,
+    "response_sha256": "1edd4fa03003584231736504a6c9bd11ae3561b65489adfff119376b69938102"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774900079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 13
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774840080,
+    "newest_epoch": 1774900020,
+    "response_sha256": "2a2d880517cfba1cf33d071b64b349fc42777746194d39010f257119e7f2b8d3"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774840079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 14
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774780080,
+    "newest_epoch": 1774840020,
+    "response_sha256": "956122d8b3be3651ec5b1dd121bf854ff3838cd9084c89d5eb65e7d5837925ee"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774780079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 15
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774720080,
+    "newest_epoch": 1774780020,
+    "response_sha256": "d5fb8f1750378f04bb5636dbf2da808735c62a88f495a296c0bd56b06ccad7e2"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774720079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 16
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774660080,
+    "newest_epoch": 1774720020,
+    "response_sha256": "31def2b28920c94c15536557882ca1eda413f9cac7e09906d05a8cba3610175a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774660079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 17
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774600080,
+    "newest_epoch": 1774660020,
+    "response_sha256": "954601f63ee75c499eef9be9b7cf4d3dad860968a6d930eb1051395381fc5ef4"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774600079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 18
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774540080,
+    "newest_epoch": 1774600020,
+    "response_sha256": "048ad73e1f023c22f39153a827dc12160291a763237f1dfdbe6f93f5c20ee3a5"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774540079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 19
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774480080,
+    "newest_epoch": 1774540020,
+    "response_sha256": "b70952d45714b346e564033bfb1b4bd96440cead20cf7aa7b7782133bd27bc3d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774480079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 20
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774420080,
+    "newest_epoch": 1774480020,
+    "response_sha256": "03b97d2c987a55c89e842663994a33fa5ca49331d38943b3fcbd8d20693ae67d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774420079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 21
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774360080,
+    "newest_epoch": 1774420020,
+    "response_sha256": "86072046a29b8500ccb2f3574f6aa245154d78a19d22a51421ed34fe0d106f40"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774360079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 22
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774300080,
+    "newest_epoch": 1774360020,
+    "response_sha256": "6b87df6b5cbd39cecd7c5a937f0a580c948d37833260018a587b32578dbb1c88"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774300079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 23
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774240080,
+    "newest_epoch": 1774300020,
+    "response_sha256": "73c4e867e829ba9d0868d4923c0d45769d377413520a8615b7d768e90ad98abb"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774240079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 24
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774180080,
+    "newest_epoch": 1774240020,
+    "response_sha256": "d8cadf5bb55ac71764da8f2d1fa9fccae2d933248b8b95e0e96677e871c2417a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774180079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 25
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774120080,
+    "newest_epoch": 1774180020,
+    "response_sha256": "90f6e79df60f01d0539b7d49f5e0d1713f545fda74ea7721fbe8a1b332322c7e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774120079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 26
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774060080,
+    "newest_epoch": 1774120020,
+    "response_sha256": "56fdca612527b9f7c2da543811272207bb9d7c134d0b6fb3f3112749998453a6"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774060079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 27
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1774000080,
+    "newest_epoch": 1774060020,
+    "response_sha256": "c7d716352f90f50ec41336314ecca6fe469d18f8f931d86a50160de26e37c4ff"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1774000079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 28
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773940080,
+    "newest_epoch": 1774000020,
+    "response_sha256": "968c29d7e4f8858f171e4dcfbcfd0badf65d9bf1aee0b31c810584738ba6569b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773940079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 29
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773880080,
+    "newest_epoch": 1773940020,
+    "response_sha256": "940624c0c709231247efc0c43b282b5fba2b22644e3a95c02cb7465768ed8308"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773880079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 30
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773820080,
+    "newest_epoch": 1773880020,
+    "response_sha256": "fcbf51b106975743d0f374baf7b9707b39bb42c4cfc966f37dc4de5559005b62"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773820079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 31
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773760080,
+    "newest_epoch": 1773820020,
+    "response_sha256": "37a7cac74e485d1edbaa7d338e36c4b0a5ebe0a15fe8938b3e12e37f2666ca0f"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773760079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 32
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773700080,
+    "newest_epoch": 1773760020,
+    "response_sha256": "b33e6ff977db4d599486725e98322fef03a553e235409160e5f54a7189ce0d29"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773700079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 33
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773640080,
+    "newest_epoch": 1773700020,
+    "response_sha256": "d83ab1f8a3de1a91c00ce92e2809a78d8b788381c0b4453f5a8f2be6d5034f95"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773640079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 34
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773580080,
+    "newest_epoch": 1773640020,
+    "response_sha256": "0159b6c02e001ab7589222cc49f8d663fe506c4079c46c2bdd70be30c43f984e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773580079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 35
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773520080,
+    "newest_epoch": 1773580020,
+    "response_sha256": "dae48d599ae3f163fa4e7fa43cbacc8494fd5281c8b8c9e8ba99e45234df7834"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773520079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 36
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773460080,
+    "newest_epoch": 1773520020,
+    "response_sha256": "27aed0c437df479e24fad5357d4249222db6c668d2d908f65f469dcb4e37f72e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773460079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 37
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773400080,
+    "newest_epoch": 1773460020,
+    "response_sha256": "12d9c416fbe94e6dd4df3860c41cce39ba7df36b5ff464d1879807639a9bed87"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773400079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 38
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773340080,
+    "newest_epoch": 1773400020,
+    "response_sha256": "190754434fae65b6444828db2f185c2617673dc32f73f1642adb4855b5a8f14b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773340079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 39
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773280080,
+    "newest_epoch": 1773340020,
+    "response_sha256": "56eecd1b3f12728898a56553d3461139827b30320f90d0cfe16e24bc1ae1a82b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773280079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 40
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773220080,
+    "newest_epoch": 1773280020,
+    "response_sha256": "e55d6de130999d57a2dfa1e5107d8bf76ec8b3b4660b0304d8789061c0b06906"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773220079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 41
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773160080,
+    "newest_epoch": 1773220020,
+    "response_sha256": "a82a30ae351fad9be42ebfdccfd97f5f1162ef7b59412366e136a3723378cf40"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773160079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 42
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773100080,
+    "newest_epoch": 1773160020,
+    "response_sha256": "e90c9a85975093c1934a130388a1cbdac167e9d84f4b84ad6a78fe3d5847ab9a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773100079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 43
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1773040080,
+    "newest_epoch": 1773100020,
+    "response_sha256": "ca5ab2bf5ee87d6d5fef16317d0bcf914b82a20ac3f8a26b7c0ba5ef39200100"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1773040079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 44
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772980080,
+    "newest_epoch": 1773040020,
+    "response_sha256": "c454eb07cabd6ede0f2e6d1d8bdf0d41db0d5f43cb1f7c4137e6d4e4bcc92c39"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772980079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 45
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772920080,
+    "newest_epoch": 1772980020,
+    "response_sha256": "0960fc583ae80edfcefb7691e92f1456b26e18c21bb6c506f09a61b95ef570ad"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772920079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 46
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772860080,
+    "newest_epoch": 1772920020,
+    "response_sha256": "bcf67652867df8d25fd5b2e193b90998a4b6d2d237133b62d759ea654dc8e245"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772860079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 47
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772800080,
+    "newest_epoch": 1772860020,
+    "response_sha256": "d9464e4cdc49f2510f36ff2f6754f014ac33aeebeef2fea185cb9fa07b07844b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772800079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 48
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772740080,
+    "newest_epoch": 1772800020,
+    "response_sha256": "0bd055f2e9e54ee9a50334f103371a1bcdc3ebe762817bf151373211e43a9674"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772740079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 49
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772680080,
+    "newest_epoch": 1772740020,
+    "response_sha256": "4d9e7379d68dc53faeff845e3ef572695f3cb509d16b8ad298bfd211c831206a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772680079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 50
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772620080,
+    "newest_epoch": 1772680020,
+    "response_sha256": "e5d76a9759dba1490479cd3762ef62248a3e886421d5887a51bb38d5a57fa837"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772620079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 51
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772560080,
+    "newest_epoch": 1772620020,
+    "response_sha256": "e5838471a595019c4e03a741d0f751d9f77ccc11a3c20e74b1fa1850685cca3c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772560079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 52
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772500080,
+    "newest_epoch": 1772560020,
+    "response_sha256": "046348eb318a902f4790f5286cfdfe202f0f83b8d3416d7a124ed6e06162a9e9"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772500079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 53
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772440080,
+    "newest_epoch": 1772500020,
+    "response_sha256": "d609e9bab486c608bbd26cd871baf3e6de58fc04d2212e009dcff8128bfb11f2"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772440079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 54
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772380080,
+    "newest_epoch": 1772440020,
+    "response_sha256": "4e2b20fb7aaadc1624deffeaa9ed05f76a82eb5292e76541fd032a5ebc4f3395"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772380079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 55
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772320080,
+    "newest_epoch": 1772380020,
+    "response_sha256": "56ca7933af98dac00f52d6007e1dec550013414cc169f248a329d019238bfee6"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772320079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 56
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772260080,
+    "newest_epoch": 1772320020,
+    "response_sha256": "42cf63c2ba81d9c609b8ad233a6a994a3a2043ff9eaa91b37448baeaef08ccf2"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772260079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 57
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772200080,
+    "newest_epoch": 1772260020,
+    "response_sha256": "1ae5cf834219f1da66e8a29770a5b88a038395b2ec41c479cd9fdf82cf8b88d6"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772200079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 58
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772140080,
+    "newest_epoch": 1772200020,
+    "response_sha256": "8832ea198b61805baae547f8dc95d67602eed3026ed51a2580bda6d04bece0e2"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772140079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 59
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772080080,
+    "newest_epoch": 1772140020,
+    "response_sha256": "ab9e9953fd64947f011c2404f2b631d6c30fc7b97dd6634fa417325a16b54c59"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772080079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 60
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1772020080,
+    "newest_epoch": 1772080020,
+    "response_sha256": "b79a4b8362c31dd76961b00499688ba086a4d17dbb2661d25b95f7651fd4a286"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1772020079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 61
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771960080,
+    "newest_epoch": 1772020020,
+    "response_sha256": "5463e47e82b694f257c906d99cd662a493de9c06b5eb15a1a27e3925822d7294"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771960079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 62
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771900080,
+    "newest_epoch": 1771960020,
+    "response_sha256": "abdd32d7bf041051c12b81875ce1a8f8c40c33a81ab23ed5565dbfb85c5952d7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771900079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 63
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771840080,
+    "newest_epoch": 1771900020,
+    "response_sha256": "059ee47c8d1e409dee80add0756df01c41606cfe43377854ee8692abe8924095"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771840079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 64
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771780080,
+    "newest_epoch": 1771840020,
+    "response_sha256": "bdc678baa3e0e94f6ba15455fd008e3c2f0bd454dd0698c8b498d95cafc7d7a2"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771780079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 65
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771720080,
+    "newest_epoch": 1771780020,
+    "response_sha256": "1c9f529404cc776d641b3b37b6c044df6ec0734531279369ab37cff5cab8fc35"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771720079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 66
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771660080,
+    "newest_epoch": 1771720020,
+    "response_sha256": "30b6ea34f893716a64e50b8b542730151a0806113cb8a20fc455c394ca4b79c5"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771660079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 67
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771600080,
+    "newest_epoch": 1771660020,
+    "response_sha256": "f996c7a1e0c0c3908865d47babdcfabd23892a18dc4fca25c60885422cb01802"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771600079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 68
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771540080,
+    "newest_epoch": 1771600020,
+    "response_sha256": "951e98a4b10076883a7d13d6f470f2dd9950303d039f1654b474ccf61aaeaa18"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771540079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 69
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771480080,
+    "newest_epoch": 1771540020,
+    "response_sha256": "b214a5821ecff2d1de760a5eaf933211c28821fdd2a9481cc57ae77317c3861e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771480079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 70
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771420080,
+    "newest_epoch": 1771480020,
+    "response_sha256": "315cc475c7614dd49f64ecc30569dde210bb125389d8b338770cc7d20da157c3"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771420079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 71
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771360080,
+    "newest_epoch": 1771420020,
+    "response_sha256": "f7bb60f9ca41d7326478bd5673931cbc961346758236af8a49620b9e73be8eb8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771360079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 72
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771300080,
+    "newest_epoch": 1771360020,
+    "response_sha256": "220fb4625c957bf5b236cdc680dbeb8567be4042b5f4a0a556b59eafa780035e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771300079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 73
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771240080,
+    "newest_epoch": 1771300020,
+    "response_sha256": "01d85cc8806db7da548d3b57453c975de9dab9f5205a87cf603a72d06068483d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771240079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 74
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771180080,
+    "newest_epoch": 1771240020,
+    "response_sha256": "a33932383c9bfa9e2e7fca04f8fe251ed50c6f78c0e9a9e682102298b161f92a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771180079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 75
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771120080,
+    "newest_epoch": 1771180020,
+    "response_sha256": "ad71ccab39445e87aea491d6d1d5c93cee47f85d71b91b374b40eb61afe0bed8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771120079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 76
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771060080,
+    "newest_epoch": 1771120020,
+    "response_sha256": "bd6e45b49a47a564ddfd34d64733da5822d95098a8054582edd377ccfd9ad8e7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771060079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 77
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1771000080,
+    "newest_epoch": 1771060020,
+    "response_sha256": "30e479a09958702769e79ee74a14edea9b4ae37346c84577903fd31fabd591e5"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1771000079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 78
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770940080,
+    "newest_epoch": 1771000020,
+    "response_sha256": "71f5f5d88c2040e7e5be721a58d493fba39cd17028da8e048a64bacdba0ab464"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770940079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 79
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770880080,
+    "newest_epoch": 1770940020,
+    "response_sha256": "91f5f5d15ea62eba453f124b93d815ca8e9b09b055e55f8747efb92a311774ea"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770880079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 80
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770820080,
+    "newest_epoch": 1770880020,
+    "response_sha256": "9a0debbb11d7a50abf27c5a05ebf63b350887b7902a047de39da5385ee2adeb8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770820079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 81
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770760080,
+    "newest_epoch": 1770820020,
+    "response_sha256": "972b06d6083399970a5727f3602e53a8482179ec08b8b2f3fdf67d94bb1c1e81"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770760079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 82
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770700080,
+    "newest_epoch": 1770760020,
+    "response_sha256": "644f0c7bfeb0978c5df88970041dab59b36bf6d45f01d0ded074f92c91670ed8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770700079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 83
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770640080,
+    "newest_epoch": 1770700020,
+    "response_sha256": "6b7880985039dc1c082ecccc494e93a7cac73f755a3f5f4a029a18ba0094a39d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770640079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 84
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770580080,
+    "newest_epoch": 1770640020,
+    "response_sha256": "490c101362256887e920607ac220c00a01fcf8a52c46fc58e9fbd49af1a920d8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770580079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 85
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770520080,
+    "newest_epoch": 1770580020,
+    "response_sha256": "eceaf235dd5bb82a564e83e8a64a4517538345a997a6cb1d4135b2fa6b42fcaa"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770520079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 86
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770460080,
+    "newest_epoch": 1770520020,
+    "response_sha256": "0fd0e331782fb26105f288cda19001ef4fc373a3994cfd5345703706c71802bb"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770460079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 87
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770400080,
+    "newest_epoch": 1770460020,
+    "response_sha256": "6c1570833e463519271813a86b286cfcbcb6d027bb51944733c3959d0c5a583e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770400079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 88
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770340080,
+    "newest_epoch": 1770400020,
+    "response_sha256": "1b4d238d34742542074a21cf67f1f0ef9fb8c52e577f8aeea212bd50739a777f"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770340079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 89
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770280080,
+    "newest_epoch": 1770340020,
+    "response_sha256": "e9d4abefc3c20f78ff7c72afd36008f128413f5d8ad9fac4fa4f0760712fc18d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770280079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 90
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770220080,
+    "newest_epoch": 1770280020,
+    "response_sha256": "f2e81d855a8ff0e91afeec1e2948174415d64f9a78cb04f2964f15fd9030910d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770220079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 91
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770160080,
+    "newest_epoch": 1770220020,
+    "response_sha256": "a6bba3fd63e0fd566eb12720ed7a832c7f970c92f9d3c4ec2398e2af256d207d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770160079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 92
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770100080,
+    "newest_epoch": 1770160020,
+    "response_sha256": "669e349f733be3b82291da413b1a9c262d78af44ff2aefb25e7946852a768677"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770100079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 93
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1770040080,
+    "newest_epoch": 1770100020,
+    "response_sha256": "49011e54fe24dc10fcf0b83dde02d7cd9c3f2d34c20083f50d02db588d230151"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1770040079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 94
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769980080,
+    "newest_epoch": 1770040020,
+    "response_sha256": "2123d46162a171ed3ed8e5d6d0f01dcd846d85619df94c78ad685e8297e06732"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769980079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 95
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769920080,
+    "newest_epoch": 1769980020,
+    "response_sha256": "0f44d8ced359cf60d37ea9d0117030577f1e1874703858a3ad682e1c5202758c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769920079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 96
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769860080,
+    "newest_epoch": 1769920020,
+    "response_sha256": "d3ecec18114962d0c84ed1493bbb981f990b0d1c20eaded264719a78267f0e2b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769860079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 97
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769800080,
+    "newest_epoch": 1769860020,
+    "response_sha256": "16aeadc328aa2813f66240b4c35eb3fea338834af914d20cc4ba06c5ad74395b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769800079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 98
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769740080,
+    "newest_epoch": 1769800020,
+    "response_sha256": "b424fe6776d1f3ade202cade35a45297b1cccbfc547906c28b11048f8ea5a14e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769740079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 99
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769680080,
+    "newest_epoch": 1769740020,
+    "response_sha256": "cd7097306c0f0ca4b61f72ca7e64a7204d1643ace9537c90c87e67fd7b7942e8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769680079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 100
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769620080,
+    "newest_epoch": 1769680020,
+    "response_sha256": "d9f32201605752349507d4a39305ffbaedc87d928a09e250495b975bf12ebbd4"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769620079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 101
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769560080,
+    "newest_epoch": 1769620020,
+    "response_sha256": "7010700184927217e05bc40079d927dbee432b36fb82f274032f802b6ce07c1a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769560079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 102
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769500080,
+    "newest_epoch": 1769560020,
+    "response_sha256": "1905365877d59d33512f4c59c20393ffef33a945ae7de046b2753df84e279710"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769500079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 103
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769440080,
+    "newest_epoch": 1769500020,
+    "response_sha256": "d11a5e359135d53136f9b32ebcf1e7e4c3596640d4f712accfc001d7d9a611de"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769440079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 104
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769380080,
+    "newest_epoch": 1769440020,
+    "response_sha256": "3744e5c252ee6faf5efaf4b20feef83621ec6d8794632ca08ffdbeacc1d6f6d0"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769380079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 105
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769320080,
+    "newest_epoch": 1769380020,
+    "response_sha256": "ebd134bf4e66bd5af50c4b3135ecd01376fb5c4d4e48b8c58a1159c50218c393"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769320079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 106
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769260080,
+    "newest_epoch": 1769320020,
+    "response_sha256": "6e4feceb73dfd786f26585c517d3c65b069fa7d3c186f240f03a8be0c13e1393"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769260079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 107
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769200080,
+    "newest_epoch": 1769260020,
+    "response_sha256": "84b8ed698e2df33b6ae6a0cd700b1db732bbea2488345bcf224a1c4aa7f4dcba"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769200079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 108
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769140080,
+    "newest_epoch": 1769200020,
+    "response_sha256": "506fd30448063214aedb37ff0f07e99dd8f24d8db84dba84a38f85d4eac5e421"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769140079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 109
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769080080,
+    "newest_epoch": 1769140020,
+    "response_sha256": "c10f451558efeb4ddd30c60a8d8ae6bd39817096f38d12b36e1db246b4c3eb37"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769080079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 110
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1769020080,
+    "newest_epoch": 1769080020,
+    "response_sha256": "22a2e6f231d5fb9f605338b4c02679a45882b2908f8f0b6387be7d2b1a3a6b7e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1769020079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 111
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768960080,
+    "newest_epoch": 1769020020,
+    "response_sha256": "af5010ed1175a4817a623f387ed21b460a439ee1ad1ffb9fc60ac921361a7808"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768960079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 112
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768900080,
+    "newest_epoch": 1768960020,
+    "response_sha256": "4f4107721304fefe61ed64052cc9c08dc4328e88b7ab98fdd081e40182d401bd"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768900079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 113
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768840080,
+    "newest_epoch": 1768900020,
+    "response_sha256": "39c4283bb7df75e414ebaae174f5883b42205e6034077dc6dbeb6eacf0a908a4"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768840079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 114
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768780080,
+    "newest_epoch": 1768840020,
+    "response_sha256": "7d773ffab4934eed7e11d39fec0b2a4c48a4c52847064156ab599115c3ff89a7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768780079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 115
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768720080,
+    "newest_epoch": 1768780020,
+    "response_sha256": "67d860831c70b871c37329b4e378fa3b1aec26f905864d31b64aecac80dce5c9"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768720079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 116
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768660080,
+    "newest_epoch": 1768720020,
+    "response_sha256": "76137fa235ccf95dff12768c8dee0822bd4d58af64a3991561382f4f2501e6ef"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768660079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 117
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768600080,
+    "newest_epoch": 1768660020,
+    "response_sha256": "55b10cccee1430509896c24ab38bacd67434d20057d2438a205651415a4ae8b7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768600079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 118
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768540080,
+    "newest_epoch": 1768600020,
+    "response_sha256": "3bdc0f18f4134e046df888bd70416a5bc1f829c4ac7f3bb88c137596343b2de1"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768540079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 119
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768480080,
+    "newest_epoch": 1768540020,
+    "response_sha256": "b354111c9a61c2e213682b3e79daf78e11990333a4cbe50aa70a0a462e8093ac"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768480079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 120
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768420080,
+    "newest_epoch": 1768480020,
+    "response_sha256": "3c56683480de35ee3ba10abd10f27d70ea44cb5fa5cfa978bc3aa2caccd489e9"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768420079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 121
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768360080,
+    "newest_epoch": 1768420020,
+    "response_sha256": "079a2598d415358f03c696b4d83645cf7d40491a96858f363f8f30d636cb20e5"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768360079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 122
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768300080,
+    "newest_epoch": 1768360020,
+    "response_sha256": "9daaaaa69fcea81cb43f62dc45024fc88a9098e72599bc8d9b5e4f9e04229733"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768300079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 123
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768240080,
+    "newest_epoch": 1768300020,
+    "response_sha256": "9913fccfde223afd55408a6dea798c9e7e438b0608e7ff7c8df3d6dcbc7bd66e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768240079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 124
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768180080,
+    "newest_epoch": 1768240020,
+    "response_sha256": "7059469abf606c6e8cf03e06a8a2ff017879e9ca2ca7536335b8d6b0afc3897c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768180079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 125
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768120080,
+    "newest_epoch": 1768180020,
+    "response_sha256": "35c06b1f2dd76462d6cb5bf29ea88fc1a6313854a082b28974954974145a88bd"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768120079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 126
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768060080,
+    "newest_epoch": 1768120020,
+    "response_sha256": "ffc8b95081c801c1f4837dcebd9d3395e14d36632a19e82e454aa22c1587df09"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768060079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 127
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1768000080,
+    "newest_epoch": 1768060020,
+    "response_sha256": "9b51be544ce81078f1adf3cc914547f024eab53f3fb11990d4f6830b65c98931"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1768000079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 128
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767940080,
+    "newest_epoch": 1768000020,
+    "response_sha256": "f801a451657fc70802c48386af26ed7b5500b7be0a5f936c1195cd44161daa9f"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767940079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 129
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767880080,
+    "newest_epoch": 1767940020,
+    "response_sha256": "ace4840c88cb3e48588a344eff0e66ce8f707e0047179d7e561d0a177f1db4bc"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767880079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 130
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767820080,
+    "newest_epoch": 1767880020,
+    "response_sha256": "0e98d6cf3e03f612a7f44dcd96f8924bf2782a36ccc948665ba486251142dacc"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767820079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 131
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767760080,
+    "newest_epoch": 1767820020,
+    "response_sha256": "1db2127f31b127ad1e308037de56ff344267dc7df4c836270906163a1b2c056b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767760079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 132
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767700080,
+    "newest_epoch": 1767760020,
+    "response_sha256": "f78ee6539b905fbbd6c930fba8c1ae3d7402b891c633d7e02e2f091ac8f86912"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767700079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 133
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767640080,
+    "newest_epoch": 1767700020,
+    "response_sha256": "20ffb5cca645ababe53a98c8e06096af44811f2e16561cf18f69de69487099ad"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767640079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 134
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767580080,
+    "newest_epoch": 1767640020,
+    "response_sha256": "e6de0088b3c225a783deedf2e07a33eb989676e90f13a6b7dc4e8e8e8650195d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767580079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 135
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767520080,
+    "newest_epoch": 1767580020,
+    "response_sha256": "ed2759ece5f6b1200a33142bf096ce5861fcb3bc0b8d97835be4a8616cc6ae47"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767520079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 136
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767460080,
+    "newest_epoch": 1767520020,
+    "response_sha256": "c1e04c2343f2301f21df2c146895b7970dabac9f96666c1ffdab49f0daae55a2"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767460079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 137
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767400080,
+    "newest_epoch": 1767460020,
+    "response_sha256": "226f6c9e83b505d976b6e89adce8430cfa598cb8d7a76ba3ca63b72c0673f8eb"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767400079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 138
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767340080,
+    "newest_epoch": 1767400020,
+    "response_sha256": "3d785fec02b40c14de34c1a595d629f5dcd73070fe29f5c1a6474fe8e08739b8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767340079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 139
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767280080,
+    "newest_epoch": 1767340020,
+    "response_sha256": "7a5e4a681fd25e1da92843faadff5d4c366a4eb08819eb9a366c96173fd4120c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767280079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 140
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767220080,
+    "newest_epoch": 1767280020,
+    "response_sha256": "c6b10dcb07c73c2eb0ed3f0598747feeb363707bea358354a9a940f533b819ca"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767220079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 141
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767160080,
+    "newest_epoch": 1767220020,
+    "response_sha256": "29b0372fa9d3ca9689b3200715cc421cfac9e1f89bcb7eb0ac77347793d2c734"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767160079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 142
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767100080,
+    "newest_epoch": 1767160020,
+    "response_sha256": "8639e745122ff7e4087f017dfb87fce0f66422cb0775a4321d024af3952606db"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767100079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 143
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1767040080,
+    "newest_epoch": 1767100020,
+    "response_sha256": "17def435ba6a7f4a9918c21782b47957adea89239dc9ce8760af1952e30662a3"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1767040079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 144
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766980080,
+    "newest_epoch": 1767040020,
+    "response_sha256": "ecec6c238ab8d791fa04f4c7402fa04ed20023428035d5e586e27b7d5207cf3c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766980079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 145
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766920080,
+    "newest_epoch": 1766980020,
+    "response_sha256": "8f6a67fcf8bcb7b2b1648fd56b00fc7127018de2e29169a361e60507d0d749f7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766920079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 146
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766860080,
+    "newest_epoch": 1766920020,
+    "response_sha256": "1b73635341810f77f3448d2ac18fbe31f36d948265dc1584d76fd8dc8a834bd7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766860079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 147
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766800080,
+    "newest_epoch": 1766860020,
+    "response_sha256": "c374de5ecf3c77ab984453b12991923e3c04a29710542aec1418035791fc8f35"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766800079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 148
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766740080,
+    "newest_epoch": 1766800020,
+    "response_sha256": "fd3196ac78d1d7aec34d352d9802b6b6f62dc0087925d1e562ec76c67ba532cf"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766740079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 149
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766680080,
+    "newest_epoch": 1766740020,
+    "response_sha256": "35722ff0e72abd758e695524465a53f7d2b92d2bc2194cca0709582af5d689fb"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766680079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 150
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766620080,
+    "newest_epoch": 1766680020,
+    "response_sha256": "d52c11c0190ebdcbb5159b048d23729a295b2533b4d185cd9944a0cf8a9e6eef"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766620079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 151
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766560080,
+    "newest_epoch": 1766620020,
+    "response_sha256": "0d5ffbf70d65d96badd87410f6c965f4ab0b0958fae11ff43d08338803a365c1"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766560079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 152
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766500080,
+    "newest_epoch": 1766560020,
+    "response_sha256": "f574f5fadd919afe625f8cae4f08722493c5ff639577141dc7d51801074a7d6e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766500079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 153
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766440080,
+    "newest_epoch": 1766500020,
+    "response_sha256": "c69e6c4870d12217c5c0f608715e542ece13795937d2860faecad359dec92571"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766440079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 154
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766380080,
+    "newest_epoch": 1766440020,
+    "response_sha256": "66eda5982146937c235e5eb1a220e7f8f1ffa89dbf13c7a6a1fc500c94b7e01a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766380079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 155
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766320080,
+    "newest_epoch": 1766380020,
+    "response_sha256": "195d73c4adefeed73b24a8fc679018662b70a5fa97e6d3a1482df3553f929c67"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766320079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 156
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766260080,
+    "newest_epoch": 1766320020,
+    "response_sha256": "7690c5df0ff8c9dad2c3091e8d94bdeba366f0234b22b3ca391e44781dc54d12"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766260079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 157
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766200080,
+    "newest_epoch": 1766260020,
+    "response_sha256": "f9925660610741fe07307acc282e108b35f3d0ea5d6884b53978b970910f9a70"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766200079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 158
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766140080,
+    "newest_epoch": 1766200020,
+    "response_sha256": "b83f95983eea8a03d75a5258f3dab9319a7f0d86091815010b2df7e71f07ddf6"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766140079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 159
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766080080,
+    "newest_epoch": 1766140020,
+    "response_sha256": "3920815818fa92fb391ec9059be3f06e76f6f969d1e9c37d4e4f879dd69ed075"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766080079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 160
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1766020080,
+    "newest_epoch": 1766080020,
+    "response_sha256": "58c94fbd733f64b4fad3511e8b91e9c74d767e3e3a5b2abc06637d896136ed8b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1766020079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 161
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765960080,
+    "newest_epoch": 1766020020,
+    "response_sha256": "8fa57c70e26ad56c346937f6034e8c8bd18f5e7ec5534e24a8c82668c6e4fd15"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765960079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 162
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765900080,
+    "newest_epoch": 1765960020,
+    "response_sha256": "86e07ff59fe7ebd77ef9070b8dc8f7c305c9277321bea268af3f1499ce30d6a6"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765900079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 163
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765840080,
+    "newest_epoch": 1765900020,
+    "response_sha256": "1519d7fdd63e9942913cf0b3a870c9fbb9b193262f85d0f80b92d59012a12fb0"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765840079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 164
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765780080,
+    "newest_epoch": 1765840020,
+    "response_sha256": "bde646bdbae766af8d0806aa283361305e9ef8511452e8deba7fb14b9ba4e1b0"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765780079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 165
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765720080,
+    "newest_epoch": 1765780020,
+    "response_sha256": "bf2395b080e2f9d82f5f12e7512fedfcbd04e17edeb8648a326dc965b93223ff"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765720079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 166
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765660080,
+    "newest_epoch": 1765720020,
+    "response_sha256": "1b41bf9540591550fd8ec738834c3e635fdca9fa2c0ba460bb6fd1449d139562"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765660079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 167
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765600080,
+    "newest_epoch": 1765660020,
+    "response_sha256": "36e8cf39c1f2863f4aedb862955a524191fb89779e67b67a672f08352bb10f68"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765600079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 168
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765540080,
+    "newest_epoch": 1765600020,
+    "response_sha256": "787d03197f4070265053a19d4285230a4100b6efe4d57a2a62de4f20a1fbe8a0"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765540079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 169
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765480080,
+    "newest_epoch": 1765540020,
+    "response_sha256": "5bb70ae401b154bc09b85fea6af2e4b3dcbeeff2285c01fe970b5527b3f085f6"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765480079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 170
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765420080,
+    "newest_epoch": 1765480020,
+    "response_sha256": "a7ccbd863de072a93cf299086f169de89bc6e31f0f772af4cc2c4b46c785a3a3"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765420079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 171
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765360080,
+    "newest_epoch": 1765420020,
+    "response_sha256": "fa15f38325b380c4db0c9cf8d880a3d33c935c31c59fe569f47dd239ff818ff9"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765360079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 172
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765300080,
+    "newest_epoch": 1765360020,
+    "response_sha256": "9847dcf77f9faf5b10308e84ee873e23dc6bad99db286835b47a02d0de426031"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765300079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 173
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765240080,
+    "newest_epoch": 1765300020,
+    "response_sha256": "fb749193f991bb13c8cf356f6a10cf1ce642d768313c5fa345def36f36cee8fe"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765240079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 174
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765180080,
+    "newest_epoch": 1765240020,
+    "response_sha256": "8f3d5ef2fea892ea185a20b18608b31b5c428141f7b6f1aa9b0a071edcd36648"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765180079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 175
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765120080,
+    "newest_epoch": 1765180020,
+    "response_sha256": "37b790c572dbf45a97a545b94907818e0879c40e248ed4ede571912d8588fc16"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765120079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 176
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765060080,
+    "newest_epoch": 1765120020,
+    "response_sha256": "099c10c77326c1de7ee62cd0b7a9af47c5ca7e396ae3a9337672fee31857c8ed"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765060079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 177
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1765000080,
+    "newest_epoch": 1765060020,
+    "response_sha256": "d6c381cdd2672ddbe5f426399d2e237c0c260b3b5b8263b71f003a35804414d4"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1765000079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 178
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764940080,
+    "newest_epoch": 1765000020,
+    "response_sha256": "f60b8de9eb33d8662b51456f672cf783c6b3e16dfb754fe10588026788d91e47"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764940079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 179
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764880080,
+    "newest_epoch": 1764940020,
+    "response_sha256": "8cc294739e0767dd6d85d6cb99fc41939b3a876d06071ef602e97c9e5b0c4d28"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764880079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 180
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764820080,
+    "newest_epoch": 1764880020,
+    "response_sha256": "fd2b30353838135dc7db8ebd849526b12d46b1af511b6ac5d08c1ec4cb2a35be"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764820079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 181
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764760080,
+    "newest_epoch": 1764820020,
+    "response_sha256": "54aa734f1c4763c1cde4e6a434de325daf1919269567ddfed7bcf85d39eaa51a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764760079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 182
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764700080,
+    "newest_epoch": 1764760020,
+    "response_sha256": "cb2b3acd20a791df58fbcc619aeedc9ed03677f8cc0f9e1d921dd3b1ced54da7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764700079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 183
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764640080,
+    "newest_epoch": 1764700020,
+    "response_sha256": "33b64c5fc9efc4a6eb4e691eef87f00fe8a8004f90776c39c8f358c24151e5b3"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764640079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 184
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764580080,
+    "newest_epoch": 1764640020,
+    "response_sha256": "a19eb50aef39f78c083837ce7c436fa18e1ea60add2dc778c7c7ff4316fcde4c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764580079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 185
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764520080,
+    "newest_epoch": 1764580020,
+    "response_sha256": "61c35b8f7917775972a41d018317cd64b2b1b2d81c6636f97c4b0fae7e989ae8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764520079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 186
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764460080,
+    "newest_epoch": 1764520020,
+    "response_sha256": "f158cd073ab2d57682ddca61556e1930cb9bacbd3027b4620deebb3f0cfe8343"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764460079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 187
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764400080,
+    "newest_epoch": 1764460020,
+    "response_sha256": "d6d4df88d560ce1c6ba48fe07025f95b59b1c1ab831d6c750e6a7f1f278566fb"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764400079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 188
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764340080,
+    "newest_epoch": 1764400020,
+    "response_sha256": "ce6fe51ba3bb27e0473ab91213c49b4082c6f584f7637eb3d7bb200b71e9115d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764340079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 189
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764280080,
+    "newest_epoch": 1764340020,
+    "response_sha256": "c8df73fadf2719ea23fb1ec0570c8fbd4f9a893aaabd7ff01b1a406baa859b47"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764280079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 190
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764220080,
+    "newest_epoch": 1764280020,
+    "response_sha256": "ff1d2aef12c9e13a9008250f517e31efc2ecc29d40aa9d6c7eb3461d8fc57f7a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764220079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 191
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764160080,
+    "newest_epoch": 1764220020,
+    "response_sha256": "3c0de41a252540ea13458e53f4ce7442e4d7e76f8abc9980d8eef1000d4504e9"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764160079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 192
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764100080,
+    "newest_epoch": 1764160020,
+    "response_sha256": "bf17d8185cda211c195fa941bf508128cf6b45b412c92b9942136c7822a1bac7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764100079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 193
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1764040080,
+    "newest_epoch": 1764100020,
+    "response_sha256": "05c707fb7ccb790dd81f4afa1e30efc1f40fef1a48c890b3bc8208773746aa87"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1764040079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 194
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763980080,
+    "newest_epoch": 1764040020,
+    "response_sha256": "dc5473e5f64d069790a1b10904745158ace7285e4c198a96448e18eefad9616c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763980079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 195
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763920080,
+    "newest_epoch": 1763980020,
+    "response_sha256": "3917c61276a1f7cd35f8b48930c9ae679b4afa49b7aa6bc4bf780b8a2cf44b03"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763920079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 196
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763860080,
+    "newest_epoch": 1763920020,
+    "response_sha256": "9b003cf22ca9f883d7833c39311ca483d3823c18166fcd8bfdfb48e14ded5f78"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763860079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 197
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763800080,
+    "newest_epoch": 1763860020,
+    "response_sha256": "67c2f89f36f0013859e4c71aad9a0788826cb536cf8424a697f83b55c1f38f0c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763800079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 198
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763740080,
+    "newest_epoch": 1763800020,
+    "response_sha256": "28a0b4607b06f8b7d0dc4f7ab2c45038eb28312a27e05f66fb4052917602038a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763740079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 199
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763680080,
+    "newest_epoch": 1763740020,
+    "response_sha256": "db7055623a3ca6d67017bb0f67fffe83d6e50d8070310c25639e1b8d72acd2f7"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763680079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 200
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763620080,
+    "newest_epoch": 1763680020,
+    "response_sha256": "cfa37240b0bc85be94a138cef92d1fa8f8e41f1fb21a0c3d8f24ab7b062f2f6b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763620079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 201
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763560080,
+    "newest_epoch": 1763620020,
+    "response_sha256": "7850930def6f09a9423d163f7f5885bbb3c40a0df2b6ddc052573db2c43421de"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763560079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 202
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763500080,
+    "newest_epoch": 1763560020,
+    "response_sha256": "e8b49b499a56a58b6084980c6a9146568803b2f41260ed63b847c2218f2edf16"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763500079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 203
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763440080,
+    "newest_epoch": 1763500020,
+    "response_sha256": "b114f3cd5b21157f0140f956810581d8c510594791e02ec1f7305ff31c456422"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763440079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 204
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763380080,
+    "newest_epoch": 1763440020,
+    "response_sha256": "2666fdacc1d6c42aff35784752d8af2378a2d7010474751ac1dd36563f5b89bd"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763380079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 205
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763320080,
+    "newest_epoch": 1763380020,
+    "response_sha256": "2f0c0b54ca6afae367f716ee1505ca9efbfe3b9a24927a9943ebd79e0cfe8f8d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763320079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 206
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763260080,
+    "newest_epoch": 1763320020,
+    "response_sha256": "019beb0b5c4e000a27501b7a1f80ce5cc632f7777976f9883ef45b25e7072a2e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763260079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 207
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763200080,
+    "newest_epoch": 1763260020,
+    "response_sha256": "af1233d2bcf88d5487f5731ad656d538031a9d3a4d05904c5717cc59f562f496"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763200079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 208
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763140080,
+    "newest_epoch": 1763200020,
+    "response_sha256": "1af2f615317439c29b018ae3fe7508510e44718931b77f1d07262fc9f965844f"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763140079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 209
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763080080,
+    "newest_epoch": 1763140020,
+    "response_sha256": "73c6a8a60027dcf2512c75b5d89bee0f22f91d16b605a9485891cf0aeddfe69f"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763080079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 210
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1763020080,
+    "newest_epoch": 1763080020,
+    "response_sha256": "3120ebe2a94e27276e2de48f81528aa525d31ac3ae66cfb4387a50914147935d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1763020079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 211
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762960080,
+    "newest_epoch": 1763020020,
+    "response_sha256": "596dcbd185455a3c0fa86bef182db7022f1756947a7a09df8dc43c6d8d7ae12d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762960079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 212
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762900080,
+    "newest_epoch": 1762960020,
+    "response_sha256": "707036458e816a5eb745f7db6a1ccd6b87a68603ab9609d3dc16419c77b6f90c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762900079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 213
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762840080,
+    "newest_epoch": 1762900020,
+    "response_sha256": "259eee28b63276ddee9f77849ec7b9d75d03f5fff8ad586ab743213cdae18722"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762840079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 214
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762780080,
+    "newest_epoch": 1762840020,
+    "response_sha256": "d9ae1c67b75ca2ee65dab9c6dfac0ae9c15b890b09126b5aaa44e4f75ba3b9a1"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762780079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 215
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762720080,
+    "newest_epoch": 1762780020,
+    "response_sha256": "236814c0ebc0d8515c22c57924acd06bab6f06c300175a8c56bacb9b454f2308"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762720079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 216
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762660080,
+    "newest_epoch": 1762720020,
+    "response_sha256": "dff3fd68b4424077905a32434d76b53b11a79e353a9aeaf6b9d1c5f08d612cc0"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762660079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 217
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762600080,
+    "newest_epoch": 1762660020,
+    "response_sha256": "ad3efe0e442290882a7ecb92f47e87f6f8275f9403d6be07935989de6cd30eab"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762600079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 218
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762540080,
+    "newest_epoch": 1762600020,
+    "response_sha256": "a059677d4cc203cae8f06b6a8a3bd642bea15d4d3c7f7b130749b12c542cc88a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762540079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 219
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762480080,
+    "newest_epoch": 1762540020,
+    "response_sha256": "ef6d25eb9abe5c19d9eaafb0dd37afc979e2f2a857b3c9f36fba420e46e941e4"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762480079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 220
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762420080,
+    "newest_epoch": 1762480020,
+    "response_sha256": "cdc00b3f6445ca59c41189bceb0b16caa84168cfa5e592515deed35fe1441ed1"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762420079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 221
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762360080,
+    "newest_epoch": 1762420020,
+    "response_sha256": "cbb88442699de9a475e5966a2d7a9264ebffde3198d37f3f60c50ce01126c9b1"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762360079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 222
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762300080,
+    "newest_epoch": 1762360020,
+    "response_sha256": "9e6c0b831dbb17286af863e95b2d3c2ef2cf381fa6faa490dd30051e179c452c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762300079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 223
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762240080,
+    "newest_epoch": 1762300020,
+    "response_sha256": "1ec81baf8fb574cd06973cecd896b971598d3fd496cb9f3d25b8a5a91d3b2eec"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762240079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 224
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762180080,
+    "newest_epoch": 1762240020,
+    "response_sha256": "243fc397f66da2006be7fdee9aace5eec7750407c3a83548882b3fc775b4f341"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762180079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 225
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762120080,
+    "newest_epoch": 1762180020,
+    "response_sha256": "3d67cad5a23cabbb84c00031ac7c058c626b7b4aa1a67525e5ce1aa2a41b70a9"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762120079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 226
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762060080,
+    "newest_epoch": 1762120020,
+    "response_sha256": "79a12f48970df33a686996ee14346db5fef46ed28e47323c3b19bb241055ba70"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762060079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 227
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1762000080,
+    "newest_epoch": 1762060020,
+    "response_sha256": "7cca2b5999d417a0601689ace2061fd2fd5b52a1e6dd1154b3c0dff77be9f172"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1762000079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 228
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761940080,
+    "newest_epoch": 1762000020,
+    "response_sha256": "78d66f4f31c0e8715417ba8406930bb18a9c53c9a784cefec9f8c198d5bd8325"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761940079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 229
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761880080,
+    "newest_epoch": 1761940020,
+    "response_sha256": "9225944ec38109788f3954449a5862f92b3dedfc1ac24e25cad6625b25ed06c4"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761880079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 230
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761820080,
+    "newest_epoch": 1761880020,
+    "response_sha256": "943df519cf22ad86813da8befd4ce620d2be4e15c94c895a90ab9d2d9c24392b"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761820079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 231
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761760080,
+    "newest_epoch": 1761820020,
+    "response_sha256": "71473e791498525f4cf91669238ace619a09653f9e27cc5e1afd3ac01d34d66c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761760079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 232
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761700080,
+    "newest_epoch": 1761760020,
+    "response_sha256": "dbdd603d6307b7b2b30effc0fd848302a55d5f3dbd200acab992663d35c7c10e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761700079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 233
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761640080,
+    "newest_epoch": 1761700020,
+    "response_sha256": "3de717e5d91991d044871e0b3d2f540bd37af1ac02984c618a805f0eb579c227"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761640079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 234
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761580080,
+    "newest_epoch": 1761640020,
+    "response_sha256": "c99d15205ec0ba29961a663264aebb037c85662f8e270fe14a379a4a9a1ce3e9"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761580079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 235
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761520080,
+    "newest_epoch": 1761580020,
+    "response_sha256": "88c7afc677036b15e04e6056330dc69a41fc96647e9e82fddc3db50e57853b64"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761520079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 236
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761460080,
+    "newest_epoch": 1761520020,
+    "response_sha256": "66fbaa96881e170dd674e7af0c8791868b45640a5ee1a12eba6592c7c939c116"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761460079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 237
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761400080,
+    "newest_epoch": 1761460020,
+    "response_sha256": "bb4cb635724506388971755a7c8294b87d30b9156574a26525c603b962fcad5e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761400079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 238
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761340080,
+    "newest_epoch": 1761400020,
+    "response_sha256": "b53a1413288071a487978ec10bab0aaf7e7a7c677ac32cea62011df95a06193c"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761340079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 239
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761280080,
+    "newest_epoch": 1761340020,
+    "response_sha256": "122db7285ca8ddf598e9417c47cc05aa5d55409754bbd026796e59ed82a6f2ec"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761280079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 240
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761220080,
+    "newest_epoch": 1761280020,
+    "response_sha256": "68fc04cbae300490033aa6dd48098bcab8f0a2798c21b5edf5c2e9c5d96b4db3"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761220079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 241
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761160080,
+    "newest_epoch": 1761220020,
+    "response_sha256": "51fe51aa57bd0d013d6a36f09def20028d245db56d3b7b2776dd5f52c84e229d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761160079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 242
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761100080,
+    "newest_epoch": 1761160020,
+    "response_sha256": "9d49ffd3f5e5c28fb31b1fb55e1733156dadcd45359582ea98a334175392d945"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761100079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 243
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1761040080,
+    "newest_epoch": 1761100020,
+    "response_sha256": "9bfcbb5543888fb23609f55007cc4cd824d46ad2025cbba9d4b31bf590dc56eb"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1761040079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 244
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760980080,
+    "newest_epoch": 1761040020,
+    "response_sha256": "369388b7ff60b5bf6079b09b3429a977eba7dba174496e2f26f2bec5929487d5"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760980079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 245
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760920080,
+    "newest_epoch": 1760980020,
+    "response_sha256": "5536f55f58b7220c12e09cbe9ad5d1f0aa7426eb54b438c4409ee5b99d1fa5bd"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760920079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 246
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760860080,
+    "newest_epoch": 1760920020,
+    "response_sha256": "b29a08bbb6732d6b3c00729040f4d4c6e9d612c0f568d07e84df0e49cd5ca210"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760860079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 247
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760800080,
+    "newest_epoch": 1760860020,
+    "response_sha256": "b2c457b170037224883003fa2bf50fabe7e346bae6b614c5ed7589339fd3bf5a"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760800079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 248
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760740080,
+    "newest_epoch": 1760800020,
+    "response_sha256": "90dfa96ebbe0286f1e9516c9215d3c753968de2ac610778a6af60287230cf4ca"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760740079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 249
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760680080,
+    "newest_epoch": 1760740020,
+    "response_sha256": "0174a3fe1d5c6f991c05840acb08d3d55da90a677b2231a526fbcceeff2e4e74"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760680079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 250
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760620080,
+    "newest_epoch": 1760680020,
+    "response_sha256": "b020b841abdefd3846a9a6e9e535b3da477fd42fa31ba06203e31e8311bc6444"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760620079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 251
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760560080,
+    "newest_epoch": 1760620020,
+    "response_sha256": "e57db373000a3206be884d2d68a9d9134c1f60ba18deba7d0d6483ac1e41980d"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760560079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 252
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760500080,
+    "newest_epoch": 1760560020,
+    "response_sha256": "34948db54f342df06d1aaa2a5884c700657b3f475102a849895269fa205ef555"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760500079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 253
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760440080,
+    "newest_epoch": 1760500020,
+    "response_sha256": "f90cd17a66ba05487c6902f5349b41124ce7fc67749581bbbf776f4a674434cc"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760440079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 254
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760380080,
+    "newest_epoch": 1760440020,
+    "response_sha256": "2bd4abf2c66252f35fdd8d888bd06ac40f54b0ba5610c58213f6160f7a13ad9e"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760380079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 255
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760320080,
+    "newest_epoch": 1760380020,
+    "response_sha256": "8261b93ba56fe2252a26576b2975b425c05296fbff1254d74aee765d3bd68c64"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760320079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 256
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760260080,
+    "newest_epoch": 1760320020,
+    "response_sha256": "e18c259be3b0ac63804d8509eec0010565d1bda3c53c30dfe309ab76294965d8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760260079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 257
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760200080,
+    "newest_epoch": 1760260020,
+    "response_sha256": "4eb52fa4390b030d0e1a6a04f77b6f0f3637979956e065d1ef3651ff35c4b5b8"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760200079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 258
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760140080,
+    "newest_epoch": 1760200020,
+    "response_sha256": "2f486d49ee70f79f0e744eb042928beb9f26f043051e84d4d7085e8ec9da4c22"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760140079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 259
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760080080,
+    "newest_epoch": 1760140020,
+    "response_sha256": "3a0d64e33e2bc13420deb8988cdcdc18c7925da857e382549af6a745badf9c59"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760080079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 260
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1760020080,
+    "newest_epoch": 1760080020,
+    "response_sha256": "7873c2530e0bbbd7c65f83bf2a2785f88f91ab523c95b1fbbc73656b7db681dd"
+  },
+  {
+    "request": {
+      "ticks_history": "CRASH300N",
+      "count": 1000,
+      "end": 1760020079,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 261
+    },
+    "returned_rows": 1000,
+    "oldest_epoch": 1759960080,
+    "newest_epoch": 1760020020,
+    "response_sha256": "cc2748227d9e54c361ae92f1b69ebb87da9bc600866d0a45823b39250fbc22df"
+  }
+]

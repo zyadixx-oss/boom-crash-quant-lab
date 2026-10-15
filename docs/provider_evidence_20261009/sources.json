@@ -1,0 +1,53 @@
+{
+  "stage": "official_source_assessment_and_saved_capture_inventory",
+  "reviewed_utc_date": "2026-10-08",
+  "folder_calendar": "Asia/Riyadh, 2026-10-09",
+  "web_pages_read": true,
+  "full_web_page_bytes_archived": false,
+  "web_pages_immutable": false,
+  "provider_statements_independently_proven": false,
+  "sources": [
+    {
+      "url": "https://deriv.com/markets/derived-indices/synthetic-indices",
+      "sections": ["Introduction", "Do technical indicators work the same for Synthetic Indices?"],
+      "assessment": "Provider describes CSPRNG generation and no price-setting order book. Applying ICT liquidity terminology does not establish observed resting market orders.",
+      "limits": "Not a proof of IID price levels, a martingale, or impossibility of every profitable trading policy; no change to the Boom/Crash scope. Current indicative spreads were not substituted into history."
+    },
+    {
+      "url": "https://deriv.com/derived-indices/crash-boom-indices",
+      "sections": ["How Crash/Boom Indices work", "Crash Indices", "Boom Indices"],
+      "assessment": "Provider describes tick-based probabilities, average event intervals and native spike/drift directions.",
+      "limits": "An average interval is not a scheduled next event. Marketing strategy suggestions are not measured predictive or payoff evidence."
+    },
+    {
+      "url": "https://traders-academy.deriv.com/trading-guides/stop-loss-execution-boom-crash-indices",
+      "sections": ["How traders can plan for spike behaviour", "Stop-loss level vs execution price"],
+      "assessment": "Provider states tick independence and no overdue-event increase merely from waiting; a stop is a trigger and can fill at a different next available price.",
+      "limits": "Attributed provider statement, not an independent generative-model audit or universal profit theorem. Illustrative images are not price data."
+    },
+    {
+      "url": "https://deriv.com/terms-and-conditions/trading-terms",
+      "sections": ["3.3", "3.4", "5.1", "9.5.2"],
+      "assessment": "Derived CFD entry and Boom/Crash exit use a tick after server processing; spreads can widen and execution delay exists.",
+      "limits": "Does not verify our public-feed-to-CFD mapping, account-specific costs or exact-second research fill proxy. No real or demo orders were used to test execution."
+    },
+    {
+      "url": "https://developers.deriv.com/docs/data/ticks/",
+      "sections": ["Ticks Stream", "No auth", "About ticks"],
+      "assessment": "Public tick data is documented without authentication; concrete observed field availability comes from the saved controlled capture.",
+      "limits": "Neither documentation nor a 240-message capture inventories every possible endpoint or establishes executable CFD bid/ask history."
+    }
+  ],
+  "observed_source_path": "docs/public_quote_contract_20261007/capture01/received_text_messages.jsonl",
+  "observed_source_sha256": "afc224883af67d1730ec09de99d3655ecabe7ea4cf6d63fd0a44cdbc9b59b298",
+  "new_predictor_established": false,
+  "profit_tested_by_this_review": false,
+  "goal_achieved": false,
+  "QUALIFIED": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

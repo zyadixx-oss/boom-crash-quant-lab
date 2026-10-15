@@ -1,0 +1,17 @@
+[
+  {
+    "signal_time": "2025-12-31T18:00:00+00:00",
+    "issue_time": "2025-12-31T18:00:00+00:00",
+    "variant": "CRT_RETEST",
+    "zone_id": "boom:CRT_RETEST:2025-12-31T18:00:00+00:00",
+    "side": 1,
+    "zone_low": 6472.345,
+    "zone_high": 6472.811507142857,
+    "invalidation": 6471.178732142857,
+    "atr": 4.665071428571407,
+    "issue_price": 6474.026,
+    "source_close": 6474.026,
+    "eligible": true,
+    "reason": "issued_fixed_region"
+  }
+]

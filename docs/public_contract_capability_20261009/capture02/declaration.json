@@ -1,0 +1,46 @@
+{
+  "audit_version": 2,
+  "declared_utc": "2026-10-10T00:00:00.339116+00:00",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "symbols": [
+    "BOOM500",
+    "CRASH500",
+    "BOOM600",
+    "CRASH600",
+    "R_100"
+  ],
+  "types": [
+    "CALL",
+    "PUT",
+    "MULTUP",
+    "MULTDOWN"
+  ],
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "max_requests": 25,
+  "max_request_work_seconds": 300,
+  "receive_send_timeout": 15,
+  "connection_timeout": 20,
+  "close_timeout": 5,
+  "source_sha256": {
+    "probe_v2.py": "7bb49f36833822374675658de36c0e04e0988e4c2d76ccc35c5739f294abbe14",
+    "test_probe_v2.py": "0e1ae028ba1779db87a019edaebe5e026cdea7dda3816641dc3ba4dbdd527bc0",
+    "PROTOCOL_v2.md": "0a6d255c680fdeb2f51f76c2112f75c180caa998ab185e4ad68bedb29d90ae50"
+  },
+  "http_redirects_allowed": false,
+  "python": "3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "websockets_version": "17.2",
+  "certifi_version": "2026.7.22",
+  "profit_tested": false,
+  "prediction_tested": false,
+  "cfd_mapping_verified": false,
+  "actual_fills_verified": false,
+  "measured_broker_costs_verified": false,
+  "orders_sent": 0
+}

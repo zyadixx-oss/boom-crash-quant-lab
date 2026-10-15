@@ -1,0 +1,116 @@
+{
+  "source": "Official Deriv public WebSocket",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "requested_days": 180,
+  "requested_start_epoch": 1760008080,
+  "cutoff_exclusive_epoch": 1775560080,
+  "requested_start_utc": "2025-10-09T11:08:00+00:00",
+  "cutoff_exclusive_utc": "2026-04-07T11:08:00+00:00",
+  "symbols": [
+    {
+      "symbol": "BOOM300N",
+      "display_name": "Boom 300 Index",
+      "raw_file": "data/spike_learned_transfer/boom300n_m1_180d.csv",
+      "normalized_file": "data/spike_learned_transfer/boom300n_m1_180d_clean.csv",
+      "raw_sha256": "2a68ef24759ec3561d5751cae44cbefdccfeb794ca94a1313b887fc651578280",
+      "normalized_sha256": "2a68ef24759ec3561d5751cae44cbefdccfeb794ca94a1313b887fc651578280",
+      "raw_equals_normalized": true,
+      "rows": 259200,
+      "expected_rows": 259200,
+      "first_epoch": 1760008080,
+      "last_epoch": 1775560020,
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "last_utc": "2026-04-07T11:07:00+00:00",
+      "complete_180_day_grid": true,
+      "duplicate_epochs": 0,
+      "missing_minutes": 0,
+      "off_grid_minutes": 0,
+      "excluded_rows": 0,
+      "finite_positive_valid_ohlc": true,
+      "history_page_count": 260,
+      "request_errors": [],
+      "authentication_used": false,
+      "older_interval_ends_before_prior_development_data": true
+    },
+    {
+      "symbol": "CRASH300N",
+      "display_name": "Crash 300 Index",
+      "raw_file": "data/spike_learned_transfer/crash300n_m1_180d.csv",
+      "normalized_file": "data/spike_learned_transfer/crash300n_m1_180d_clean.csv",
+      "raw_sha256": "89e2533c71e2941810f6c439ecb23565e8e1a98b4a9c5b02345f62e4bed241e3",
+      "normalized_sha256": "89e2533c71e2941810f6c439ecb23565e8e1a98b4a9c5b02345f62e4bed241e3",
+      "raw_equals_normalized": true,
+      "rows": 259200,
+      "expected_rows": 259200,
+      "first_epoch": 1760008080,
+      "last_epoch": 1775560020,
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "last_utc": "2026-04-07T11:07:00+00:00",
+      "complete_180_day_grid": true,
+      "duplicate_epochs": 0,
+      "missing_minutes": 0,
+      "off_grid_minutes": 0,
+      "excluded_rows": 0,
+      "finite_positive_valid_ohlc": true,
+      "history_page_count": 260,
+      "request_errors": [],
+      "authentication_used": false,
+      "older_interval_ends_before_prior_development_data": true
+    }
+  ],
+  "existing_inputs_unchanged": {
+    "scripts/collect_spike_history.py": true,
+    "data/spike_hunter/boom500_m1_clean.csv": true,
+    "data/spike_hunter/boom500_m1_raw.csv": true,
+    "data/spike_hunter/crash500_m1_clean.csv": true,
+    "data/spike_hunter/crash500_m1_raw.csv": true,
+    "data/spike_payoff_external/boom500_m1_180d.csv": true,
+    "data/spike_payoff_external/boom500_m1_180d_clean.csv": true,
+    "data/spike_payoff_external/boom500_m1_checkpoint.csv": true,
+    "data/spike_payoff_external/crash500_m1_180d.csv": true,
+    "data/spike_payoff_external/crash500_m1_180d_clean.csv": true,
+    "data/spike_payoff_external/crash500_m1_checkpoint.csv": true,
+    "data/spike_timed_external/boom500_m1_180d.csv": true,
+    "data/spike_timed_external/boom500_m1_180d_clean.csv": true,
+    "data/spike_timed_external/crash500_m1_180d.csv": true,
+    "data/spike_timed_external/crash500_m1_180d_clean.csv": true
+  },
+  "collector_file": "scripts/collect_spike_history.py",
+  "collector_sha256": "b0b4ff7df6c86ca098e8cd8b001e8c7129e43f9ccfe66c3f45d5f27e3669f300",
+  "collector_source_modified": false,
+  "allowed_request_types": [
+    "active_symbols",
+    "ticks_history"
+  ],
+  "account_or_order_requests": false,
+  "fills_or_interpolations": false,
+  "signal_features_or_payoff_outcomes_computed": false,
+  "independent_historical_transfer_period": true,
+  "forward_test": false,
+  "unseen_payoff_before_model_freeze": "Acquisition only. Enforced evaluation timing belongs to frozen runner protocol.",
+  "prior_unverified_boom300_classification_claim": true,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "lifecycle": [
+    {
+      "session_id": 53208,
+      "exit_code": 1,
+      "purpose": "Attempt using unavailable BOOM300/CRASH300 aliases"
+    },
+    {
+      "session_id": 7409,
+      "exit_code": 0,
+      "purpose": "Public active_symbols canonical identifier probe"
+    },
+    {
+      "session_id": 13533,
+      "exit_code": 0,
+      "purpose": "Complete unchanged collector acquisition using canonical identifiers"
+    }
+  ],
+  "audit_at_utc": "2026-10-05T04:53:24.577180+00:00"
+}

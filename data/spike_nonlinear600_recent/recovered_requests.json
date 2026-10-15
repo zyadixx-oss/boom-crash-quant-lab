@@ -1,0 +1,297 @@
+{
+  "schema": "Request errors retained exactly; each recovered RateLimit maps by identical requested end to one successful ticks_history page from the unchanged collector. No full wire response archived; response content is represented by its SHA256 in page_audit.",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "symbols": [
+    {
+      "symbol": "BOOM600",
+      "completed_raw_file": "data/spike_nonlinear600_recent/boom600_m1_180d.csv",
+      "completed_raw_sha256": "49486105d0928171f8039a7d458d602805e19977e1486353c8be5eff9c5f9bac",
+      "request_error_count": 5,
+      "retained_errors": [
+        {
+          "end": 1785592079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785532079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785472079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785412079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785352079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        }
+      ],
+      "recovered_rate_limit_requests": [
+        {
+          "recorded_error": {
+            "end": 1785592079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 92,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1785592079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 94
+          },
+          "successful_page_response_sha256": "22700509d66c72fc8ed0a8f210546bce0306f9ced8f4a4f995fab8da8f3eefcb",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1785532080,
+          "successful_page_newest_epoch": 1785592020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1785532079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 93,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1785532079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 95
+          },
+          "successful_page_response_sha256": "e1be6af2695a6907ae3159ebc3e11e8353b83067e5b92afd3bae9c70cb7c0647",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1785472080,
+          "successful_page_newest_epoch": 1785532020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1785472079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 94,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1785472079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 96
+          },
+          "successful_page_response_sha256": "aa6457d066f0d4325fae2475e25c97824da5a7cb8f18f53ac47d545d99d219c6",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1785412080,
+          "successful_page_newest_epoch": 1785472020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1785412079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 95,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1785412079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 97
+          },
+          "successful_page_response_sha256": "84424e63ae31a608b65aa770826a531560ba8255ac2232ac49abd17d20791c6b",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1785352080,
+          "successful_page_newest_epoch": 1785412020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1785352079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 96,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1785352079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 98
+          },
+          "successful_page_response_sha256": "81aaf9b0004ca6f0edd8361fe244ed7c33e94d506802adde7715bea8920bcab8",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1785292080,
+          "successful_page_newest_epoch": 1785352020,
+          "same_requested_end_covered_by_successful_retry": true
+        }
+      ],
+      "all_retained_errors_are_rate_limit_with_successful_same_end_page": true
+    },
+    {
+      "symbol": "CRASH600",
+      "completed_raw_file": "data/spike_nonlinear600_recent/crash600_m1_180d.csv",
+      "completed_raw_sha256": "32cf300a115d7df9722a18c66077bd52143dbe9e068b761589cb84c11f9bd84b",
+      "request_error_count": 5,
+      "retained_errors": [
+        {
+          "end": 1785172078,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785112079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1785052079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1784992079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1784932079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        }
+      ],
+      "recovered_rate_limit_requests": [
+        {
+          "recorded_error": {
+            "end": 1785172078,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 99,
+          "successful_page_request": {
+            "ticks_history": "CRASH600",
+            "count": 1000,
+            "end": 1785172078,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 101
+          },
+          "successful_page_response_sha256": "af1633c224296ab7670d8f0447943b52b2258804bd9f33ec39bd563f0f61afeb",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1785112080,
+          "successful_page_newest_epoch": 1785172020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1785112079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 100,
+          "successful_page_request": {
+            "ticks_history": "CRASH600",
+            "count": 1000,
+            "end": 1785112079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 102
+          },
+          "successful_page_response_sha256": "2e50821fef2fd942bcdfa39383f21e60ffba64b6a6e049549d51d4863254b4ab",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1785052080,
+          "successful_page_newest_epoch": 1785112020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1785052079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 101,
+          "successful_page_request": {
+            "ticks_history": "CRASH600",
+            "count": 1000,
+            "end": 1785052079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 103
+          },
+          "successful_page_response_sha256": "fe70590cf9f7c4192b61dbdc7edbb69bc5108069bbe25fe324787214bcfdc92d",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1784992080,
+          "successful_page_newest_epoch": 1785052020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1784992079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 102,
+          "successful_page_request": {
+            "ticks_history": "CRASH600",
+            "count": 1000,
+            "end": 1784992079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 104
+          },
+          "successful_page_response_sha256": "4f438fca5de3cdff18d321edfc28d40242b74dbc930601bb26d60322811df69a",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1784932080,
+          "successful_page_newest_epoch": 1784992020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1784932079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 103,
+          "successful_page_request": {
+            "ticks_history": "CRASH600",
+            "count": 1000,
+            "end": 1784932079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 105
+          },
+          "successful_page_response_sha256": "e82463b4e7c562efd47abde6d90c7eb55a6fe9f112bc4dcfb75110f3289887ef",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1784872080,
+          "successful_page_newest_epoch": 1784932020,
+          "same_requested_end_covered_by_successful_retry": true
+        }
+      ],
+      "all_retained_errors_are_rate_limit_with_successful_same_end_page": true
+    }
+  ],
+  "features_or_payoffs_computed": false,
+  "account_or_order_requests": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "audited_at_utc": "2026-10-05T10:00:24.145160+00:00"
+}

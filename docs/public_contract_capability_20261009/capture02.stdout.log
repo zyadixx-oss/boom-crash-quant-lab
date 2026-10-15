@@ -1,0 +1,13 @@
+{
+  "transport_status": "COMPLETED",
+  "request_attempts": 15,
+  "response_observations": 15,
+  "error": null,
+  "close_error": null,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

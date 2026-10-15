@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-07T11:44:01.886980+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "source_sha256": {
+    "scripts/diagnose_frozen_cost_ceiling.py": "b784b3c9b7d2ee1b9b5967482239bfc734210fedb07785bfaef53df027b3b622",
+    "backend/tests/test_frozen_cost_ceiling.py": "68bb17ca0fdaab0d7cc5c789192e290a4e4e6ea284d024b9a2e616740ed613cc",
+    "docs/FROZEN_COST_CEILING_DIAGNOSTIC.md": "ad0df40159ce44253d9eb562f9eb3812d952699d34cf928cd7c6b202096fb12e"
+  },
+  "python_version": "3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "prior_cost_sensitivities_already_seen": true,
+  "ledger_schema_and_example_rows_already_seen": true,
+  "fresh_price_or_label_holdout": false,
+  "new_paths_or_models": false,
+  "scope": "fixed audited ledgers and additive nonnegative costs only"
+}

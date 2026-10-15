@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-12T21:48:51.030997+00:00",
+  "pid": 95730,
+  "source_sha256": "98a3d5dd209853cadd9072f0eee822b20d8724801f312d8eea15e8535d435bc5",
+  "ex5_sha256": "178485a368f30d1ccfa97cba2c8ae2588de688453ff4fa0c7656d3499272e113",
+  "config_sha256": "3ef7287b03e9996e483ccc8743e7aedc5494025aa4d0d0588785830cdd7927fe",
+  "params_sha256": "f2359f19e9e982b8e64088e5cd9d2e2ff7034b758c4b66c3eca7960206d4b3f5",
+  "symbol": "Boom 500 Index",
+  "start_epoch": 1791835200,
+  "end_exclusive_epoch": 1791835260,
+  "duration_seconds": 60,
+  "all_live_flags_false": true,
+  "existing_account_only": true,
+  "credentials_captured": false,
+  "completed": false
+}

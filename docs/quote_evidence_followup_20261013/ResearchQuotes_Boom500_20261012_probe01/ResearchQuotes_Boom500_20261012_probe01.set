@@ -1,0 +1,5 @@
+InpSymbol=Boom 500 Index
+InpFromDate=1791835200
+InpEndDate=1791835260
+InpPrefix=ResearchQuotes_Boom500_20261012_probe01
+InpConnectionWaitSeconds=30

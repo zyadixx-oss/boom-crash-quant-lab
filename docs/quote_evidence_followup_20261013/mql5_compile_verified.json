@@ -1,0 +1,9 @@
+{
+  "source_sha256": "98a3d5dd209853cadd9072f0eee822b20d8724801f312d8eea15e8535d435bc5",
+  "compiler_log_sha256": "c6ca4db342b756b4df79e55c3c127c7839d5fa5877e5b6499270934f5e9b1c32",
+  "ex5_sha256": "178485a368f30d1ccfa97cba2c8ae2588de688453ff4fa0c7656d3499272e113",
+  "compiler_exit_code": 1,
+  "result": "0 errors, 0 warnings",
+  "compile_verified": true,
+  "scope": "MQL5 build only; no quote coverage/cost/execution claim"
+}

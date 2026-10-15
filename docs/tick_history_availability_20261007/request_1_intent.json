@@ -1,0 +1,18 @@
+{
+  "request": {
+    "ticks_history": "BOOM600",
+    "start": 1760008080,
+    "end": 1760008083,
+    "count": 4,
+    "style": "ticks",
+    "req_id": 1
+  },
+  "attempted_at_utc": "2026-10-07T17:46:42.891791+00:00",
+  "declaration_sha256": "76bccb57ba6d128703bcbab29b4ffeada9f42594892bc98b53ea0f593c2b3b20",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

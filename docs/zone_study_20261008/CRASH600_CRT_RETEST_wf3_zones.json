@@ -1,0 +1,17 @@
+[
+  {
+    "signal_time": "2026-02-09T20:00:00+00:00",
+    "issue_time": "2026-02-09T20:00:00+00:00",
+    "variant": "CRT_RETEST",
+    "zone_id": "crash:CRT_RETEST:2026-02-09T20:00:00+00:00",
+    "side": -1,
+    "zone_low": 23822.799264285717,
+    "zone_high": 23824.757,
+    "invalidation": 23829.651339285716,
+    "atr": 19.57735714285783,
+    "issue_price": 23773.648,
+    "source_close": 23773.648,
+    "eligible": true,
+    "reason": "issued_fixed_region"
+  }
+]

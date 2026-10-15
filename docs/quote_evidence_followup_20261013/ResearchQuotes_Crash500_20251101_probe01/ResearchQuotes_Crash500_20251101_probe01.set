@@ -1,0 +1,5 @@
+InpSymbol=Crash 500 Index
+InpFromDate=1761955200
+InpEndDate=1761955260
+InpPrefix=ResearchQuotes_Crash500_20251101_probe01
+InpConnectionWaitSeconds=30

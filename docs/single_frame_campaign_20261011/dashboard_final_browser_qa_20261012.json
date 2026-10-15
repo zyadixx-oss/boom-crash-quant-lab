@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-10-12T03:24:19.575658+00:00",
+  "url": "http://127.0.0.1:5173/#research",
+  "method": "actual Codex in-app browser CUA observations, read-only DOM and native screenshots",
+  "completed_cycles_displayed": 32,
+  "target_cycles_displayed": 32,
+  "covered_cells": 100,
+  "displayed_selected_policies": 1300,
+  "displayed_unique_development_measurements": 38400,
+  "qualified_displayed": 0,
+  "selected_partition": "final",
+  "lang": "ar",
+  "dir": "rtl",
+  "desktop": {
+    "viewport_width": 1280,
+    "document_scroll_width": 1280,
+    "visual_review": "PASS",
+    "screenshot": "dashboard_final_desktop_20261012.jpg"
+  },
+  "mobile": {
+    "viewport_width": 390,
+    "viewport_height": 844,
+    "document_scroll_width": 390,
+    "visual_review": "PASS after reload at resized viewport",
+    "screenshot": "dashboard_final_mobile_reload_20261012.jpg",
+    "limitations": "Screenshot retains current scroll position and shows only a viewport; this is not visual coverage of every section."
+  },
+  "viewport_restored": true,
+  "restored_width": 1280,
+  "retained_failed_captures": {
+    "files": [
+      "dashboard_final_mobile_20261012.jpg",
+      "dashboard_final_mobile_full_20261012.jpg"
+    ],
+    "reason": "IAB capture after viewport resize had displaced black area. Reload at resized viewport repaired the actual rendering/capture; failed files are not accepted mobile proof."
+  },
+  "safety": "UI states research only and no executable-profit claim; authoritative safety flags separately verified by campaign status.",
+  "files": {
+    "dashboard_final_desktop_20261012.jpg": {
+      "sha256": "5aeb9bea223354c3f4c7148d1e18ecb1ed009966e0077511cc142d0230edd1a7",
+      "bytes": 64321
+    },
+    "dashboard_final_mobile_reload_20261012.jpg": {
+      "sha256": "ef49158bedf26c2472954cbd2dfd58db87daa640452da700ce6232ad8ba5ffeb",
+      "bytes": 30845
+    },
+    "dashboard_final_mobile_20261012.jpg": {
+      "sha256": "5191da58470e8cd9f4e39504c89c2f12bad03115e8efc2cb04975d08113c9700",
+      "bytes": 6229
+    },
+    "dashboard_final_mobile_full_20261012.jpg": {
+      "sha256": "a537a48a9c10a393d215626566f3a46212f92b84eea32cc6b0dba0182c2a6bad",
+      "bytes": 165194
+    }
+  }
+}

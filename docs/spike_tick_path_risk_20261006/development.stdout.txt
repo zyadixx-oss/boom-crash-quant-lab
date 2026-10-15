@@ -1,0 +1,3 @@
+BOOM600 known-history path-risk development complete; pilot candidate false
+CRASH600 known-history path-risk development complete; pilot candidate false
+TICK_PATH_RISK_SELECTION_FROZEN; final45 features/scores/ledgers not calculated; payoffs already known

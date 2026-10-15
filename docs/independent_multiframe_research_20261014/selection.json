@@ -1,0 +1,150 @@
+{
+  "cash_net": null,
+  "conditionally_eligible": [],
+  "costs_verified": false,
+  "declaration_sha256": "a3f9b73838b63abfcb0e85cc0fce076c5e5ae7c31fd8545ad05038f208dbe0e6",
+  "development_receipts": {
+    "work/independent_multiframe_study_20261014/cases/BOOM500_VALIDATION_CRT_SWEEP_RECLAIM_BASE.json": "f11335b14ea3211fe128d13150a0f5f23da88d4958fc92e1a8a1b5778208df89",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_VALIDATION_PULLBACK_CONTINUATION_BASE.json": "52721d5eca5d7e8299bb67b3d504d52369deca789485e78c724b8b15bafbe604",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_VALIDATION_SQUEEZE_BREAKOUT_BASE.json": "3a127c4ca9aeb4d2400936a98319533ef1ef3ccf9e21dd0df5e08afa312731cb",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_CRT_SWEEP_RECLAIM_BASE.json": "597580b8d68bc4c9a17105fd391a32093c8ebe0ea03d2e4fcae3bd38d84ca659",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_PULLBACK_CONTINUATION_BASE.json": "c32bd1b70fe532d07382b4ad01931f081add57d712c5806d1135d58364d9f5e9",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF1_SQUEEZE_BREAKOUT_BASE.json": "289018fd8099ae09b1391f49a0d7920052d774b3c7cfcc4b1c41902406875fcf",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF2_CRT_SWEEP_RECLAIM_BASE.json": "16c58682b8f0ad3184af39242910d1ed7f20b274217ca30afba0396b97a7354e",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF2_PULLBACK_CONTINUATION_BASE.json": "6d5ad56a7b6b6953c7a482556643a7426b1cfa353d879b317c25394498609824",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF2_SQUEEZE_BREAKOUT_BASE.json": "3948a7fc7b86414e6cbb58df2fb1bcc0f2fd9883f89a6581caad8836f9027ebe",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF3_CRT_SWEEP_RECLAIM_BASE.json": "fd23f2887e0681fe6b27a7ea0d17fc22eb82a0d71945d527a1cd6ad11df1b307",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF3_PULLBACK_CONTINUATION_BASE.json": "78f1edee72fc895388641654eff6511f826c836499c4503c02322031a7e7c35a",
+    "work/independent_multiframe_study_20261014/cases/BOOM500_WF3_SQUEEZE_BREAKOUT_BASE.json": "45eb6a0c2318cfad065eed1383afbf423db0e9d833b2558c87783148b2fc377c",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_VALIDATION_CRT_SWEEP_RECLAIM_BASE.json": "dcc230bc1bfba83e95d0cd2e5a5adaae2c91ebdb2c0cf5b621a952e1f9ce8ce3",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_VALIDATION_PULLBACK_CONTINUATION_BASE.json": "f82b4007a16053aedb994fa5a007b2ddf04fa1fa9c4d824e80ba024794e23630",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_VALIDATION_SQUEEZE_BREAKOUT_BASE.json": "4897e0a4265742717a322f15e0594a8781ac2065ef06684b67a9d946bbbd09f2",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_CRT_SWEEP_RECLAIM_BASE.json": "1e1e73e12b7611488367bedee25c822bf63f22e5bccb64028e509200c7a65e37",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_PULLBACK_CONTINUATION_BASE.json": "b89837bac1701f20064861d2667ff6534d95356cde58d4c70fd537fb496238d8",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF1_SQUEEZE_BREAKOUT_BASE.json": "da8c720fd8cffe60c762c50096c07774ab587c0f5b47492ed41e4032d52bae86",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF2_CRT_SWEEP_RECLAIM_BASE.json": "e7b3d88264aceb44cd7f4a545332b67b6ee2f9fa998bbf64318f008bcddda395",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF2_PULLBACK_CONTINUATION_BASE.json": "688662a7077d6595d7f3b2bd6b92e8aab60c4ec491210d0095d044a97adf1711",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF2_SQUEEZE_BREAKOUT_BASE.json": "57f07c50d6bd0b8f45ad25407ac6047135b70e4834c107d0ff629c2feaf2a230",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF3_CRT_SWEEP_RECLAIM_BASE.json": "796c6886778609b6d16bf03113c4a10c04734089d719113b4af84b6cc1fc7490",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF3_PULLBACK_CONTINUATION_BASE.json": "bbdd0c797768bdee4b6d34f8b7624137af4c4f9037e584c9e2bfa2aee7c0b3f5",
+    "work/independent_multiframe_study_20261014/cases/CRASH500_WF3_SQUEEZE_BREAKOUT_BASE.json": "9cb647740904a4ec2e35bdbf8a648611728f65efd8721b14c514eb0aac56fa85"
+  },
+  "final_strategy_measurements_before_selection": 0,
+  "gates": {
+    "BOOM500/CRT_SWEEP_RECLAIM": {
+      "cash_net": null,
+      "conditional_eligible": false,
+      "costs_verified": false,
+      "gates": {
+        "all_walk_forward_sums_known": true,
+        "future_development_completed_at_least_100": false,
+        "no_unknown_development_trades": true,
+        "two_of_three_walk_forward_positive": false,
+        "validation_positive": false
+      },
+      "profit_eligible": false,
+      "validation_sum_R": -1.1307456485145224,
+      "walk_forward_sum_R": [
+        1.2077753291362883,
+        -7.387993526942696,
+        -0.049340676266638156
+      ]
+    },
+    "BOOM500/PULLBACK_CONTINUATION": {
+      "cash_net": null,
+      "conditional_eligible": false,
+      "costs_verified": false,
+      "gates": {
+        "all_walk_forward_sums_known": true,
+        "future_development_completed_at_least_100": false,
+        "no_unknown_development_trades": true,
+        "two_of_three_walk_forward_positive": true,
+        "validation_positive": true
+      },
+      "profit_eligible": false,
+      "validation_sum_R": 2.722209340821084,
+      "walk_forward_sum_R": [
+        -1.199650654496548,
+        7.181502942871056,
+        1.1415851777507728
+      ]
+    },
+    "BOOM500/SQUEEZE_BREAKOUT": {
+      "cash_net": null,
+      "conditional_eligible": false,
+      "costs_verified": false,
+      "gates": {
+        "all_walk_forward_sums_known": true,
+        "future_development_completed_at_least_100": false,
+        "no_unknown_development_trades": true,
+        "two_of_three_walk_forward_positive": false,
+        "validation_positive": true
+      },
+      "profit_eligible": false,
+      "validation_sum_R": 4.882281030885104,
+      "walk_forward_sum_R": [
+        0.0,
+        0.0,
+        -1.6764030495001312
+      ]
+    },
+    "CRASH500/CRT_SWEEP_RECLAIM": {
+      "cash_net": null,
+      "conditional_eligible": false,
+      "costs_verified": false,
+      "gates": {
+        "all_walk_forward_sums_known": true,
+        "future_development_completed_at_least_100": false,
+        "no_unknown_development_trades": true,
+        "two_of_three_walk_forward_positive": true,
+        "validation_positive": true
+      },
+      "profit_eligible": false,
+      "validation_sum_R": 8.29511445784868,
+      "walk_forward_sum_R": [
+        -0.9588565585309421,
+        7.47101484127708,
+        0.3353765067024418
+      ]
+    },
+    "CRASH500/PULLBACK_CONTINUATION": {
+      "cash_net": null,
+      "conditional_eligible": false,
+      "costs_verified": false,
+      "gates": {
+        "all_walk_forward_sums_known": true,
+        "future_development_completed_at_least_100": false,
+        "no_unknown_development_trades": true,
+        "two_of_three_walk_forward_positive": true,
+        "validation_positive": true
+      },
+      "profit_eligible": false,
+      "validation_sum_R": 0.5476823898630707,
+      "walk_forward_sum_R": [
+        -2.9470771292362823,
+        2.1553064385304013,
+        1.8456047045448831
+      ]
+    },
+    "CRASH500/SQUEEZE_BREAKOUT": {
+      "cash_net": null,
+      "conditional_eligible": false,
+      "costs_verified": false,
+      "gates": {
+        "all_walk_forward_sums_known": true,
+        "future_development_completed_at_least_100": false,
+        "no_unknown_development_trades": true,
+        "two_of_three_walk_forward_positive": true,
+        "validation_positive": false
+      },
+      "profit_eligible": false,
+      "validation_sum_R": -2.0257125580756132,
+      "walk_forward_sum_R": [
+        -0.3614120402518519,
+        1.6972750171683255,
+        1.372940871195249
+      ]
+    }
+  },
+  "profit_qualified": false
+}

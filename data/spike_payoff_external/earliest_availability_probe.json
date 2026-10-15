@@ -1,0 +1,98 @@
+[
+  {
+    "symbol": "BOOM500",
+    "requested_start_utc": "2025-10-09T11:08:00+00:00",
+    "request": {
+      "ticks_history": "BOOM500",
+      "count": 3,
+      "end": 1760008259,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 1
+    },
+    "response": {
+      "candles": [
+        {
+          "close": 5369.69,
+          "epoch": 1760008080,
+          "high": 5370.28,
+          "low": 5369.69,
+          "open": 5370.28
+        },
+        {
+          "close": 5368.934,
+          "epoch": 1760008140,
+          "high": 5369.668,
+          "low": 5368.934,
+          "open": 5369.668
+        },
+        {
+          "close": 5368.334,
+          "epoch": 1760008200,
+          "high": 5368.923,
+          "low": 5368.334,
+          "open": 5368.923
+        }
+      ],
+      "echo_req": {
+        "count": 3,
+        "end": 1760008259,
+        "granularity": 60,
+        "req_id": 1,
+        "style": "candles",
+        "ticks_history": "BOOM500"
+      },
+      "msg_type": "candles",
+      "pip_size": 3,
+      "req_id": 1
+    }
+  },
+  {
+    "symbol": "CRASH500",
+    "requested_start_utc": "2025-10-09T11:08:00+00:00",
+    "request": {
+      "ticks_history": "CRASH500",
+      "count": 3,
+      "end": 1760008259,
+      "style": "candles",
+      "granularity": 60,
+      "req_id": 2
+    },
+    "response": {
+      "candles": [
+        {
+          "close": 2813.305,
+          "epoch": 1760008080,
+          "high": 2813.305,
+          "low": 2812.994,
+          "open": 2812.994
+        },
+        {
+          "close": 2813.723,
+          "epoch": 1760008140,
+          "high": 2813.723,
+          "low": 2813.31,
+          "open": 2813.31
+        },
+        {
+          "close": 2814.114,
+          "epoch": 1760008200,
+          "high": 2814.114,
+          "low": 2813.728,
+          "open": 2813.728
+        }
+      ],
+      "echo_req": {
+        "count": 3,
+        "end": 1760008259,
+        "granularity": 60,
+        "req_id": 2,
+        "style": "candles",
+        "ticks_history": "CRASH500"
+      },
+      "msg_type": "candles",
+      "pip_size": 3,
+      "req_id": 2
+    }
+  }
+]

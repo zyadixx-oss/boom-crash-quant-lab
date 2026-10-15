@@ -1,0 +1,37 @@
+{
+  "status": "VERIFIED",
+  "scope": "PUBLIC_FEED_OBSERVATION_ONLY",
+  "sessions": [
+    {
+      "session_id": "session_000001",
+      "receipt_sha256": "ac706e2db22f20f6abf6ec1869574e4c8200636f6fb364336df9f5e30e44774f",
+      "status": "COMPLETED",
+      "received_frames": 120
+    }
+  ],
+  "declaration_sha256": "7f11f73992bb0628a5d4b3e5d9bc7b1d4d9a6a7abd40936d0021af4d010d4331",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  },
+  "limitations": {
+    "authentication_used": false,
+    "account_or_order_requests": false,
+    "fills_or_interpolations": false,
+    "cfd_price_mapping_verified": false,
+    "historical_costs_verified": false,
+    "cost_verified": false,
+    "execution_verified": false,
+    "actual_fills_verified": false,
+    "profit_tested": false,
+    "profitability_claim_allowed": false,
+    "transport_timing_is_order_execution_latency": false,
+    "whole_requested_window_coverage_verified": false
+  }
+}

@@ -1,0 +1,1978 @@
+{
+  "schema_version": 2,
+  "audit_kind": "BOUNDED_PROJECT_PRIOR_PRICE_PERIOD_EXPOSURE_METADATA_ONLY",
+  "audited_at_utc": "2026-10-13T16:49:50.550082+00:00",
+  "candidate": {
+    "symbols": [
+      "BOOM500",
+      "CRASH500"
+    ],
+    "start_inclusive_utc": "2025-01-02T00:00:00+00:00",
+    "end_exclusive_utc": "2025-06-01T00:00:00+00:00",
+    "calendar_days": 150,
+    "train_end_utc": "2025-04-02T00:00:00+00:00",
+    "validation_end_utc": "2025-05-02T00:00:00+00:00",
+    "final_start_inclusive_utc": "2025-05-02T00:00:00+00:00",
+    "final_end_exclusive_utc": "2025-06-01T00:00:00+00:00",
+    "supersedes_candidate": {
+      "start": "2024-10-02",
+      "end_exclusive": "2025-03-01",
+      "reason": "Parent reports October2024 availability pilot empty; alternative chosen from predeclared calendar availability, not outcomes."
+    },
+    "calendar_revision_reason": "January1 pilot excluded from candidate. April1 availability pilot remains within TRAIN only; final is May2-June1."
+  },
+  "scope": {
+    "root": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab",
+    "tracked_metadata_selection": "Git tracked data/acquisition_config.json and real-source *_manifest.json (excluding normalization payloads); selected docs acquisition/declaration.json and protocols; known frozen campaign declaration; known outer data_recon/collector_integrated_check manifests. No result/P&L/ledger files.",
+    "metadata_files_read": 79,
+    "protocol_files_read": 19,
+    "source_csv_boundary_files_read": 28,
+    "csv_access": "Only header and bounded first/last row buffers; only timestamp column parsed; no full price CSV rehash or row scan.",
+    "excluded": [
+      "backend/tests and test fixtures",
+      "work/private* and private financial records",
+      "work/final_replay* and 5200 receipt tree",
+      "old campaign artifacts and strategy ledgers/results/payoff CSVs",
+      "new independent pilot raw quotes",
+      "MT5 platform cache and account files"
+    ],
+    "network_or_platform_calls": false,
+    "campaign_or_replay_calls": false,
+    "strategy_outcomes_computed": false,
+    "candidate_prices_inspected": false,
+    "metadata_inventory_content": "Path, file SHA256 and byte count only. Relevant actual first/last source bounds are separately projected; no full metadata payloads retained.",
+    "github_calls": [
+      {
+        "kind": "run_metadata",
+        "url": "https://api.github.com/repos/zyadixx-oss/boom-crash-quant-lab/actions/runs/37182050753"
+      },
+      {
+        "kind": "artifact_metadata_only",
+        "run_id": 37182050753,
+        "artifact_id": 11295462006,
+        "artifact_downloaded": false
+      },
+      {
+        "kind": "job_metadata",
+        "job_id": 111376414997
+      },
+      {
+        "kind": "workflow_log_date_projection",
+        "job_id": 111376414997,
+        "retained_fields": [
+          "symbol",
+          "timeframe",
+          "row_count",
+          "MIN(time)",
+          "MAX(time)",
+          "from",
+          "to",
+          "split_time"
+        ],
+        "price_or_payoff_values_output_or_retained": false
+      }
+    ],
+    "network_or_platform_calls_note": "No market API, quote fetch or platform call. GitHub source/workflow metadata GETs were separately authorized and are enumerated above; full log strings were projected in runtime to dates/counts only.",
+    "original_reference_source_reads": [
+      "origin/crt-self-test-20261004:.github/workflows/crt-self-test.yml",
+      "origin/crt-self-test-20261004:scripts/crt_sqlite_test.py",
+      "origin/crt-self-test-20261004:scripts/crt_self_test.py"
+    ]
+  },
+  "findings": {
+    "observed_price_study_overlap_records": 0,
+    "overlap_records": [],
+    "no_overlap_in_scanned_real_source_actual_bounds": true,
+    "known_prior_price_study_earliest_utc": "2025-10-05T04:17:26+00:00",
+    "original_reference_source_period_resolved": true,
+    "eligible_for_bounded_project_independence_claim": true,
+    "fresh_global_user_history_proven": false,
+    "fresh_historical_holdout_certified": false,
+    "status": "NO_KNOWN_PROJECT_PRICE_STUDY_OVERLAP_REFERENCE_PERIOD_RESOLVED",
+    "meaning": "Within enumerated project studies, no actually loaded price-study interval overlaps January2-June1 2025 or final May2-June1. This supports only a bounded project-independence claim, not proof the user or other projects never viewed those prices. Wider third-party DB dates were listed as metadata; prior code loaded timeframe5 prices only."
+  },
+  "actual_source_intervals": [
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "BOOM1000",
+      "first_utc": "2025-10-11T12:54:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "BOOM300",
+      "first_utc": "2025-10-11T12:46:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "BOOM500",
+      "first_utc": "2025-10-11T12:46:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "BOOM600",
+      "first_utc": "2025-10-11T12:46:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "BOOM900",
+      "first_utc": "2025-10-11T12:30:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "CRASH1000",
+      "first_utc": "2025-10-11T12:36:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "CRASH300",
+      "first_utc": "2025-10-11T12:30:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "CRASH500",
+      "first_utc": "2025-10-11T12:54:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "CRASH600",
+      "first_utc": "2025-10-11T12:30:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "symbol": "CRASH900",
+      "first_utc": "2025-10-11T12:36:00+00:00",
+      "end_exclusive_utc": "2026-10-11T12:22:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "frozen_per_symbol_effective_calendar",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292"
+    },
+    {
+      "path": "data/spike_learned_transfer/BOOM300N_manifest.json",
+      "symbol": "BOOM300N",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "84c81a65caee84095a065509eec0c2e84c11db1aef43203e681a30bf164ec1f1"
+    },
+    {
+      "path": "data/spike_learned_transfer/CRASH300N_manifest.json",
+      "symbol": "CRASH300N",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "0b672980e7f7119d99ddde15c032cb8338d634816ec56a73a22dacabe5d699d9"
+    },
+    {
+      "path": "data/spike_native300_recent/BOOM300N_manifest.json",
+      "symbol": "BOOM300N",
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "a7b4c79196bcd9b305f9886e4412044600dd0eeb7ab0e48967dac313921a5e69"
+    },
+    {
+      "path": "data/spike_native300_recent/CRASH300N_manifest.json",
+      "symbol": "CRASH300N",
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "e8ae04243424143c5a16a2e68e75149c0771b208584d30b25c97b74776b8ab15"
+    },
+    {
+      "path": "data/spike_nonlinear600_old/BOOM600_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "a0eab6281f6da9eace3ca4e582cef9cec3b339509c747f6fb8b8c9a97a9d9fff"
+    },
+    {
+      "path": "data/spike_nonlinear600_old/CRASH600_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "beda71a651096493ee5b00627ce7612a295d6fafced0e2d9d893fd6c759e4c08"
+    },
+    {
+      "path": "data/spike_nonlinear600_old/retry_crash600/CRASH600_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "f95d5bc7a768a7735604dbd4c0c07d7f0997ca0abc52758da29b5f56d81b644e"
+    },
+    {
+      "path": "data/spike_nonlinear600_recent/BOOM600_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "764f93ba483f35c93002ba60ea750b7b1dfb301cfa46179255fdae4324558884"
+    },
+    {
+      "path": "data/spike_nonlinear600_recent/CRASH600_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "2fc84024b4240dbdd69af622ede430b4edf5b2e1a31092a373df2ce5be3e0b67"
+    },
+    {
+      "path": "data/spike_payoff_external/BOOM500_manifest.json",
+      "symbol": "BOOM500",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "2a986173af705e1eda4a7e48c4cfb105b91810735c708805930d3d3def691ed2"
+    },
+    {
+      "path": "data/spike_payoff_external/CRASH500_manifest.json",
+      "symbol": "CRASH500",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "f204607ee5e155774acf3d7ae59ce09a4eecba2baff6791f989778daa3add599"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-04-11_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-04-11T00:00:00+00:00",
+      "end_exclusive_utc": "2026-04-12T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "54e8c3018c2e8f80ba615c1104190d3f1af4fae1e74c72fd356a8e393f81958d"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-04-26_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-04-26T00:00:00+00:00",
+      "end_exclusive_utc": "2026-04-27T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "2cd1eae0a2152e4da30dbf6095ff9254a9d00f05f6a6baa9ab61c1b614fa662e"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-05-12_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-05-12T00:00:00+00:00",
+      "end_exclusive_utc": "2026-05-13T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "2abb2177ba0fe821fcd38848d7048b092bf725518e676c5ac8ef5132a7b9e879"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-05-28_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-05-28T00:00:00+00:00",
+      "end_exclusive_utc": "2026-05-29T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "7f0e6d2f1ad6812770a1047acfb06753be71dd448f0b8042bbfbdc606646b7d7"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-06-13_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-06-13T00:00:00+00:00",
+      "end_exclusive_utc": "2026-06-14T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "0ea97344edf2f0c36b04d381dfcadbadfbf17a0f3734012f319da24f7d79f449"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-06-29_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-06-29T00:00:00+00:00",
+      "end_exclusive_utc": "2026-06-30T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "cb2fefacd306c47d102fcdf41e2b0bc4ae8d6bda28e7aaf9f9a2375510a153cf"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-07-15_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-07-15T00:00:00+00:00",
+      "end_exclusive_utc": "2026-07-16T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "bc7ad9677c7582cb2e60f1fc5450a68e88d185d6c6213107888f73577e12fc69"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-07-31_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-07-31T00:00:00+00:00",
+      "end_exclusive_utc": "2026-08-01T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "11339b3a2e78d32d8522a455ea5ba807ca250c5d8a4a2d5a8f428e975fe0e458"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-08-16_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-08-16T00:00:00+00:00",
+      "end_exclusive_utc": "2026-08-17T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "8a5ef90dc20a0b74d8654bf4f8c9a5fad547d6941311b02a9c80c805194147b9"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-09-01_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-09-01T00:00:00+00:00",
+      "end_exclusive_utc": "2026-09-02T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "d8dc6541b0843e501089e7eab17843038c39d759b7cbeacc74d767402825b13e"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-09-17_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-09-17T00:00:00+00:00",
+      "end_exclusive_utc": "2026-09-18T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "5033fd411f42448db61e56f8afa6f3a32ce1fb3a9b321e4c2be9bdb9ee19af61"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-10-03_manifest.json",
+      "symbol": "BOOM600",
+      "first_utc": "2026-10-03T00:00:00+00:00",
+      "end_exclusive_utc": "2026-10-04T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "2f21801d11c9b1dd8fe016228a7bb8e37ac4015ce1ea826f86dd80fff52ded82"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-04-11_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-04-11T00:00:00+00:00",
+      "end_exclusive_utc": "2026-04-12T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "f34d978e39032c5dfc83368fb7242844f6d97f03bdc6568afc721282a8acdfb4"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-04-26_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-04-26T00:00:00+00:00",
+      "end_exclusive_utc": "2026-04-27T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "8aafc97bc3c02cf219d5264a3ff80c0743a9aaaf3e2bddc4cf704019775ac9dc"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-05-12_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-05-12T00:00:00+00:00",
+      "end_exclusive_utc": "2026-05-13T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "2056e0f060b4773b7e8271c924f997d9151754e36ca5b774a35a5f21d16e3f63"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-05-28_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-05-28T00:00:00+00:00",
+      "end_exclusive_utc": "2026-05-29T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "347626ee0e2dfc132ff02cb12c4b9f3d694da0eace4c2e389b8c048a6f0f9fad"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-06-13_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-06-13T00:00:00+00:00",
+      "end_exclusive_utc": "2026-06-14T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "99d5ea805cdd7d68159d1de5ea17218533d5d8241c866b662df5eeae00c5e5cd"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-06-29_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-06-29T00:00:00+00:00",
+      "end_exclusive_utc": "2026-06-30T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "236d9e870c4620d8bb0b4ef7e69e56a6586fb7089af94c05c357b84dbf859cfb"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-07-15_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-07-15T00:00:00+00:00",
+      "end_exclusive_utc": "2026-07-16T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "682f6e44760f16031dba867dfcf502db51c7b3a505c1a212a5304dd139b70e57"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-07-31_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-07-31T00:00:00+00:00",
+      "end_exclusive_utc": "2026-08-01T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "1aec891110d4bfeff7403db16f18d28e6c8870c8df6c920027a53c631cf16eec"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-08-16_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-08-16T00:00:00+00:00",
+      "end_exclusive_utc": "2026-08-17T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "82f93fd991f3437ce8cc6b04c386ec083ca2d078666a84606bc463d606c35916"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-09-01_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-09-01T00:00:00+00:00",
+      "end_exclusive_utc": "2026-09-02T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "e627d4140dbd9e48f63ed6341e8cd5e39cb4e0df3c060f4c7056258d5113b0b5"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-09-17_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-09-17T00:00:00+00:00",
+      "end_exclusive_utc": "2026-09-18T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "c4772a4eb570c00e536bf1667f716fa251e74aed1ef16736436f59e44eec1efd"
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-10-03_manifest.json",
+      "symbol": "CRASH600",
+      "first_utc": "2026-10-03T00:00:00+00:00",
+      "end_exclusive_utc": "2026-10-04T00:00:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "dd7f14cf27e34703e76f9bb7039064cb1a5708da29d0421cdb1c8aafab474fc7"
+    },
+    {
+      "path": "data/spike_timed_external/BOOM500_manifest.json",
+      "symbol": "BOOM500",
+      "first_utc": "2025-10-05T04:17:26+00:00",
+      "end_exclusive_utc": "2025-10-09T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "efa7dacb8ba10afa9c931128f9901f8c5206d3923e44cc78479d15d83a18bca2"
+    },
+    {
+      "path": "data/spike_timed_external/CRASH500_manifest.json",
+      "symbol": "CRASH500",
+      "first_utc": "2025-10-05T04:17:26+00:00",
+      "end_exclusive_utc": "2025-10-09T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "26118aa528c2171218b81f525d5c1f33ff64672688eccb6d1402ef36c2f7e41c"
+    },
+    {
+      "path": "data/spike_timed_transfer/BOOM1000_manifest.json",
+      "symbol": "BOOM1000",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "3c473462111df2fbb99c77b896ee5c1a2c8c83d44bfe63d4764cc348cbc8ff75"
+    },
+    {
+      "path": "data/spike_timed_transfer/CRASH1000_manifest.json",
+      "symbol": "CRASH1000",
+      "first_utc": "2025-10-09T11:08:00+00:00",
+      "end_exclusive_utc": "2026-04-07T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "3f66cbd318d1baf6eaaaa6f0503dba63f48e7b26fc70833ee4bd5791b0eb238b"
+    },
+    {
+      "path": "docs/spike_hunter_20261004/BOOM500_manifest.json",
+      "symbol": "BOOM500",
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "629e8bb3e01dc5f54d140728a46eb9dd18e3f4d7e5f94287d68bbc04a594a246"
+    },
+    {
+      "path": "docs/spike_hunter_20261004/CRASH500_manifest.json",
+      "symbol": "CRASH500",
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "6869a216857318c1e9873fd76101e41e1875c79231f6d8aefdcb65da55fdf0d7"
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/BOOM500_manifest.json",
+      "symbol": "BOOM500",
+      "first_utc": "2026-10-03T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "36ea4b840a41e32be71c04f7f05fe1764171ad244dc86205a93129acc393e6f9"
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/CRASH500_manifest.json",
+      "symbol": "CRASH500",
+      "first_utc": "2026-10-03T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "bb642e9b9092120c807b68eb7592aed4c5f6891ee3a19852150d4520d0441a7b"
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/BOOM500_manifest.json",
+      "symbol": "BOOM500",
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "81a2fa9cccfa9607d090e28cac071e1b0329307c85aa612dcfcf0b0f9bdd00f8"
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/CRASH500_manifest.json",
+      "symbol": "CRASH500",
+      "first_utc": "2026-04-07T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "ac119c1e6d4e7f6a35b3f41bfb678b735691e388e1b1ad735aedb4d51aa16d04"
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/BOOM500_manifest.json",
+      "symbol": "BOOM500",
+      "first_utc": "2026-10-03T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "f5ce9c7a2671c661b10aa6088aafbf8141f9a0329cbfeaa2f4e9480e99a43963"
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/CRASH500_manifest.json",
+      "symbol": "CRASH500",
+      "first_utc": "2026-10-03T11:08:00+00:00",
+      "end_exclusive_utc": "2026-10-04T11:08:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "acquisition_manifest_actual_first_last",
+      "source_sha256": "c91ac42ab9dd1d3796fbdebed5793eb0b61bb69a123f3e46d821a7d44924077a"
+    },
+    {
+      "path": "github_actions/run37182050753/job111376414997/crt_sqlite_test.py",
+      "symbol": "Boom 1000 Index",
+      "first_utc": "2026-02-24T10:30:00+00:00",
+      "end_exclusive_utc": "2026-05-04T15:40:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "Executed M5 study from/to metadata projected from log; last bound is final observed opening timestamp, not independently reconstructed next-bar end.",
+      "source_sha256": "373c85b50c029884dd67d7d0317afc952ca0d675e096af768b9f780c6cf82b2a"
+    },
+    {
+      "path": "github_actions/run37182050753/job111376414997/crt_sqlite_test.py",
+      "symbol": "Boom 300 Index",
+      "first_utc": "2026-02-27T18:45:00+00:00",
+      "end_exclusive_utc": "2026-05-04T15:35:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "Executed M5 study from/to metadata projected from log; last bound is final observed opening timestamp, not independently reconstructed next-bar end.",
+      "source_sha256": "373c85b50c029884dd67d7d0317afc952ca0d675e096af768b9f780c6cf82b2a"
+    },
+    {
+      "path": "github_actions/run37182050753/job111376414997/crt_sqlite_test.py",
+      "symbol": "Boom 500 Index",
+      "first_utc": "2026-02-27T18:45:00+00:00",
+      "end_exclusive_utc": "2026-05-04T15:40:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "Executed M5 study from/to metadata projected from log; last bound is final observed opening timestamp, not independently reconstructed next-bar end.",
+      "source_sha256": "373c85b50c029884dd67d7d0317afc952ca0d675e096af768b9f780c6cf82b2a"
+    },
+    {
+      "path": "github_actions/run37182050753/job111376414997/crt_sqlite_test.py",
+      "symbol": "Boom 600 Index",
+      "first_utc": "2026-02-05T02:50:00+00:00",
+      "end_exclusive_utc": "2026-05-04T15:40:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "Executed M5 study from/to metadata projected from log; last bound is final observed opening timestamp, not independently reconstructed next-bar end.",
+      "source_sha256": "373c85b50c029884dd67d7d0317afc952ca0d675e096af768b9f780c6cf82b2a"
+    },
+    {
+      "path": "github_actions/run37182050753/job111376414997/crt_sqlite_test.py",
+      "symbol": "Boom 900 Index",
+      "first_utc": "2026-02-27T19:00:00+00:00",
+      "end_exclusive_utc": "2026-05-04T15:40:00+00:00",
+      "overlap_seconds": 0,
+      "evidence": "Executed M5 study from/to metadata projected from log; last bound is final observed opening timestamp, not independently reconstructed next-bar end.",
+      "source_sha256": "373c85b50c029884dd67d7d0317afc952ca0d675e096af768b9f780c6cf82b2a"
+    }
+  ],
+  "source_csv_boundary_timestamps": [
+    {
+      "path": "data/spike_hunter/boom500_m1_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327781,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-07T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_hunter/boom500_m1_raw.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327829,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-07T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_hunter/crash500_m1_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327107,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-07T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_hunter/crash500_m1_raw.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327155,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-07T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_payoff_external/boom500_m1_180d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12326833,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-09T11:08:00+00:00",
+      "last_row_utc": "2026-04-07T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_payoff_external/boom500_m1_180d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12326833,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-09T11:08:00+00:00",
+      "last_row_utc": "2026-04-07T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_payoff_external/boom500_m1_checkpoint.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 11889302,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-15T20:28:00+00:00",
+      "last_row_utc": "2026-04-07T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_payoff_external/crash500_m1_180d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327619,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-09T11:08:00+00:00",
+      "last_row_utc": "2026-04-07T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_payoff_external/crash500_m1_180d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327619,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-09T11:08:00+00:00",
+      "last_row_utc": "2026-04-07T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_payoff_external/crash500_m1_checkpoint.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 11890032,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-15T20:28:00+00:00",
+      "last_row_utc": "2026-04-07T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_timed_external/boom500_m1_180d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 293471,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-05T04:17:26+00:00",
+      "last_row_utc": "2025-10-09T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_timed_external/boom500_m1_180d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 293425,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-05T04:18:00+00:00",
+      "last_row_utc": "2025-10-09T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_timed_external/crash500_m1_180d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 293374,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-05T04:17:26+00:00",
+      "last_row_utc": "2025-10-09T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "data/spike_timed_external/crash500_m1_180d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 293326,
+      "time_column": "epoch",
+      "first_row_utc": "2025-10-05T04:18:00+00:00",
+      "last_row_utc": "2025-10-09T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/boom500_m1_1d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 68523,
+      "time_column": "epoch",
+      "first_row_utc": "2026-10-03T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/boom500_m1_1d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 68523,
+      "time_column": "epoch",
+      "first_row_utc": "2026-10-03T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/crash500_m1_1d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 68519,
+      "time_column": "epoch",
+      "first_row_utc": "2026-10-03T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/crash500_m1_1d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 68519,
+      "time_column": "epoch",
+      "first_row_utc": "2026-10-03T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/boom500_m1_180d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327829,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-07T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/boom500_m1_180d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327781,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-07T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/boom500_m1_checkpoint.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 11890345,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-13T20:28:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/boom500_m1_1d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 68523,
+      "time_column": "epoch",
+      "first_row_utc": "2026-10-03T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/boom500_m1_1d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 68523,
+      "time_column": "epoch",
+      "first_row_utc": "2026-10-03T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/crash500_m1_1d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 68519,
+      "time_column": "epoch",
+      "first_row_utc": "2026-10-03T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/crash500_m1_1d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 68519,
+      "time_column": "epoch",
+      "first_row_utc": "2026-10-03T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/crash500_m1_180d.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327155,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-07T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/crash500_m1_180d_clean.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 12327107,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-07T11:08:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/crash500_m1_checkpoint.csv",
+      "status": "BOUNDARY_TIMESTAMPS_ONLY",
+      "bytes": 11889807,
+      "time_column": "epoch",
+      "first_row_utc": "2026-04-13T20:28:00+00:00",
+      "last_row_utc": "2026-10-04T11:07:00+00:00",
+      "boundary_interval_overlap_seconds": 0,
+      "not_full_scan_or_independent_sortedness_proof": true
+    }
+  ],
+  "metadata_inventory": [
+    {
+      "path": "data/single_frame_campaign_20261011/declaration.json",
+      "sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292",
+      "bytes": 393467
+    },
+    {
+      "path": "data/spike_learned_transfer/BOOM300N_manifest.json",
+      "sha256": "84c81a65caee84095a065509eec0c2e84c11db1aef43203e681a30bf164ec1f1",
+      "bytes": 1236
+    },
+    {
+      "path": "data/spike_learned_transfer/CRASH300N_manifest.json",
+      "sha256": "0b672980e7f7119d99ddde15c032cb8338d634816ec56a73a22dacabe5d699d9",
+      "bytes": 1239
+    },
+    {
+      "path": "data/spike_learned_transfer/acquisition_config.json",
+      "sha256": "46c74576c192f67ccbc9432a4bed8f50614d781eafda2a6814a1564237ca26a4",
+      "bytes": 346
+    },
+    {
+      "path": "data/spike_native300_recent/BOOM300N_manifest.json",
+      "sha256": "a7b4c79196bcd9b305f9886e4412044600dd0eeb7ab0e48967dac313921a5e69",
+      "bytes": 1236
+    },
+    {
+      "path": "data/spike_native300_recent/CRASH300N_manifest.json",
+      "sha256": "e8ae04243424143c5a16a2e68e75149c0771b208584d30b25c97b74776b8ab15",
+      "bytes": 1239
+    },
+    {
+      "path": "data/spike_native300_recent/acquisition_config.json",
+      "sha256": "104cf20fe5ee9c6f078e3436691765df1220b6e2b55c4f83a6ad02e63c6fa4cd",
+      "bytes": 346
+    },
+    {
+      "path": "data/spike_nonlinear600_old/BOOM600_manifest.json",
+      "sha256": "a0eab6281f6da9eace3ca4e582cef9cec3b339509c747f6fb8b8c9a97a9d9fff",
+      "bytes": 1971
+    },
+    {
+      "path": "data/spike_nonlinear600_old/CRASH600_manifest.json",
+      "sha256": "beda71a651096493ee5b00627ce7612a295d6fafced0e2d9d893fd6c759e4c08",
+      "bytes": 1236
+    },
+    {
+      "path": "data/spike_nonlinear600_old/acquisition_config.json",
+      "sha256": "0cb26924db3f64b7c290b05e37d30ec29de8aa3f0c898c9921b436270e8cb854",
+      "bytes": 344
+    },
+    {
+      "path": "data/spike_nonlinear600_old/retry_crash600/CRASH600_manifest.json",
+      "sha256": "f95d5bc7a768a7735604dbd4c0c07d7f0997ca0abc52758da29b5f56d81b644e",
+      "bytes": 1251
+    },
+    {
+      "path": "data/spike_nonlinear600_old/retry_crash600/acquisition_config.json",
+      "sha256": "777dabb4b55e250dcf97a94576a3128400be1bc8ac37744c836977d21ef180a4",
+      "bytes": 329
+    },
+    {
+      "path": "data/spike_nonlinear600_recent/BOOM600_manifest.json",
+      "sha256": "764f93ba483f35c93002ba60ea750b7b1dfb301cfa46179255fdae4324558884",
+      "bytes": 2158
+    },
+    {
+      "path": "data/spike_nonlinear600_recent/CRASH600_manifest.json",
+      "sha256": "2fc84024b4240dbdd69af622ede430b4edf5b2e1a31092a373df2ce5be3e0b67",
+      "bytes": 2161
+    },
+    {
+      "path": "data/spike_nonlinear600_recent/acquisition_config.json",
+      "sha256": "bacbd35ef2bb3d49d33ee4fe1370b0b338ea124719dcfd2179271b1fac5c9025",
+      "bytes": 344
+    },
+    {
+      "path": "data/spike_payoff_external/BOOM500_manifest.json",
+      "sha256": "2a986173af705e1eda4a7e48c4cfb105b91810735c708805930d3d3def691ed2",
+      "bytes": 1232
+    },
+    {
+      "path": "data/spike_payoff_external/CRASH500_manifest.json",
+      "sha256": "f204607ee5e155774acf3d7ae59ce09a4eecba2baff6791f989778daa3add599",
+      "bytes": 1235
+    },
+    {
+      "path": "data/spike_payoff_external/acquisition_config.json",
+      "sha256": "16537397b58f160439f1aedbbbf0c91b7e9458ac89df0edbef570dd7a41d41b5",
+      "bytes": 344
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-04-11_manifest.json",
+      "sha256": "54e8c3018c2e8f80ba615c1104190d3f1af4fae1e74c72fd356a8e393f81958d",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-04-26_manifest.json",
+      "sha256": "2cd1eae0a2152e4da30dbf6095ff9254a9d00f05f6a6baa9ab61c1b614fa662e",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-05-12_manifest.json",
+      "sha256": "2abb2177ba0fe821fcd38848d7048b092bf725518e676c5ac8ef5132a7b9e879",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-05-28_manifest.json",
+      "sha256": "7f0e6d2f1ad6812770a1047acfb06753be71dd448f0b8042bbfbdc606646b7d7",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-06-13_manifest.json",
+      "sha256": "0ea97344edf2f0c36b04d381dfcadbadfbf17a0f3734012f319da24f7d79f449",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-06-29_manifest.json",
+      "sha256": "cb2fefacd306c47d102fcdf41e2b0bc4ae8d6bda28e7aaf9f9a2375510a153cf",
+      "bytes": 1820
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-07-15_manifest.json",
+      "sha256": "bc7ad9677c7582cb2e60f1fc5450a68e88d185d6c6213107888f73577e12fc69",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-07-31_manifest.json",
+      "sha256": "11339b3a2e78d32d8522a455ea5ba807ca250c5d8a4a2d5a8f428e975fe0e458",
+      "bytes": 1820
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-08-16_manifest.json",
+      "sha256": "8a5ef90dc20a0b74d8654bf4f8c9a5fad547d6941311b02a9c80c805194147b9",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-09-01_manifest.json",
+      "sha256": "d8dc6541b0843e501089e7eab17843038c39d759b7cbeacc74d767402825b13e",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-09-17_manifest.json",
+      "sha256": "5033fd411f42448db61e56f8afa6f3a32ce1fb3a9b321e4c2be9bdb9ee19af61",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/BOOM600_2026-10-03_manifest.json",
+      "sha256": "2f21801d11c9b1dd8fe016228a7bb8e37ac4015ce1ea826f86dd80fff52ded82",
+      "bytes": 1703
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-04-11_manifest.json",
+      "sha256": "f34d978e39032c5dfc83368fb7242844f6d97f03bdc6568afc721282a8acdfb4",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-04-26_manifest.json",
+      "sha256": "8aafc97bc3c02cf219d5264a3ff80c0743a9aaaf3e2bddc4cf704019775ac9dc",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-05-12_manifest.json",
+      "sha256": "2056e0f060b4773b7e8271c924f997d9151754e36ca5b774a35a5f21d16e3f63",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-05-28_manifest.json",
+      "sha256": "347626ee0e2dfc132ff02cb12c4b9f3d694da0eace4c2e389b8c048a6f0f9fad",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-06-13_manifest.json",
+      "sha256": "99d5ea805cdd7d68159d1de5ea17218533d5d8241c866b662df5eeae00c5e5cd",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-06-29_manifest.json",
+      "sha256": "236d9e870c4620d8bb0b4ef7e69e56a6586fb7089af94c05c357b84dbf859cfb",
+      "bytes": 1824
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-07-15_manifest.json",
+      "sha256": "682f6e44760f16031dba867dfcf502db51c7b3a505c1a212a5304dd139b70e57",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-07-31_manifest.json",
+      "sha256": "1aec891110d4bfeff7403db16f18d28e6c8870c8df6c920027a53c631cf16eec",
+      "bytes": 1824
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-08-16_manifest.json",
+      "sha256": "82f93fd991f3437ce8cc6b04c386ec083ca2d078666a84606bc463d606c35916",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-09-01_manifest.json",
+      "sha256": "e627d4140dbd9e48f63ed6341e8cd5e39cb4e0df3c060f4c7056258d5113b0b5",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-09-17_manifest.json",
+      "sha256": "c4772a4eb570c00e536bf1667f716fa251e74aed1ef16736436f59e44eec1efd",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/CRASH600_2026-10-03_manifest.json",
+      "sha256": "dd7f14cf27e34703e76f9bb7039064cb1a5708da29d0421cdb1c8aafab474fc7",
+      "bytes": 1707
+    },
+    {
+      "path": "data/spike_tick_execution_20261005/acquisition_config.json",
+      "sha256": "7d9eefbf5bbe76a9d1d612e9de08b6e2c58c5b71223ab3ef922ea1d41998134e",
+      "bytes": 717
+    },
+    {
+      "path": "data/spike_timed_external/BOOM500_manifest.json",
+      "sha256": "efa7dacb8ba10afa9c931128f9901f8c5206d3923e44cc78479d15d83a18bca2",
+      "bytes": 1450
+    },
+    {
+      "path": "data/spike_timed_external/CRASH500_manifest.json",
+      "sha256": "26118aa528c2171218b81f525d5c1f33ff64672688eccb6d1402ef36c2f7e41c",
+      "bytes": 1453
+    },
+    {
+      "path": "data/spike_timed_external/acquisition_config.json",
+      "sha256": "7a4401fb042710dca1a4035cd8cbd6bf10c0342db963e14a9a91557703e56c54",
+      "bytes": 344
+    },
+    {
+      "path": "data/spike_timed_transfer/BOOM1000_manifest.json",
+      "sha256": "3c473462111df2fbb99c77b896ee5c1a2c8c83d44bfe63d4764cc348cbc8ff75",
+      "bytes": 1234
+    },
+    {
+      "path": "data/spike_timed_transfer/CRASH1000_manifest.json",
+      "sha256": "3f66cbd318d1baf6eaaaa6f0503dba63f48e7b26fc70833ee4bd5791b0eb238b",
+      "bytes": 1237
+    },
+    {
+      "path": "data/spike_timed_transfer/acquisition_config.json",
+      "sha256": "a3d127df4addc5bb4a5fa380e95e274e8f18444fd0a28b81f3ce32cb8322a2d0",
+      "bytes": 346
+    },
+    {
+      "path": "docs/frozen_cost_ceiling_20261007/attempt01/declaration.json",
+      "sha256": "a767193342ae3f3db256f9cdc5c5c16260e1e0a910ee085d25b927ac17722b10",
+      "bytes": 916
+    },
+    {
+      "path": "docs/hybrid_event_regions_20261008/declaration.json",
+      "sha256": "6ade87b7207754cc21468d68ab315c3f66f5b84bedc2e274907b453759e03af5",
+      "bytes": 222758
+    },
+    {
+      "path": "docs/jump_representation_20261007/acquisition_declaration.json",
+      "sha256": "05b9e682e112d187d61a6a9321cc106fcf78b55eb0fb6710eac6ccc3b25b5db9",
+      "bytes": 22255
+    },
+    {
+      "path": "docs/nonlinear_region_20261010/declaration.json",
+      "sha256": "35756c799689ef6a03f76e3aeda86a4568994a328f79af13685a929f91bee09c",
+      "bytes": 773058
+    },
+    {
+      "path": "docs/region_reward_20261008/declaration.json",
+      "sha256": "5a5cd147eefc7d12ac83c8ef839c931292c5fb338e07a1f083001c893c5196e5",
+      "bytes": 230903
+    },
+    {
+      "path": "docs/representation_regions_20261008/declaration.json",
+      "sha256": "939cf7aa31208b89bef012d143b0ff21bd2603c1f0c91e7e8d45339dfa04c388",
+      "bytes": 221514
+    },
+    {
+      "path": "docs/spike_hunter_20261004/BOOM500_manifest.json",
+      "sha256": "629e8bb3e01dc5f54d140728a46eb9dd18e3f4d7e5f94287d68bbc04a594a246",
+      "bytes": 1530
+    },
+    {
+      "path": "docs/spike_hunter_20261004/CRASH500_manifest.json",
+      "sha256": "6869a216857318c1e9873fd76101e41e1875c79231f6d8aefdcb65da55fdf0d7",
+      "bytes": 1533
+    },
+    {
+      "path": "docs/spike_multiframe_20261005/declaration.json",
+      "sha256": "94d1a4f6baa6fc871a424927a86300363ecf102835a4e9fd349e41b090cd957e",
+      "bytes": 13045
+    },
+    {
+      "path": "docs/spike_native300_20261005/declaration.json",
+      "sha256": "5878311075992899ad7f5bee63913fcae27db5d8f8f1f98809068c42fa86b008",
+      "bytes": 8600
+    },
+    {
+      "path": "docs/spike_nonlinear_20261005/declaration.json",
+      "sha256": "d707abf76613caf6aa6a2f0d9a583f7fe051084771568d23dad49dcb1696c8d7",
+      "bytes": 16721
+    },
+    {
+      "path": "docs/spike_short_target_20261006/declaration.json",
+      "sha256": "6d6f0065156c8323c7dcb858a18e5205e74d155a12c2848c081712af9fb7afc5",
+      "bytes": 21854
+    },
+    {
+      "path": "docs/spike_short_tick_20261006/declaration.json",
+      "sha256": "3d2ba50df24f4a79abf6c5eda385bc97ab66069e7cb71c25af931abef8997b09",
+      "bytes": 138914
+    },
+    {
+      "path": "docs/spike_tick_age_payoff_20261005/declaration.json",
+      "sha256": "19042bb604f6d0c0a46b1312f2114381089794038c79092dbf90ab43892cddbf",
+      "bytes": 96314
+    },
+    {
+      "path": "docs/spike_tick_execution_20261005/declaration.json",
+      "sha256": "9ff3ded40833f74a6222d1507217903b09e718bf73ea33967bfaedb31bcb117e",
+      "bytes": 10035
+    },
+    {
+      "path": "docs/spike_tick_path_risk_20261006/declaration.json",
+      "sha256": "5146be9f6c496a6728d58dc2b8074e88fa7f210cb7ea08819c980262f9378764",
+      "bytes": 125605
+    },
+    {
+      "path": "docs/spike_tick_tail_20261005/declaration.json",
+      "sha256": "54cc70cd3baa1b6b1fa77e3aae01cdde08d6a5c3f21143d12a1f94fee4524d1d",
+      "bytes": 82865
+    },
+    {
+      "path": "docs/tail_successor_20261007/declaration.json",
+      "sha256": "cc0d3e5f996cc8335f6858957db63d91578f89b89c3a778edf4bd8a53e7925fe",
+      "bytes": 84785
+    },
+    {
+      "path": "docs/tick_history_availability_20261007/declaration.json",
+      "sha256": "76bccb57ba6d128703bcbab29b4ffeada9f42594892bc98b53ea0f593c2b3b20",
+      "bytes": 1407
+    },
+    {
+      "path": "docs/zone_excursions_20261008/declaration.json",
+      "sha256": "3e423cc9d4ff413d0cb1e1aad03292dced2915d3b7bd478589876534dd4c903d",
+      "bytes": 10197
+    },
+    {
+      "path": "docs/zone_study_20261008/declaration.json",
+      "sha256": "97b80f2ab852427232190f645343a96b24a295849a54ab4df8343b2f7edd4d18",
+      "bytes": 218832
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/BOOM500_manifest.json",
+      "sha256": "36ea4b840a41e32be71c04f7f05fe1764171ad244dc86205a93129acc393e6f9",
+      "bytes": 1316
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/CRASH500_manifest.json",
+      "sha256": "bb642e9b9092120c807b68eb7592aed4c5f6891ee3a19852150d4520d0441a7b",
+      "bytes": 1319
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/collector_integrated_check/acquisition_config.json",
+      "sha256": "693893d60b4cd38e4c4fc61a019ae358a7c115f7749d296d60629b31cc23bd95",
+      "bytes": 342
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/BOOM500_manifest.json",
+      "sha256": "81a2fa9cccfa9607d090e28cac071e1b0329307c85aa612dcfcf0b0f9bdd00f8",
+      "bytes": 1618
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/CRASH500_manifest.json",
+      "sha256": "ac119c1e6d4e7f6a35b3f41bfb678b735691e388e1b1ad735aedb4d51aa16d04",
+      "bytes": 1621
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/acquisition_config.json",
+      "sha256": "bcf0497154104cdb695651b6a985416700a5f9cef1168ee0266aeae9a290fd92",
+      "bytes": 284
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/BOOM500_manifest.json",
+      "sha256": "f5ce9c7a2671c661b10aa6088aafbf8141f9a0329cbfeaa2f4e9480e99a43963",
+      "bytes": 1319
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/CRASH500_manifest.json",
+      "sha256": "c91ac42ab9dd1d3796fbdebed5793eb0b61bb69a123f3e46d821a7d44924077a",
+      "bytes": 1322
+    },
+    {
+      "path": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/work/data_recon/collector_smoke_1d/acquisition_config.json",
+      "sha256": "693893d60b4cd38e4c4fc61a019ae358a7c115f7749d296d60629b31cc23bd95",
+      "bytes": 342
+    }
+  ],
+  "protocol_date_token_inventory": [
+    {
+      "path": "docs/SPIKE_HUNTER_PROTOCOL.md",
+      "sha256": "04c3b4e6a82d33a4be6b62d42bf91e75d45131f4a53f3bdf5d0c44965a8c6bd8",
+      "date_tokens_only": [
+        {
+          "line": 3,
+          "date_tokens": [
+            "2026-10-04"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/SPIKE_LEARNED_PROTOCOL.md",
+      "sha256": "f9118dd0dbc5089ba8ac984be193033e0166378651a55786d3642f1827725000",
+      "date_tokens_only": [
+        {
+          "line": 62,
+          "date_tokens": [
+            "2025-10-09 11:08",
+            "2026-04-07 11:08"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/SPIKE_MULTIFRAME_PROTOCOL.md",
+      "sha256": "898bdcd383e30c52f78ee10c8d5e07deea488aed043721d3150aafc38f488901",
+      "date_tokens_only": [
+        {
+          "line": 29,
+          "date_tokens": [
+            "2025-10-09 11:08",
+            "2026-04-07 11:08"
+          ]
+        },
+        {
+          "line": 35,
+          "date_tokens": [
+            "2026-04-07 11:08",
+            "2026-10-04 11:08"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/SPIKE_NATIVE300_PROTOCOL.md",
+      "sha256": "fe8e31fefcef0cd239be71d9482b98b982bf0af7afbb4227333164702e9837e9",
+      "date_tokens_only": [
+        {
+          "line": 37,
+          "date_tokens": [
+            "2025-10-09 11:08",
+            "2026-04-07 11:08"
+          ]
+        },
+        {
+          "line": 41,
+          "date_tokens": [
+            "2026-04-07 11:08",
+            "2026-10-04 11:08"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/SPIKE_NONLINEAR_PROTOCOL.md",
+      "sha256": "a511b92c72e9bf50978726d96760c1aa8a33e1b9fbff800c370ffd0783ad7c46",
+      "date_tokens_only": [
+        {
+          "line": 32,
+          "date_tokens": [
+            "2025-10-09 11:08"
+          ]
+        },
+        {
+          "line": 33,
+          "date_tokens": [
+            "2026-04-07 11:08",
+            "2026-04-07 11:08",
+            "2026-10-04 11:08"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/SPIKE_PAYOFF_PROTOCOL.md",
+      "sha256": "ada26ae258e6215a68812ec5ab3033325be7a7702e897f1cd33dd8372d720877",
+      "date_tokens_only": [
+        {
+          "line": 3,
+          "date_tokens": [
+            "2026-10-04 17:21"
+          ]
+        },
+        {
+          "line": 17,
+          "date_tokens": [
+            "2026-04-07",
+            "2026-10-04"
+          ]
+        },
+        {
+          "line": 21,
+          "date_tokens": [
+            "2026-04-07 11:08"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/SPIKE_SHORT_TARGET_PROTOCOL.md",
+      "sha256": "c3fafa795fd054fccba2961e1cb3a194a595b8c292819840ed5a7dbcaabcd044",
+      "date_tokens_only": [
+        {
+          "line": 39,
+          "date_tokens": [
+            "2025-10-09 11:08",
+            "2026-04-07 11:08"
+          ]
+        },
+        {
+          "line": 40,
+          "date_tokens": [
+            "2026-10-04 11:08"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/SPIKE_SHORT_TICK_PROTOCOL.md",
+      "sha256": "305fea5f08b51fd07ba95d59f8938364611549fc5776a4fde2da68efd92e6979",
+      "date_tokens_only": [
+        {
+          "line": 41,
+          "date_tokens": [
+            "2026-04-11"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/SPIKE_TICK_AGE_PAYOFF_PROTOCOL.md",
+      "sha256": "226055c0f2aa435d685c2c9c23eb42983439da5d86eab76e387a7fdb0791d4a3",
+      "date_tokens_only": []
+    },
+    {
+      "path": "docs/SPIKE_TICK_EXECUTION_PROTOCOL.md",
+      "sha256": "67e237f7c7ac313eec8fafcc1a8f79f366930a69d7b2feee0a90cb49c84f80dd",
+      "date_tokens_only": []
+    },
+    {
+      "path": "docs/SPIKE_TICK_PATH_RISK_PROTOCOL.md",
+      "sha256": "71dabdefbe333162d569fda2dfaac9cc32633325f21d0e1e25d7413d2d65c09d",
+      "date_tokens_only": []
+    },
+    {
+      "path": "docs/SPIKE_TICK_TAIL_PROTOCOL.md",
+      "sha256": "905ae3c2b28d9979e21d92fe0c1617456544af8700817d5e75a16bebcdfdc374",
+      "date_tokens_only": []
+    },
+    {
+      "path": "docs/SPIKE_TIMED_PROTOCOL.md",
+      "sha256": "53534c4e25412907545abc3f495e1718bc00710311ee390854d89273f7b98447",
+      "date_tokens_only": [
+        {
+          "line": 22,
+          "date_tokens": [
+            "2026-04-07",
+            "2026-10-04"
+          ]
+        },
+        {
+          "line": 26,
+          "date_tokens": [
+            "2025-10-09",
+            "2026-04-07"
+          ]
+        },
+        {
+          "line": 28,
+          "date_tokens": [
+            "2025-04-12",
+            "2025-10-09"
+          ]
+        },
+        {
+          "line": 31,
+          "date_tokens": [
+            "2025-10-09",
+            "2026-04-07"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/hybrid_event_regions_20261008/PROTOCOL.md",
+      "sha256": "84a99c218401159afede6c04492957253c1dc76fae8eeba714466f33faa9592d",
+      "date_tokens_only": [
+        {
+          "line": 29,
+          "date_tokens": [
+            "2025-10-09T11:08Z",
+            "2026-04-07T11:08Z"
+          ]
+        },
+        {
+          "line": 30,
+          "date_tokens": [
+            "2026-04-07T11:08Z",
+            "2026-10-04T11:08Z"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/nonlinear_region_20261010/PROTOCOL.md",
+      "sha256": "63792d6a8d21e720ed81cf8ee0d460f02e900f2786e3c6cb8d852393996b26dd",
+      "date_tokens_only": [
+        {
+          "line": 51,
+          "date_tokens": [
+            "2025-10-09T11:08Z",
+            "2026-04-07T11:08Z"
+          ]
+        },
+        {
+          "line": 52,
+          "date_tokens": [
+            "2026-04-07T11:08Z",
+            "2026-10-04T11:08Z"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/region_reward_20261008/PROTOCOL.md",
+      "sha256": "40abadc3e60c7cf4fb43598ae182ac01ad285cb240f96357aea5b109d4e0f740",
+      "date_tokens_only": [
+        {
+          "line": 46,
+          "date_tokens": [
+            "2025-10-09T11:08Z",
+            "2026-04-07T11:08Z"
+          ]
+        },
+        {
+          "line": 47,
+          "date_tokens": [
+            "2026-04-07T11:08Z",
+            "2026-10-04T11:08Z"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/representation_regions_20261008/PROTOCOL.md",
+      "sha256": "7c22b20b9a848d4d6fbb445d59ab23731341fac4494a1f920658f2b6f7bab67c",
+      "date_tokens_only": [
+        {
+          "line": 24,
+          "date_tokens": [
+            "2025-10-09T11:08Z",
+            "2026-04-07T11:08Z"
+          ]
+        },
+        {
+          "line": 25,
+          "date_tokens": [
+            "2026-04-07T11:08Z",
+            "2026-10-04T11:08Z"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/zone_excursions_20261008/PROTOCOL.md",
+      "sha256": "1d3deccaf6e3030aac3394475ccd215c886a06c3ea7a62499e71afab44e5d7cb",
+      "date_tokens_only": []
+    },
+    {
+      "path": "docs/zone_study_20261008/PROTOCOL.md",
+      "sha256": "8d134cdc160748569c191c542f878c495a7e47790f5647f1458c03db8b592bd8",
+      "date_tokens_only": [
+        {
+          "line": 53,
+          "date_tokens": [
+            "2025-10-09T00:00Z",
+            "2026-10-05T00:00Z"
+          ]
+        },
+        {
+          "line": 54,
+          "date_tokens": [
+            "2025-10-09T11:08Z",
+            "2026-04-07T11:08Z"
+          ]
+        },
+        {
+          "line": 57,
+          "date_tokens": [
+            "2026-04-07T11:08Z",
+            "2026-10-04T11:08Z"
+          ]
+        }
+      ]
+    }
+  ],
+  "ignored_tick_filename_inventory": {
+    "directory": "data/jump_representation_ticks_20261007",
+    "files": 722,
+    "first_filename_date": "2025-10-09",
+    "last_filename_date": "2026-10-04",
+    "candidate_overlap_by_filename_dates": 0,
+    "contents_read": false
+  },
+  "original_referenced_cached_csv": {
+    "status": "RESOLVED_AS_SQLITE_NOT_CSV",
+    "source_repository": "Graeza/tradlab",
+    "source_file": "market_data.db",
+    "source_url": "https://github.com/Graeza/tradlab",
+    "workflow_run_id": 37182050753,
+    "workflow_job_id": 111376414997,
+    "workflow_run_url": "https://github.com/zyadixx-oss/boom-crash-quant-lab/actions/runs/37182050753",
+    "experiment_head_sha": "7636802bc805414e1db63cfb0e208c426ccc91e9",
+    "source_hashes": [
+      {
+        "path": ".github/workflows/crt-self-test.yml",
+        "git_ref": "7636802bc805414e1db63cfb0e208c426ccc91e9",
+        "sha256": "9cc65ea5ada025d62ffa1e072a667dcc9fe293317bc3303eae252fa5fba31495"
+      },
+      {
+        "path": "scripts/crt_sqlite_test.py",
+        "git_ref": "7636802bc805414e1db63cfb0e208c426ccc91e9",
+        "sha256": "373c85b50c029884dd67d7d0317afc952ca0d675e096af768b9f780c6cf82b2a"
+      },
+      {
+        "path": "scripts/crt_self_test.py",
+        "git_ref": "7636802bc805414e1db63cfb0e208c426ccc91e9",
+        "sha256": "4335a5b8b4cd2d51b72e4aa04285788a05cc51fb2cc2886919c17387af56978c"
+      }
+    ],
+    "artifact_metadata": {
+      "id": 11295462006,
+      "name": "crt-sqlite-results",
+      "digest": "sha256:c630ed4a3741405b7fe11870505a540e2af3663bfe3c4929cb26f4d5bfa24da7",
+      "downloaded": false
+    },
+    "executed_m5_date_metadata_by_symbol": {
+      "Boom 1000 Index": {
+        "from": "2026-02-24 10:30:00+00:00",
+        "to": "2026-05-04 15:40:00+00:00",
+        "split_time": "2026-04-13 21:20:00+00:00"
+      },
+      "Boom 300 Index": {
+        "from": "2026-02-27 18:45:00+00:00",
+        "to": "2026-05-04 15:35:00+00:00",
+        "split_time": "2026-04-14 21:20:00+00:00"
+      },
+      "Boom 500 Index": {
+        "from": "2026-02-27 18:45:00+00:00",
+        "to": "2026-05-04 15:40:00+00:00",
+        "split_time": "2026-04-14 21:25:00+00:00"
+      },
+      "Boom 600 Index": {
+        "from": "2026-02-05 02:50:00+00:00",
+        "to": "2026-05-04 15:40:00+00:00",
+        "split_time": "2026-04-08 02:15:00+00:00"
+      },
+      "Boom 900 Index": {
+        "from": "2026-02-27 19:00:00+00:00",
+        "to": "2026-05-04 15:40:00+00:00",
+        "split_time": "2026-04-14 21:30:00+00:00"
+      }
+    },
+    "database_date_inventory_only": [
+      {
+        "symbol": "Boom 1000 Index",
+        "timeframe": 5,
+        "rows": 19935,
+        "first_utc": "2026-02-24T10:30:00+00:00",
+        "last_utc": "2026-05-04T15:40:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "M5_PRICES_ACTUALLY_LOADED_BY_PRIOR_STUDY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 1000 Index",
+        "timeframe": 15,
+        "rows": 7978,
+        "first_utc": "2026-02-10T13:15:00+00:00",
+        "last_utc": "2026-05-04T15:30:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 1000 Index",
+        "timeframe": 16385,
+        "rows": 3492,
+        "first_utc": "2025-12-10T03:00:00+00:00",
+        "last_utc": "2026-05-04T14:00:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 1000 Index",
+        "timeframe": 16388,
+        "rows": 2375,
+        "first_utc": "2025-04-03T16:00:00+00:00",
+        "last_utc": "2026-05-04T08:00:00+00:00",
+        "candidate_interval_overlap_seconds": 5040000,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 300 Index",
+        "timeframe": 5,
+        "rows": 18971,
+        "first_utc": "2026-02-27T18:45:00+00:00",
+        "last_utc": "2026-05-04T15:35:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "M5_PRICES_ACTUALLY_LOADED_BY_PRIOR_STUDY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 300 Index",
+        "timeframe": 15,
+        "rows": 7656,
+        "first_utc": "2026-02-13T21:30:00+00:00",
+        "last_utc": "2026-05-04T15:15:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 300 Index",
+        "timeframe": 16385,
+        "rows": 3413,
+        "first_utc": "2025-12-13T10:00:00+00:00",
+        "last_utc": "2026-05-04T14:00:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 300 Index",
+        "timeframe": 16388,
+        "rows": 2352,
+        "first_utc": "2025-04-07T12:00:00+00:00",
+        "last_utc": "2026-05-04T08:00:00+00:00",
+        "candidate_interval_overlap_seconds": 4708800,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 500 Index",
+        "timeframe": 5,
+        "rows": 18972,
+        "first_utc": "2026-02-27T18:45:00+00:00",
+        "last_utc": "2026-05-04T15:40:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "M5_PRICES_ACTUALLY_LOADED_BY_PRIOR_STUDY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 500 Index",
+        "timeframe": 15,
+        "rows": 7657,
+        "first_utc": "2026-02-13T21:30:00+00:00",
+        "last_utc": "2026-05-04T15:30:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 500 Index",
+        "timeframe": 16385,
+        "rows": 3413,
+        "first_utc": "2025-12-13T10:00:00+00:00",
+        "last_utc": "2026-05-04T14:00:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 500 Index",
+        "timeframe": 16388,
+        "rows": 2352,
+        "first_utc": "2025-04-07T12:00:00+00:00",
+        "last_utc": "2026-05-04T08:00:00+00:00",
+        "candidate_interval_overlap_seconds": 4708800,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 600 Index",
+        "timeframe": 5,
+        "rows": 25498,
+        "first_utc": "2026-02-05T02:50:00+00:00",
+        "last_utc": "2026-05-04T15:40:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "M5_PRICES_ACTUALLY_LOADED_BY_PRIOR_STUDY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 600 Index",
+        "timeframe": 15,
+        "rows": 9761,
+        "first_utc": "2026-01-22T23:30:00+00:00",
+        "last_utc": "2026-05-04T15:30:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 600 Index",
+        "timeframe": 16385,
+        "rows": 3939,
+        "first_utc": "2025-11-21T12:00:00+00:00",
+        "last_utc": "2026-05-04T14:00:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 600 Index",
+        "timeframe": 16388,
+        "rows": 2483,
+        "first_utc": "2025-03-16T16:00:00+00:00",
+        "last_utc": "2026-05-04T08:00:00+00:00",
+        "candidate_interval_overlap_seconds": 6595200,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 900 Index",
+        "timeframe": 5,
+        "rows": 18969,
+        "first_utc": "2026-02-27T19:00:00+00:00",
+        "last_utc": "2026-05-04T15:40:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "M5_PRICES_ACTUALLY_LOADED_BY_PRIOR_STUDY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 900 Index",
+        "timeframe": 15,
+        "rows": 7656,
+        "first_utc": "2026-02-13T21:45:00+00:00",
+        "last_utc": "2026-05-04T15:30:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 900 Index",
+        "timeframe": 16385,
+        "rows": 3413,
+        "first_utc": "2025-12-13T10:00:00+00:00",
+        "last_utc": "2026-05-04T14:00:00+00:00",
+        "candidate_interval_overlap_seconds": 0,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      },
+      {
+        "symbol": "Boom 900 Index",
+        "timeframe": 16388,
+        "rows": 2352,
+        "first_utc": "2025-04-07T12:00:00+00:00",
+        "last_utc": "2026-05-04T08:00:00+00:00",
+        "candidate_interval_overlap_seconds": 4708800,
+        "exposure_type": "TIME_BOUND_METADATA_ONLY",
+        "prices_read_by_this_audit": false
+      }
+    ],
+    "crash_in_source_inventory": false,
+    "query_scope": "load_bars selects time,open,high,low,close WHERE symbol=? AND timeframe=5; syms selects M5 Boom/Crash with COUNT>=500. H1 ranges derived from M5.",
+    "source_dataset_commit_pinned": false,
+    "source_dataset_commit_note": "Workflow cloned upstream HEAD at execution time without printing a retained source commit in the inspected date projection. Do not infer present upstream data are identical.",
+    "no_remote_market_database_or_csv_fetched": true,
+    "timestamp_boundary_method": "Existing execution-log from/to/split_time and inventory MIN/MAX(time) projection. No SQLite downloaded and no price/payoff fields output or retained by audit.",
+    "wider_inventory_overlap_interpretation": "Some non-M5 rows have date bounds overlapping candidate; inventory alone exposes dates/counts, not their actual prices. Prior executable selects only M5 price rows. Binary DB checkout is acknowledged but does not alone prove non-M5 prices were read."
+  },
+  "known_unknowns": [
+    {
+      "item": "MT5 cache seen previously around 2024-07",
+      "source": "Parent task observation; not independently inspected here",
+      "research_exposure_inferred": false,
+      "reason": "A terminal cache can result from prefetch/chart/history use and is not by itself a dated research declaration. July alone is outside the candidate, but other cached periods and human viewing remain unknown."
+    },
+    {
+      "item": "Other projects, archived/deleted sources, remote ChatGPT sandbox attachments and human chart viewing",
+      "searched": false,
+      "reason": "No global never-saw-prices proof is claimed."
+    },
+    {
+      "item": "New independent availability-only pilot",
+      "raw_quotes_read_by_this_audit": false,
+      "source": "Parent reports predeclared 60-second windows on January1/April1/July1 2025 for both500 symbols; pilot selection used availability only.",
+      "within_candidate": "January1 pilot outside study; April1 pilot within TRAIN (ends April2). July1 outside. No new strategy outputs inspected by this audit.",
+      "final_price_exposure_note": "No reported pilot lies within sealed final May2-June1. Root must record exact request boundaries and any price displays separately before freeze."
+    },
+    {
+      "item": "Third-party DB non-M5 price access outside the known executable",
+      "searched": false,
+      "reason": "Date/count inventory proves wider data existed in the checked-out DB. No evidence inspected establishes that its non-M5 prices were used in a prior study. Source run commit is known; upstream DB commit was not retained in inspected metadata."
+    }
+  ],
+  "audit_exception": {
+    "occurred": true,
+    "source": "data/spike_payoff_external/earliest_availability_probe.json",
+    "what": "An attempted top-level-key inventory encountered a list-shaped saved wire object and unintentionally rendered six old OHLC candle rows. No values are copied into this audit.",
+    "symbols": [
+      "BOOM500",
+      "CRASH500"
+    ],
+    "rendered_price_period_start_utc": "2025-10-09T11:08:00+00:00",
+    "rendered_price_period_end_exclusive_utc": "2025-10-09T11:11:00+00:00",
+    "overlaps_candidate": false,
+    "new_market_data_fetched": false,
+    "corrective_action": "Stopped dumping list-shaped wire inventories; subsequent extraction is restricted to metadata/time tokens."
+  },
+  "fallback_before_freeze": {
+    "action": "Parent may freeze the historical candidate under the explicit bounded-project no-known-price-study-overlap claim, after recording pilot exposure and exact sealed-final boundary. If a stronger globally unseen claim is required or conflicting prior-price evidence appears, use a prospective final boundary committed before collection/inspection.",
+    "constraints": [
+      "Do not choose historical dates by payoff.",
+      "Do not call new Bid/Ask columns over exposed prices an independent price holdout.",
+      "Keep May2-June1 final unread by strategy code until freeze and development gates.",
+      "Any later discovered prior actual price use overlapping final invalidates its independent-final claim.",
+      "No automation, acquisition or study is started by this audit."
+    ]
+  },
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}

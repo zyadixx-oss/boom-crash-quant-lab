@@ -1,0 +1,61 @@
+{
+  "symbol": "CRASH600",
+  "api_symbol": "CRASH600",
+  "source": "Official Deriv public WebSocket ticks_history",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "authentication_used": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "retrieved_at_utc": "2026-10-05T09:54:02.681438+00:00",
+  "granularity_seconds": 60,
+  "requested_days": 180,
+  "requested_start_epoch": 1775560080,
+  "requested_cutoff_exclusive_epoch": 1791112080,
+  "requested_start_utc": "2026-04-07T11:08:00+00:00",
+  "requested_cutoff_exclusive_utc": "2026-10-04T11:08:00+00:00",
+  "rows": 259200,
+  "first_epoch": 1775560080,
+  "last_epoch": 1791112020,
+  "first_utc": "2026-04-07T11:08:00+00:00",
+  "last_utc": "2026-10-04T11:07:00+00:00",
+  "file": "data/spike_nonlinear600_recent/crash600_m1_180d.csv",
+  "sha256": "32cf300a115d7df9722a18c66077bd52143dbe9e068b761589cb84c11f9bd84b",
+  "page_count": 260,
+  "equal_pagination_duplicates_removed": 0,
+  "request_errors": [
+    {
+      "end": 1785172078,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    },
+    {
+      "end": 1785112079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    },
+    {
+      "end": 1785052079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    },
+    {
+      "end": 1784992079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    },
+    {
+      "end": 1784932079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    }
+  ],
+  "expected_grid_rows": 259200,
+  "documentation": [
+    "https://developers.deriv.com/docs/options/ws-public/",
+    "https://developers.deriv.com/docs/data/ticks-history/"
+  ]
+}

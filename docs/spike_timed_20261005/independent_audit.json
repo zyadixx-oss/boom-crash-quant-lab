@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "run_utc": "2026-10-05T04:36:49.411399+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "script_sha256": "fbecf3b85dfd0b1e4731b2c8d6984c954a100c36d0f447e79059aee187f58658",
+  "helper_sha256": "ac0b34c978b549711e383e9cec86410e205535d5cf04b9d2ba234ef9b5161cdf",
+  "selection_sha256": "7681dd680cef2f9372c11ea0df5cf23e7377d561d5c4f512e2a707d1a3c39dbe",
+  "results_sha256": "ed83a614dfb29d512725bda058e9cd45c3a939622dfa3ff2c7ceb423f868224b",
+  "scope": "Independent scalar standard-library replay of all transfer primary/selected ledgers, causal ATR, paths and summary arithmetic; no timed engine or metrics imports",
+  "not_verified": [
+    "signal eligibility/completeness",
+    "baseline replay",
+    "bootstrap",
+    "sensitivities",
+    "actual fills"
+  ],
+  "checks": 98852,
+  "total_trades": 5191,
+  "ledgers": [
+    {
+      "training_symbol": "BOOM500",
+      "evaluation_symbol": "BOOM1000",
+      "role": "primary",
+      "id": "SPIKE::CRT__sl2_h15",
+      "trades": 505,
+      "ledger_sha256": "9877fe434775fefa95bc0fd9d58de4583b7cab9e1946102e18593584d8802321",
+      "mean_net_R": -0.10296835576290181,
+      "profit_factor": 0.8066686036937524,
+      "mismatches": 0
+    },
+    {
+      "training_symbol": "BOOM500",
+      "evaluation_symbol": "BOOM1000",
+      "role": "selected",
+      "id": "SPIKE::BB_SQUEEZE__sl4_h1",
+      "trades": 3803,
+      "ledger_sha256": "60dc1c6d236d4c37240a7778345f6b545690723ddab02ec9412ae7319331c71d",
+      "mean_net_R": -0.021261529047667534,
+      "profit_factor": 0.5923594071501476,
+      "mismatches": 0
+    },
+    {
+      "training_symbol": "CRASH500",
+      "evaluation_symbol": "CRASH1000",
+      "role": "primary",
+      "id": "SPIKE::CRT__sl2_h15",
+      "trades": 484,
+      "ledger_sha256": "217e8a2a54238cb952a69f0a473f56e4d2df4c5b526d467118aa6317d33c067f",
+      "mean_net_R": -0.10225718360412006,
+      "profit_factor": 0.8118309830672288,
+      "mismatches": 0
+    },
+    {
+      "training_symbol": "CRASH500",
+      "evaluation_symbol": "CRASH1000",
+      "role": "selected",
+      "id": "SPIKE::CRT_DISPLACEMENT__sl4_h5",
+      "trades": 399,
+      "ledger_sha256": "9eaba37513fa707df880d175e011d179248f2614914f1a8457ba2bc174256f28",
+      "mean_net_R": -0.057045228131872856,
+      "profit_factor": 0.6142958350117713,
+      "mismatches": 0
+    }
+  ],
+  "saved_false_safety_values": 108,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "max_numeric_differences": {
+    "entry": 0,
+    "exit": 0,
+    "atr": 0,
+    "gross_R": 0,
+    "net_R": 0,
+    "holding_minutes": 0,
+    "win_rate": 0,
+    "mean_net_R": 4.163336342344337e-17,
+    "median_net_R": 0,
+    "sum_net_R": 1.4210854715202004e-14,
+    "mean_gross_R": 1.3877787807814457e-17,
+    "profit_factor": 2.220446049250313e-16,
+    "average_win_R": 2.220446049250313e-16,
+    "average_loss_R": 0,
+    "median_holding_minutes": 0,
+    "break_even_cost_atr": 2.7755575615628914e-17,
+    "cluster_se": 0,
+    "selection_score": 2.7755575615628914e-17,
+    "closed_trade_return": 0,
+    "closed_trade_max_drawdown": 0,
+    "illustrative_risk_fraction": 0
+  }
+}

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/stable_profit_assessment_20261009/screen_saved_results.py", line 319, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/stable_profit_assessment_20261009/screen_saved_results.py", line 312, in main
+    report = assessment()
+             ^^^^^^^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/stable_profit_assessment_20261009/screen_saved_results.py", line 230, in assessment
+    scoped = extract_descriptors(document, name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/stable_profit_assessment_20261009/screen_saved_results.py", line 126, in extract_descriptors
+    raise ValueError("Tail prerequisite unexpectedly claims policy PF")
+ValueError: Tail prerequisite unexpectedly claims policy PF

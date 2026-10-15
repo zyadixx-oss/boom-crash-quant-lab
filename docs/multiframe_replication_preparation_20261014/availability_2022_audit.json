@@ -1,0 +1,32 @@
+{
+  "actual_terminal_pids": [],
+  "all_retained_file_hashes_match": true,
+  "checked_utc": "2026-10-14T20:42:13.474055+00:00",
+  "declaration_sha256": "1c9a34432f9d5e2a54b150d2d6e29da1f9a5e5cbe38bd2c3ab7cfc0bf3f7847d",
+  "exact_launcher_requests": 2,
+  "extra_queries_or_retries": 0,
+  "full_year_availability_or_historical_absence_proven": false,
+  "helper_sha256": "c4ef98458b7b4eb83602f68252b1814224fe6ee8649cd0ad3090da32f244266d",
+  "prior_batch_status": "COMPLETED_FIRST_30_SOURCE_ONLY",
+  "prior_collection_and_probe_locks_free": true,
+  "prior_owner_pid44096_gone": true,
+  "private_history_reads": 0,
+  "probe_wrapper_pids": [],
+  "protected_metadata_unchanged": true,
+  "result_sha256": "2ffeface6dbf4698969625e4a4a510ebc6f5a8915466ad5b92dc8af33d2e9709",
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "sealed_final_raw_reads": 0,
+  "source_rows_returned": 0,
+  "status": "PASS_TWO_DECLARED_EMPTY_SOURCE_PROBES_RETAINED",
+  "strategy_or_return_computations": 0,
+  "verified_receipt_states_empty_no_quotes_verified": true
+}

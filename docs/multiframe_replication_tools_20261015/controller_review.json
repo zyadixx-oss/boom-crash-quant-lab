@@ -1,0 +1,136 @@
+{
+  "all_old_code_pins_match": true,
+  "checks": {
+    "all_development_numeric_gates_both_scenarios_and_UNKNOWN_fail_closed": true,
+    "all_stage_metadata_required_before_any_source_bytes_or_fit": true,
+    "bare_final_boolean_rejected_before_index_or_cache_read": true,
+    "cache_paths_exact_before_open_including_reindexed_forgery": true,
+    "calendar_pilot_and_thirty_minute_embargo_filter": true,
+    "current_selected_metadata_rederived_before_cache_selection": true,
+    "eligible_FINAL_one_selected_policy_six_cases_one_analyze_call": true,
+    "eligible_FINAL_real_statistics_API_full_219_slots_216_eligible_mask": true,
+    "exact_stage_calendar_masks_and_TRAIN_prefix_U_lineage": true,
+    "failed_empty_day_retained_no_substitution_or_recovery": true,
+    "immutable_receipt_registry_no_recreation": true,
+    "metadata_only_readonly_preflight_no_freeze_output_or_raw_verification": true,
+    "one_whole_stage_evaluation_not_independent_pilot_segments": true,
+    "orphan_SQLite_ledger_evidence_preserved_fail_closed_no_silent_reuse": true,
+    "producer_exact_calendar_requests_split_symbol_and_safety": true,
+    "producer_required_exporter_verifier_launcher_pins": true,
+    "production_99999_draws_argument_verified_no_bootstrap_on_zero_synthetic_sample": true,
+    "selected_record_canonical_hashes_not_whole_live_state_hash": true,
+    "selection_rederived_before_final_metadata_cache_or_statistics": true,
+    "shared_controls_calculated_once_per_scenario": true,
+    "source_and_output_symlink_ancestor_guards": true,
+    "state_source_only_all_eight_false": true,
+    "ten_development_cases_then_ten_cache_reuses": true,
+    "transient_final_authorization_bound_to_declaration_selection_and_revoked": true,
+    "unrelated_future_record_append_preserves_prior_cache": true,
+    "zero_eligible_zero_final_cases_zero_analyze_calls_and_p1_placeholders": true
+  },
+  "code_pins": {
+    "scripts/run_multiframe_replication_study.py": "b27989ecb4f3d4371f197d2c3f7639c8cdbffbff2d1b09ea2b2d9b44a4ce7285",
+    "tests/test_multiframe_replication_study.py": "b04a15e7b563ee6c7f582cd828b9b34266613eb52a7eb5fca9ef40e79a0a7d7d"
+  },
+  "created_utc": "2026-10-15T02:01:05.200464+00:00",
+  "limitations": [
+    "Synthetic controller conformance does not establish source coverage, predictive edge, execution quality, costs or cash profit.",
+    "Current actual metadata-only preflight source failure is retained; no stage can run until every required declared shard is valid.",
+    "An interruption leaving unregistered receipt, fit database or ledger requires explicit reviewed recovery while retaining original evidence; controller will not overwrite or silently adopt it.",
+    "Future batch producer declarations and exact selected records must bind in immutable stage source receipts before any fit or measurement."
+  ],
+  "old_frozen_acquisition_code_pins": {
+    "independent_multiframe_research/bars.py": {
+      "actual": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+      "expected": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+      "matches": true
+    },
+    "independent_multiframe_research/policies.py": {
+      "actual": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+      "expected": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+      "matches": true
+    },
+    "independent_multiframe_research/runner.py": {
+      "actual": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+      "expected": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+      "matches": true
+    },
+    "independent_profit_research/data.py": {
+      "actual": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+      "expected": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+      "matches": true
+    },
+    "independent_profit_research/execution.py": {
+      "actual": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+      "expected": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+      "matches": true
+    },
+    "independent_profit_research/tape.py": {
+      "actual": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+      "expected": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+      "matches": true
+    },
+    "scripts/mt5/ExportResearchQuotes.mq5": {
+      "actual": "98a3d5dd209853cadd9072f0eee822b20d8724801f312d8eea15e8535d435bc5",
+      "expected": "98a3d5dd209853cadd9072f0eee822b20d8724801f312d8eea15e8535d435bc5",
+      "matches": true
+    },
+    "scripts/verify_mt5_quote_export.py": {
+      "actual": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+      "expected": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+      "matches": true
+    },
+    "work/independent_profit_pilot_20261013/run_dataset_probe.py": {
+      "actual": "5958c3eb3ce8b947ae44c83685f07399bb6fbb0d3f24b8cb85138b0fcd22f8b9",
+      "expected": "5958c3eb3ce8b947ae44c83685f07399bb6fbb0d3f24b8cb85138b0fcd22f8b9",
+      "matches": true
+    },
+    "work/multiframe_replication_source_20261014/collect_first_batch.py": {
+      "actual": "1ffe590e7703415d34c9f763db761d6c04b7a315d2926820cef798785a107ace",
+      "expected": "1ffe590e7703415d34c9f763db761d6c04b7a315d2926820cef798785a107ace",
+      "matches": true
+    }
+  },
+  "owned_files": [
+    "scripts/run_multiframe_replication_study.py",
+    "tests/test_multiframe_replication_study.py"
+  ],
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "schema_version": 1,
+  "scope": {
+    "actual_FINAL_reads": 0,
+    "actual_MT5_calls": 0,
+    "actual_final_bootstrap_executed": false,
+    "actual_network_calls": 0,
+    "actual_private_financial_reads": 0,
+    "actual_source_quote_reads": 0,
+    "actual_strategy_measurements": 0,
+    "cash_net": null,
+    "full_suite_current_final_hash": "PENDING_ROOT_RERUN",
+    "future_alpha_protocol_frozen": false,
+    "goal_profit_achieved": false,
+    "production_protocol_freeze_executed": false,
+    "profit_qualified": false,
+    "real_orders": 0
+  },
+  "source_calendar_declaration_sha256": "917b08901b48073ad66e79aa1c3743078e21e2bbb5f9fefe35b4a142f470f84d",
+  "status": "PASS_SYNTHETIC_CONTROLLER_CONFORMANCE_ONLY",
+  "targeted_test_run": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -q -o addopts='' tests/test_multiframe_replication_study.py",
+    "duration_seconds": 41.16,
+    "exit_code": 0,
+    "failed": 0,
+    "fixtures": "TEMPORARY_SYNTHETIC_REPOSITORIES_ONLY",
+    "passed": 74,
+    "session_id": 52147
+  }
+}

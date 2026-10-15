@@ -1,0 +1,266 @@
+{
+  "packaged_at": "2026-10-12T08:40:33.078704+00:00",
+  "scope": "Completed recorded-results, structural/requirements audits, exports and selected final plus development-WF numerical replay; not the entire development search",
+  "all_final_and_WF_reproduction_complete": true,
+  "entries": [
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/historical_cost_availability_review_20261012.json",
+      "source_sha256": "89fbfbb56f04d64f7899ba5539adb9235659b1a37c8f9db3e2996dc1f57c60f0",
+      "published": "docs/single_frame_campaign_20261011/historical_cost_availability_review_20261012.json",
+      "published_sha256": "89fbfbb56f04d64f7899ba5539adb9235659b1a37c8f9db3e2996dc1f57c60f0",
+      "bytes": 18166,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/historical_cost_availability_review_20261012.ar.md",
+      "source_sha256": "fd910e3e0d491ed1137b06f7e6f8aad867276b336202743d6170aa50f4f555b5",
+      "published": "docs/single_frame_campaign_20261011/historical_cost_availability_review_20261012.ar.md",
+      "published_sha256": "a9a684cd43dea0e9bae55303b2b66c88269a82c145905b2378575e7ec29fd3d9",
+      "bytes": 5531,
+      "transformation": "Markdown relative links adjusted only"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_review_20261012.ar.md",
+      "source_sha256": "72a7af4e47e1ade2d8c30218560812567cf6177db2a11c81e0f7d0fdebc7ee02",
+      "published": "docs/single_frame_campaign_20261011/results_review_20261012.ar.md",
+      "published_sha256": "72a7af4e47e1ade2d8c30218560812567cf6177db2a11c81e0f7d0fdebc7ee02",
+      "bytes": 13863,
+      "transformation": "Markdown relative links adjusted only"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_summary_20261012.json",
+      "source_sha256": "673d4c42edd29045cb1da6457831f4addbddbc84afc8b9c396f7c956c4b84def",
+      "published": "docs/single_frame_campaign_20261011/results_summary_20261012.json",
+      "published_sha256": "673d4c42edd29045cb1da6457831f4addbddbc84afc8b9c396f7c956c4b84def",
+      "bytes": 113096,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_results_review_20261012.json",
+      "source_sha256": "9aa18790880b632b2d9b513d307fb9582760057e5ffdcc4e06bc0ae6c831b180",
+      "published": "docs/single_frame_campaign_20261011/results_full_20261012.json.gz",
+      "published_sha256": "f35e7c93f7e466c9da31d1881715e036aed19db2b4510cfe22ad1c2e88afd11c",
+      "bytes": 728595,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/completed_campaign_audit_20261012.json",
+      "source_sha256": "3a21d8af52b486a273a7697be9bef2cd1ae17694567958aa2bd345a80a877972",
+      "published": "docs/single_frame_campaign_20261011/completed_campaign_audit_20261012.json.gz",
+      "published_sha256": "736f6e6e5810a73ab9bd1014f485373d0cb25b70a45cfc117e23ef4c277748f8",
+      "bytes": 240883,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/completed_campaign_audit_20261012.ar.md",
+      "source_sha256": "fbe7e4ae60fe8d7d74a9dd4fb2c03278be5b861775b3ea0e233196a60576e3b1",
+      "published": "docs/single_frame_campaign_20261011/completed_campaign_audit_20261012.ar.md",
+      "published_sha256": "fbe7e4ae60fe8d7d74a9dd4fb2c03278be5b861775b3ea0e233196a60576e3b1",
+      "bytes": 31493,
+      "transformation": "Markdown relative links adjusted only"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/progress_delta_completed_20261012.json",
+      "source_sha256": "d0c23dd07686546656da4bdb36c40dd5c0a45144b9770f7f5cc122c1ea8f577f",
+      "published": "docs/single_frame_campaign_20261011/progress_delta_completed_20261012.json.gz",
+      "published_sha256": "c2160fead184b8ec91e33c1ee2535f7bac790c537a25013c7d430a3228fa1880",
+      "bytes": 12934,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/progress_delta_completed_20261012.ar.md",
+      "source_sha256": "539d364fc3ac9d98ba2a0928b3293e64222f9dd5e7d550242e4f33cc484cf275",
+      "published": "docs/single_frame_campaign_20261011/progress_delta_completed_20261012.ar.md",
+      "published_sha256": "0a8266203758ebe986b3ee3434b2fd0d00b873d10b2c89e82c3f0c5e154edeb3",
+      "bytes": 2607,
+      "transformation": "Markdown relative links adjusted only"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/dashboard_final_browser_qa_20261012.json",
+      "source_sha256": "1304f11dceea1a5fb3e36d8722a07959fe6ef2d21e37e5d6a35588b97c5f5f75",
+      "published": "docs/single_frame_campaign_20261011/dashboard_final_browser_qa_20261012.json",
+      "published_sha256": "1304f11dceea1a5fb3e36d8722a07959fe6ef2d21e37e5d6a35588b97c5f5f75",
+      "bytes": 2207,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_export_browser_qa_20261012.json",
+      "source_sha256": "c7f546d07d6450b7ad017a278d116a3dbdd3b555774d25ded838c5d6d4c3c4ff",
+      "published": "docs/single_frame_campaign_20261011/final_export_browser_qa_20261012.json",
+      "published_sha256": "c7f546d07d6450b7ad017a278d116a3dbdd3b555774d25ded838c5d6d4c3c4ff",
+      "bytes": 2796,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/dashboard_final_desktop_20261012.jpg",
+      "source_sha256": "5aeb9bea223354c3f4c7148d1e18ecb1ed009966e0077511cc142d0230edd1a7",
+      "published": "docs/single_frame_campaign_20261011/dashboard_final_desktop_20261012.jpg",
+      "published_sha256": "5aeb9bea223354c3f4c7148d1e18ecb1ed009966e0077511cc142d0230edd1a7",
+      "bytes": 64321,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/dashboard_final_mobile_reload_20261012.jpg",
+      "source_sha256": "ef49158bedf26c2472954cbd2dfd58db87daa640452da700ce6232ad8ba5ffeb",
+      "published": "docs/single_frame_campaign_20261011/dashboard_final_mobile_20261012.jpg",
+      "published_sha256": "ef49158bedf26c2472954cbd2dfd58db87daa640452da700ce6232ad8ba5ffeb",
+      "bytes": 30845,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/dashboard_export_clarification_visible_20261012.jpg",
+      "source_sha256": "1ef66f894f56daa0a799f571664767851491f7ace2b1a2c5cca0f71bdec23dce",
+      "published": "docs/single_frame_campaign_20261011/dashboard_export_clarification_20261012.jpg",
+      "published_sha256": "1ef66f894f56daa0a799f571664767851491f7ace2b1a2c5cca0f71bdec23dce",
+      "bytes": 63354,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/export_guard_independent_review_20261012.json",
+      "source_sha256": "4744e0b80e1d626edbb5bbf3b5ee318db733f3b63019023499bbecfebb70a8bb",
+      "published": "docs/single_frame_campaign_20261011/export_guard_independent_review_20261012.json",
+      "published_sha256": "4744e0b80e1d626edbb5bbf3b5ee318db733f3b63019023499bbecfebb70a8bb",
+      "bytes": 1929,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Downloads/boom-crash-results.csv",
+      "source_sha256": "a0b8459811d74861983a522513ed8985feb7a8219cc82e874a06f3c3719adc62",
+      "published": "docs/single_frame_campaign_20261011/selected_final_policies_20261012.csv",
+      "published_sha256": "a0b8459811d74861983a522513ed8985feb7a8219cc82e874a06f3c3719adc62",
+      "bytes": 1206595,
+      "transformation": "exact actual browser-downloaded final1300 CSV bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/progress_delta_audit.py",
+      "source_sha256": "6dbeba699fa5bfe40d7f4249a7c63a2cc7dff80921f595ea63dd3c5b12bb4aa5",
+      "published": "scripts/audit_campaign_progress_delta.py",
+      "published_sha256": "6dbeba699fa5bfe40d7f4249a7c63a2cc7dff80921f595ea63dd3c5b12bb4aa5",
+      "bytes": 31763,
+      "transformation": "exact code bytes; repository-relative ROOT remains same from scripts/"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/completed_campaign_audit.py",
+      "source_sha256": "0a158b3aac7f1912825960ed16f5dd8e443921cf984b5d657dcf5f3985ad3d28",
+      "published": "scripts/audit_completed_campaign_structure.py",
+      "published_sha256": "0a158b3aac7f1912825960ed16f5dd8e443921cf984b5d657dcf5f3985ad3d28",
+      "bytes": 51856,
+      "transformation": "exact code bytes; repository-relative ROOT remains same from scripts/"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/audit_checker_corrections_closeout_20261012.json",
+      "source_sha256": "b8c70fc279dac5cae3187558c3b82efcb24e651690001303c0ab9dcf8008788b",
+      "published": "docs/single_frame_campaign_20261011/audit_checker_corrections_20261012.json.gz",
+      "published_sha256": "53f41334d8c5a21da78976d82d3481368b8388973a3a1487aaf9daa95ce9d70c",
+      "bytes": 289910,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/search_phase_labelled_20261012.receipt.json",
+      "source_sha256": "4ffcd3d6314cee373d20e52eb5b8dce502e829f0cf6e50faa487f8bae12f988d",
+      "published": "docs/single_frame_campaign_20261011/search_phase_labelled_20261012.receipt.json",
+      "published_sha256": "4ffcd3d6314cee373d20e52eb5b8dce502e829f0cf6e50faa487f8bae12f988d",
+      "bytes": 424552,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/search_phase_labelled_bytecheck_20261012.json",
+      "source_sha256": "97825ba48e3159739134f6030b4a2aa3b7e8177adf88e04a01c2239f3d1a7bfd",
+      "published": "docs/single_frame_campaign_20261011/search_phase_labelled_bytecheck_20261012.json",
+      "published_sha256": "97825ba48e3159739134f6030b4a2aa3b7e8177adf88e04a01c2239f3d1a7bfd",
+      "bytes": 1236,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_replay_closeout_independent_20261012.json",
+      "source_sha256": "a1054a8e2c87ac1e0b33c186dca9a19098f2127f690244652e92fa644a8417a6",
+      "published": "docs/single_frame_campaign_20261011/final_replay_closeout_independent_20261012.json.gz",
+      "published_sha256": "c693066885ff5137433b6e8c7dea427b4f23a8f9fd0ff14ea444eb150d859c3b",
+      "bytes": 837008,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_replay_20261011/latest.json",
+      "source_sha256": "c7ac7cbc3d6009131edd516c512f388fa9b34c8f30b65f9b09ae563d9b0fb0d0",
+      "published": "docs/single_frame_campaign_20261011/final_replay_latest_20261012.json.gz",
+      "published_sha256": "ce618f9726f9b09dd723f8170c714c860ae88f239d78aec3696955ba6af3bad0",
+      "bytes": 433699,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_replay_evidence_20261012.tar.gz",
+      "source_sha256": "87523e36679b0cb51b67a7b30c6a30058a502479ac71fa45460d492db2a6546f",
+      "published": "docs/single_frame_campaign_20261011/final_replay_evidence_20261012.tar.gz",
+      "published_sha256": "87523e36679b0cb51b67a7b30c6a30058a502479ac71fa45460d492db2a6546f",
+      "bytes": 2723503,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/final_replay_packaging_check_20261012.json",
+      "source_sha256": "0fad47e1af5141a690bd6af4c41436b1b3a18b3c622ebc7d20871f9ce4148921",
+      "published": "docs/single_frame_campaign_20261011/final_replay_packaging_check_20261012.json",
+      "published_sha256": "0fad47e1af5141a690bd6af4c41436b1b3a18b3c622ebc7d20871f9ce4148921",
+      "bytes": 849,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/state.json",
+      "source_sha256": "8f2272a487bfa447556f2f6acdb13a235333f8b67eb89d25112356c1e68a5fba",
+      "published": "docs/single_frame_campaign_20261011/campaign_state_20261012.json.gz",
+      "published_sha256": "5cabb8bdc291d5e4dc3d3ceeddf9e05cfc67723c04f3128b038df0973a27b058",
+      "bytes": 383849,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/declaration.json",
+      "source_sha256": "8af790ef59a5d1f77b0b4b7662bd64a27566ba67c2930ae9f13592942d73c292",
+      "published": "docs/single_frame_campaign_20261011/campaign_declaration_20261012.json.gz",
+      "published_sha256": "50b463f2b43ba8ed0aa87013c18a0e01e2bfa5c147d3e1568d992ff40cbeaf14",
+      "bytes": 37697,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/selection_frozen.json",
+      "source_sha256": "bf811e19afaa0ccc105db44ee060c6bf2be7dd94e9e2ad686596f60bb0bb2eed",
+      "published": "docs/single_frame_campaign_20261011/campaign_selection_20261012.json.gz",
+      "published_sha256": "b3a017c62465d756434beefdb7f4dbf3a51780523facac2f6cead347b16f8b78",
+      "bytes": 1037705,
+      "transformation": "deterministic gzip; decoded bytes exactly equal source"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/FINAL_CAMPAIGN_REPORT_20261012.json",
+      "source_sha256": "3a041927af1be10addb9ba7b0d79c46760ced3a3cea8145d39de151b5f09fbe4",
+      "published": "docs/single_frame_campaign_20261011/FINAL_CAMPAIGN_REPORT_20261012.json",
+      "published_sha256": "3a041927af1be10addb9ba7b0d79c46760ced3a3cea8145d39de151b5f09fbe4",
+      "bytes": 118885,
+      "transformation": "exact bytes"
+    },
+    {
+      "source": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/work/FINAL_CAMPAIGN_REPORT_20261012.ar.md",
+      "source_sha256": "25483ea281f60f020a41c7ec278a9b29f127b22e43dbd73d2561c67f07b29892",
+      "published": "docs/single_frame_campaign_20261011/FINAL_CAMPAIGN_REPORT_20261012.ar.md",
+      "published_sha256": "741f579d772592ab6af72ce9041e6011b96e13388deed16dd9972534224ffde5",
+      "bytes": 24567,
+      "transformation": "Markdown evidence links adjusted and local archive scope clarification appended; scientific text/tables unchanged"
+    }
+  ],
+  "source_data_included": false,
+  "source_data_location": "pinned immutable local campaign archive; preserve absolute source bindings",
+  "no_development_search_numerical_replay_claim": true,
+  "selected_final_and_WF_reproduction_complete": true,
+  "all_development_search_measurements_replayed": false,
+  "numerical_replay": {
+    "fresh_final": 1300,
+    "fresh_selected_development_folds": 3900,
+    "reused_receipts": 0,
+    "status": "PASS",
+    "completed_at": "2026-10-12T04:47:25.989862+00:00"
+  },
+  "requirements": {
+    "total": 79,
+    "VERIFIED": 65,
+    "PARTIAL": 11,
+    "NOT_VERIFIED": 3,
+    "not_full_contract_certification": true
+  }
+}

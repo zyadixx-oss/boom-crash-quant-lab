@@ -1,0 +1,234 @@
+{
+  "authentication_accounts_proposals_orders_used": false,
+  "cost_promotion_allowed": false,
+  "costs": {
+    "contract_type": "UNVERIFIED_CFD_MAPPING",
+    "evidence": [],
+    "execution_verified": false,
+    "historical_costs_verified": false,
+    "mapping_verified": false,
+    "round_trip_atr": 0.1,
+    "round_trip_price": 0.0,
+    "status": "ASSUMED_NOT_VERIFIED"
+  },
+  "datasets": {
+    "BOOM500": {
+      "api_symbol": "BOOM500",
+      "requested_file": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/history/BOOM500/snapshots/750ee8ef6a1a2e1e609573b94d1d83b1e3b1aabc86b3d7c42b5200327d708aa8.csv",
+      "requested_sha256": "750ee8ef6a1a2e1e609573b94d1d83b1e3b1aabc86b3d7c42b5200327d708aa8",
+      "source_audit": {
+        "canonical_rows": 525575,
+        "catalogue_binding_checked": true,
+        "effective_end_exclusive_epoch": 1791721320,
+        "effective_interval_rule": "first canonical received M1 through last canonical received M1 plus 60 seconds",
+        "effective_start_epoch": 1760186760,
+        "equal_original_duplicates_removed": 0,
+        "excluded_counts": {
+          "before_requested_start": 0,
+          "not_closed_at_original_receipt": 0,
+          "not_closed_before_requested_cutoff": 0,
+          "off_grid": 2
+        },
+        "excluded_provider_boundary_rows": 1000,
+        "gap_free_segment_selected": false,
+        "internal_invalid_rows": 1,
+        "internal_missing_minutes": 1,
+        "internal_missing_ranges": [
+          {
+            "end_exclusive_epoch": 1785228660,
+            "missing_minutes": 1,
+            "start_epoch": 1785228600
+          }
+        ],
+        "interpolations": false,
+        "leading_boundary_loss_minutes": 24,
+        "manifest_chain_length": 2,
+        "off_grid_inside_effective_interval": 1,
+        "off_grid_outside_effective_interval": 1,
+        "original_page_references": 527,
+        "original_received_rows": 526577,
+        "performance_accessed": false,
+        "requested_end_exclusive_epoch": 1791721320,
+        "requested_missing_minutes": 25,
+        "requested_missing_ranges": [
+          {
+            "end_exclusive_epoch": 1760186760,
+            "missing_minutes": 24,
+            "start_epoch": 1760185320
+          },
+          {
+            "end_exclusive_epoch": 1785228660,
+            "missing_minutes": 1,
+            "start_epoch": 1785228600
+          }
+        ],
+        "requested_start_epoch": 1760185320,
+        "safety": {
+          "LIVE_ALLOWED": false,
+          "LIVE_TRADING": false,
+          "OPENED_TRADES": false,
+          "READY_FOR_LIVE": false
+        },
+        "source_file_sha256": "750ee8ef6a1a2e1e609573b94d1d83b1e3b1aabc86b3d7c42b5200327d708aa8",
+        "status": "PASS",
+        "trailing_boundary_loss_minutes": 0,
+        "verified_unique_pages": 527
+      },
+      "split": {
+        "calendar_shared_between_frames": true,
+        "end": 1791721320,
+        "fractions": [
+          0.6,
+          0.2,
+          0.2
+        ],
+        "start": 1760186760,
+        "train_end": 1779107496,
+        "validation_end": 1785414408
+      }
+    },
+    "CRASH500": {
+      "api_symbol": "CRASH500",
+      "requested_file": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/history/CRASH500/snapshots/ab2fd2b48988175aa288d12836eca5be41f67ca3c76ad18cbbde18f98ff89468.csv",
+      "requested_sha256": "ab2fd2b48988175aa288d12836eca5be41f67ca3c76ad18cbbde18f98ff89468",
+      "source_audit": {
+        "canonical_rows": 525567,
+        "catalogue_binding_checked": true,
+        "effective_end_exclusive_epoch": 1791721320,
+        "effective_interval_rule": "first canonical received M1 through last canonical received M1 plus 60 seconds",
+        "effective_start_epoch": 1760187240,
+        "equal_original_duplicates_removed": 0,
+        "excluded_counts": {
+          "before_requested_start": 0,
+          "not_closed_at_original_receipt": 0,
+          "not_closed_before_requested_cutoff": 0,
+          "off_grid": 2
+        },
+        "excluded_provider_boundary_rows": 1000,
+        "gap_free_segment_selected": false,
+        "internal_invalid_rows": 1,
+        "internal_missing_minutes": 1,
+        "internal_missing_ranges": [
+          {
+            "end_exclusive_epoch": 1785228660,
+            "missing_minutes": 1,
+            "start_epoch": 1785228600
+          }
+        ],
+        "interpolations": false,
+        "leading_boundary_loss_minutes": 32,
+        "manifest_chain_length": 2,
+        "off_grid_inside_effective_interval": 1,
+        "off_grid_outside_effective_interval": 1,
+        "original_page_references": 527,
+        "original_received_rows": 526569,
+        "performance_accessed": false,
+        "requested_end_exclusive_epoch": 1791721320,
+        "requested_missing_minutes": 33,
+        "requested_missing_ranges": [
+          {
+            "end_exclusive_epoch": 1760187240,
+            "missing_minutes": 32,
+            "start_epoch": 1760185320
+          },
+          {
+            "end_exclusive_epoch": 1785228660,
+            "missing_minutes": 1,
+            "start_epoch": 1785228600
+          }
+        ],
+        "requested_start_epoch": 1760185320,
+        "safety": {
+          "LIVE_ALLOWED": false,
+          "LIVE_TRADING": false,
+          "OPENED_TRADES": false,
+          "READY_FOR_LIVE": false
+        },
+        "source_file_sha256": "ab2fd2b48988175aa288d12836eca5be41f67ca3c76ad18cbbde18f98ff89468",
+        "status": "PASS",
+        "trailing_boundary_loss_minutes": 0,
+        "verified_unique_pages": 527
+      },
+      "split": {
+        "calendar_shared_between_frames": true,
+        "end": 1791721320,
+        "fractions": [
+          0.6,
+          0.2,
+          0.2
+        ],
+        "start": 1760187240,
+        "train_end": 1779107688,
+        "validation_end": 1785414504
+      }
+    }
+  },
+  "declared_at": "2026-10-11T17:29:18.663346+00:00",
+  "eligibility": "native closed-bar signal, positive known ATR, exact next open, all planned four holding bars present, full horizon within validation",
+  "final_holdout_accessed": false,
+  "fixed_holding_seconds": 240,
+  "frame": "M1",
+  "manifest_file": "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/data/single_frame_campaign_20261011/history/runs/1791721320_bb9601fc704645d5b1ca100b19fe3eac.json",
+  "manifest_sha256": "58eefda6075dc17451576d375b88a8f7bdad291dbd8fee899ed1ac4a00f72e67",
+  "maximum_requests": 500,
+  "maximum_signals_per_policy": 50,
+  "page_seconds": 1000,
+  "partition": "validation",
+  "qualification_allowed": false,
+  "runtime": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "python": "3.12.5",
+    "websockets": "17.2"
+  },
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  },
+  "selection": "first 50 chronological raw eligible signals per fixed policy, never trade outcomes",
+  "selection_bias": "bounded first-signals diagnostic, not representative profitability or final OOS evidence",
+  "source_authenticity": "original M1 wire reconstruction and independently resolved catalogue audited before freezing",
+  "source_pins": {
+    "docs/single_frame_campaign_20261011/tick_execution_review.py": "6a1e42281c7c825e2a6d424dfd14c02ade9996040de42a5ce365aec234bbc394",
+    "research_campaign/data.py": "a793bf5028a51e5179f7e7c11f95f51dbddf46de2406cab552ed99e85fa80e89",
+    "research_campaign/engine.py": "25deed73a415f908c816d32537895c4b89164a764876bebfc17ced2a8a12eb21",
+    "research_campaign/source_audit.py": "e23e827656f0c4ed8e0a27df59811e223150a0b76c76dbcc5d8d4bce60b78923",
+    "research_campaign/state.py": "e56994995793a36c60dfec673436defc71f3faa9aaa4e90406e2baa8a5fc4533",
+    "research_campaign/strategies.py": "973d71f1f3ed520c52a8d69c48c0c4e0a92a181135aecc50dcc0778ab5d240b5"
+  },
+  "spacing_seconds": 2,
+  "specs": [
+    {
+      "atr_period": 14,
+      "family": "pre_spike",
+      "id": "pre_spike.r00.4d70a2a5d073",
+      "label": "Pre-spike compression hypothesis",
+      "lookback": 12,
+      "max_hold_bars": 4,
+      "round_index": 0,
+      "scientific_id": "9506348b8a3418f45ce072c9362dc4c2406db4b9617f5e0f0a9584a9b58ad5ae",
+      "stop_atr": 1.5,
+      "target_atr": 2.0,
+      "threshold": 0.8,
+      "trailing_stop": false
+    },
+    {
+      "atr_period": 14,
+      "family": "post_spike",
+      "id": "post_spike.r00.814dcbd9c7d1",
+      "label": "Post-spike continuation",
+      "lookback": 12,
+      "max_hold_bars": 4,
+      "round_index": 0,
+      "scientific_id": "49dbc9c82c84f8fd9c2d284406410073cd41627573b37f7816e9a43f7a74de20",
+      "stop_atr": 1.5,
+      "target_atr": 2.0,
+      "threshold": 0.8,
+      "trailing_stop": false
+    }
+  ],
+  "stop_target_rule": "unchanged frozen engine, fixed SL/TP, next open, uncapped observed tick gaps, one open position",
+  "tick_rule": "exact one quote per second across full planned window and exact entry-open match; unknown is never filled or imputed"
+}

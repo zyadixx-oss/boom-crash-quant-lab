@@ -1,0 +1,17 @@
+test_all_false_and_missing_safety (__main__.BoundaryTests.test_all_false_and_missing_safety) ... ok
+test_ci_boundary_unknown_and_reversed (__main__.BoundaryTests.test_ci_boundary_unknown_and_reversed) ... ok
+test_csv_rows_handle_embedded_newline_and_tamper (__main__.BoundaryTests.test_csv_rows_handle_embedded_newline_and_tamper) ... ok
+test_exact_cells_duplicate_or_unexpected_rejected (__main__.BoundaryTests.test_exact_cells_duplicate_or_unexpected_rejected) ... ok
+test_full_saved_gate_accepts_below_one_point_one_but_not_one_or_zero_mean (__main__.BoundaryTests.test_full_saved_gate_accepts_below_one_point_one_but_not_one_or_zero_mean) ... ok
+test_hash_mutation_missing_file_and_path_escape (__main__.BoundaryTests.test_hash_mutation_missing_file_and_path_escape) ... ok
+test_holm_exact_boundaries (__main__.BoundaryTests.test_holm_exact_boundaries) ... ok
+test_required_reference_unknown_cannot_be_dropped (__main__.BoundaryTests.test_required_reference_unknown_cannot_be_dropped) ... ok
+test_strict_point_boundary_and_no_one_point_one_floor (__main__.BoundaryTests.test_strict_point_boundary_and_no_one_point_one_floor) ... ok
+test_unknown_and_no_fill_never_zero_and_purge (__main__.BoundaryTests.test_unknown_and_no_fill_never_zero_and_purge) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.004s
+
+OK
+
+exit_code=0

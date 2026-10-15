@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-15T01:45:14.014162+00:00",
+  "status": "SELF_REVIEW_FOUND_AND_FIXED_MASK_SUPPORT_BUG_SYNTHETIC106PASS",
+  "prior_implementation_review_sha256": "209dcfb7fe6548c895215d799a142cc6b9e7d1225dd65667d399809f7e651188",
+  "prior_module_sha256": "69739f6712663ebf017f05439fe074d0467f577e24b1446f997b0af41d2685a0",
+  "current_module_sha256": "2423dcb196b40ea1f2da7937666593f2ba187f0541f5c2928b023711cd482851",
+  "current_test_sha256": "bda331fa2f5b26d44022d8fa6ee403d868272d348b6a56cd2be288ecccce8375",
+  "actual_pre_fix_independent_probe": {
+    "fixture": "219consecutiveUTCdays; onlyindex1excluded; isolatedindex0R10000, allothereligibleR1; allcounts1, controls0;31syntheticdraws",
+    "eligible_days": 218,
+    "valid_days_unrepresented_at_block3": [
+      0
+    ],
+    "valid_days_unrepresented_at_block7": [
+      0
+    ],
+    "actual_reported_mean_before_fix": 46.86697247706422,
+    "actual_testable_before_fix": true,
+    "actual_CI3_before_fix": [
+      1.0,
+      1.0
+    ],
+    "error": "The estimand included a valid day that no admissible block could ever resample; reporting inference silently omitted that day."
+  },
+  "fix": {
+    "scope": "Onlynewownedreplicationstatisticsmodule/tests; no oldV1/V2code/gates/source change",
+    "rule": "Every eligible calendar day must have resampling support at EACH fixed3and7daylength. Ifanyeligible day has zero block support, all endpoint inference staysp1/CIempty; keep wholeknown descriptive mean, mask and counts unchanged.",
+    "new_output": "bootstrap_calendar_support records admissiblestarts, uncoveredeligibleindices and explicitfullsupportbool",
+    "actual_fixed_219calendar_pilot_mask_effect": "Existing syntheticmask36/128/129has fullsupport; default99999fixture stillpasses. No actualsourceprices read or processed."
+  },
+  "independent_math_reference": {
+    "fixture": "Synthetic219slots/216eligible; sinusoidal candidate, cosine sparse, alternating dense; BASEandSTRESS;257draws atboth3and7",
+    "method": "Separately reconstruct allowedstarts, SHA256seedlabels, PCG64indices, Pythonmath.fsummeans/centeredtails, manually interpolated2.5/97.5percentiles, and PF draws; no calls to privatebootstrap helpers",
+    "actual_result": "Allscenario/block meanCIs, centered-tailp, pairedexcessCIs, IUTmaxp andPFintervals match."
+  },
+  "other_edge_checks": [
+    "Mask-delimited6day span has3daysupport but no7daysupport and is inconclusive",
+    "Sparse79completes cannot borrow candidatecounts;80completes on40days cannot bypass60activedays",
+    "Candidate/sparse/denseUNKNOWN and coverage/usability censors entirecase, preserving no prefixR",
+    "Default99999pointmassCI/pfloor, stressveto, PFall/partialundefined CIcensor, oldClaim/Holm33 andproductiondrawsgate retained"
+  ],
+  "actual_targeted_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest tests/test_multiframe_replication_statistics.py tests/test_independent_statistics.py tests/test_multiframe_quote_study.py -o addopts= -q",
+    "result": "106 passed in3.17s",
+    "new_synthetic_cases": 38,
+    "adjacent_old_regressions": 68,
+    "full_repository_suite_run_by_this_task": false
+  },
+  "scope_limits": [
+    "This is a separate mathematical reconstruction plus self-review, not a third-party signoff. Rootmustreview currentpins beforefreeze.",
+    "Moving-block inference is an approximate weakstationarity/dependence model. Fullsupport is necessary, not proof of unbiasedfinite-sampleCI or raretailcoverage.",
+    "No actualalpha, market/source/final/privateprices or returns were read. No network/MT5/sourceworker interaction.",
+    "Partialstatisticalgate stillrequiresseparate developmentselection/DD/sourceactualreplay/cost/fill evidence. Cashprofit andgoalprofit remainfalse."
+  ],
+  "original_files_unchanged": true,
+  "prior_review_preserved_unchanged": true,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}

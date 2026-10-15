@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/stable_profit_assessment_20261009/screen_saved_results.py", line 319, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/stable_profit_assessment_20261009/screen_saved_results.py", line 309, in main
+    self_test(); return
+    ^^^^^^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/stable_profit_assessment_20261009/screen_saved_results.py", line 281, in self_test
+    changed = {**metric, key: value}; check(not all(necessary_conditions(changed).values()))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/stable_profit_assessment_20261009/screen_saved_results.py", line 276, in check
+    if not condition: raise AssertionError("Saved-statistics screen self-test failed")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Saved-statistics screen self-test failed

@@ -1,0 +1,21 @@
+test_catalogue_errors_complete_without_proposals (__main__.self_test.<locals>.Boundaries.test_catalogue_errors_complete_without_proposals) ... ok
+test_complete_full_matrix_both_versions (__main__.self_test.<locals>.Boundaries.test_complete_full_matrix_both_versions) ... ok
+test_consistent_incomplete_not_pass (__main__.self_test.<locals>.Boundaries.test_consistent_incomplete_not_pass) ... ok
+test_echo_addition_is_fatal (__main__.self_test.<locals>.Boundaries.test_echo_addition_is_fatal) ... ok
+test_exclusive_output (__main__.self_test.<locals>.Boundaries.test_exclusive_output) ... ok
+test_minimal_and_unusable_proposals (__main__.self_test.<locals>.Boundaries.test_minimal_and_unusable_proposals) ... ok
+test_missing_capture_never_passes (__main__.self_test.<locals>.Boundaries.test_missing_capture_never_passes) ... ok
+test_missing_terminal_response_preserves_unknown (__main__.self_test.<locals>.Boundaries.test_missing_terminal_response_preserves_unknown) ... ok
+test_multiplier_all_records (__main__.self_test.<locals>.Boundaries.test_multiplier_all_records) ... ok
+test_preserved_binary_terminal_failure (__main__.self_test.<locals>.Boundaries.test_preserved_binary_terminal_failure) ... ok
+test_rehashed_chronology_violation (__main__.self_test.<locals>.Boundaries.test_rehashed_chronology_violation) ... ok
+test_rehashed_order_request_not_accepted (__main__.self_test.<locals>.Boundaries.test_rehashed_order_request_not_accepted) ... ok
+test_rehashed_source_and_safety_violation (__main__.self_test.<locals>.Boundaries.test_rehashed_source_and_safety_violation) ... ok
+test_strict_json_and_boolean_id (__main__.self_test.<locals>.Boundaries.test_strict_json_and_boolean_id) ... ok
+test_tick_units_and_barriers (__main__.self_test.<locals>.Boundaries.test_tick_units_and_barriers) ... ok
+test_unusable_proposals_not_erased (__main__.self_test.<locals>.Boundaries.test_unusable_proposals_not_erased) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.060s
+
+OK

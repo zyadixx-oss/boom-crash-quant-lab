@@ -1,0 +1,168 @@
+{
+  "schema": "Request errors retained exactly; each recovered RateLimit maps by identical requested end to one successful ticks_history page from the unchanged collector. No full wire response archived; response content is represented by its SHA256 in page_audit.",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "symbols": [
+    {
+      "symbol": "BOOM600",
+      "completed_raw_file": "data/spike_nonlinear600_old/boom600_m1_180d.csv",
+      "completed_raw_sha256": "ad678600539df1b7fa1bd491d962783ce2e2dfb2c35a0071c940b6edcad51a6d",
+      "request_error_count": 4,
+      "retained_errors": [
+        {
+          "end": 1769500079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1769440079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1769380079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        },
+        {
+          "end": 1769320079,
+          "attempt": 1,
+          "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+        }
+      ],
+      "recovered_rate_limit_requests": [
+        {
+          "recorded_error": {
+            "end": 1769500079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 101,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1769500079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 103
+          },
+          "successful_page_response_sha256": "2bc297690294815faaaae7a115569d9300134c8b7f900e7135415c6ae975f423",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1769440080,
+          "successful_page_newest_epoch": 1769500020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1769440079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 102,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1769440079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 104
+          },
+          "successful_page_response_sha256": "2ad10004cfd225ac36b7f8a5396ebc4f57b6b025ac2641757ea70fb56cc06e48",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1769380080,
+          "successful_page_newest_epoch": 1769440020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1769380079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 103,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1769380079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 105
+          },
+          "successful_page_response_sha256": "de6eea82cbfa75fef49e09696e2cc606dd22ff1fa68d8e4e11ff9d230e389931",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1769320080,
+          "successful_page_newest_epoch": 1769380020,
+          "same_requested_end_covered_by_successful_retry": true
+        },
+        {
+          "recorded_error": {
+            "end": 1769320079,
+            "attempt": 1,
+            "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+          },
+          "successful_page_index_zero_based": 104,
+          "successful_page_request": {
+            "ticks_history": "BOOM600",
+            "count": 1000,
+            "end": 1769320079,
+            "style": "candles",
+            "granularity": 60,
+            "req_id": 106
+          },
+          "successful_page_response_sha256": "32a8cbec8a0591a69430d257e875598fb302c1b93571413eef69dfa2758ff0a6",
+          "successful_page_returned_rows": 1000,
+          "successful_page_oldest_epoch": 1769260080,
+          "successful_page_newest_epoch": 1769320020,
+          "same_requested_end_covered_by_successful_retry": true
+        }
+      ],
+      "all_retained_errors_are_rate_limit_with_successful_same_end_page": true
+    },
+    {
+      "symbol": "CRASH600",
+      "completed_raw_file": "data/spike_nonlinear600_old/crash600_m1_180d.csv",
+      "completed_raw_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+      "request_error_count": 0,
+      "retained_errors": [],
+      "recovered_rate_limit_requests": [],
+      "all_retained_errors_are_rate_limit_with_successful_same_end_page": true
+    }
+  ],
+  "features_or_payoffs_computed": false,
+  "account_or_order_requests": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "audited_at_utc": "2026-10-05T10:00:24.056663+00:00",
+  "initial_failed_collection_unused": {
+    "session_id": 85122,
+    "exit_code": 1,
+    "summary": "data/spike_nonlinear600_old/acquisition_summary.json",
+    "error": "CRASH600 reconnect opening-handshake TimeoutError",
+    "checkpoint": "data/spike_nonlinear600_old/crash600_m1_checkpoint.csv"
+  },
+  "complete_crash600_retry": {
+    "session_id": 7602,
+    "exit_code": 0,
+    "summary": "data/spike_nonlinear600_old/retry_crash600/acquisition_summary.json",
+    "whole_files": [
+      {
+        "canonical_file": "data/spike_nonlinear600_old/crash600_m1_180d.csv",
+        "complete_retry_file": "data/spike_nonlinear600_old/retry_crash600/crash600_m1_180d.csv",
+        "canonical_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+        "retry_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+        "exact_whole_file_copy": true
+      },
+      {
+        "canonical_file": "data/spike_nonlinear600_old/crash600_m1_180d_clean.csv",
+        "complete_retry_file": "data/spike_nonlinear600_old/retry_crash600/crash600_m1_180d_clean.csv",
+        "canonical_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+        "retry_sha256": "d5836eb57e254b134a9468a7cc4931b6d2279c611d4617fe6893616db349e4dd",
+        "exact_whole_file_copy": true
+      }
+    ],
+    "spliced_rows": false
+  }
+}

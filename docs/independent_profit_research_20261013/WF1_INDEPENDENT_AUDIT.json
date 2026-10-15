@@ -1,0 +1,275 @@
+{
+  "all_complete_path_timestamp_gap_checks": true,
+  "all_complete_trade_arithmetic_checked": true,
+  "all_saved_entry_exit_bundles_checked": true,
+  "auditor_sha256": "8978ec2ea3c2a41a68f734eaf43b39768bc84cbee112c9c18c6ffb7343de7488",
+  "barrier_path_scope": "DETERMINISTIC_AT_MOST_64_COMPLETE_PATHS_PER_CASE",
+  "cases": {
+    "BOOM500_WF1_POST_JUMP_CARRY_30S_BASE": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 1772,
+      "completed": 1772,
+      "errors": [],
+      "ledger_rows": 1773,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "BOOM500_WF1_POST_JUMP_CARRY_30S_BASE_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 243,
+      "completed": 243,
+      "errors": [],
+      "ledger_rows": 244,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "BOOM500_WF1_POST_JUMP_CARRY_30S_STRESS": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 1772,
+      "completed": 1772,
+      "errors": [],
+      "ledger_rows": 1773,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "BOOM500_WF1_POST_JUMP_CARRY_30S_STRESS_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 243,
+      "completed": 243,
+      "errors": [],
+      "ledger_rows": 244,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "BOOM500_WF1_QUOTE_CLOCK_ACCELERATION_BASE": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 2,
+      "completed": 2,
+      "errors": [],
+      "ledger_rows": 2,
+      "sampled_complete_paths_checked": 2,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "BOOM500_WF1_QUOTE_CLOCK_ACCELERATION_BASE_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 240,
+      "completed": 240,
+      "errors": [],
+      "ledger_rows": 241,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "BOOM500_WF1_QUOTE_CLOCK_ACCELERATION_STRESS": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 2,
+      "completed": 2,
+      "errors": [],
+      "ledger_rows": 2,
+      "sampled_complete_paths_checked": 2,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "BOOM500_WF1_QUOTE_CLOCK_ACCELERATION_STRESS_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 240,
+      "completed": 240,
+      "errors": [],
+      "ledger_rows": 241,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "BOOM500_WF1_SIDE_LEAD_BASE": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 0,
+      "completed": 0,
+      "errors": [],
+      "ledger_rows": 0,
+      "sampled_complete_paths_checked": 0,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "BOOM500_WF1_SIDE_LEAD_BASE_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 240,
+      "completed": 240,
+      "errors": [],
+      "ledger_rows": 241,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "BOOM500_WF1_SIDE_LEAD_STRESS": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 0,
+      "completed": 0,
+      "errors": [],
+      "ledger_rows": 0,
+      "sampled_complete_paths_checked": 0,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "BOOM500_WF1_SIDE_LEAD_STRESS_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 240,
+      "completed": 240,
+      "errors": [],
+      "ledger_rows": 241,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "CRASH500_WF1_POST_JUMP_CARRY_30S_BASE": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 2710,
+      "completed": 2710,
+      "errors": [],
+      "ledger_rows": 2710,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "CRASH500_WF1_POST_JUMP_CARRY_30S_BASE_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 243,
+      "completed": 243,
+      "errors": [],
+      "ledger_rows": 244,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "CRASH500_WF1_POST_JUMP_CARRY_30S_STRESS": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 2710,
+      "completed": 2710,
+      "errors": [],
+      "ledger_rows": 2710,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "CRASH500_WF1_POST_JUMP_CARRY_30S_STRESS_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 243,
+      "completed": 243,
+      "errors": [],
+      "ledger_rows": 244,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "CRASH500_WF1_QUOTE_CLOCK_ACCELERATION_BASE": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 3,
+      "completed": 3,
+      "errors": [],
+      "ledger_rows": 3,
+      "sampled_complete_paths_checked": 3,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "CRASH500_WF1_QUOTE_CLOCK_ACCELERATION_BASE_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 241,
+      "completed": 241,
+      "errors": [],
+      "ledger_rows": 242,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "CRASH500_WF1_QUOTE_CLOCK_ACCELERATION_STRESS": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 3,
+      "completed": 3,
+      "errors": [],
+      "ledger_rows": 3,
+      "sampled_complete_paths_checked": 3,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "CRASH500_WF1_QUOTE_CLOCK_ACCELERATION_STRESS_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 241,
+      "completed": 241,
+      "errors": [],
+      "ledger_rows": 242,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    },
+    "CRASH500_WF1_SIDE_LEAD_BASE": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 0,
+      "completed": 0,
+      "errors": [],
+      "ledger_rows": 0,
+      "sampled_complete_paths_checked": 0,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "CRASH500_WF1_SIDE_LEAD_BASE_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 950,
+      "completed": 950,
+      "errors": [],
+      "ledger_rows": 950,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "CRASH500_WF1_SIDE_LEAD_STRESS": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 0,
+      "completed": 0,
+      "errors": [],
+      "ledger_rows": 0,
+      "sampled_complete_paths_checked": 0,
+      "skipped": 0,
+      "unknown": 0
+    },
+    "CRASH500_WF1_SIDE_LEAD_STRESS_CLOCK": {
+      "arithmetic_matches": true,
+      "complete_entry_exit_bundles_checked": 241,
+      "completed": 241,
+      "errors": [],
+      "ledger_rows": 242,
+      "sampled_complete_paths_checked": 64,
+      "skipped": 0,
+      "unknown": 1
+    }
+  },
+  "cash_net": null,
+  "cost_verified": false,
+  "declaration_sha256": "39532ae745f00e613e716970d1864ad20f20474f5e8b06baf639eea8e63b9e79",
+  "execution_verified": false,
+  "full_barrier_path_reproduction": false,
+  "full_marked_drawdown_reproduced": false,
+  "mismatches": 0,
+  "profit_qualified": false,
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "schema_version": 1,
+  "signal_issuance_features_reproduced": false,
+  "source_rows_streamed_once_per_symbol": {
+    "BOOM500": 1700194,
+    "CRASH500": 1688551
+  },
+  "stage": "WF1",
+  "status": "PASS"
+}

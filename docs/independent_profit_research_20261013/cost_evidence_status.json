@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "private_raw_data_published": false,
+  "private_data_gitignored": true,
+  "queries": [
+    {
+      "selection": "2024-10-01 to2025-10-01 server-time",
+      "status": "EMPTY_MATCHING_SELECTION_NOT_GLOBAL_ABSENCE",
+      "observed_matching_components_available": false,
+      "private_report_sha256": "317569dff253e6cb8636c6f1942d3ca314c56cfac5a4210c411d0d9d2a7e54bf",
+      "all_period_fees_established": false,
+      "historical_currency_applicability_verified": false,
+      "historical_contract_mapping_verified": false,
+      "actual_slippage_evidence": false,
+      "private_financial_rows_or_counts_published": false
+    },
+    {
+      "selection": "2025-10-01 toTimeCurrent server-time",
+      "status": "COMPONENTS_VALIDATED_NOT_COST_PROOF",
+      "observed_matching_components_available": true,
+      "private_report_sha256": "a8900436550a9723444ea41a6c523950fa1a25d563cff18b22c5e2ef2d627691",
+      "all_period_fees_established": false,
+      "historical_currency_applicability_verified": false,
+      "historical_contract_mapping_verified": false,
+      "actual_slippage_evidence": false,
+      "private_financial_rows_or_counts_published": false
+    }
+  ],
+  "cash_net": null,
+  "cost_verified": false,
+  "execution_verified": false,
+  "all_live_flags_false": true,
+  "verifier_source_sha256": "6133da21fee741a9502f02d01911bbfd3ae649a07968d881fab829e1ee14ccaf",
+  "limitation": "Signed commission/swap/fee component arithmetic is not all-in round-trip costs, historical contract mapping, or fills/slippage proof."
+}

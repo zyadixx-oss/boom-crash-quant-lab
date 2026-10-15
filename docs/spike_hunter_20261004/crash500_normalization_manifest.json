@@ -1,0 +1,65 @@
+{
+  "symbol": "CRASH500",
+  "source": "Official Deriv public WebSocket",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "raw_file": "data/spike_hunter/crash500_m1_raw.csv",
+  "raw_sha256": "252abde35fef7f3bf6f468ac4b7f6b155b334ef5ec62c15919630eb8669c6ae6",
+  "raw_rows": 259200,
+  "normalized_file": "data/spike_hunter/crash500_m1_clean.csv",
+  "normalized_sha256": "7b76f02daa66399ac3b2ba6c5f3a3a2381809f4e67ec280cf5145996329ad80e",
+  "normalized_rows": 259199,
+  "equal_duplicates_removed": 0,
+  "excluded_rows": [
+    {
+      "epoch": 1785172079,
+      "utc": "2026-07-27T17:07:59+00:00",
+      "reason": "off_utc_minute_grid",
+      "raw": {
+        "epoch": 1785172079,
+        "open": 3122.059,
+        "high": 3122.059,
+        "low": 3122.059,
+        "close": 3122.059
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "previous_epoch": 1785228540,
+      "next_epoch": 1785228660,
+      "previous_utc": "2026-07-28T08:49:00+00:00",
+      "next_utc": "2026-07-28T08:51:00+00:00",
+      "missing_bars": 1,
+      "missing_epochs": [
+        1785228600
+      ]
+    }
+  ],
+  "first_epoch": 1775560080,
+  "last_epoch": 1791112020,
+  "first_utc": "2026-04-07T11:08:00+00:00",
+  "last_utc": "2026-10-04T11:07:00+00:00",
+  "requested_start_epoch": 1775560080,
+  "requested_cutoff_exclusive_epoch": 1791112080,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "fills_or_interpolations": false,
+  "normalization_valid": true,
+  "gap_free": false,
+  "finite_positive_ohlc": true,
+  "canonical_utc_minute_grid": true,
+  "retrieved_at_utc": "2026-10-04T11:12:02.583735+00:00",
+  "request_errors": [],
+  "page_count": 260,
+  "documentation": [
+    "https://developers.deriv.com/docs/options/ws-public/",
+    "https://developers.deriv.com/docs/data/ticks-history/"
+  ],
+  "raw_manifest": "docs/spike_hunter_20261004/CRASH500_manifest.json",
+  "gap_tick_probe": "docs/spike_hunter_20261004/CRASH500_gap_ticks_probe.json"
+}

@@ -1,0 +1,84 @@
+{
+  "all_live_flags_false": true,
+  "code_pins_unchanged": true,
+  "desktop": {
+    "completed_cycle_tests_in_view": 24000,
+    "dir": "rtl",
+    "document_width": 1280,
+    "heatmap_cells": 100,
+    "lang": "ar",
+    "recorded_candidate_rows": 1300,
+    "recorded_complete_cycles_in_view": 20,
+    "viewport_width": 1280
+  },
+  "detail": {
+    "entry_dates_rendered": true,
+    "equity_and_drawdown_charts": 2,
+    "ledger_rows": 3269,
+    "monthly_rows": 3,
+    "pages": 66,
+    "references": 2,
+    "visible_page_rows": 50
+  },
+  "detail_scope": "BOOM500 M1 validation ICT candidate; no qualification",
+  "exports": {
+    "all_dispositions_present": true,
+    "all_settings_present": true,
+    "at": "2026-10-11T22:42:50.088524+00:00",
+    "cycles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "download_file": "/Users/zyadalasmri/Downloads/search.csv",
+    "final_evidence_in_export": false,
+    "free_bytes_now": 46587748352,
+    "rows": 26000,
+    "sha256": "ea81b769a749e20f7c77bb451ddb22bc5e4e7353560700ccdcdea080d8e2d2a7"
+  },
+  "final_view": {
+    "numeric_heatmap_values": 0,
+    "sealed": true,
+    "validation_borrowed": false
+  },
+  "mobile": {
+    "document_width": 390,
+    "fixed_defect": "absolute offscreen accessibility label escaped an unpositioned horizontal scroller; scrollers now establish positioning context",
+    "horizontal_document_overflow": false,
+    "requested_viewport": [
+      390,
+      844
+    ],
+    "verified_scope": "DOM layout and media query; IAB screenshot captures its surrounding surface and was not accepted as visual mobile proof",
+    "viewport_width": 390
+  },
+  "observed_at": "2026-10-11T22:45:10.337030+00:00",
+  "routing": {
+    "chart_feed_connected_this_check": false,
+    "chart_mounted": true,
+    "research_return_url": "http://127.0.0.1:5173/#research"
+  },
+  "screenshots": {
+    "dashboard_analysis_20261011.jpg": "12f8253656c091c1826eac107aa6a1c2d0a325ba87ff843e724465ff32776f46",
+    "dashboard_desktop_20261011.jpg": "c4e6875fd2ba271b478494e6ef07095183db34417c26f2587f84729ead944b70"
+  },
+  "source": "Actual CUA browser interactions against the running local application, plus actual downloaded CSV",
+  "url": "http://127.0.0.1:5173/#research"
+}

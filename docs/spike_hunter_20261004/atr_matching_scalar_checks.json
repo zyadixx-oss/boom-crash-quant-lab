@@ -1,0 +1,165 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_MSS",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_DISPLACEMENT",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_MSS_DISPLACEMENT",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_MSS_DISPLACEMENT_FVG",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "ATR_COMPRESSION",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "BB_SQUEEZE",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CANDLE_COMPRESSION",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CANDLE_STRUCTURE",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "SR_ALIGNMENT",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "ATR_BB_COMPRESSION",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_ATR",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_BB",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_CANDLE_COMPRESSION",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_CANDLE_STRUCTURE",
+      "PASS": true
+    },
+    {
+      "symbol": "BOOM500",
+      "variant": "CRT_SR",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_MSS",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_DISPLACEMENT",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_MSS_DISPLACEMENT",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_MSS_DISPLACEMENT_FVG",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "ATR_COMPRESSION",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "BB_SQUEEZE",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CANDLE_COMPRESSION",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CANDLE_STRUCTURE",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "SR_ALIGNMENT",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "ATR_BB_COMPRESSION",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_ATR",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_BB",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_CANDLE_COMPRESSION",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_CANDLE_STRUCTURE",
+      "PASS": true
+    },
+    {
+      "symbol": "CRASH500",
+      "variant": "CRT_SR",
+      "PASS": true
+    }
+  ]
+}

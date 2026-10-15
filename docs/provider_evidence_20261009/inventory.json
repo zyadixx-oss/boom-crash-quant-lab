@@ -1,0 +1,106 @@
+{
+  "stage": "descriptive_saved_public_field_inventory",
+  "reviewed_utc": "2026-10-08T22:34:45.473196+00:00",
+  "source_path": "docs/public_quote_contract_20261007/capture01/received_text_messages.jsonl",
+  "source_sha256": "afc224883af67d1730ec09de99d3655ecabe7ea4cf6d63fd0a44cdbc9b59b298",
+  "review_source_sha256": "72dec4854b14409ef18ed1eb1c8e2dc56a6df08d92c2a8f796deab09de60abc6",
+  "messages": 240,
+  "symbols": {
+    "BOOM500": {
+      "messages": 60,
+      "observed_tick_key_sets": [
+        [
+          "ask",
+          "bid",
+          "epoch",
+          "id",
+          "pip_size",
+          "quote",
+          "symbol"
+        ]
+      ],
+      "distinct_subscription_ids": 1,
+      "first_epoch": 1791372970,
+      "last_epoch": 1791373029,
+      "spread_over_quote_min": "0.00001385334346846340333469767777",
+      "spread_over_quote_max": "0.00001403497155039292522275119270",
+      "posthoc_fixed_half_markup_exact_matches": 0
+    },
+    "BOOM600": {
+      "messages": 60,
+      "observed_tick_key_sets": [
+        [
+          "ask",
+          "bid",
+          "epoch",
+          "id",
+          "pip_size",
+          "quote",
+          "symbol"
+        ]
+      ],
+      "distinct_subscription_ids": 1,
+      "first_epoch": 1791372970,
+      "last_epoch": 1791373029,
+      "spread_over_quote_min": "0.00001329170163882771882734353224",
+      "spread_over_quote_max": "0.00001348853357354652253875314341",
+      "posthoc_fixed_half_markup_exact_matches": 0
+    },
+    "CRASH500": {
+      "messages": 60,
+      "observed_tick_key_sets": [
+        [
+          "ask",
+          "bid",
+          "epoch",
+          "id",
+          "pip_size",
+          "quote",
+          "symbol"
+        ]
+      ],
+      "distinct_subscription_ids": 1,
+      "first_epoch": 1791372970,
+      "last_epoch": 1791373029,
+      "spread_over_quote_min": "0.00001366825104476693923437291773",
+      "spread_over_quote_max": "0.00001401131225507969873628215639",
+      "posthoc_fixed_half_markup_exact_matches": 4
+    },
+    "CRASH600": {
+      "messages": 60,
+      "observed_tick_key_sets": [
+        [
+          "ask",
+          "bid",
+          "epoch",
+          "id",
+          "pip_size",
+          "quote",
+          "symbol"
+        ]
+      ],
+      "distinct_subscription_ids": 1,
+      "first_epoch": 1791372970,
+      "last_epoch": 1791373029,
+      "spread_over_quote_min": "0.00001339900120016767892930495552",
+      "spread_over_quote_max": "0.00001340003459335914704653453410",
+      "posthoc_fixed_half_markup_exact_matches": 0
+    }
+  },
+  "posthoc_fixed_half_markup": "0.00000675",
+  "rounding_probe_chosen_after_capture_observed": true,
+  "rounding_probe_is_predictive_test": false,
+  "all_public_endpoints_exhaustively_reviewed": false,
+  "new_predictor_established": false,
+  "universal_profit_impossibility_proven": false,
+  "executable_CFD_mapping_verified": false,
+  "historical_costs_verified": false,
+  "profit_tested_by_this_inventory": false,
+  "QUALIFIED": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

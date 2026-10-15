@@ -1,0 +1,22 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "checks_passed": 6,
+  "checks": [
+    "all stage calendars preserve fixed slots; 729 total/724 nonpilot and FINAL219/216",
+    "UNKNOWN after completed prefix before Jan2 pilot censors whole stage and prevents post-pilot suffix restart",
+    "all direct FINAL source/context/cache/calculate entrypoints reject even bare permit before I/O",
+    "saved selection mismatch rejected before FINAL statistics/source with no lingering authorization",
+    "zero eligible yields only Holm33 p1 placeholders, zero actual analyses/cases, no FINAL access or cash claim",
+    "transient FINAL authorization is established after selection and always cleared on interruption"
+  ],
+  "production_Controller_calls": 0,
+  "production_source_reads": 0,
+  "MT5_calls": 0,
+  "freeze_calls": 0,
+  "actual_returns_measured": 0,
+  "executed_by": "ROOT_AFTER_READING_INDEPENDENT_AGENT_AUTHORED_HELPER",
+  "executed_utc": "2026-10-15T13:23:06.749444+00:00",
+  "controller_sha256": "b27989ecb4f3d4371f197d2c3f7639c8cdbffbff2d1b09ea2b2d9b44a4ce7285",
+  "helper_sha256": "603e64602417af73360ce51303f4f966e9815eeec786268f3dff34b1eeb8319c",
+  "limit": "Six additional artificial orchestration probes; independent reviewer final signoff unavailable, not a comprehensive live source audit."
+}

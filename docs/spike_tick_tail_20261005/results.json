@@ -1,0 +1,2636 @@
+{
+  "stage": "exploratory_tail_tick_mechanism_results",
+  "run_utc": "2026-10-05T15:56:01.920653+00:00",
+  "declaration_sha256": "54cc70cd3baa1b6b1fa77e3aae01cdde08d6a5c3f21143d12a1f94fee4524d1d",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "config": {
+    "calibration_fraction": 0.4,
+    "development_fraction": 0.7,
+    "threshold_multiplier": 10.0,
+    "nominal_age_boundary_seconds": 600,
+    "minimum_calibration_events": 100,
+    "minimum_events_per_band": 100,
+    "bootstrap_repeats": 9999,
+    "bootstrap_seed": 20261005,
+    "large_overdue_ratio": 1.5,
+    "undefined_bootstrap_draws_block_falsification": true
+  },
+  "dates": [
+    "2026-04-11",
+    "2026-04-26",
+    "2026-05-12",
+    "2026-05-28",
+    "2026-06-13",
+    "2026-06-29",
+    "2026-07-15",
+    "2026-07-31",
+    "2026-08-16",
+    "2026-09-01",
+    "2026-09-17",
+    "2026-10-03"
+  ],
+  "symbols": {
+    "BOOM600": {
+      "side": 1,
+      "observed_rows": 1036791,
+      "row_cutoffs": {
+        "40": 414716,
+        "50": 518395,
+        "60": 622074,
+        "70": 725753,
+        "100": 1036791
+      },
+      "detector_fit_attempts": 1,
+      "no_detector_refit": true,
+      "physical_spike_census": false,
+      "strategy_eligible": false,
+      "profit_factor": "NOT TESTED",
+      "actual_money_profit": "NOT TESTED",
+      "detector": {
+        "adequate": true,
+        "median_abs_log_return": 1.4931760609727203e-06,
+        "threshold": 1.4931760609727203e-05,
+        "threshold_multiplier": 10.0,
+        "calibration_events": 691,
+        "calibration_source": "earliest40_percent_observed_rows_only"
+      },
+      "calibration40": {
+        "status": "MEASURED_EXPLORATORY",
+        "row_start_inclusive": 0,
+        "row_end_exclusive": 414716,
+        "observed_rows": 414716,
+        "first_observed_utc": "2026-04-11T00:00:00+00:00",
+        "last_observed_utc": "2026-06-13T19:11:55+00:00",
+        "observed_scheduled_days": [
+          "2026-04-11",
+          "2026-04-26",
+          "2026-05-12",
+          "2026-05-28",
+          "2026-06-13"
+        ],
+        "observed_cluster_count": 5,
+        "valid_increments": 414711,
+        "initial_or_gap_pair_exclusions": 5,
+        "unknown_age_exclusions": 4954,
+        "known_age_increments": 409757,
+        "detected_events": 691,
+        "events_with_unknown_prior_age": 5,
+        "directed_sign_counts": {
+          "positive": 694,
+          "negative": 401829,
+          "zero": 12188
+        },
+        "directed_return_quantiles": {
+          "p00": -8.8857048446696e-06,
+          "p01": -4.779879069330639e-06,
+          "p05": -3.8114918966799422e-06,
+          "p25": -2.4221127556871714e-06,
+          "p50": -1.4920240126371487e-06,
+          "p75": -7.033446853001472e-07,
+          "p95": -1.6636477009815003e-07,
+          "p99": 0.0,
+          "p100": 0.003986125872197329
+        },
+        "bands": {
+          "lt_N": {
+            "exposure_seconds": 254561,
+            "events": 443,
+            "hazard": 0.0017402508632508515,
+            "event_return_sum": 0.44665006125840967,
+            "event_mean_d": 0.0010082394159332047,
+            "non_event_seconds": 254118,
+            "non_event_return_sum": -0.42369234422124796,
+            "non_event_mean_d": -1.6673055203537252e-06,
+            "return_sum": 0.02295771703716173,
+            "unconditional_mean_d": 9.0185523458667e-08,
+            "decomposition_identity_available": true,
+            "decomposition_reconstructed_mean_d": 9.018552345866697e-08,
+            "decomposition_identity_abs_error": 3.970466940254533e-23
+          },
+          "ge_N": {
+            "exposure_seconds": 155196,
+            "events": 243,
+            "hazard": 0.0015657620041753654,
+            "event_return_sum": 0.23290497157429418,
+            "event_mean_d": 0.0009584566731452435,
+            "non_event_seconds": 154953,
+            "non_event_return_sum": -0.25857581146883957,
+            "non_event_mean_d": -1.6687370458709388e-06,
+            "return_sum": -0.025670839894545373,
+            "unconditional_mean_d": -1.6540915935040447e-07,
+            "decomposition_identity_available": true,
+            "decomposition_reconstructed_mean_d": -1.6540915935040463e-07,
+            "decomposition_identity_abs_error": 1.5881867761018131e-22
+          }
+        },
+        "daily_bands": [
+          {
+            "date": "2026-04-11",
+            "observed_rows": 86400,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 54352,
+                "events": 90,
+                "hazard": 0.0016558728289667354,
+                "event_return_sum": 0.08277968677478062,
+                "event_mean_d": 0.0009197742974975624,
+                "non_event_seconds": 54262,
+                "non_event_return_sum": -0.09050836392219168,
+                "non_event_mean_d": -1.6679879827907501e-06,
+                "return_sum": -0.007728677147411058,
+                "unconditional_mean_d": -1.421967388028234e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -1.4219673880282345e-07,
+                "decomposition_identity_abs_error": 5.293955920339377e-23
+              },
+              "ge_N": {
+                "exposure_seconds": 30817,
+                "events": 52,
+                "hazard": 0.0016873803420190156,
+                "event_return_sum": 0.046041058183015134,
+                "event_mean_d": 0.0008854049650579833,
+                "non_event_seconds": 30765,
+                "non_event_return_sum": -0.051225346308311666,
+                "non_event_mean_d": -1.665052699766347e-06,
+                "return_sum": -0.00518428812529653,
+                "unconditional_mean_d": -1.6822818980746114e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -1.6822818980746128e-07,
+                "decomposition_identity_abs_error": 1.3234889800848443e-22
+              }
+            }
+          },
+          {
+            "date": "2026-04-26",
+            "observed_rows": 86400,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 54179,
+                "events": 94,
+                "hazard": 0.0017349895716052344,
+                "event_return_sum": 0.09512377693411642,
+                "event_mean_d": 0.0010119550737671958,
+                "non_event_seconds": 54085,
+                "non_event_return_sum": -0.08985550216555825,
+                "non_event_mean_d": -1.6613756525017703e-06,
+                "return_sum": 0.005268274768558161,
+                "unconditional_mean_d": 9.723831684892969e-08,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 9.723831684892963e-08,
+                "decomposition_identity_abs_error": 5.293955920339377e-23
+              },
+              "ge_N": {
+                "exposure_seconds": 30790,
+                "events": 53,
+                "hazard": 0.0017213380967846703,
+                "event_return_sum": 0.04958926279182886,
+                "event_mean_d": 0.0009356464677703559,
+                "non_event_seconds": 30737,
+                "non_event_return_sum": -0.05148550451921242,
+                "non_event_mean_d": -1.6750334944598502e-06,
+                "return_sum": -0.001896241727383557,
+                "unconditional_mean_d": -6.158628539732241e-08,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -6.158628539732228e-08,
+                "decomposition_identity_abs_error": 1.3234889800848443e-22
+              }
+            }
+          },
+          {
+            "date": "2026-05-12",
+            "observed_rows": 86400,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 49933,
+                "events": 90,
+                "hazard": 0.0018024152364167986,
+                "event_return_sum": 0.09255615336846451,
+                "event_mean_d": 0.0010284017040940502,
+                "non_event_seconds": 49843,
+                "non_event_return_sum": -0.08312093151087652,
+                "non_event_mean_d": -1.6676550671283133e-06,
+                "return_sum": 0.009435221857587987,
+                "unconditional_mean_d": 1.8895764038988218e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 1.8895764038988237e-07,
+                "decomposition_identity_abs_error": 1.852884572118782e-22
+              },
+              "ge_N": {
+                "exposure_seconds": 36045,
+                "events": 44,
+                "hazard": 0.001220696351782494,
+                "event_return_sum": 0.04595043303109235,
+                "event_mean_d": 0.001044328023433917,
+                "non_event_seconds": 36001,
+                "non_event_return_sum": -0.060142580819287035,
+                "non_event_mean_d": -1.6705808399568633e-06,
+                "return_sum": -0.014192147788194684,
+                "unconditional_mean_d": -3.9373415975016464e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -3.9373415975016464e-07,
+                "decomposition_identity_abs_error": 0.0
+              }
+            }
+          },
+          {
+            "date": "2026-05-28",
+            "observed_rows": 86400,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 52627,
+                "events": 103,
+                "hazard": 0.0019571702738138217,
+                "event_return_sum": 0.10866827343167902,
+                "event_mean_d": 0.0010550317808900875,
+                "non_event_seconds": 52524,
+                "non_event_return_sum": -0.08786730932241293,
+                "non_event_mean_d": -1.6728982812126444e-06,
+                "return_sum": 0.02080096410926609,
+                "unconditional_mean_d": 3.952527050613961e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 3.952527050613958e-07,
+                "decomposition_identity_abs_error": 2.6469779601696886e-22
+              },
+              "ge_N": {
+                "exposure_seconds": 31918,
+                "events": 49,
+                "hazard": 0.0015351839087662134,
+                "event_return_sum": 0.0516501650676372,
+                "event_mean_d": 0.001054085001380351,
+                "non_event_seconds": 31869,
+                "non_event_return_sum": -0.0531618425233787,
+                "non_event_mean_d": -1.6681365127044685e-06,
+                "return_sum": -0.001511677455741503,
+                "unconditional_mean_d": -4.736128378161235e-08,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -4.7361283781612586e-08,
+                "decomposition_identity_abs_error": 2.3822801641527197e-22
+              }
+            }
+          },
+          {
+            "date": "2026-06-13",
+            "observed_rows": 69116,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 43470,
+                "events": 66,
+                "hazard": 0.001518288474810214,
+                "event_return_sum": 0.06752217074936911,
+                "event_mean_d": 0.0010230631931722593,
+                "non_event_seconds": 43404,
+                "non_event_return_sum": -0.07234023730020857,
+                "non_event_mean_d": -1.6666721339095144e-06,
+                "return_sum": -0.00481806655083945,
+                "unconditional_mean_d": -1.108365896213354e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -1.1083658962133564e-07,
+                "decomposition_identity_abs_error": 2.3822801641527197e-22
+              },
+              "ge_N": {
+                "exposure_seconds": 25626,
+                "events": 45,
+                "hazard": 0.0017560290330133458,
+                "event_return_sum": 0.039674052500720654,
+                "event_mean_d": 0.0008816456111271256,
+                "non_event_seconds": 25581,
+                "non_event_return_sum": -0.04256053729864975,
+                "non_event_mean_d": -1.6637558069915076e-06,
+                "return_sum": -0.0028864847979291,
+                "unconditional_mean_d": -1.1263891352255912e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -1.126389135225592e-07,
+                "decomposition_identity_abs_error": 7.940933880509066e-23
+              }
+            }
+          }
+        ]
+      },
+      "segments": {
+        "wf1": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 414716,
+          "row_end_exclusive": 518395,
+          "observed_rows": 103679,
+          "first_observed_utc": "2026-06-13T19:11:56+00:00",
+          "last_observed_utc": "2026-06-29T23:59:57+00:00",
+          "observed_scheduled_days": [
+            "2026-06-13",
+            "2026-06-29"
+          ],
+          "observed_cluster_count": 2,
+          "valid_increments": 103677,
+          "initial_or_gap_pair_exclusions": 2,
+          "unknown_age_exclusions": 5418,
+          "known_age_increments": 98259,
+          "detected_events": 145,
+          "events_with_unknown_prior_age": 2,
+          "directed_sign_counts": {
+            "positive": 146,
+            "negative": 100368,
+            "zero": 3163
+          },
+          "directed_return_quantiles": {
+            "p00": -7.0230024037432586e-06,
+            "p01": -4.795924345782837e-06,
+            "p05": -3.7752817812384825e-06,
+            "p25": -2.3938292974756735e-06,
+            "p50": -1.449176912766293e-06,
+            "p75": -7.201956915563151e-07,
+            "p95": -1.7957525092390365e-07,
+            "p99": 0.0,
+            "p100": 0.0030867922247479807
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 57262,
+              "events": 79,
+              "hazard": 0.0013796234850337048,
+              "event_return_sum": 0.08370894566448144,
+              "event_mean_d": 0.0010596069071453346,
+              "non_event_seconds": 57183,
+              "non_event_return_sum": -0.09548632813035562,
+              "non_event_mean_d": -1.669837681310103e-06,
+              "return_sum": -0.01177738246587418,
+              "unconditional_mean_d": -2.0567536002714156e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": -2.0567536002714166e-07,
+              "decomposition_identity_abs_error": 1.0587911840678754e-22
+            },
+            "ge_N": {
+              "exposure_seconds": 40997,
+              "events": 64,
+              "hazard": 0.0015610898358416469,
+              "event_return_sum": 0.07757490069283848,
+              "event_mean_d": 0.0012121078233256013,
+              "non_event_seconds": 40933,
+              "non_event_return_sum": -0.06823536839593214,
+              "non_event_mean_d": -1.6670014021921711e-06,
+              "return_sum": 0.009339532296906343,
+              "unconditional_mean_d": 2.278101396908638e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 2.2781013969086358e-07,
+              "decomposition_identity_abs_error": 2.117582368135751e-22
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-06-13",
+              "observed_rows": 17284,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 9601,
+                  "events": 11,
+                  "hazard": 0.001145713988126237,
+                  "event_return_sum": 0.016692845599168976,
+                  "event_mean_d": 0.0015175314181062707,
+                  "non_event_seconds": 9590,
+                  "non_event_return_sum": -0.015958204644243575,
+                  "non_event_mean_d": -1.6640463654060037e-06,
+                  "return_sum": 0.0007346409549254003,
+                  "unconditional_mean_d": 7.651712893713157e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 7.651712893713175e-08,
+                  "decomposition_identity_abs_error": 1.7205356741102976e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 7683,
+                  "events": 12,
+                  "hazard": 0.0015618898867629833,
+                  "event_return_sum": 0.011340592955936845,
+                  "event_mean_d": 0.0009450494129947371,
+                  "non_event_seconds": 7671,
+                  "non_event_return_sum": -0.01282358443120393,
+                  "non_event_mean_d": -1.671696575570842e-06,
+                  "return_sum": -0.001482991475267084,
+                  "unconditional_mean_d": -1.9302244894794795e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -1.9302244894794782e-07,
+                  "decomposition_identity_abs_error": 1.3234889800848443e-22
+                }
+              }
+            },
+            {
+              "date": "2026-06-29",
+              "observed_rows": 86395,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 47661,
+                  "events": 68,
+                  "hazard": 0.0014267430393823041,
+                  "event_return_sum": 0.06701610006531246,
+                  "event_mean_d": 0.0009855308833134186,
+                  "non_event_seconds": 47593,
+                  "non_event_return_sum": -0.07952812348611205,
+                  "non_event_mean_d": -1.6710046327424632e-06,
+                  "return_sum": -0.012512023420799582,
+                  "unconditional_mean_d": -2.6252121065020837e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -2.6252121065020864e-07,
+                  "decomposition_identity_abs_error": 2.6469779601696886e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 33314,
+                  "events": 52,
+                  "hazard": 0.0015609053250885514,
+                  "event_return_sum": 0.06623430773690164,
+                  "event_mean_d": 0.0012737366872481086,
+                  "non_event_seconds": 33262,
+                  "non_event_return_sum": -0.05541178396472821,
+                  "non_event_mean_d": -1.6659185847131326e-06,
+                  "return_sum": 0.010822523772173426,
+                  "unconditional_mean_d": 3.2486413436313343e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 3.248641343631334e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-23
+                }
+              }
+            }
+          ]
+        },
+        "wf2": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 518395,
+          "row_end_exclusive": 622074,
+          "observed_rows": 103679,
+          "first_observed_utc": "2026-06-29T23:59:58+00:00",
+          "last_observed_utc": "2026-07-31T04:47:56+00:00",
+          "observed_scheduled_days": [
+            "2026-06-29",
+            "2026-07-15",
+            "2026-07-31"
+          ],
+          "observed_cluster_count": 3,
+          "valid_increments": 103677,
+          "initial_or_gap_pair_exclusions": 2,
+          "unknown_age_exclusions": 1361,
+          "known_age_increments": 102316,
+          "detected_events": 176,
+          "events_with_unknown_prior_age": 2,
+          "directed_sign_counts": {
+            "positive": 176,
+            "negative": 100296,
+            "zero": 3205
+          },
+          "directed_return_quantiles": {
+            "p00": -8.172367307498555e-06,
+            "p01": -4.790424352221091e-06,
+            "p05": -3.741868125371773e-06,
+            "p25": -2.4273786655328645e-06,
+            "p50": -1.4946362176534686e-06,
+            "p75": -7.46633058376083e-07,
+            "p95": -1.8620764101081618e-07,
+            "p99": 0.0,
+            "p100": 0.002955019863524068
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 68826,
+              "events": 105,
+              "hazard": 0.0015255862610060152,
+              "event_return_sum": 0.11685122463104915,
+              "event_mean_d": 0.001112868806009992,
+              "non_event_seconds": 68721,
+              "non_event_return_sum": -0.11514556545176607,
+              "non_event_mean_d": -1.675551366420251e-06,
+              "return_sum": 0.0017056591792830769,
+              "unconditional_mean_d": 2.4782192474981502e-08,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 2.4782192474981505e-08,
+              "decomposition_identity_abs_error": 3.308722450212111e-24
+            },
+            "ge_N": {
+              "exposure_seconds": 33490,
+              "events": 69,
+              "hazard": 0.0020603165123917588,
+              "event_return_sum": 0.06532363526097028,
+              "event_mean_d": 0.0009467193516082649,
+              "non_event_seconds": 33421,
+              "non_event_return_sum": -0.05561791723552922,
+              "non_event_mean_d": -1.6641607742296525e-06,
+              "return_sum": 0.009705718025441058,
+              "unconditional_mean_d": 2.8980943641209486e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 2.8980943641209497e-07,
+              "decomposition_identity_abs_error": 1.0587911840678754e-22
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-06-29",
+              "observed_rows": 2,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 2,
+                  "events": 0,
+                  "hazard": 0.0,
+                  "event_return_sum": 0.0,
+                  "event_mean_d": null,
+                  "non_event_seconds": 2,
+                  "non_event_return_sum": -2.522524795091007e-06,
+                  "non_event_mean_d": -1.2612623975455036e-06,
+                  "return_sum": -2.522524795091007e-06,
+                  "unconditional_mean_d": -1.2612623975455036e-06,
+                  "decomposition_identity_available": false,
+                  "decomposition_reconstructed_mean_d": null,
+                  "decomposition_identity_abs_error": null
+                },
+                "ge_N": {
+                  "exposure_seconds": 0,
+                  "events": 0,
+                  "hazard": null,
+                  "event_return_sum": 0.0,
+                  "event_mean_d": null,
+                  "non_event_seconds": 0,
+                  "non_event_return_sum": 0.0,
+                  "non_event_mean_d": null,
+                  "return_sum": 0.0,
+                  "unconditional_mean_d": null,
+                  "decomposition_identity_available": false,
+                  "decomposition_reconstructed_mean_d": null,
+                  "decomposition_identity_abs_error": null
+                }
+              }
+            },
+            {
+              "date": "2026-07-15",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 57536,
+                  "events": 91,
+                  "hazard": 0.0015816184649610678,
+                  "event_return_sum": 0.09706852552685934,
+                  "event_mean_d": 0.001066687093701751,
+                  "non_event_seconds": 57445,
+                  "non_event_return_sum": -0.09633305414666142,
+                  "non_event_mean_d": -1.6769615135636073e-06,
+                  "return_sum": 0.0007354713801979203,
+                  "unconditional_mean_d": 1.2782803465620138e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.2782803465620036e-08,
+                  "decomposition_identity_abs_error": 1.0257039595657543e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 27543,
+                  "events": 56,
+                  "hazard": 0.0020331844751842573,
+                  "event_return_sum": 0.05517368812042696,
+                  "event_mean_d": 0.0009852444307219099,
+                  "non_event_seconds": 27487,
+                  "non_event_return_sum": -0.045905901629642455,
+                  "non_event_mean_d": -1.6700950132659968e-06,
+                  "return_sum": 0.009267786490784507,
+                  "unconditional_mean_d": 3.364842787925973e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 3.364842787925971e-07,
+                  "decomposition_identity_abs_error": 1.5881867761018131e-22
+                }
+              }
+            },
+            {
+              "date": "2026-07-31",
+              "observed_rows": 17277,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 11288,
+                  "events": 14,
+                  "hazard": 0.0012402551381998582,
+                  "event_return_sum": 0.019782699104189814,
+                  "event_mean_d": 0.001413049936013558,
+                  "non_event_seconds": 11274,
+                  "non_event_return_sum": -0.018809988780309567,
+                  "non_event_mean_d": -1.6684396647427326e-06,
+                  "return_sum": 0.0009727103238802476,
+                  "unconditional_mean_d": 8.617206979803753e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 8.61720697980373e-08,
+                  "decomposition_identity_abs_error": 2.2499312661442353e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 5947,
+                  "events": 13,
+                  "hazard": 0.0021859761224146627,
+                  "event_return_sum": 0.010149947140543318,
+                  "event_mean_d": 0.0007807651646571783,
+                  "non_event_seconds": 5934,
+                  "non_event_return_sum": -0.009712015605886765,
+                  "non_event_mean_d": -1.636672666984625e-06,
+                  "return_sum": 0.00043793153465655196,
+                  "unconditional_mean_d": 7.363906753935631e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 7.363906753935624e-08,
+                  "decomposition_identity_abs_error": 6.617444900424221e-23
+                }
+              }
+            }
+          ]
+        },
+        "wf3": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 622074,
+          "row_end_exclusive": 725753,
+          "observed_rows": 103679,
+          "first_observed_utc": "2026-07-31T04:47:57+00:00",
+          "last_observed_utc": "2026-08-16T09:36:01+00:00",
+          "observed_scheduled_days": [
+            "2026-07-31",
+            "2026-08-16"
+          ],
+          "observed_cluster_count": 2,
+          "valid_increments": 103677,
+          "initial_or_gap_pair_exclusions": 2,
+          "unknown_age_exclusions": 524,
+          "known_age_increments": 103153,
+          "detected_events": 161,
+          "events_with_unknown_prior_age": 2,
+          "directed_sign_counts": {
+            "positive": 164,
+            "negative": 100362,
+            "zero": 3151
+          },
+          "directed_return_quantiles": {
+            "p00": -7.4929499370266765e-06,
+            "p01": -4.793342886157648e-06,
+            "p05": -3.744442111177214e-06,
+            "p25": -2.428465123164065e-06,
+            "p50": -1.4916801539063949e-06,
+            "p75": -7.166981715068729e-07,
+            "p95": -1.7785605012378955e-07,
+            "p99": 0.0,
+            "p100": 0.003356489003398893
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 61984,
+              "events": 97,
+              "hazard": 0.0015649199793495096,
+              "event_return_sum": 0.10593367270535517,
+              "event_mean_d": 0.001092099718611909,
+              "non_event_seconds": 61887,
+              "non_event_return_sum": -0.10355216346438041,
+              "non_event_mean_d": -1.6732458103378805e-06,
+              "return_sum": 0.0023815092409747527,
+              "unconditional_mean_d": 3.8421354558833776e-08,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 3.842135455883389e-08,
+              "decomposition_identity_abs_error": 1.1249656330721176e-22
+            },
+            "ge_N": {
+              "exposure_seconds": 41169,
+              "events": 62,
+              "hazard": 0.0015059875148776992,
+              "event_return_sum": 0.060418299293365486,
+              "event_mean_d": 0.0009744886982800885,
+              "non_event_seconds": 41107,
+              "non_event_return_sum": -0.0685639456534133,
+              "non_event_mean_d": -1.6679384448734594e-06,
+              "return_sum": -0.008145646360047819,
+              "unconditional_mean_d": -1.9785873740066117e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": -1.9785873740066095e-07,
+              "decomposition_identity_abs_error": 2.117582368135751e-22
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-07-31",
+              "observed_rows": 69117,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 39654,
+                  "events": 59,
+                  "hazard": 0.0014878700761587734,
+                  "event_return_sum": 0.0645799563307312,
+                  "event_mean_d": 0.0010945755310293424,
+                  "non_event_seconds": 39595,
+                  "non_event_return_sum": -0.06650182156390254,
+                  "non_event_mean_d": -1.6795509929006828e-06,
+                  "return_sum": -0.0019218652331713438,
+                  "unconditional_mean_d": -4.846586052280587e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -4.8465860522805544e-08,
+                  "decomposition_identity_abs_error": 3.2425480012078685e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 29317,
+                  "events": 41,
+                  "hazard": 0.0013985059862878194,
+                  "event_return_sum": 0.0413281993964712,
+                  "event_mean_d": 0.0010080048633285658,
+                  "non_event_seconds": 29276,
+                  "non_event_return_sum": -0.04889685799862657,
+                  "non_event_mean_d": -1.670202828208313e-06,
+                  "return_sum": -0.007568658602155378,
+                  "unconditional_mean_d": -2.581662039825145e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -2.581662039825144e-07,
+                  "decomposition_identity_abs_error": 1.0587911840678754e-22
+                }
+              }
+            },
+            {
+              "date": "2026-08-16",
+              "observed_rows": 34562,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 22330,
+                  "events": 38,
+                  "hazard": 0.0017017465293327361,
+                  "event_return_sum": 0.04135371637462397,
+                  "event_mean_d": 0.0010882556940690518,
+                  "non_event_seconds": 22292,
+                  "non_event_return_sum": -0.03705034190047787,
+                  "non_event_mean_d": -1.6620465593252231e-06,
+                  "return_sum": 0.004303374474146097,
+                  "unconditional_mean_d": 1.92717173047295e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.9271717304729473e-07,
+                  "decomposition_identity_abs_error": 2.6469779601696886e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 11852,
+                  "events": 21,
+                  "hazard": 0.001771852851839352,
+                  "event_return_sum": 0.019090099896894287,
+                  "event_mean_d": 0.0009090523760425851,
+                  "non_event_seconds": 11831,
+                  "non_event_return_sum": -0.019667087654786728,
+                  "non_event_mean_d": -1.6623351918507927e-06,
+                  "return_sum": -0.0005769877578924408,
+                  "unconditional_mean_d": -4.868273353800547e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -4.868273353800547e-08,
+                  "decomposition_identity_abs_error": 0.0
+                }
+              }
+            }
+          ]
+        },
+        "dev_validation": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 414716,
+          "row_end_exclusive": 725753,
+          "observed_rows": 311037,
+          "first_observed_utc": "2026-06-13T19:11:56+00:00",
+          "last_observed_utc": "2026-08-16T09:36:01+00:00",
+          "observed_scheduled_days": [
+            "2026-06-13",
+            "2026-06-29",
+            "2026-07-15",
+            "2026-07-31",
+            "2026-08-16"
+          ],
+          "observed_cluster_count": 5,
+          "valid_increments": 311031,
+          "initial_or_gap_pair_exclusions": 6,
+          "unknown_age_exclusions": 7303,
+          "known_age_increments": 303728,
+          "detected_events": 482,
+          "events_with_unknown_prior_age": 6,
+          "directed_sign_counts": {
+            "positive": 486,
+            "negative": 301026,
+            "zero": 9519
+          },
+          "directed_return_quantiles": {
+            "p00": -8.172367307498555e-06,
+            "p01": -4.793689635037752e-06,
+            "p05": -3.7600544551507857e-06,
+            "p25": -2.425597818889457e-06,
+            "p50": -1.4925938427746061e-06,
+            "p75": -7.35781708297686e-07,
+            "p95": -1.7913679697288883e-07,
+            "p99": 0.0,
+            "p100": 0.003356489003398893
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 188072,
+              "events": 281,
+              "hazard": 0.0014941086392445447,
+              "event_return_sum": 0.3064938430008858,
+              "event_mean_d": 0.001090725419931978,
+              "non_event_seconds": 187791,
+              "non_event_return_sum": -0.3141840570465021,
+              "non_event_mean_d": -1.6730517279662076e-06,
+              "return_sum": -0.007690214045616352,
+              "unconditional_mean_d": -4.0889733961548515e-08,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": -4.0889733961547807e-08,
+              "decomposition_identity_abs_error": 7.080666043453917e-22
+            },
+            "ge_N": {
+              "exposure_seconds": 115656,
+              "events": 195,
+              "hazard": 0.0016860344469807015,
+              "event_return_sum": 0.20331683524717425,
+              "event_mean_d": 0.0010426504371649963,
+              "non_event_seconds": 115461,
+              "non_event_return_sum": -0.19241723128487467,
+              "non_event_mean_d": -1.666512773013179e-06,
+              "return_sum": 0.010899603962299581,
+              "unconditional_mean_d": 9.42415781481253e-08,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 9.424157814812545e-08,
+              "decomposition_identity_abs_error": 1.4558378780933287e-22
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-06-13",
+              "observed_rows": 17284,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 9601,
+                  "events": 11,
+                  "hazard": 0.001145713988126237,
+                  "event_return_sum": 0.016692845599168976,
+                  "event_mean_d": 0.0015175314181062707,
+                  "non_event_seconds": 9590,
+                  "non_event_return_sum": -0.015958204644243575,
+                  "non_event_mean_d": -1.6640463654060037e-06,
+                  "return_sum": 0.0007346409549254003,
+                  "unconditional_mean_d": 7.651712893713157e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 7.651712893713175e-08,
+                  "decomposition_identity_abs_error": 1.7205356741102976e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 7683,
+                  "events": 12,
+                  "hazard": 0.0015618898867629833,
+                  "event_return_sum": 0.011340592955936845,
+                  "event_mean_d": 0.0009450494129947371,
+                  "non_event_seconds": 7671,
+                  "non_event_return_sum": -0.01282358443120393,
+                  "non_event_mean_d": -1.671696575570842e-06,
+                  "return_sum": -0.001482991475267084,
+                  "unconditional_mean_d": -1.9302244894794795e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -1.9302244894794782e-07,
+                  "decomposition_identity_abs_error": 1.3234889800848443e-22
+                }
+              }
+            },
+            {
+              "date": "2026-06-29",
+              "observed_rows": 86397,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 47663,
+                  "events": 68,
+                  "hazard": 0.0014266831714327675,
+                  "event_return_sum": 0.06701610006531246,
+                  "event_mean_d": 0.0009855308833134186,
+                  "non_event_seconds": 47595,
+                  "non_event_return_sum": -0.07953064601090713,
+                  "non_event_mean_d": -1.670987414873561e-06,
+                  "return_sum": -0.012514545945594672,
+                  "unconditional_mean_d": -2.6256311909856015e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -2.625631190985603e-07,
+                  "decomposition_identity_abs_error": 1.5881867761018131e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 33314,
+                  "events": 52,
+                  "hazard": 0.0015609053250885514,
+                  "event_return_sum": 0.06623430773690164,
+                  "event_mean_d": 0.0012737366872481086,
+                  "non_event_seconds": 33262,
+                  "non_event_return_sum": -0.05541178396472821,
+                  "non_event_mean_d": -1.6659185847131326e-06,
+                  "return_sum": 0.010822523772173426,
+                  "unconditional_mean_d": 3.2486413436313343e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 3.248641343631334e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-23
+                }
+              }
+            },
+            {
+              "date": "2026-07-15",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 57536,
+                  "events": 91,
+                  "hazard": 0.0015816184649610678,
+                  "event_return_sum": 0.09706852552685934,
+                  "event_mean_d": 0.001066687093701751,
+                  "non_event_seconds": 57445,
+                  "non_event_return_sum": -0.09633305414666142,
+                  "non_event_mean_d": -1.6769615135636073e-06,
+                  "return_sum": 0.0007354713801979203,
+                  "unconditional_mean_d": 1.2782803465620138e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.2782803465620036e-08,
+                  "decomposition_identity_abs_error": 1.0257039595657543e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 27543,
+                  "events": 56,
+                  "hazard": 0.0020331844751842573,
+                  "event_return_sum": 0.05517368812042696,
+                  "event_mean_d": 0.0009852444307219099,
+                  "non_event_seconds": 27487,
+                  "non_event_return_sum": -0.045905901629642455,
+                  "non_event_mean_d": -1.6700950132659968e-06,
+                  "return_sum": 0.009267786490784507,
+                  "unconditional_mean_d": 3.364842787925973e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 3.364842787925971e-07,
+                  "decomposition_identity_abs_error": 1.5881867761018131e-22
+                }
+              }
+            },
+            {
+              "date": "2026-07-31",
+              "observed_rows": 86394,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 50942,
+                  "events": 73,
+                  "hazard": 0.001433002237839111,
+                  "event_return_sum": 0.08436265543492101,
+                  "event_mean_d": 0.0011556528141770002,
+                  "non_event_seconds": 50869,
+                  "non_event_return_sum": -0.0853118103442121,
+                  "non_event_mean_d": -1.677088410313002e-06,
+                  "return_sum": -0.0009491549092910962,
+                  "unconditional_mean_d": -1.863206998726191e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -1.8632069987261677e-08,
+                  "decomposition_identity_abs_error": 2.3161057151484775e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 35264,
+                  "events": 54,
+                  "hazard": 0.0015313067150635208,
+                  "event_return_sum": 0.05147814653701451,
+                  "event_mean_d": 0.0009532990099447131,
+                  "non_event_seconds": 35210,
+                  "non_event_return_sum": -0.05860887360451334,
+                  "non_event_mean_d": -1.6645519342378115e-06,
+                  "return_sum": -0.007130727067498827,
+                  "unconditional_mean_d": -2.0220981929159558e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -2.0220981929159584e-07,
+                  "decomposition_identity_abs_error": 2.6469779601696886e-22
+                }
+              }
+            },
+            {
+              "date": "2026-08-16",
+              "observed_rows": 34562,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 22330,
+                  "events": 38,
+                  "hazard": 0.0017017465293327361,
+                  "event_return_sum": 0.04135371637462397,
+                  "event_mean_d": 0.0010882556940690518,
+                  "non_event_seconds": 22292,
+                  "non_event_return_sum": -0.03705034190047787,
+                  "non_event_mean_d": -1.6620465593252231e-06,
+                  "return_sum": 0.004303374474146097,
+                  "unconditional_mean_d": 1.92717173047295e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.9271717304729473e-07,
+                  "decomposition_identity_abs_error": 2.6469779601696886e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 11852,
+                  "events": 21,
+                  "hazard": 0.001771852851839352,
+                  "event_return_sum": 0.019090099896894287,
+                  "event_mean_d": 0.0009090523760425851,
+                  "non_event_seconds": 11831,
+                  "non_event_return_sum": -0.019667087654786728,
+                  "non_event_mean_d": -1.6623351918507927e-06,
+                  "return_sum": -0.0005769877578924408,
+                  "unconditional_mean_d": -4.868273353800547e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -4.868273353800547e-08,
+                  "decomposition_identity_abs_error": 0.0
+                }
+              }
+            }
+          ]
+        },
+        "final30": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 725753,
+          "row_end_exclusive": 1036791,
+          "observed_rows": 311038,
+          "first_observed_utc": "2026-08-16T09:36:02+00:00",
+          "last_observed_utc": "2026-10-03T23:59:59+00:00",
+          "observed_scheduled_days": [
+            "2026-08-16",
+            "2026-09-01",
+            "2026-09-17",
+            "2026-10-03"
+          ],
+          "observed_cluster_count": 4,
+          "valid_increments": 311035,
+          "initial_or_gap_pair_exclusions": 3,
+          "unknown_age_exclusions": 1435,
+          "known_age_increments": 309600,
+          "detected_events": 516,
+          "events_with_unknown_prior_age": 3,
+          "directed_sign_counts": {
+            "positive": 518,
+            "negative": 300588,
+            "zero": 9929
+          },
+          "directed_return_quantiles": {
+            "p00": -8.1294714402636e-06,
+            "p01": -4.79007079795373e-06,
+            "p05": -3.826962731899411e-06,
+            "p25": -2.4553974688701573e-06,
+            "p50": -1.5261298224867556e-06,
+            "p75": -7.622018754368998e-07,
+            "p95": -1.8932995451404678e-07,
+            "p99": 0.0,
+            "p100": 0.003484407828629492
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 193893,
+              "events": 316,
+              "hazard": 0.0016297648703150708,
+              "event_return_sum": 0.3321016996924376,
+              "event_mean_d": 0.0010509547458621442,
+              "non_event_seconds": 193577,
+              "non_event_return_sum": -0.32409441613422674,
+              "non_event_mean_d": -1.6742403081679473e-06,
+              "return_sum": 0.00800728355821085,
+              "unconditional_mean_d": 4.129743496779589e-08,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 4.1297434967796064e-08,
+              "decomposition_identity_abs_error": 1.7205356741102976e-22
+            },
+            "ge_N": {
+              "exposure_seconds": 115707,
+              "events": 197,
+              "hazard": 0.0017025763350531947,
+              "event_return_sum": 0.2087494131241664,
+              "event_mean_d": 0.0010596416909856162,
+              "non_event_seconds": 115510,
+              "non_event_return_sum": -0.1934033708360636,
+              "non_event_mean_d": -1.6743430944166185e-06,
+              "return_sum": 0.0153460422881028,
+              "unconditional_mean_d": 1.3262846922055536e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 1.3262846922055557e-07,
+              "decomposition_identity_abs_error": 2.117582368135751e-22
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-08-16",
+              "observed_rows": 51838,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 34666,
+                  "events": 58,
+                  "hazard": 0.0016731090982518894,
+                  "event_return_sum": 0.06651891325928246,
+                  "event_mean_d": 0.0011468778148152148,
+                  "non_event_seconds": 34608,
+                  "non_event_return_sum": -0.05814476831468258,
+                  "non_event_mean_d": -1.6800961718297092e-06,
+                  "return_sum": 0.008374144944599878,
+                  "unconditional_mean_d": 2.415665189118986e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 2.4156651891189876e-07,
+                  "decomposition_identity_abs_error": 1.5881867761018131e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 17172,
+                  "events": 35,
+                  "hazard": 0.002038201723736315,
+                  "event_return_sum": 0.030788819748887534,
+                  "event_mean_d": 0.0008796805642539296,
+                  "non_event_seconds": 17137,
+                  "non_event_return_sum": -0.028818789567206557,
+                  "non_event_mean_d": -1.6816706288852516e-06,
+                  "return_sum": 0.0019700301816809778,
+                  "unconditional_mean_d": 1.1472339748899241e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.1472339748899275e-07,
+                  "decomposition_identity_abs_error": 3.441071348220595e-22
+                }
+              }
+            },
+            {
+              "date": "2026-09-01",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 56355,
+                  "events": 98,
+                  "hazard": 0.0017389761334398012,
+                  "event_return_sum": 0.0994668380401016,
+                  "event_mean_d": 0.0010149677351030777,
+                  "non_event_seconds": 56257,
+                  "non_event_return_sum": -0.0941851741445282,
+                  "non_event_mean_d": -1.6741947516669606e-06,
+                  "return_sum": 0.005281663895573405,
+                  "unconditional_mean_d": 9.37213006046208e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 9.372130060462083e-08,
+                  "decomposition_identity_abs_error": 2.6469779601696886e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 29522,
+                  "events": 56,
+                  "hazard": 0.0018968904545762482,
+                  "event_return_sum": 0.06358629208794568,
+                  "event_mean_d": 0.0011354695015704586,
+                  "non_event_seconds": 29466,
+                  "non_event_return_sum": -0.04930411950465638,
+                  "non_event_mean_d": -1.6732545817096442e-06,
+                  "return_sum": 0.014282172583289308,
+                  "unconditional_mean_d": 4.837806579259301e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 4.837806579259298e-07,
+                  "decomposition_identity_abs_error": 3.1763735522036263e-22
+                }
+              }
+            },
+            {
+              "date": "2026-09-17",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 50913,
+                  "events": 74,
+                  "hazard": 0.0014534598236206862,
+                  "event_return_sum": 0.07767945366960685,
+                  "event_mean_d": 0.001049722346886579,
+                  "non_event_seconds": 50839,
+                  "non_event_return_sum": -0.08506052663559142,
+                  "non_event_mean_d": -1.6731353220085255e-06,
+                  "return_sum": -0.0073810729659845725,
+                  "unconditional_mean_d": -1.4497422988204531e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -1.4497422988204558e-07,
+                  "decomposition_identity_abs_error": 2.6469779601696886e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 34967,
+                  "events": 52,
+                  "hazard": 0.001487116424056968,
+                  "event_return_sum": 0.048299134076146395,
+                  "event_mean_d": 0.0009288295014643537,
+                  "non_event_seconds": 34915,
+                  "non_event_return_sum": -0.05854162352426536,
+                  "non_event_mean_d": -1.6766897758632496e-06,
+                  "return_sum": -0.010242489448118964,
+                  "unconditional_mean_d": -2.9291873618322887e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -2.9291873618322887e-07,
+                  "decomposition_identity_abs_error": 0.0
+                }
+              }
+            },
+            {
+              "date": "2026-10-03",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 51959,
+                  "events": 86,
+                  "hazard": 0.0016551511768894706,
+                  "event_return_sum": 0.08843649472344667,
+                  "event_mean_d": 0.0010283313339935658,
+                  "non_event_seconds": 51873,
+                  "non_event_return_sum": -0.08670394703942452,
+                  "non_event_mean_d": -1.671465830767924e-06,
+                  "return_sum": 0.0017325476840221394,
+                  "unconditional_mean_d": 3.334451556077175e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 3.334451556077178e-08,
+                  "decomposition_identity_abs_error": 3.3087224502121107e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 34046,
+                  "events": 54,
+                  "hazard": 0.0015860894084473948,
+                  "event_return_sum": 0.06607516721118677,
+                  "event_mean_d": 0.0012236142076145697,
+                  "non_event_seconds": 33992,
+                  "non_event_return_sum": -0.05673883823993529,
+                  "non_event_mean_d": -1.6691821087295625e-06,
+                  "return_sum": 0.009336328971251478,
+                  "unconditional_mean_d": 2.742268980570839e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 2.742268980570839e-07,
+                  "decomposition_identity_abs_error": 0.0
+                }
+              }
+            }
+          ]
+        }
+      },
+      "comparisons": {
+        "dev_validation": {
+          "status": "DESCRIPTIVE_EXPLORATORY",
+          "older_over_younger_hazard_ratio": 1.1284550552048203,
+          "hazard_ratio_ci95": [
+            1.0605994754022483,
+            1.2344292234875263
+          ],
+          "bootstrap_repeats": 9999,
+          "bootstrap_seed": 20261005,
+          "valid_ratio_replicates": 9999,
+          "undefined_ratio_replicates": 0,
+          "paired_scheduled_day_resampling": true,
+          "same_day_draws_for_both_bands": true,
+          "observed_cluster_count": 5,
+          "observed_scheduled_days": [
+            "2026-06-13",
+            "2026-06-29",
+            "2026-07-15",
+            "2026-07-31",
+            "2026-08-16"
+          ],
+          "zero_band_exposure_days": {
+            "lt_N": 0,
+            "ge_N": 0
+          },
+          "interval_omits_undefined_draws": true,
+          "undefined_draws_block_falsification": true,
+          "inference_kind": "conditional_on_fixed_detector_descriptive_iid_observed_scheduled_days",
+          "training_median_refits_in_bootstrap": false,
+          "no_contiguous_weekly_claim": true,
+          "no_independent_tick_inference_claim": true,
+          "no_strategy_or_profitability_claim": true,
+          "falsification": {
+            "status": "REJECT_LARGE_OVERDUE_EFFECT",
+            "large_overdue_effect_falsified": true,
+            "reasons": [],
+            "minimum_events_per_band": 100,
+            "hazard_ratio_upper_threshold": 1.5,
+            "all9999_ratios_defined": true,
+            "does_not_establish_independence": true,
+            "does_not_test_profitability": true,
+            "strategy_eligible": false
+          }
+        },
+        "final30": {
+          "status": "DESCRIPTIVE_EXPLORATORY",
+          "older_over_younger_hazard_ratio": 1.0446760548495857,
+          "hazard_ratio_ci95": [
+            0.9871053633209135,
+            1.137096486343713
+          ],
+          "bootstrap_repeats": 9999,
+          "bootstrap_seed": 20261005,
+          "valid_ratio_replicates": 9999,
+          "undefined_ratio_replicates": 0,
+          "paired_scheduled_day_resampling": true,
+          "same_day_draws_for_both_bands": true,
+          "observed_cluster_count": 4,
+          "observed_scheduled_days": [
+            "2026-08-16",
+            "2026-09-01",
+            "2026-09-17",
+            "2026-10-03"
+          ],
+          "zero_band_exposure_days": {
+            "lt_N": 0,
+            "ge_N": 0
+          },
+          "interval_omits_undefined_draws": true,
+          "undefined_draws_block_falsification": true,
+          "inference_kind": "conditional_on_fixed_detector_descriptive_iid_observed_scheduled_days",
+          "training_median_refits_in_bootstrap": false,
+          "no_contiguous_weekly_claim": true,
+          "no_independent_tick_inference_claim": true,
+          "no_strategy_or_profitability_claim": true,
+          "falsification": {
+            "status": "REJECT_LARGE_OVERDUE_EFFECT",
+            "large_overdue_effect_falsified": true,
+            "reasons": [],
+            "minimum_events_per_band": 100,
+            "hazard_ratio_upper_threshold": 1.5,
+            "all9999_ratios_defined": true,
+            "does_not_establish_independence": true,
+            "does_not_test_profitability": true,
+            "strategy_eligible": false
+          }
+        }
+      }
+    },
+    "CRASH600": {
+      "side": -1,
+      "observed_rows": 1036791,
+      "row_cutoffs": {
+        "40": 414716,
+        "50": 518395,
+        "60": 622074,
+        "70": 725753,
+        "100": 1036791
+      },
+      "detector_fit_attempts": 1,
+      "no_detector_refit": true,
+      "physical_spike_census": false,
+      "strategy_eligible": false,
+      "profit_factor": "NOT TESTED",
+      "actual_money_profit": "NOT TESTED",
+      "detector": {
+        "adequate": true,
+        "median_abs_log_return": 1.500805638562028e-06,
+        "threshold": 1.500805638562028e-05,
+        "threshold_multiplier": 10.0,
+        "calibration_events": 684,
+        "calibration_source": "earliest40_percent_observed_rows_only"
+      },
+      "calibration40": {
+        "status": "MEASURED_EXPLORATORY",
+        "row_start_inclusive": 0,
+        "row_end_exclusive": 414716,
+        "observed_rows": 414716,
+        "first_observed_utc": "2026-04-11T00:00:00+00:00",
+        "last_observed_utc": "2026-06-13T19:11:55+00:00",
+        "observed_scheduled_days": [
+          "2026-04-11",
+          "2026-04-26",
+          "2026-05-12",
+          "2026-05-28",
+          "2026-06-13"
+        ],
+        "observed_cluster_count": 5,
+        "valid_increments": 414711,
+        "initial_or_gap_pair_exclusions": 5,
+        "unknown_age_exclusions": 1034,
+        "known_age_increments": 413677,
+        "detected_events": 684,
+        "events_with_unknown_prior_age": 5,
+        "directed_sign_counts": {
+          "positive": 690,
+          "negative": 411117,
+          "zero": 2904
+        },
+        "directed_return_quantiles": {
+          "p00": -7.95856129543844e-06,
+          "p01": -4.759359868347896e-06,
+          "p05": -3.777133714541404e-06,
+          "p25": -2.412964057725015e-06,
+          "p50": -1.4950244272498123e-06,
+          "p75": -7.327316520953456e-07,
+          "p95": -1.5553661548337685e-07,
+          "p99": -3.895045628181606e-08,
+          "p100": 0.003588296900654304
+        },
+        "bands": {
+          "lt_N": {
+            "exposure_seconds": 259433,
+            "events": 420,
+            "hazard": 0.0016189150956123547,
+            "event_return_sum": 0.4237099335690492,
+            "event_mean_d": 0.0010088331751644027,
+            "non_event_seconds": 259013,
+            "non_event_return_sum": -0.4319137874075217,
+            "non_event_mean_d": -1.6675371020277812e-06,
+            "return_sum": -0.008203853838472483,
+            "unconditional_mean_d": -3.162224481262015e-08,
+            "decomposition_identity_available": true,
+            "decomposition_reconstructed_mean_d": -3.162224481262017e-08,
+            "decomposition_identity_abs_error": 1.9852334701272664e-23
+          },
+          "ge_N": {
+            "exposure_seconds": 154244,
+            "events": 259,
+            "hazard": 0.0016791576981924742,
+            "event_return_sum": 0.2768106902900802,
+            "event_mean_d": 0.0010687671439771436,
+            "non_event_seconds": 153985,
+            "non_event_return_sum": -0.2572119373195296,
+            "non_event_mean_d": -1.6703700835765147e-06,
+            "return_sum": 0.019598752970550623,
+            "unconditional_mean_d": 1.270633085925587e-07,
+            "decomposition_identity_available": true,
+            "decomposition_reconstructed_mean_d": 1.2706330859255832e-07,
+            "decomposition_identity_abs_error": 3.705769144237564e-22
+          }
+        },
+        "daily_bands": [
+          {
+            "date": "2026-04-11",
+            "observed_rows": 86400,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 53815,
+                "events": 82,
+                "hazard": 0.0015237387345535631,
+                "event_return_sum": 0.08007733053565978,
+                "event_mean_d": 0.0009765528114104851,
+                "non_event_seconds": 53733,
+                "non_event_return_sum": -0.09005071334598634,
+                "non_event_mean_d": -1.6758921583754182e-06,
+                "return_sum": -0.009973382810326552,
+                "unconditional_mean_d": -1.8532719149542974e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -1.8532719149543e-07,
+                "decomposition_identity_abs_error": 2.6469779601696886e-22
+              },
+              "ge_N": {
+                "exposure_seconds": 31902,
+                "events": 54,
+                "hazard": 0.0016926838442730863,
+                "event_return_sum": 0.05915671611267377,
+                "event_mean_d": 0.001095494742827292,
+                "non_event_seconds": 31848,
+                "non_event_return_sum": -0.05343391963411129,
+                "non_event_mean_d": -1.6777794409103017e-06,
+                "return_sum": 0.005722796478562487,
+                "unconditional_mean_d": 1.7938676191343763e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 1.7938676191343765e-07,
+                "decomposition_identity_abs_error": 2.6469779601696886e-23
+              }
+            }
+          },
+          {
+            "date": "2026-04-26",
+            "observed_rows": 86400,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 54572,
+                "events": 76,
+                "hazard": 0.0013926555742871803,
+                "event_return_sum": 0.07076155763372634,
+                "event_mean_d": 0.0009310731267595571,
+                "non_event_seconds": 54496,
+                "non_event_return_sum": -0.09088841875111883,
+                "non_event_mean_d": -1.6677998156033257e-06,
+                "return_sum": -0.0201268611173925,
+                "unconditional_mean_d": -3.688129648426391e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -3.6881296484263895e-07,
+                "decomposition_identity_abs_error": 1.5881867761018131e-22
+              },
+              "ge_N": {
+                "exposure_seconds": 31791,
+                "events": 58,
+                "hazard": 0.001824415715139505,
+                "event_return_sum": 0.06067874310020775,
+                "event_mean_d": 0.0010461852258656509,
+                "non_event_seconds": 31733,
+                "non_event_return_sum": -0.0528284411802238,
+                "non_event_mean_d": -1.664779289075215e-06,
+                "return_sum": 0.007850301919983952,
+                "unconditional_mean_d": 2.4693472743807845e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 2.4693472743807845e-07,
+                "decomposition_identity_abs_error": 0.0
+              }
+            }
+          },
+          {
+            "date": "2026-05-12",
+            "observed_rows": 86400,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 53565,
+                "events": 86,
+                "hazard": 0.0016055259964529076,
+                "event_return_sum": 0.08939212072020297,
+                "event_mean_d": 0.0010394432641884067,
+                "non_event_seconds": 53479,
+                "non_event_return_sum": -0.08964135251748646,
+                "non_event_mean_d": -1.6761972459748026e-06,
+                "return_sum": -0.0002492317972834965,
+                "unconditional_mean_d": -4.65288522885273e-09,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -4.652885228852647e-09,
+                "decomposition_identity_abs_error": 8.271806125530277e-23
+              },
+              "ge_N": {
+                "exposure_seconds": 32817,
+                "events": 55,
+                "hazard": 0.0016759606301611969,
+                "event_return_sum": 0.058806148374641085,
+                "event_mean_d": 0.001069202697720747,
+                "non_event_seconds": 32762,
+                "non_event_return_sum": -0.05464001579060983,
+                "non_event_mean_d": -1.667786331439162e-06,
+                "return_sum": 0.0041661325840312525,
+                "unconditional_mean_d": 1.269504398339657e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 1.269504398339659e-07,
+                "decomposition_identity_abs_error": 1.852884572118782e-22
+              }
+            }
+          },
+          {
+            "date": "2026-05-28",
+            "observed_rows": 86400,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 54111,
+                "events": 102,
+                "hazard": 0.001885014137606032,
+                "event_return_sum": 0.10879602143900566,
+                "event_mean_d": 0.0010666276611667222,
+                "non_event_seconds": 54009,
+                "non_event_return_sum": -0.08940364525341804,
+                "non_event_mean_d": -1.65534716905364e-06,
+                "return_sum": 0.019392376185587607,
+                "unconditional_mean_d": 3.5838140462359976e-07,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 3.5838140462359997e-07,
+                "decomposition_identity_abs_error": 2.117582368135751e-22
+              },
+              "ge_N": {
+                "exposure_seconds": 32108,
+                "events": 48,
+                "hazard": 0.0014949545284664257,
+                "event_return_sum": 0.05543765678126375,
+                "event_mean_d": 0.0011549511829429947,
+                "non_event_seconds": 32060,
+                "non_event_return_sum": -0.053388880086297656,
+                "non_event_mean_d": -1.6652801025046057e-06,
+                "return_sum": 0.002048776694966094,
+                "unconditional_mean_d": 6.380891662408416e-08,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 6.380891662408379e-08,
+                "decomposition_identity_abs_error": 3.705769144237564e-22
+              }
+            }
+          },
+          {
+            "date": "2026-06-13",
+            "observed_rows": 69116,
+            "bands": {
+              "lt_N": {
+                "exposure_seconds": 43370,
+                "events": 74,
+                "hazard": 0.0017062485589116902,
+                "event_return_sum": 0.07468290324045444,
+                "event_mean_d": 0.0010092284221683034,
+                "non_event_seconds": 43296,
+                "non_event_return_sum": -0.07192965753951198,
+                "non_event_mean_d": -1.6613464878859938e-06,
+                "return_sum": 0.0027532457009424587,
+                "unconditional_mean_d": 6.348272310220102e-08,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": 6.34827231022011e-08,
+                "decomposition_identity_abs_error": 7.940933880509066e-23
+              },
+              "ge_N": {
+                "exposure_seconds": 25626,
+                "events": 44,
+                "hazard": 0.0017170061656130492,
+                "event_return_sum": 0.04273142592129387,
+                "event_mean_d": 0.0009711687709384971,
+                "non_event_seconds": 25582,
+                "non_event_return_sum": -0.042920680628287036,
+                "non_event_mean_d": -1.6777687682076083e-06,
+                "return_sum": -0.00018925470699316302,
+                "unconditional_mean_d": -7.385261335876181e-09,
+                "decomposition_identity_available": true,
+                "decomposition_reconstructed_mean_d": -7.385261335876228e-09,
+                "decomposition_identity_abs_error": 4.714929491552258e-23
+              }
+            }
+          }
+        ]
+      },
+      "segments": {
+        "wf1": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 414716,
+          "row_end_exclusive": 518395,
+          "observed_rows": 103679,
+          "first_observed_utc": "2026-06-13T19:11:56+00:00",
+          "last_observed_utc": "2026-06-29T23:59:57+00:00",
+          "observed_scheduled_days": [
+            "2026-06-13",
+            "2026-06-29"
+          ],
+          "observed_cluster_count": 2,
+          "valid_increments": 103677,
+          "initial_or_gap_pair_exclusions": 2,
+          "unknown_age_exclusions": 1130,
+          "known_age_increments": 102547,
+          "detected_events": 170,
+          "events_with_unknown_prior_age": 2,
+          "directed_sign_counts": {
+            "positive": 172,
+            "negative": 102702,
+            "zero": 803
+          },
+          "directed_return_quantiles": {
+            "p00": -7.301608567317374e-06,
+            "p01": -4.7881283180207375e-06,
+            "p05": -3.7938272054413794e-06,
+            "p25": -2.415671401250932e-06,
+            "p50": -1.4986444653705134e-06,
+            "p75": -7.254618348643654e-07,
+            "p95": -1.278315427019095e-07,
+            "p99": -4.165665897914894e-08,
+            "p100": 0.0028414776620919605
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 68391,
+              "events": 97,
+              "hazard": 0.001418315275401734,
+              "event_return_sum": 0.09564690009551112,
+              "event_mean_d": 0.0009860505164485682,
+              "non_event_seconds": 68294,
+              "non_event_return_sum": -0.11378958625253313,
+              "non_event_mean_d": -1.6661725225134437e-06,
+              "return_sum": -0.018142686157022015,
+              "unconditional_mean_d": -2.6527885477653517e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": -2.652788547765352e-07,
+              "decomposition_identity_abs_error": 5.293955920339377e-23
+            },
+            "ge_N": {
+              "exposure_seconds": 34156,
+              "events": 71,
+              "hazard": 0.002078697739782176,
+              "event_return_sum": 0.08134323221768829,
+              "event_mean_d": 0.0011456793270096942,
+              "non_event_seconds": 34085,
+              "non_event_return_sum": -0.05713122696455322,
+              "non_event_mean_d": -1.6761398552017963e-06,
+              "return_sum": 0.024212005253135063,
+              "unconditional_mean_d": 7.088653604969862e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 7.088653604969864e-07,
+              "decomposition_identity_abs_error": 2.117582368135751e-22
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-06-13",
+              "observed_rows": 17284,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 12145,
+                  "events": 20,
+                  "hazard": 0.0016467682173734047,
+                  "event_return_sum": 0.020367451346669257,
+                  "event_mean_d": 0.0010183725673334628,
+                  "non_event_seconds": 12125,
+                  "non_event_return_sum": -0.02026371976782721,
+                  "non_event_mean_d": -1.6712346200269865e-06,
+                  "return_sum": 0.00010373157884204638,
+                  "unconditional_mean_d": 8.541093358752275e-09,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 8.541093358752219e-09,
+                  "decomposition_identity_abs_error": 5.624828165360588e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 5139,
+                  "events": 11,
+                  "hazard": 0.0021404942595835766,
+                  "event_return_sum": 0.009185084018116553,
+                  "event_mean_d": 0.0008350076380105958,
+                  "non_event_seconds": 5128,
+                  "non_event_return_sum": -0.00856261795820807,
+                  "non_event_mean_d": -1.6697772929422914e-06,
+                  "return_sum": 0.0006224660599084826,
+                  "unconditional_mean_d": 1.2112591163815578e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.2112591163815596e-07,
+                  "decomposition_identity_abs_error": 1.852884572118782e-22
+                }
+              }
+            },
+            {
+              "date": "2026-06-29",
+              "observed_rows": 86395,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 56246,
+                  "events": 77,
+                  "hazard": 0.0013689862390214415,
+                  "event_return_sum": 0.07527944874884186,
+                  "event_mean_d": 0.0009776551785563878,
+                  "non_event_seconds": 56169,
+                  "non_event_return_sum": -0.09352586648470593,
+                  "non_event_mean_d": -1.6650797857306686e-06,
+                  "return_sum": -0.01824641773586406,
+                  "unconditional_mean_d": -3.244038284653853e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -3.2440382846538545e-07,
+                  "decomposition_identity_abs_error": 1.5881867761018131e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 29017,
+                  "events": 60,
+                  "hazard": 0.0020677533859461694,
+                  "event_return_sum": 0.07215814819957173,
+                  "event_mean_d": 0.0012026358033261954,
+                  "non_event_seconds": 28957,
+                  "non_event_return_sum": -0.048568609006345145,
+                  "non_event_mean_d": -1.67726660242239e-06,
+                  "return_sum": 0.02358953919322658,
+                  "unconditional_mean_d": 8.129558256617355e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 8.12955825661735e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-22
+                }
+              }
+            }
+          ]
+        },
+        "wf2": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 518395,
+          "row_end_exclusive": 622074,
+          "observed_rows": 103679,
+          "first_observed_utc": "2026-06-29T23:59:58+00:00",
+          "last_observed_utc": "2026-07-31T04:47:56+00:00",
+          "observed_scheduled_days": [
+            "2026-06-29",
+            "2026-07-15",
+            "2026-07-31"
+          ],
+          "observed_cluster_count": 3,
+          "valid_increments": 103677,
+          "initial_or_gap_pair_exclusions": 2,
+          "unknown_age_exclusions": 757,
+          "known_age_increments": 102920,
+          "detected_events": 197,
+          "events_with_unknown_prior_age": 2,
+          "directed_sign_counts": {
+            "positive": 200,
+            "negative": 102770,
+            "zero": 707
+          },
+          "directed_return_quantiles": {
+            "p00": -8.053341756666321e-06,
+            "p01": -4.75533672363839e-06,
+            "p05": -3.798137398444137e-06,
+            "p25": -2.4038896827258823e-06,
+            "p50": -1.4972147865118585e-06,
+            "p75": -7.269050765586529e-07,
+            "p95": -1.2836214318144254e-07,
+            "p99": -3.9453460559579125e-08,
+            "p100": 0.002985055024087823
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 68444,
+              "events": 130,
+              "hazard": 0.001899362982876512,
+              "event_return_sum": 0.11973351002078568,
+              "event_mean_d": 0.0009210270001598898,
+              "non_event_seconds": 68314,
+              "non_event_return_sum": -0.11432242548387972,
+              "non_event_mean_d": -1.6734845783277178e-06,
+              "return_sum": 0.00541108453690597,
+              "unconditional_mean_d": 7.905856666626687e-08,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 7.905856666626665e-08,
+              "decomposition_identity_abs_error": 2.2499312661442353e-22
+            },
+            "ge_N": {
+              "exposure_seconds": 34476,
+              "events": 65,
+              "hazard": 0.001885369532428356,
+              "event_return_sum": 0.06175459477841735,
+              "event_mean_d": 0.0009500706888987284,
+              "non_event_seconds": 34411,
+              "non_event_return_sum": -0.05725630018759127,
+              "non_event_mean_d": -1.6638952715001386e-06,
+              "return_sum": 0.00449829459082608,
+              "unconditional_mean_d": 1.3047611645278107e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 1.3047611645278107e-07,
+              "decomposition_identity_abs_error": 0.0
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-06-29",
+              "observed_rows": 2,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 2,
+                  "events": 0,
+                  "hazard": 0.0,
+                  "event_return_sum": 0.0,
+                  "event_mean_d": null,
+                  "non_event_seconds": 2,
+                  "non_event_return_sum": -4.444466476977787e-06,
+                  "non_event_mean_d": -2.2222332384888936e-06,
+                  "return_sum": -4.444466476977787e-06,
+                  "unconditional_mean_d": -2.2222332384888936e-06,
+                  "decomposition_identity_available": false,
+                  "decomposition_reconstructed_mean_d": null,
+                  "decomposition_identity_abs_error": null
+                },
+                "ge_N": {
+                  "exposure_seconds": 0,
+                  "events": 0,
+                  "hazard": null,
+                  "event_return_sum": 0.0,
+                  "event_mean_d": null,
+                  "non_event_seconds": 0,
+                  "non_event_return_sum": 0.0,
+                  "non_event_mean_d": null,
+                  "return_sum": 0.0,
+                  "unconditional_mean_d": null,
+                  "decomposition_identity_available": false,
+                  "decomposition_reconstructed_mean_d": null,
+                  "decomposition_identity_abs_error": null
+                }
+              }
+            },
+            {
+              "date": "2026-07-15",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 58520,
+                  "events": 115,
+                  "hazard": 0.00196514012303486,
+                  "event_return_sum": 0.10490244527250232,
+                  "event_mean_d": 0.0009121951762826289,
+                  "non_event_seconds": 58405,
+                  "non_event_return_sum": -0.09772596968775224,
+                  "non_event_mean_d": -1.6732466344962288e-06,
+                  "return_sum": 0.007176475584750082,
+                  "unconditional_mean_d": 1.2263287055280387e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.2263287055280368e-07,
+                  "decomposition_identity_abs_error": 1.852884572118782e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 27276,
+                  "events": 55,
+                  "hazard": 0.0020164246957031823,
+                  "event_return_sum": 0.05224072921055571,
+                  "event_mean_d": 0.000949831440191922,
+                  "non_event_seconds": 27221,
+                  "non_event_return_sum": -0.04518904683925294,
+                  "non_event_mean_d": -1.66008033647746e-06,
+                  "return_sum": 0.0070516823713027725,
+                  "unconditional_mean_d": 2.5853066326817613e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 2.5853066326817624e-07,
+                  "decomposition_identity_abs_error": 1.0587911840678754e-22
+                }
+              }
+            },
+            {
+              "date": "2026-07-31",
+              "observed_rows": 17277,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 9922,
+                  "events": 15,
+                  "hazard": 0.0015117919774239065,
+                  "event_return_sum": 0.014831064748283357,
+                  "event_mean_d": 0.0009887376498855572,
+                  "non_event_seconds": 9907,
+                  "non_event_return_sum": -0.01659201132965049,
+                  "non_event_mean_d": -1.6747765549258596e-06,
+                  "return_sum": -0.001760946581367134,
+                  "unconditional_mean_d": -1.774789942921925e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -1.774789942921923e-07,
+                  "decomposition_identity_abs_error": 1.852884572118782e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 7200,
+                  "events": 10,
+                  "hazard": 0.001388888888888889,
+                  "event_return_sum": 0.009513865567861634,
+                  "event_mean_d": 0.0009513865567861634,
+                  "non_event_seconds": 7190,
+                  "non_event_return_sum": -0.012067253348338327,
+                  "non_event_mean_d": -1.6783384350957339e-06,
+                  "return_sum": -0.0025533877804766922,
+                  "unconditional_mean_d": -3.546371917328739e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -3.5463719173287396e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-23
+                }
+              }
+            }
+          ]
+        },
+        "wf3": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 622074,
+          "row_end_exclusive": 725753,
+          "observed_rows": 103679,
+          "first_observed_utc": "2026-07-31T04:47:57+00:00",
+          "last_observed_utc": "2026-08-16T09:36:01+00:00",
+          "observed_scheduled_days": [
+            "2026-07-31",
+            "2026-08-16"
+          ],
+          "observed_cluster_count": 2,
+          "valid_increments": 103677,
+          "initial_or_gap_pair_exclusions": 2,
+          "unknown_age_exclusions": 1001,
+          "known_age_increments": 102676,
+          "detected_events": 192,
+          "events_with_unknown_prior_age": 2,
+          "directed_sign_counts": {
+            "positive": 194,
+            "negative": 102786,
+            "zero": 697
+          },
+          "directed_return_quantiles": {
+            "p00": -8.126213777844468e-06,
+            "p01": -4.780185358243399e-06,
+            "p05": -3.7824118571401125e-06,
+            "p25": -2.415447560143893e-06,
+            "p50": -1.507708317498013e-06,
+            "p75": -7.403370894622075e-07,
+            "p95": -1.236441282734693e-07,
+            "p99": -3.9486434668944104e-08,
+            "p100": 0.0030002227969483774
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 69438,
+              "events": 124,
+              "hazard": 0.0017857657190587287,
+              "event_return_sum": 0.12049717857926294,
+              "event_mean_d": 0.0009717514401553463,
+              "non_event_seconds": 69314,
+              "non_event_return_sum": -0.11629941389520017,
+              "non_event_mean_d": -1.6778632584355278e-06,
+              "return_sum": 0.004197764684062777,
+              "unconditional_mean_d": 6.045342152802178e-08,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 6.045342152802172e-08,
+              "decomposition_identity_abs_error": 6.617444900424221e-23
+            },
+            "ge_N": {
+              "exposure_seconds": 33238,
+              "events": 66,
+              "hazard": 0.0019856790420602925,
+              "event_return_sum": 0.06910954397491177,
+              "event_mean_d": 0.0010471143026501784,
+              "non_event_seconds": 33172,
+              "non_event_return_sum": -0.055244799534628075,
+              "non_event_mean_d": -1.665404544031957e-06,
+              "return_sum": 0.013864744440283705,
+              "unconditional_mean_d": 4.171353402817169e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 4.1713534028171667e-07,
+              "decomposition_identity_abs_error": 2.117582368135751e-22
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-07-31",
+              "observed_rows": 69117,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 45987,
+                  "events": 88,
+                  "hazard": 0.0019135842738165134,
+                  "event_return_sum": 0.08494076187262802,
+                  "event_mean_d": 0.0009652359303707729,
+                  "non_event_seconds": 45899,
+                  "non_event_return_sum": -0.07685733412266155,
+                  "non_event_mean_d": -1.674488205029773e-06,
+                  "return_sum": 0.008083427749966466,
+                  "unconditional_mean_d": 1.7577636614622537e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.7577636614622552e-07,
+                  "decomposition_identity_abs_error": 1.5881867761018131e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 22330,
+                  "events": 43,
+                  "hazard": 0.0019256605463502015,
+                  "event_return_sum": 0.04887191801303232,
+                  "event_mean_d": 0.0011365562328612168,
+                  "non_event_seconds": 22287,
+                  "non_event_return_sum": -0.037027501408045456,
+                  "non_event_mean_d": -1.6613945981085591e-06,
+                  "return_sum": 0.011844416604986864,
+                  "unconditional_mean_d": 5.304261802501955e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 5.304261802501955e-07,
+                  "decomposition_identity_abs_error": 0.0
+                }
+              }
+            },
+            {
+              "date": "2026-08-16",
+              "observed_rows": 34562,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 23451,
+                  "events": 36,
+                  "hazard": 0.0015351157733145709,
+                  "event_return_sum": 0.03555641670663493,
+                  "event_mean_d": 0.0009876782418509703,
+                  "non_event_seconds": 23415,
+                  "non_event_return_sum": -0.03944207977253862,
+                  "non_event_mean_d": -1.6844791702984677e-06,
+                  "return_sum": -0.003885663065903689,
+                  "unconditional_mean_d": -1.6569285172929464e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -1.656928517292947e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 10908,
+                  "events": 23,
+                  "hazard": 0.0021085441877521085,
+                  "event_return_sum": 0.020237625961879457,
+                  "event_mean_d": 0.0008798967809512808,
+                  "non_event_seconds": 10885,
+                  "non_event_return_sum": -0.018217298126582616,
+                  "non_event_mean_d": -1.673614894495417e-06,
+                  "return_sum": 0.002020327835296842,
+                  "unconditional_mean_d": 1.8521523975951978e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.8521523975951967e-07,
+                  "decomposition_identity_abs_error": 1.0587911840678754e-22
+                }
+              }
+            }
+          ]
+        },
+        "dev_validation": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 414716,
+          "row_end_exclusive": 725753,
+          "observed_rows": 311037,
+          "first_observed_utc": "2026-06-13T19:11:56+00:00",
+          "last_observed_utc": "2026-08-16T09:36:01+00:00",
+          "observed_scheduled_days": [
+            "2026-06-13",
+            "2026-06-29",
+            "2026-07-15",
+            "2026-07-31",
+            "2026-08-16"
+          ],
+          "observed_cluster_count": 5,
+          "valid_increments": 311031,
+          "initial_or_gap_pair_exclusions": 6,
+          "unknown_age_exclusions": 2888,
+          "known_age_increments": 308143,
+          "detected_events": 559,
+          "events_with_unknown_prior_age": 6,
+          "directed_sign_counts": {
+            "positive": 566,
+            "negative": 308258,
+            "zero": 2207
+          },
+          "directed_return_quantiles": {
+            "p00": -8.126213777844468e-06,
+            "p01": -4.773936019255584e-06,
+            "p05": -3.789663874153493e-06,
+            "p25": -2.4140345667504317e-06,
+            "p50": -1.4993560890356358e-06,
+            "p75": -7.382914515532292e-07,
+            "p95": -1.2815507929419222e-07,
+            "p99": -3.950733219855666e-08,
+            "p100": 0.0030002227969483774
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 206273,
+              "events": 351,
+              "hazard": 0.0017016284244666048,
+              "event_return_sum": 0.3358775886955597,
+              "event_mean_d": 0.0009569162071098568,
+              "non_event_seconds": 205922,
+              "non_event_return_sum": -0.34441142563161303,
+              "non_event_mean_d": -1.6725334137761533e-06,
+              "return_sum": -0.008533836936053267,
+              "unconditional_mean_d": -4.137156552749641e-08,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": -4.1371565527496774e-08,
+              "decomposition_identity_abs_error": 3.639594695233322e-22
+            },
+            "ge_N": {
+              "exposure_seconds": 101870,
+              "events": 202,
+              "hazard": 0.0019829194070874645,
+              "event_return_sum": 0.2122073709710174,
+              "event_mean_d": 0.0010505315394604823,
+              "non_event_seconds": 101668,
+              "non_event_return_sum": -0.16963232668677256,
+              "non_event_mean_d": -1.6684928068494764e-06,
+              "return_sum": 0.04257504428424485,
+              "unconditional_mean_d": 4.1793505727147195e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 4.17935057271472e-07,
+              "decomposition_identity_abs_error": 5.293955920339377e-23
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-06-13",
+              "observed_rows": 17284,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 12145,
+                  "events": 20,
+                  "hazard": 0.0016467682173734047,
+                  "event_return_sum": 0.020367451346669257,
+                  "event_mean_d": 0.0010183725673334628,
+                  "non_event_seconds": 12125,
+                  "non_event_return_sum": -0.02026371976782721,
+                  "non_event_mean_d": -1.6712346200269865e-06,
+                  "return_sum": 0.00010373157884204638,
+                  "unconditional_mean_d": 8.541093358752275e-09,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 8.541093358752219e-09,
+                  "decomposition_identity_abs_error": 5.624828165360588e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 5139,
+                  "events": 11,
+                  "hazard": 0.0021404942595835766,
+                  "event_return_sum": 0.009185084018116553,
+                  "event_mean_d": 0.0008350076380105958,
+                  "non_event_seconds": 5128,
+                  "non_event_return_sum": -0.00856261795820807,
+                  "non_event_mean_d": -1.6697772929422914e-06,
+                  "return_sum": 0.0006224660599084826,
+                  "unconditional_mean_d": 1.2112591163815578e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.2112591163815596e-07,
+                  "decomposition_identity_abs_error": 1.852884572118782e-22
+                }
+              }
+            },
+            {
+              "date": "2026-06-29",
+              "observed_rows": 86397,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 56248,
+                  "events": 77,
+                  "hazard": 0.0013689375622244347,
+                  "event_return_sum": 0.07527944874884186,
+                  "event_mean_d": 0.0009776551785563878,
+                  "non_event_seconds": 56171,
+                  "non_event_return_sum": -0.0935303109511829,
+                  "non_event_mean_d": -1.6650996234922451e-06,
+                  "return_sum": -0.01825086220234104,
+                  "unconditional_mean_d": -3.244713092437249e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -3.2447130924372487e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 29017,
+                  "events": 60,
+                  "hazard": 0.0020677533859461694,
+                  "event_return_sum": 0.07215814819957173,
+                  "event_mean_d": 0.0012026358033261954,
+                  "non_event_seconds": 28957,
+                  "non_event_return_sum": -0.048568609006345145,
+                  "non_event_mean_d": -1.67726660242239e-06,
+                  "return_sum": 0.02358953919322658,
+                  "unconditional_mean_d": 8.129558256617355e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 8.12955825661735e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-22
+                }
+              }
+            },
+            {
+              "date": "2026-07-15",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 58520,
+                  "events": 115,
+                  "hazard": 0.00196514012303486,
+                  "event_return_sum": 0.10490244527250232,
+                  "event_mean_d": 0.0009121951762826289,
+                  "non_event_seconds": 58405,
+                  "non_event_return_sum": -0.09772596968775224,
+                  "non_event_mean_d": -1.6732466344962288e-06,
+                  "return_sum": 0.007176475584750082,
+                  "unconditional_mean_d": 1.2263287055280387e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.2263287055280368e-07,
+                  "decomposition_identity_abs_error": 1.852884572118782e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 27276,
+                  "events": 55,
+                  "hazard": 0.0020164246957031823,
+                  "event_return_sum": 0.05224072921055571,
+                  "event_mean_d": 0.000949831440191922,
+                  "non_event_seconds": 27221,
+                  "non_event_return_sum": -0.04518904683925294,
+                  "non_event_mean_d": -1.66008033647746e-06,
+                  "return_sum": 0.0070516823713027725,
+                  "unconditional_mean_d": 2.5853066326817613e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 2.5853066326817624e-07,
+                  "decomposition_identity_abs_error": 1.0587911840678754e-22
+                }
+              }
+            },
+            {
+              "date": "2026-07-31",
+              "observed_rows": 86394,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 55909,
+                  "events": 103,
+                  "hazard": 0.0018422794183405177,
+                  "event_return_sum": 0.09977182662091137,
+                  "event_mean_d": 0.0009686585108826347,
+                  "non_event_seconds": 55806,
+                  "non_event_return_sum": -0.09344934545231204,
+                  "non_event_mean_d": -1.674539394550981e-06,
+                  "return_sum": 0.006322481168599332,
+                  "unconditional_mean_d": 1.1308521291025294e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.130852129102529e-07,
+                  "decomposition_identity_abs_error": 3.970466940254533e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 29530,
+                  "events": 53,
+                  "hazard": 0.0017947849644429394,
+                  "event_return_sum": 0.058385783580893955,
+                  "event_mean_d": 0.0011016185581300747,
+                  "non_event_seconds": 29477,
+                  "non_event_return_sum": -0.049094754756383786,
+                  "non_event_mean_d": -1.6655275216739758e-06,
+                  "return_sum": 0.009291028824510172,
+                  "unconditional_mean_d": 3.1463016676295876e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 3.1463016676295886e-07,
+                  "decomposition_identity_abs_error": 1.0587911840678754e-22
+                }
+              }
+            },
+            {
+              "date": "2026-08-16",
+              "observed_rows": 34562,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 23451,
+                  "events": 36,
+                  "hazard": 0.0015351157733145709,
+                  "event_return_sum": 0.03555641670663493,
+                  "event_mean_d": 0.0009876782418509703,
+                  "non_event_seconds": 23415,
+                  "non_event_return_sum": -0.03944207977253862,
+                  "non_event_mean_d": -1.6844791702984677e-06,
+                  "return_sum": -0.003885663065903689,
+                  "unconditional_mean_d": -1.6569285172929464e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -1.656928517292947e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 10908,
+                  "events": 23,
+                  "hazard": 0.0021085441877521085,
+                  "event_return_sum": 0.020237625961879457,
+                  "event_mean_d": 0.0008798967809512808,
+                  "non_event_seconds": 10885,
+                  "non_event_return_sum": -0.018217298126582616,
+                  "non_event_mean_d": -1.673614894495417e-06,
+                  "return_sum": 0.002020327835296842,
+                  "unconditional_mean_d": 1.8521523975951978e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.8521523975951967e-07,
+                  "decomposition_identity_abs_error": 1.0587911840678754e-22
+                }
+              }
+            }
+          ]
+        },
+        "final30": {
+          "status": "MEASURED_EXPLORATORY",
+          "row_start_inclusive": 725753,
+          "row_end_exclusive": 1036791,
+          "observed_rows": 311038,
+          "first_observed_utc": "2026-08-16T09:36:02+00:00",
+          "last_observed_utc": "2026-10-03T23:59:59+00:00",
+          "observed_scheduled_days": [
+            "2026-08-16",
+            "2026-09-01",
+            "2026-09-17",
+            "2026-10-03"
+          ],
+          "observed_cluster_count": 4,
+          "valid_increments": 311035,
+          "initial_or_gap_pair_exclusions": 3,
+          "unknown_age_exclusions": 5696,
+          "known_age_increments": 305339,
+          "detected_events": 475,
+          "events_with_unknown_prior_age": 3,
+          "directed_sign_counts": {
+            "positive": 478,
+            "negative": 308284,
+            "zero": 2273
+          },
+          "directed_return_quantiles": {
+            "p00": -7.827789281420073e-06,
+            "p01": -4.761877688645669e-06,
+            "p05": -3.7820154091415437e-06,
+            "p25": -2.411088491926107e-06,
+            "p50": -1.4980628505068152e-06,
+            "p75": -7.374186243249725e-07,
+            "p95": -1.3632667389246216e-07,
+            "p99": -4.083177455665216e-08,
+            "p100": 0.0031037932931754506
+          },
+          "bands": {
+            "lt_N": {
+              "exposure_seconds": 189009,
+              "events": 269,
+              "hazard": 0.0014232126512494115,
+              "event_return_sum": 0.26430239933928623,
+              "event_mean_d": 0.0009825368005177927,
+              "non_event_seconds": 188740,
+              "non_event_return_sum": -0.3150459843575274,
+              "non_event_mean_d": -1.6692062326879697e-06,
+              "return_sum": -0.05074358501824112,
+              "unconditional_mean_d": -2.6847179244502175e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": -2.684717924450218e-07,
+              "decomposition_identity_abs_error": 5.293955920339377e-23
+            },
+            "ge_N": {
+              "exposure_seconds": 116330,
+              "events": 203,
+              "hazard": 0.0017450356743746239,
+              "event_return_sum": 0.21479966961346897,
+              "event_mean_d": 0.0010581264512978766,
+              "non_event_seconds": 116127,
+              "non_event_return_sum": -0.1930660388707777,
+              "non_event_mean_d": -1.6625422069869858e-06,
+              "return_sum": 0.021733630742691263,
+              "unconditional_mean_d": 1.8682739398857788e-07,
+              "decomposition_identity_available": true,
+              "decomposition_reconstructed_mean_d": 1.8682739398857766e-07,
+              "decomposition_identity_abs_error": 2.117582368135751e-22
+            }
+          },
+          "daily_bands": [
+            {
+              "date": "2026-08-16",
+              "observed_rows": 51838,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 28598,
+                  "events": 37,
+                  "hazard": 0.0012937967690048256,
+                  "event_return_sum": 0.03733633268532104,
+                  "event_mean_d": 0.0010090900725762443,
+                  "non_event_seconds": 28561,
+                  "non_event_return_sum": -0.04788006591162202,
+                  "non_event_mean_d": -1.6764141980890731e-06,
+                  "return_sum": -0.01054373322630098,
+                  "unconditional_mean_d": -3.6868778328208194e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -3.686877832820819e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-23
+                },
+                "ge_N": {
+                  "exposure_seconds": 23240,
+                  "events": 34,
+                  "hazard": 0.0014629948364888125,
+                  "event_return_sum": 0.032560080402528536,
+                  "event_mean_d": 0.0009576494236037805,
+                  "non_event_seconds": 23206,
+                  "non_event_return_sum": -0.03866901298190711,
+                  "non_event_mean_d": -1.6663368517584723e-06,
+                  "return_sum": -0.006108932579378569,
+                  "unconditional_mean_d": -2.628628476496802e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -2.6286284764968006e-07,
+                  "decomposition_identity_abs_error": 1.5881867761018131e-22
+                }
+              }
+            },
+            {
+              "date": "2026-09-01",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 58509,
+                  "events": 104,
+                  "hazard": 0.0017775043155753816,
+                  "event_return_sum": 0.10040264665127403,
+                  "event_mean_d": 0.000965410063954558,
+                  "non_event_seconds": 58405,
+                  "non_event_return_sum": -0.09758495445497435,
+                  "non_event_mean_d": -1.670832196814902e-06,
+                  "return_sum": 0.0028176921962996867,
+                  "unconditional_mean_d": 4.815826960467085e-08,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 4.8158269604670507e-08,
+                  "decomposition_identity_abs_error": 3.441071348220595e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 26488,
+                  "events": 53,
+                  "hazard": 0.0020009060706735124,
+                  "event_return_sum": 0.055115600513404646,
+                  "event_mean_d": 0.0010399169908189556,
+                  "non_event_seconds": 26435,
+                  "non_event_return_sum": -0.043938868941400436,
+                  "non_event_mean_d": -1.662147491636105e-06,
+                  "return_sum": 0.01117673157200421,
+                  "unconditional_mean_d": 4.2195452929644407e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 4.21954529296444e-07,
+                  "decomposition_identity_abs_error": 5.293955920339377e-23
+                }
+              }
+            },
+            {
+              "date": "2026-09-17",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 52836,
+                  "events": 71,
+                  "hazard": 0.0013437807555454614,
+                  "event_return_sum": 0.07369426036170555,
+                  "event_mean_d": 0.0010379473290381064,
+                  "non_event_seconds": 52765,
+                  "non_event_return_sum": -0.08797343928802323,
+                  "non_event_mean_d": -1.6672688200137066e-06,
+                  "return_sum": -0.014279178926317687,
+                  "unconditional_mean_d": -2.7025473022783114e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -2.70254730227831e-07,
+                  "decomposition_identity_abs_error": 1.5881867761018131e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 33375,
+                  "events": 59,
+                  "hazard": 0.0017677902621722847,
+                  "event_return_sum": 0.06877580960723671,
+                  "event_mean_d": 0.0011656916882582494,
+                  "non_event_seconds": 33316,
+                  "non_event_return_sum": -0.05561107145564368,
+                  "non_event_mean_d": -1.669200127735733e-06,
+                  "return_sum": 0.013164738151593034,
+                  "unconditional_mean_d": 3.9444908319379875e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 3.9444908319379907e-07,
+                  "decomposition_identity_abs_error": 3.1763735522036263e-22
+                }
+              }
+            },
+            {
+              "date": "2026-10-03",
+              "observed_rows": 86400,
+              "bands": {
+                "lt_N": {
+                  "exposure_seconds": 49066,
+                  "events": 57,
+                  "hazard": 0.0011617005665837852,
+                  "event_return_sum": 0.05286915964098564,
+                  "event_mean_d": 0.00092752911650852,
+                  "non_event_seconds": 49009,
+                  "non_event_return_sum": -0.08160752470290777,
+                  "non_event_mean_d": -1.6651538432309938e-06,
+                  "return_sum": -0.028738365061922143,
+                  "unconditional_mean_d": -5.85708332896958e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": -5.857083328969576e-07,
+                  "decomposition_identity_abs_error": 4.235164736271502e-22
+                },
+                "ge_N": {
+                  "exposure_seconds": 33227,
+                  "events": 57,
+                  "hazard": 0.0017154723568182503,
+                  "event_return_sum": 0.05834817909029906,
+                  "event_mean_d": 0.0010236522647420888,
+                  "non_event_seconds": 33170,
+                  "non_event_return_sum": -0.05484708549182647,
+                  "non_event_mean_d": -1.6535147872121336e-06,
+                  "return_sum": 0.0035010935984725864,
+                  "unconditional_mean_d": 1.0536893485636942e-07,
+                  "decomposition_identity_available": true,
+                  "decomposition_reconstructed_mean_d": 1.0536893485636963e-07,
+                  "decomposition_identity_abs_error": 2.117582368135751e-22
+                }
+              }
+            }
+          ]
+        }
+      },
+      "comparisons": {
+        "dev_validation": {
+          "status": "DESCRIPTIVE_EXPLORATORY",
+          "older_over_younger_hazard_ratio": 1.1653069369178137,
+          "hazard_ratio_ci95": [
+            1.0102903103899994,
+            1.4522735940863511
+          ],
+          "bootstrap_repeats": 9999,
+          "bootstrap_seed": 20261005,
+          "valid_ratio_replicates": 9999,
+          "undefined_ratio_replicates": 0,
+          "paired_scheduled_day_resampling": true,
+          "same_day_draws_for_both_bands": true,
+          "observed_cluster_count": 5,
+          "observed_scheduled_days": [
+            "2026-06-13",
+            "2026-06-29",
+            "2026-07-15",
+            "2026-07-31",
+            "2026-08-16"
+          ],
+          "zero_band_exposure_days": {
+            "lt_N": 0,
+            "ge_N": 0
+          },
+          "interval_omits_undefined_draws": true,
+          "undefined_draws_block_falsification": true,
+          "inference_kind": "conditional_on_fixed_detector_descriptive_iid_observed_scheduled_days",
+          "training_median_refits_in_bootstrap": false,
+          "no_contiguous_weekly_claim": true,
+          "no_independent_tick_inference_claim": true,
+          "no_strategy_or_profitability_claim": true,
+          "falsification": {
+            "status": "REJECT_LARGE_OVERDUE_EFFECT",
+            "large_overdue_effect_falsified": true,
+            "reasons": [],
+            "minimum_events_per_band": 100,
+            "hazard_ratio_upper_threshold": 1.5,
+            "all9999_ratios_defined": true,
+            "does_not_establish_independence": true,
+            "does_not_test_profitability": true,
+            "strategy_eligible": false
+          }
+        },
+        "final30": {
+          "status": "DESCRIPTIVE_EXPLORATORY",
+          "older_over_younger_hazard_ratio": 1.2261243411816851,
+          "hazard_ratio_ci95": [
+            1.0813279077502622,
+            1.4095271008959476
+          ],
+          "bootstrap_repeats": 9999,
+          "bootstrap_seed": 20261005,
+          "valid_ratio_replicates": 9999,
+          "undefined_ratio_replicates": 0,
+          "paired_scheduled_day_resampling": true,
+          "same_day_draws_for_both_bands": true,
+          "observed_cluster_count": 4,
+          "observed_scheduled_days": [
+            "2026-08-16",
+            "2026-09-01",
+            "2026-09-17",
+            "2026-10-03"
+          ],
+          "zero_band_exposure_days": {
+            "lt_N": 0,
+            "ge_N": 0
+          },
+          "interval_omits_undefined_draws": true,
+          "undefined_draws_block_falsification": true,
+          "inference_kind": "conditional_on_fixed_detector_descriptive_iid_observed_scheduled_days",
+          "training_median_refits_in_bootstrap": false,
+          "no_contiguous_weekly_claim": true,
+          "no_independent_tick_inference_claim": true,
+          "no_strategy_or_profitability_claim": true,
+          "falsification": {
+            "status": "REJECT_LARGE_OVERDUE_EFFECT",
+            "large_overdue_effect_falsified": true,
+            "reasons": [],
+            "minimum_events_per_band": 100,
+            "hazard_ratio_upper_threshold": 1.5,
+            "all9999_ratios_defined": true,
+            "does_not_establish_independence": true,
+            "does_not_test_profitability": true,
+            "strategy_eligible": false
+          }
+        }
+      }
+    }
+  },
+  "goal_achieved": false,
+  "historical_strategy_candidate": false,
+  "actual_money_profit": "NOT TESTED",
+  "prospective_paper": "NOT TESTED",
+  "physical_spike_census": false,
+  "study_kind": "adaptive_known_history_tail_tick_mechanism_pilot_not_strategy_validation",
+  "completed_utc": "2026-10-05T15:56:31.227470+00:00"
+}

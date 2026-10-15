@@ -1,0 +1,75 @@
+FFFFFF........                                                           [100%]
+=================================== FAILURES ===================================
+_______________ test_chunk_equivalence_and_small_pending[cuts0] ________________
+
+cuts = [1, 59, 61, 71, 130]
+
+    @pytest.mark.parametrize("cuts", [[1, 59, 61, 71, 130], [60, 120, 180], [11, 53, 112, 223]])
+    def test_chunk_equivalence_and_small_pending(cuts):
+        q = quotes()
+>       detector = FixedTailDetector(1, .0001, .00001)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: FixedTailDetector.__init__() takes 3 positional arguments but 4 were given
+
+backend/tests/test_representation_region_adapter.py:27: TypeError
+_______________ test_chunk_equivalence_and_small_pending[cuts1] ________________
+
+cuts = [60, 120, 180]
+
+    @pytest.mark.parametrize("cuts", [[1, 59, 61, 71, 130], [60, 120, 180], [11, 53, 112, 223]])
+    def test_chunk_equivalence_and_small_pending(cuts):
+        q = quotes()
+>       detector = FixedTailDetector(1, .0001, .00001)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: FixedTailDetector.__init__() takes 3 positional arguments but 4 were given
+
+backend/tests/test_representation_region_adapter.py:27: TypeError
+_______________ test_chunk_equivalence_and_small_pending[cuts2] ________________
+
+cuts = [11, 53, 112, 223]
+
+    @pytest.mark.parametrize("cuts", [[1, 59, 61, 71, 130], [60, 120, 180], [11, 53, 112, 223]])
+    def test_chunk_equivalence_and_small_pending(cuts):
+        q = quotes()
+>       detector = FixedTailDetector(1, .0001, .00001)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: FixedTailDetector.__init__() takes 3 positional arguments but 4 were given
+
+backend/tests/test_representation_region_adapter.py:27: TypeError
+____________ test_gap_resets_chain_and_preserves_full_empty_minute _____________
+
+    def test_gap_resets_chain_and_preserves_full_empty_minute():
+        q = quotes(360).drop(quotes(360).index[120:180])
+>       detector = FixedTailDetector(1, .0001, .00001)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: FixedTailDetector.__init__() takes 3 positional arguments but 4 were given
+
+backend/tests/test_representation_region_adapter.py:40: TypeError
+____________ test_empty_full_planned_grid_and_outside_value_poison _____________
+
+    def test_empty_full_planned_grid_and_outside_value_poison():
+        q = quotes(240)
+        q.loc[q.index >= q.index[120], "quote"] = np.nan
+>       detector = FixedTailDetector(1, .0001, .00001)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: FixedTailDetector.__init__() takes 3 positional arguments but 4 were given
+
+backend/tests/test_representation_region_adapter.py:51: TypeError
+__________________ test_overlapping_source_chronology_refused __________________
+
+    def test_overlapping_source_chronology_refused():
+        q = quotes()
+>       with pytest.raises(ValueError): M.build_paired_minutes([q, q], FixedTailDetector(1, .0001, .00001),
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            start=q.index[0], end=q.index[0] + pd.Timedelta(minutes=4))
+E       TypeError: FixedTailDetector.__init__() takes 3 positional arguments but 4 were given
+
+backend/tests/test_representation_region_adapter.py:61: TypeError
+=========================== short test summary info ============================
+FAILED backend/tests/test_representation_region_adapter.py::test_chunk_equivalence_and_small_pending[cuts0]
+FAILED backend/tests/test_representation_region_adapter.py::test_chunk_equivalence_and_small_pending[cuts1]
+FAILED backend/tests/test_representation_region_adapter.py::test_chunk_equivalence_and_small_pending[cuts2]
+FAILED backend/tests/test_representation_region_adapter.py::test_gap_resets_chain_and_preserves_full_empty_minute
+FAILED backend/tests/test_representation_region_adapter.py::test_empty_full_planned_grid_and_outside_value_poison
+FAILED backend/tests/test_representation_region_adapter.py::test_overlapping_source_chronology_refused
+6 failed, 8 passed in 0.43s

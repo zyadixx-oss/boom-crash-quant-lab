@@ -1,0 +1,48 @@
+{
+  "scope": "Post-closeout evidence packaging only",
+  "archives": [
+    {
+      "path": "docs/single_frame_campaign_20261011/independent_accounting_evidence_20261012.tar.gz",
+      "sha256": "5a8aac2caa272d16a40fe3e55be7fcde55d99bf82649dd9eb15fe24c2601bbe4",
+      "bytes": 585318,
+      "files": 7,
+      "exact_bytes_verified": true
+    },
+    {
+      "path": "docs/single_frame_campaign_20261011/validation_sensitivity_evidence_20261012.tar.gz",
+      "sha256": "142ea27f0000bccaca983ee170267cc65d2217e0445820dd5bfceac7393e7506",
+      "bytes": 14446373,
+      "files": 25,
+      "exact_bytes_verified": true
+    }
+  ],
+  "copied_files": [
+    "scripts/independent_campaign_accounting/audit_ledger.py",
+    "scripts/independent_campaign_accounting/test_audit_ledger.py",
+    "scripts/campaign_validation_sensitivity/analyse.py",
+    "scripts/campaign_validation_sensitivity/verify.py",
+    "scripts/campaign_validation_sensitivity/summarise.py",
+    "scripts/campaign_validation_sensitivity/test_analyse.py",
+    "scripts/campaign_validation_sensitivity/test_verify.py",
+    "scripts/build_campaign_sensitivity_ui.py",
+    "docs/single_frame_campaign_20261011/independent_accounting_20261012.json.gz",
+    "docs/single_frame_campaign_20261011/validation_sensitivity_REPORT.ar.md",
+    "docs/single_frame_campaign_20261011/validation_sensitivity_DESCRIPTIVE_FINDINGS.ar.md",
+    "docs/single_frame_campaign_20261011/validation_sensitivity_independent_verification.json",
+    "docs/single_frame_campaign_20261011/validation_sensitivity_receipt.json",
+    "docs/single_frame_campaign_20261011/validation_sensitivity_delivery_manifest.json",
+    "docs/single_frame_campaign_20261011/independent_accounting_evidence_20261012.tar.gz",
+    "docs/single_frame_campaign_20261011/validation_sensitivity_evidence_20261012.tar.gz"
+  ],
+  "new_backtests": 0,
+  "frozen_scientific_source_changed": false,
+  "qualification_changed": false,
+  "validation_source": {
+    "path": "docs/single_frame_campaign_20261011/validation_sensitivity_source_20261012.csv.gz",
+    "decoded_sha256": "9d0ba585e55cc6e9694b956b974e65f6e8da7a7210c402dd1a0de76d40d15242",
+    "sha256": "755b90ceb3fcb3be6430952726d345f7c6c494993da4fcdc43d982fc1b02c304",
+    "bytes": 3544533,
+    "decoded_exact_bytes_verified": true,
+    "raw_market_candles_or_campaign_artifacts_included": false
+  }
+}

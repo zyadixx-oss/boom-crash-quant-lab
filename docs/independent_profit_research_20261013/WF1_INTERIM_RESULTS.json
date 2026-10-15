@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "WF1_COMPLETED_INTERIM_NOT_FINAL",
+  "observed_utc": "2026-10-13T17:42:48.923397+00:00",
+  "fit_period_utc": [
+    "2025-01-02",
+    "2025-02-01"
+  ],
+  "measured_period_utc": [
+    "2025-02-01",
+    "2025-02-21"
+  ],
+  "policy_symbol_scenarios": 24,
+  "baseline_and_stress_always_computed": true,
+  "primary_base_cases": [
+    {
+      "symbol": "BOOM500",
+      "policy": "POST_JUMP_CARRY_30S",
+      "completed": 1772,
+      "unknown": 1,
+      "whole_stage_R": null,
+      "observed_completed_R": -1155.0941176470587,
+      "whole_stage_PF": null,
+      "observed_completed_PF": 0.44995672281030025,
+      "remaining_censored": true
+    },
+    {
+      "symbol": "BOOM500",
+      "policy": "QUOTE_CLOCK_ACCELERATION",
+      "completed": 2,
+      "unknown": 0,
+      "whole_stage_R": -2.4,
+      "observed_completed_R": -2.4,
+      "whole_stage_PF": 0.0,
+      "observed_completed_PF": 0.0,
+      "remaining_censored": false
+    },
+    {
+      "symbol": "BOOM500",
+      "policy": "SIDE_LEAD",
+      "completed": 0,
+      "unknown": 0,
+      "whole_stage_R": 0.0,
+      "observed_completed_R": 0.0,
+      "whole_stage_PF": null,
+      "observed_completed_PF": null,
+      "remaining_censored": false
+    },
+    {
+      "symbol": "CRASH500",
+      "policy": "POST_JUMP_CARRY_30S",
+      "completed": 2710,
+      "unknown": 0,
+      "whole_stage_R": -1078.5983606557377,
+      "observed_completed_R": -1078.5983606557377,
+      "whole_stage_PF": 0.5691024564195512,
+      "observed_completed_PF": 0.5691024564195512,
+      "remaining_censored": false
+    },
+    {
+      "symbol": "CRASH500",
+      "policy": "QUOTE_CLOCK_ACCELERATION",
+      "completed": 3,
+      "unknown": 0,
+      "whole_stage_R": -3.7581967213114753,
+      "observed_completed_R": -3.7581967213114753,
+      "whole_stage_PF": 0.0,
+      "observed_completed_PF": 0.0,
+      "remaining_censored": false
+    },
+    {
+      "symbol": "CRASH500",
+      "policy": "SIDE_LEAD",
+      "completed": 0,
+      "unknown": 0,
+      "whole_stage_R": 0.0,
+      "observed_completed_R": 0.0,
+      "whole_stage_PF": null,
+      "observed_completed_PF": null,
+      "remaining_censored": false
+    }
+  ],
+  "receipt_pins": {
+    "work/independent_profit_study_20261013/cases/BOOM500_WF1_POST_JUMP_CARRY_30S_BASE.json": "92f0052811e76d74cbd0eaeedfe04bc9a2da9c0c2421f850f67e1875ca6a30fe",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF1_QUOTE_CLOCK_ACCELERATION_BASE.json": "9bb1c35dbcb08bbb74b66e8ce6b31f6bf9fdb078532f022da9c9b52b141f4512",
+    "work/independent_profit_study_20261013/cases/BOOM500_WF1_SIDE_LEAD_BASE.json": "7cfea96884b49430fb5dc44fa159b1d6269ce591d6963a64cc1cbcdd1aaf0f0d",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF1_POST_JUMP_CARRY_30S_BASE.json": "c69f7b8d4ec8631ff6ab4bc0566f8595702f4d5788d4a12d67550374be262742",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF1_QUOTE_CLOCK_ACCELERATION_BASE.json": "7fcaf9af2cbe548202a1f383d714e52532a22ead62bdcec86a108d99e39c580d",
+    "work/independent_profit_study_20261013/cases/CRASH500_WF1_SIDE_LEAD_BASE.json": "163b079e53cd9a31b6b5b51f6960c4f6bb005beb9be5a255e16eb394257f4649"
+  },
+  "cash_net": null,
+  "cost_verified": false,
+  "execution_verified": false,
+  "profit_qualified": false,
+  "rules_retuned": false,
+  "final_opened": false
+}

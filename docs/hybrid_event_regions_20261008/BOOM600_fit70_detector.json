@@ -1,0 +1,21 @@
+{
+  "training_start": "2025-10-09T11:08:00+00:00",
+  "training_end": "2026-02-12T11:08:00+00:00",
+  "training_rows": 10886282,
+  "known_consecutive_training_increments": 10886256,
+  "training_first_observed": "2025-10-09T11:08:00+00:00",
+  "training_last_observed": "2026-02-12T11:07:59+00:00",
+  "native_side": 1,
+  "median_abs_log_return": 1.5167265999958976e-06,
+  "threshold": 1.5167265999958976e-05,
+  "threshold_multiplier": 10,
+  "fit_scope": "exact_declared_training_quote_values_only",
+  "future_quote_values_examined": false,
+  "cross_boundary_pairs_used": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

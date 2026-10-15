@@ -1,0 +1,210 @@
+{
+  "scope": "READ_ONLY_QUOTES; not full costs, fills or profitability",
+  "files": [
+    {
+      "path": "ExportResearchQuotes.log",
+      "bytes": 2958,
+      "sha256": "c6ca4db342b756b4df79e55c3c127c7839d5fa5877e5b6499270934f5e9b1c32"
+    },
+    {
+      "path": "README.ar.md",
+      "bytes": 20163,
+      "sha256": "a42e2bae23f876a41dc8936a92da7ed74cf57e1b90a005755cf2d94f04a45b21"
+    },
+    {
+      "path": "RESULTS.ar.md",
+      "bytes": 9858,
+      "sha256": "d07e62a9d093f96ac2ed378fe5dc5dd9543fe49da801f682a10ab8efcc9c338e"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20251101_probe02/ResearchQuotes_Boom500_20251101_probe02.ini",
+      "bytes": 306,
+      "sha256": "665dc40b674edc2140c7aa6ed37d1a1c7c570a73a0e95005ba053082476b7fad"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20251101_probe02/ResearchQuotes_Boom500_20251101_probe02.set",
+      "bytes": 148,
+      "sha256": "c353dbe02a2db751fc37b3e86bc631f65a6244a28f372e4ff2d642870879c710"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20251101_probe02/ResearchQuotes_Boom500_20251101_probe02_receipt.tsv",
+      "bytes": 3097,
+      "sha256": "b572c7901024bb660b8b85c42cba10b14c228fce7231826e2a219ad9144ac840"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20251101_probe02/ResearchQuotes_Boom500_20251101_probe02_ticks.tsv",
+      "bytes": 4399,
+      "sha256": "66e9260aab4cc79dbc7b22a45dac3aa92adca725190aa7e9db2fe74970263489"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20251101_probe02/launch.json",
+      "bytes": 659,
+      "sha256": "5ee5d1c65c5ef287dac4646dfde8474b36595221689a72a723e5528d69657efe"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20251101_probe02/result.json",
+      "bytes": 1138,
+      "sha256": "c85b4f03064e460e7332cd6a7881aaf452a854435754ea96fd19c34ec4716ed7"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20251101_probe02/verification.json",
+      "bytes": 2051,
+      "sha256": "a3ab86003a6d93e4cf4b91e947b0b31284d3fae625df2f882420860098b424ae"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20261012_probe01/ResearchQuotes_Boom500_20261012_probe01.ini",
+      "bytes": 306,
+      "sha256": "0bfab6a62c3242bd359e6f91155795033bddd998b99c7c69900575a948b56109"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20261012_probe01/ResearchQuotes_Boom500_20261012_probe01.set",
+      "bytes": 148,
+      "sha256": "813b3081aa4305c8e638e5f56b13f5ecbaf95e53c34c06411bb1ad8d607d22e2"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20261012_probe01/ResearchQuotes_Boom500_20261012_probe01_receipt.tsv",
+      "bytes": 3095,
+      "sha256": "6029e20fc800b6432bfff5c3df9a27df3e00ac7f3c58ae875eb76fe6f79f48ba"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20261012_probe01/ResearchQuotes_Boom500_20261012_probe01_ticks.tsv",
+      "bytes": 4210,
+      "sha256": "5193e1415bfe9e9002e815898ed3a7d318505cdcfcee8055a51afc5193005ba8"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20261012_probe01/launch.json",
+      "bytes": 659,
+      "sha256": "62e21712395804a25da27c7be355aff603406c52ec8b5ca2a50dcfb69d2e79c4"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20261012_probe01/result.json",
+      "bytes": 1138,
+      "sha256": "1b87696f96945a717077f6237196eef6031e68db4fb682a94d33e32428f76ce9"
+    },
+    {
+      "path": "ResearchQuotes_Boom500_20261012_probe01/verification.json",
+      "bytes": 2034,
+      "sha256": "54f49d94c12c34f559331639023230e5c13e095518ff403f6a952216b22095fa"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20251101_probe01/ResearchQuotes_Crash500_20251101_probe01.ini",
+      "bytes": 308,
+      "sha256": "d359f873454db7820394c92a47cdd0d388043cc69a172e89aed156d1d7b210e8"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20251101_probe01/ResearchQuotes_Crash500_20251101_probe01.set",
+      "bytes": 150,
+      "sha256": "0d08ca31752d575a585e4ad945e916fdb6463c3665594f68bc8adfe21f1ef0f3"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20251101_probe01/ResearchQuotes_Crash500_20251101_probe01_receipt.tsv",
+      "bytes": 3099,
+      "sha256": "85f5e80840b21d43bb485fddde626563d22dc1ca153848185ee9df8f48139bde"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20251101_probe01/ResearchQuotes_Crash500_20251101_probe01_ticks.tsv",
+      "bytes": 3903,
+      "sha256": "9a6b0187869d97b17a8485f379caf08f0235bd9468ba23b3a252b3422d31c4eb"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20251101_probe01/launch.json",
+      "bytes": 660,
+      "sha256": "4bbb883e6670c95ab52813d9527e68c32999c7c6812352e1edd0334ef439c5c6"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20251101_probe01/result.json",
+      "bytes": 1141,
+      "sha256": "e02b6ac87df390b106e9e88b6640a4572c7d3422ee76408871cd23bacf6c4b63"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20251101_probe01/verification.json",
+      "bytes": 2052,
+      "sha256": "352b79b1a421a3d1d94a4605821da09f3ddc91499ecb9a4ae9b26866bf732fe2"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20261012_probe01/ResearchQuotes_Crash500_20261012_probe01.ini",
+      "bytes": 308,
+      "sha256": "c1e71ce5eb380f5645232fdc09bce7d939547c872adccd317c1925ff5602e938"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20261012_probe01/ResearchQuotes_Crash500_20261012_probe01.set",
+      "bytes": 150,
+      "sha256": "ed319089f3ac91c4003f17f552bfa2dcbf306638011a937b68ae30e1767776ea"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20261012_probe01/ResearchQuotes_Crash500_20261012_probe01_receipt.tsv",
+      "bytes": 3097,
+      "sha256": "2ea48c97dc02ee24dfd7a741e37282a721000755dab99d2ce6532d3899b92ad7"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20261012_probe01/ResearchQuotes_Crash500_20261012_probe01_ticks.tsv",
+      "bytes": 4067,
+      "sha256": "5838f9d5d83925274b5e1e65f78950b8d1c1fc9976bc3041f63beca8fc7bd7eb"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20261012_probe01/launch.json",
+      "bytes": 660,
+      "sha256": "4caa8ff5bc82f5e70bcd1da90a1aebb785e3911d14df0ddc7ab4fbe3e9dfe35c"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20261012_probe01/result.json",
+      "bytes": 1141,
+      "sha256": "60d582ede2a63bc945d2e7de20e051742da197fc67b1ee1a5e0c517dc5b74e27"
+    },
+    {
+      "path": "ResearchQuotes_Crash500_20261012_probe01/verification.json",
+      "bytes": 2059,
+      "sha256": "2c697d29054083d04afd873215cac47f51fc66a12ffcefe569a4d789e996e5b6"
+    },
+    {
+      "path": "acceptance_checklist.json",
+      "bytes": 3639,
+      "sha256": "75e822f5c85f4b3ca58b6b83be6eadf706ccfc9e2c3e41b55b69a613484a6a41"
+    },
+    {
+      "path": "acceptance_review.json",
+      "bytes": 2386,
+      "sha256": "013b51daf8eb1c728f038961f419a4c28869ed952b9d27c136b8d3f4ccddaf34"
+    },
+    {
+      "path": "failed_probe01/ResearchQuotes_Boom500_20251101_probe01_receipt.tsv",
+      "bytes": 1964,
+      "sha256": "b056adf4365288614a21d6730d9e783036eb227676357a9c15e7ecb4626bad84"
+    },
+    {
+      "path": "frozen_pins_verification.json",
+      "bytes": 2301,
+      "sha256": "9b907f542eaca32fc7dcbd957100b4917dafe36b231e4f3dd92cdaf59baa2e5f"
+    },
+    {
+      "path": "mql5_compile_verified.json",
+      "bytes": 428,
+      "sha256": "b59758bbcf98b6a0eaf3e4604d4e7d2c2bf141713257be12a790bc4872f749cb"
+    },
+    {
+      "path": "mt5_capture_verification.json",
+      "bytes": 8659,
+      "sha256": "95ec281d7142d8e6d7338d8d780acf643321446baf78555f386fdef08316f9bb"
+    },
+    {
+      "path": "public_capture_verification.json",
+      "bytes": 1119,
+      "sha256": "3d60560ef1bea196cd99d02469004ac7a2d786e22ace83d83f69dbd79bf7645b"
+    },
+    {
+      "path": "pytest.log",
+      "bytes": 3978,
+      "sha256": "926b8fde2955e7434c8d8a682063c2f3baad1616c3e9b645bb9252bf462c51ce"
+    },
+    {
+      "path": "state_verification.json",
+      "bytes": 1027,
+      "sha256": "d67547b15d1909dffb4e7e32677249f28f6be22ebcd9a38627166c27e974902c"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1955,
+      "sha256": "31fe4c55905b25df63923a91437a33dfd662296448c3a46b44ae4c73c288c649"
+    }
+  ]
+}

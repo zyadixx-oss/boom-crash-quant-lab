@@ -1,0 +1,97 @@
+{
+  "LIVE_ALLOWED": false,
+  "LIVE_TRADING": false,
+  "OPENED_TRADES": false,
+  "READY_FOR_LIVE": false,
+  "acquisition_declaration_sha256": "998abd73bc65426282b798a38a5a49d17615a591edf43b88e2dea58834dc9893",
+  "cash_net": null,
+  "claims": [
+    "BOOM500/CRT_SWEEP_RECLAIM/POSITIVE_DAILY_R",
+    "BOOM500/CRT_SWEEP_RECLAIM/EXCESS_DAILY_R_VS_CLOCK",
+    "BOOM500/PULLBACK_CONTINUATION/POSITIVE_DAILY_R",
+    "BOOM500/PULLBACK_CONTINUATION/EXCESS_DAILY_R_VS_CLOCK",
+    "BOOM500/SQUEEZE_BREAKOUT/POSITIVE_DAILY_R",
+    "BOOM500/SQUEEZE_BREAKOUT/EXCESS_DAILY_R_VS_CLOCK",
+    "CRASH500/CRT_SWEEP_RECLAIM/POSITIVE_DAILY_R",
+    "CRASH500/CRT_SWEEP_RECLAIM/EXCESS_DAILY_R_VS_CLOCK",
+    "CRASH500/PULLBACK_CONTINUATION/POSITIVE_DAILY_R",
+    "CRASH500/PULLBACK_CONTINUATION/EXCESS_DAILY_R_VS_CLOCK",
+    "CRASH500/SQUEEZE_BREAKOUT/POSITIVE_DAILY_R",
+    "CRASH500/SQUEEZE_BREAKOUT/EXCESS_DAILY_R_VS_CLOCK"
+  ],
+  "completed_acquisition_state_sha256": "616273f0404cd8869b3b11d39217c4a46a7e76f82c237c244f7a393fe8f75850",
+  "costs_verified": false,
+  "development_previously_exposed": true,
+  "execution_verified": false,
+  "final_strategy_measured": false,
+  "frozen_utc": "2026-10-14T13:52:27.868498+00:00",
+  "holm_family_size": 24,
+  "id": "multiframe-quote-20261014",
+  "live_allowed": false,
+  "live_trading": false,
+  "numpy": "2.5.3",
+  "opened_trades": false,
+  "original_declaration_sha256": "39532ae745f00e613e716970d1864ad20f20474f5e8b06baf639eea8e63b9e79",
+  "original_final_summary_sha256": "310663d445ea9cf0906092ebe9f8f911f7973eaeee2bbd117053f12c5ef473d6",
+  "policies": [
+    "CRT_SWEEP_RECLAIM",
+    "PULLBACK_CONTINUATION",
+    "SQUEEZE_BREAKOUT"
+  ],
+  "premeasurement_validation_path": "docs/independent_multiframe_research_20261014/premeasurement_validation.json",
+  "premeasurement_validation_sha256": "1bf18fc17cfd10919db946377e35d26c9c27c1fd08560caa7b50b6ccd54fddeb",
+  "protocol_path": "docs/independent_multiframe_research_20261014/PROTOCOL_FROZEN.ar.md",
+  "protocol_sha256": "9917c7c68a4fa5ed4add5ecb1c5f0d0f2ccfde80d966164b8646455c82ba4939",
+  "python": "3.12.5",
+  "ready_for_live": false,
+  "reused_training_fit_pins": {
+    "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_30.json": "8e1f2d0186b4be539683f0ee3585b6631bd804d5db32bcea36ba8e2e0cfc84d4",
+    "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_50.json": "b11b93d05f0fb4f73e3caa76365925fb3ea383536b2c59d364b81360448697d5",
+    "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_70.json": "8f3335f93bdc87754176a2fcd4535b4564843f2fb8cc0b067d70c63c0010d027",
+    "work/independent_profit_study_20261013/fits/BOOM500_TRAIN0_90.json": "32b7ca3f41834d964ab2ce7686c40796ce84dc9f43cc3c29bfc053bd6d6278b1",
+    "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_30.json": "90baca8be966a3f54a02e23d692f1a0fbdadd0c2866abac5d80296097965125c",
+    "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_50.json": "a7d6a2a95e1b764ab6ddec871234cf4bb137fec2dbcdd380dbc971e83cd13a36",
+    "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_70.json": "0e215fc8a751586e17cd48ba19ee2bcbd63a2205ec18e75f5267da1596697373",
+    "work/independent_profit_study_20261013/fits/CRASH500_TRAIN0_90.json": "03aa2d9fb7056b077363680feeb785a843d3c43ad1d4dbf5951574435ed5c1f4"
+  },
+  "schema_version": 1,
+  "source_pins": {
+    "independent_multiframe_research/__init__.py": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+    "independent_multiframe_research/bars.py": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+    "independent_multiframe_research/policies.py": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+    "independent_multiframe_research/runner.py": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+    "independent_profit_research/__init__.py": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+    "scripts/run_multiframe_quote_study.py": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960"
+  },
+  "stages": {
+    "FINAL": [
+      120,
+      150,
+      90
+    ],
+    "VALIDATION": [
+      90,
+      120,
+      90
+    ],
+    "WF1": [
+      30,
+      50,
+      30
+    ],
+    "WF2": [
+      50,
+      70,
+      50
+    ],
+    "WF3": [
+      70,
+      90,
+      70
+    ]
+  },
+  "symbols": {
+    "BOOM500": 1,
+    "CRASH500": -1
+  }
+}

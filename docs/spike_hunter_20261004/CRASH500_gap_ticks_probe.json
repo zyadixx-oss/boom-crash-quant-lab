@@ -1,0 +1,27 @@
+{
+  "request": {
+    "ticks_history": "CRASH500",
+    "start": 1785228600,
+    "end": 1785228659,
+    "style": "ticks",
+    "count": 1000,
+    "req_id": 2
+  },
+  "response": {
+    "echo_req": {
+      "count": 1000,
+      "end": 1785228659,
+      "req_id": 2,
+      "start": 1785228600,
+      "style": "ticks",
+      "ticks_history": "CRASH500"
+    },
+    "history": {
+      "prices": [],
+      "times": []
+    },
+    "msg_type": "history",
+    "pip_size": 3,
+    "req_id": 2
+  }
+}

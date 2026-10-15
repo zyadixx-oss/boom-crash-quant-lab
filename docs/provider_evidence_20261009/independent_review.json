@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "independent_checks": 2247,
+  "raw_payload_hashes_verified": 240,
+  "original_artifact_hashes_verified": 6,
+  "inventory_sha256": "6df1c1f32355f32e849c396c6dac32aa572630c06da6b974bbc8aac05e7125ea",
+  "review_script_sha256": "72dec4854b14409ef18ed1eb1c8e2dc56a6df08d92c2a8f796deab09de60abc6",
+  "symbols": {
+    "BOOM500": {
+      "rows": 60,
+      "matches": 0,
+      "distinct_subscription_ids": 1
+    },
+    "BOOM600": {
+      "rows": 60,
+      "matches": 0,
+      "distinct_subscription_ids": 1
+    },
+    "CRASH500": {
+      "rows": 60,
+      "matches": 4,
+      "distinct_subscription_ids": 1
+    },
+    "CRASH600": {
+      "rows": 60,
+      "matches": 0,
+      "distinct_subscription_ids": 1
+    }
+  },
+  "method": "stdlib only; exact Fraction half-even rounding independent of production Decimal quantize; Decimal28 ratios",
+  "scope": "saved bytes/schema/descriptive arithmetic and flags; no official page re-fetch or predictive/economic validation"
+}

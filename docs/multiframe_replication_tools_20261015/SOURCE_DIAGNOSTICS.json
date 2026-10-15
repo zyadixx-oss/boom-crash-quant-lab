@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-15T01:56:37.447027+00:00",
+  "scope": "SOURCE_AVAILABILITY_NOT_ALPHA_OR_CASH_PROFIT",
+  "first_batch": {
+    "requests": 30,
+    "raw_rows": 2543082,
+    "gaps_gt_5s": 7,
+    "completion_audit_sha256": "d4e4dfa4dc316f241b4d0a5219f4a4d7c82b0f52cb4b993f86797360ca897d9a"
+  },
+  "failed_batch2": {
+    "attempted_requests": 1,
+    "source_rows": 0,
+    "remaining_batch_requests_not_attempted": 149,
+    "state_sha256": "ed32fbb64ed187ea81fe20d327780a86dfe6ea78bdca0428b18fcd2942fd928d",
+    "failure_audit_sha256": "0adc19dcc6998f34a5336f607b845ee421e3698a527ff9abe768fd0933eded61"
+  },
+  "fixed_same_window_diagnostic": {
+    "declaration_sha256": "86b3c1fb5c8ebfd6035355ac7458a0511a2534f5809865e8112c7e72b92e44a5",
+    "records": [
+      {
+        "utc": "2023-02-01T00:00:00Z",
+        "seconds": 86400,
+        "rows": 0,
+        "verification_status": "EMPTY_OR_FAILED_NOT_VERIFIED"
+      },
+      {
+        "utc": "2023-02-02T00:00:00Z",
+        "seconds": 86400,
+        "rows": 0,
+        "verification_status": "EMPTY_OR_FAILED_NOT_VERIFIED"
+      }
+    ],
+    "audit_sha256": "5a8d71225ee07d70160820d33b03167dc71d71913ddd806be12c14cb13ad04a8"
+  },
+  "fixed_capability_diagnostic": {
+    "declaration_sha256": "d68d5a6da968645dbb2a4fed66e56b65831d66d861288d8e61d8bb9baf61c246",
+    "records": [
+      {
+        "utc": "2024-04-02T00:00:00Z",
+        "seconds": 60,
+        "rows": 0,
+        "verification_status": "EMPTY_OR_FAILED_NOT_VERIFIED"
+      },
+      {
+        "utc": "2026-10-15T01:00:00Z",
+        "seconds": 60,
+        "rows": 59,
+        "verification_status": "QUOTES_VALIDATED_COVERAGE_NOT_PROVEN"
+      }
+    ],
+    "audit_sha256": "e4a80e31aa61049a3f6e06c1a270d724e812a70c8e9767d4e97eabe34af66a33",
+    "prior_file_pins_matching": 275,
+    "actual_launcher_windows": 2,
+    "internal_MQL_copy_attempts": 4
+  },
+  "source_batch_repaired": false,
+  "source_data_replaced": false,
+  "source_cause_proven": false,
+  "full_history_verified": false,
+  "new_strategy_measurements": 0,
+  "new_alpha_protocol_frozen": false,
+  "final_strategy_metrics_opened": false,
+  "cash_net": null,
+  "cost_verified": false,
+  "execution_verified": false,
+  "limits": [
+    "Selected old windows empty now while selected current minute accessible; not proof of global absence or cause.",
+    "Original failed source and new diagnostics remain separate and unadopted.",
+    "No raw prices or private financial information are published."
+  ],
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}

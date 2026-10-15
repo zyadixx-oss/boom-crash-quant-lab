@@ -1,0 +1,55 @@
+{
+  "status": "FAIL",
+  "pass": false,
+  "run_utc": "2026-10-05T10:21:54.065567+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "implementation": "Independent standard-library quote-path and summary arithmetic; no ML, features, fitting, engine or research metrics imports",
+  "script_sha256": "3203ff54ff1bb14fc6377b8610b3d1dbfe96d64fc8e8d72a55d66cc76cc52305",
+  "helper_sha256": {
+    "scripts/verify_spike_payoff.py": "ac0b34c978b549711e383e9cec86410e205535d5cf04b9d2ba234ef9b5161cdf",
+    "scripts/verify_spike_timed.py": "fbecf3b85dfd0b1e4731b2c8d6984c954a100c36d0f447e79059aee187f58658",
+    "scripts/verify_spike_learned.py": "3846861910f67d4b8e9a50d73962cbd45b70069033a4c93eea0ae159b7ac3f51",
+    "scripts/verify_spike_native300.py": "c7835e5b91f6fb376d01bcd25ed7ca3f8d8315c193377724242674d943bf6663",
+    "scripts/verify_spike_multiframe.py": "ccc3703a89a5af2a0094b28e2b0e5eb4e7b5fc0d451198ace7ce3963d89f5b90"
+  },
+  "selection_sha256": null,
+  "results_sha256": "4d00095faaa6b839452bcf61ad3cdd984a9bf1f632c7ece768f83ae52355e180",
+  "scope": [
+    "twelve saved later-period signal/trade ledgers on the declared common44-input clock",
+    "frozen code/source/declaration/selection hashes and recorded chronology",
+    "raw normalization, missing-minute preservation, source grid and recovered same-end RateLimit pages",
+    "serialized model integrity and training/cutoff metadata, without independently fitting or predicting",
+    "closed M5 ATR14, saved score/cutoff, side, close, UTC00/30 and 31-minute purge",
+    "saved issuance-to-ledger completeness, scalar quote-path R and censored unknowns",
+    "counts/means/PF/day-cluster SE/illustrative closed equity arithmetic",
+    "copied same-clock linear-reference consistency and joint Holm-twelve arithmetic from saved p-values"
+  ],
+  "not_verified": [
+    "44 or19 ML features independently regenerated",
+    "model/scaler fitting or prediction scores independently regenerated",
+    "all possible ML opportunities or common44-feature eligibility",
+    "clock-baseline replay",
+    "bootstrap confidence intervals or p-values",
+    "secondary older-last30 ledgers",
+    "sensitivity ledgers",
+    "actual broker fills/costs/cash profits"
+  ],
+  "checks": 4829,
+  "saved_false_safety_values": 468,
+  "total_trades": 0,
+  "ledgers": [],
+  "sources": [],
+  "error_count": 1,
+  "errors": [
+    {
+      "check": "audit_exception",
+      "error": "KeyError: 'older_final30_features_computed'"
+    }
+  ],
+  "max_numeric_differences": {}
+}

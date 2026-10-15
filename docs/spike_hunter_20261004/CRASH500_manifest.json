@@ -1,0 +1,55 @@
+{
+  "symbol": "CRASH500",
+  "api_symbol": "CRASH500",
+  "source": "Official Deriv public WebSocket ticks_history",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "authentication_used": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "retrieved_at_utc": "2026-10-04T11:12:02.583735+00:00",
+  "granularity_seconds": 60,
+  "requested_days": 180,
+  "requested_start_epoch": 1775560080,
+  "requested_cutoff_exclusive_epoch": 1791112080,
+  "requested_start_utc": "2026-04-07T11:08:00+00:00",
+  "requested_cutoff_exclusive_utc": "2026-10-04T11:08:00+00:00",
+  "rows": 259200,
+  "first_epoch": 1775560080,
+  "last_epoch": 1791112020,
+  "first_utc": "2026-04-07T11:08:00+00:00",
+  "last_utc": "2026-10-04T11:07:00+00:00",
+  "file": "data/spike_hunter/crash500_m1_raw.csv",
+  "sha256": "252abde35fef7f3bf6f468ac4b7f6b155b334ef5ec62c15919630eb8669c6ae6",
+  "gaps": [
+    {
+      "previous": 1785172020,
+      "next": 1785172079,
+      "missing_bars": -1
+    },
+    {
+      "previous": 1785172079,
+      "next": 1785172080,
+      "missing_bars": -1
+    },
+    {
+      "previous": 1785228540,
+      "next": 1785228660,
+      "missing_bars": 1
+    }
+  ],
+  "invalid_ohlc_or_alignment": [
+    1785172079
+  ],
+  "page_count": 260,
+  "request_errors": [],
+  "expected_grid_rows": 259200,
+  "data_valid": false,
+  "docs": [
+    "https://developers.deriv.com/docs/data/",
+    "https://developers.deriv.com/comparison/ticks-history/"
+  ]
+}

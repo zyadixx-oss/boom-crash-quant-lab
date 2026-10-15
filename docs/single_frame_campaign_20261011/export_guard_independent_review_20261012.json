@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-12T03:53:24.150446+00:00",
+  "status": "PASS_FOR_RECORDED_EXPORT_ANNOTATION_SCOPE",
+  "script_sha256": "bbb81c1ef8f37d9077adc95cc48dc54a42756921b8cb896b372a0d26e4881619",
+  "tests_sha256": "3ec3c20f2c775cd8391782f25da040f003fd4d0b2d369b0219b10b2a5b81342c",
+  "author_test_rerun": {
+    "passed": 64,
+    "duration_seconds": 0.75,
+    "exit_code": 0
+  },
+  "independent_probes": [
+    "actual_completed_campaign_chronology",
+    "actual_first_journal_record_canonical",
+    "changed_stop",
+    "unknown_status",
+    "infinite_pf",
+    "boolean_net",
+    "boolean_count",
+    "missing_dd",
+    "dd_out_of_bounds",
+    "future_completion",
+    "last_cycle_after_completion",
+    "cycle_overlap",
+    "naive_timestamp",
+    "quoted_multiline_utf8_crlf_no_terminal_newline_preserved",
+    "output_inside_campaign",
+    "empty_gate_qualification"
+  ],
+  "independent_probes_passed": 16,
+  "resolved_findings": [
+    "Canonical spec reconstruction rejects changed parameters/IDs/labels",
+    "Strict status and finite metric schema",
+    "Exact 16-gate schema and selected policy/original artifact lineage",
+    "Aware actual elapsed clock/cadence/nonoverlap guards",
+    "Protected outputs and start/end helper self-pin"
+  ],
+  "review_scope": [
+    "Read helper and author tests",
+    "Actually reran all 64 author synthetic tests",
+    "Independent 16 probes, including original first journal and actual terminal chronology",
+    "Original core/data/state and running final replay untouched"
+  ],
+  "limitations": [
+    "No numerical rerun of entire development search",
+    "This review does not compare every journal metric with original development artifact contents",
+    "Actual 41600-row run is performed separately by author",
+    "Two-file publication is not an atomic transaction under abrupt process termination; successful closure requires both output and receipt"
+  ]
+}

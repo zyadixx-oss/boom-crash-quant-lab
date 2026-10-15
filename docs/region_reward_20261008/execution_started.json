@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-08T16:51:07.014442+00:00",
+  "declaration_sha256": "5a5cd147eefc7d12ac83c8ef839c931292c5fb338e07a1f083001c893c5196e5",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

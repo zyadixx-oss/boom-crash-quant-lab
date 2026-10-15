@@ -1,0 +1,39 @@
+{
+  "provenance": "Earlier subagent progress messages in this conversation; original response bytes were not retained. Not primary capture evidence.",
+  "reported_utc_window": "2026-10-07 06:15:02 to 06:15:05 UTC",
+  "reported_attempts": [
+    {
+      "request_pattern": {
+        "ticks": "one of four symbols",
+        "subscribe": 0,
+        "req_id": "per symbol"
+      },
+      "reported_count": 4,
+      "reported_error": "Not in enum list: 1",
+      "exact_wire_bytes_available": false
+    },
+    {
+      "request_pattern": {
+        "ticks": "one of four symbols",
+        "req_id": "per symbol"
+      },
+      "reported_count": 4,
+      "reported_response": "tick with subscription; ask/bid/epoch/id/pip_size/quote/symbol",
+      "reported_spreads_price_units": {
+        "BOOM500": "0.078",
+        "CRASH500": "0.041",
+        "BOOM600": "0.069",
+        "CRASH600": "0.314"
+      },
+      "exact_wire_bytes_available": false
+    }
+  ],
+  "interpretation": "New API migration page accepts subscribe0, but options public endpoint rejected it in exploratory observations. Controlled capture01 explicitly used subscribe1 and closed its socket. These transcript observations are not substituted for raw captured messages.",
+  "executable_cfd_verified": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

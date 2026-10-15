@@ -1,0 +1,39 @@
+{
+  "symbol": "CRASH1000",
+  "source": "Official Deriv public WebSocket",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "raw_file": "data/spike_timed_transfer/crash1000_m1_180d.csv",
+  "raw_sha256": "a4c96d199294ea0cd1644d1e7fa13e5ba7fa8541cf8f43f3bcaef5db8537bc14",
+  "raw_rows": 259200,
+  "normalized_file": "data/spike_timed_transfer/crash1000_m1_180d_clean.csv",
+  "normalized_sha256": "a4c96d199294ea0cd1644d1e7fa13e5ba7fa8541cf8f43f3bcaef5db8537bc14",
+  "normalized_rows": 259200,
+  "equal_duplicates_removed": 0,
+  "excluded_rows": [],
+  "gaps": [],
+  "first_epoch": 1760008080,
+  "last_epoch": 1775560020,
+  "first_utc": "2025-10-09T11:08:00+00:00",
+  "last_utc": "2026-04-07T11:07:00+00:00",
+  "requested_start_epoch": 1760008080,
+  "requested_cutoff_exclusive_epoch": 1775560080,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "fills_or_interpolations": false,
+  "normalization_valid": true,
+  "gap_free": true,
+  "finite_positive_ohlc": true,
+  "canonical_utc_minute_grid": true,
+  "retrieved_at_utc": "2026-10-05T04:22:07.250265+00:00",
+  "request_errors": [],
+  "page_count": 260,
+  "documentation": [
+    "https://developers.deriv.com/docs/options/ws-public/",
+    "https://developers.deriv.com/docs/data/ticks-history/"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-10-07T11:36:07.855395+00:00",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "symbols": [
+    "BOOM500",
+    "CRASH500",
+    "BOOM600",
+    "CRASH600"
+  ],
+  "samples_per_symbol": 60,
+  "max_seconds": 180,
+  "receive_timeout_seconds": 20,
+  "max_frames": 512,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "docs": [
+    "https://developers.deriv.com/docs/options/ws-public/",
+    "https://developers.deriv.com/comparison/ticks/",
+    "https://github.com/deriv-com/deriv-api-schemas/blob/master/schemas/ticks_response.schema.json"
+  ],
+  "source_sha256": "62da6e095f8112459b3d91434f02c756ddc265c0783f464416863607a1d384f6",
+  "tests_sha256": "d204b1fe6d713c062bce9399812dbc02e8cc7132a0b4f22f421051f7ab3e1ae8",
+  "python_version": "3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "websockets_version": "17.2",
+  "certifi_version": "2026.7.22",
+  "scope": "public feed schema and quote ordering only",
+  "economic_hypotheses_evaluated": false,
+  "price_csvs_read": false,
+  "executable_cfd_verified": false,
+  "actual_fills_verified": false,
+  "broker_costs_verified": false,
+  "profit_tested": false
+}

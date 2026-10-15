@@ -1,0 +1,59 @@
+{
+  "symbol": "CRASH500",
+  "source": "Official Deriv public WebSocket",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "raw_file": "data/spike_timed_external/crash500_m1_180d.csv",
+  "raw_sha256": "8f78c18a15d11871898de329243be31e1272554e70fb78eb6ae5072eb559447f",
+  "raw_rows": 6171,
+  "normalized_file": "data/spike_timed_external/crash500_m1_180d_clean.csv",
+  "normalized_sha256": "770d7837c895f281cd245295386265ae1166be807e28ccbb6a9a1cdee3164d96",
+  "normalized_rows": 6170,
+  "equal_duplicates_removed": 0,
+  "excluded_rows": [
+    {
+      "epoch": 1759637846,
+      "utc": "2025-10-05T04:17:26+00:00",
+      "reason": "off_utc_minute_grid",
+      "raw": {
+        "epoch": 1759637846,
+        "open": 2990.675,
+        "high": 2990.867,
+        "low": 2990.675,
+        "close": 2990.867
+      }
+    }
+  ],
+  "gaps": [],
+  "first_epoch": 1759637880,
+  "last_epoch": 1760008020,
+  "first_utc": "2025-10-05T04:18:00+00:00",
+  "last_utc": "2025-10-09T11:07:00+00:00",
+  "requested_start_epoch": 1744456080,
+  "requested_cutoff_exclusive_epoch": 1760008080,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "fills_or_interpolations": false,
+  "normalization_valid": true,
+  "gap_free": true,
+  "finite_positive_ohlc": true,
+  "canonical_utc_minute_grid": true,
+  "retrieved_at_utc": "2026-10-05T04:17:27.770971+00:00",
+  "request_errors": [
+    {
+      "end": 1759637845,
+      "error": "Historical availability boundary: API returned candles newer than requested end",
+      "returned_oldest_epoch": 1791113880,
+      "returned_newest_epoch": 1791173820
+    }
+  ],
+  "page_count": 8,
+  "documentation": [
+    "https://developers.deriv.com/docs/options/ws-public/",
+    "https://developers.deriv.com/docs/data/ticks-history/"
+  ]
+}

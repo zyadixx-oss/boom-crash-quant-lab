@@ -1,0 +1,48 @@
+{
+  "test": "Final source in a CI-like temporary checkout without raw ticks or feature caches",
+  "exit_code": 0,
+  "copied_small_files": 262,
+  "omitted_files_absent": 738,
+  "status": "PASS",
+  "checks": 4011,
+  "validator_sha256": "851f11d720df7769539dfc5d5ee589184cc1f192ae5281f54d2fe9a22ea7a632",
+  "stderr": ""
+}
+{
+  "status": "PASS",
+  "checks": 4011,
+  "errors": [],
+  "declaration_sha256": "35756c799689ef6a03f76e3aeda86a4568994a328f79af13685a929f91bee09c",
+  "result_sha256": "4664f8d2ad7282acf1336e449efa6376f467452d86df8a3b2e70a83ab04cf4d7",
+  "independent_audit_path": "docs/nonlinear_region_20261010/independent_audit_final.json",
+  "independent_audit_sha256": "dcb6ef38f3ee3635f56cd467bf3179fe5f68604a77246d1d7615e0cbf223df4c",
+  "saved_files_hashed": 257,
+  "saved_csv_tables_checked": 178,
+  "result_cells": 60,
+  "parent_reference_clones": 36,
+  "new_fit_state_artifacts": 8,
+  "paired_boosters": 16,
+  "heldout_saved_number_gates": 8,
+  "training_labels_including_overlapping_prefixes": 27456,
+  "raw_tick_and_feature_files_not_read": 738,
+  "scope": "pinned_saved_bytes_CSV_counts_training_label_categories_and_target_identity_model_digests_parent_reference_clones_dates_references_saved_number_gates_Holm_and_completed_independent_audit_lineage_only",
+  "original_quote_paths_or_feature_formulas_recomputed": false,
+  "training_arithmetic_or_bootstrap_CIs_recomputed": false,
+  "saved_statistics_gates_and_Holm_recomputed": true,
+  "independent_audit_scope": "exact_parent_cache_labels_references_training_matrix_target_model_identity_training_bins_routed_tree_residual_arithmetic_cutoff_independent_prediction_issuance_native_tick_paths_netR_point_metrics_day_week_CIs_drawdown_thirds_Holm_development_and_stable_positive_gates",
+  "independent_audit_omissions": [
+    "full_optimal_split_search_and_tie_optimality",
+    "original44_feature_formulas_and_intrinsic_validity",
+    "parent_training_quote_paths_this_run",
+    "reference_quote_paths_this_run"
+  ],
+  "fresh_out_of_sample": false,
+  "QUALIFIED": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "validator_sha256": "851f11d720df7769539dfc5d5ee589184cc1f192ae5281f54d2fe9a22ea7a632"
+}

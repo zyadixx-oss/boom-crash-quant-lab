@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-12T03:24:27.143334+00:00",
+  "campaign_id": "single-frame-8af790ef59a5",
+  "review_kind": "FOCUSED_READ_ONLY_DOCUMENTATION_AND_EXISTING_CAPTURE_REVIEW",
+  "target_period": {
+    "from_month": "2025-10",
+    "through_month": "2026-10",
+    "exact_day_boundaries_claimed": false
+  },
+  "scope": {
+    "symbols": [
+      "BOOM300",
+      "BOOM500",
+      "BOOM600",
+      "BOOM900",
+      "BOOM1000",
+      "CRASH300",
+      "CRASH500",
+      "CRASH600",
+      "CRASH900",
+      "CRASH1000"
+    ],
+    "new_market_api_requests": 0,
+    "new_websocket_connections": 0,
+    "authentication_used": false,
+    "account_accessed": false,
+    "orders_sent": 0,
+    "support_contacted": false,
+    "frozen_code_costs_or_state_modified": false,
+    "documentation_browsing": true,
+    "primary_official_sources_only_used": true,
+    "search_is_exhaustive": false
+  },
+  "conclusion": {
+    "historical_cfd_bid_ask_archive": "NOT_VERIFIED",
+    "historical_effective_spread_series": "NOT_VERIFIED",
+    "historical_slippage_or_processing_series": "NOT_VERIFIED",
+    "historical_financing_and_commission_series": "NOT_VERIFIED",
+    "actual_cfd_fills_for_campaign": "NOT_VERIFIED",
+    "public_historical_cost_endpoint_established": false,
+    "all_public_endpoints_proven_absent": false,
+    "current_or_public_quote_equals_cfd_execution": false,
+    "cost_verified": false,
+    "execution_verified": false,
+    "assumed_0_10_atr_scenario_changed": false,
+    "qualified_profitability_claim_allowed": false,
+    "meaning": "The reviewed evidence does not satisfy the historical CFD costs/fills requirement. No result here proves that a public archive cannot exist elsewhere."
+  },
+  "sources": [
+    {
+      "id": "history_doc",
+      "title": "Ticks History — WebSocket API",
+      "url": "https://developers.deriv.com/docs/data/ticks-history/",
+      "reviewed_date_utc": "2026-10-12",
+      "publication_date": null,
+      "supports": "Historical market data is documented as unauthenticated. This page alone does not establish CFD executable quotes or fills."
+    },
+    {
+      "id": "history_comparison",
+      "title": "Ticks history Comparison",
+      "url": "https://developers.deriv.com/comparison/ticks-history/",
+      "reviewed_date_utc": "2026-10-12",
+      "publication_date": null,
+      "supports": "The documented legacy/new history examples contain prices and times arrays. No historical CFD bid/ask series is established by these examples."
+    },
+    {
+      "id": "ticks_comparison",
+      "title": "Ticks Comparison",
+      "url": "https://developers.deriv.com/comparison/ticks/",
+      "reviewed_date_utc": "2026-10-12",
+      "publication_date": null,
+      "supports": "Real-time tick response examples include bid and ask. A live example does not establish a historical archive or MT5 contract/account equivalence."
+    },
+    {
+      "id": "specifications",
+      "title": "Specifications for Trading CFDs",
+      "url": "https://deriv.com/trading-specifications",
+      "reviewed_date_utc": "2026-10-12",
+      "publication_date": null,
+      "supports": "Current specifications are published; the retained 2026-10-11 capture provides the actual observed rows. A current snapshot is not a historical cost schedule."
+    },
+    {
+      "id": "terms",
+      "title": "Trading terms, R26|03",
+      "url": "https://deriv.com/terms-and-conditions/trading-terms",
+      "reviewed_date_utc": "2026-10-12",
+      "publication_date": "2026-08-20",
+      "sections_reviewed": [
+        "3.3",
+        "3.4",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.6",
+        "9.3",
+        "9.5.2",
+        "9.5.6.1"
+      ],
+      "supports": "Derived CFD entries and Boom/Crash exits use the next tick after server processing. Spread, slippage and overnight funding affect results. Confirmations are supplied in account statements/history. No numerical historical series is supplied by these rules."
+    },
+    {
+      "id": "mt5_toolbox",
+      "title": "Deriv MT5 toolbox: Your trading sidekick",
+      "url": "https://traders-academy.deriv.com/trading-guides/deriv-mt5-toolbox-a-guide-for-new-traders",
+      "reviewed_date_utc": "2026-10-12",
+      "publication_date": null,
+      "supports": "The platform History tab records past trades and the Journal tab records platform activity. The guide directs readers to log in. No account was accessed in this review."
+    }
+  ],
+  "existing_capture_review": {
+    "report_path": "docs/single_frame_campaign_20261011/CONTRACT_AND_TICKS.ar.md",
+    "report_sha256": "83284c6a017d1616dbcbd8bb9357191cc305208b39ad8cf739ccebfec446ea56",
+    "result_path": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/result.json",
+    "result_sha256": "b8a90bade45bbc7ca32014eb24ed7b4c6556028827d80737009d6116a5e29e51",
+    "capture_started_at_utc": "2026-10-11T12:51:30.293363+00:00",
+    "capture_finished_at_utc": "2026-10-11T12:51:39.371891+00:00",
+    "files_rehashed_in_this_review": 24,
+    "hash_mismatches": 0,
+    "newly_rechecked_existing_wire_responses": 4,
+    "newly_rechecked_existing_prices": 16,
+    "newly_fetched_prices": 0,
+    "wire_observations": [
+      {
+        "wire_file": "tick_1_response.wire",
+        "symbol": "BOOM500",
+        "history_keys": [
+          "prices",
+          "times"
+        ],
+        "tick_count": 4,
+        "first_epoch": 1761955200,
+        "last_epoch": 1761955203,
+        "bid_ask_observed": false
+      },
+      {
+        "wire_file": "tick_2_response.wire",
+        "symbol": "BOOM500",
+        "history_keys": [
+          "prices",
+          "times"
+        ],
+        "tick_count": 4,
+        "first_epoch": 1785542400,
+        "last_epoch": 1785542403,
+        "bid_ask_observed": false
+      },
+      {
+        "wire_file": "tick_3_response.wire",
+        "symbol": "CRASH500",
+        "history_keys": [
+          "prices",
+          "times"
+        ],
+        "tick_count": 4,
+        "first_epoch": 1761955200,
+        "last_epoch": 1761955203,
+        "bid_ask_observed": false
+      },
+      {
+        "wire_file": "tick_4_response.wire",
+        "symbol": "CRASH500",
+        "history_keys": [
+          "prices",
+          "times"
+        ],
+        "tick_count": 4,
+        "first_epoch": 1785542400,
+        "last_epoch": 1785542403,
+        "bid_ask_observed": false
+      }
+    ],
+    "file_checks": [
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/cfd_specifications_receipt.json",
+        "expected_sha256": "d27c8fac15c30d91e298d07e807ae5f6e152f6705d24f767cbda81599d12c944",
+        "actual_sha256": "d27c8fac15c30d91e298d07e807ae5f6e152f6705d24f767cbda81599d12c944",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/cfd_specifications_response.html",
+        "expected_sha256": "ce0803d85b74c15234fbcdd039fa02b128c20df550d25b983cfa9216d30cd59f",
+        "actual_sha256": "ce0803d85b74c15234fbcdd039fa02b128c20df550d25b983cfa9216d30cd59f",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/current_cfd_specification_rows.json",
+        "expected_sha256": "4d380918d301854c0d651430fd00754a6edfd78fac8b4ddd731c57612737ce30",
+        "actual_sha256": "4d380918d301854c0d651430fd00754a6edfd78fac8b4ddd731c57612737ce30",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/declaration.json",
+        "expected_sha256": "412ab09140cfb43bbade80c074eb39bbd60f5e2dd83b8baf2c771d75b6d0f799",
+        "actual_sha256": "412ab09140cfb43bbade80c074eb39bbd60f5e2dd83b8baf2c771d75b6d0f799",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_1_intent.json",
+        "expected_sha256": "2a62d8e266031a90bd22e9b88a1400d21e69df8a09fa0e7fa2aeede4de210ff1",
+        "actual_sha256": "2a62d8e266031a90bd22e9b88a1400d21e69df8a09fa0e7fa2aeede4de210ff1",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_1_receipt.json",
+        "expected_sha256": "9af0cbe90e92c800d8c361d200fce5d9ae3fc0cab1760c44522bfd7f1559c211",
+        "actual_sha256": "9af0cbe90e92c800d8c361d200fce5d9ae3fc0cab1760c44522bfd7f1559c211",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_1_response.wire",
+        "expected_sha256": "2aea9d477fedb067cf72a10232c53b35a510703442ad9d4343948be5118b6d95",
+        "actual_sha256": "2aea9d477fedb067cf72a10232c53b35a510703442ad9d4343948be5118b6d95",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_1_sent.json",
+        "expected_sha256": "3177d9b4ce5e75bb603b73ca5638944291f304247990c65a2508b27cc750dd8b",
+        "actual_sha256": "3177d9b4ce5e75bb603b73ca5638944291f304247990c65a2508b27cc750dd8b",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_1_summary.json",
+        "expected_sha256": "d7dec8a4e855f73ecb14bbac8355a2cd724c52b9a7a7c8f7e90dcf75e081e66c",
+        "actual_sha256": "d7dec8a4e855f73ecb14bbac8355a2cd724c52b9a7a7c8f7e90dcf75e081e66c",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_2_intent.json",
+        "expected_sha256": "efb6e9ff80605460604c80960380cf5b3d2aaecd7868a3633f8ff826ccc4a5c7",
+        "actual_sha256": "efb6e9ff80605460604c80960380cf5b3d2aaecd7868a3633f8ff826ccc4a5c7",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_2_receipt.json",
+        "expected_sha256": "10e94ef0f065e0defbde81d857adf51e6a315ac1303f4c7b8b77646c233e816a",
+        "actual_sha256": "10e94ef0f065e0defbde81d857adf51e6a315ac1303f4c7b8b77646c233e816a",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_2_response.wire",
+        "expected_sha256": "d5a519a41c5e1ecaac20b70d5735a391c3242bab211d662653602bff600d5ce3",
+        "actual_sha256": "d5a519a41c5e1ecaac20b70d5735a391c3242bab211d662653602bff600d5ce3",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_2_sent.json",
+        "expected_sha256": "b7d19aaa1198765d1dbc79587ade20c7d26b0d0c8a3e605c1620c094746ccb43",
+        "actual_sha256": "b7d19aaa1198765d1dbc79587ade20c7d26b0d0c8a3e605c1620c094746ccb43",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_2_summary.json",
+        "expected_sha256": "a06ef1fb0130bdab1b3f0f04b9f9b87f78b8ea3fd288daedbcf29b7a5e15f664",
+        "actual_sha256": "a06ef1fb0130bdab1b3f0f04b9f9b87f78b8ea3fd288daedbcf29b7a5e15f664",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_3_intent.json",
+        "expected_sha256": "b4f82f2668c492b67a42ad87a45040d13053f18a1d8e445aab000bd723590301",
+        "actual_sha256": "b4f82f2668c492b67a42ad87a45040d13053f18a1d8e445aab000bd723590301",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_3_receipt.json",
+        "expected_sha256": "4cdd6f588ea6acea8b00fbe1a261998cf3324d274fac5a0eb16ba7757fb0ce56",
+        "actual_sha256": "4cdd6f588ea6acea8b00fbe1a261998cf3324d274fac5a0eb16ba7757fb0ce56",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_3_response.wire",
+        "expected_sha256": "4f3900e5ca59365763802a7e12c5012267a5cec6aa7aee09507d3518ea15595c",
+        "actual_sha256": "4f3900e5ca59365763802a7e12c5012267a5cec6aa7aee09507d3518ea15595c",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_3_sent.json",
+        "expected_sha256": "99ea5beaf9efd90b30c90b9e1a9fa22a4c66e2cfba0865c15b933cdda135953d",
+        "actual_sha256": "99ea5beaf9efd90b30c90b9e1a9fa22a4c66e2cfba0865c15b933cdda135953d",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_3_summary.json",
+        "expected_sha256": "5737a895116abd8226afbaa6c2f3cf0ff7d22536a2bba0c475560bb0294c9300",
+        "actual_sha256": "5737a895116abd8226afbaa6c2f3cf0ff7d22536a2bba0c475560bb0294c9300",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_4_intent.json",
+        "expected_sha256": "55cdf6dde356be11f6a61c6d486a9558838b226bfcd829fe337bd253deb9ccfd",
+        "actual_sha256": "55cdf6dde356be11f6a61c6d486a9558838b226bfcd829fe337bd253deb9ccfd",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_4_receipt.json",
+        "expected_sha256": "338cedaf45f2c4912b97b2f0cf4baad4b091b41c72ebe6ca7b6de8431d9760f0",
+        "actual_sha256": "338cedaf45f2c4912b97b2f0cf4baad4b091b41c72ebe6ca7b6de8431d9760f0",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_4_response.wire",
+        "expected_sha256": "da8c355b692acffd4c01c48e37f8e38751b85009161a2987c1cbe216256dc399",
+        "actual_sha256": "da8c355b692acffd4c01c48e37f8e38751b85009161a2987c1cbe216256dc399",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_4_sent.json",
+        "expected_sha256": "b9b4ab5ba40a101f6ca46ff0d5691b75511097e6690e04e6c485c4e1cc21902d",
+        "actual_sha256": "b9b4ab5ba40a101f6ca46ff0d5691b75511097e6690e04e6c485c4e1cc21902d",
+        "match": true
+      },
+      {
+        "file": "data/single_frame_campaign_20261011/history/probes/contract_ticks_20261011_125121/tick_4_summary.json",
+        "expected_sha256": "beed45e903522351bcb03a978f60a4a06c7bcfe8263fadad45ddf7cef9101665",
+        "actual_sha256": "beed45e903522351bcb03a978f60a4a06c7bcfe8263fadad45ddf7cef9101665",
+        "match": true
+      }
+    ],
+    "capture_scope_limit": "Four 4-second Boom/Crash 500 windows, not full period coverage or CFD fills."
+  },
+  "inferences": [
+    {
+      "claim": "Prices/times alone cannot reconstruct separate historical bid/ask, charges or actual server-processing fills.",
+      "type": "research_requirement_inference",
+      "not_provider_absence_claim": true
+    },
+    {
+      "claim": "A present minimum spread/current swap snapshot must not be backfilled as observed historical effective costs.",
+      "type": "research_requirement_inference",
+      "not_provider_absence_claim": true
+    },
+    {
+      "claim": "The 2026-08-20 terms version does not establish all applicable terms earlier in the 2025-10 to 2026-10 period.",
+      "type": "temporal_scope_inference",
+      "not_provider_absence_claim": true
+    }
+  ],
+  "minimum_additional_evidence": [
+    {
+      "item": "contract_identity",
+      "needed": "Broker legal entity, platform, exact CFD server and symbol mapping, account type/currency, contract size, tick value, lot rounding and applicable dated trading specification. No secrets are needed in a research export."
+    },
+    {
+      "item": "historical_executable_quotes",
+      "needed": "Timestamped broker/server-specific CFD bid and ask over every selected signal, entry, exit and stop/target crossing, with timezone, sequence/resolution, missing/duplicate flags and immutable source receipts."
+    },
+    {
+      "item": "historical_charges",
+      "needed": "Dated commission/fee and swap/financing schedules for the applicable contract/account, calculation cutoffs, long/short rates, unit/conversion method, multipliers/exemptions and amendments across 2025-10 through 2026-10."
+    },
+    {
+      "item": "processing_and_fill_evidence",
+      "needed": "Existing read-only order/deal/statement and journal exports or broker-supplied records with requested/received/processed/fill timestamps, sizes, rejection status, bid/ask, actual fills and charged amounts. These would estimate latency/slippage for comparable orders, not prove counterfactual fills for every backtest."
+    },
+    {
+      "item": "coverage_and_prospective_validation",
+      "needed": "Document temporal/symbol/regime/size coverage and unknown intervals. Validate the fixed model on newly collected read-only quotes or shadow records; such records do not become historical real fills. No live order is required or authorized by this review."
+    }
+  ],
+  "search_limitations": [
+    "Focused official documentation search; no exhaustive endpoint inventory or broker absence confirmation.",
+    "No new market-data capture; only the retained four-window capture was rehashed and reread.",
+    "No broker support request was sent, no account was opened or accessed, and no transaction was placed.",
+    "Documentation observed now may change; this review stores source URLs and review date, not a new byte-level archive of external pages.",
+    "Existing public live bid/ask captures and original quote tick replays are separate research evidence; they do not satisfy historical CFD cost or real-fill verification."
+  ],
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}

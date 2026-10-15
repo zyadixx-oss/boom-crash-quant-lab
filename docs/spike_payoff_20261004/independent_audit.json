@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "run_utc": "2026-10-04T23:05:31.483689+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "implementation": "independent scalar Python standard library; no study engine or metrics imports",
+  "script_sha256": "ac0b34c978b549711e383e9cec86410e205535d5cf04b9d2ba234ef9b5161cdf",
+  "results_sha256": "ae1175dcb2620f36a8f1dc689831efcf73b518214a552c633480091daa814f08",
+  "selection_sha256": "55db657f563dec816c209efc7e340064185345a30a6a8371af1d7514cb04d9ca",
+  "scope": [
+    "all four external primary and selected ledgers",
+    "raw and clean M1 hash equivalence",
+    "causal ATR14 independently aggregated from closed M5 bars",
+    "exact signal+1-minute entry",
+    "stop/target/timeout chronology with adverse-extreme stop-first fills",
+    "entry/exit prices and times, gross/net R, ambiguity and holding time",
+    "30-minute signal cooldown, no overlapping positions, 31-minute end purge",
+    "summary counts, means, PF, UTC-day cluster SE and illustrative closed-trade equity",
+    "frozen source/selection hashes and all saved safety flags"
+  ],
+  "not_verified": [
+    "signal eligibility and completeness independently regenerated",
+    "clock baseline replay",
+    "bootstrap confidence intervals and p-values",
+    "sensitivity ledgers",
+    "actual broker execution or monetary profits"
+  ],
+  "checks": 91733,
+  "saved_safety_values_checked": 80,
+  "total_trades_verified": 4817,
+  "ledgers": [
+    {
+      "symbol": "BOOM500",
+      "role": "primary",
+      "id": "SR_ALIGNMENT__sl1_tp2_h15",
+      "trades_verified": 2216,
+      "ledger_sha256": "61206d57eb504f943ead90f7120aa026648424085cda7d7a843e2cdcda3022d6",
+      "raw_data_sha256": "69b613c0c1bad10cfe5c6d89f48cf1cb169803bdc6c26bfbbd41da8a3032f4ec",
+      "mean_net_R": -0.31699597522711764,
+      "profit_factor": 0.5865325464750397,
+      "mismatches": 0
+    },
+    {
+      "symbol": "BOOM500",
+      "role": "selected",
+      "id": "CANDLE_COMPRESSION__sl1.5_tp2_h30",
+      "trades_verified": 1,
+      "ledger_sha256": "17577173a64cf1690992bd818bd6adafb5cadb6c117b6dbafd519df9b56e357d",
+      "raw_data_sha256": "69b613c0c1bad10cfe5c6d89f48cf1cb169803bdc6c26bfbbd41da8a3032f4ec",
+      "mean_net_R": -1.076673886487334,
+      "profit_factor": 0.0,
+      "mismatches": 0
+    },
+    {
+      "symbol": "CRASH500",
+      "role": "primary",
+      "id": "SR_ALIGNMENT__sl1_tp2_h15",
+      "trades_verified": 2259,
+      "ledger_sha256": "132f36ffa63b2c170d6ffd06160d1cc2e55a938cadb98c5044e4ce914c0680c6",
+      "raw_data_sha256": "2430801c24fe2f945580f8605f964aedd847f6b0a5dc1d657be54178e7270719",
+      "mean_net_R": -0.3035522782714946,
+      "profit_factor": 0.6027456770411744,
+      "mismatches": 0
+    },
+    {
+      "symbol": "CRASH500",
+      "role": "selected",
+      "id": "CRT_MSS__sl1.5_tp3_h5",
+      "trades_verified": 341,
+      "ledger_sha256": "550c1c2870722b503cf7baab8a59e413b19f191a90ac3f7d5aa70d12ad8ae858",
+      "raw_data_sha256": "2430801c24fe2f945580f8605f964aedd847f6b0a5dc1d657be54178e7270719",
+      "mean_net_R": -0.10508576500351989,
+      "profit_factor": 0.6729730574763373,
+      "mismatches": 0
+    }
+  ],
+  "max_absolute_numeric_differences": {
+    "entry": 0,
+    "exit": 0,
+    "atr": 0,
+    "gross_R": 0,
+    "net_R": 0,
+    "holding_minutes": 0,
+    "win_rate": 0,
+    "mean_net_R": 5.551115123125783e-17,
+    "median_net_R": 0,
+    "sum_net_R": 1.1368683772161603e-13,
+    "mean_gross_R": 2.7755575615628914e-17,
+    "profit_factor": 1.1102230246251565e-16,
+    "average_win_R": 1.1102230246251565e-16,
+    "average_loss_R": 0,
+    "median_holding_minutes": 0,
+    "break_even_cost_atr": 2.7755575615628914e-17,
+    "cluster_se": 3.469446951953614e-18,
+    "selection_score": 5.551115123125783e-17,
+    "closed_trade_return": 0,
+    "closed_trade_max_drawdown": 0,
+    "illustrative_risk_fraction": 0
+  },
+  "mismatch_count": 0,
+  "mismatches": []
+}

@@ -1,0 +1,15 @@
+BOOM600: independent source and conditional-label reconstruction
+BOOM600/wf1: five region streams independently checked
+BOOM600/wf2: five region streams independently checked
+BOOM600/wf3: five region streams independently checked
+BOOM600/final_test: five region streams independently checked
+BOOM600/later180: five region streams independently checked
+CRASH600: independent source and conditional-label reconstruction
+CRASH600/wf1: five region streams independently checked
+CRASH600/wf2: five region streams independently checked
+CRASH600/wf3: five region streams independently checked
+CRASH600/final_test: five region streams independently checked
+CRASH600/later180: five region streams independently checked
+{"passed": true, "checks": 2300121, "errors": []}
+
+Terminal exit status: 0

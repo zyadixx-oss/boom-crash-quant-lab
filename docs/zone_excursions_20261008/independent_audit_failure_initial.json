@@ -1,0 +1,14 @@
+{
+  "stage": "preserved_independent_audit_reader_failure",
+  "error": "TypeError: numpy isfinite on empty object-dtype expected ATR column",
+  "log_sha256": "066cb3ac61603e8ccd5331ab1f5c22b08fa659b1e4e283f1b7f9082eb3250905",
+  "repair": "Independent auditor only: explicitly convert both empty ATR arrays to float; add empty-population regression fixture",
+  "frozen_diagnostic_code_and_results_changed": false,
+  "QUALIFIED": false,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  }
+}

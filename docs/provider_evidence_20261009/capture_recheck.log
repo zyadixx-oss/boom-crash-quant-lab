@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "raw_text_messages": 240,
+  "public_subscriptions": 4,
+  "source_sha256": "25efca73aa5f586eca88a2b8ef199dab84b015201f64d77f77554a091eef7832",
+  "capture_result_sha256": "745ffffacc2b0f17ae6696e36ee9489f00baa2053252a622684ec4e26caa429e",
+  "summaries_price_units": {
+    "BOOM500": {
+      "observations": 60,
+      "minimum": "0.077",
+      "median": "0.078",
+      "maximum": "0.078"
+    },
+    "CRASH500": {
+      "observations": 60,
+      "minimum": "0.040",
+      "median": "0.041",
+      "maximum": "0.041"
+    },
+    "BOOM600": {
+      "observations": 60,
+      "minimum": "0.068",
+      "median": "0.069",
+      "maximum": "0.069"
+    },
+    "CRASH600": {
+      "observations": 60,
+      "minimum": "0.315",
+      "median": "0.315",
+      "maximum": "0.315"
+    }
+  },
+  "all_four_flags_false": true,
+  "scope": "specific saved public-feed requests/messages/schema/spread arithmetic only",
+  "executable_CFD_or_historical_cost_or_profit_verified": false
+}

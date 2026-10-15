@@ -1,0 +1,100 @@
+{
+  "label": "POST-HOC_DIAGNOSTIC_NOT_SELECTION_OR_CONFIRMATORY_TEST",
+  "created_utc": "2026-10-04T23:07:07.928201+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "selection_sha256": "55db657f563dec816c209efc7e340064185345a30a6a8371af1d7514cb04d9ca",
+  "results_sha256": "ae1175dcb2620f36a8f1dc689831efcf73b518214a552c633480091daa814f08",
+  "diagnostic_script_sha256": "a8ddce087ee7ee1a26ac71372035a69338cf10a9d91bd51fddbfb11e53704990",
+  "method": "Original delayed entry and ATR; exact original 15 M1 candles; no horizon extension. Stop-minute OHLC cannot order intraminute barrier touches unless opening already crossed stop.",
+  "symbols": {
+    "BOOM500": {
+      "model": "SR_ALIGNMENT__sl1_tp2_h15",
+      "config": {
+        "stop_atr": 1.0,
+        "target_atr": 2.0,
+        "max_hold_minutes": 15,
+        "entry_delay_minutes": 1,
+        "round_trip_cost_atr": 0.1,
+        "fill_mode": "adverse_extreme",
+        "same_bar_policy": "stop_first"
+      },
+      "data_sha256": "69b613c0c1bad10cfe5c6d89f48cf1cb169803bdc6c26bfbbd41da8a3032f4ec",
+      "ledger_sha256": "61206d57eb504f943ead90f7120aa026648424085cda7d7a843e2cdcda3022d6",
+      "trades": 2216,
+      "exit_counts": {
+        "sl": 1327,
+        "tp": 456,
+        "time": 433
+      },
+      "exit_fractions": {
+        "sl": 0.598826714801444,
+        "tp": 0.20577617328519857,
+        "time": 0.1953971119133574
+      },
+      "complete_original_horizons": 2216,
+      "incomplete_original_horizons": 0,
+      "unrestricted_target_touches": 540,
+      "complete_stop_horizons": 1327,
+      "stop_target_first_touched_same_minute": 3,
+      "stop_target_first_touched_strictly_later_minute": 81,
+      "stop_target_touched_in_any_later_minute": 84,
+      "stop_target_touched_anytime_in_original_horizon": 84,
+      "stop_target_never_touched": 1243,
+      "same_minute_ambiguous_stop_target": 3,
+      "same_minute_target_after_opening_stop_gap": 0,
+      "ledger_ambiguous_stop_exits": 3,
+      "primary_target_before_stop_fraction": 0.20577617328519857,
+      "unrestricted_target_touch_fraction_complete_horizons": 0.24368231046931407,
+      "stops_with_later_minute_first_target_fraction": 0.06103993971363979,
+      "stops_with_any_original_horizon_target_fraction": 0.06330067822155237,
+      "median_minutes_from_stop_minute_to_strictly_later_first_target_minute": 5.0
+    },
+    "CRASH500": {
+      "model": "SR_ALIGNMENT__sl1_tp2_h15",
+      "config": {
+        "stop_atr": 1.0,
+        "target_atr": 2.0,
+        "max_hold_minutes": 15,
+        "entry_delay_minutes": 1,
+        "round_trip_cost_atr": 0.1,
+        "fill_mode": "adverse_extreme",
+        "same_bar_policy": "stop_first"
+      },
+      "data_sha256": "2430801c24fe2f945580f8605f964aedd847f6b0a5dc1d657be54178e7270719",
+      "ledger_sha256": "132f36ffa63b2c170d6ffd06160d1cc2e55a938cadb98c5044e4ce914c0680c6",
+      "trades": 2259,
+      "exit_counts": {
+        "sl": 1356,
+        "tp": 498,
+        "time": 405
+      },
+      "exit_fractions": {
+        "sl": 0.600265604249668,
+        "tp": 0.2204515272244356,
+        "time": 0.17928286852589642
+      },
+      "complete_original_horizons": 2259,
+      "incomplete_original_horizons": 0,
+      "unrestricted_target_touches": 595,
+      "complete_stop_horizons": 1356,
+      "stop_target_first_touched_same_minute": 5,
+      "stop_target_first_touched_strictly_later_minute": 92,
+      "stop_target_touched_in_any_later_minute": 97,
+      "stop_target_touched_anytime_in_original_horizon": 97,
+      "stop_target_never_touched": 1259,
+      "same_minute_ambiguous_stop_target": 5,
+      "same_minute_target_after_opening_stop_gap": 0,
+      "ledger_ambiguous_stop_exits": 5,
+      "primary_target_before_stop_fraction": 0.2204515272244356,
+      "unrestricted_target_touch_fraction_complete_horizons": 0.2633908809207614,
+      "stops_with_later_minute_first_target_fraction": 0.06784660766961652,
+      "stops_with_any_original_horizon_target_fraction": 0.0715339233038348,
+      "median_minutes_from_stop_minute_to_strictly_later_first_target_minute": 5.0
+    }
+  }
+}

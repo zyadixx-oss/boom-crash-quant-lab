@@ -1,0 +1,43 @@
+name: CRT Self Test
+
+on:
+  push:
+    branches:
+      - crt-self-test-20261004
+    paths:
+      - ".github/workflows/crt-self-test.yml"
+      - "scripts/crt_sqlite_test.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  crt-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install --disable-pip-version-check pandas numpy
+      - name: Fetch public historical market database
+        run: |
+          mkdir -p external
+          git clone --filter=blob:none --no-checkout --depth 1 https://github.com/Graeza/tradlab.git external/tradlab
+          cd external/tradlab
+          git sparse-checkout init --no-cone
+          printf "market_data.db\nmarket_data.db-wal\nmarket_data.db-shm\n" > .git/info/sparse-checkout
+          git checkout
+          ls -lh market_data.db*
+      - name: Run CRT experiment
+        run: python scripts/crt_sqlite_test.py external/tradlab/market_data.db
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crt-sqlite-results
+          path: crt_sqlite_results.json
+          if-no-files-found: ignore

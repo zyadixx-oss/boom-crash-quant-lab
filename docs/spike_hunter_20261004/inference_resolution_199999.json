@@ -1,0 +1,85 @@
+{
+  "analysis": "POST_HOC_MONTE_CARLO_RESOLUTION_SENSITIVITY",
+  "not_fresh_oos": true,
+  "original_research_gate_unchanged": true,
+  "definition": "2.0ATR_15m",
+  "variant": "SR_ALIGNMENT",
+  "repeats": 199999,
+  "block_hours": 24,
+  "seed_base": 20261004,
+  "actual_seed": 20261028,
+  "final_comparison_family": 384,
+  "study_sha256": "36101d00d3834fc4daa4c91f1679115c1534b85b405a38d65dcc82b80024bf70",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "symbols": {
+    "BOOM500": {
+      "signals": 646,
+      "hits": 166,
+      "opportunities": 15546,
+      "positive_opportunities": 3455,
+      "precision": 0.25696594427244585,
+      "base_rate": 0.22224366396500708,
+      "lift": 1.156235186587393,
+      "block_precision_ci95": [
+        0.22257551669316375,
+        0.291981845688351
+      ],
+      "block_base_rate_ci95": [
+        0.21496212121212122,
+        0.22943161173111862
+      ],
+      "block_lift_ci95": [
+        1.0120810401129872,
+        1.3021930560052157
+      ],
+      "block_difference_ci95": [
+        0.0026655033962934404,
+        0.06754778656510486
+      ],
+      "centered_tail_exceedances": 3846,
+      "bootstrap_valid_replicates": 199999,
+      "bootstrap_one_sided_p": 0.019235,
+      "conservative_family_p_times_family": 1.0,
+      "monte_carlo_minimum_p": 5e-06,
+      "original_9999_replicate_values_match": true
+    },
+    "CRASH500": {
+      "signals": 639,
+      "hits": 195,
+      "opportunities": 15546,
+      "positive_opportunities": 3360,
+      "precision": 0.3051643192488263,
+      "base_rate": 0.2161327672713238,
+      "lift": 1.4119299128101948,
+      "block_precision_ci95": [
+        0.2766990291262136,
+        0.33183183183183185
+      ],
+      "block_base_rate_ci95": [
+        0.2102791714910588,
+        0.22193877551020408
+      ],
+      "block_lift_ci95": [
+        1.2688052255182876,
+        1.5499053463796286
+      ],
+      "block_difference_ci95": [
+        0.05876258704512411,
+        0.11750037257946376
+      ],
+      "centered_tail_exceedances": 0,
+      "bootstrap_valid_replicates": 199999,
+      "bootstrap_one_sided_p": 5e-06,
+      "conservative_family_p_times_family": 0.0019200000000000003,
+      "monte_carlo_minimum_p": 5e-06,
+      "original_9999_replicate_values_match": true,
+      "zero_exceedance_monte_carlo_tail_p_upper95": 1.4978624080730363e-05,
+      "zero_exceedance_monte_carlo_family_p_upper95": 0.005751791647000459
+    }
+  }
+}

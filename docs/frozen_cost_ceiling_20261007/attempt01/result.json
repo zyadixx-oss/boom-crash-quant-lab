@@ -1,0 +1,466 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "symbol": "BOOM600",
+      "family": "BOOST44",
+      "mode": "SPIKE",
+      "active_days": 176,
+      "is_combined44": true,
+      "bound": {
+        "gross": {
+          "completed": 1475,
+          "gains_R": 556.9249000306494,
+          "losses_R": 588.0602231275074,
+          "sum_R": -31.135323096857995,
+          "mean_R": -0.021108693624988472,
+          "profit_factor": 0.947054192968078
+        },
+        "net": {
+          "completed": 1475,
+          "gains_R": 527.2053475718582,
+          "losses_R": 632.0906706687163,
+          "sum_R": -104.88532309685802,
+          "mean_R": -0.07110869362498849,
+          "profit_factor": 0.8340660162158455
+        },
+        "finite_zero_cost_ceiling": 0.947054192968078,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": true,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "BOOM600",
+      "family": "BOOST44",
+      "mode": "DRIFT",
+      "active_days": 176,
+      "is_combined44": true,
+      "bound": {
+        "gross": {
+          "completed": 1490,
+          "gains_R": 583.2111751493462,
+          "losses_R": 621.7295246319154,
+          "sum_R": -38.51834948256927,
+          "mean_R": -0.02585124126346931,
+          "profit_factor": 0.9380464527474816
+        },
+        "net": {
+          "completed": 1490,
+          "gains_R": 541.8652408111362,
+          "losses_R": 654.8835902937055,
+          "sum_R": -113.0183494825693,
+          "mean_R": -0.07585124126346933,
+          "profit_factor": 0.8274222302136441
+        },
+        "finite_zero_cost_ceiling": 0.9380464527474816,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": true,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "BOOM600",
+      "family": "RIDGE44",
+      "mode": "SPIKE",
+      "active_days": 174,
+      "is_combined44": true,
+      "bound": {
+        "gross": {
+          "completed": 909,
+          "gains_R": 319.2777283600869,
+          "losses_R": 363.29950623300147,
+          "sum_R": -44.02177787291454,
+          "mean_R": -0.04842879854006,
+          "profit_factor": 0.8788278620872078
+        },
+        "net": {
+          "completed": 909,
+          "gains_R": 302.4797981315037,
+          "losses_R": 391.9515760044182,
+          "sum_R": -89.47177787291456,
+          "mean_R": -0.09842879854006002,
+          "profit_factor": 0.7717274700487339
+        },
+        "finite_zero_cost_ceiling": 0.8788278620872078,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": false,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "BOOM600",
+      "family": "RIDGE44",
+      "mode": "DRIFT",
+      "active_days": 174,
+      "is_combined44": true,
+      "bound": {
+        "gross": {
+          "completed": 813,
+          "gains_R": 284.17388748620687,
+          "losses_R": 288.16814377035763,
+          "sum_R": -3.9942562841507683,
+          "mean_R": -0.004912984359349039,
+          "profit_factor": 0.9861391469858868
+        },
+        "net": {
+          "completed": 813,
+          "gains_R": 261.1274578179662,
+          "losses_R": 305.771714102117,
+          "sum_R": -44.644256284150785,
+          "mean_R": -0.05491298435934906,
+          "profit_factor": 0.8539948130413358
+        },
+        "finite_zero_cost_ceiling": 0.9861391469858868,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": false,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "BOOM600",
+      "family": "RIDGE19",
+      "mode": "SPIKE",
+      "active_days": 157,
+      "is_combined44": false,
+      "bound": {
+        "gross": {
+          "completed": 457,
+          "gains_R": 165.96330314924057,
+          "losses_R": 174.13045168385233,
+          "sum_R": -8.167148534611783,
+          "mean_R": -0.0178712221763934,
+          "profit_factor": 0.9530975285733487
+        },
+        "net": {
+          "completed": 457,
+          "gains_R": 157.31595399751274,
+          "losses_R": 188.3331025321245,
+          "sum_R": -31.017148534611792,
+          "mean_R": -0.06787122217639342,
+          "profit_factor": 0.8353069740922412
+        },
+        "finite_zero_cost_ceiling": 0.9530975285733487,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": false,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "BOOM600",
+      "family": "RIDGE19",
+      "mode": "DRIFT",
+      "active_days": 157,
+      "is_combined44": false,
+      "bound": {
+        "gross": {
+          "completed": 377,
+          "gains_R": 119.28401704117074,
+          "losses_R": 118.21134453997651,
+          "sum_R": 1.0726725011942344,
+          "mean_R": 0.0028452851490563245,
+          "profit_factor": 1.0090741925436055
+        },
+        "net": {
+          "completed": 377,
+          "gains_R": 108.9054104385437,
+          "losses_R": 126.68273793734946,
+          "sum_R": -17.77732749880577,
+          "mean_R": -0.04715471485094369,
+          "profit_factor": 0.8596704824330724
+        },
+        "finite_zero_cost_ceiling": 1.0090741925436055,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": false,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "CRASH600",
+      "family": "BOOST44",
+      "mode": "SPIKE",
+      "active_days": 174,
+      "is_combined44": true,
+      "bound": {
+        "gross": {
+          "completed": 1306,
+          "gains_R": 565.2964136714556,
+          "losses_R": 535.3050681183049,
+          "sum_R": 29.991345553150754,
+          "mean_R": 0.022964276840084806,
+          "profit_factor": 1.0560266422632159
+        },
+        "net": {
+          "completed": 1306,
+          "gains_R": 537.9201679616189,
+          "losses_R": 573.2288224084681,
+          "sum_R": -35.30865444684927,
+          "mean_R": -0.027035723159915214,
+          "profit_factor": 0.9384039094571396
+        },
+        "finite_zero_cost_ceiling": 1.0560266422632159,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": true,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "CRASH600",
+      "family": "BOOST44",
+      "mode": "DRIFT",
+      "active_days": 176,
+      "is_combined44": true,
+      "bound": {
+        "gross": {
+          "completed": 2084,
+          "gains_R": 795.5790217993866,
+          "losses_R": 820.5048357307479,
+          "sum_R": -24.925813931361255,
+          "mean_R": -0.011960563306795229,
+          "profit_factor": 0.9696213686429256
+        },
+        "net": {
+          "completed": 2084,
+          "gains_R": 736.8502232348548,
+          "losses_R": 865.9760371662161,
+          "sum_R": -129.1258139313613,
+          "mean_R": -0.06196056330679525,
+          "profit_factor": 0.8508898533105982
+        },
+        "finite_zero_cost_ceiling": 0.9696213686429256,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": true,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "CRASH600",
+      "family": "RIDGE44",
+      "mode": "SPIKE",
+      "active_days": 172,
+      "is_combined44": true,
+      "bound": {
+        "gross": {
+          "completed": 851,
+          "gains_R": 310.0349097063473,
+          "losses_R": 326.36948128855806,
+          "sum_R": -16.33457158221076,
+          "mean_R": -0.019194561201187732,
+          "profit_factor": 0.9499506770126934
+        },
+        "net": {
+          "completed": 851,
+          "gains_R": 293.0674180977426,
+          "losses_R": 351.95198967995333,
+          "sum_R": -58.884571582210775,
+          "mean_R": -0.06919456120118775,
+          "profit_factor": 0.8326914655724569
+        },
+        "finite_zero_cost_ceiling": 0.9499506770126934,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": false,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "CRASH600",
+      "family": "RIDGE44",
+      "mode": "DRIFT",
+      "active_days": 176,
+      "is_combined44": true,
+      "bound": {
+        "gross": {
+          "completed": 1848,
+          "gains_R": 674.6423892963791,
+          "losses_R": 715.6297927644453,
+          "sum_R": -40.98740346806621,
+          "mean_R": -0.02217933088098821,
+          "profit_factor": 0.9427254093073267
+        },
+        "net": {
+          "completed": 1848,
+          "gains_R": 623.3960939525975,
+          "losses_R": 756.7834974206638,
+          "sum_R": -133.38740346806625,
+          "mean_R": -0.07217933088098823,
+          "profit_factor": 0.8237443021383408
+        },
+        "finite_zero_cost_ceiling": 0.9427254093073267,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": true,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "CRASH600",
+      "family": "RIDGE19",
+      "mode": "SPIKE",
+      "active_days": 161,
+      "is_combined44": false,
+      "bound": {
+        "gross": {
+          "completed": 340,
+          "gains_R": 116.88745698847013,
+          "losses_R": 109.72042497873996,
+          "sum_R": 7.167032009730168,
+          "mean_R": 0.02107950591097108,
+          "profit_factor": 1.0653208553568663
+        },
+        "net": {
+          "completed": 340,
+          "gains_R": 109.68522269427802,
+          "losses_R": 119.51819068454786,
+          "sum_R": -9.832967990269838,
+          "mean_R": -0.028920494089028935,
+          "profit_factor": 0.91772827270936
+        },
+        "finite_zero_cost_ceiling": 1.0653208553568663,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": false,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    },
+    {
+      "symbol": "CRASH600",
+      "family": "RIDGE19",
+      "mode": "DRIFT",
+      "active_days": 172,
+      "is_combined44": false,
+      "bound": {
+        "gross": {
+          "completed": 671,
+          "gains_R": 222.2600266494253,
+          "losses_R": 232.54961806397873,
+          "sum_R": -10.289591414553428,
+          "mean_R": -0.015334711497098998,
+          "profit_factor": 0.9557531356094399
+        },
+        "net": {
+          "completed": 671,
+          "gains_R": 203.71412910306572,
+          "losses_R": 247.55372051761915,
+          "sum_R": -43.839591414553446,
+          "mean_R": -0.06533471149709903,
+          "profit_factor": 0.8229087758289892
+        },
+        "finite_zero_cost_ceiling": 0.9557531356094399,
+        "target_1_5_impossible_by_cost_reduction_alone": true
+      },
+      "completed_sample_gate": false,
+      "active_day_gate": true,
+      "development_eligible": false,
+      "historical_candidate": false,
+      "live_candidate": false
+    }
+  ],
+  "input_sha256": {
+    "docs/spike_nonlinear_20261005/results.json": "4d00095faaa6b839452bcf61ad3cdd984a9bf1f632c7ece768f83ae52355e180",
+    "docs/spike_nonlinear_20261005/independent_audit.json": "9da900082a7393c486b0e2e30190e836781d7859f04e9104e3e0d6e74adda19a",
+    "docs/spike_nonlinear_20261005/declaration.json": "d707abf76613caf6aa6a2f0d9a583f7fe051084771568d23dad49dcb1696c8d7",
+    "docs/spike_nonlinear_20261005/selection.json": "87771bfd480033b1ecde0783ad6b9318b6338e2c41c855dcb1b8a344021b37e0",
+    "docs/SPIKE_LEARNED_PROTOCOL.md": "f9118dd0dbc5089ba8ac984be193033e0166378651a55786d3642f1827725000",
+    "backend/app/research/learned_signal.py": "e995744aae3c6431aa3d454c3488777f12c2020c8cb03014927aed214df54656",
+    "backend/app/research/learned_metrics.py": "f89405be92ef8d5ca5ec35c48d32a63781d124e561cdfea665098e8180e80c31",
+    "backend/app/research/spike_hunter.py": "1ffc873e8d04785ba0900b1ebc3751b803a013a459d7740b6d02521d67926f27",
+    "backend/app/research/payoff.py": "097bb2328540610374598ef878ff04cfbc854ecd46dbfe9866b8912d0355d681",
+    "backend/app/research/payoff_timed.py": "fdc6e91f3c9b082054d107bc0926748361bbcdbf0c5643aa5c88393cf294283e",
+    "backend/app/research/payoff_metrics.py": "16bbfa9e499dc91802fb7d5210e48734a93db26127744dc4ed2e57b44876949e",
+    "scripts/run_spike_payoff_study.py": "4ff72ae2064ae19c4b5d828bf1e9550d6b354a4b6dda38c7ee21834731fe12ff",
+    "scripts/run_spike_timed_study.py": "6f595941a57ffd6c9fba2c416fca2517f83c3e4e66ae10b7e3d4f771b3d1311b",
+    "scripts/run_spike_learned_study.py": "b9dce52f7b2e150a42fb8abe60b2980a846ba91f4c01e5de06fe34a4a2f69143",
+    "docs/SPIKE_NATIVE300_PROTOCOL.md": "fe8e31fefcef0cd239be71d9482b98b982bf0af7afbb4227333164702e9837e9",
+    "scripts/run_spike_native300_study.py": "7e9b90410fe6b394df27b59ba8853441f4c21e5f02b7e3dc3dfcf00b135ad93f",
+    "backend/tests/test_spike_native300_study.py": "1814ffbc9e9dcb65ff620ada78d9c06e90945126523e0a74883b803eba74c22c",
+    "backend/app/research/multiframe_signal.py": "1ae7568832a167ee24fba848525521be04838fc9b9c1a02205bc7016655da6ef",
+    "backend/tests/test_multiframe_signal.py": "f110f48adff098bb783fee570d3d36fd9d6d6f0fb2fe7c78618218dc5f4f16f2",
+    "docs/SPIKE_MULTIFRAME_PROTOCOL.md": "898bdcd383e30c52f78ee10c8d5e07deea488aed043721d3150aafc38f488901",
+    "scripts/run_spike_multiframe_study.py": "0675387d6aa1012d6011fb4eea7ac19fa9e1f1c661c4509e030f2b2744ca68bb",
+    "backend/tests/test_spike_multiframe_study.py": "c88dcfe6a0c51e2400e475f87b6c93cc086aff501bad299fa63c301347e4651c",
+    "backend/app/research/nonlinear_signal.py": "225b6d0171127b94bc1d2cc3d4730a3952c627d74d9668f05978879f5359cb34",
+    "backend/tests/test_nonlinear_signal.py": "8845fded4cf917f3ec41bcffc776447d7a2f4b6cc7299c2d471be3de724573ec",
+    "docs/SPIKE_NONLINEAR_PROTOCOL.md": "a511b92c72e9bf50978726d96760c1aa8a33e1b9fbff800c370ffd0783ad7c46",
+    "scripts/run_spike_nonlinear_study.py": "dd0cf48780ff48a55ec540e4a4dc2497e065b2654bd9a77efb7814e21955ba45",
+    "backend/tests/test_spike_nonlinear_study.py": "e4f9978548186f709fdea08354314e77d494a344628d6af68643d60145e48e06",
+    "scripts/collect_spike_history.py": "b0b4ff7df6c86ca098e8cd8b001e8c7129e43f9ccfe66c3f45d5f27e3669f300",
+    "scripts/verify_spike_payoff.py": "ac0b34c978b549711e383e9cec86410e205535d5cf04b9d2ba234ef9b5161cdf",
+    "scripts/verify_spike_timed.py": "fbecf3b85dfd0b1e4731b2c8d6984c954a100c36d0f447e79059aee187f58658",
+    "scripts/verify_spike_learned.py": "3846861910f67d4b8e9a50d73962cbd45b70069033a4c93eea0ae159b7ac3f51",
+    "scripts/verify_spike_native300.py": "c7835e5b91f6fb376d01bcd25ed7ca3f8d8315c193377724242674d943bf6663",
+    "scripts/verify_spike_multiframe.py": "ccc3703a89a5af2a0094b28e2b0e5eb4e7b5fc0d451198ace7ce3963d89f5b90",
+    "scripts/verify_spike_nonlinear.py": "1a6d25a60093d36d7c8a66e66ef966d144d81d16eb84695f3ceb400aad307aee",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_BOOST44_SPIKE_trades.csv": "179dd0862844c76f3ce982fb2a547780218b3a58652e630d0550e3e9f385b41c",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_BOOST44_SPIKE_signals.csv": "fe4dabf7555669e143b5d719ed53f2d9a98afe2066f1d82f60ce72b629b4e599",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_BOOST44_DRIFT_trades.csv": "718b7e58f822b5ddd2de81debe79a94a62c5a6d5eb8ac48f4ba4093147421db9",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_BOOST44_DRIFT_signals.csv": "89096a6ecd5a4f20c5b3ceba10460112a943a350a10b37ed41523f21f19ddd9f",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE44_SPIKE_trades.csv": "b048f2633d0a8fcceecd11f92f9520ba647b86aedde16b38e09589532cf6a6aa",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE44_SPIKE_signals.csv": "a1f7b96dace4456c34b9ce2b87f1376d57012ac1656b206e327cd060d9675326",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE44_DRIFT_trades.csv": "ceb8ec49aa3dd6ab06435ef23f92a91849dc590a189abee24007ed3c0abd72f7",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE44_DRIFT_signals.csv": "f7457d72b1c9dfc4d1e8fc21ebafa2e0f70af8cac1c90180a7c0cfd8551b48f8",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE19_SPIKE_trades.csv": "e2b2b585ced50c18ff9a3de9126abe02775f786b0fc7e8c4c91d42bbf022fffc",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE19_SPIKE_signals.csv": "cb0991bf1face0a1973294ada4743e8e6745857bfe9e8579b554f42d5cfb0b9e",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE19_DRIFT_trades.csv": "19933deed307266a21c5b1b68711fcac295156fb704f3a2c7555e003219bacad",
+    "docs/spike_nonlinear_20261005/BOOM600_later_temporal180_RIDGE19_DRIFT_signals.csv": "0867ed6432fc7d100146de4180bb6e15a3c2f36266ea192555e92da67c1202be",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_BOOST44_SPIKE_trades.csv": "9dc47302c0684d9325352b72a1c4dd898262878787f0ffdfb84cf416732c057c",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_BOOST44_SPIKE_signals.csv": "4aa7c38a477a5823995a1fb2b9f7d0c8a08e2e023453e71edc491a72d103cd0e",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_BOOST44_DRIFT_trades.csv": "1013fde840d52f9ae1ccc96afd4545a61569b7ac9cd81d285639f836543bfad1",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_BOOST44_DRIFT_signals.csv": "80df8573ebc6aa4c622497d76a3f1a4c1e9afa9832ba105b09f8f254371b9f7e",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE44_SPIKE_trades.csv": "7f52114397a24310eaaeacb73c0638138c91b5ef4f4e72d7e1cac4d120f9f470",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE44_SPIKE_signals.csv": "b8e5a1511f0c9d96b46064778e8e314f2aa5507aa7ea8de6283b4794b95bcf09",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE44_DRIFT_trades.csv": "53a2de3da11eb6ac2fe47d96c5642f5a303b83670935818af995c0db87e0454f",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE44_DRIFT_signals.csv": "b170a5c249b871b6a5bbc572578b5942b36f98add95de4fa12d0b3efb610db4c",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE19_SPIKE_trades.csv": "72a38136c880ef27a2e4e09c247306e2731213c832d1cc2d6ee55bc19f504199",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE19_SPIKE_signals.csv": "ff56f04bd434366e129be613ca0526373d10648aebbd373e167f2799775a5afa",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE19_DRIFT_trades.csv": "ee971845818f9134f94862c9528135ba66a47a3590e005d4961975ea22e5577d",
+    "docs/spike_nonlinear_20261005/CRASH600_later_temporal180_RIDGE19_DRIFT_signals.csv": "409a677c1a0a9a951a3d420c17cbf7aaf3094c833bfa6e66e3792d749b78e6c7"
+  },
+  "total_primary_records": 12621,
+  "all_fixed_models_below_target_even_without_cost": true,
+  "pooled_strategy_sample_claim": false,
+  "finished_utc": "2026-10-07T11:44:02.112909+00:00",
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "declaration_sha256": "a767193342ae3f3db256f9cdc5c5c16260e1e0a910ee085d25b927ac17722b10",
+  "goal_achieved": false,
+  "historical_candidate": false,
+  "actual_money_profit": "NOT TESTED",
+  "prospective_paper": "NOT TESTED",
+  "executable_CFD_costs": "NOT TESTED",
+  "limitation": "No inference about altered fills/signals/weights, rebates, positive carry or other policies"
+}

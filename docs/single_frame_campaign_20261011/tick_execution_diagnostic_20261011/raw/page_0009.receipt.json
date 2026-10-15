@@ -1,0 +1,21 @@
+{
+  "authentication_used": false,
+  "canonical_symbol": "BOOM500",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "received_at": "2026-10-11T17:29:50.494527+00:00",
+  "request": {
+    "count": 240,
+    "end": 1779116819,
+    "req_id": 9,
+    "start": 1779116580,
+    "style": "ticks",
+    "ticks_history": "BOOM500"
+  },
+  "response_sha256": "2f14e854e1dc91acc70a1f2cac94d51af16c24b7f1fbb91957658dce08ec8780",
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "symbol": "BOOM600",
+  "source": "Official Deriv public WebSocket",
+  "endpoint": "wss://api.derivws.com/trading/v1/options/ws/public",
+  "raw_file": "data/spike_nonlinear600_recent/boom600_m1_180d.csv",
+  "raw_sha256": "49486105d0928171f8039a7d458d602805e19977e1486353c8be5eff9c5f9bac",
+  "raw_rows": 259200,
+  "normalized_file": "data/spike_nonlinear600_recent/boom600_m1_180d_clean.csv",
+  "normalized_sha256": "61d8494e1a9cfd2b631649cd6b40488f9ce1b3a338cb04657f0944fd47f56d3d",
+  "normalized_rows": 259199,
+  "equal_duplicates_removed": 0,
+  "excluded_rows": [
+    {
+      "epoch": 1785172079,
+      "utc": "2026-07-27T17:07:59+00:00",
+      "reason": "off_utc_minute_grid",
+      "raw": {
+        "epoch": 1785172079,
+        "open": 5532.471,
+        "high": 5532.471,
+        "low": 5532.471,
+        "close": 5532.471
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "previous_epoch": 1785228540,
+      "next_epoch": 1785228660,
+      "previous_utc": "2026-07-28T08:49:00+00:00",
+      "next_utc": "2026-07-28T08:51:00+00:00",
+      "missing_bars": 1,
+      "missing_epochs": [
+        1785228600
+      ]
+    }
+  ],
+  "first_epoch": 1775560080,
+  "last_epoch": 1791112020,
+  "first_utc": "2026-04-07T11:08:00+00:00",
+  "last_utc": "2026-10-04T11:07:00+00:00",
+  "requested_start_epoch": 1775560080,
+  "requested_cutoff_exclusive_epoch": 1791112080,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "fills_or_interpolations": false,
+  "normalization_valid": true,
+  "gap_free": false,
+  "finite_positive_ohlc": true,
+  "canonical_utc_minute_grid": true,
+  "retrieved_at_utc": "2026-10-05T09:54:12.150691+00:00",
+  "request_errors": [
+    {
+      "end": 1785592079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    },
+    {
+      "end": 1785532079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    },
+    {
+      "end": 1785472079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    },
+    {
+      "end": 1785412079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    },
+    {
+      "end": 1785352079,
+      "attempt": 1,
+      "error": "RuntimeError: {\"code\": \"RateLimit\", \"message\": \"You have reached the rate limit for ticks_history.\"}"
+    }
+  ],
+  "page_count": 260,
+  "documentation": [
+    "https://developers.deriv.com/docs/options/ws-public/",
+    "https://developers.deriv.com/docs/data/ticks-history/"
+  ]
+}

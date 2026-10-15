@@ -1,0 +1,42 @@
+test_each_chronological_third_retains_inherited_31minute_purge (test_review_study.ArtifactAndMetricChecks.test_each_chronological_third_retains_inherited_31minute_purge) ... FAIL
+test_empty_ledger_metrics_stay_undefined (test_review_study.ArtifactAndMetricChecks.test_empty_ledger_metrics_stay_undefined) ... ok
+test_full_point_statistics_include_day_clusters_and_drawdown (test_review_study.ArtifactAndMetricChecks.test_full_point_statistics_include_day_clusters_and_drawdown) ... ok
+test_type_sensitive_identity_and_reference_fields (test_review_study.ArtifactAndMetricChecks.test_type_sensitive_identity_and_reference_fields) ... ok
+test_development_unknown_and_negative_fold_vetoes (test_review_study.GateChecks.test_development_unknown_and_negative_fold_vetoes) ... ok
+test_every_heldout_reference_unknown_vetoes (test_review_study.GateChecks.test_every_heldout_reference_unknown_vetoes) ... ok
+test_missing_required_reference_is_error (test_review_study.GateChecks.test_missing_required_reference_is_error) ... ok
+test_nonpositive_mean_sample_and_day_shortfalls_rejected (test_review_study.GateChecks.test_nonpositive_mean_sample_and_day_shortfalls_rejected) ... ok
+test_positive_pf_below_one_point_one_can_pass (test_review_study.GateChecks.test_positive_pf_below_one_point_one_can_pass) ... ok
+test_reference_confidence_interval_vetoes_independent_of_p (test_review_study.GateChecks.test_reference_confidence_interval_vetoes_independent_of_p) ... ok
+test_strict_pf_boundary_unknown_and_nonfinite_rejected (test_review_study.GateChecks.test_strict_pf_boundary_unknown_and_nonfinite_rejected) ... ok
+test_undefined_reversed_boolean_confidence_intervals_rejected (test_review_study.GateChecks.test_undefined_reversed_boolean_confidence_intervals_rejected) ... ok
+test_weekly_pf_ci_holm_drawdown_thirds_and_double_cost_vetoes (test_review_study.GateChecks.test_weekly_pf_ci_holm_drawdown_thirds_and_double_cost_vetoes) ... ok
+test_boolean_node_and_invalid_split_rejected (test_review_study.ModelChecks.test_boolean_node_and_invalid_split_rejected) ... ok
+test_boundary_equality_routes_right_and_tails_are_not_refitted (test_review_study.ModelChecks.test_boundary_equality_routes_right_and_tails_are_not_refitted) ... ok
+test_constant_training_and_stage_scores (test_review_study.ModelChecks.test_constant_training_and_stage_scores) ... ok
+test_declared_cut_change_even_rehashed_is_detected (test_review_study.ModelChecks.test_declared_cut_change_even_rehashed_is_detected) ... ok
+test_empty_prediction_keeps_schema (test_review_study.ModelChecks.test_empty_prediction_keeps_schema) ... ok
+test_entire_model_state_target_matrix_and_counts (test_review_study.ModelChecks.test_entire_model_state_target_matrix_and_counts) ... ok
+test_model_state_tampering_detected_after_metadata_rehash (test_review_study.ModelChecks.test_model_state_tampering_detected_after_metadata_rehash) ... ok
+test_node_arithmetic_tampering_even_rehashed_is_detected (test_review_study.ModelChecks.test_node_arithmetic_tampering_even_rehashed_is_detected) ... ok
+test_nonfinite_training_target_and_small_sample_rejected (test_review_study.ModelChecks.test_nonfinite_training_target_and_small_sample_rejected) ... ok
+test_parameter_provenance_hash_order_and_tree_count_rejected (test_review_study.ModelChecks.test_parameter_provenance_hash_order_and_tree_count_rejected) ... ok
+test_quantile_threshold_tampering_is_detected (test_review_study.ModelChecks.test_quantile_threshold_tampering_is_detected) ... ok
+test_routed_residual_statistics_for_nonconstant_tree (test_review_study.ModelChecks.test_routed_residual_statistics_for_nonconstant_tree) ... ok
+test_synthetic_production_fit_checked_by_independent_arithmetic (test_review_study.ModelChecks.test_synthetic_production_fit_checked_by_independent_arithmetic) ... ok
+test_training_only_cuts_constant_low_cardinality_and_quantiles (test_review_study.ModelChecks.test_training_only_cuts_constant_low_cardinality_and_quantiles) ... ok
+
+======================================================================
+FAIL: test_each_chronological_third_retains_inherited_31minute_purge (test_review_study.ArtifactAndMetricChecks.test_each_chronological_third_retains_inherited_31minute_purge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zyadalasmri/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/boom-crash-quant-lab/docs/nonlinear_region_20261010/test_review_study.py", line 277, in test_each_chronological_third_retains_inherited_31minute_purge
+    self.assertFalse(audit.errors, audit.errors)
+AssertionError: ['independent third 0completed: 1 != 2', 'independent third 0trades: 1 != 2', 'independent third 0mean_net_R: 1.0 != 50.5', 'independent third 0closed_trade_return: 0.0024999999999999467 != 0.2531249999999998'] is not false : ['independent third 0completed: 1 != 2', 'independent third 0trades: 1 != 2', 'independent third 0mean_net_R: 1.0 != 50.5', 'independent third 0closed_trade_return: 0.0024999999999999467 != 0.2531249999999998']
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.240s
+
+FAILED (failures=1)
+
+EXIT_CODE=1

@@ -1,0 +1,100 @@
+field	value
+schema_version	1
+export_status	SAVED_NOT_PROVEN
+failure_reason	
+symbol	Crash 600 Index
+server	DerivSVG-Server
+company	Deriv (SVG) LLC
+account_mode	LIVE
+symbol_custom_observed	false
+capture_time_gmt	2026.10.13 12:10:35 UTC
+request_from_gmt	2026.10.10 20:00:00 UTC
+request_end_exclusive_gmt	2026.10.10 20:01:00 UTC
+request_from_msc	1791662400000
+request_end_exclusive_msc	1791662460000
+copy_to_inclusive_msc	1791662459999
+window_end_exclusive	true
+max_window_seconds	86400
+copy_mode	COPY_TICKS_ALL
+raw_file	Avail_CRASH600_20261010_ticks.tsv
+raw_partial_file	
+row_count	60
+raw_rows_written	60
+first_time_msc	1791662400172
+last_time_msc	1791662459138
+last_error	0
+guard_error	0
+write_error	0
+attempts	1
+retries	0
+selected_attempt	1
+raw_retention_scope	SELECTED_ATTEMPT_ONLY
+all_attempt_raw_arrays_retained	false
+copy_returned_count	60
+api_returned_without_error	true
+connection_wait_limit_seconds	30
+connection_wait_elapsed_ms	2378
+terminal_trade_allowed_observed	false
+mql_trade_allowed_observed	false
+out_of_window_rows	0
+backward_time_rows	0
+crossed_quote_rows	0
+invalid_quote_rows	0
+same_millisecond_rows_preserved	true
+row_order_preserved	true
+deduplication_applied	false
+synchronization_status	NOT_PROVEN
+historical_tick_completeness	NOT_PROVEN
+live_trading	false
+ready_for_live	false
+live_allowed	false
+opened_trades	false
+safety_upper_live_trading	false
+safety_upper_ready_for_live	false
+safety_upper_live_allowed	false
+safety_upper_opened_trades	false
+costs_verified	false
+execution_verified	false
+historical_costs_verified	false
+cfd_fills_verified	false
+cash_contract_mapping_verified	false
+quote_export_is_fill_evidence	false
+account_identity_captured	false
+limitation	Raw terminal quotes and current symbol specifications do not establish historical costs, executable fills, profit, or full historical synchronization.
+attempt_1_returned_count	60
+attempt_1_array_rows	60
+attempt_1_last_error	0
+attempt_1_elapsed_ms	408
+spec_snapshot_status	CURRENT_ONLY_NOT_HISTORICAL
+spec_snapshot_historical	false
+spec_snapshot_capture_time_gmt	2026.10.13 12:10:35 UTC
+symbol_point	0.001
+symbol_point_error_code	0
+symbol_digits	3
+symbol_digits_error_code	0
+symbol_trade_contract_size	1
+symbol_trade_contract_size_error_code	0
+symbol_trade_tick_size	0.001
+symbol_trade_tick_size_error_code	0
+symbol_trade_tick_value	0.001
+symbol_trade_tick_value_error_code	0
+symbol_trade_tick_value_profit	0.001
+symbol_trade_tick_value_profit_error_code	0
+symbol_trade_tick_value_loss	0.001
+symbol_trade_tick_value_loss_error_code	0
+symbol_volume_min	0.20000000000000001
+symbol_volume_min_error_code	0
+symbol_volume_max	55
+symbol_volume_max_error_code	0
+symbol_volume_step	0.01
+symbol_volume_step_error_code	0
+symbol_swap_mode	5
+symbol_swap_mode_error_code	0
+symbol_swap_long	-36
+symbol_swap_long_error_code	0
+symbol_swap_short	-36
+symbol_swap_short_error_code	0
+symbol_swap_rollover3days	7
+symbol_swap_rollover3days_error_code	0
+symbol_trade_calc_mode	4
+symbol_trade_calc_mode_error_code	0

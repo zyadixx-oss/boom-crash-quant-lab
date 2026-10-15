@@ -1,0 +1,89 @@
+BOOM600/fit40: calibrating on training quotes only
+BOOM600/fit40: training-only detector frozen
+BOOM600/fit40: transformed native chunk1
+BOOM600/fit40: transformed native chunk31
+BOOM600/fit40: transformed native chunk61
+BOOM600/fit40: transformed native chunk91
+BOOM600/wf1/REGION: fixed original-quote paths evaluated
+BOOM600/wf1/TIMED: fixed original-quote paths evaluated
+BOOM600/fit50: calibrating on training quotes only
+BOOM600/fit50: training-only detector frozen
+BOOM600/fit50: transformed native chunk1
+BOOM600/fit50: transformed native chunk31
+BOOM600/fit50: transformed native chunk61
+BOOM600/fit50: transformed native chunk91
+BOOM600/wf2/REGION: fixed original-quote paths evaluated
+BOOM600/wf2/TIMED: fixed original-quote paths evaluated
+BOOM600/fit60: calibrating on training quotes only
+BOOM600/fit60: training-only detector frozen
+BOOM600/fit60: transformed native chunk1
+BOOM600/fit60: transformed native chunk31
+BOOM600/fit60: transformed native chunk61
+BOOM600/fit60: transformed native chunk91
+BOOM600/fit60: transformed native chunk121
+BOOM600/wf3/REGION: fixed original-quote paths evaluated
+BOOM600/wf3/TIMED: fixed original-quote paths evaluated
+BOOM600/fit70: calibrating on training quotes only
+BOOM600/fit70: training-only detector frozen
+BOOM600/fit70: transformed native chunk1
+BOOM600/fit70: transformed native chunk31
+BOOM600/fit70: transformed native chunk61
+BOOM600/fit70: transformed native chunk91
+BOOM600/fit70: transformed native chunk121
+BOOM600/fit70: transformed native chunk151
+BOOM600/fit70: transformed native chunk181
+BOOM600/fit70: transformed native chunk211
+BOOM600/fit70: transformed native chunk241
+BOOM600/fit70: transformed native chunk271
+BOOM600/fit70: transformed native chunk301
+BOOM600/fit70: transformed native chunk331
+BOOM600/fit70: transformed native chunk361
+BOOM600/final_test/REGION: fixed original-quote paths evaluated
+BOOM600/final_test/TIMED: fixed original-quote paths evaluated
+BOOM600/later180/REGION: fixed original-quote paths evaluated
+BOOM600/later180/TIMED: fixed original-quote paths evaluated
+CRASH600/fit40: calibrating on training quotes only
+CRASH600/fit40: training-only detector frozen
+CRASH600/fit40: transformed native chunk1
+CRASH600/fit40: transformed native chunk31
+CRASH600/fit40: transformed native chunk61
+CRASH600/fit40: transformed native chunk91
+CRASH600/wf1/REGION: fixed original-quote paths evaluated
+CRASH600/wf1/TIMED: fixed original-quote paths evaluated
+CRASH600/fit50: calibrating on training quotes only
+CRASH600/fit50: training-only detector frozen
+CRASH600/fit50: transformed native chunk1
+CRASH600/fit50: transformed native chunk31
+CRASH600/fit50: transformed native chunk61
+CRASH600/fit50: transformed native chunk91
+CRASH600/wf2/REGION: fixed original-quote paths evaluated
+CRASH600/wf2/TIMED: fixed original-quote paths evaluated
+CRASH600/fit60: calibrating on training quotes only
+CRASH600/fit60: training-only detector frozen
+CRASH600/fit60: transformed native chunk1
+CRASH600/fit60: transformed native chunk31
+CRASH600/fit60: transformed native chunk61
+CRASH600/fit60: transformed native chunk91
+CRASH600/fit60: transformed native chunk121
+CRASH600/wf3/REGION: fixed original-quote paths evaluated
+CRASH600/wf3/TIMED: fixed original-quote paths evaluated
+CRASH600/fit70: calibrating on training quotes only
+CRASH600/fit70: training-only detector frozen
+CRASH600/fit70: transformed native chunk1
+CRASH600/fit70: transformed native chunk31
+CRASH600/fit70: transformed native chunk61
+CRASH600/fit70: transformed native chunk91
+CRASH600/fit70: transformed native chunk121
+CRASH600/fit70: transformed native chunk151
+CRASH600/fit70: transformed native chunk181
+CRASH600/fit70: transformed native chunk211
+CRASH600/fit70: transformed native chunk241
+CRASH600/fit70: transformed native chunk271
+CRASH600/fit70: transformed native chunk301
+CRASH600/fit70: transformed native chunk331
+CRASH600/fit70: transformed native chunk361
+CRASH600/final_test/REGION: fixed original-quote paths evaluated
+CRASH600/final_test/TIMED: fixed original-quote paths evaluated
+CRASH600/later180/REGION: fixed original-quote paths evaluated
+CRASH600/later180/TIMED: fixed original-quote paths evaluated
+{"path": "docs/representation_regions_20261008/results.json", "sha256": "212b2ec1c9330d7b3788fb0ad9cf4f860b8d29a8ff469423fea9ae39c4ad6589"}

@@ -1,0 +1,21 @@
+{
+  "format": "gzip_mtime0_exact_original_bytes",
+  "entries": [
+    {
+      "source_path": "docs/zone_study_20261008/BOOM600_candidates.csv",
+      "source_sha256": "fcb90b203a872faa72ce3ebda6cf81b051a776d6772295114031e1a68aec709e",
+      "source_bytes": 12562276,
+      "compressed_path": "docs/zone_study_20261008/BOOM600_candidates.csv.gz",
+      "compressed_sha256": "c02b4afb967db0bfdc3e054baf54be3f957c1c68608f66b03ba5cc981fa05a69",
+      "compressed_bytes": 753212
+    },
+    {
+      "source_path": "docs/zone_study_20261008/CRASH600_candidates.csv",
+      "source_sha256": "83dd4a5995eb370e5cdaa32ad17b1fd44668209b8d1913c706275cf700c5b115",
+      "source_bytes": 12895346,
+      "compressed_path": "docs/zone_study_20261008/CRASH600_candidates.csv.gz",
+      "compressed_sha256": "6f539db8ce44965ec69599549ac453de797a09a9bb40850708e02c4749dc9b5c",
+      "compressed_bytes": 794704
+    }
+  ]
+}

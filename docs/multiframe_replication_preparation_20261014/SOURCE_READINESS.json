@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-10-14T20:45:02.311148+00:00",
+  "status": "SOURCE_AND_ACCESS_PREPARATION_COMPLETE_NO_NEW_ALPHA_RESULT",
+  "new_source_requests_completed": 30,
+  "new_source_raw_rows": 2543082,
+  "new_source_gaps_above_5000ms": 7,
+  "new_source_raw_bytes_one_copy": 182628442,
+  "full_calendar_source_collection_complete": false,
+  "source_calendar_slots": 729,
+  "source_calendar_70_30_slots": [
+    510,
+    219
+  ],
+  "source_only_declaration_sha256": "917b08901b48073ad66e79aa1c3743078e21e2bbb5f9fefe35b4a142f470f84d",
+  "first_batch_capture_worker_exited": true,
+  "new_source_strategy_measurements": 0,
+  "new_alpha_protocol_frozen": false,
+  "full_streaming_study_evaluator_implemented": false,
+  "future_legacy_study_evaluators_must_not_receive_sparse_index": true,
+  "targeted_synthetic_tests_passed": 125,
+  "all_field_execution_equivalence_comparisons": 1920,
+  "full_local_tests_passed": 3649,
+  "full_local_warnings": 1,
+  "full_tests_seconds": 108.32,
+  "actual_candle_reference_rows": 168870,
+  "actual_candle_all_fields_match": true,
+  "actual_first_confirmation_lookups_match": 2879,
+  "native_history_capability_connections": 6,
+  "native_history_capability_payloads": 4,
+  "native_history_capability_accepted_responses": 0,
+  "native_out_of_window_rows_rejected": 4000,
+  "two_selected_2022_minutes": "EMPTY_NOT_GENERAL_HISTORY_ABSENCE",
+  "old_campaign_and_v1_v2_gates_or_results_changed": false,
+  "old_sealed_final_strategy_metrics_opened": false,
+  "profit_strategy_qualified": false,
+  "cost_verified": false,
+  "execution_verified": false,
+  "cash_net": null,
+  "code_and_test_sha256": {
+    "independent_multiframe_research/sharded.py": "7f26f2689517cdcfc4194fea278d3760af51029e70e00fe0dfdaae6e3d1bb142",
+    "independent_multiframe_research/streaming.py": "8106961aa56a96b374be3f01410ef106ba3011a11731a11bc2a251a1c348a79c",
+    "independent_multiframe_research/streaming_policies.py": "fad4dde43db793f6d8cfbdf83770aed1d71159a0b41354edb3188e3d6b84d144",
+    "tests/test_multiframe_sharded_quote_access.py": "a667c93195250da113f117e1e62816be89cd9a9dcbc0f01d254a36763a03ed0a",
+    "tests/test_multiframe_streaming_access.py": "e6a075dc7d736419a5c782ecad109517c8f3150fc6d2563daa45a8ddd40af260"
+  },
+  "evidence_sha256": {
+    "source_batch_30_audit.json": "d4e4dfa4dc316f241b4d0a5219f4a4d7c82b0f52cb4b993f86797360ca897d9a",
+    "adapter_review.json": "0d04935449ff2a0bc1a21a5fca0d9b74b6f7e7dddae40a5dd07c0cb08452e5bd",
+    "source_bar_conformance_result.json": "ff00de999a35ab5ec14793cd6f37b61df4df977bdaafaaa3a26d29df4824a267",
+    "native_history_capability_audit.json": "ae5bffdc043125e507eddb79c3447e17137ff7a9872ac1849866ba87eb8fb436",
+    "availability_2022_audit.json": "5be25b4ef8267c3ca45750a8f9ee04b190670e8c304e491e33b7cc3b181d94f2"
+  },
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}

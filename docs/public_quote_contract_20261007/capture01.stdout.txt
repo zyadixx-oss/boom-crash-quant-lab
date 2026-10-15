@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "finished_utc": "2026-10-07T11:37:09.678032+00:00",
+  "elapsed_seconds": 61.82413512497442,
+  "counts": {
+    "BOOM500": {
+      "distinct_epochs": 60,
+      "duplicate_epochs": 0,
+      "post_cap_messages": 0,
+      "with_bid_ask": 60,
+      "unknown_bid_ask": 0,
+      "bid_quote_ask_checks_passed": 60,
+      "first_epoch": 1791372970,
+      "last_epoch": 1791373029,
+      "missing_seconds_within_observed_span": 0,
+      "public_feed_spread_summary_price_units": {
+        "observations": 60,
+        "minimum": "0.077",
+        "median": "0.078",
+        "maximum": "0.078",
+        "interpretation": "observed_public_feed_only_not_executable_CFD_cost"
+      }
+    },
+    "CRASH500": {
+      "distinct_epochs": 60,
+      "duplicate_epochs": 0,
+      "post_cap_messages": 0,
+      "with_bid_ask": 60,
+      "unknown_bid_ask": 0,
+      "bid_quote_ask_checks_passed": 60,
+      "first_epoch": 1791372970,
+      "last_epoch": 1791373029,
+      "missing_seconds_within_observed_span": 0,
+      "public_feed_spread_summary_price_units": {
+        "observations": 60,
+        "minimum": "0.040",
+        "median": "0.041",
+        "maximum": "0.041",
+        "interpretation": "observed_public_feed_only_not_executable_CFD_cost"
+      }
+    },
+    "BOOM600": {
+      "distinct_epochs": 60,
+      "duplicate_epochs": 0,
+      "post_cap_messages": 0,
+      "with_bid_ask": 60,
+      "unknown_bid_ask": 0,
+      "bid_quote_ask_checks_passed": 60,
+      "first_epoch": 1791372970,
+      "last_epoch": 1791373029,
+      "missing_seconds_within_observed_span": 0,
+      "public_feed_spread_summary_price_units": {
+        "observations": 60,
+        "minimum": "0.068",
+        "median": "0.069",
+        "maximum": "0.069",
+        "interpretation": "observed_public_feed_only_not_executable_CFD_cost"
+      }
+    },
+    "CRASH600": {
+      "distinct_epochs": 60,
+      "duplicate_epochs": 0,
+      "post_cap_messages": 0,
+      "with_bid_ask": 60,
+      "unknown_bid_ask": 0,
+      "bid_quote_ask_checks_passed": 60,
+      "first_epoch": 1791372970,
+      "last_epoch": 1791373029,
+      "missing_seconds_within_observed_span": 0,
+      "public_feed_spread_summary_price_units": {
+        "observations": 60,
+        "minimum": "0.315",
+        "median": "0.315",
+        "maximum": "0.315",
+        "interpretation": "observed_public_feed_only_not_executable_CFD_cost"
+      }
+    }
+  },
+  "received_messages": 240,
+  "connection_closed": true,
+  "error": null,
+  "close_error": null,
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false
+  },
+  "authentication_used": false,
+  "executable_cfd_verified": false,
+  "actual_fills_verified": false,
+  "broker_costs_verified": false,
+  "profit_tested": false,
+  "transport_timing_is_order_execution_latency": false,
+  "artifact_sha256": {
+    "declaration.json": "c03b524f8357ea0e5c8a602fef0a01fe2e037cc891da7d8aa38f64a3218d1f0c",
+    "observations.jsonl": "a8b5fd064735885df53710ebb1a0ff143ba2365de4e9d70a09a52572007d5b5a",
+    "probe_source.py": "62da6e095f8112459b3d91434f02c756ddc265c0783f464416863607a1d384f6",
+    "probe_tests.py": "d204b1fe6d713c062bce9399812dbc02e8cc7132a0b4f22f421051f7ab3e1ae8",
+    "received_text_messages.jsonl": "afc224883af67d1730ec09de99d3655ecabe7ea4cf6d63fd0a44cdbc9b59b298",
+    "requests.jsonl": "a8aeecd4deb93e15bc8e292ab1276a98040926106ff24eaacf998ebcee7ce2bb"
+  }
+}
