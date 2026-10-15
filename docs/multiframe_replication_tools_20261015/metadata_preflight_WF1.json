@@ -1,0 +1,15 @@
+{
+  "LIVE_ALLOWED": false,
+  "LIVE_TRADING": false,
+  "OPENED_TRADES": false,
+  "READY_FOR_LIVE": false,
+  "actual_strategy_measurements": 0,
+  "error": "Required source day failed or is empty; no substitution",
+  "live_allowed": false,
+  "live_trading": false,
+  "opened_trades": false,
+  "raw_files_verified": false,
+  "ready_for_live": false,
+  "source_metadata_available": false,
+  "stage": "WF1"
+}

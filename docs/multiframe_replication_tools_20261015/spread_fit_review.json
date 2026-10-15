@@ -1,0 +1,249 @@
+{
+  "API": "fit_positive_spread_prefixes(train_start_ms,train_end_ms,checkpoint_end_days,loader,scratch_db_path)->tuple[PrefixSpreadFit,...]",
+  "MT5_or_collector_or_process_calls": 0,
+  "actual_quote_raw_reads": 0,
+  "actual_strategy_measurements": 0,
+  "already_reviewed_adapter_and_runner_files_unchanged": [
+    {
+      "current_sha256": "7f26f2689517cdcfc4194fea278d3760af51029e70e00fe0dfdaae6e3d1bb142",
+      "path": "independent_multiframe_research/sharded.py",
+      "prior_review_sha256": "7f26f2689517cdcfc4194fea278d3760af51029e70e00fe0dfdaae6e3d1bb142",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "8106961aa56a96b374be3f01410ef106ba3011a11731a11bc2a251a1c348a79c",
+      "path": "independent_multiframe_research/streaming.py",
+      "prior_review_sha256": "8106961aa56a96b374be3f01410ef106ba3011a11731a11bc2a251a1c348a79c",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "fad4dde43db793f6d8cfbdf83770aed1d71159a0b41354edb3188e3d6b84d144",
+      "path": "independent_multiframe_research/streaming_policies.py",
+      "prior_review_sha256": "fad4dde43db793f6d8cfbdf83770aed1d71159a0b41354edb3188e3d6b84d144",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "a667c93195250da113f117e1e62816be89cd9a9dcbc0f01d254a36763a03ed0a",
+      "path": "tests/test_multiframe_sharded_quote_access.py",
+      "prior_review_sha256": "a667c93195250da113f117e1e62816be89cd9a9dcbc0f01d254a36763a03ed0a",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "e6a075dc7d736419a5c782ecad109517c8f3150fc6d2563daa45a8ddd40af260",
+      "path": "tests/test_multiframe_streaming_access.py",
+      "prior_review_sha256": "e6a075dc7d736419a5c782ecad109517c8f3150fc6d2563daa45a8ddd40af260",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "d518d5da45a32ab12a5aa6e526f7b244dcb858efb26425c20de0e6fa8763b80d",
+      "path": "independent_multiframe_research/streaming_runner.py",
+      "prior_review_sha256": "d518d5da45a32ab12a5aa6e526f7b244dcb858efb26425c20de0e6fa8763b80d",
+      "unchanged": true
+    },
+    {
+      "current_sha256": "798efb0f28c5fe035331afe5bf6361e8e559e2327472a11cc99d7d984fc8563e",
+      "path": "tests/test_multiframe_streaming_runner.py",
+      "prior_review_sha256": "798efb0f28c5fe035331afe5bf6361e8e559e2327472a11cc99d7d984fc8563e",
+      "unchanged": true
+    }
+  ],
+  "cash_net": null,
+  "contract": {
+    "TRAIN_calendar": "Explicit nonnegative supported alignedUTC half-open start/end.",
+    "checkpoints": "Strictly increasing unique aligned millisecond day-end timestamps, TRAINstart<checkpoint<=TRAINend; no autosorting.",
+    "histogram": "Only current validateddayCounter inPython; explicitly released before next load. Cumulative INTEGER counts on freshSQLite disk table, exactrank cursor query; pagecache2MiB, temp_storeFILE.",
+    "loader": "Exact validated QuoteTape for requestedUTCday; rows copied/revalidated; duplicate rows retained; empty shards explicitly counted, never sourcecoverage proof.",
+    "median": "Exactly v1positiveobservedspread rule: duplicatescount, zeroexcluded, nofallback; U_scaled=fsum(lower_rank,upper_rank)/2 exactly representable for integer inputs below2**45.",
+    "no_cached_fit_reuse_or_discovery": true,
+    "results": "Immutable scalar dataclass snapshots returned only aftercommit; prefixUTCbounds, observed/positivecounts, processed/emptydays, exact lower/upper/U values.",
+    "scratch": "Caller-selected new absolute regularfile, existing nonsymlink parent components, no parent traversal or existing DB/-journal/-wal/-shm, exclusive0600 reservation and inode checks.",
+    "source_access": "Only days contributing to last requestedprefix; no predecessor, outsidecalendar or undeclared suffix calls.",
+    "source_code_and_actualsource_pins_binding": "Not automatically inferred or embedded; must be bound by future declaredcaller before actualstudy use.",
+    "source_prices": "Positive finite integer1e8scaled Bid/Ask strictly below2**45; crossed/mutated/decreasing/out-of-day source rejected. Numeric validation does not independently authenticate source scale or broker origin.",
+    "transaction": "One transaction for entirecall. Loader/data/SQL errors roll back schema/histogram/prefix rows, return no precedingfits, retain reservedfailedfile so it cannot silently be reused."
+  },
+  "costs_verified": false,
+  "created_utc": "2026-10-14T21:06:57.550553+00:00",
+  "current_HEAD_metadata": "e360ace4f95d7b63a1fe312043f66318207ae32a",
+  "execution_verified": false,
+  "frozen_source_and_protocol_pin_recheck": [
+    {
+      "declaration": "work/independent_profit_study_20261013/declaration.json",
+      "protocol_pin_check": {
+        "current_sha256": "6b23c34e02100032b4bef2975ccc14c090bd6539b49462666d2137a06ad4e53e",
+        "expected_sha256": "6b23c34e02100032b4bef2975ccc14c090bd6539b49462666d2137a06ad4e53e",
+        "path": "docs/independent_profit_research_20261013/PROTOCOL_FROZEN.ar.md",
+        "unchanged": true
+      },
+      "sha256": "39532ae745f00e613e716970d1864ad20f20474f5e8b06baf639eea8e63b9e79",
+      "source_pin_checks": [
+        {
+          "current_sha256": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7",
+          "expected_sha256": "a4023f758cdf93a2870258bd2f3840ee35d4732d15dce9876fccd8b62ea208b7",
+          "path": "independent_profit_research/benchmarks.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+          "expected_sha256": "72f8ed30858c40838b85e22769d366119ce9e746992a44c9bbfa23a2bbb66ca6",
+          "path": "independent_profit_research/data.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+          "expected_sha256": "f63624bb8478d536e26ae89ef8071cdf17229059e0b5d8a421957f184a248448",
+          "path": "independent_profit_research/execution.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4",
+          "expected_sha256": "172583bd40ae7b279677d35b50c7490a993dc0cceaab75dd886c9285144b77d4",
+          "path": "independent_profit_research/policies.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450",
+          "expected_sha256": "40ba7842ef5072879e6b3b9bfd4f8a30b7b5a57bb257552572bc862a4c8c2450",
+          "path": "independent_profit_research/runner.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9",
+          "expected_sha256": "604599cee46a202701c513a4ffdf7d508ab50a190ad431ee9796c95aadf431b9",
+          "path": "independent_profit_research/statistics.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+          "expected_sha256": "f4851e20b61ea802d618eb5d72b16c67f9b392b02441d9e824aa7614c810d23d",
+          "path": "independent_profit_research/tape.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e",
+          "expected_sha256": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e",
+          "path": "scripts/run_independent_profit_study.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+          "expected_sha256": "8e220cd12abfe0fa04d59de264374acfbca17ab4918caa884c61e240f6490eab",
+          "path": "scripts/verify_mt5_quote_export.py",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "declaration": "work/independent_multiframe_study_20261014/declaration.json",
+      "protocol_pin_check": {
+        "current_sha256": "9917c7c68a4fa5ed4add5ecb1c5f0d0f2ccfde80d966164b8646455c82ba4939",
+        "expected_sha256": "9917c7c68a4fa5ed4add5ecb1c5f0d0f2ccfde80d966164b8646455c82ba4939",
+        "path": "docs/independent_multiframe_research_20261014/PROTOCOL_FROZEN.ar.md",
+        "unchanged": true
+      },
+      "sha256": "a3f9b73838b63abfcb0e85cc0fce076c5e5ae7c31fd8545ad05038f208dbe0e6",
+      "source_pin_checks": [
+        {
+          "current_sha256": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+          "expected_sha256": "d09bd4c223e95a3def119e2b0026c352fe9138e0f66f5d70dda39aa5ed308823",
+          "path": "independent_multiframe_research/__init__.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+          "expected_sha256": "b0e8c923acbd6b5857634a11bd37e2bddebe3556f0d7f287099dba151bfdad7e",
+          "path": "independent_multiframe_research/bars.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+          "expected_sha256": "6ae7802a1d32d75acb225438af8863645e0103dcfe8db1a37925206b0689569b",
+          "path": "independent_multiframe_research/policies.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+          "expected_sha256": "2b808d0509b1d06a0dec88e75ebe2f6087d01eb3244b0f38eeaf91eec86e24c0",
+          "path": "independent_multiframe_research/runner.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+          "expected_sha256": "24eadc911925aec5568ba3015b2edc90f3e5885b867995532d80c89f91bf13f9",
+          "path": "independent_profit_research/__init__.py",
+          "unchanged": true
+        },
+        {
+          "current_sha256": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960",
+          "expected_sha256": "e3aa17c9d4e4842da40eb0022b4839f3e4e9b30eee935d747ee02a3b92f7c960",
+          "path": "scripts/run_multiframe_quote_study.py",
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No whole-processRAM/diskusage benchmark; Pythonhistogram is boundedbyone validatedday, SQLdiskhistogram grows with distinctspreads and sourcecalendar.",
+    "A gap or emptyday is not repaired, assigned nativezeroactivity or treated as completecoverage.",
+    "Futurecaller must bind sourcepins, codepins, TRAIN/final partition and fixedprotocol before actualsource fit; helper does not independently identify historicalfinal files.",
+    "No fees, fills, cashprofit, predictiveedge or strategyqualification evidence.",
+    "Root review and fullsuite after these new files remain required."
+  ],
+  "network_calls": 0,
+  "new_files": [
+    {
+      "bytes": 11051,
+      "path": "independent_multiframe_research/spread_fit.py",
+      "sha256": "0239a62fa9136ca70c34bdac6bcd7307aade7e2ba6c4add14a5f10b9e0cbf1fa"
+    },
+    {
+      "bytes": 10928,
+      "path": "tests/test_multiframe_spread_fit.py",
+      "sha256": "cb7ab775bfaf6af2c5830c0a7617ed3ce067f225d60d491069b68c5a949f727f"
+    }
+  ],
+  "old_source_edits": 0,
+  "private_financial_reads": 0,
+  "profit_qualified": false,
+  "reference_basis": {
+    "comparison": "Reviewed existing positive-spread/duplicate/zero/int-rank rule; synthetic everyprefix oracle is statistics.median.",
+    "v1_driver_executed": false,
+    "v1_source": "scripts/run_independent_profit_study.py:unit_fit",
+    "v1_source_sha256": "340e8e8d43ac894efb451fff9d9eb0da5c66e45377769bdc1b245a06d4b4723e"
+  },
+  "safety": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "ready_for_live": false
+  },
+  "schema_version": 1,
+  "scope": "New source-only TRAIN scalar-fit access primitive and synthetic tests. No actual quote/raw/final/privatefinance/MT5/process/network/strategy-return reads or measurements. Future alpha protocol remains unfrozen.",
+  "sealed_final_reads": 0,
+  "status": "IMPLEMENTED_SYNTHETIC_EXACT_PREFIX_MEDIAN_TESTS_PASSED_NO_SOURCE_USE",
+  "targeted_tests": {
+    "command": ".venv/bin/python -m pytest tests/test_multiframe_spread_fit.py",
+    "completion_chunk_id": "df912f",
+    "crash_scope": "Injected Python loaderexception only; no powerloss/SIGKILL recovery experiment was run.",
+    "exit_code": 0,
+    "fullsuite_run_by_this_reviewer": false,
+    "observed_summary": "62 passed in0.49s",
+    "seeded_dimensions": "20seeds ×15requestedprefixes",
+    "seeded_prefix_oracle_comparisons": 300,
+    "specific_checks": [
+      "Duplicatescount and zeros excluded",
+      "Exact Float64 halfmedian near2**45 limit",
+      "Emptyday accounting and nofallback at zero-positive checkpoint",
+      "Firstprefix immutable and unchanged when later suffix added",
+      "No unrequested futureday or outsidecalendar loadercalls",
+      "Later loaderRuntimeError rolls back earliercheckpoint and allDDL/data",
+      "Invalidlater source types/subclasses, daybounds, order, negative/crossed/fractional/oversized/mutatedstamps roll back",
+      "Existingfile/directory/symlink/danglingsymlink/symlinkparent/missingparent/relative/traversal/SQLite-sidecar scratch rejection without overwrites",
+      "Successful scratchmode0600, failed and successfulscratch paths never reused"
+    ]
+  }
+}

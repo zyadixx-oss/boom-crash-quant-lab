@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-15T13:25:19.634623+00:00",
+  "status": "CODE_SYNTHETIC_VALIDATION_PASS_ALPHA_SOURCE_NOT_READY",
+  "approved_for_protocol_freeze": false,
+  "local_full_suite": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest",
+    "passed": 4004,
+    "warnings": 1,
+    "seconds": 149.17,
+    "log_sha256": "7abecbc6aec4fcaeabce7310b6e5ff6c9563af915d16c7e7eb92d26850fd609f",
+    "code_and_test_pins_unchanged_during_final_run": true,
+    "code_pins": {
+      "independent_multiframe_research/streaming_runner.py": "d518d5da45a32ab12a5aa6e526f7b244dcb858efb26425c20de0e6fa8763b80d",
+      "independent_multiframe_research/spread_fit.py": "0239a62fa9136ca70c34bdac6bcd7307aade7e2ba6c4add14a5f10b9e0cbf1fa",
+      "independent_multiframe_research/replication_control.py": "5a4d9cb3e9ec545a2af0eff35426516b08f9221a88859eccae1810b1e8366be4",
+      "independent_multiframe_research/replication_statistics.py": "2423dcb196b40ea1f2da7937666593f2ba187f0541f5c2928b023711cd482851",
+      "scripts/run_multiframe_replication_study.py": "b27989ecb4f3d4371f197d2c3f7639c8cdbffbff2d1b09ea2b2d9b44a4ce7285",
+      "scripts/source_storage_guard.py": "66793848dff9d1ce6b32dce4f2909896d438e1f87e805c810127e0a42d3da5e1",
+      "tests/test_multiframe_streaming_runner.py": "798efb0f28c5fe035331afe5bf6361e8e559e2327472a11cc99d7d984fc8563e",
+      "tests/test_multiframe_spread_fit.py": "cb7ab775bfaf6af2c5830c0a7617ed3ce067f225d60d491069b68c5a949f727f",
+      "tests/test_multiframe_replication_control.py": "fce6e69e517fd36bdbc22abf9f3538cd477df2fe1100ce91ce1c63c310735113",
+      "tests/test_multiframe_replication_statistics.py": "bda331fa2f5b26d44022d8fa6ee403d868272d348b6a56cd2be288ecccce8375",
+      "tests/test_multiframe_replication_study.py": "b04a15e7b563ee6c7f582cd828b9b34266613eb52a7eb5fca9ef40e79a0a7d7d",
+      "tests/test_source_storage_guard.py": "386a85b792f38d723c837a2bee91a6378bf72a6faaaf3288b6f739cfe4d9daa7"
+    }
+  },
+  "focused_checks": {
+    "streaming_runner": 129,
+    "spread_fit": 62,
+    "sparse_control": 19,
+    "replication_statistics_new": 38,
+    "replication_statistics_adjacent_old": 68,
+    "controller": 74,
+    "storage_guard": 33,
+    "additional_control_probes": 12,
+    "additional_orchestration_probes": 6
+  },
+  "actual_source_validation": {
+    "new_same_window_diagnostic_requests": 2,
+    "new_capability_diagnostic_requests": 2,
+    "successful_recent_minute_rows": 59,
+    "old_selected_windows_empty": 3,
+    "prior_file_pins_matching": 275
+  },
+  "actual_alpha_strategy_measurements_on_new_source": 0,
+  "actual_frozen_new_alpha_protocols": 0,
+  "actual_final_strategy_cases": 0,
+  "metadata_preflight": {
+    "LIVE_ALLOWED": false,
+    "LIVE_TRADING": false,
+    "OPENED_TRADES": false,
+    "READY_FOR_LIVE": false,
+    "actual_strategy_measurements": 0,
+    "error": "Required source day failed or is empty; no substitution",
+    "live_allowed": false,
+    "live_trading": false,
+    "opened_trades": false,
+    "raw_files_verified": false,
+    "ready_for_live": false,
+    "source_metadata_available": false,
+    "stage": "WF1"
+  },
+  "full_study_reproduction_performed": false,
+  "old_rules_data_and_results_unchanged": true,
+  "storage_guard_applied_to_actual_source": false,
+  "source_repaired": false,
+  "cash_net": null,
+  "cost_verified": false,
+  "execution_verified": false,
+  "profit_qualified": false,
+  "goal_profit_achieved": false,
+  "scope_limits": [
+    "Synthetic test counts are tool validation, not profitable strategy trials.",
+    "No actual source strategy returns, TRAIN fits or hidden final outcomes were measured.",
+    "Source access failure and missing historical fees/fills prevent cash-profit qualification.",
+    "No global all-adaptive-research familywise guarantee."
+  ],
+  "safety": {
+    "LIVE_TRADING": false,
+    "READY_FOR_LIVE": false,
+    "LIVE_ALLOWED": false,
+    "OPENED_TRADES": false,
+    "live_trading": false,
+    "ready_for_live": false,
+    "live_allowed": false,
+    "opened_trades": false
+  }
+}
